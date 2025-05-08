@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ctl_mission_interfaces__py",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/build/ctl_mission_interfaces/ctl_mission_interfaces__py"
+	}
+}

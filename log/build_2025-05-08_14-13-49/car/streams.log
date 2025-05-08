@@ -1,0 +1,36 @@
+[1.255s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/src/car_python': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/build/car/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages:/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/car build --build-base /home/rhobtor/PHD/ARGOJ8_IA/build/car/build install --record /home/rhobtor/PHD/ARGOJ8_IA/build/car/install.log --single-version-externally-managed install_data
+[1.588s] running egg_info
+[1.589s] writing ../../build/car/car.egg-info/PKG-INFO
+[1.590s] writing dependency_links to ../../build/car/car.egg-info/dependency_links.txt
+[1.590s] writing entry points to ../../build/car/car.egg-info/entry_points.txt
+[1.590s] writing requirements to ../../build/car/car.egg-info/requires.txt
+[1.590s] writing top-level names to ../../build/car/car.egg-info/top_level.txt
+[1.592s] reading manifest file '../../build/car/car.egg-info/SOURCES.txt'
+[1.597s] writing manifest file '../../build/car/car.egg-info/SOURCES.txt'
+[1.598s] running build
+[1.598s] running build_py
+[1.603s] running install
+[1.604s] running install_lib
+[1.611s] running install_data
+[1.620s] running install_egg_info
+[1.629s] removing '/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car-0.0.0-py3.10.egg-info' (and everything under it)
+[1.629s] Copying ../../build/car/car.egg-info to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car-0.0.0-py3.10.egg-info
+[1.630s] running install_scripts
+[1.652s] Installing colision_zone script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.653s] Installing filter_points_cloud script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.653s] Installing frontier_centroid script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.653s] Installing inference_full_model script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.654s] Installing inference_training_mode_simple script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.654s] Installing joystick_control script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.654s] Installing keyboard_control script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.654s] Installing lidar_detection script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.654s] Installing map_navegation script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.654s] Installing memory_map script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.654s] Installing movement_predictive script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.654s] Installing path_ppo_cnn_lstm_full_model script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.654s] Installing path_ppo_cnn_lstm_training_init_mode script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.655s] Installing path_ppo_cnn_lstm_training_init_mode_simple script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.655s] Installing points_goal script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.655s] Installing supervisor_node script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+[1.655s] writing list of installed files to '/home/rhobtor/PHD/ARGOJ8_IA/build/car/install.log'
+[1.681s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/src/car_python' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/build/car/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages:/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/car build --build-base /home/rhobtor/PHD/ARGOJ8_IA/build/car/build install --record /home/rhobtor/PHD/ARGOJ8_IA/build/car/install.log --single-version-externally-managed install_data

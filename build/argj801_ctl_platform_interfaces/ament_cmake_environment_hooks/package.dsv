@@ -1,0 +1,4 @@
+source;share/argj801_ctl_platform_interfaces/local_setup.bash
+source;share/argj801_ctl_platform_interfaces/local_setup.dsv
+source;share/argj801_ctl_platform_interfaces/local_setup.sh
+source;share/argj801_ctl_platform_interfaces/local_setup.zsh

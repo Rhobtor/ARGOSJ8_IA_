@@ -1,0 +1,17 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/msg/_cmd_throttle_msg_s.c.o"
+  "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/msg/_cmd_throttle_msg_s.c.o.d"
+  "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_emergency_stop_s.c.o"
+  "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_emergency_stop_s.c.o.d"
+  "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_get_velocity_s.c.o"
+  "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_get_velocity_s.c.o.d"
+  "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_set_velocity_s.c.o"
+  "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_set_velocity_s.c.o.d"
+  "rosidl_generator_py/argj801_ctl_platform_interfaces/libargj801_ctl_platform_interfaces__rosidl_generator_py.pdb"
+  "rosidl_generator_py/argj801_ctl_platform_interfaces/libargj801_ctl_platform_interfaces__rosidl_generator_py.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

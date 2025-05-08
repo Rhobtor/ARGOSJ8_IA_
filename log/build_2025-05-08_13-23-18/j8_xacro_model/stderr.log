@@ -1,0 +1,22 @@
+[0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake:2 (cmake_policy):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+Call Stack (most recent call first):
+  /usr/share/cmake/ignition-cmake2/cmake2/FindJSONCPP.cmake:34 (find_package)
+  /usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools4/ignition-fuel_tools4-config.cmake:94 (find_package)
+  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:251 (find_package)
+  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+  CMakeLists.txt:13 (find_package)
+
+[0m
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/src/gazebo_ros_j8_wheels_speed.cpp:[m[K In member function ‘[01m[Kvoid gazebo_plugins::GazeboRosDiffDrivePrivate::UpdateWheelVelocities()[m[K’:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/src/gazebo_ros_j8_wheels_speed.cpp:675:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  675 |   double [01;35m[Kvr[m[K = target_x_;
+      |          [01;35m[K^~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/src/gazebo_ros_j8_wheels_speed.cpp:676:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kva[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  676 |   double [01;35m[Kva[m[K =  target_rot_;
+      |          [01;35m[K^~[m[K

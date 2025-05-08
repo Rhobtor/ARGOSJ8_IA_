@@ -1,0 +1,9 @@
+{
+  "package_name": "argj801_ctl_platform_interfaces",
+  "non_idl_tuples": [
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform_interfaces:srv/SetVelocity.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform_interfaces:srv/GetVelocity.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform_interfaces:srv/EmergencyStop.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform_interfaces:msg/CmdThrottleMsg.msg"
+  ]
+}

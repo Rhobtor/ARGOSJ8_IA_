@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-d491e2bd2b400f9bbdf6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "ublox_msgs__py",
+					"jsonFile" : "directory-ublox_msgs__py-2ba51f53534501fa48b3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_msgs/ublox_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ublox_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ublox_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ublox_msgs_egg-68782cd776b7dd2d0b53.json",
+					"name" : "ament_cmake_python_build_ublox_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ublox_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ublox_msgs-ced7071bac16ce036870.json",
+					"name" : "ament_cmake_python_copy_ublox_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs-4f6745edab9f8754a500.json",
+					"name" : "ublox_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__cpp-8e2cbbf84f0001620473.json",
+					"name" : "ublox_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ublox_msgs__py::@61a4643d33acea4965b6",
+					"jsonFile" : "target-ublox_msgs__py-81f2eb43064d825c0f61.json",
+					"name" : "ublox_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_generator_c-025e445f6b8a763957e5.json",
+					"name" : "ublox_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_generator_py-9e7a234db428f2292a43.json",
+					"name" : "ublox_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_typesupport_c-4a0759f58eae9ad35b78.json",
+					"name" : "ublox_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_typesupport_c__pyext-3c7214457c24ee205752.json",
+					"name" : "ublox_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_typesupport_cpp-2319368eccf7825384f5.json",
+					"name" : "ublox_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_typesupport_fastrtps_c-39b0a978d5accfa30c56.json",
+					"name" : "ublox_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_typesupport_fastrtps_c__pyext-3079241620c3f29d83e0.json",
+					"name" : "ublox_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_typesupport_fastrtps_cpp-d79a616fba4430127131.json",
+					"name" : "ublox_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_typesupport_introspection_c-5f9c020b9b00404b174c.json",
+					"name" : "ublox_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_typesupport_introspection_c__pyext-92027f31554c057e3da2.json",
+					"name" : "ublox_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs__rosidl_typesupport_introspection_cpp-35cf10a35e41621d49b6.json",
+					"name" : "ublox_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs_lib-82fb3cfc5c1b46fa175b.json",
+					"name" : "ublox_msgs_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ublox_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ublox_msgs_uninstall-b90bf5f9840a173b6fba.json",
+					"name" : "ublox_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d10b21104652c10bef36.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_msgs",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/src/argo_drivers_pkgs/ublox/ublox_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

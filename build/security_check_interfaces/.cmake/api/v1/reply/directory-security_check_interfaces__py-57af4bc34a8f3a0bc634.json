@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "security_check_interfaces__py",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/build/security_check_interfaces/security_check_interfaces__py"
+	}
+}

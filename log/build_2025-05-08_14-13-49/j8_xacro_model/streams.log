@@ -1,0 +1,197 @@
+[0.151s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model -- -j16 -l16
+[0.183s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.472s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[0.520s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.565s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.571s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.587s] -- Searching for dependencies of ignition-math6
+[0.600s] -- Looking for OGRE...
+[0.607s] -- Found Ogre Ghadamon (1.9.0)
+[0.607s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.624s] -- Looking for OGRE_Paging...
+[0.624s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.624s] -- Looking for OGRE_Terrain...
+[0.624s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.624s] -- Looking for OGRE_Property...
+[0.624s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.624s] -- Looking for OGRE_RTShaderSystem...
+[0.625s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.625s] -- Looking for OGRE_Volume...
+[0.625s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.625s] -- Looking for OGRE_Overlay...
+[0.625s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.887s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.887s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.887s] -- Searching for dependencies of ignition-transport8
+[0.891s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.907s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.912s] -- Checking for module 'libzmq >= 4'
+[0.931s] --   Found libzmq, version 4.3.4
+[0.983s] -- Checking for module 'uuid'
+[0.996s] --   Found uuid, version 2.37.2
+[1.029s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.029s] -- Searching for dependencies of ignition-msgs5
+[1.048s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.054s] -- Checking for module 'tinyxml2'
+[1.067s] --   Found tinyxml2, version 9.0.0
+[1.094s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.094s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.094s] -- Searching for dependencies of ignition-common3
+[1.095s] -- Looking for dlfcn.h - found
+[1.095s] -- Looking for libdl - found
+[1.107s] -- Searching for <ignition-common3> component [graphics]
+[1.107s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.108s] -- Searching for dependencies of ignition-common3-graphics
+[1.108s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.109s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.109s] -- Searching for dependencies of ignition-fuel_tools4
+[1.141s] [0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake:2 (cmake_policy):
+[1.141s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[1.141s]   CMake.
+[1.141s] 
+[1.141s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[1.142s]   CMake that the project does not need compatibility with older versions.
+[1.142s] Call Stack (most recent call first):
+[1.142s]   /usr/share/cmake/ignition-cmake2/cmake2/FindJSONCPP.cmake:34 (find_package)
+[1.142s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools4/ignition-fuel_tools4-config.cmake:94 (find_package)
+[1.142s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:251 (find_package)
+[1.142s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[1.142s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[1.142s]   CMakeLists.txt:13 (find_package)
+[1.142s] 
+[1.142s] [0m
+[1.149s] -- Checking for module 'jsoncpp'
+[1.160s] --   Found jsoncpp, version 1.9.5
+[1.196s] -- Checking for module 'libzip'
+[1.209s] --   Found libzip, version 1.7.3
+[1.240s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.241s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.241s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.243s] -- Gazebo version: 11.10
+[1.243s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.271s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.274s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.281s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.293s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.310s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.364s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.366s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.479s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.542s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.567s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.591s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[1.596s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.600s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.602s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.708s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.730s] -- Found argj801_ctl_platform_interfaces: 0.0.0 (/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake)
+[1.751s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.812s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.812s] -- Configured cppcheck include dirs: /home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/include;$<BUILD_INTERFACE:/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/include>
+[1.812s] -- Configured cppcheck exclude dirs and/or files: 
+[1.813s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.814s] -- Added test 'lint_cmake' to check CMake code style
+[1.814s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.817s] -- Added test 'uncrustify' to check C / C++ code style
+[1.817s] -- Configured uncrustify additional arguments: 
+[1.818s] -- Added test 'xmllint' to check XML markup files
+[1.819s] -- Configuring done (1.7s)
+[1.843s] -- Generating done (0.0s)
+[1.849s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model
+[1.895s] [100%] Built target gazebo_ros_j8_wheels_plugin
+[1.900s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model -- -j16 -l16
+[1.902s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model
+[1.904s] -- Install configuration: ""
+[1.904s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/environment/library_path.sh
+[1.904s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/environment/library_path.dsv
+[1.904s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/lib/libgazebo_ros_j8_wheels_plugin.so
+[1.905s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//launch
+[1.905s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//launch/start_gazebo_j8.launch.py
+[1.905s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//worlds
+[1.906s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//worlds/empty_custom.world
+[1.906s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf
+[1.906s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/gps.xacro
+[1.906s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/panel.xacro
+[1.906s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/argo_j8.urdf.xacro
+[1.906s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/fixposition_sensor.xacro
+[1.907s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/wheel.urdf.xacro
+[1.907s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/lidar.xacro
+[1.907s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/sick_lidar.urdf.xacro
+[1.907s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/gps_holder.xacro
+[1.907s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/test.urdf
+[1.907s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/fixposition_holder.xacro
+[1.908s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/camera.xacro
+[1.908s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/side_bar.xacro
+[1.908s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//urdf/set_color.xacro
+[1.908s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes
+[1.908s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Left_bar.STL
+[1.908s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel5.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Central_fixposition_holder.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel_7.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Front_camera.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Fixposition_lower_case.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel_5.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Central_fixposition_feet.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel2.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Right_fixposition_holder.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Right_bar.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Bridge_panel_2.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Bridge_panel_4.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Left_fixposition_holder.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Bridge.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel_3.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel1.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/J8_top.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel_1.STL
+[1.909s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Velodyne.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Fix_position_metal_frame.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Fix_position_left_antenna.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Suspension_7.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Suspension_3.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel4.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Fixposition_right_antenna.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel8.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel_8.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Bridge_panel_1.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Back_camera.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Suspension_4.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Suspension_5.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel_6.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Left_fixposition_feet.STL
+[1.910s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Bridge_panel_3.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Right_gps.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel_2.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Fixposition_camera.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Left_gps.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Fixposition_upper_case.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Suspension_6.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Suspension_2.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Left_gps_holder.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel6.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel_4.STL
+[1.911s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Suspension_8.STL
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel3.STL
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Right_fixposition_feet.STL
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Sick.STL
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Right_gps_holder.STL
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Fixposion_base.STL
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Wheel7.STL
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/Suspension_1.STL
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model//meshes/base_link.STL
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/ament_index/resource_index/package_run_dependencies/j8_xacro_model
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/ament_index/resource_index/parent_prefix_path/j8_xacro_model
+[1.912s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/environment/ament_prefix_path.sh
+[1.912s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/environment/ament_prefix_path.dsv
+[1.913s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/environment/path.sh
+[1.913s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/environment/path.dsv
+[1.913s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/local_setup.bash
+[1.913s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/local_setup.sh
+[1.913s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/local_setup.zsh
+[1.913s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/local_setup.dsv
+[1.913s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/package.dsv
+[1.913s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/ament_index/resource_index/packages/j8_xacro_model
+[1.913s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/cmake/ament_cmake_export_libraries-extras.cmake
+[1.914s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/cmake/j8_xacro_modelConfig.cmake
+[1.914s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/cmake/j8_xacro_modelConfig-version.cmake
+[1.914s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/share/j8_xacro_model/package.xml
+[1.914s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model

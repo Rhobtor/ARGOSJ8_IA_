@@ -1,0 +1,323 @@
+[0.032s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/j8_joystick/wiimote_msgs -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs
+[1.313s] -- The C compiler identification is GNU 11.4.0
+[1.313s] -- The CXX compiler identification is GNU 11.4.0
+[1.313s] -- Detecting C compiler ABI info
+[1.313s] -- Detecting C compiler ABI info - done
+[1.313s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.313s] -- Detecting C compile features
+[1.313s] -- Detecting C compile features - done
+[1.313s] -- Detecting CXX compiler ABI info
+[1.313s] -- Detecting CXX compiler ABI info - done
+[1.313s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.314s] -- Detecting CXX compile features
+[1.314s] -- Detecting CXX compile features - done
+[1.314s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.879s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.166s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[2.690s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.718s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.793s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.903s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.050s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.489s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.315s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[13.570s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[15.025s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[15.035s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[15.035s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[15.035s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[15.035s]   the cmake_policy command to set the policy and suppress this warning.
+[15.036s] 
+[15.036s] Call Stack (most recent call first):
+[15.036s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[15.036s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[15.036s]   CMakeLists.txt:36 (rosidl_generate_interfaces)
+[15.036s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[15.036s] [0m
+[15.140s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[15.145s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[15.146s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[15.146s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[15.146s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[15.146s]   the cmake_policy command to set the policy and suppress this warning.
+[15.146s] 
+[15.146s] Call Stack (most recent call first):
+[15.146s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[15.146s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[15.150s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[15.150s]   CMakeLists.txt:36 (rosidl_generate_interfaces)
+[15.150s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[15.150s] [0m
+[15.206s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[15.206s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[15.206s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[15.206s]   the cmake_policy command to set the policy and suppress this warning.
+[15.207s] 
+[15.207s] Call Stack (most recent call first):
+[15.207s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[15.208s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[15.208s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[15.209s]   CMakeLists.txt:36 (rosidl_generate_interfaces)
+[15.209s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[15.209s] [0m
+[15.220s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[15.221s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[15.221s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[15.222s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[15.282s] -- Found PythonExtra: .so  
+[15.526s] -- Added test 'copyright' to check source files copyright and LICENSE
+[15.530s] -- Added test 'lint_cmake' to check CMake code style
+[15.533s] -- Added test 'xmllint' to check XML markup files
+[15.556s] -- Configuring done (15.5s)
+[15.738s] -- Generating done (0.2s)
+[15.786s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs
+[15.834s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/j8_joystick/wiimote_msgs -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs
+[15.840s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs -- -j16 -l16
+[25.292s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[25.292s] [  2%] Built target wiimote_msgs__cpp
+[25.292s] [  2%] Built target ament_cmake_python_copy_wiimote_msgs
+[25.293s] [  4%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[25.293s] [  6%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/wiimote_msgs/msg/detail/ir_source_info__type_support.cpp.o[0m
+[25.293s] [  8%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/wiimote_msgs/msg/detail/timed_switch__type_support.cpp.o[0m
+[25.293s] [ 10%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/wiimote_msgs/msg/detail/state__type_support.cpp.o[0m
+[25.293s] [ 12%] [32m[1mLinking CXX shared library libwiimote_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[25.293s] [ 12%] Built target wiimote_msgs__rosidl_typesupport_introspection_cpp
+[25.293s] running egg_info
+[25.293s] creating wiimote_msgs.egg-info
+[25.293s] writing wiimote_msgs.egg-info/PKG-INFO
+[25.293s] writing dependency_links to wiimote_msgs.egg-info/dependency_links.txt
+[25.293s] writing top-level names to wiimote_msgs.egg-info/top_level.txt
+[25.293s] writing manifest file 'wiimote_msgs.egg-info/SOURCES.txt'
+[25.293s] reading manifest file 'wiimote_msgs.egg-info/SOURCES.txt'
+[25.294s] writing manifest file 'wiimote_msgs.egg-info/SOURCES.txt'
+[25.294s] [ 12%] Built target ament_cmake_python_build_wiimote_msgs_egg
+[25.294s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[25.671s] [ 17%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/wiimote_msgs/msg/detail/dds_fastrtps/ir_source_info__type_support.cpp.o[0m
+[26.365s] [ 19%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/wiimote_msgs/msg/detail/dds_fastrtps/timed_switch__type_support.cpp.o[0m
+[27.249s] [ 21%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/wiimote_msgs/msg/detail/dds_fastrtps/state__type_support.cpp.o[0m
+[28.080s] [ 23%] [32m[1mLinking CXX shared library libwiimote_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[28.194s] [ 23%] Built target wiimote_msgs__rosidl_typesupport_fastrtps_cpp
+[28.198s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[30.233s] [ 27%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/wiimote_msgs/msg/ir_source_info__type_support.cpp.o[0m
+[30.711s] [ 29%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/wiimote_msgs/msg/timed_switch__type_support.cpp.o[0m
+[31.234s] [ 31%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/wiimote_msgs/msg/state__type_support.cpp.o[0m
+[31.834s] [ 34%] [32m[1mLinking CXX shared library libwiimote_msgs__rosidl_typesupport_cpp.so[0m
+[31.937s] [ 34%] Built target wiimote_msgs__rosidl_typesupport_cpp
+[31.958s] [ 36%] [34m[1mGenerating C code for ROS interfaces[0m
+[33.721s] [ 38%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_generator_c.dir/rosidl_generator_c/wiimote_msgs/msg/detail/ir_source_info__functions.c.o[0m
+[33.815s] [ 40%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_generator_c.dir/rosidl_generator_c/wiimote_msgs/msg/detail/timed_switch__functions.c.o[0m
+[33.902s] [ 42%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_generator_c.dir/rosidl_generator_c/wiimote_msgs/msg/detail/state__functions.c.o[0m
+[34.004s] [ 44%] [32m[1mLinking C shared library libwiimote_msgs__rosidl_generator_c.so[0m
+[34.053s] [ 44%] Built target wiimote_msgs__rosidl_generator_c
+[34.062s] [ 46%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35.606s] [ 48%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/wiimote_msgs/msg/detail/ir_source_info__type_support_c.cpp.o[0m
+[36.078s] [ 51%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/wiimote_msgs/msg/detail/timed_switch__type_support_c.cpp.o[0m
+[36.980s] [ 53%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/wiimote_msgs/msg/detail/state__type_support_c.cpp.o[0m
+[37.203s] [ 55%] [32m[1mLinking CXX shared library libwiimote_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[37.359s] [ 55%] Built target wiimote_msgs__rosidl_typesupport_fastrtps_c
+[37.366s] [ 57%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[38.745s] [ 59%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/wiimote_msgs/msg/ir_source_info__type_support.cpp.o[0m
+[39.072s] [ 61%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/wiimote_msgs/msg/timed_switch__type_support.cpp.o[0m
+[39.138s] [ 63%] [32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/wiimote_msgs/msg/state__type_support.cpp.o[0m
+[39.199s] [ 65%] [32m[1mLinking CXX shared library libwiimote_msgs__rosidl_typesupport_c.so[0m
+[39.241s] [ 65%] Built target wiimote_msgs__rosidl_typesupport_c
+[39.248s] [ 68%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[40.910s] [ 70%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/wiimote_msgs/msg/detail/ir_source_info__type_support.c.o[0m
+[40.951s] [ 72%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/wiimote_msgs/msg/detail/timed_switch__type_support.c.o[0m
+[40.999s] [ 74%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/wiimote_msgs/msg/detail/state__type_support.c.o[0m
+[41.119s] [ 76%] [32m[1mLinking C shared library libwiimote_msgs__rosidl_typesupport_introspection_c.so[0m
+[41.151s] [ 76%] Built target wiimote_msgs__rosidl_typesupport_introspection_c
+[41.163s] [ 76%] Built target wiimote_msgs
+[41.176s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[43.791s] [ 78%] Built target wiimote_msgs__py
+[43.808s] [ 80%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_generator_py.dir/rosidl_generator_py/wiimote_msgs/msg/_ir_source_info_s.c.o[0m
+[43.957s] [ 82%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_generator_py.dir/rosidl_generator_py/wiimote_msgs/msg/_timed_switch_s.c.o[0m
+[44.126s] [ 85%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_generator_py.dir/rosidl_generator_py/wiimote_msgs/msg/_state_s.c.o[0m
+[44.369s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/wiimote_msgs/libwiimote_msgs__rosidl_generator_py.so[0m
+[44.418s] [ 87%] Built target wiimote_msgs__rosidl_generator_py
+[44.432s] [ 89%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[44.635s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[44.676s] [ 91%] Built target wiimote_msgs__rosidl_typesupport_fastrtps_c__pyext
+[44.693s] [ 93%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[44.851s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[44.891s] [ 95%] Built target wiimote_msgs__rosidl_typesupport_c__pyext
+[44.927s] [ 97%] [32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[45.164s] [100%] [32m[1mLinking C shared library rosidl_generator_py/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[45.206s] [100%] Built target wiimote_msgs__rosidl_typesupport_introspection_c__pyext
+[45.233s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs -- -j16 -l16
+[45.241s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs
+[51.499s] -- Install configuration: ""
+[51.499s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/ament_index/resource_index/rosidl_interfaces/wiimote_msgs
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/state.h
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_generator_c__visibility_control.h
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/timed_switch.h
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.h
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__struct.h
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__functions.h
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.h
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__struct.h
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__functions.c
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.h
+[51.500s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__functions.h
+[51.501s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__functions.c
+[51.501s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__functions.h
+[51.501s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__struct.h
+[51.501s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__functions.c
+[51.501s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/ir_source_info.h
+[51.501s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/environment/library_path.sh
+[51.501s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/environment/library_path.dsv
+[51.501s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_generator_c.so
+[51.501s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_generator_c.so" to ""
+[51.501s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[51.501s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[51.501s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[51.501s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_fastrtps_c.h
+[51.502s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_fastrtps_c.h
+[51.502s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_fastrtps_c.h
+[51.502s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[51.502s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_fastrtps_c.so
+[51.502s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[51.503s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[51.503s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[51.503s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/ir_source_info.hpp
+[51.503s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/timed_switch.hpp
+[51.503s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[51.514s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/state.hpp
+[51.514s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[51.514s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__builder.hpp
+[51.514s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__builder.hpp
+[51.514s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__traits.hpp
+[51.514s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.hpp
+[51.514s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__builder.hpp
+[51.514s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__traits.hpp
+[51.514s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__traits.hpp
+[51.514s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__struct.hpp
+[51.514s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.hpp
+[51.515s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__struct.hpp
+[51.515s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.hpp
+[51.515s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__struct.hpp
+[51.515s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[51.515s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[51.515s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[51.515s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[51.515s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_fastrtps_cpp.hpp
+[51.515s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_fastrtps_cpp.hpp
+[51.515s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/dds_fastrtps
+[51.515s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_fastrtps_cpp.hpp
+[51.515s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_fastrtps_cpp.so
+[51.515s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[51.516s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[51.516s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[51.516s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[51.516s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[51.516s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_introspection_c.h
+[51.516s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.c
+[51.516s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.c
+[51.516s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.c
+[51.516s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_introspection_c.h
+[51.516s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_introspection_c.h
+[51.516s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_introspection_c.so
+[51.516s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_introspection_c.so" to ""
+[51.516s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_c.so
+[51.517s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_c.so" to ""
+[51.517s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[51.517s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[51.517s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[51.517s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.cpp
+[51.517s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.cpp
+[51.517s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.cpp
+[51.518s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_introspection_cpp.hpp
+[51.520s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_introspection_cpp.hpp
+[51.520s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_introspection_cpp.hpp
+[51.520s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_introspection_cpp.so
+[51.520s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[51.520s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_cpp.so
+[51.520s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_cpp.so" to ""
+[51.520s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/environment/pythonpath.sh
+[51.520s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/environment/pythonpath.dsv
+[51.520s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs-3.1.0-py3.10.egg-info
+[51.520s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs-3.1.0-py3.10.egg-info/top_level.txt
+[51.520s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs-3.1.0-py3.10.egg-info/SOURCES.txt
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs-3.1.0-py3.10.egg-info/PKG-INFO
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs-3.1.0-py3.10.egg-info/dependency_links.txt
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/__init__.py
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_c.c
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/libwiimote_msgs__rosidl_generator_py.so
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/_state_s.c
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/_timed_switch_s.c
+[51.521s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/_ir_source_info.py
+[51.522s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/_ir_source_info_s.c
+[51.522s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/__init__.py
+[51.522s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/_state.py
+[51.522s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/_timed_switch.py
+[51.522s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[51.522s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[51.522s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs'...
+[51.522s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/__init__.py'...
+[51.522s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg'...
+[51.522s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/__init__.py'...
+[51.522s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/_ir_source_info.py'...
+[51.522s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/_state.py'...
+[51.522s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/msg/_timed_switch.py'...
+[51.523s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[51.523s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[51.523s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[51.523s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[51.523s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[51.523s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/local/lib/python3.10/dist-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[51.525s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_generator_py.so
+[51.525s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_generator_py.so" to ""
+[51.525s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/msg/IrSourceInfo.idl
+[51.525s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/msg/State.idl
+[51.525s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/msg/TimedSwitch.idl
+[51.525s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/msg/IrSourceInfo.msg
+[51.525s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/msg/State.msg
+[51.525s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/msg/TimedSwitch.msg
+[51.525s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/ament_index/resource_index/package_run_dependencies/wiimote_msgs
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/ament_index/resource_index/parent_prefix_path/wiimote_msgs
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/environment/ament_prefix_path.sh
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/environment/ament_prefix_path.dsv
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/environment/path.sh
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/environment/path.dsv
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/local_setup.bash
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/local_setup.sh
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/local_setup.zsh
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/local_setup.dsv
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/package.dsv
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/ament_index/resource_index/packages/wiimote_msgs
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_cExport.cmake
+[51.526s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_cExport-noconfig.cmake
+[51.527s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[51.527s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[51.527s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_cppExport.cmake
+[51.527s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[51.527s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[51.530s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cExport.cmake
+[51.530s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[51.530s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cExport.cmake
+[51.530s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[51.530s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[51.530s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cppExport.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_pyExport.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_pyExport-noconfig.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/rosidl_cmake-extras.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgsConfig.cmake
+[51.531s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgsConfig-version.cmake
+[51.532s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/wiimote_msgs/share/wiimote_msgs/package.xml
+[51.546s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/wiimote_msgs

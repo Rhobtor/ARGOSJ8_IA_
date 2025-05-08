@@ -1,0 +1,85 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "src/argj801_lcm/libargj801_lcm.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"src/argj801_lcm/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/rhobtor/PHD/ARGOJ8_IA/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/src/argj801_lcm/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "argj801_lcm::@99e17c5933834dd48ee1",
+	"name" : "argj801_lcm",
+	"nameOnDisk" : "libargj801_lcm.a",
+	"paths" : 
+	{
+		"build" : "src/argj801_lcm",
+		"source" : "src/argj801_lcm"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/argj801_lcm/src/LCM_interface.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

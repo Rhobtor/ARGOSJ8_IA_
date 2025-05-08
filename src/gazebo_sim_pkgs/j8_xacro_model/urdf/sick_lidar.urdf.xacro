@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <link name="Sick_link">
+      <inertial>
+            <origin rpy="0 0 -1.5707963267948966" xyz="1.50 0.02 0.27732"/>
+            <mass value="0.22144"/>
+            <inertia ixx="0.00069055" ixy="0" ixz="0" iyy="0.0006838" iyz="0" izz="0.00083911"/>
+          </inertial>
+          <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Sick.STL"/>
+            </geometry>
+            <!-- Default color for all lidars -->
+            <material name="">
+              <color rgba="0.5 0.5 0.5 1"/>
+            </material>
+          </visual>
+          <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Sick.STL"/>
+            </geometry>
+          </collision>
+    </link>
+
+
+
+
+
+    <!-- Joint Definition -->
+    <joint name="Sick_joint" type="fixed">
+      <origin rpy="0 0 -1.5707963267948966" xyz="1.50 0.02 0.27732"/>
+      <parent link="J8_top"/>
+      <child link="Sick_link"/>
+      <axis xyz="0 0 0"/>
+    </joint>
+
+
+  
+    <gazebo reference="Sick_link">
+      <sensor type="gpu_ray" name="SickLidar">
+        <pose>0 0 0 0 0 0</pose>
+        <visualize>1</visualize>
+        <update_rate>10</update_rate>
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>720</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle>
+              <max_angle>3.141592653589793</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.5</min>
+            <max>30.0</max>
+            <resolution>0.01</resolution>
+          </range>
+          <noise>
+            <type>gaussian</type>
+            <mean>0.0</mean>
+            <stddev>0.01</stddev>
+          </noise>
+        </ray>
+        <plugin name="lidar_controller" filename="libgazebo_ros_ray_sensor.so">
+          <ros>
+            <argument>use_sim_time:=true</argument>
+            <argument>~/out:=/sick_lidar</argument>
+          </ros>
+
+          <frame_name>Sick_link</frame_name>
+          <output_type>sensor_msgs/LaserScan</output_type>
+   
+        </plugin>
+      </sensor>
+    </gazebo>
+  
+</robot>
+

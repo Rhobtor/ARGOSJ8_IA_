@@ -1,0 +1,7 @@
+{
+  "package_name": "security_check_interfaces",
+  "non_idl_tuples": [
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/security_check/security_check_interfaces:srv/PasswordCheck.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/security_check/security_check_interfaces:srv/GetSecurityCheckStatus.srv"
+  ]
+}

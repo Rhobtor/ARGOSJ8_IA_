@@ -1,0 +1,71 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found argj801_ctl_platform_interfaces: 0.0.0 (/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake)
+-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+-- Found self_test: 4.0.3 (/opt/ros/humble/share/self_test/cmake)
+-- Found diagnostic_updater: 4.0.3 (/opt/ros/humble/share/diagnostic_updater/cmake)
+-- Configuring done (3.6s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform
+[ 14%] [32mBuilding CXX object src/argj801_lcm/CMakeFiles/argj801_lcm.dir/src/LCM_interface.cpp.o[0m
+[ 28%] [32m[1mLinking CXX static library libargj801_lcm.a[0m
+[ 28%] Built target argj801_lcm
+[ 42%] [32mBuilding CXX object CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_kinematic_model.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/ARGJ801_ctl_platform.dir/src/arduino_interface/serial_arduino.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_ctl_platform_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ARGJ801_ctl_platform[0m
+[100%] Built target ARGJ801_ctl_platform
+-- Install configuration: ""
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/lib/argj801_ctl_platform/ARGJ801_ctl_platform
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/lib/argj801_ctl_platform/ARGJ801_ctl_platform" to ""
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform//launch
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform//launch/argj801_ctl_platform_launch.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform//config
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform//config/params.yaml
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/ament_index/resource_index/package_run_dependencies/argj801_ctl_platform
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/ament_index/resource_index/parent_prefix_path/argj801_ctl_platform
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/environment/ament_prefix_path.sh
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/environment/ament_prefix_path.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/environment/path.sh
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/environment/path.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/local_setup.bash
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/local_setup.sh
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/local_setup.zsh
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/local_setup.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/package.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/ament_index/resource_index/packages/argj801_ctl_platform
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/cmake/argj801_ctl_platformConfig.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/cmake/argj801_ctl_platformConfig-version.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_ctl_platform/package.xml
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_lcm//config
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_lcm//config/argj801_lcm_config_sensors.yaml
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform/share/argj801_lcm//config/argj801_lcm_config_platform.yaml

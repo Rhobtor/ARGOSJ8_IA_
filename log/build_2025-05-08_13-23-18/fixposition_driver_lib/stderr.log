@@ -1,0 +1,4 @@
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_lib/src/fixposition_driver.cpp:[m[K In member function ‘[01m[Kvirtual void fixposition::FixpositionDriver::WsCallback(const std::vector<int>&)[m[K’:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_lib/src/fixposition_driver.cpp:121:18:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kssize_t write(int, const void*, size_t)[m[K’ declared with attribute ‘[01m[Kwarn_unused_result[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-result-Wunused-result]8;;[m[K]
+  121 |             [01;35m[Kwrite(this->client_fd_, &message[0], sizeof(message))[m[K;
+      |             [01;35m[K~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

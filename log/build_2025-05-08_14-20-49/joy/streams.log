@@ -1,0 +1,39 @@
+[0.765s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/joy': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/sdl2_vendor:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/joy -- -j16 -l16
+[0.832s] [ 33%] Built target joy_node
+[0.832s] [ 66%] Built target joy_enumerate_devices
+[0.832s] [100%] Built target joy
+[1.099s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/joy' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/sdl2_vendor:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/joy -- -j16 -l16
+[1.113s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/joy': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/sdl2_vendor:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/joy
+[1.133s] -- Install configuration: ""
+[1.134s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/lib/libjoy.so
+[1.135s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/lib/joy/joy_node
+[1.135s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/lib/joy/joy_enumerate_devices
+[1.135s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/include/joy
+[1.135s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/include/joy/joy
+[1.135s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/include/joy/joy/joy.hpp
+[1.135s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/config
+[1.135s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/config/joy-params.yaml
+[1.135s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/launch
+[1.136s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/launch/joy-launch_test.py
+[1.136s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/launch/joy-composed-launch.py
+[1.136s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/ament_index/resource_index/package_run_dependencies/joy
+[1.136s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/ament_index/resource_index/parent_prefix_path/joy
+[1.137s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/environment/ament_prefix_path.sh
+[1.137s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/environment/ament_prefix_path.dsv
+[1.137s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/environment/path.sh
+[1.137s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/environment/path.dsv
+[1.137s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/local_setup.bash
+[1.137s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/local_setup.sh
+[1.137s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/local_setup.zsh
+[1.137s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/local_setup.dsv
+[1.137s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/package.dsv
+[1.137s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/ament_index/resource_index/packages/joy
+[1.138s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/ament_index/resource_index/rclcpp_components/joy
+[1.138s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/cmake/export_joyExport.cmake
+[1.138s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/cmake/export_joyExport-noconfig.cmake
+[1.138s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/cmake/ament_cmake_export_targets-extras.cmake
+[1.138s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.138s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/cmake/joyConfig.cmake
+[1.138s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/cmake/joyConfig-version.cmake
+[1.138s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/joy/share/joy/package.xml
+[1.207s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/joy' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/sdl2_vendor:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/joy

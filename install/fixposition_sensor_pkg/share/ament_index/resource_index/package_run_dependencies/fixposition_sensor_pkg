@@ -1,0 +1,1 @@
+xacro;rviz2;gazebo_dev;gazebo_ros;geometry_msgs;nav_msgs;rclcpp;tf2;tf2_geometry_msgs;tf2_ros;sensor_msgs;gazebo_plugins;gazebo_ros_pkgs;tf_transformations;ament_lint_auto;ament_lint_common

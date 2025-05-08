@@ -1,0 +1,160 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-126cbb2cc2515b8745cc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ctl_mission",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ctl_mission_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ctl_mission_egg-4b7c6b57949dd3baf96b.json",
+					"name" : "ament_cmake_python_build_ctl_mission_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ctl_mission::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ctl_mission-cdcf59eda8ab72bd6fb5.json",
+					"name" : "ament_cmake_python_copy_ctl_mission",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "back_home_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-back_home_node-51e701910fc0cf39f0d6.json",
+					"name" : "back_home_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller_node-ab155f0cf700a0580a1e.json",
+					"name" : "controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ctl_mission::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ctl_mission-6551bd5e7ac6f0f69c34.json",
+					"name" : "ctl_mission",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ctl_mission_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ctl_mission_uninstall-36fde9c64f44da47d3aa.json",
+					"name" : "ctl_mission_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "estop_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-estop_node-8a5b9491cf348177b714.json",
+					"name" : "estop_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "path_following::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-path_following-ef29ff8cc2ee2d53fe43.json",
+					"name" : "path_following",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "path_record_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-path_record_node-c839960535f1a1875e50.json",
+					"name" : "path_record_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ready_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ready_node-551d133b3472c26daf21.json",
+					"name" : "ready_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teleoperation_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teleoperation_node-066f79905be1033fb058.json",
+					"name" : "teleoperation_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e6ec4056ddf0bf42ec74.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rhobtor/PHD/ARGOJ8_IA/build/ctl_mission",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/src/ctl_mission/ctl_mission"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

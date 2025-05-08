@@ -1,0 +1,13 @@
+{
+  "package_name": "path_manager_interfaces",
+  "non_idl_tuples": [
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/path_manager/path_manager_interfaces:srv/WritePathToFile.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/path_manager/path_manager_interfaces:srv/ReadPathFromFile.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/path_manager/path_manager_interfaces:srv/ReturnRobotPath.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/path_manager/path_manager_interfaces:srv/RobotPath.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/path_manager/path_manager_interfaces:srv/GetFixFramePath.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/path_manager/path_manager_interfaces:srv/GetLLPath.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/path_manager/path_manager_interfaces:srv/PlanPath.srv",
+    "/home/rhobtor/PHD/ARGOJ8_IA/src/path_manager/path_manager_interfaces:srv/AssistEmergency.srv"
+  ]
+}

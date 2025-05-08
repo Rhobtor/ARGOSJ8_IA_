@@ -1,0 +1,46 @@
+[0.061s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/argo_drivers_pkgs/ublox/ublox_serialization -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization
+[0.823s] -- The C compiler identification is GNU 11.4.0
+[0.823s] -- The CXX compiler identification is GNU 11.4.0
+[0.823s] -- Detecting C compiler ABI info
+[0.823s] -- Detecting C compiler ABI info - done
+[0.823s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.823s] -- Detecting C compile features
+[0.824s] -- Detecting C compile features - done
+[0.824s] -- Detecting CXX compiler ABI info
+[0.824s] -- Detecting CXX compiler ABI info - done
+[0.824s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.824s] -- Detecting CXX compile features
+[0.824s] -- Detecting CXX compile features - done
+[0.824s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.824s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.037s] -- Configuring done (1.0s)
+[1.049s] -- Generating done (0.0s)
+[1.058s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization
+[1.092s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/argo_drivers_pkgs/ublox/ublox_serialization -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization
+[1.093s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization -- -j16 -l16
+[3.975s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization -- -j16 -l16
+[3.978s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization
+[4.343s] -- Install configuration: ""
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/include/ublox_serialization
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/include/ublox_serialization/ublox_serialization
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/include/ublox_serialization/ublox_serialization/serialization.hpp
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/include/ublox_serialization/ublox_serialization/checksum.hpp
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ament_index/resource_index/package_run_dependencies/ublox_serialization
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ament_index/resource_index/parent_prefix_path/ublox_serialization
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/environment/ament_prefix_path.sh
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/environment/ament_prefix_path.dsv
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/environment/path.sh
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/environment/path.dsv
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/local_setup.bash
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/local_setup.sh
+[4.344s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/local_setup.zsh
+[4.345s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/local_setup.dsv
+[4.345s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/package.dsv
+[4.345s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ament_index/resource_index/packages/ublox_serialization
+[4.345s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/cmake/export_ublox_serializationExport.cmake
+[4.345s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.345s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/cmake/ament_cmake_export_targets-extras.cmake
+[4.345s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/cmake/ublox_serializationConfig.cmake
+[4.345s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/cmake/ublox_serializationConfig-version.cmake
+[4.345s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/ublox_serialization/share/ublox_serialization/package.xml
+[4.361s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization

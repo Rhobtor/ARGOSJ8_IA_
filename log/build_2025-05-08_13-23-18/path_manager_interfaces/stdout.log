@@ -1,0 +1,444 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Configuring done (5.7s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/build/path_manager_interfaces
+[  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  2%] Built target ament_cmake_python_copy_path_manager_interfaces
+running egg_info
+creating path_manager_interfaces.egg-info
+writing path_manager_interfaces.egg-info/PKG-INFO
+writing dependency_links to path_manager_interfaces.egg-info/dependency_links.txt
+writing top-level names to path_manager_interfaces.egg-info/top_level.txt
+writing manifest file 'path_manager_interfaces.egg-info/SOURCES.txt'
+reading manifest file 'path_manager_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'path_manager_interfaces.egg-info/SOURCES.txt'
+[  2%] Built target ament_cmake_python_build_path_manager_interfaces_egg
+[  3%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_c.dir/rosidl_generator_c/path_manager_interfaces/srv/detail/write_path_to_file__functions.c.o[0m
+[  4%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_c.dir/rosidl_generator_c/path_manager_interfaces/srv/detail/read_path_from_file__functions.c.o[0m
+[  5%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_c.dir/rosidl_generator_c/path_manager_interfaces/srv/detail/return_robot_path__functions.c.o[0m
+[  6%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_c.dir/rosidl_generator_c/path_manager_interfaces/srv/detail/robot_path__functions.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_c.dir/rosidl_generator_c/path_manager_interfaces/srv/detail/get_fix_frame_path__functions.c.o[0m
+[  9%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_c.dir/rosidl_generator_c/path_manager_interfaces/srv/detail/get_ll_path__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_c.dir/rosidl_generator_c/path_manager_interfaces/srv/detail/plan_path__functions.c.o[0m
+[ 11%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_c.dir/rosidl_generator_c/path_manager_interfaces/srv/detail/assist_emergency__functions.c.o[0m
+[ 12%] [32m[1mLinking C shared library libpath_manager_interfaces__rosidl_generator_c.so[0m
+[ 12%] Built target path_manager_interfaces__rosidl_generator_c
+[ 13%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 14%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 16%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 16%] Built target path_manager_interfaces__cpp
+[ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 18%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/path_manager_interfaces/srv/write_path_to_file__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/path_manager_interfaces/srv/read_path_from_file__type_support.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/path_manager_interfaces/srv/return_robot_path__type_support.cpp.o[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/path_manager_interfaces/srv/robot_path__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/path_manager_interfaces/srv/detail/write_path_to_file__type_support_c.cpp.o[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/path_manager_interfaces/srv/detail/read_path_from_file__type_support_c.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/path_manager_interfaces/srv/get_fix_frame_path__type_support.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/path_manager_interfaces/srv/plan_path__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/path_manager_interfaces/srv/detail/return_robot_path__type_support_c.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/path_manager_interfaces/srv/detail/robot_path__type_support_c.cpp.o[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/path_manager_interfaces/srv/get_ll_path__type_support.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/path_manager_interfaces/srv/assist_emergency__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/path_manager_interfaces/srv/detail/get_fix_frame_path__type_support_c.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/path_manager_interfaces/srv/detail/get_ll_path__type_support_c.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/path_manager_interfaces/srv/detail/plan_path__type_support_c.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/path_manager_interfaces/srv/detail/assist_emergency__type_support_c.cpp.o[0m
+[ 39%] [32m[1mLinking CXX shared library libpath_manager_interfaces__rosidl_typesupport_c.so[0m
+[ 39%] Built target path_manager_interfaces__rosidl_typesupport_c
+[ 40%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/path_manager_interfaces/srv/detail/write_path_to_file__type_support.c.o[0m
+[ 41%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/path_manager_interfaces/srv/detail/read_path_from_file__type_support.c.o[0m
+[ 42%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/path_manager_interfaces/srv/detail/return_robot_path__type_support.c.o[0m
+[ 43%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/path_manager_interfaces/srv/detail/assist_emergency__type_support.c.o[0m
+[ 44%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/path_manager_interfaces/srv/detail/plan_path__type_support.c.o[0m
+[ 45%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/path_manager_interfaces/srv/detail/get_ll_path__type_support.c.o[0m
+[ 47%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/path_manager_interfaces/srv/detail/get_fix_frame_path__type_support.c.o[0m
+[ 48%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/path_manager_interfaces/srv/detail/robot_path__type_support.c.o[0m
+[ 49%] [32m[1mLinking C shared library libpath_manager_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 49%] Built target path_manager_interfaces__rosidl_typesupport_introspection_c
+[ 50%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/path_manager_interfaces/srv/detail/write_path_to_file__type_support.cpp.o[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/path_manager_interfaces/srv/detail/read_path_from_file__type_support.cpp.o[0m
+[ 52%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/path_manager_interfaces/srv/detail/return_robot_path__type_support.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/path_manager_interfaces/srv/detail/plan_path__type_support.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/path_manager_interfaces/srv/detail/assist_emergency__type_support.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/path_manager_interfaces/srv/detail/get_ll_path__type_support.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/path_manager_interfaces/srv/detail/dds_fastrtps/write_path_to_file__type_support.cpp.o[0m
+[ 58%] [32m[1mLinking CXX shared library libpath_manager_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 58%] Built target path_manager_interfaces__rosidl_typesupport_fastrtps_c
+[ 59%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/path_manager_interfaces/srv/write_path_to_file__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/path_manager_interfaces/srv/detail/get_fix_frame_path__type_support.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/path_manager_interfaces/srv/detail/robot_path__type_support.cpp.o[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/path_manager_interfaces/srv/detail/dds_fastrtps/assist_emergency__type_support.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/path_manager_interfaces/srv/assist_emergency__type_support.cpp.o[0m
+[ 65%] [32m[1mLinking CXX shared library libpath_manager_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 65%] Built target path_manager_interfaces__rosidl_typesupport_introspection_cpp
+[ 66%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/path_manager_interfaces/srv/plan_path__type_support.cpp.o[0m
+[ 67%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/path_manager_interfaces/srv/detail/dds_fastrtps/plan_path__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/path_manager_interfaces/srv/get_ll_path__type_support.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/path_manager_interfaces/srv/detail/dds_fastrtps/get_ll_path__type_support.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/path_manager_interfaces/srv/get_fix_frame_path__type_support.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/path_manager_interfaces/srv/robot_path__type_support.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/path_manager_interfaces/srv/return_robot_path__type_support.cpp.o[0m
+[ 74%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/path_manager_interfaces/srv/detail/dds_fastrtps/get_fix_frame_path__type_support.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/path_manager_interfaces/srv/read_path_from_file__type_support.cpp.o[0m
+[ 77%] [32m[1mLinking CXX shared library libpath_manager_interfaces__rosidl_typesupport_cpp.so[0m
+[ 77%] Built target path_manager_interfaces__rosidl_typesupport_cpp
+[ 78%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/path_manager_interfaces/srv/detail/dds_fastrtps/robot_path__type_support.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/path_manager_interfaces/srv/detail/dds_fastrtps/return_robot_path__type_support.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/path_manager_interfaces/srv/detail/dds_fastrtps/read_path_from_file__type_support.cpp.o[0m
+[ 81%] [32m[1mLinking CXX shared library libpath_manager_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 81%] Built target path_manager_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 81%] Built target path_manager_interfaces
+[ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 82%] Built target path_manager_interfaces__py
+[ 83%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_py.dir/rosidl_generator_py/path_manager_interfaces/srv/_write_path_to_file_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_py.dir/rosidl_generator_py/path_manager_interfaces/srv/_assist_emergency_s.c.o[0m
+[ 86%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_py.dir/rosidl_generator_py/path_manager_interfaces/srv/_plan_path_s.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_py.dir/rosidl_generator_py/path_manager_interfaces/srv/_get_ll_path_s.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_py.dir/rosidl_generator_py/path_manager_interfaces/srv/_get_fix_frame_path_s.c.o[0m
+[ 89%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_py.dir/rosidl_generator_py/path_manager_interfaces/srv/_robot_path_s.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_py.dir/rosidl_generator_py/path_manager_interfaces/srv/_return_robot_path_s.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_generator_py.dir/rosidl_generator_py/path_manager_interfaces/srv/_read_path_from_file_s.c.o[0m
+[ 93%] [32m[1mLinking C shared library rosidl_generator_py/path_manager_interfaces/libpath_manager_interfaces__rosidl_generator_py.so[0m
+[ 93%] Built target path_manager_interfaces__rosidl_generator_py
+[ 94%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/path_manager_interfaces/_path_manager_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 95%] [32m[1mLinking C shared library rosidl_generator_py/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 95%] Built target path_manager_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/path_manager_interfaces/_path_manager_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 97%] Built target path_manager_interfaces__rosidl_typesupport_c__pyext
+[ 98%] [32mBuilding C object CMakeFiles/path_manager_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/path_manager_interfaces/_path_manager_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target path_manager_interfaces__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/ament_index/resource_index/rosidl_interfaces/path_manager_interfaces
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/plan_path.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/assist_emergency.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/robot_path.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/return_robot_path.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/get_ll_path.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__functions.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__functions.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__type_support.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__functions.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__functions.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__struct.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__functions.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__struct.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__type_support.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__functions.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__type_support.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__functions.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__type_support.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__type_support.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__functions.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__functions.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__type_support.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__functions.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__functions.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__struct.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__struct.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__functions.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__struct.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__struct.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__functions.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__type_support.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__functions.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__struct.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__struct.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__functions.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__functions.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__type_support.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/get_fix_frame_path.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/write_path_to_file.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/read_path_from_file.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/environment/library_path.sh
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/environment/library_path.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__type_support.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__type_support.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__type_support.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__type_support.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__rosidl_typesupport_introspection_c.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__type_support.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__type_support.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__type_support.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__type_support.c
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/robot_path.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/get_fix_frame_path.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/write_path_to_file.hpp
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__type_support.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__type_support.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__builder.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__type_support.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__struct.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__builder.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__builder.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__traits.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__struct.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__struct.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__type_support.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__struct.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__type_support.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__traits.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__builder.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__struct.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__type_support.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__type_support.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__struct.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__traits.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__builder.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__type_support.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__builder.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__traits.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__builder.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__struct.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__traits.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__traits.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__struct.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__builder.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__traits.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__traits.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/return_robot_path.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/plan_path.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/read_path_from_file.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/assist_emergency.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/get_ll_path.hpp
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/dds_fastrtps
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__type_support.cpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_fix_frame_path__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__type_support.cpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__type_support.cpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__type_support.cpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__type_support.cpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/return_robot_path__type_support.cpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/assist_emergency__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/read_path_from_file__type_support.cpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/write_path_to_file__type_support.cpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/plan_path__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/get_ll_path__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/environment/pythonpath.sh
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/environment/pythonpath.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces-0.0.0-py3.10.egg-info
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_get_ll_path.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_read_path_from_file.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_read_path_from_file_s.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_get_ll_path_s.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_return_robot_path_s.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_robot_path_s.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_write_path_to_file.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_robot_path.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_plan_path.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_return_robot_path.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_get_fix_frame_path_s.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/__init__.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_write_path_to_file_s.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_plan_path_s.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_assist_emergency_s.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_get_fix_frame_path.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_assist_emergency.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/libpath_manager_interfaces__rosidl_generator_py.so
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/_path_manager_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/_path_manager_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/__init__.py
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/_path_manager_interfaces_s.ep.rosidl_typesupport_c.c
+Listing '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces'...
+Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/__init__.py'...
+Listing '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv'...
+Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/__init__.py'...
+Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_assist_emergency.py'...
+Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_get_fix_frame_path.py'...
+Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_get_ll_path.py'...
+Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_plan_path.py'...
+Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_read_path_from_file.py'...
+Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_return_robot_path.py'...
+Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_robot_path.py'...
+Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/srv/_write_path_to_file.py'...
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/local/lib/python3.10/dist-packages/path_manager_interfaces/path_manager_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/lib/libpath_manager_interfaces__rosidl_generator_py.so" to ""
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/WritePathToFile.idl
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/ReadPathFromFile.idl
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/ReturnRobotPath.idl
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/RobotPath.idl
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/GetFixFramePath.idl
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/GetLLPath.idl
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/PlanPath.idl
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/AssistEmergency.idl
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/WritePathToFile.srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/WritePathToFile_Request.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/WritePathToFile_Response.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/ReadPathFromFile.srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/ReadPathFromFile_Request.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/ReadPathFromFile_Response.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/ReturnRobotPath.srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/ReturnRobotPath_Request.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/ReturnRobotPath_Response.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/RobotPath.srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/RobotPath_Request.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/RobotPath_Response.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/GetFixFramePath.srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/GetFixFramePath_Request.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/GetFixFramePath_Response.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/GetLLPath.srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/GetLLPath_Request.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/GetLLPath_Response.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/PlanPath.srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/PlanPath_Request.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/PlanPath_Response.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/AssistEmergency.srv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/AssistEmergency_Request.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/srv/AssistEmergency_Response.msg
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/ament_index/resource_index/package_run_dependencies/path_manager_interfaces
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/ament_index/resource_index/parent_prefix_path/path_manager_interfaces
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/environment/ament_prefix_path.sh
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/environment/ament_prefix_path.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/environment/path.sh
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/environment/path.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/local_setup.bash
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/local_setup.sh
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/local_setup.zsh
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/local_setup.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/package.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/ament_index/resource_index/packages/path_manager_interfaces
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/export_path_manager_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/export_path_manager_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/export_path_manager_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/export_path_manager_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/path_manager_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/path_manager_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/path_manager_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/path_manager_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/export_path_manager_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/export_path_manager_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/export_path_manager_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/path_manager_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/path_manager_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/path_manager_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/path_manager_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/export_path_manager_interfaces__rosidl_generator_pyExport.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/export_path_manager_interfaces__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/path_manager_interfacesConfig.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/cmake/path_manager_interfacesConfig-version.cmake
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/path_manager_interfaces/share/path_manager_interfaces/package.xml

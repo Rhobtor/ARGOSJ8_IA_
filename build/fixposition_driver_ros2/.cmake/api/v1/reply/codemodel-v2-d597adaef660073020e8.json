@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-ccc3d5b9464f0e7d5a7c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "fixposition_driver_ros2__py",
+					"jsonFile" : "directory-fixposition_driver_ros2__py-Release-80d77112a36fc4f6e29f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_driver_ros2/fixposition_driver_ros2__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "fixposition_driver_ros2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_fixposition_driver_ros2_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_fixposition_driver_ros2_egg-Release-a4d63f6f93dbc8a5d263.json",
+					"name" : "ament_cmake_python_build_fixposition_driver_ros2_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_fixposition_driver_ros2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_fixposition_driver_ros2-Release-a6751d64e397632dc320.json",
+					"name" : "ament_cmake_python_copy_fixposition_driver_ros2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2-Release-924943f91c2242477448.json",
+					"name" : "fixposition_driver_ros2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__cpp-Release-12d9c9470224d78e61da.json",
+					"name" : "fixposition_driver_ros2__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fixposition_driver_ros2__py::@b3146b2952e1c4f54d77",
+					"jsonFile" : "target-fixposition_driver_ros2__py-Release-04fa62a87cac4e2c8d60.json",
+					"name" : "fixposition_driver_ros2__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_generator_c-Release-fe126e6a7736aac0b0f0.json",
+					"name" : "fixposition_driver_ros2__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_generator_py-Release-89e7234130b03b394273.json",
+					"name" : "fixposition_driver_ros2__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_typesupport_c-Release-fd1945001477dfbb52ae.json",
+					"name" : "fixposition_driver_ros2__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_typesupport_c__pyext-Release-2b7067b661f88188abbd.json",
+					"name" : "fixposition_driver_ros2__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_typesupport_cpp-Release-8465837db900a24e0bf8.json",
+					"name" : "fixposition_driver_ros2__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_typesupport_fastrtps_c-Release-e3bb631db881a0fa2dba.json",
+					"name" : "fixposition_driver_ros2__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_typesupport_fastrtps_c__pyext-Release-b71c79748f32408c2256.json",
+					"name" : "fixposition_driver_ros2__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_typesupport_fastrtps_cpp-Release-d7fd8a752345db8e079b.json",
+					"name" : "fixposition_driver_ros2__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_typesupport_introspection_c-Release-3c3082ebb43dcac2c867.json",
+					"name" : "fixposition_driver_ros2__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_typesupport_introspection_c__pyext-Release-65544c354aa91d20b789.json",
+					"name" : "fixposition_driver_ros2__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2__rosidl_typesupport_introspection_cpp-Release-a0cb0ea22d2e79b1b504.json",
+					"name" : "fixposition_driver_ros2__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2_exec::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2_exec-Release-3caaf11eca3ed8f34071.json",
+					"name" : "fixposition_driver_ros2_exec",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fixposition_driver_ros2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fixposition_driver_ros2_uninstall-Release-8580aef8c01fc97e64e1.json",
+					"name" : "fixposition_driver_ros2_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-6f9a100e780b515006f8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_driver_ros2",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_ros2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

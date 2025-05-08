@@ -1,0 +1,9 @@
+/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization/CMakeFiles/uninstall.dir
+/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization/CMakeFiles/ublox_serialization_uninstall.dir
+/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization/CMakeFiles/test.dir
+/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization/CMakeFiles/edit_cache.dir
+/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization/CMakeFiles/rebuild_cache.dir
+/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization/CMakeFiles/list_install_components.dir
+/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization/CMakeFiles/install.dir
+/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization/CMakeFiles/install/local.dir
+/home/rhobtor/PHD/ARGOJ8_IA/build/ublox_serialization/CMakeFiles/install/strip.dir

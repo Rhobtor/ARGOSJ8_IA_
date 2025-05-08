@@ -1,0 +1,304 @@
+[0.026s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp
+[5.965s] -- The C compiler identification is GNU 11.4.0
+[5.966s] -- The CXX compiler identification is GNU 11.4.0
+[5.966s] -- Detecting C compiler ABI info
+[5.974s] -- Detecting C compiler ABI info - done
+[5.984s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.985s] -- Detecting C compile features
+[5.986s] -- Detecting C compile features - done
+[5.987s] -- Detecting CXX compiler ABI info
+[5.988s] -- Detecting CXX compiler ABI info - done
+[5.989s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[5.990s] -- Detecting CXX compile features
+[5.991s] -- Detecting CXX compile features - done
+[5.991s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[5.992s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.013s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[6.014s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.015s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.015s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.016s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.017s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.022s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.024s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.024s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.029s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.030s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.031s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.031s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.032s] -- Found Threads: TRUE  
+[6.033s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[6.039s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[6.039s] -- Checking for module 'bullet>=2.82'
+[6.040s] --   Found bullet, version 3.05
+[6.041s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[6.041s] -- Found assimp: /usr/include (found version "5.2.0") 
+[6.049s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[6.050s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[6.050s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[6.051s] -- Looking for ignition-math6 -- found version 6.15.1
+[6.056s] -- Searching for dependencies of ignition-math6
+[6.059s] -- Looking for OGRE...
+[6.059s] -- OGRE_PREFIX_WATCH changed.
+[6.060s] -- Checking for module 'OGRE'
+[6.061s] --   Found OGRE, version 1.9.0
+[6.061s] -- Found Ogre Ghadamon (1.9.0)
+[6.064s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[6.070s] -- Looking for OGRE_Paging...
+[6.071s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[6.074s] -- Looking for OGRE_Terrain...
+[6.074s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[6.075s] -- Looking for OGRE_Property...
+[6.076s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[6.076s] -- Looking for OGRE_RTShaderSystem...
+[6.082s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[6.085s] -- Looking for OGRE_Volume...
+[6.085s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[6.086s] -- Looking for OGRE_Overlay...
+[6.090s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[6.096s] -- Looking for ignition-math6 -- found version 6.15.1
+[6.097s] -- Looking for ignition-transport8 -- found version 8.2.1
+[6.098s] -- Searching for dependencies of ignition-transport8
+[6.098s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[6.099s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[6.100s] -- Checking for module 'libzmq >= 4'
+[6.100s] --   Found libzmq, version 4.3.4
+[6.108s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[6.108s] -- Checking for module 'uuid'
+[6.109s] --   Found uuid, version 2.37.2
+[6.119s] -- Found UUID: TRUE  
+[6.120s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[6.123s] -- Searching for dependencies of ignition-msgs5
+[6.132s] -- Looking for ignition-math6 -- found version 6.15.1
+[6.139s] -- Checking for module 'tinyxml2'
+[6.140s] --   Found tinyxml2, version 9.0.0
+[6.158s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[6.164s] -- Looking for ignition-common3 -- found version 3.14.0
+[6.164s] -- Searching for dependencies of ignition-common3
+[6.165s] -- Looking for dlfcn.h - found
+[6.166s] -- Looking for libdl - found
+[6.166s] -- Found DL: TRUE  
+[6.173s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[6.174s] -- Searching for <ignition-common3> component [graphics]
+[6.174s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[6.175s] -- Searching for dependencies of ignition-common3-graphics
+[6.175s] -- Looking for ignition-math6 -- found version 6.15.1
+[6.180s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[6.181s] -- Searching for dependencies of ignition-fuel_tools4
+[6.743s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[6.753s] [0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake:2 (cmake_policy):
+[6.753s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[6.753s]   CMake.
+[6.754s] 
+[6.754s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[6.754s]   CMake that the project does not need compatibility with older versions.
+[6.754s] Call Stack (most recent call first):
+[6.754s]   /usr/share/cmake/ignition-cmake2/cmake2/FindJSONCPP.cmake:34 (find_package)
+[6.754s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools4/ignition-fuel_tools4-config.cmake:94 (find_package)
+[6.755s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:251 (find_package)
+[6.756s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[6.756s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[6.756s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[6.756s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[6.756s]   CMakeLists.txt:6 (find_package)
+[6.756s] 
+[6.757s] [0m
+[6.767s] -- Checking for module 'jsoncpp'
+[6.799s] --   Found jsoncpp, version 1.9.5
+[6.976s] -- Found JSONCPP: TRUE  
+[6.989s] -- Checking for module 'libzip'
+[7.025s] --   Found libzip, version 1.7.3
+[7.139s] -- Found ZIP: TRUE  
+[7.139s] -- Looking for ignition-common3 -- found version 3.14.0
+[7.140s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.142s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[7.158s] -- Gazebo version: 11.10
+[7.162s] -- Checking for module 'tbb'
+[7.286s] --   Found tbb, version 2021.5.0
+[7.532s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[7.716s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[7.753s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[7.804s] -- Found octomap_msgs: 2.0.1 (/opt/ros/humble/share/octomap_msgs/cmake)
+[7.861s] -- Found octomap_ros: 0.4.4 (/opt/ros/humble/share/octomap_ros/cmake)
+[7.893s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[7.979s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+[7.979s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[7.979s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[7.979s]   cmake_policy command to set the policy and suppress this warning.
+[7.979s] 
+[7.979s]   CMake variable EIGEN_ROOT is set to:
+[7.980s] 
+[7.980s]     /usr/include/eigen3
+[7.980s] 
+[7.980s]   For compatibility, find_package is ignoring the variable, but code in a
+[7.980s]   .cmake module might still use it.
+[7.980s] Call Stack (most recent call first):
+[7.980s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+[7.980s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[7.980s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[7.980s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[7.980s]   CMakeLists.txt:15 (find_package)
+[7.980s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[7.980s] [0m
+[7.992s] -- Checking for module 'eigen3'
+[8.020s] --   Found eigen3, version 3.4.0
+[8.322s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[8.326s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[8.616s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[8.616s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[8.616s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[8.616s]   cmake_policy command to set the policy and suppress this warning.
+[8.616s] 
+[8.616s]   CMake variable FLANN_ROOT is set to:
+[8.616s] 
+[8.616s]     /usr
+[8.616s] 
+[8.616s]   For compatibility, find_package is ignoring the variable, but code in a
+[8.616s]   .cmake module might still use it.
+[8.617s] Call Stack (most recent call first):
+[8.617s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+[8.617s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+[8.617s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[8.617s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[8.617s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[8.617s]   CMakeLists.txt:15 (find_package)
+[8.617s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[8.617s] [0m
+[8.856s] -- Checking for module 'flann'
+[8.970s] --   Found flann, version 1.9.1
+[9.223s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[9.224s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[12.025s] -- Checking for module 'libusb-1.0'
+[12.069s] --   Found libusb-1.0, version 1.0.25
+[12.159s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[12.165s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[12.286s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[13.008s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[13.021s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[13.034s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[13.687s] -- Found Qhull version 8.0.2
+[14.270s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[14.944s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[14.950s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[14.950s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[14.952s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[14.955s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[14.958s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[14.959s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[14.960s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[14.963s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[14.970s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[14.970s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[14.973s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[14.973s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[14.975s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[14.978s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[14.980s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[14.982s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[14.985s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[14.988s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[14.992s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[14.993s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[14.994s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[14.995s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[14.998s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[15.002s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[15.009s] -- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[15.064s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[15.110s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[15.148s] -- Found geographic_msgs: 1.0.6 (/opt/ros/humble/share/geographic_msgs/cmake)
+[15.214s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[15.405s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[15.426s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[15.428s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[15.428s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[15.430s] -- Looking for ignition-math6 -- found version 6.15.1
+[15.430s] -- Looking for ignition-common3 -- found version 3.14.0
+[15.431s] -- Found car_interfaces: 0.0.0 (/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake)
+[16.683s] -- Configuring done (16.6s)
+[17.803s] -- Generating done (1.0s)
+[17.851s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp
+[17.884s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp
+[17.888s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp -- -j16 -l16
+[24.820s] [  4%] [32mBuilding CXX object CMakeFiles/navigation_nodes.dir/src/navigation_nodes.cpp.o[0m
+[34.452s] [  9%] [32m[1mLinking CXX executable navigation_nodes[0m
+[37.227s] [  9%] Built target navigation_nodes
+[37.236s] [ 13%] [32mBuilding CXX object CMakeFiles/move_plugin.dir/src/move_object.cpp.o[0m
+[59.225s] [ 18%] [32m[1mLinking CXX shared library libmove_plugin.so[0m
+[59.555s] [ 18%] Built target move_plugin
+[59.564s] [ 22%] [32mBuilding CXX object CMakeFiles/drive_plugin.dir/src/diffdrive_plugin_multi_wheel.cpp.o[0m
+[81.340s] [ 27%] [32m[1mLinking CXX shared library libdrive_plugin.so[0m
+[83.204s] [ 27%] Built target drive_plugin
+[83.221s] [ 31%] [32mBuilding CXX object CMakeFiles/joints_plugin.dir/src/joints.cpp.o[0m
+[95.876s] [ 36%] [32m[1mLinking CXX shared library libjoints_plugin.so[0m
+[96.378s] [ 36%] Built target joints_plugin
+[96.390s] [ 40%] [32mBuilding CXX object CMakeFiles/filtered_navigation_nodes.dir/src/filtered_navigation_nodes.cpp.o[0m
+[96.393s] [ 50%] [32mBuilding CXX object CMakeFiles/occupied_nodes_near_obstacles.dir/src/occupied_nodes_near_obstacles.cpp.o[0m
+[96.393s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacles_in_2d.dir/src/obstacles_in_2d.cpp.o[0m
+[96.397s] [ 54%] [32mBuilding CXX object CMakeFiles/check_goal.dir/src/check_goal.cpp.o[0m
+[111.499s] [ 59%] [32m[1mLinking CXX executable check_goal[0m
+[111.909s] [ 63%] [32m[1mLinking CXX executable filtered_navigation_nodes[0m
+[112.930s] [ 63%] Built target check_goal
+[113.793s] [ 63%] Built target filtered_navigation_nodes
+[117.222s] [ 68%] [32m[1mLinking CXX executable occupied_nodes_near_obstacles[0m
+[118.155s] [ 72%] [32m[1mLinking CXX executable obstacles_in_2d[0m
+[118.597s] [ 72%] Built target occupied_nodes_near_obstacles
+[118.623s] [ 77%] [32mBuilding CXX object CMakeFiles/frontier_values.dir/src/frontier_values.cpp.o[0m
+[118.623s] [ 81%] [32mBuilding CXX object CMakeFiles/move_navigation_nodes_frontier.dir/src/move_navigation_nodes_frontier.cpp.o[0m
+[118.633s] [ 86%] [32mBuilding CXX object CMakeFiles/navigation_nodes_ground.dir/src/navigation_nodes_ground.cpp.o[0m
+[120.108s] [ 86%] Built target obstacles_in_2d
+[130.958s] [ 90%] [32m[1mLinking CXX executable navigation_nodes_ground[0m
+[132.015s] [ 90%] Built target navigation_nodes_ground
+[135.055s] [ 95%] [32m[1mLinking CXX executable frontier_values[0m
+[136.439s] [ 95%] Built target frontier_values
+[145.250s] [100%] [32m[1mLinking CXX executable move_navigation_nodes_frontier[0m
+[146.736s] [100%] Built target move_navigation_nodes_frontier
+[146.741s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp -- -j16 -l16
+[146.744s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp
+[146.746s] -- Install configuration: ""
+[146.746s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/navigation_nodes
+[146.750s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/navigation_nodes" to ""
+[146.750s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/navigation_nodes_ground
+[146.753s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/navigation_nodes_ground" to ""
+[146.753s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/move_navigation_nodes_frontier
+[146.758s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/move_navigation_nodes_frontier" to ""
+[146.758s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/frontier_values
+[146.763s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/frontier_values" to ""
+[146.763s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/occupied_nodes_near_obstacles
+[146.766s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/occupied_nodes_near_obstacles" to ""
+[146.766s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/obstacles_in_2d
+[146.770s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/obstacles_in_2d" to ""
+[146.770s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/check_goal
+[146.774s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/check_goal" to ""
+[146.774s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/filtered_navigation_nodes
+[146.778s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/filtered_navigation_nodes" to ""
+[146.778s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/libmove_plugin.so
+[146.780s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/libmove_plugin.so" to ""
+[146.780s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/libdrive_plugin.so
+[146.787s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/libdrive_plugin.so" to ""
+[146.788s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/libjoints_plugin.so
+[146.789s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/libjoints_plugin.so" to ""
+[146.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/include/
+[146.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/include//utilities.hpp
+[146.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/include//obstacle_detection.hpp
+[146.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/include//visualization.hpp
+[146.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/include//motion.hpp
+[146.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/include//control_plugin.hpp
+[146.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/include//move_ros.hpp
+[146.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/include//odometria.hpp
+[146.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/ament_index/resource_index/package_run_dependencies/car_cpp
+[146.791s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/ament_index/resource_index/parent_prefix_path/car_cpp
+[146.791s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/environment/ament_prefix_path.sh
+[146.791s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/environment/ament_prefix_path.dsv
+[146.791s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/environment/path.sh
+[146.791s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/environment/path.dsv
+[146.791s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/local_setup.bash
+[146.791s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/local_setup.sh
+[146.791s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/local_setup.zsh
+[146.792s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/local_setup.dsv
+[146.792s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/package.dsv
+[146.792s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/ament_index/resource_index/packages/car_cpp
+[146.792s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/cmake/car_cppConfig.cmake
+[146.792s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/cmake/car_cppConfig-version.cmake
+[146.792s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/share/car_cpp/package.xml
+[146.793s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp

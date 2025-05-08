@@ -1,0 +1,883 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "libhector_gazebo_plugins__rosidl_typesupport_c.so"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"ament_execute_extensions",
+			"rosidl_generate_interfaces",
+			"install",
+			"link_directories",
+			"target_link_libraries",
+			"set_target_properties",
+			"find_package",
+			"add_definitions",
+			"dart_traverse_components",
+			"dart_package_init",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"/opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake",
+			"/opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake",
+			"CMakeLists.txt",
+			"/opt/ros/humble/share/rosidl_generator_c/cmake/rosidl_generator_c_generate_interfaces.cmake",
+			"/opt/ros/humble/share/rcutils/cmake/rcutilsExport.cmake",
+			"/opt/ros/humble/share/rcutils/cmake/ament_cmake_export_targets-extras.cmake",
+			"/opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake",
+			"/opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake",
+			"/opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake",
+			"/opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake",
+			"/opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake",
+			"/usr/share/dart/cmake/DARTFindBoost.cmake",
+			"/usr/share/dart/cmake/dart_dartComponent.cmake",
+			"/usr/share/dart/cmake/DARTConfig.cmake",
+			"/usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake",
+			"/opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake",
+			"/opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake",
+			"/opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake",
+			"/opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake",
+			"/opt/ros/humble/share/ament_cmake_ros/cmake/ament_cmake_ros-extras.cmake",
+			"/opt/ros/humble/share/ament_cmake_ros/cmake/ament_cmake_rosConfig.cmake",
+			"/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_c_generate_interfaces.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 286,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 90,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 120,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 130,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 130,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 130,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 130,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 130,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 123,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 4,
+				"parent" : 15
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 132,
+				"parent" : 16
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 132,
+				"parent" : 16
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 132,
+				"parent" : 16
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 132,
+				"parent" : 16
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 132,
+				"parent" : 16
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 137,
+				"parent" : 16
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"file" : 15,
+				"parent" : 23
+			},
+			{
+				"command" : 1,
+				"file" : 15,
+				"line" : 41,
+				"parent" : 24
+			},
+			{
+				"file" : 14,
+				"parent" : 25
+			},
+			{
+				"command" : 8,
+				"file" : 14,
+				"line" : 21,
+				"parent" : 26
+			},
+			{
+				"file" : 13,
+				"parent" : 27
+			},
+			{
+				"command" : 1,
+				"file" : 13,
+				"line" : 41,
+				"parent" : 28
+			},
+			{
+				"file" : 12,
+				"parent" : 29
+			},
+			{
+				"command" : 8,
+				"file" : 12,
+				"line" : 21,
+				"parent" : 30
+			},
+			{
+				"file" : 11,
+				"parent" : 31
+			},
+			{
+				"command" : 1,
+				"file" : 11,
+				"line" : 41,
+				"parent" : 32
+			},
+			{
+				"file" : 10,
+				"parent" : 33
+			},
+			{
+				"command" : 8,
+				"file" : 10,
+				"line" : 21,
+				"parent" : 34
+			},
+			{
+				"file" : 9,
+				"parent" : 35
+			},
+			{
+				"command" : 1,
+				"file" : 9,
+				"line" : 41,
+				"parent" : 36
+			},
+			{
+				"file" : 8,
+				"parent" : 37
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 21,
+				"parent" : 38
+			},
+			{
+				"file" : 7,
+				"parent" : 39
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 41,
+				"parent" : 40
+			},
+			{
+				"file" : 6,
+				"parent" : 41
+			},
+			{
+				"command" : 1,
+				"file" : 6,
+				"line" : 9,
+				"parent" : 42
+			},
+			{
+				"file" : 5,
+				"parent" : 43
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 56,
+				"parent" : 44
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 4
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"file" : 23,
+				"parent" : 47
+			},
+			{
+				"command" : 1,
+				"file" : 23,
+				"line" : 41,
+				"parent" : 48
+			},
+			{
+				"file" : 22,
+				"parent" : 49
+			},
+			{
+				"command" : 8,
+				"file" : 22,
+				"line" : 21,
+				"parent" : 50
+			},
+			{
+				"file" : 21,
+				"parent" : 51
+			},
+			{
+				"command" : 1,
+				"file" : 21,
+				"line" : 41,
+				"parent" : 52
+			},
+			{
+				"file" : 20,
+				"parent" : 53
+			},
+			{
+				"command" : 8,
+				"file" : 20,
+				"line" : 3,
+				"parent" : 54
+			},
+			{
+				"file" : 19,
+				"parent" : 55
+			},
+			{
+				"command" : 8,
+				"file" : 19,
+				"line" : 166,
+				"parent" : 56
+			},
+			{
+				"file" : 18,
+				"parent" : 57
+			},
+			{
+				"command" : 11,
+				"file" : 18,
+				"line" : 181,
+				"parent" : 58
+			},
+			{
+				"command" : 10,
+				"file" : 18,
+				"line" : 133,
+				"parent" : 59
+			},
+			{
+				"command" : 1,
+				"file" : 18,
+				"line" : 73,
+				"parent" : 60
+			},
+			{
+				"file" : 17,
+				"parent" : 61
+			},
+			{
+				"command" : 1,
+				"file" : 17,
+				"line" : 6,
+				"parent" : 62
+			},
+			{
+				"file" : 16,
+				"parent" : 63
+			},
+			{
+				"command" : 9,
+				"file" : 16,
+				"line" : 13,
+				"parent" : 64
+			},
+			{
+				"command" : 9,
+				"file" : 19,
+				"line" : 142,
+				"parent" : 56
+			},
+			{
+				"command" : 9,
+				"file" : 19,
+				"line" : 148,
+				"parent" : 56
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 48,
+				"parent" : 2
+			},
+			{
+				"file" : 26,
+				"parent" : 68
+			},
+			{
+				"command" : 8,
+				"file" : 26,
+				"line" : 21,
+				"parent" : 69
+			},
+			{
+				"file" : 25,
+				"parent" : 70
+			},
+			{
+				"command" : 1,
+				"file" : 25,
+				"line" : 41,
+				"parent" : 71
+			},
+			{
+				"file" : 24,
+				"parent" : 72
+			},
+			{
+				"command" : 9,
+				"file" : 24,
+				"line" : 25,
+				"parent" : 73
+			},
+			{
+				"command" : 12,
+				"file" : 3,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 12,
+				"file" : 3,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=gnu++14 -fPIC"
+				},
+				{
+					"backtrace" : 46,
+					"fragment" : "-Wall"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 65,
+					"define" : "BOOST_TEST_DYN_LINK"
+				},
+				{
+					"backtrace" : 66,
+					"define" : "LIBBULLET_VERSION=3.05"
+				},
+				{
+					"backtrace" : 67,
+					"define" : "LIBBULLET_VERSION_GT_282"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "RCUTILS_ENABLE_FAULT_INJECTION"
+				},
+				{
+					"define" : "ROSIDL_GENERATOR_C_BUILDING_DLL_hector_gazebo_plugins"
+				},
+				{
+					"backtrace" : 74,
+					"define" : "ROS_PACKAGE_NAME=\"hector_gazebo_plugins\""
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/gazebo-11"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/bullet"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/simbody"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/sdformat-9.7"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/ignition/math6"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/OGRE"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/OGRE/Terrain"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/OGRE/Paging"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/ignition/transport8"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/ignition/msgs5"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/ignition/common3"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "/usr/include/ignition/fuel_tools4"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/home/rhobtor/PHD/ARGOJ8_IA/src/hector_gazebo/include"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rosidl_runtime_cpp"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_fastrtps_c"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rmw"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_cpp"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rcpputils"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_introspection_c"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_introspection_cpp"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/sensor_msgs"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rclcpp"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/ament_index_cpp"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/libstatistics_collector"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rcl"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rosgraph_msgs"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/rcl_yaml_param_parser"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/statistics_msgs"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/opt/ros/humble/include/tracetools"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/srv"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/rosidl_generator_c"
+				},
+				{
+					"backtrace" : 76,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/builtin_interfaces"
+				},
+				{
+					"backtrace" : 76,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/geometry_msgs"
+				},
+				{
+					"backtrace" : 76,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/std_msgs"
+				},
+				{
+					"backtrace" : 76,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_runtime_c"
+				},
+				{
+					"backtrace" : 76,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_interface"
+				},
+				{
+					"backtrace" : 76,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rcutils"
+				},
+				{
+					"backtrace" : 76,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/rosidl_typesupport_c"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/geographic_msgs"
+				},
+				{
+					"backtrace" : 8,
+					"isSystem" : true,
+					"path" : "/opt/ros/humble/include/unique_identifier_msgs"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					77
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 8,
+			"id" : "hector_gazebo_plugins__rosidl_generator_c::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "hector_gazebo_plugins__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 6,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 6,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/home/rhobtor/PHD/ARGOJ8_IA/install/hector_gazebo_plugins"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-L/usr/lib/x86_64-linux-gnu/gazebo-11/plugins",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins:/opt/ros/humble/lib:",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 8,
+				"fragment" : "libhector_gazebo_plugins__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "/opt/ros/humble/lib/libgeographic_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/opt/ros/humble/lib/librosidl_typesupport_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "/opt/ros/humble/lib/libgeographic_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 18,
+				"fragment" : "/opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 20,
+				"fragment" : "/opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "/opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 14,
+				"fragment" : "/opt/ros/humble/lib/librosidl_runtime_c.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "/opt/ros/humble/lib/librcutils.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-rpath-link,/opt/ros/humble/lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "hector_gazebo_plugins__rosidl_typesupport_c",
+	"nameOnDisk" : "libhector_gazebo_plugins__rosidl_typesupport_c.so",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/rosidl_typesupport_c/hector_gazebo_plugins/srv/set_bias__type_support.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/rosidl_typesupport_c/hector_gazebo_plugins/srv/set_reference_geo_pose__type_support.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/rosidl_typesupport_c/hector_gazebo_plugins/srv/set_bias__type_support.cpp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

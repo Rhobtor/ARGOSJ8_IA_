@@ -1,0 +1,124 @@
+[0.685s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model -- -j16 -l16
+[0.721s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.935s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[0.947s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.982s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.986s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.990s] -- Searching for dependencies of ignition-math6
+[0.991s] -- Looking for OGRE...
+[0.999s] -- Found Ogre Ghadamon (1.9.0)
+[1.000s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.027s] -- Looking for OGRE_Paging...
+[1.028s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.028s] -- Looking for OGRE_Terrain...
+[1.028s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.028s] -- Looking for OGRE_Property...
+[1.028s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.028s] -- Looking for OGRE_RTShaderSystem...
+[1.029s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.029s] -- Looking for OGRE_Volume...
+[1.029s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.029s] -- Looking for OGRE_Overlay...
+[1.029s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.431s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.432s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.433s] -- Searching for dependencies of ignition-transport8
+[1.458s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.468s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.474s] -- Checking for module 'libzmq >= 4'
+[1.484s] --   Found libzmq, version 4.3.4
+[1.523s] -- Checking for module 'uuid'
+[1.538s] --   Found uuid, version 2.37.2
+[1.619s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.620s] -- Searching for dependencies of ignition-msgs5
+[1.674s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.674s] -- Checking for module 'tinyxml2'
+[1.679s] --   Found tinyxml2, version 9.0.0
+[1.680s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.680s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.680s] -- Searching for dependencies of ignition-common3
+[1.680s] -- Looking for dlfcn.h - found
+[1.680s] -- Looking for libdl - found
+[1.680s] -- Searching for <ignition-common3> component [graphics]
+[1.680s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.680s] -- Searching for dependencies of ignition-common3-graphics
+[1.681s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.681s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.681s] -- Searching for dependencies of ignition-fuel_tools4
+[1.681s] [0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake:2 (cmake_policy):
+[1.681s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[1.681s]   CMake.
+[1.681s] 
+[1.681s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[1.681s]   CMake that the project does not need compatibility with older versions.
+[1.681s] Call Stack (most recent call first):
+[1.681s]   /usr/share/cmake/ignition-cmake2/cmake2/FindJSONCPP.cmake:34 (find_package)
+[1.681s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools4/ignition-fuel_tools4-config.cmake:94 (find_package)
+[1.681s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:251 (find_package)
+[1.681s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[1.681s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[1.681s]   CMakeLists.txt:13 (find_package)
+[1.682s] 
+[1.682s] [0m
+[1.687s] -- Checking for module 'jsoncpp'
+[1.697s] --   Found jsoncpp, version 1.9.5
+[1.732s] -- Checking for module 'libzip'
+[1.744s] --   Found libzip, version 1.7.3
+[1.770s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.771s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.771s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.772s] -- Gazebo version: 11.10
+[1.773s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.798s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.800s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.806s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.816s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.829s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.862s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.863s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.948s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.999s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.012s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.031s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[2.035s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.038s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.039s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.132s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.153s] -- Found argj801_ctl_platform_interfaces: 0.0.0 (/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake)
+[2.172s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.217s] Error parsing '/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/package.xml':
+[2.253s] Traceback (most recent call last):
+[2.253s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[2.253s]     main()
+[2.253s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[2.253s]     raise e
+[2.253s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[2.253s]     package = parse_package_string(
+[2.253s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[2.254s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[2.254s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/package.xml':
+[2.254s] Error(s):
+[2.254s] - The generic dependency on 'xacro' is redundant with: build_depend, build_export_depend, exec_depend
+[2.254s] - The generic dependency on 'gazebo_ros' is redundant with: build_depend, build_export_depend, exec_depend
+[2.254s] - The generic dependency on 'gazebo_plugins' is redundant with: build_depend, build_export_depend, exec_depend
+[2.254s] - The generic dependency on 'gazebo_ros_pkgs' is redundant with: build_depend, build_export_depend, exec_depend
+[2.254s] - The generic dependency on 'tf2' is redundant with: build_depend
+[2.254s] - The generic dependency on 'sensor_msgs' is redundant with: build_depend
+[2.254s] - The generic dependency on 'geometry_msgs' is redundant with: build_depend
+[2.254s] - The generic dependency on 'std_msgs' is redundant with: build_depend, build_export_depend, exec_depend
+[2.254s] - The generic dependency on 'tf_transformations' is redundant with: build_depend, build_export_depend, exec_depend
+[2.265s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[2.265s]   execute_process(/usr/bin/python3
+[2.265s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[2.265s]   /home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/package.xml
+[2.265s]   /home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model/ament_cmake_core/package.cmake)
+[2.266s]   returned error code 1
+[2.266s] Call Stack (most recent call first):
+[2.266s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[2.266s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[2.266s]   CMakeLists.txt:59 (ament_lint_auto_find_test_dependencies)
+[2.266s] 
+[2.266s] [0m
+[2.266s] -- Configuring incomplete, errors occurred!
+[2.274s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[2.276s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model' returned '2': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model -- -j16 -l16
