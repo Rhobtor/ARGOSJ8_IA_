@@ -1,0 +1,18 @@
+[0.058s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_gnss_tf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/ARGOJ8_IA/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/install/GUI_pkg:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_gnss_tf -- -j16 -l16
+[0.836s] [100%] Built target fixposition_gnss_tf
+[0.854s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_gnss_tf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/ARGOJ8_IA/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/install/GUI_pkg:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_gnss_tf -- -j16 -l16
+[0.855s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_gnss_tf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/ARGOJ8_IA/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/install/GUI_pkg:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_gnss_tf
+[0.895s] -- Install configuration: "Release"
+[0.895s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/./include
+[0.895s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/./include/fixposition_gnss_tf
+[0.895s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/./include/fixposition_gnss_tf/gnss_tf.hpp
+[0.895s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/lib/libfixposition_gnss_tf.so
+[0.895s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/lib/libfixposition_gnss_tf.so
+[0.895s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/lib/cmake/fixposition_gnss_tf/fixposition_gnss_tf-targets.cmake
+[0.895s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/lib/cmake/fixposition_gnss_tf/fixposition_gnss_tf-targets-release.cmake
+[0.895s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/include/fixposition_gnss_tf
+[0.895s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/include/fixposition_gnss_tf/gnss_tf.hpp
+[0.896s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/share/fixposition_gnss_tf/package.xml
+[0.896s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/lib/cmake/fixposition_gnss_tf/fixposition_gnss_tf-config.cmake
+[0.896s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_gnss_tf/lib/cmake/fixposition_gnss_tf/fixposition_gnss_tf-config-version.cmake
+[1.055s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_gnss_tf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/ARGOJ8_IA/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/install/GUI_pkg:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_gnss_tf

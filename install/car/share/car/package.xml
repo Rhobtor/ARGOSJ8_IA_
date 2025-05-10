@@ -33,7 +33,8 @@
 
   <build_depend>car_interfaces</build_depend>
   <exec_depend>car_interfaces</exec_depend> 
-
+  <build_depend>rgj801_ctl_platform_interfaces</build_depend>
+  <exec_depend>rgj801_ctl_platform_interfaces</exec_depend> 
 
   <!-- Dependencias para pruebas -->
   <test_depend>ament_copyright</test_depend>

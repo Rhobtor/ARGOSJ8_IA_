@@ -1,0 +1,44 @@
+[ 33%] Built target gazebo_ros_fixposition_plugin
+[ 66%] Built target gazebo_ros_imu_sensor_mod
+[100%] Built target gazebo_ros_gps_sensor_mod
+-- Install configuration: ""
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/library_path.sh
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/library_path.dsv
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/lib/libgazebo_ros_fixposition_plugin.so
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/lib/libgazebo_ros_imu_sensor_mod.so
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/lib/libgazebo_ros_gps_sensor_mod.so
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//urdf
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//urdf/fixposition_main.xacro
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//urdf/fixposition_sensor.xacro
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//urdf/fixposition_holder.xacro
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Central_fixposition_holder.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Front_camera.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fixposition_lower_case.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Central_fixposition_feet.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Right_fixposition_holder.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Left_fixposition_holder.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fix_position_metal_frame.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fix_position_left_antenna.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fixposition_right_antenna.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Left_fixposition_feet.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fixposition_camera.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fixposition_upper_case.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Right_fixposition_feet.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fixposion_base.STL
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/ament_index/resource_index/package_run_dependencies/fixposition_sensor_pkg
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/ament_index/resource_index/parent_prefix_path/fixposition_sensor_pkg
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/path.sh
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/path.dsv
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/local_setup.bash
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/local_setup.sh
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/local_setup.zsh
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/local_setup.dsv
+-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/package.dsv
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/ament_index/resource_index/packages/fixposition_sensor_pkg
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/cmake/fixposition_sensor_pkgConfig.cmake
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/cmake/fixposition_sensor_pkgConfig-version.cmake
+-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/package.xml

@@ -50,6 +50,7 @@ launch/gazebo_simple7.launch.py
 launch/gazebo_simple8.launch.py
 launch/gazebo_simple9.launch.py
 launch/gazebo_simple_world.launch.py
+launch/j8.launch.py
 launch/joystick.launch.py
 launch/object_move_gazebo.launch.py
 launch/rtamap_test.launch.py

@@ -9,7 +9,8 @@ import os
 
 def generate_launch_description():
     pkg_share = get_package_share_directory('j8_xacro_model')
-    xacro_file = os.path.join(pkg_share, 'urdf', 'argo_j8.urdf.xacro')
+    xacro_file = os.path.join(pkg_share, 'urdf', 'argo_j8.xacro')
+    #xacro_file = os.path.join(pkg_share, 'urdf', 'test.urdf')
     world_file = os.path.join(pkg_share, 'worlds', 'empty_custom.world')
 
     # Process the xacro file to generate URDF
