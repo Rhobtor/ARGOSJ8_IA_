@@ -15,7 +15,7 @@ class VirtualCollisionZone(Node):
         self.collision_radius = self.get_parameter("collision_radius").value
         
         # Subscripciones
-        self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
+        self.create_subscription(Odometry, '/ARGJ801/odom_demo', self.odom_callback, 10)
         self.create_subscription(PoseArray, '/occupied_rejected_nodes', self.obstacle_callback, 10)
         
         # Publicador de la señal de colisión (Bool)

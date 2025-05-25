@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_gnss_tf",
-  "command": "/usr/bin/c++ -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT -Dfixposition_gnss_tf_EXPORTS -I/home/rhobtor/PHD/ARGOJ8_IA/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_gnss_tf-main/include -I/usr/include/eigen3  -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wno-unused-parameter -O3 -std=gnu++14 -fPIC -o CMakeFiles/fixposition_gnss_tf.dir/src/gnss_tf.cpp.o -c /home/rhobtor/PHD/ARGOJ8_IA/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_gnss_tf-main/src/gnss_tf.cpp",
-  "file": "/home/rhobtor/PHD/ARGOJ8_IA/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_gnss_tf-main/src/gnss_tf.cpp",
-  "output": "CMakeFiles/fixposition_gnss_tf.dir/src/gnss_tf.cpp.o"
-}
-]

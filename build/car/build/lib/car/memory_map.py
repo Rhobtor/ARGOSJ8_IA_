@@ -129,7 +129,7 @@ class PersistentDynamicOccupancyMemory(Node):
         self.memory_timestamp = None
         self.map_info = None
         self.iteration = 0
-        self.retention_steps = 60
+        self.retention_steps = 240
 
         # Crear cliente para resetear el octomap
         self.reset_client = self.create_client(Empty, 'octomap_server/reset')
@@ -146,14 +146,14 @@ class PersistentDynamicOccupancyMemory(Node):
         self.iteration += 1
         current_iter = self.iteration
 
-        # Cada 10 pasos se llama al servicio para reiniciar el octomap
-        if current_iter % 10 == 0:
-            if self.reset_client.wait_for_service(timeout_sec=1.0):
-                req = Empty.Request()
-                self.reset_client.call_async(req)
-                self.get_logger().info("Octomap reseteado en iteración {}.".format(current_iter))
-            else:
-                self.get_logger().warning("Servicio octomap_server/reset no disponible en iteración {}.".format(current_iter))
+        # # Cada 10 pasos se llama al servicio para reiniciar el octomap
+        # if current_iter % 10 == 0:
+        #     if self.reset_client.wait_for_service(timeout_sec=1.0):
+        #         req = Empty.Request()
+        #         self.reset_client.call_async(req)
+        #         self.get_logger().info("Octomap reseteado en iteración {}.".format(current_iter))
+        #     else:
+        #         self.get_logger().warning("Servicio octomap_server/reset no disponible en iteración {}.".format(current_iter))
 
         # Inicializar o actualizar la memoria
         if self.memory_grid is None or grid_np.shape != self.memory_grid.shape:

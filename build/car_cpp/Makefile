@@ -302,6 +302,32 @@ filtered_navigation_nodes/fast:
 .PHONY : filtered_navigation_nodes/fast
 
 #=============================================================================
+# Target rules for targets named slope_terrain
+
+# Build rule for target.
+slope_terrain: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 slope_terrain
+.PHONY : slope_terrain
+
+# fast build rule for target.
+slope_terrain/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slope_terrain.dir/build.make CMakeFiles/slope_terrain.dir/build
+.PHONY : slope_terrain/fast
+
+#=============================================================================
+# Target rules for targets named gridmap
+
+# Build rule for target.
+gridmap: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gridmap
+.PHONY : gridmap
+
+# fast build rule for target.
+gridmap/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gridmap.dir/build.make CMakeFiles/gridmap.dir/build
+.PHONY : gridmap/fast
+
+#=============================================================================
 # Target rules for targets named joints_plugin
 
 # Build rule for target.
@@ -435,6 +461,30 @@ src/frontier_values.s: src/frontier_values.cpp.s
 src/frontier_values.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/frontier_values.dir/build.make CMakeFiles/frontier_values.dir/src/frontier_values.cpp.s
 .PHONY : src/frontier_values.cpp.s
+
+src/gridmap.o: src/gridmap.cpp.o
+.PHONY : src/gridmap.o
+
+# target to build an object file
+src/gridmap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gridmap.dir/build.make CMakeFiles/gridmap.dir/src/gridmap.cpp.o
+.PHONY : src/gridmap.cpp.o
+
+src/gridmap.i: src/gridmap.cpp.i
+.PHONY : src/gridmap.i
+
+# target to preprocess a source file
+src/gridmap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gridmap.dir/build.make CMakeFiles/gridmap.dir/src/gridmap.cpp.i
+.PHONY : src/gridmap.cpp.i
+
+src/gridmap.s: src/gridmap.cpp.s
+.PHONY : src/gridmap.s
+
+# target to generate assembly for a file
+src/gridmap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gridmap.dir/build.make CMakeFiles/gridmap.dir/src/gridmap.cpp.s
+.PHONY : src/gridmap.cpp.s
 
 src/joints.o: src/joints.cpp.o
 .PHONY : src/joints.o
@@ -604,6 +654,30 @@ src/occupied_nodes_near_obstacles.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/occupied_nodes_near_obstacles.dir/build.make CMakeFiles/occupied_nodes_near_obstacles.dir/src/occupied_nodes_near_obstacles.cpp.s
 .PHONY : src/occupied_nodes_near_obstacles.cpp.s
 
+src/slope_terrain.o: src/slope_terrain.cpp.o
+.PHONY : src/slope_terrain.o
+
+# target to build an object file
+src/slope_terrain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slope_terrain.dir/build.make CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o
+.PHONY : src/slope_terrain.cpp.o
+
+src/slope_terrain.i: src/slope_terrain.cpp.i
+.PHONY : src/slope_terrain.i
+
+# target to preprocess a source file
+src/slope_terrain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slope_terrain.dir/build.make CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.i
+.PHONY : src/slope_terrain.cpp.i
+
+src/slope_terrain.s: src/slope_terrain.cpp.s
+.PHONY : src/slope_terrain.s
+
+# target to generate assembly for a file
+src/slope_terrain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/slope_terrain.dir/build.make CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.s
+.PHONY : src/slope_terrain.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -623,6 +697,7 @@ help:
 	@echo "... drive_plugin"
 	@echo "... filtered_navigation_nodes"
 	@echo "... frontier_values"
+	@echo "... gridmap"
 	@echo "... joints_plugin"
 	@echo "... move_navigation_nodes_frontier"
 	@echo "... move_plugin"
@@ -630,6 +705,7 @@ help:
 	@echo "... navigation_nodes_ground"
 	@echo "... obstacles_in_2d"
 	@echo "... occupied_nodes_near_obstacles"
+	@echo "... slope_terrain"
 	@echo "... src/check_goal.o"
 	@echo "... src/check_goal.i"
 	@echo "... src/check_goal.s"
@@ -642,6 +718,9 @@ help:
 	@echo "... src/frontier_values.o"
 	@echo "... src/frontier_values.i"
 	@echo "... src/frontier_values.s"
+	@echo "... src/gridmap.o"
+	@echo "... src/gridmap.i"
+	@echo "... src/gridmap.s"
 	@echo "... src/joints.o"
 	@echo "... src/joints.i"
 	@echo "... src/joints.s"
@@ -663,6 +742,9 @@ help:
 	@echo "... src/occupied_nodes_near_obstacles.o"
 	@echo "... src/occupied_nodes_near_obstacles.i"
 	@echo "... src/occupied_nodes_near_obstacles.s"
+	@echo "... src/slope_terrain.o"
+	@echo "... src/slope_terrain.i"
+	@echo "... src/slope_terrain.s"
 .PHONY : help
 
 

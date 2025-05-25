@@ -1,0 +1,5 @@
+  File "/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/joystick_control.py", line 35
+    )
+    ^
+SyntaxError: unmatched ')'
+

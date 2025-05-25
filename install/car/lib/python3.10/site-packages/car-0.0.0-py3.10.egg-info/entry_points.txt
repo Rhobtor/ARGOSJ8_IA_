@@ -8,11 +8,14 @@ joystick_control = car.joystick_control:main
 keyboard_control = car.keyboard_control:main
 lidar_detection = car.lidar_obstacle_detection:main
 map_navegation = car.map_navegation:main
+map_navegation_test = car.map_test_navigation_hgh:main
 memory_map = car.memory_map:main
 movement_predictive = car.movement_predictive:main
 path_ppo_cnn_lstm_full_model = car.path_ppo_cnn_lstm_full_model:main
 path_ppo_cnn_lstm_training_init_mode = car.path_ppo_cnn_lstm_training_init_mode:main
+path_ppo_cnn_lstm_training_init_mode_j8 = car.path_ppo_cnn_lstm_training_init_mode_j8:main
 path_ppo_cnn_lstm_training_init_mode_simple = car.path_ppo_cnn_lstm_training_init_mode_simple:main
 points_goal = car.points_goal:main
 supervisor_node = car.supervisor:main
+test_vel = car.test_vel:main
 

@@ -1,3 +1,0 @@
-[console_scripts]
-tcp_server_node = android_ros2_server.server:main
-

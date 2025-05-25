@@ -21,7 +21,7 @@ public:
 
     // Suscripción al topic "odom" (nav_msgs/Odometry)
     odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "odom", 10,
+      "/ARGJ801/odom_demo", 10,
       std::bind(&GoalReachedNode::odomCallback, this, std::placeholders::_1));
 
     // Publicador en el topic "goal_reached" (Bool)

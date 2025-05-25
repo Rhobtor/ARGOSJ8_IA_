@@ -26,7 +26,8 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(ignition-math6 REQUIRED)
 find_package(ignition-common3 REQUIRED)
 find_package(car_interfaces REQUIRED)
-
+find_package(grid_map_ros REQUIRED)
+find_package(OpenCV REQUIRED)
 
 
 # Agregar directorios de encabezados
@@ -138,6 +139,30 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+add_executable(slope_terrain src/slope_terrain.cpp)
+ament_target_dependencies(slope_terrain rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)
+
+install(TARGETS
+  slope_terrain
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+
+add_executable(gridmap src/gridmap.cpp)
+ament_target_dependencies(gridmap
+  rclcpp
+  grid_map_ros
+  geometry_msgs
+  visualization_msgs
+  tf2_ros
+  nav_msgs
+  std_srvs          # <-- 2. enlazar contra la interfaz de servicios
+  OpenCV
+)
+install(TARGETS
+ gridmap
+ DESTINATION lib/${PROJECT_NAME}
+ )
 
 
 

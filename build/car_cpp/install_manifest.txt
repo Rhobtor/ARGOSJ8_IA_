@@ -6,6 +6,8 @@
 /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/obstacles_in_2d
 /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/check_goal
 /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/filtered_navigation_nodes
+/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/slope_terrain
+/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/car_cpp/gridmap
 /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/libmove_plugin.so
 /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/libdrive_plugin.so
 /home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib/libjoints_plugin.so

@@ -13,7 +13,7 @@ import xacro
 
 def generate_launch_description():
     # Get the share directory of your package
-    share_dir = get_package_share_directory('car')
+    share_dir = get_package_share_directory('j8_xacro_model')
 
     # Instead of using os.path.join to build a string, use PathJoinSubstitution.
     # This creates a substitution that is compatible with the launch system.
@@ -28,7 +28,7 @@ def generate_launch_description():
         'octomap.yaml'
     ])
     # Get the car URDF by processing the xacro file
-    xacro_file = os.path.join(share_dir, 'urdf', 'car.xacro')
+    xacro_file = os.path.join(share_dir, 'urdf', 'argo_j8.xacro')
     config_file = os.path.join(share_dir, 'config', 'ekf_params.yaml')
     robot_description_config = xacro.process_file(xacro_file)
     robot_urdf = robot_description_config.toxml()
@@ -92,7 +92,7 @@ def generate_launch_description():
             '-topic', 'robot_description',
             '-x', '0.0',   # Initial X position
             '-y', '0.0',   # Initial Y position
-            '-z', '0.369183'  # Initial Z position (adjust if needed)
+            '-z', '0.52'  # Initial Z position (adjust if needed)
         ],
         output='screen'
     )
@@ -120,7 +120,7 @@ def generate_launch_description():
             'frame_id': 'map',
             'sensor_model.max_range': 40.0
         }],
-        remappings=[('cloud_in', 'scan_cloud_filtered')]
+        remappings=[('cloud_in', '/ARGJ801/Velodyne/scan_cloud')]
     )
 
     map_odom_tf = Node(
@@ -201,7 +201,11 @@ def generate_launch_description():
         executable='frontier_centroid',  # Nombre del ejecutable (por ejemplo, si instalaste el script con entry_point)
         name='frontier_centroid',  # Nombre del nodo
     )
-
+    gridmap= Node(
+        package='car_cpp',  # Asegúrate de que el paquete se llame 'car' o el que corresponda
+        executable='gridmap',  # Nombre del ejecutable (por ejemplo, si instalaste el script con entry_point)
+        name='gridmap',  # Nombre del nodo
+    )
 
     return LaunchDescription([
         # static_tf,  # Publica la transformación de 'odom' a 'map'
@@ -209,7 +213,7 @@ def generate_launch_description():
         robot_state_publisher_node,
         # joint_state_publisher_node,
         gazebo_server,
-        #gazebo_client,
+        gazebo_client,
         urdf_spawn_node,
         filter_points_cloud,
         frontier_values,
@@ -227,5 +231,6 @@ def generate_launch_description():
         navegation_map,
         memory_map,
         frontier_centroid,
+        gridmap
 
     ])

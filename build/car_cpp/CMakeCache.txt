@@ -738,6 +738,9 @@ OPENSSL_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/opencv4
+
 //path to 2d headers
 PCL_2D_INCLUDE_DIR:PATH=/usr/include/pcl-1.12
 
@@ -1465,7 +1468,7 @@ ZeroMQ_DIR:PATH=ZeroMQ_DIR-NOTFOUND
 ZeroMQ_LIBRARY_zmq:FILEPATH=/usr/lib/x86_64-linux-gnu/libzmq.so
 
 //Path to a library.
-_lib:FILEPATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib/libcar_interfaces__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/home/rhobtor/packages/install/grid_map_ros/lib/libgrid_map_ros.so
 
 //The directory containing a CMake configuration file for action_msgs.
 action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
@@ -1578,6 +1581,9 @@ composition_interfaces_DIR:PATH=/opt/ros/humble/share/composition_interfaces/cma
 //The directory containing a CMake configuration file for console_bridge.
 console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
 
+//The directory containing a CMake configuration file for cv_bridge.
+cv_bridge_DIR:PATH=/opt/ros/humble/share/cv_bridge/cmake
+
 //double-conversion include directory
 double-conversion_INCLUDE_DIR:PATH=/usr/include/double-conversion
 
@@ -1598,6 +1604,9 @@ fastrtps_DIR:PATH=/opt/ros/humble/share/fastrtps/cmake
 
 //The directory containing a CMake configuration file for fastrtps_cmake_module.
 fastrtps_cmake_module_DIR:PATH=/opt/ros/humble/share/fastrtps_cmake_module/cmake
+
+//The directory containing a CMake configuration file for filters.
+filters_DIR:PATH=/opt/ros/humble/share/filters/cmake
 
 //The directory containing a CMake configuration file for flann.
 flann_DIR:PATH=flann_DIR-NOTFOUND
@@ -1628,6 +1637,18 @@ geographic_msgs_DIR:PATH=/opt/ros/humble/share/geographic_msgs/cmake
 
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
+
+//The directory containing a CMake configuration file for grid_map_core.
+grid_map_core_DIR:PATH=/home/rhobtor/packages/install/grid_map_core/share/grid_map_core/cmake
+
+//The directory containing a CMake configuration file for grid_map_cv.
+grid_map_cv_DIR:PATH=/home/rhobtor/packages/install/grid_map_cv/share/grid_map_cv/cmake
+
+//The directory containing a CMake configuration file for grid_map_msgs.
+grid_map_msgs_DIR:PATH=/home/rhobtor/packages/install/grid_map_msgs/share/grid_map_msgs/cmake
+
+//The directory containing a CMake configuration file for grid_map_ros.
+grid_map_ros_DIR:PATH=/home/rhobtor/packages/install/grid_map_ros/share/grid_map_ros/cmake
 
 //The directory containing a CMake configuration file for ignition-cmake2.
 ignition-cmake2_DIR:PATH=/usr/share/cmake/ignition-cmake2
@@ -1673,6 +1694,9 @@ message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
 
 //Dependencies for the target
 move_plugin_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;sensor_msgs::sensor_msgs__rosidl_generator_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_fastrtps_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_c;general;sensor_msgs::sensor_msgs__rosidl_typesupport_introspection_cpp;general;sensor_msgs::sensor_msgs__rosidl_typesupport_cpp;general;sensor_msgs::sensor_msgs__rosidl_generator_py;general;std_msgs::std_msgs__rosidl_generator_c;general;std_msgs::std_msgs__rosidl_typesupport_fastrtps_c;general;std_msgs::std_msgs__rosidl_typesupport_fastrtps_cpp;general;std_msgs::std_msgs__rosidl_typesupport_introspection_c;general;std_msgs::std_msgs__rosidl_typesupport_c;general;std_msgs::std_msgs__rosidl_typesupport_introspection_cpp;general;std_msgs::std_msgs__rosidl_typesupport_cpp;general;std_msgs::std_msgs__rosidl_generator_py;general;geometry_msgs::geometry_msgs__rosidl_generator_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_cpp;general;geometry_msgs::geometry_msgs__rosidl_generator_py;general;nav_msgs::nav_msgs__rosidl_generator_c;general;nav_msgs::nav_msgs__rosidl_typesupport_fastrtps_c;general;nav_msgs::nav_msgs__rosidl_typesupport_fastrtps_cpp;general;nav_msgs::nav_msgs__rosidl_typesupport_introspection_c;general;nav_msgs::nav_msgs__rosidl_typesupport_c;general;nav_msgs::nav_msgs__rosidl_typesupport_introspection_cpp;general;nav_msgs::nav_msgs__rosidl_typesupport_cpp;general;nav_msgs::nav_msgs__rosidl_generator_py;general;tf2::tf2;general;tf2_ros::tf2_ros;general;tf2_ros::static_transform_broadcaster_node;general;tf2_msgs::tf2_msgs__rosidl_generator_c;general;tf2_msgs::tf2_msgs__rosidl_typesupport_fastrtps_c;general;tf2_msgs::tf2_msgs__rosidl_typesupport_introspection_c;general;tf2_msgs::tf2_msgs__rosidl_typesupport_c;general;tf2_msgs::tf2_msgs__rosidl_typesupport_fastrtps_cpp;general;tf2_msgs::tf2_msgs__rosidl_typesupport_introspection_cpp;general;tf2_msgs::tf2_msgs__rosidl_typesupport_cpp;general;tf2_msgs::tf2_msgs__rosidl_generator_py;general;/opt/ros/humble/lib/libgazebo_ros_node.so;general;/opt/ros/humble/lib/libgazebo_ros_utils.so;general;/opt/ros/humble/lib/libgazebo_ros_init.so;general;/opt/ros/humble/lib/libgazebo_ros_factory.so;general;/opt/ros/humble/lib/libgazebo_ros_properties.so;general;/opt/ros/humble/lib/libgazebo_ros_state.so;general;/opt/ros/humble/lib/libgazebo_ros_force_system.so;general;/opt/ros/humble/lib/librclcpp.so;general;ament_index_cpp::ament_index_cpp;general;libstatistics_collector::libstatistics_collector;general;rcl::rcl;general;rcl_interfaces::rcl_interfaces__rosidl_generator_c;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_fastrtps_c;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_introspection_c;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_c;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_fastrtps_cpp;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_introspection_cpp;general;rcl_interfaces::rcl_interfaces__rosidl_typesupport_cpp;general;rcl_interfaces::rcl_interfaces__rosidl_generator_py;general;rcl_yaml_param_parser::rcl_yaml_param_parser;general;rcpputils::rcpputils;general;rcutils::rcutils;general;builtin_interfaces::builtin_interfaces__rosidl_generator_c;general;builtin_interfaces::builtin_interfaces__rosidl_typesupport_fastrtps_c;general;builtin_interfaces::builtin_interfaces__rosidl_typesupport_introspection_c;general;builtin_interfaces::builtin_interfaces__rosidl_typesupport_c;general;builtin_interfaces::builtin_interfaces__rosidl_typesupport_fastrtps_cpp;general;builtin_interfaces::builtin_interfaces__rosidl_typesupport_introspection_cpp;general;builtin_interfaces::builtin_interfaces__rosidl_typesupport_cpp;general;builtin_interfaces::builtin_interfaces__rosidl_generator_py;general;rosgraph_msgs::rosgraph_msgs__rosidl_generator_c;general;rosgraph_msgs::rosgraph_msgs__rosidl_typesupport_fastrtps_c;general;rosgraph_msgs::rosgraph_msgs__rosidl_typesupport_fastrtps_cpp;general;rosgraph_msgs::rosgraph_msgs__rosidl_typesupport_introspection_c;general;rosgraph_msgs::rosgraph_msgs__rosidl_typesupport_c;general;rosgraph_msgs::rosgraph_msgs__rosidl_typesupport_introspection_cpp;general;rosgraph_msgs::rosgraph_msgs__rosidl_typesupport_cpp;general;rosgraph_msgs::rosgraph_msgs__rosidl_generator_py;general;rosidl_typesupport_cpp::rosidl_typesupport_cpp;general;statistics_msgs::statistics_msgs__rosidl_generator_c;general;statistics_msgs::statistics_msgs__rosidl_typesupport_fastrtps_c;general;statistics_msgs::statistics_msgs__rosidl_typesupport_fastrtps_cpp;general;statistics_msgs::statistics_msgs__rosidl_typesupport_introspection_c;general;statistics_msgs::statistics_msgs__rosidl_typesupport_c;general;statistics_msgs::statistics_msgs__rosidl_typesupport_introspection_cpp;general;statistics_msgs::statistics_msgs__rosidl_typesupport_cpp;general;statistics_msgs::statistics_msgs__rosidl_generator_py;general;tracetools::tracetools;general;BulletSoftBody;general;BulletDynamics;general;BulletCollision;general;LinearMath;general;SimTKcommon;general;SimTKmath;general;SimTKsimbody;general;dart;general;/usr/lib/x86_64-linux-gnu/libgazebo.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_client.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_gui.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_sensors.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_rendering.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_physics.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_ode.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_transport.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_msgs.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_util.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_common.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_opcode.so;general;/usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so;general;Boost::system;general;Boost::filesystem;general;Boost::program_options;general;Boost::regex;general;Boost::iostreams;general;/usr/lib/x86_64-linux-gnu/libprotobuf.so;general;sdformat9::sdformat9;optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so;general;Boost::thread;general;Boost::date_time;optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;general;ignition-common3::ignition-common3-graphics;general;tbb;
+
+//The directory containing a CMake configuration file for nav2_msgs.
+nav2_msgs_DIR:PATH=/opt/ros/humble/share/nav2_msgs/cmake
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/humble/share/nav_msgs/cmake
@@ -1851,6 +1875,12 @@ rmw_implementation_DIR:PATH=/opt/ros/humble/share/rmw_implementation/cmake
 //The directory containing a CMake configuration file for rmw_implementation_cmake.
 rmw_implementation_cmake_DIR:PATH=/opt/ros/humble/share/rmw_implementation_cmake/cmake
 
+//The directory containing a CMake configuration file for rosbag2_cpp.
+rosbag2_cpp_DIR:PATH=/opt/ros/humble/share/rosbag2_cpp/cmake
+
+//The directory containing a CMake configuration file for rosbag2_storage.
+rosbag2_storage_DIR:PATH=/opt/ros/humble/share/rosbag2_storage/cmake
+
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/humble/share/rosgraph_msgs/cmake
 
@@ -1950,8 +1980,14 @@ utf8cpp_INCLUDE_DIR:PATH=/usr/include/utf8cpp
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/humble/share/visualization_msgs/cmake
 
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp
+
 //The directory containing a CMake configuration file for yaml.
 yaml_DIR:PATH=/opt/ros/humble/cmake
+
+//The directory containing a CMake configuration file for yaml_cpp_vendor.
+yaml_cpp_vendor_DIR:PATH=/opt/ros/humble/share/yaml_cpp_vendor/cmake
 
 
 ########################
@@ -2166,7 +2202,7 @@ CURL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 CURL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 DART_DEFINITIONS:INTERNAL=
 DART_INCLUDE_DIRS:INTERNAL=/usr/include
-DART_LIBRARIES:INTERNAL=dart
+DART_LIBRARIES:INTERNAL=dart;dart
 //Boost min version requirement
 DART_MIN_BOOST_VERSION:INTERNAL=1.58.0
 DART_dart_DEFINITIONS:INTERNAL=
@@ -2191,7 +2227,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boo
 //Details about finding CURL
 FIND_PACKAGE_MESSAGE_DETAILS_CURL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcurl.so][/usr/include/x86_64-linux-gnu][c ][v7.81.0()]
 //Details about finding DART
-FIND_PACKAGE_MESSAGE_DETAILS_DART:INTERNAL=[/usr/include][dart][cfound components: dart ][v(6.6)]
+FIND_PACKAGE_MESSAGE_DETAILS_DART:INTERNAL=[/usr/include][dart;dart][cfound components: dart ][v(6.6)]
 //Details about finding DL
 FIND_PACKAGE_MESSAGE_DETAILS_DL:INTERNAL=[true][v()]
 //Details about finding Eigen
@@ -2204,6 +2240,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_FLANN:INTERNAL=[/usr/lib/x86_64-linux-gnu/libflann_
 FIND_PACKAGE_MESSAGE_DETAILS_FastRTPS:INTERNAL=[/opt/ros/humble/include][/opt/ros/humble/lib/libfastrtps.so;/opt/ros/humble/lib/libfastcdr.so][v()]
 //Details about finding JSONCPP
 FIND_PACKAGE_MESSAGE_DETAILS_JSONCPP:INTERNAL=[TRUE][v()]
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.5.4()]
 //Details about finding OpenSSL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libcrypto.so][/usr/include][c ][v3.0.2()]
 //Details about finding PCL_2D
@@ -3739,7 +3777,7 @@ pkgcfg_lib_ZeroMQ_zmq-ADVANCED:INTERNAL=1
 pkgcfg_lib__OPENSSL_crypto-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib__OPENSSL_ssl
 pkgcfg_lib__OPENSSL_ssl-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/usr/lib
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 //ADVANCED property for variable: utf8cpp_INCLUDE_DIR
 utf8cpp_INCLUDE_DIR-ADVANCED:INTERNAL=1
 

@@ -8,6 +8,8 @@
 /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/obstacles_in_2d.dir
 /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/check_goal.dir
 /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/filtered_navigation_nodes.dir
+/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/slope_terrain.dir
+/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/gridmap.dir
 /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/joints_plugin.dir
 /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/drive_plugin.dir
 /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/move_plugin.dir

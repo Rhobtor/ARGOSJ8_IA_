@@ -45,6 +45,10 @@ setup(
             'path_ppo_cnn_lstm_full_model= car.path_ppo_cnn_lstm_full_model:main',
             'inference_training_mode_simple= car.inference_training_mode_simple:main',
             'inference_full_model= car.inference_full_model:main',
+            'path_ppo_cnn_lstm_training_init_mode_j8= car.path_ppo_cnn_lstm_training_init_mode_j8:main',
+            'test_vel = car.test_vel:main',
+            'map_navegation_test= car.map_test_navigation_hgh:main',
+
         ],
     },
 )

@@ -1,9 +1,7 @@
 CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o: \
  /home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/src/gazebo_ros_j8_wheels_speed.cpp \
- /usr/include/stdc-predef.h /usr/include/gazebo-11/gazebo/common/Time.hh \
- /usr/include/c++/11/string \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+ /usr/include/stdc-predef.h \
+ /usr/include/gazebo-11/gazebo/common/Plugin.hh /usr/include/unistd.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -11,12 +9,62 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endianness.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+ /usr/include/x86_64-linux-gnu/sys/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types.h \
+ /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+ /usr/include/gazebo-11/gazebo/gazebo_config.h /usr/include/dlfcn.h \
+ /usr/include/x86_64-linux-gnu/bits/dlfcn.h \
+ /usr/include/x86_64-linux-gnu/bits/dl_find_object.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_algobase.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
  /usr/include/c++/11/pstl/pstl_config.h \
- /usr/include/c++/11/bits/stringfwd.h \
- /usr/include/c++/11/bits/memoryfwd.h \
- /usr/include/c++/11/bits/char_traits.h \
- /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -31,12 +79,26 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/c++/11/bits/stl_iterator.h \
  /usr/include/c++/11/bits/ptr_traits.h /usr/include/c++/11/debug/debug.h \
  /usr/include/c++/11/bits/predefined_ops.h \
+ /usr/include/c++/11/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+ /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \
+ /usr/include/c++/11/bits/exception.h \
+ /usr/include/c++/11/bits/memoryfwd.h \
+ /usr/include/c++/11/bits/range_access.h \
+ /usr/include/c++/11/initializer_list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/ext/alloc_traits.h \
+ /usr/include/c++/11/bits/alloc_traits.h \
+ /usr/include/c++/11/bits/stl_construct.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/string \
+ /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
  /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
@@ -48,74 +110,41 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/c++/11/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/c++/11/bits/allocator.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
- /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \
- /usr/include/c++/11/bits/exception.h \
  /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/iosfwd \
  /usr/include/c++/11/cctype /usr/include/ctype.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
- /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/c++/11/bits/ostream_insert.h \
  /usr/include/c++/11/bits/cxxabi_forced.h \
  /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h \
- /usr/include/c++/11/bits/range_access.h \
- /usr/include/c++/11/initializer_list \
  /usr/include/c++/11/bits/basic_string.h \
  /usr/include/c++/11/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
  /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
- /usr/include/c++/11/ext/alloc_traits.h \
- /usr/include/c++/11/bits/alloc_traits.h \
- /usr/include/c++/11/bits/stl_construct.h /usr/include/c++/11/string_view \
+ /usr/include/c++/11/string_view \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/string_view.tcc \
  /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
- /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
- /usr/include/x86_64-linux-gnu/bits/byteswap.h \
- /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
- /usr/include/x86_64-linux-gnu/sys/select.h \
- /usr/include/x86_64-linux-gnu/bits/select.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/11/bits/std_abs.h /usr/include/c++/11/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
@@ -128,161 +157,52 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
- /usr/include/c++/11/bits/basic_string.tcc /usr/include/c++/11/stdlib.h \
- /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
- /usr/include/c++/11/ios /usr/include/c++/11/exception \
- /usr/include/c++/11/bits/exception_ptr.h \
- /usr/include/c++/11/bits/cxxabi_init_exception.h \
- /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
- /usr/include/c++/11/bits/ios_base.h \
- /usr/include/c++/11/bits/locale_classes.h \
- /usr/include/c++/11/bits/locale_classes.tcc \
- /usr/include/c++/11/system_error \
- /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
- /usr/include/c++/11/stdexcept /usr/include/c++/11/streambuf \
- /usr/include/c++/11/bits/streambuf.tcc \
- /usr/include/c++/11/bits/basic_ios.h \
- /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
- /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
- /usr/include/c++/11/bits/streambuf_iterator.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
- /usr/include/c++/11/bits/locale_facets.tcc \
- /usr/include/c++/11/bits/basic_ios.tcc \
- /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /usr/include/gazebo-11/gazebo/common/CommonTypes.hh \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/node_handle.h \
- /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/stl_multimap.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/basic_string.tcc \
+ /usr/include/sdformat-9.7/sdf/sdf.hh \
+ /usr/include/sdformat-9.7/sdf/Actor.hh /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/invoke.h \
  /usr/include/c++/11/bits/shared_ptr.h \
- /usr/include/c++/11/bits/shared_ptr_base.h \
- /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h /usr/include/c++/11/typeinfo \
  /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
+ /usr/include/c++/11/bits/cxxabi_init_exception.h \
+ /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/shared_ptr_atomic.h \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /usr/include/boost/shared_ptr.hpp \
- /usr/include/boost/smart_ptr/shared_ptr.hpp \
- /usr/include/boost/smart_ptr/detail/shared_count.hpp \
- /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
- /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
- /usr/include/boost/config/detail/select_compiler_config.hpp \
- /usr/include/boost/config/compiler/gcc.hpp /usr/include/c++/11/cstddef \
- /usr/include/boost/config/detail/select_stdlib_config.hpp \
- /usr/include/c++/11/version \
- /usr/include/boost/config/stdlib/libstdcpp3.hpp /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /usr/include/boost/config/detail/select_platform_config.hpp \
- /usr/include/boost/config/platform/linux.hpp \
- /usr/include/boost/config/detail/posix_features.hpp \
- /usr/include/boost/config/detail/suffix.hpp \
- /usr/include/boost/config/helper_macros.hpp \
- /usr/include/boost/smart_ptr/detail/sp_counted_base.hpp \
- /usr/include/boost/smart_ptr/detail/sp_has_gcc_intrinsics.hpp \
- /usr/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp \
- /usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp \
- /usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
- /usr/include/boost/cstdint.hpp \
- /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
- /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
- /usr/include/boost/checked_delete.hpp \
- /usr/include/boost/core/checked_delete.hpp \
- /usr/include/boost/core/addressof.hpp \
- /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
- /usr/include/boost/throw_exception.hpp \
- /usr/include/boost/assert/source_location.hpp \
- /usr/include/boost/current_function.hpp \
- /usr/include/boost/config/workaround.hpp \
- /usr/include/boost/exception/exception.hpp \
- /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
- /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/stl_algo.h \
- /usr/include/c++/11/bits/algorithmfwd.h \
- /usr/include/c++/11/bits/stl_heap.h \
- /usr/include/c++/11/bits/uniform_int_dist.h \
- /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
- /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
- /usr/include/boost/assert.hpp /usr/include/assert.h \
- /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp \
- /usr/include/boost/smart_ptr/detail/spinlock.hpp \
- /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp \
- /usr/include/boost/smart_ptr/detail/yield_k.hpp \
- /usr/include/boost/smart_ptr/detail/sp_thread_pause.hpp \
- /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp \
- /usr/include/boost/config/pragma_message.hpp \
- /usr/include/c++/11/algorithm \
- /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
- /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
- /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
- /usr/include/gazebo-11/gazebo/util/system.hh \
- /usr/include/gazebo-11/gazebo/physics/Joint.hh \
- /usr/include/boost/any.hpp /usr/include/boost/type_index.hpp \
- /usr/include/boost/type_index/stl_type_index.hpp \
- /usr/include/boost/type_index/type_index_facade.hpp \
- /usr/include/boost/container_hash/hash_fwd.hpp \
- /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
- /usr/include/boost/static_assert.hpp \
- /usr/include/boost/detail/workaround.hpp \
- /usr/include/boost/core/demangle.hpp /usr/include/c++/11/cxxabi.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
- /usr/include/boost/type_traits/conditional.hpp \
- /usr/include/boost/type_traits/is_const.hpp \
- /usr/include/boost/type_traits/integral_constant.hpp \
- /usr/include/boost/type_traits/is_reference.hpp \
- /usr/include/boost/type_traits/is_lvalue_reference.hpp \
- /usr/include/boost/type_traits/is_rvalue_reference.hpp \
- /usr/include/boost/type_traits/is_volatile.hpp \
- /usr/include/boost/type_traits/remove_cv.hpp \
- /usr/include/boost/type_traits/remove_reference.hpp \
- /usr/include/boost/type_traits/decay.hpp \
- /usr/include/boost/type_traits/is_array.hpp \
- /usr/include/boost/type_traits/is_function.hpp \
- /usr/include/boost/type_traits/detail/config.hpp \
- /usr/include/boost/version.hpp \
- /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp \
- /usr/include/boost/type_traits/remove_bounds.hpp \
- /usr/include/boost/type_traits/remove_extent.hpp \
- /usr/include/boost/type_traits/add_pointer.hpp \
- /usr/include/boost/type_traits/add_reference.hpp \
- /usr/include/boost/utility/enable_if.hpp \
- /usr/include/boost/core/enable_if.hpp \
- /usr/include/boost/type_traits/is_same.hpp \
  /usr/include/ignition/math6/ignition/math/Pose3.hh \
  /usr/include/ignition/math6/gz/math/Pose3.hh \
  /usr/include/ignition/math6/gz/math/Quaternion.hh \
  /usr/include/ignition/math6/gz/math/Helpers.hh \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/limits /usr/include/c++/11/ctime \
- /usr/include/c++/11/bits/parse_numbers.h /usr/include/c++/11/cmath \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/limits \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/c++/11/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
@@ -303,7 +223,19 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/iomanip \
- /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/ios_base.h \
+ /usr/include/c++/11/bits/locale_classes.h \
+ /usr/include/c++/11/bits/locale_classes.tcc \
+ /usr/include/c++/11/system_error \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+ /usr/include/c++/11/stdexcept /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+ /usr/include/c++/11/streambuf /usr/include/c++/11/bits/streambuf.tcc \
+ /usr/include/c++/11/bits/streambuf_iterator.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/locale_facets_nonio.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
@@ -311,11 +243,20 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11/bits/locale_conv.h \
  /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
- /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/regex \
- /usr/include/c++/11/bitset /usr/include/c++/11/iterator \
- /usr/include/c++/11/bits/stream_iterator.h /usr/include/c++/11/stack \
- /usr/include/c++/11/deque /usr/include/c++/11/bits/stl_deque.h \
- /usr/include/c++/11/bits/deque.tcc /usr/include/c++/11/bits/stl_stack.h \
+ /usr/include/c++/11/istream /usr/include/c++/11/ios \
+ /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/basic_ios.tcc /usr/include/c++/11/ostream \
+ /usr/include/c++/11/bits/ostream.tcc \
+ /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/iostream \
+ /usr/include/c++/11/regex /usr/include/c++/11/bitset \
+ /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/stack /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/bits/stl_stack.h /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/cstring \
+ /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/11/bits/regex_constants.h \
  /usr/include/c++/11/bits/regex_error.h \
  /usr/include/c++/11/bits/regex_automaton.h \
@@ -338,21 +279,6 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/c++/11/bits/fstream.tcc \
  /usr/include/ignition/math6/gz/math/Matrix3.hh \
  /usr/include/ignition/math6/ignition/math/config.hh \
- /usr/include/ignition/math6/ignition/math/Vector3.hh \
- /usr/include/gazebo-11/gazebo/common/Event.hh /usr/include/c++/11/atomic \
- /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
- /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/mutex \
- /usr/include/c++/11/bits/std_mutex.h \
- /usr/include/c++/11/bits/unique_lock.h \
- /usr/include/gazebo-11/gazebo/gazebo_config.h \
- /usr/include/ignition/common3/ignition/common/Profiler.hh \
- /usr/include/ignition/common3/ignition/common/profiler/Export.hh \
- /usr/include/ignition/common3/ignition/common/profiler/detail/Export.hh \
- /usr/include/ignition/common3/ignition/common/SingletonT.hh \
- /usr/include/ignition/common3/ignition/common/config.hh \
- /usr/include/gazebo-11/gazebo/common/Events.hh \
- /usr/include/sdformat-9.7/sdf/sdf.hh \
- /usr/include/sdformat-9.7/sdf/Actor.hh \
  /usr/include/sdformat-9.7/sdf/Element.hh /usr/include/c++/11/any \
  /usr/include/c++/11/set /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
@@ -362,7 +288,7 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/ignition/math6/gz/math/graph/Edge.hh \
  /usr/include/ignition/math6/gz/math/graph/Vertex.hh \
  /usr/include/ignition/math6/gz/math/graph/Graph.hh \
- /usr/include/c++/11/cassert \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
  /usr/include/ignition/math6/gz/math/graph/GraphAlgorithms.hh \
  /usr/include/c++/11/queue /usr/include/c++/11/bits/stl_queue.h \
  /usr/include/ignition/math6/gz/math/AdditivelySeparableScalarField3.hh \
@@ -439,6 +365,7 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/ignition/math6/ignition/math/Temperature.hh \
  /usr/include/sdformat-9.7/sdf/Box.hh \
  /usr/include/ignition/math6/ignition/math/Box.hh \
+ /usr/include/ignition/math6/ignition/math/Vector3.hh \
  /usr/include/sdformat-9.7/sdf/Camera.hh \
  /usr/include/sdformat-9.7/sdf/Collision.hh \
  /usr/include/sdformat-9.7/sdf/Cylinder.hh \
@@ -475,129 +402,65 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/ignition/math6/ignition/math/Sphere.hh \
  /usr/include/sdformat-9.7/sdf/Surface.hh \
  /usr/include/sdformat-9.7/sdf/Visual.hh \
- /usr/include/sdformat-9.7/sdf/World.hh \
- /usr/include/gazebo-11/gazebo/common/Console.hh \
- /usr/include/boost/thread.hpp /usr/include/boost/thread/thread.hpp \
- /usr/include/boost/thread/thread_only.hpp \
- /usr/include/boost/thread/detail/platform.hpp \
- /usr/include/boost/config/requires_threads.hpp \
- /usr/include/boost/thread/pthread/thread_data.hpp \
- /usr/include/boost/thread/detail/config.hpp \
- /usr/include/boost/thread/detail/thread_safety.hpp \
- /usr/include/boost/thread/exceptions.hpp \
- /usr/include/boost/system/system_error.hpp \
- /usr/include/boost/system/error_code.hpp \
+ /usr/include/sdformat-9.7/sdf/World.hh /usr/include/boost/filesystem.hpp \
+ /usr/include/boost/filesystem/config.hpp /usr/include/boost/config.hpp \
+ /usr/include/boost/config/user.hpp \
+ /usr/include/boost/config/detail/select_compiler_config.hpp \
+ /usr/include/boost/config/compiler/gcc.hpp /usr/include/c++/11/cstddef \
+ /usr/include/boost/config/detail/select_stdlib_config.hpp \
+ /usr/include/c++/11/version \
+ /usr/include/boost/config/stdlib/libstdcpp3.hpp \
+ /usr/include/boost/config/detail/select_platform_config.hpp \
+ /usr/include/boost/config/platform/linux.hpp \
+ /usr/include/boost/config/detail/posix_features.hpp \
+ /usr/include/boost/config/detail/suffix.hpp \
+ /usr/include/boost/config/helper_macros.hpp \
  /usr/include/boost/system/api_config.hpp \
+ /usr/include/boost/detail/workaround.hpp \
+ /usr/include/boost/config/workaround.hpp \
+ /usr/include/boost/filesystem/path.hpp /usr/include/boost/assert.hpp \
+ /usr/include/boost/filesystem/path_traits.hpp \
+ /usr/include/boost/type_traits/is_array.hpp \
+ /usr/include/boost/type_traits/integral_constant.hpp \
+ /usr/include/boost/type_traits/decay.hpp \
+ /usr/include/boost/type_traits/is_function.hpp \
+ /usr/include/boost/type_traits/detail/config.hpp \
+ /usr/include/boost/version.hpp \
+ /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp \
+ /usr/include/boost/type_traits/remove_bounds.hpp \
+ /usr/include/boost/type_traits/remove_extent.hpp \
+ /usr/include/boost/type_traits/add_pointer.hpp \
+ /usr/include/boost/type_traits/remove_reference.hpp \
+ /usr/include/boost/type_traits/remove_cv.hpp \
+ /usr/include/boost/system/error_code.hpp \
  /usr/include/boost/system/detail/config.hpp \
- /usr/include/boost/cerrno.hpp \
+ /usr/include/boost/cstdint.hpp /usr/include/boost/cerrno.hpp \
  /usr/include/boost/system/detail/generic_category.hpp \
  /usr/include/boost/system/detail/system_category_posix.hpp \
  /usr/include/boost/system/detail/std_interoperability.hpp \
+ /usr/include/c++/11/mutex /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h \
+ /usr/include/boost/core/enable_if.hpp \
  /usr/include/boost/config/abi_prefix.hpp \
  /usr/include/boost/config/abi_suffix.hpp \
- /usr/include/boost/thread/lock_guard.hpp \
- /usr/include/boost/thread/detail/delete.hpp \
- /usr/include/boost/thread/detail/move.hpp \
- /usr/include/boost/type_traits/is_convertible.hpp \
- /usr/include/boost/type_traits/intrinsics.hpp \
- /usr/include/boost/type_traits/is_complete.hpp \
- /usr/include/boost/type_traits/declval.hpp \
- /usr/include/boost/type_traits/add_rvalue_reference.hpp \
- /usr/include/boost/type_traits/is_void.hpp \
- /usr/include/boost/type_traits/detail/yes_no_type.hpp \
- /usr/include/boost/type_traits/is_arithmetic.hpp \
- /usr/include/boost/type_traits/is_integral.hpp \
- /usr/include/boost/type_traits/is_floating_point.hpp \
- /usr/include/boost/type_traits/is_abstract.hpp \
- /usr/include/boost/type_traits/add_lvalue_reference.hpp \
- /usr/include/boost/move/utility.hpp \
- /usr/include/boost/move/detail/config_begin.hpp \
- /usr/include/boost/move/detail/workaround.hpp \
- /usr/include/boost/move/utility_core.hpp \
- /usr/include/boost/move/core.hpp \
- /usr/include/boost/move/detail/config_end.hpp \
- /usr/include/boost/move/detail/meta_utils.hpp \
- /usr/include/boost/move/detail/meta_utils_core.hpp \
- /usr/include/boost/move/traits.hpp \
- /usr/include/boost/move/detail/type_traits.hpp \
- /usr/include/boost/thread/detail/lockable_wrapper.hpp \
- /usr/include/boost/thread/lock_options.hpp \
- /usr/include/boost/thread/lock_types.hpp \
- /usr/include/boost/thread/lockable_traits.hpp \
- /usr/include/boost/thread/thread_time.hpp \
- /usr/include/boost/date_time/time_clock.hpp \
- /usr/include/boost/date_time/c_time.hpp \
- /usr/include/boost/date_time/compiler_config.hpp \
- /usr/include/boost/date_time/locale_config.hpp \
- /usr/include/x86_64-linux-gnu/sys/time.h \
- /usr/include/boost/date_time/microsec_time_clock.hpp \
- /usr/include/boost/date_time/posix_time/posix_time_types.hpp \
- /usr/include/boost/date_time/posix_time/ptime.hpp \
- /usr/include/boost/date_time/posix_time/posix_time_system.hpp \
- /usr/include/boost/date_time/posix_time/posix_time_config.hpp \
- /usr/include/boost/limits.hpp /usr/include/boost/config/no_tr1/cmath.hpp \
- /usr/include/boost/date_time/time_duration.hpp \
- /usr/include/boost/date_time/special_defs.hpp \
- /usr/include/boost/date_time/time_defs.hpp \
- /usr/include/boost/operators.hpp \
- /usr/include/boost/date_time/time_resolution_traits.hpp \
- /usr/include/boost/date_time/int_adapter.hpp \
- /usr/include/boost/date_time/gregorian/gregorian_types.hpp \
- /usr/include/boost/date_time/date.hpp \
- /usr/include/boost/date_time/year_month_day.hpp \
- /usr/include/boost/date_time/period.hpp \
- /usr/include/boost/date_time/gregorian/greg_calendar.hpp \
- /usr/include/boost/date_time/gregorian/greg_weekday.hpp \
- /usr/include/boost/date_time/constrained_value.hpp \
- /usr/include/boost/type_traits/is_base_of.hpp \
- /usr/include/boost/type_traits/is_base_and_derived.hpp \
- /usr/include/boost/type_traits/is_class.hpp \
- /usr/include/boost/date_time/date_defs.hpp \
- /usr/include/boost/date_time/gregorian/greg_day_of_year.hpp \
- /usr/include/boost/date_time/gregorian_calendar.hpp \
- /usr/include/boost/date_time/gregorian_calendar.ipp \
- /usr/include/boost/date_time/gregorian/greg_ymd.hpp \
- /usr/include/boost/date_time/gregorian/greg_day.hpp \
- /usr/include/boost/date_time/gregorian/greg_year.hpp \
- /usr/include/boost/date_time/gregorian/greg_month.hpp \
- /usr/include/boost/date_time/gregorian/greg_duration.hpp \
- /usr/include/boost/date_time/date_duration.hpp \
- /usr/include/boost/date_time/date_duration_types.hpp \
- /usr/include/boost/date_time/gregorian/greg_duration_types.hpp \
- /usr/include/boost/date_time/gregorian/greg_date.hpp \
- /usr/include/boost/date_time/adjust_functors.hpp \
- /usr/include/boost/date_time/wrapping_int.hpp \
- /usr/include/boost/date_time/date_generators.hpp \
- /usr/include/boost/date_time/date_clock_device.hpp \
- /usr/include/boost/date_time/date_iterator.hpp \
- /usr/include/boost/date_time/time_system_split.hpp \
- /usr/include/boost/date_time/time_system_counted.hpp \
- /usr/include/boost/date_time/time.hpp \
- /usr/include/boost/date_time/posix_time/date_duration_operators.hpp \
- /usr/include/boost/date_time/posix_time/posix_time_duration.hpp \
- /usr/include/boost/numeric/conversion/cast.hpp \
- /usr/include/boost/type.hpp \
- /usr/include/boost/numeric/conversion/converter.hpp \
- /usr/include/boost/numeric/conversion/conversion_traits.hpp \
- /usr/include/boost/numeric/conversion/detail/conversion_traits.hpp \
- /usr/include/boost/numeric/conversion/detail/meta.hpp \
- /usr/include/boost/mpl/if.hpp /usr/include/boost/mpl/aux_/value_wknd.hpp \
- /usr/include/boost/mpl/aux_/static_cast.hpp \
- /usr/include/boost/mpl/aux_/config/workaround.hpp \
- /usr/include/boost/mpl/aux_/config/integral.hpp \
- /usr/include/boost/mpl/aux_/config/msvc.hpp \
- /usr/include/boost/mpl/aux_/config/eti.hpp \
- /usr/include/boost/mpl/aux_/na_spec.hpp \
- /usr/include/boost/mpl/lambda_fwd.hpp \
- /usr/include/boost/mpl/void_fwd.hpp \
+ /usr/include/boost/system/system_error.hpp \
+ /usr/include/boost/iterator/iterator_facade.hpp \
+ /usr/include/boost/iterator/interoperable.hpp \
+ /usr/include/boost/mpl/bool.hpp /usr/include/boost/mpl/bool_fwd.hpp \
  /usr/include/boost/mpl/aux_/adl_barrier.hpp \
  /usr/include/boost/mpl/aux_/config/adl.hpp \
+ /usr/include/boost/mpl/aux_/config/msvc.hpp \
  /usr/include/boost/mpl/aux_/config/intel.hpp \
  /usr/include/boost/mpl/aux_/config/gcc.hpp \
- /usr/include/boost/mpl/aux_/na.hpp /usr/include/boost/mpl/bool.hpp \
- /usr/include/boost/mpl/bool_fwd.hpp \
+ /usr/include/boost/mpl/aux_/config/workaround.hpp \
  /usr/include/boost/mpl/integral_c_tag.hpp \
  /usr/include/boost/mpl/aux_/config/static_constant.hpp \
+ /usr/include/boost/mpl/or.hpp \
+ /usr/include/boost/mpl/aux_/config/use_preprocessed.hpp \
+ /usr/include/boost/mpl/aux_/nested_type_wknd.hpp \
+ /usr/include/boost/mpl/aux_/na_spec.hpp \
+ /usr/include/boost/mpl/lambda_fwd.hpp \
+ /usr/include/boost/mpl/void_fwd.hpp /usr/include/boost/mpl/aux_/na.hpp \
  /usr/include/boost/mpl/aux_/na_fwd.hpp \
  /usr/include/boost/mpl/aux_/config/ctps.hpp \
  /usr/include/boost/mpl/aux_/config/lambda.hpp \
@@ -606,6 +469,7 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/mpl/aux_/nttp_decl.hpp \
  /usr/include/boost/mpl/aux_/config/nttp.hpp \
  /usr/include/boost/mpl/aux_/integral_wrapper.hpp \
+ /usr/include/boost/mpl/aux_/static_cast.hpp \
  /usr/include/boost/preprocessor/cat.hpp \
  /usr/include/boost/preprocessor/config/config.hpp \
  /usr/include/boost/mpl/aux_/lambda_arity_param.hpp \
@@ -658,18 +522,79 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
  /usr/include/boost/preprocessor/variadic/elem.hpp \
  /usr/include/boost/preprocessor/arithmetic/sub.hpp \
+ /usr/include/boost/mpl/aux_/config/eti.hpp \
  /usr/include/boost/mpl/aux_/config/overload_resolution.hpp \
  /usr/include/boost/mpl/aux_/lambda_support.hpp \
- /usr/include/boost/mpl/eval_if.hpp /usr/include/boost/mpl/equal_to.hpp \
- /usr/include/boost/mpl/aux_/comparison_op.hpp \
- /usr/include/boost/mpl/aux_/numeric_op.hpp \
- /usr/include/boost/mpl/numeric_cast.hpp \
+ /usr/include/boost/mpl/aux_/include_preprocessed.hpp \
+ /usr/include/boost/mpl/aux_/config/compiler.hpp \
+ /usr/include/boost/preprocessor/stringize.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp \
+ /usr/include/boost/type_traits/is_convertible.hpp \
+ /usr/include/boost/type_traits/intrinsics.hpp \
+ /usr/include/boost/type_traits/is_complete.hpp \
+ /usr/include/boost/type_traits/declval.hpp \
+ /usr/include/boost/type_traits/add_rvalue_reference.hpp \
+ /usr/include/boost/type_traits/is_void.hpp \
+ /usr/include/boost/type_traits/is_reference.hpp \
+ /usr/include/boost/type_traits/is_lvalue_reference.hpp \
+ /usr/include/boost/type_traits/is_rvalue_reference.hpp \
+ /usr/include/boost/type_traits/detail/yes_no_type.hpp \
+ /usr/include/boost/static_assert.hpp \
+ /usr/include/boost/type_traits/is_arithmetic.hpp \
+ /usr/include/boost/type_traits/is_integral.hpp \
+ /usr/include/boost/type_traits/is_floating_point.hpp \
+ /usr/include/boost/type_traits/is_abstract.hpp \
+ /usr/include/boost/type_traits/add_lvalue_reference.hpp \
+ /usr/include/boost/type_traits/add_reference.hpp \
+ /usr/include/boost/iterator/detail/config_def.hpp \
+ /usr/include/boost/iterator/detail/config_undef.hpp \
+ /usr/include/boost/iterator/iterator_traits.hpp \
+ /usr/include/boost/iterator/iterator_categories.hpp \
+ /usr/include/boost/mpl/eval_if.hpp /usr/include/boost/mpl/if.hpp \
+ /usr/include/boost/mpl/aux_/value_wknd.hpp \
+ /usr/include/boost/mpl/aux_/config/integral.hpp \
+ /usr/include/boost/mpl/identity.hpp \
+ /usr/include/boost/mpl/placeholders.hpp /usr/include/boost/mpl/arg.hpp \
+ /usr/include/boost/mpl/arg_fwd.hpp \
+ /usr/include/boost/mpl/aux_/na_assert.hpp \
+ /usr/include/boost/mpl/assert.hpp /usr/include/boost/mpl/not.hpp \
+ /usr/include/boost/mpl/aux_/yes_no.hpp \
+ /usr/include/boost/mpl/aux_/config/arrays.hpp \
+ /usr/include/boost/mpl/aux_/config/gpu.hpp \
+ /usr/include/boost/mpl/aux_/config/pp_counter.hpp \
+ /usr/include/boost/mpl/aux_/arity_spec.hpp \
+ /usr/include/boost/mpl/aux_/arg_typedef.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp \
+ /usr/include/boost/iterator/detail/facade_iterator_category.hpp \
+ /usr/include/boost/core/use_default.hpp /usr/include/boost/mpl/and.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
+ /usr/include/boost/type_traits/is_same.hpp \
+ /usr/include/boost/type_traits/is_const.hpp \
+ /usr/include/boost/detail/indirect_traits.hpp \
+ /usr/include/boost/type_traits/is_pointer.hpp \
+ /usr/include/boost/type_traits/is_class.hpp \
+ /usr/include/boost/type_traits/is_volatile.hpp \
+ /usr/include/boost/type_traits/is_member_function_pointer.hpp \
+ /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
+ /usr/include/boost/type_traits/is_member_pointer.hpp \
+ /usr/include/boost/type_traits/remove_pointer.hpp \
+ /usr/include/boost/detail/select_type.hpp \
+ /usr/include/boost/iterator/detail/enable_if.hpp \
+ /usr/include/boost/core/addressof.hpp \
+ /usr/include/boost/type_traits/add_const.hpp \
+ /usr/include/boost/type_traits/remove_const.hpp \
+ /usr/include/boost/type_traits/is_pod.hpp \
+ /usr/include/boost/type_traits/is_scalar.hpp \
+ /usr/include/boost/type_traits/is_enum.hpp \
+ /usr/include/boost/mpl/always.hpp \
+ /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp \
+ /usr/include/boost/mpl/apply.hpp /usr/include/boost/mpl/apply_fwd.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp \
  /usr/include/boost/mpl/apply_wrap.hpp \
  /usr/include/boost/mpl/aux_/has_apply.hpp \
  /usr/include/boost/mpl/has_xxx.hpp \
  /usr/include/boost/mpl/aux_/type_wrapper.hpp \
- /usr/include/boost/mpl/aux_/yes_no.hpp \
- /usr/include/boost/mpl/aux_/config/arrays.hpp \
  /usr/include/boost/mpl/aux_/config/has_xxx.hpp \
  /usr/include/boost/mpl/aux_/config/msvc_typename.hpp \
  /usr/include/boost/preprocessor/array/elem.hpp \
@@ -679,23 +604,179 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp \
  /usr/include/boost/mpl/aux_/config/has_apply.hpp \
  /usr/include/boost/mpl/aux_/msvc_never_true.hpp \
- /usr/include/boost/mpl/aux_/config/use_preprocessed.hpp \
- /usr/include/boost/mpl/aux_/include_preprocessed.hpp \
- /usr/include/boost/mpl/aux_/config/compiler.hpp \
- /usr/include/boost/preprocessor/stringize.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp \
- /usr/include/boost/mpl/tag.hpp /usr/include/boost/mpl/void.hpp \
+ /usr/include/boost/mpl/lambda.hpp /usr/include/boost/mpl/bind.hpp \
+ /usr/include/boost/mpl/bind_fwd.hpp \
+ /usr/include/boost/mpl/aux_/config/bind.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp \
+ /usr/include/boost/mpl/next.hpp /usr/include/boost/mpl/next_prior.hpp \
+ /usr/include/boost/mpl/aux_/common_name_wknd.hpp \
+ /usr/include/boost/mpl/protect.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp \
+ /usr/include/boost/mpl/aux_/full_lambda.hpp \
+ /usr/include/boost/mpl/quote.hpp /usr/include/boost/mpl/void.hpp \
+ /usr/include/boost/mpl/aux_/has_type.hpp \
+ /usr/include/boost/mpl/aux_/config/bcc.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp \
+ /usr/include/boost/mpl/aux_/template_arity.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp \
+ /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp \
+ /usr/include/boost/io/quoted.hpp \
+ /usr/include/boost/io/detail/buffer_fill.hpp \
+ /usr/include/boost/io/detail/ostream_guard.hpp \
+ /usr/include/boost/io/ios_state.hpp /usr/include/boost/io_fwd.hpp \
+ /usr/include/boost/functional/hash_fwd.hpp \
+ /usr/include/boost/container_hash/hash_fwd.hpp \
+ /usr/include/boost/filesystem/exception.hpp \
+ /usr/include/boost/smart_ptr/intrusive_ptr.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_convertible.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_nullptr_t.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp \
+ /usr/include/boost/config/no_tr1/functional.hpp \
+ /usr/include/boost/smart_ptr/detail/operator_bool.hpp \
+ /usr/include/boost/smart_ptr/intrusive_ref_counter.hpp \
+ /usr/include/boost/smart_ptr/detail/atomic_count.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_has_gcc_intrinsics.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_has_sync_intrinsics.hpp \
+ /usr/include/boost/smart_ptr/detail/atomic_count_gcc_atomic.hpp \
+ /usr/include/boost/filesystem/directory.hpp \
+ /usr/include/boost/filesystem/file_status.hpp \
+ /usr/include/boost/detail/bitmask.hpp \
+ /usr/include/boost/core/scoped_enum.hpp \
+ /usr/include/boost/filesystem/operations.hpp \
+ /usr/include/boost/filesystem/convenience.hpp \
+ /usr/include/boost/filesystem/string_file.hpp \
+ /usr/include/boost/filesystem/fstream.hpp \
+ /usr/include/gazebo-11/gazebo/common/CommonTypes.hh \
+ /usr/include/boost/shared_ptr.hpp \
+ /usr/include/boost/smart_ptr/shared_ptr.hpp \
+ /usr/include/boost/smart_ptr/detail/shared_count.hpp \
+ /usr/include/boost/smart_ptr/bad_weak_ptr.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_counted_base.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_counted_impl.hpp \
+ /usr/include/boost/checked_delete.hpp \
+ /usr/include/boost/core/checked_delete.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_disable_deprecated.hpp \
+ /usr/include/boost/throw_exception.hpp \
+ /usr/include/boost/assert/source_location.hpp \
+ /usr/include/boost/current_function.hpp \
+ /usr/include/boost/exception/exception.hpp \
+ /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp \
+ /usr/include/boost/smart_ptr/detail/spinlock.hpp \
+ /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp \
+ /usr/include/boost/smart_ptr/detail/yield_k.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_thread_pause.hpp \
+ /usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp \
+ /usr/include/boost/config/pragma_message.hpp \
+ /usr/include/boost/smart_ptr/detail/local_sp_deleter.hpp \
+ /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
+ /usr/include/gazebo-11/gazebo/util/system.hh \
+ /usr/include/gazebo-11/gazebo/common/SystemPaths.hh \
+ /usr/include/gazebo-11/gazebo/common/Event.hh /usr/include/c++/11/atomic \
+ /usr/include/gazebo-11/gazebo/common/Time.hh \
+ /usr/include/c++/11/stdlib.h \
+ /usr/include/ignition/common3/ignition/common/Profiler.hh \
+ /usr/include/ignition/common3/ignition/common/profiler/Export.hh \
+ /usr/include/ignition/common3/ignition/common/profiler/detail/Export.hh \
+ /usr/include/ignition/common3/ignition/common/SingletonT.hh \
+ /usr/include/ignition/common3/ignition/common/config.hh \
+ /usr/include/gazebo-11/gazebo/common/SingletonT.hh \
+ /usr/include/gazebo-11/gazebo/common/Console.hh \
+ /usr/include/boost/thread.hpp /usr/include/boost/thread/thread.hpp \
+ /usr/include/boost/thread/thread_only.hpp \
+ /usr/include/boost/thread/detail/platform.hpp \
+ /usr/include/boost/config/requires_threads.hpp \
+ /usr/include/boost/thread/pthread/thread_data.hpp \
+ /usr/include/boost/thread/detail/config.hpp \
+ /usr/include/boost/thread/detail/thread_safety.hpp \
+ /usr/include/boost/thread/exceptions.hpp \
+ /usr/include/boost/thread/lock_guard.hpp \
+ /usr/include/boost/thread/detail/delete.hpp \
+ /usr/include/boost/thread/detail/move.hpp \
+ /usr/include/boost/type_traits/conditional.hpp \
+ /usr/include/boost/move/utility.hpp \
+ /usr/include/boost/move/detail/config_begin.hpp \
+ /usr/include/boost/move/detail/workaround.hpp \
+ /usr/include/boost/move/utility_core.hpp \
+ /usr/include/boost/move/core.hpp \
+ /usr/include/boost/move/detail/config_end.hpp \
+ /usr/include/boost/move/detail/meta_utils.hpp \
+ /usr/include/boost/move/detail/meta_utils_core.hpp \
+ /usr/include/boost/move/traits.hpp \
+ /usr/include/boost/move/detail/type_traits.hpp \
+ /usr/include/boost/thread/detail/lockable_wrapper.hpp \
+ /usr/include/boost/thread/lock_options.hpp \
+ /usr/include/boost/thread/lock_types.hpp \
+ /usr/include/boost/thread/lockable_traits.hpp \
+ /usr/include/boost/thread/thread_time.hpp \
+ /usr/include/boost/date_time/time_clock.hpp \
+ /usr/include/boost/date_time/c_time.hpp \
+ /usr/include/boost/date_time/compiler_config.hpp \
+ /usr/include/boost/date_time/locale_config.hpp \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/boost/date_time/microsec_time_clock.hpp \
+ /usr/include/boost/date_time/posix_time/posix_time_types.hpp \
+ /usr/include/boost/date_time/posix_time/ptime.hpp \
+ /usr/include/boost/date_time/posix_time/posix_time_system.hpp \
+ /usr/include/boost/date_time/posix_time/posix_time_config.hpp \
+ /usr/include/boost/limits.hpp /usr/include/boost/config/no_tr1/cmath.hpp \
+ /usr/include/boost/date_time/time_duration.hpp \
+ /usr/include/boost/date_time/special_defs.hpp \
+ /usr/include/boost/date_time/time_defs.hpp \
+ /usr/include/boost/operators.hpp \
+ /usr/include/boost/date_time/time_resolution_traits.hpp \
+ /usr/include/boost/date_time/int_adapter.hpp \
+ /usr/include/boost/date_time/gregorian/gregorian_types.hpp \
+ /usr/include/boost/date_time/date.hpp \
+ /usr/include/boost/date_time/year_month_day.hpp \
+ /usr/include/boost/date_time/period.hpp \
+ /usr/include/boost/date_time/gregorian/greg_calendar.hpp \
+ /usr/include/boost/date_time/gregorian/greg_weekday.hpp \
+ /usr/include/boost/date_time/constrained_value.hpp \
+ /usr/include/boost/type_traits/is_base_of.hpp \
+ /usr/include/boost/type_traits/is_base_and_derived.hpp \
+ /usr/include/boost/date_time/date_defs.hpp \
+ /usr/include/boost/date_time/gregorian/greg_day_of_year.hpp \
+ /usr/include/boost/date_time/gregorian_calendar.hpp \
+ /usr/include/boost/date_time/gregorian_calendar.ipp \
+ /usr/include/boost/date_time/gregorian/greg_ymd.hpp \
+ /usr/include/boost/date_time/gregorian/greg_day.hpp \
+ /usr/include/boost/date_time/gregorian/greg_year.hpp \
+ /usr/include/boost/date_time/gregorian/greg_month.hpp \
+ /usr/include/boost/date_time/gregorian/greg_duration.hpp \
+ /usr/include/boost/date_time/date_duration.hpp \
+ /usr/include/boost/date_time/date_duration_types.hpp \
+ /usr/include/boost/date_time/gregorian/greg_duration_types.hpp \
+ /usr/include/boost/date_time/gregorian/greg_date.hpp \
+ /usr/include/boost/date_time/adjust_functors.hpp \
+ /usr/include/boost/date_time/wrapping_int.hpp \
+ /usr/include/boost/date_time/date_generators.hpp \
+ /usr/include/boost/date_time/date_clock_device.hpp \
+ /usr/include/boost/date_time/date_iterator.hpp \
+ /usr/include/boost/date_time/time_system_split.hpp \
+ /usr/include/boost/date_time/time_system_counted.hpp \
+ /usr/include/boost/date_time/time.hpp \
+ /usr/include/boost/date_time/posix_time/date_duration_operators.hpp \
+ /usr/include/boost/date_time/posix_time/posix_time_duration.hpp \
+ /usr/include/boost/numeric/conversion/cast.hpp \
+ /usr/include/boost/type.hpp \
+ /usr/include/boost/numeric/conversion/converter.hpp \
+ /usr/include/boost/numeric/conversion/conversion_traits.hpp \
+ /usr/include/boost/numeric/conversion/detail/conversion_traits.hpp \
+ /usr/include/boost/numeric/conversion/detail/meta.hpp \
+ /usr/include/boost/mpl/equal_to.hpp \
+ /usr/include/boost/mpl/aux_/comparison_op.hpp \
+ /usr/include/boost/mpl/aux_/numeric_op.hpp \
+ /usr/include/boost/mpl/numeric_cast.hpp /usr/include/boost/mpl/tag.hpp \
  /usr/include/boost/mpl/aux_/has_tag.hpp \
  /usr/include/boost/mpl/aux_/numeric_cast_utils.hpp \
  /usr/include/boost/mpl/aux_/config/forwarding.hpp \
  /usr/include/boost/mpl/aux_/msvc_eti_base.hpp \
  /usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp \
- /usr/include/boost/mpl/not.hpp \
- /usr/include/boost/mpl/aux_/nested_type_wknd.hpp \
- /usr/include/boost/mpl/and.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp \
- /usr/include/boost/mpl/identity.hpp \
  /usr/include/boost/numeric/conversion/detail/int_float_mixture.hpp \
  /usr/include/boost/numeric/conversion/int_float_mixture_enum.hpp \
  /usr/include/boost/mpl/integral_c.hpp \
@@ -709,7 +790,6 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/mpl/aux_/arithmetic_op.hpp \
  /usr/include/boost/mpl/aux_/largest_int.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp \
- /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp \
  /usr/include/boost/mpl/less.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp \
  /usr/include/boost/numeric/conversion/converter_policies.hpp \
@@ -863,9 +943,8 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/include/boost/mpl/logical.hpp /usr/include/boost/mpl/or.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp \
- /usr/include/boost/ratio/ratio.hpp /usr/include/boost/ratio/config.hpp \
+ /usr/include/boost/mpl/logical.hpp /usr/include/boost/ratio/ratio.hpp \
+ /usr/include/boost/ratio/config.hpp \
  /usr/include/boost/ratio/detail/mpl/abs.hpp \
  /usr/include/boost/ratio/detail/mpl/sign.hpp \
  /usr/include/boost/ratio/detail/mpl/gcd.hpp \
@@ -877,8 +956,8 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/type_traits/common_type.hpp \
  /usr/include/boost/type_traits/detail/mp_defer.hpp \
  /usr/include/boost/type_traits/is_unsigned.hpp \
- /usr/include/boost/type_traits/is_enum.hpp \
  /usr/include/boost/chrono/detail/is_evenly_divisible_by.hpp \
+ /usr/include/boost/utility/enable_if.hpp \
  /usr/include/boost/thread/mutex.hpp \
  /usr/include/boost/thread/pthread/mutex.hpp \
  /usr/include/boost/core/ignore_unused.hpp \
@@ -895,7 +974,6 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/thread/pthread/pthread_helpers.hpp \
  /usr/include/boost/thread/pthread/condition_variable_fwd.hpp \
  /usr/include/boost/thread/cv_status.hpp \
- /usr/include/boost/core/scoped_enum.hpp \
  /usr/include/boost/enable_shared_from_this.hpp \
  /usr/include/boost/smart_ptr/enable_shared_from_this.hpp \
  /usr/include/boost/smart_ptr/weak_ptr.hpp \
@@ -905,9 +983,6 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/thread/pthread/thread_heap_alloc.hpp \
  /usr/include/boost/thread/detail/make_tuple_indices.hpp \
  /usr/include/boost/thread/detail/invoke.hpp \
- /usr/include/boost/type_traits/is_pointer.hpp \
- /usr/include/boost/type_traits/is_member_function_pointer.hpp \
- /usr/include/boost/type_traits/detail/is_member_function_pointer_cxx_11.hpp \
  /usr/include/boost/thread/detail/is_convertible.hpp \
  /usr/include/boost/core/ref.hpp /usr/include/boost/bind/bind.hpp \
  /usr/include/boost/ref.hpp /usr/include/boost/mem_fn.hpp \
@@ -921,7 +996,6 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/bind/bind_mf_cc.hpp \
  /usr/include/boost/bind/bind_mf2_cc.hpp \
  /usr/include/boost/bind/placeholders.hpp \
- /usr/include/boost/io/ios_state.hpp /usr/include/boost/io_fwd.hpp \
  /usr/include/boost/functional/hash.hpp \
  /usr/include/boost/container_hash/hash.hpp \
  /usr/include/boost/container_hash/detail/hash_float.hpp \
@@ -957,14 +1031,6 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/linux/futex.h \
- /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \
- /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
  /usr/include/boost/atomic/detail/intptr.hpp \
  /usr/include/boost/atomic/detail/header.hpp \
  /usr/include/boost/atomic/detail/footer.hpp \
@@ -993,7 +1059,6 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/type_traits/is_signed.hpp \
  /usr/include/boost/atomic/detail/type_traits/make_signed.hpp \
  /usr/include/boost/type_traits/make_signed.hpp \
- /usr/include/boost/type_traits/add_const.hpp \
  /usr/include/boost/type_traits/add_volatile.hpp \
  /usr/include/boost/atomic/detail/type_traits/make_unsigned.hpp \
  /usr/include/boost/type_traits/make_unsigned.hpp \
@@ -1078,7 +1143,6 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/tuple/detail/tuple_basic.hpp \
  /usr/include/boost/type_traits/cv_traits.hpp \
  /usr/include/boost/type_traits/add_cv.hpp \
- /usr/include/boost/type_traits/remove_const.hpp \
  /usr/include/boost/type_traits/remove_volatile.hpp \
  /usr/include/boost/type_traits/function_traits.hpp \
  /usr/include/boost/utility/swap.hpp /usr/include/boost/core/swap.hpp \
@@ -1095,6 +1159,8 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/exception/detail/object_hex_dump.hpp \
  /usr/include/boost/exception/detail/type_info.hpp \
  /usr/include/boost/core/typeinfo.hpp \
+ /usr/include/boost/core/demangle.hpp /usr/include/c++/11/cxxabi.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h \
  /usr/include/boost/exception/detail/error_info_impl.hpp \
  /usr/include/boost/type_traits/is_nothrow_move_constructible.hpp \
  /usr/include/boost/type_traits/enable_if.hpp \
@@ -1115,56 +1181,11 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/type_traits/detail/has_binary_operator.hpp \
  /usr/include/boost/type_traits/make_void.hpp \
  /usr/include/boost/type_traits/has_plus_assign.hpp \
- /usr/include/boost/type_traits/remove_pointer.hpp \
  /usr/include/boost/type_traits/has_minus.hpp \
  /usr/include/boost/type_traits/has_minus_assign.hpp \
  /usr/include/boost/iterator/advance.hpp \
- /usr/include/boost/iterator/iterator_categories.hpp \
- /usr/include/boost/iterator/detail/config_def.hpp \
- /usr/include/boost/mpl/placeholders.hpp /usr/include/boost/mpl/arg.hpp \
- /usr/include/boost/mpl/arg_fwd.hpp \
- /usr/include/boost/mpl/aux_/na_assert.hpp \
- /usr/include/boost/mpl/assert.hpp \
- /usr/include/boost/mpl/aux_/config/gpu.hpp \
- /usr/include/boost/mpl/aux_/config/pp_counter.hpp \
- /usr/include/boost/mpl/aux_/arity_spec.hpp \
- /usr/include/boost/mpl/aux_/arg_typedef.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/arg.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp \
- /usr/include/boost/iterator/detail/config_undef.hpp \
  /usr/include/boost/iterator/reverse_iterator.hpp \
  /usr/include/boost/iterator/iterator_adaptor.hpp \
- /usr/include/boost/core/use_default.hpp \
- /usr/include/boost/iterator/iterator_facade.hpp \
- /usr/include/boost/iterator/interoperable.hpp \
- /usr/include/boost/iterator/iterator_traits.hpp \
- /usr/include/boost/iterator/detail/facade_iterator_category.hpp \
- /usr/include/boost/detail/indirect_traits.hpp \
- /usr/include/boost/type_traits/is_member_pointer.hpp \
- /usr/include/boost/detail/select_type.hpp \
- /usr/include/boost/iterator/detail/enable_if.hpp \
- /usr/include/boost/type_traits/is_pod.hpp \
- /usr/include/boost/type_traits/is_scalar.hpp \
- /usr/include/boost/mpl/always.hpp /usr/include/boost/mpl/apply.hpp \
- /usr/include/boost/mpl/apply_fwd.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp \
- /usr/include/boost/mpl/lambda.hpp /usr/include/boost/mpl/bind.hpp \
- /usr/include/boost/mpl/bind_fwd.hpp \
- /usr/include/boost/mpl/aux_/config/bind.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/bind_fwd.hpp \
- /usr/include/boost/mpl/next.hpp /usr/include/boost/mpl/next_prior.hpp \
- /usr/include/boost/mpl/aux_/common_name_wknd.hpp \
- /usr/include/boost/mpl/protect.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp \
- /usr/include/boost/mpl/aux_/full_lambda.hpp \
- /usr/include/boost/mpl/quote.hpp \
- /usr/include/boost/mpl/aux_/has_type.hpp \
- /usr/include/boost/mpl/aux_/config/bcc.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp \
- /usr/include/boost/mpl/aux_/template_arity.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp \
- /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp \
  /usr/include/boost/scoped_array.hpp \
  /usr/include/boost/smart_ptr/scoped_array.hpp \
  /usr/include/boost/thread/executor.hpp \
@@ -1197,9 +1218,10 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/function.hpp \
  /usr/include/boost/preprocessor/iterate.hpp \
  /usr/include/boost/function/detail/prologue.hpp \
- /usr/include/boost/config/no_tr1/functional.hpp \
  /usr/include/boost/function/function_base.hpp \
- /usr/include/boost/integer.hpp \
+ /usr/include/boost/integer.hpp /usr/include/boost/type_index.hpp \
+ /usr/include/boost/type_index/stl_type_index.hpp \
+ /usr/include/boost/type_index/type_index_facade.hpp \
  /usr/include/boost/type_traits/has_trivial_copy.hpp \
  /usr/include/boost/type_traits/is_copy_constructible.hpp \
  /usr/include/boost/type_traits/has_trivial_destructor.hpp \
@@ -1230,10 +1252,9 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/boost/type_traits/is_fundamental.hpp \
  /usr/include/boost/thread/detail/atomic_undef_macros.hpp \
  /usr/include/boost/thread/detail/atomic_redef_macros.hpp \
- /usr/include/gazebo-11/gazebo/common/SingletonT.hh \
- /usr/include/gazebo-11/gazebo/common/UpdateInfo.hh \
- /usr/include/gazebo-11/gazebo/msgs/MessageTypes.hh \
- /usr/include/gazebo-11/gazebo/msgs/altimeter.pb.h \
+ /usr/include/gazebo-11/gazebo/common/Exception.hh \
+ /usr/include/gazebo-11/gazebo/physics/PhysicsTypes.hh \
+ /usr/include/gazebo-11/gazebo/msgs/poses_stamped.pb.h \
  /usr/include/google/protobuf/port_def.inc \
  /usr/include/google/protobuf/port_undef.inc \
  /usr/include/google/protobuf/io/coded_stream.h \
@@ -1307,159 +1328,68 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/google/protobuf/extension_set.h \
  /usr/include/gazebo-11/gazebo/msgs/time.pb.h \
  /usr/include/gazebo-11/gazebo/msgs/MsgFactory.hh \
- /usr/include/gazebo-11/gazebo/msgs/any.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/color.pb.h \
  /usr/include/gazebo-11/gazebo/msgs/pose.pb.h \
  /usr/include/gazebo-11/gazebo/msgs/vector3d.pb.h \
  /usr/include/gazebo-11/gazebo/msgs/quaternion.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/atmosphere.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/axis.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/battery.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/boxgeom.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/camera_cmd.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/camera_lens.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/camerasensor.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/vector2d.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/distortion.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/cessna.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/collision.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/geometry.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/cylindergeom.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/spheregeom.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/planegeom.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/imagegeom.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/heightmapgeom.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/image.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/meshgeom.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/polylinegeom.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/surface.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/friction.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/visual.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/material.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/plugin.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/contact.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/joint_wrench.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/wrench.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/contacts.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/contactsensor.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/density.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/diagnostics.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/empty.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/factory.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/fluid.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/fog.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/gps.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/gps_sensor.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/sensor_noise.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/gui.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/gui_camera.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/track_visual.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/gz_string.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/gz_string_v.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/header.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/hydra.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/image_stamped.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/images_stamped.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/imu.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/imu_sensor.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/inertial.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/int.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/joint.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/sensor.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/raysensor.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/logical_camera_sensor.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/joint_animation.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/joint_cmd.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/pid.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/joint_wrench_stamped.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/joystick.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/laserscan.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/laserscan_stamped.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/light.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/link.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/projector.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/link_data.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/log_control.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/log_playback_control.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/log_playback_stats.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/log_status.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/logical_camera_image.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/magnetometer.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/model.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/model_configuration.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/model_v.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/packet.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/param.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/param_v.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/performance_metrics.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/physics.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/pointcloud.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/pose_animation.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/pose_stamped.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/pose_trajectory.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/pose_v.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/poses_stamped.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/propagation_grid.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/propagation_particle.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/publish.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/publishers.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/request.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/response.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/rest_login.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/rest_logout.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/rest_post.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/rest_response.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/road.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/scene.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/sky.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/selection.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/server_control.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/shadows.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/sim_event.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/world_stats.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/sonar.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/sonar_stamped.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/spherical_coordinates.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/subscribe.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/tactile.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/test.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/topic_info.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/twist.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/undo_redo.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/user_cmd.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/world_control.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/world_reset.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/user_cmd_stats.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/wind.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/wireless_node.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/wireless_nodes.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/world_modify.pb.h \
- /usr/include/gazebo-11/gazebo/msgs/wrench_stamped.pb.h \
- /usr/include/gazebo-11/gazebo/physics/JointState.hh \
+ /usr/include/gazebo-11/gazebo/sensors/SensorTypes.hh \
+ /usr/include/gazebo-11/gazebo/common/EnumIface.hh \
+ /usr/include/gazebo-11/gazebo/common/Assert.hh \
+ /usr/include/gazebo-11/gazebo/rendering/RenderTypes.hh \
+ /usr/include/gazebo-11/gazebo/physics/physics.hh \
+ /usr/include/gazebo-11/gazebo/physics/Actor.hh \
+ /usr/include/gazebo-11/gazebo/physics/Model.hh \
+ /usr/include/gazebo-11/gazebo/physics/ModelState.hh \
+ /usr/include/boost/regex.hpp /usr/include/boost/regex/config.hpp \
+ /usr/include/boost/regex/user.hpp \
+ /usr/include/boost/regex/config/cwchar.hpp \
+ /usr/include/boost/regex/v4/regex.hpp \
+ /usr/include/boost/regex/v4/regex_workaround.hpp \
+ /usr/include/boost/scoped_ptr.hpp \
+ /usr/include/boost/smart_ptr/scoped_ptr.hpp \
+ /usr/include/boost/regex_fwd.hpp \
+ /usr/include/boost/regex/v4/regex_fwd.hpp \
+ /usr/include/boost/regex/regex_traits.hpp \
+ /usr/include/boost/regex/v4/regex_traits.hpp \
+ /usr/include/boost/regex/v4/syntax_type.hpp \
+ /usr/include/boost/regex/v4/error_type.hpp \
+ /usr/include/boost/regex/v4/regex_traits_defaults.hpp \
+ /usr/include/boost/regex/v4/cpp_regex_traits.hpp \
+ /usr/include/boost/regex/pattern_except.hpp \
+ /usr/include/boost/regex/pending/static_mutex.hpp \
+ /usr/include/boost/regex/v4/primary_transform.hpp \
+ /usr/include/boost/regex/pending/object_cache.hpp \
+ /usr/include/boost/regex/v4/c_regex_traits.hpp \
+ /usr/include/boost/regex/v4/match_flags.hpp \
+ /usr/include/boost/regex/v4/regex_raw_buffer.hpp \
+ /usr/include/boost/regex/v4/char_regex_traits.hpp \
+ /usr/include/boost/regex/v4/states.hpp \
+ /usr/include/boost/regex/v4/regbase.hpp \
+ /usr/include/boost/regex/v4/iterator_traits.hpp \
+ /usr/include/boost/regex/v4/basic_regex.hpp \
+ /usr/include/boost/regex/v4/basic_regex_creator.hpp \
+ /usr/include/boost/regex/v4/indexed_bit_flag.hpp \
+ /usr/include/boost/regex/v4/basic_regex_parser.hpp \
+ /usr/include/boost/regex/v4/sub_match.hpp \
+ /usr/include/boost/regex/v4/regex_format.hpp \
+ /usr/include/boost/regex/v4/match_results.hpp \
+ /usr/include/boost/regex/v4/protected_call.hpp \
+ /usr/include/boost/regex/v4/perl_matcher.hpp \
+ /usr/include/boost/regex/v4/iterator_category.hpp \
+ /usr/include/boost/regex/v4/perl_matcher_non_recursive.hpp \
+ /usr/include/boost/regex/v4/perl_matcher_common.hpp \
+ /usr/include/boost/regex/v4/instances.hpp \
+ /usr/include/boost/regex/v4/regex_match.hpp \
+ /usr/include/boost/regex/v4/regex_search.hpp \
+ /usr/include/boost/regex/v4/regex_iterator.hpp \
+ /usr/include/boost/regex/v4/regex_token_iterator.hpp \
+ /usr/include/boost/regex/v4/regex_grep.hpp \
+ /usr/include/boost/regex/v4/regex_replace.hpp \
+ /usr/include/boost/regex/v4/regex_merge.hpp \
+ /usr/include/boost/regex/v4/regex_split.hpp \
  /usr/include/gazebo-11/gazebo/physics/State.hh \
- /usr/include/gazebo-11/gazebo/physics/PhysicsTypes.hh \
- /usr/include/gazebo-11/gazebo/msgs/poses_stamped.pb.h \
- /usr/include/gazebo-11/gazebo/physics/Base.hh \
- /usr/include/gazebo-11/gazebo/common/URI.hh \
- /usr/include/gazebo-11/gazebo/physics/JointWrench.hh \
- /usr/include/gazebo-11/gazebo/physics/Link.hh \
- /usr/include/ignition/math6/ignition/math/Matrix3.hh \
- /usr/include/gazebo-11/gazebo/msgs/msgs.hh \
- /usr/include/ignition/math6/ignition/math/Inertial.hh \
- /usr/include/ignition/math6/ignition/math/MassMatrix3.hh \
- /usr/include/ignition/math6/ignition/math/Quaternion.hh \
- /usr/include/ignition/msgs5/ignition/msgs/color.pb.h \
- /usr/include/ignition/msgs5/ignition/msgs/header.pb.h \
- /usr/include/ignition/msgs5/ignition/msgs/time.pb.h \
- /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
- /usr/include/ignition/msgs5/ignition/msgs/Export.hh \
- /usr/include/ignition/msgs5/ignition/msgs/detail/Export.hh \
- /usr/include/ignition/msgs5/ignition/msgs/material.pb.h \
- /usr/include/gazebo-11/gazebo/common/SphericalCoordinates.hh \
- /usr/include/gazebo-11/gazebo/common/Image.hh \
  /usr/include/gazebo-11/gazebo/physics/LinkState.hh \
  /usr/include/gazebo-11/gazebo/physics/CollisionState.hh \
+ /usr/include/gazebo-11/gazebo/physics/JointState.hh \
  /usr/include/gazebo-11/gazebo/physics/Entity.hh \
  /usr/include/ignition/math6/ignition/math/AxisAlignedBox.hh \
  /usr/include/ignition/transport8/ignition/transport/Node.hh \
@@ -1467,12 +1397,19 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/ignition/msgs5/ignition/msgs/config.hh \
  /usr/include/ignition/msgs5/ignition/msgs/detail/SuppressWarning.hh \
  /usr/include/ignition/msgs5/ignition/msgs/Factory.hh \
+ /usr/include/ignition/msgs5/ignition/msgs/Export.hh \
+ /usr/include/ignition/msgs5/ignition/msgs/detail/Export.hh \
  /usr/include/ignition/msgs5/ignition/msgs/Filesystem.hh \
  /usr/include/ignition/msgs5/ignition/msgs/SuppressWarning.hh \
  /usr/include/ignition/msgs5/ignition/msgs/Utility.hh \
+ /usr/include/ignition/math6/ignition/math/Inertial.hh \
  /usr/include/ignition/msgs5/ignition/msgs/MessageTypes.hh \
  /usr/include/ignition/msgs5/ignition/msgs/actor.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/entity.pb.h \
+ /usr/include/ignition/msgs5/ignition/msgs/header.pb.h \
+ /usr/include/ignition/msgs5/ignition/msgs/time.pb.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
  /usr/include/ignition/msgs5/ignition/msgs/pose.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/vector3d.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/quaternion.pb.h \
@@ -1482,6 +1419,7 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/ignition/msgs5/ignition/msgs/altimeter.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/altimeter_sensor.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/any.pb.h \
+ /usr/include/ignition/msgs5/ignition/msgs/color.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/atmosphere.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/axis.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/axis_aligned_box.pb.h \
@@ -1512,6 +1450,7 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/ignition/msgs5/ignition/msgs/surface.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/friction.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/visual.pb.h \
+ /usr/include/ignition/msgs5/ignition/msgs/material.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/plugin.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/contact.pb.h \
  /usr/include/ignition/msgs5/ignition/msgs/joint_wrench.pb.h \
@@ -1666,121 +1605,330 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /usr/include/ignition/transport8/ignition/transport/TopicStatistics.hh \
  /usr/include/ignition/transport8/ignition/transport/TopicUtils.hh \
  /usr/include/ignition/transport8/ignition/transport/detail/Node.hh \
+ /usr/include/gazebo-11/gazebo/msgs/msgs.hh \
+ /usr/include/ignition/math6/ignition/math/MassMatrix3.hh \
+ /usr/include/ignition/math6/ignition/math/Quaternion.hh \
+ /usr/include/gazebo-11/gazebo/msgs/MessageTypes.hh \
+ /usr/include/gazebo-11/gazebo/msgs/altimeter.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/any.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/color.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/atmosphere.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/axis.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/battery.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/boxgeom.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/camera_cmd.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/camera_lens.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/camerasensor.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/vector2d.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/distortion.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/cessna.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/collision.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/geometry.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/cylindergeom.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/spheregeom.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/planegeom.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/imagegeom.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/heightmapgeom.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/image.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/meshgeom.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/polylinegeom.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/surface.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/friction.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/visual.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/material.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/plugin.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/contact.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/joint_wrench.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/wrench.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/contacts.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/contactsensor.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/density.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/diagnostics.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/empty.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/factory.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/fluid.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/fog.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/gps.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/gps_sensor.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/sensor_noise.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/gui.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/gui_camera.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/track_visual.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/gz_string.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/gz_string_v.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/header.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/hydra.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/image_stamped.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/images_stamped.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/imu.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/imu_sensor.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/inertial.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/int.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/joint.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/sensor.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/raysensor.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/logical_camera_sensor.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/joint_animation.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/joint_cmd.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/pid.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/joint_wrench_stamped.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/joystick.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/laserscan.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/laserscan_stamped.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/light.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/link.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/projector.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/link_data.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/log_control.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/log_playback_control.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/log_playback_stats.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/log_status.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/logical_camera_image.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/magnetometer.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/model.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/model_configuration.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/model_v.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/packet.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/param.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/param_v.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/performance_metrics.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/physics.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/pointcloud.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/pose_animation.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/pose_stamped.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/pose_trajectory.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/pose_v.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/poses_stamped.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/propagation_grid.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/propagation_particle.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/publish.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/publishers.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/request.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/response.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/rest_login.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/rest_logout.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/rest_post.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/rest_response.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/road.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/scene.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/sky.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/selection.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/server_control.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/shadows.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/sim_event.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/world_stats.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/sonar.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/sonar_stamped.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/spherical_coordinates.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/subscribe.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/tactile.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/test.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/topic_info.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/twist.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/undo_redo.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/user_cmd.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/world_control.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/world_reset.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/user_cmd_stats.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/wind.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/wireless_node.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/wireless_nodes.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/world_modify.pb.h \
+ /usr/include/gazebo-11/gazebo/msgs/wrench_stamped.pb.h \
+ /usr/include/gazebo-11/gazebo/common/SphericalCoordinates.hh \
+ /usr/include/gazebo-11/gazebo/common/Image.hh \
  /usr/include/gazebo-11/gazebo/transport/TransportTypes.hh \
+ /usr/include/gazebo-11/gazebo/common/UpdateInfo.hh \
+ /usr/include/gazebo-11/gazebo/physics/Base.hh \
+ /usr/include/gazebo-11/gazebo/common/URI.hh \
+ /usr/include/gazebo-11/gazebo/common/Animation.hh \
+ /usr/include/ignition/math6/ignition/math/Spline.hh \
+ /usr/include/ignition/math6/ignition/math/RotationSpline.hh \
+ /usr/include/gazebo-11/gazebo/physics/AdiabaticAtmosphere.hh \
+ /usr/include/gazebo-11/gazebo/physics/Atmosphere.hh \
+ /usr/include/gazebo-11/gazebo/physics/AtmosphereFactory.hh \
+ /usr/include/gazebo-11/gazebo/physics/BallJoint.hh \
+ /usr/include/gazebo-11/gazebo/physics/Joint.hh \
+ /usr/include/boost/any.hpp \
+ /usr/include/gazebo-11/gazebo/common/Events.hh \
+ /usr/include/gazebo-11/gazebo/physics/JointWrench.hh \
+ /usr/include/gazebo-11/gazebo/physics/BoxShape.hh \
+ /usr/include/gazebo-11/gazebo/physics/Shape.hh \
  /usr/include/gazebo-11/gazebo/physics/Inertial.hh \
- /usr/include/gazebo-11/gazebo/physics/Model.hh \
- /usr/include/gazebo-11/gazebo/physics/ModelState.hh \
- /usr/include/boost/regex.hpp /usr/include/boost/regex/config.hpp \
- /usr/include/boost/regex/user.hpp \
- /usr/include/boost/regex/config/cwchar.hpp \
- /usr/include/boost/regex/v4/regex.hpp \
- /usr/include/boost/regex/v4/regex_workaround.hpp \
- /usr/include/boost/scoped_ptr.hpp \
- /usr/include/boost/smart_ptr/scoped_ptr.hpp \
- /usr/include/boost/regex_fwd.hpp \
- /usr/include/boost/regex/v4/regex_fwd.hpp \
- /usr/include/boost/regex/regex_traits.hpp \
- /usr/include/boost/regex/v4/regex_traits.hpp \
- /usr/include/boost/regex/v4/syntax_type.hpp \
- /usr/include/boost/regex/v4/error_type.hpp \
- /usr/include/boost/regex/v4/regex_traits_defaults.hpp \
- /usr/include/boost/regex/v4/cpp_regex_traits.hpp \
- /usr/include/boost/regex/pattern_except.hpp \
- /usr/include/boost/regex/pending/static_mutex.hpp \
- /usr/include/boost/regex/v4/primary_transform.hpp \
- /usr/include/boost/regex/pending/object_cache.hpp \
- /usr/include/boost/regex/v4/c_regex_traits.hpp \
- /usr/include/boost/regex/v4/match_flags.hpp \
- /usr/include/boost/regex/v4/regex_raw_buffer.hpp \
- /usr/include/boost/regex/v4/char_regex_traits.hpp \
- /usr/include/boost/regex/v4/states.hpp \
- /usr/include/boost/regex/v4/regbase.hpp \
- /usr/include/boost/regex/v4/iterator_traits.hpp \
- /usr/include/boost/regex/v4/basic_regex.hpp \
- /usr/include/boost/regex/v4/basic_regex_creator.hpp \
- /usr/include/boost/regex/v4/indexed_bit_flag.hpp \
- /usr/include/boost/regex/v4/basic_regex_parser.hpp \
- /usr/include/boost/regex/v4/sub_match.hpp \
- /usr/include/boost/regex/v4/regex_format.hpp \
- /usr/include/boost/regex/v4/match_results.hpp \
- /usr/include/boost/regex/v4/protected_call.hpp \
- /usr/include/boost/regex/v4/perl_matcher.hpp \
- /usr/include/boost/regex/v4/iterator_category.hpp \
- /usr/include/boost/regex/v4/perl_matcher_non_recursive.hpp \
- /usr/include/boost/regex/v4/perl_matcher_common.hpp \
- /usr/include/boost/regex/v4/instances.hpp \
- /usr/include/boost/regex/v4/regex_match.hpp \
- /usr/include/boost/regex/v4/regex_search.hpp \
- /usr/include/boost/regex/v4/regex_iterator.hpp \
- /usr/include/boost/regex/v4/regex_token_iterator.hpp \
- /usr/include/boost/regex/v4/regex_grep.hpp \
- /usr/include/boost/regex/v4/regex_replace.hpp \
- /usr/include/boost/regex/v4/regex_merge.hpp \
- /usr/include/boost/regex/v4/regex_split.hpp \
+ /usr/include/ignition/math6/ignition/math/Matrix3.hh \
+ /usr/include/gazebo-11/gazebo/physics/Collision.hh \
+ /usr/include/gazebo-11/gazebo/physics/Contact.hh \
+ /usr/include/gazebo-11/gazebo/physics/ContactManager.hh \
+ /usr/include/boost/unordered/unordered_set.hpp \
+ /usr/include/boost/move/move.hpp /usr/include/boost/move/iterator.hpp \
+ /usr/include/boost/move/detail/iterator_traits.hpp \
+ /usr/include/boost/move/detail/std_ns_begin.hpp \
+ /usr/include/boost/move/detail/std_ns_end.hpp \
+ /usr/include/boost/move/algorithm.hpp \
+ /usr/include/boost/move/algo/move.hpp \
+ /usr/include/boost/move/detail/iterator_to_raw_pointer.hpp \
+ /usr/include/boost/move/detail/to_raw_pointer.hpp \
+ /usr/include/boost/move/detail/pointer_element.hpp \
+ /usr/include/boost/unordered/detail/set.hpp \
+ /usr/include/boost/unordered/detail/implementation.hpp \
+ /usr/include/boost/preprocessor/seq/enum.hpp \
+ /usr/include/boost/preprocessor/seq/size.hpp /usr/include/boost/swap.hpp \
+ /usr/include/boost/type_traits/aligned_storage.hpp \
+ /usr/include/boost/type_traits/is_empty.hpp \
+ /usr/include/boost/type_traits/is_nothrow_swappable.hpp \
+ /usr/include/boost/unordered/detail/fwd.hpp \
+ /usr/include/boost/utility/addressof.hpp \
+ /usr/include/boost/unordered/unordered_set_fwd.hpp \
+ /usr/include/boost/unordered/unordered_map.hpp \
+ /usr/include/boost/unordered/detail/map.hpp \
+ /usr/include/boost/unordered/unordered_map_fwd.hpp \
+ /usr/include/gazebo-11/gazebo/physics/CylinderShape.hh \
+ /usr/include/gazebo-11/gazebo/physics/FixedJoint.hh \
+ /usr/include/gazebo-11/gazebo/physics/HeightmapShape.hh \
+ /usr/include/gazebo-11/gazebo/common/ImageHeightmap.hh \
+ /usr/include/gazebo-11/gazebo/common/HeightmapData.hh \
+ /usr/include/gazebo-11/gazebo/common/Dem.hh \
+ /usr/include/gazebo-11/gazebo/physics/Hinge2Joint.hh \
+ /usr/include/gazebo-11/gazebo/physics/HingeJoint.hh \
+ /usr/include/gazebo-11/gazebo/physics/GearboxJoint.hh \
+ /usr/include/gazebo-11/gazebo/physics/Gripper.hh \
+ /usr/include/gazebo-11/gazebo/physics/JointController.hh \
+ /usr/include/gazebo-11/gazebo/common/PID.hh \
+ /usr/include/gazebo-11/gazebo/physics/Light.hh \
+ /usr/include/gazebo-11/gazebo/physics/LightState.hh \
+ /usr/include/gazebo-11/gazebo/physics/Link.hh \
+ /usr/include/gazebo-11/gazebo/physics/MapShape.hh \
+ /usr/include/gazebo-11/gazebo/physics/MeshShape.hh \
+ /usr/include/gazebo-11/gazebo/physics/MultiRayShape.hh \
+ /usr/include/gazebo-11/gazebo/physics/RayShape.hh \
+ /usr/include/gazebo-11/gazebo/physics/PhysicsIface.hh \
+ /usr/include/gazebo-11/gazebo/physics/PhysicsEngine.hh \
+ /usr/include/gazebo-11/gazebo/physics/PhysicsFactory.hh \
+ /usr/include/gazebo-11/gazebo/physics/PlaneShape.hh \
+ /usr/include/gazebo-11/gazebo/physics/PolylineShape.hh \
+ /usr/include/gazebo-11/gazebo/physics/Population.hh \
  /usr/include/gazebo-11/gazebo/physics/World.hh \
  /usr/include/gazebo-11/gazebo/physics/WorldState.hh \
- /usr/include/gazebo-11/gazebo/physics/LightState.hh \
  /usr/include/gazebo-11/gazebo/physics/Wind.hh \
- /home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/include/j8_xacro_model/j8_motors_control.hpp \
- /usr/include/gazebo-11/gazebo/common/Plugin.hh \
- /usr/include/x86_64-linux-gnu/sys/stat.h \
- /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
- /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
- /usr/include/dlfcn.h /usr/include/x86_64-linux-gnu/bits/dlfcn.h \
- /usr/include/x86_64-linux-gnu/bits/dl_find_object.h \
- /usr/include/boost/filesystem.hpp \
- /usr/include/boost/filesystem/config.hpp \
- /usr/include/boost/filesystem/path.hpp \
- /usr/include/boost/filesystem/path_traits.hpp \
- /usr/include/boost/io/quoted.hpp \
- /usr/include/boost/io/detail/buffer_fill.hpp \
- /usr/include/boost/io/detail/ostream_guard.hpp \
- /usr/include/boost/functional/hash_fwd.hpp \
- /usr/include/boost/filesystem/exception.hpp \
- /usr/include/boost/smart_ptr/intrusive_ptr.hpp \
- /usr/include/boost/smart_ptr/intrusive_ref_counter.hpp \
- /usr/include/boost/smart_ptr/detail/atomic_count.hpp \
- /usr/include/boost/smart_ptr/detail/atomic_count_gcc_atomic.hpp \
- /usr/include/boost/filesystem/directory.hpp \
- /usr/include/boost/filesystem/file_status.hpp \
- /usr/include/boost/detail/bitmask.hpp \
- /usr/include/boost/filesystem/operations.hpp \
- /usr/include/boost/filesystem/convenience.hpp \
- /usr/include/boost/filesystem/string_file.hpp \
- /usr/include/boost/filesystem/fstream.hpp \
- /usr/include/gazebo-11/gazebo/common/SystemPaths.hh \
- /usr/include/gazebo-11/gazebo/common/Exception.hh \
- /usr/include/gazebo-11/gazebo/sensors/SensorTypes.hh \
- /usr/include/gazebo-11/gazebo/common/EnumIface.hh \
- /usr/include/gazebo-11/gazebo/common/Assert.hh \
- /usr/include/gazebo-11/gazebo/rendering/RenderTypes.hh \
- /opt/ros/humble/include/gazebo_ros/conversions/builtin_interfaces.hpp \
- /usr/include/gazebo-11/gazebo/msgs/time.pb.h \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
- /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
- /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
- /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
- /usr/include/c++/11/codecvt \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
- /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /opt/ros/humble/include/gazebo_ros/conversions/generic.hpp \
+ /usr/include/gazebo-11/gazebo/physics/PresetManager.hh \
+ /usr/include/gazebo-11/gazebo/physics/Road.hh \
+ /usr/include/gazebo-11/gazebo/physics/ScrewJoint.hh \
+ /usr/include/gazebo-11/gazebo/physics/SliderJoint.hh \
+ /usr/include/gazebo-11/gazebo/physics/SphereShape.hh \
+ /usr/include/gazebo-11/gazebo/physics/SurfaceParams.hh \
+ /usr/include/gazebo-11/gazebo/physics/UniversalJoint.hh \
+ /usr/include/gazebo-11/gazebo/physics/UserCmdManager.hh \
+ /usr/include/gazebo-11/gazebo/common/common.hh \
+ /usr/include/gazebo-11/gazebo/common/AudioDecoder.hh \
+ /usr/include/gazebo-11/gazebo/common/Battery.hh \
+ /usr/include/gazebo-11/gazebo/common/Base64.hh \
+ /usr/include/gazebo-11/gazebo/common/BVHLoader.hh \
+ /usr/include/gazebo-11/gazebo/common/ColladaLoader.hh \
+ /usr/include/ignition/math6/ignition/math/Matrix4.hh \
+ /usr/include/gazebo-11/gazebo/common/MeshLoader.hh \
+ /usr/include/gazebo-11/gazebo/common/CommonIface.hh \
+ /usr/include/boost/uuid/detail/sha1.hpp /usr/include/boost/uuid/uuid.hpp \
+ /usr/include/boost/uuid/detail/config.hpp \
+ /usr/include/boost/uuid/detail/uuid_x86.ipp \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+ /usr/include/gazebo-11/gazebo/common/FuelModelDatabase.hh \
+ /usr/include/ignition/fuel_tools4/ignition/fuel_tools/ClientConfig.hh \
+ /usr/include/ignition/common3/ignition/common/URI.hh \
+ /usr/include/ignition/common3/ignition/common/Export.hh \
+ /usr/include/ignition/common3/ignition/common/detail/Export.hh \
+ /usr/include/ignition/common3/ignition/common/SuppressWarning.hh \
+ /usr/include/ignition/common3/ignition/common/detail/SuppressWarning.hh \
+ /usr/include/ignition/fuel_tools4/ignition/fuel_tools/Export.hh \
+ /usr/include/ignition/fuel_tools4/ignition/fuel_tools/detail/Export.hh \
+ /usr/include/ignition/fuel_tools4/ignition/fuel_tools/ModelIdentifier.hh \
+ /usr/include/ignition/fuel_tools4/ignition/fuel_tools/Helpers.hh \
+ /usr/include/gazebo-11/gazebo/common/MovingWindowFilter.hh \
+ /usr/include/boost/bind.hpp \
+ /usr/include/gazebo-11/gazebo/common/KeyEvent.hh \
+ /usr/include/gazebo-11/gazebo/common/KeyFrame.hh \
+ /usr/include/gazebo-11/gazebo/common/Material.hh \
+ /usr/include/gazebo-11/gazebo/common/MaterialDensity.hh \
+ /usr/include/ignition/math6/ignition/math/Helpers.hh \
+ /usr/include/gazebo-11/gazebo/common/Mesh.hh \
+ /usr/include/gazebo-11/gazebo/common/MeshManager.hh \
+ /usr/include/gazebo-11/gazebo/common/ModelDatabase.hh \
+ /usr/include/gazebo-11/gazebo/common/MouseEvent.hh \
+ /usr/include/gazebo-11/gazebo/common/OBJLoader.hh \
+ /usr/include/gazebo-11/gazebo/common/SdfFrameSemantics.hh \
+ /usr/include/gazebo-11/gazebo/common/SemanticVersion.hh \
+ /usr/include/gazebo-11/gazebo/common/SkeletonAnimation.hh \
+ /usr/include/gazebo-11/gazebo/common/Skeleton.hh \
+ /usr/include/gazebo-11/gazebo/common/STLLoader.hh \
+ /usr/include/gazebo-11/gazebo/common/SVGLoader.hh \
+ /usr/include/gazebo-11/gazebo/common/Timer.hh \
+ /usr/include/gazebo-11/gazebo/common/Video.hh \
+ /usr/include/gazebo-11/gazebo/common/VideoEncoder.hh \
+ /usr/include/gazebo-11/gazebo/common/WeakBind.hh \
+ /usr/include/gazebo-11/gazebo/common/ffmpeg_inc.h \
+ /usr/include/x86_64-linux-gnu/libavcodec/avcodec.h \
+ /usr/include/x86_64-linux-gnu/libavutil/samplefmt.h \
+ /usr/include/x86_64-linux-gnu/libavutil/avutil.h \
+ /usr/include/x86_64-linux-gnu/libavutil/common.h /usr/include/inttypes.h \
  /usr/include/c++/11/math.h \
- /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/logger.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/visibility_control.hpp \
- /opt/ros/humble/include/rcl/rcl/node.h \
+ /usr/include/x86_64-linux-gnu/libavutil/attributes.h \
+ /usr/include/x86_64-linux-gnu/libavutil/macros.h \
+ /usr/include/x86_64-linux-gnu/libavutil/version.h \
+ /usr/include/x86_64-linux-gnu/libavutil/avconfig.h \
+ /usr/include/x86_64-linux-gnu/libavutil/mem.h \
+ /usr/include/x86_64-linux-gnu/libavutil/error.h \
+ /usr/include/x86_64-linux-gnu/libavutil/rational.h \
+ /usr/include/x86_64-linux-gnu/libavutil/mathematics.h \
+ /usr/include/x86_64-linux-gnu/libavutil/intfloat.h \
+ /usr/include/x86_64-linux-gnu/libavutil/log.h \
+ /usr/include/x86_64-linux-gnu/libavutil/pixfmt.h \
+ /usr/include/x86_64-linux-gnu/libavutil/attributes.h \
+ /usr/include/x86_64-linux-gnu/libavutil/avutil.h \
+ /usr/include/x86_64-linux-gnu/libavutil/buffer.h \
+ /usr/include/x86_64-linux-gnu/libavutil/cpu.h \
+ /usr/include/x86_64-linux-gnu/libavutil/channel_layout.h \
+ /usr/include/x86_64-linux-gnu/libavutil/dict.h \
+ /usr/include/x86_64-linux-gnu/libavutil/frame.h \
+ /usr/include/x86_64-linux-gnu/libavutil/buffer.h \
+ /usr/include/x86_64-linux-gnu/libavutil/dict.h \
+ /usr/include/x86_64-linux-gnu/libavutil/samplefmt.h \
+ /usr/include/x86_64-linux-gnu/libavutil/hwcontext.h \
+ /usr/include/x86_64-linux-gnu/libavutil/frame.h \
+ /usr/include/x86_64-linux-gnu/libavutil/log.h \
+ /usr/include/x86_64-linux-gnu/libavutil/pixfmt.h \
+ /usr/include/x86_64-linux-gnu/libavutil/rational.h \
+ /usr/include/x86_64-linux-gnu/libavcodec/bsf.h \
+ /usr/include/x86_64-linux-gnu/libavcodec/codec_id.h \
+ /usr/include/x86_64-linux-gnu/libavcodec/codec_par.h \
+ /usr/include/x86_64-linux-gnu/libavcodec/packet.h \
+ /usr/include/x86_64-linux-gnu/libavcodec/version.h \
+ /usr/include/x86_64-linux-gnu/libavutil/version.h \
+ /usr/include/x86_64-linux-gnu/libavcodec/codec.h \
+ /usr/include/x86_64-linux-gnu/libavcodec/codec_id.h \
+ /usr/include/x86_64-linux-gnu/libavcodec/codec_desc.h \
+ /usr/include/x86_64-linux-gnu/libavcodec/version.h \
+ /usr/include/x86_64-linux-gnu/libavformat/avformat.h \
+ /usr/include/x86_64-linux-gnu/libavformat/avio.h \
+ /usr/include/x86_64-linux-gnu/libavutil/common.h \
+ /usr/include/x86_64-linux-gnu/libavformat/version.h \
+ /usr/include/x86_64-linux-gnu/libavutil/imgutils.h \
+ /usr/include/x86_64-linux-gnu/libavutil/pixdesc.h \
+ /usr/include/x86_64-linux-gnu/libavutil/opt.h \
+ /usr/include/x86_64-linux-gnu/libswscale/swscale.h \
+ /usr/include/x86_64-linux-gnu/libswscale/version.h \
+ /usr/include/x86_64-linux-gnu/libavdevice/avdevice.h \
+ /usr/include/x86_64-linux-gnu/libavdevice/version.h \
+ /usr/include/gazebo-11/gazebo/common/GTSMeshUtils.hh \
+ /usr/include/gazebo-11/gazebo/common/MeshCSG.hh \
+ /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
+ /usr/include/c++/11/csignal \
+ /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
+ /usr/include/c++/11/future /usr/include/c++/11/bits/atomic_futex.h \
+ /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp \
+ /opt/ros/humble/include/rcl/rcl/guard_condition.h \
  /opt/ros/humble/include/rcl/rcl/allocator.h \
  /opt/ros/humble/include/rcutils/rcutils/allocator.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -1789,6 +1937,15 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
  /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h \
  /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h \
+ /opt/ros/humble/include/rcl/rcl/context.h \
+ /opt/ros/humble/include/rmw/rmw/init.h \
+ /opt/ros/humble/include/rmw/rmw/init_options.h \
+ /opt/ros/humble/include/rmw/rmw/domain_id.h \
+ /opt/ros/humble/include/rmw/rmw/localhost.h \
+ /opt/ros/humble/include/rmw/rmw/visibility_control.h \
+ /opt/ros/humble/include/rmw/rmw/macros.h \
+ /opt/ros/humble/include/rmw/rmw/ret_types.h \
+ /opt/ros/humble/include/rmw/rmw/security_options.h \
  /opt/ros/humble/include/rcl/rcl/arguments.h \
  /opt/ros/humble/include/rcl/rcl/log_level.h \
  /opt/ros/humble/include/rcl/rcl/macros.h \
@@ -1809,42 +1966,31 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h \
  /opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h \
  /opt/ros/humble/include/rmw/rmw/qos_policy_kind.h \
- /opt/ros/humble/include/rmw/rmw/visibility_control.h \
  /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_changed.h \
  /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h \
  /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h \
  /opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h \
  /opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h \
- /opt/ros/humble/include/rmw/rmw/init.h \
- /opt/ros/humble/include/rmw/rmw/init_options.h \
- /opt/ros/humble/include/rmw/rmw/domain_id.h \
- /opt/ros/humble/include/rmw/rmw/localhost.h \
- /opt/ros/humble/include/rmw/rmw/macros.h \
- /opt/ros/humble/include/rmw/rmw/ret_types.h \
- /opt/ros/humble/include/rmw/rmw/security_options.h \
  /opt/ros/humble/include/rmw/rmw/serialized_message.h \
  /opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h \
  /opt/ros/humble/include/rmw/rmw/time.h \
  /opt/ros/humble/include/rcl/rcl/visibility_control.h \
  /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h \
- /opt/ros/humble/include/rcl/rcl/context.h \
  /opt/ros/humble/include/rcl/rcl/init_options.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h \
- /opt/ros/humble/include/rcl/rcl/guard_condition.h \
- /opt/ros/humble/include/rcl/rcl/node_options.h \
- /opt/ros/humble/include/rcl/rcl/domain_id.h \
- /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp \
- /opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp \
- /opt/ros/humble/include/rcutils/rcutils/logging_macros.h \
- /opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/context.hpp \
  /opt/ros/humble/include/rcl/rcl/wait.h \
  /opt/ros/humble/include/rcl/rcl/client.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+ /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/humble/include/rcl/rcl/event_callback.h \
  /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
+ /opt/ros/humble/include/rcl/rcl/node.h \
+ /opt/ros/humble/include/rcl/rcl/node_options.h \
+ /opt/ros/humble/include/rcl/rcl/domain_id.h \
  /opt/ros/humble/include/rcl/rcl/service.h \
  /opt/ros/humble/include/rcl/rcl/subscription.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/humble/include/rmw/rmw/message_sequence.h \
  /opt/ros/humble/include/rcl/rcl/timer.h \
  /opt/ros/humble/include/rcl/rcl/time.h \
@@ -1856,55 +2002,11 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /opt/ros/humble/include/rmw/rmw/subscription_options.h \
  /opt/ros/humble/include/rcl/rcl/event.h \
  /opt/ros/humble/include/rcl/rcl/publisher.h \
- /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/time.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
- /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
- /opt/ros/humble/include/gazebo_ros/conversions/geometry_msgs.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__type_support.hpp \
- /opt/ros/humble/include/gazebo_ros/node.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
- /usr/include/c++/11/csignal \
- /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
- /usr/include/c++/11/future /usr/include/c++/11/bits/atomic_futex.h \
- /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp \
  /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/context.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/visibility_control.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp \
@@ -1920,6 +2022,12 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /opt/ros/humble/include/rcpputils/rcpputils/join.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/logger.hpp \
+ /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp \
+ /opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp \
+ /opt/ros/humble/include/rcutils/rcutils/logging_macros.h \
+ /opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
  /opt/ros/humble/include/rcl/rcl/graph.h \
  /opt/ros/humble/include/rmw/rmw/names_and_types.h \
@@ -1928,6 +2036,19 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h \
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
+ /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
+ /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
+ /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
+ /usr/include/c++/11/codecvt \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp \
  /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
  /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
  /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
@@ -1973,6 +2094,12 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /opt/ros/humble/include/rclcpp/rclcpp/subscription_content_filter_options.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/clock.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/time.hpp \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp \
@@ -2146,115 +2273,22 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /opt/ros/humble/include/gazebo_ros/executor.hpp \
- /opt/ros/humble/include/gazebo_ros/node_visibility_control.h \
- /opt/ros/humble/include/gazebo_ros/qos.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose2_d.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
- /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
- /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/vector3_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench__type_support.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/wrench_stamped.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__struct.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__builder.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__traits.hpp \
- /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/wrench_stamped__type_support.hpp \
- /usr/include/kdl/frames.hpp /usr/include/kdl/utilities/kdl-config.h \
- /usr/include/kdl/utilities/utility.h \
- /usr/include/kdl/utilities/kdl-config.h /usr/include/kdl/frames.inl \
- /opt/ros/humble/include/tf2/tf2/convert.hpp \
- /opt/ros/humble/include/tf2/tf2/exceptions.hpp \
- /opt/ros/humble/include/tf2/tf2/visibility_control.h \
- /opt/ros/humble/include/tf2/tf2/impl/convert.hpp \
- /opt/ros/humble/include/tf2/tf2/transform_datatypes.hpp \
- /opt/ros/humble/include/tf2/tf2/time.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
- /usr/include/c++/11/cfloat \
- /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \
@@ -2262,8 +2296,25 @@ CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o:
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
- /opt/ros/humble/include/tf2/tf2/buffer_core.hpp \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
- /opt/ros/humble/include/tf2/tf2/buffer_core_interface.hpp \
- /opt/ros/humble/include/tf2/tf2/transform_storage.hpp
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp \
+ /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp \
+ /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp \
+ /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp \
+ /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp \
+ /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp \
+ /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp

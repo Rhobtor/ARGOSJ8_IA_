@@ -62,7 +62,7 @@ MAX_TILT = 0.5
 DTYPE = np.float32
 
 
-RUN_DIR = pathlib.Path.home() / "../workspace_full_conected/weights"
+RUN_DIR = pathlib.Path.home() /  "PHD" / "ARGOJ8_IA" / "weights"
 RUN_DIR.mkdir(exist_ok=True)
 
 # ==============  UTILS GEOMÉTRICOS  =======================================

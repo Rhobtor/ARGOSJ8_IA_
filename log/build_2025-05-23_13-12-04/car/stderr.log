@@ -1,0 +1,5 @@
+  File "/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/path_ppo_cnn_lstm_training_init_mode_j8.py", line 680
+    cost = (distance(cand, target)
+            ^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
