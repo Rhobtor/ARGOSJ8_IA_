@@ -227,7 +227,7 @@ def generate_launch_description():
         gazebo_client,
         urdf_spawn_node,
         filter_points_cloud,
-        frontier_values,
+        #frontier_values,
         octomap,
         map_odom_tf,
         navigation_nodes_ground,

@@ -1,0 +1,13 @@
+[  7%] Built target frontier_values
+[ 15%] Built target occupied_nodes_near_obstacles
+[ 23%] Built target move_navigation_nodes_frontier
+[ 30%] Built target filtered_navigation_nodes
+[ 38%] Built target slope_terrain
+[ 46%] Built target gridmap
+[ 53%] Built target navigation_nodes
+[ 57%] [32mBuilding CXX object CMakeFiles/check_goal.dir/src/check_goal.cpp.o[0m
+[ 65%] Built target move_plugin
+[ 73%] Built target drive_plugin
+[ 80%] Built target navigation_nodes_ground
+[ 88%] Built target joints_plugin
+[ 96%] Built target obstacles_in_2d

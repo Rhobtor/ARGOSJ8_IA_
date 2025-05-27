@@ -28,6 +28,7 @@ find_package(ignition-common3 REQUIRED)
 find_package(car_interfaces REQUIRED)
 find_package(grid_map_ros REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(OpenCV REQUIRED COMPONENTS core imgproc ximgproc)
 
 
 # Agregar directorios de encabezados
@@ -93,7 +94,9 @@ install(TARGETS
 
 add_executable(frontier_values src/frontier_values.cpp)
 ament_target_dependencies(frontier_values rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)  
-
+target_link_libraries(frontier_values
+  ${OpenCV_LIBS}
+)
 install(TARGETS
   frontier_values
   DESTINATION lib/${PROJECT_NAME}

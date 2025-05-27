@@ -1,0 +1,13 @@
+[  7%] Built target occupied_nodes_near_obstacles
+[ 15%] Built target navigation_nodes
+[ 38%] Built target check_goal
+[ 30%] Built target move_navigation_nodes_frontier
+[ 30%] Built target frontier_values
+[ 46%] Built target navigation_nodes_ground
+[ 53%] Built target filtered_navigation_nodes
+[ 61%] Built target gridmap
+[ 69%] Built target obstacles_in_2d
+[ 73%] [32mBuilding CXX object CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o[0m
+[ 80%] Built target joints_plugin
+[ 88%] Built target drive_plugin
+[ 96%] Built target move_plugin

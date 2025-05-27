@@ -1,0 +1,15 @@
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/src/gazebo_ros_j8_wheels_speed.cpp:950:30:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble gazebo::GazeboRosJ8WheelsPlugin::max_throttle_acc_[m[K’
+  950 |   double max_throttle_acc_ = [01;31m[K0.6[m[K;     // rad/s²  (≈0.18 m/s²)
+      |                              [01;31m[K^~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/src/gazebo_ros_j8_wheels_speed.cpp:944:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kdouble gazebo::GazeboRosJ8WheelsPlugin::max_throttle_acc_[m[K’
+  944 |   double [01;36m[Kmax_throttle_acc_[m[K{1.86};
+      |          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/src/gazebo_ros_j8_wheels_speed.cpp:951:30:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble gazebo::GazeboRosJ8WheelsPlugin::max_steering_acc_[m[K’
+  951 |   double max_steering_acc_ = [01;31m[K0.4[m[K;     // rad/s²
+      |                              [01;31m[K^~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model/src/gazebo_ros_j8_wheels_speed.cpp:945:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kdouble gazebo::GazeboRosJ8WheelsPlugin::max_steering_acc_[m[K’
+  945 |   double [01;36m[Kmax_steering_acc_[m[K{1.23};
+      |          [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/build.make:76: CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/src/gazebo_ros_j8_wheels_speed.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/gazebo_ros_j8_wheels_plugin.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

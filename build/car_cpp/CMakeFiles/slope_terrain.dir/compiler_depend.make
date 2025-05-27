@@ -17,6 +17,10 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
@@ -33,6 +37,7 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_array.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp \
@@ -819,8 +824,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
@@ -961,15 +964,17 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
-/opt/ros/humble/include/rmw/rmw/domain_id.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
-
-/usr/include/c++/11/bits/stl_vector.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
@@ -1062,10 +1067,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
 
@@ -1199,29 +1200,43 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
 
-/usr/include/c++/11/tr1/gamma.tcc:
-
-/usr/include/c++/11/bits/node_handle.h:
-
-/opt/ros/humble/include/rcl/rcl/domain_id.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /usr/include/c++/11/system_error:
 
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
 
-/opt/ros/humble/include/rcl/rcl/arguments.h:
+/usr/include/c++/11/tr1/unordered_set.h:
 
-/opt/ros/humble/include/rcl/rcl/types.h:
+/opt/ros/humble/include/rclcpp/rclcpp/create_client.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
 
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+
+/opt/ros/humble/include/tf2/tf2/convert.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/usr/include/c++/11/array:
+
+/usr/include/c++/11/iostream:
 
 /opt/ros/humble/include/rclcpp/rclcpp/future_return_code.hpp:
 
@@ -1243,14 +1258,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /usr/include/linux/errno.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
-
-/opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap__struct.hpp:
-
-/opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/octomap.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
-
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
@@ -1264,8 +1271,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
 
 /usr/include/c++/11/bits/std_abs.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
 
@@ -1291,10 +1296,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
-/opt/ros/humble/include/rcl/rcl/allocator.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
-
 /opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
 
 /usr/include/ctype.h:
@@ -1302,6 +1303,18 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
+
+/opt/ros/humble/include/octomap/OcTreeKey.h:
+
+/usr/include/c++/11/bits/basic_string.tcc:
+
+/usr/include/c++/11/bits/string_view.tcc:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:
+
+/usr/include/c++/11/typeindex:
+
+/usr/include/unistd.h:
 
 /opt/ros/humble/include/octomap/OcTreeBaseImpl.h:
 
@@ -1317,12 +1330,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
-
-/opt/ros/humble/include/octomap/OcTreeNode.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
 
 /opt/ros/humble/include/octomap/ScanGraph.h:
@@ -1333,19 +1340,11 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_array.hpp:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
-/usr/include/c++/11/mutex:
-
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:
-
-/opt/ros/humble/include/octomap/octomap_types.h:
-
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
-
-/usr/include/c++/11/csignal:
-
-/opt/ros/humble/include/octomap/AbstractOcTree.h:
 
 /usr/include/c++/11/bits/atomic_futex.h:
 
@@ -1356,22 +1355,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
-
-/opt/ros/humble/include/octomap/OcTreeKey.h:
-
-/usr/include/c++/11/bits/basic_string.tcc:
-
-/usr/include/c++/11/bits/string_view.tcc:
-
-/opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
-
-/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:
-
-/usr/include/c++/11/typeindex:
-
-/usr/include/unistd.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -1392,6 +1375,8 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
+
+/opt/ros/humble/include/octomap_msgs/octomap_msgs/conversions.h:
 
 /opt/ros/humble/include/rmw/rmw/names_and_types.h:
 
@@ -1419,6 +1404,24 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__builder.hpp:
+
+/usr/include/c++/11/tr1/gamma.tcc:
+
+/usr/include/c++/11/bits/node_handle.h:
+
+/opt/ros/humble/include/rcl/rcl/domain_id.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdalign.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
+
+/opt/ros/humble/include/octomap/OcTreeNode.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
@@ -1427,10 +1430,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
@@ -1438,30 +1437,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/opt/ros/humble/include/rmw/rmw/serialized_message.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
-
-/usr/include/c++/11/bits/unique_lock.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
-
-/usr/include/c++/11/backward/auto_ptr.h:
-
-/opt/ros/humble/include/rcl/rcl/client.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
-
-/usr/include/c++/11/sstream:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
 
@@ -1474,6 +1449,10 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
 
@@ -1505,6 +1484,16 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_factory.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
+
+/usr/include/c++/11/bits/stl_vector.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__builder.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
+
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
@@ -1522,6 +1511,18 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp:
+
+/opt/ros/humble/include/rcl/rcl/arguments.h:
+
+/opt/ros/humble/include/rcl/rcl/types.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
 
@@ -1545,19 +1546,47 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
 
-/usr/include/c++/11/bits/functexcept.h:
+/opt/ros/humble/include/octomap/AbstractOcTree.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
+/usr/include/c++/11/csignal:
 
-/opt/ros/humble/include/tf2/tf2/convert.hpp:
+/opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap__struct.hpp:
 
-/opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
+/opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/octomap.hpp:
 
-/usr/include/c++/11/pstl/glue_numeric_defs.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
 
-/opt/ros/humble/include/octomap_msgs/octomap_msgs/conversions.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
+
+/opt/ros/humble/include/rcl/rcl/allocator.h:
+
+/opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/opt/ros/humble/include/rmw/rmw/serialized_message.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+
+/usr/include/c++/11/bits/unique_lock.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
+
+/usr/include/c++/11/backward/auto_ptr.h:
+
+/opt/ros/humble/include/rcl/rcl/client.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
+
+/usr/include/c++/11/sstream:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
@@ -1577,8 +1606,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
@@ -1593,6 +1620,8 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp:
+
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
@@ -1602,6 +1631,10 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/octomap/OcTreeDataNode.hxx:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
+
+/opt/ros/humble/include/octomap/octomap.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
 
@@ -1633,10 +1666,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
 
-/opt/ros/humble/include/octomap/octomap.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
-
 /usr/include/c++/11/bits/invoke.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
@@ -1662,8 +1691,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
-
-/opt/ros/humble/include/rmw/rmw/error_handling.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
 
@@ -1749,6 +1776,12 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
 
+/opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
@@ -1807,31 +1840,21 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/create_client.hpp:
+/usr/include/c++/11/pstl/glue_numeric_defs.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
+/opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
+/opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
 
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
+/opt/ros/humble/include/rmw/rmw/domain_id.h:
 
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:
 
-/usr/include/c++/11/bits/basic_ios.tcc:
+/opt/ros/humble/include/octomap/octomap_types.h:
 
-/opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
+/usr/include/c++/11/mutex:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
-
-/usr/include/c++/11/array:
-
-/usr/include/c++/11/iostream:
-
-/usr/include/c++/11/tr1/unordered_set.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
+/opt/ros/humble/include/rmw/rmw/error_handling.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
 
@@ -2111,9 +2134,9 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /usr/include/c++/11/bits/enable_special_members.h:
 
-/usr/include/c++/11/ciso646:
-
 /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
+
+/usr/include/c++/11/ciso646:
 
 /usr/include/wchar.h:
 
@@ -2172,8 +2195,6 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /usr/include/c++/11/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/11/bits/std_mutex.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /opt/ros/humble/include/octomap_msgs/octomap_msgs/msg/detail/octomap__type_support.hpp:
 
@@ -2365,9 +2386,9 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /usr/include/c++/11/type_traits:
 
-/opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
 
 /usr/include/c++/11/utility:
 
@@ -2426,9 +2447,3 @@ CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /usr/include/c++/11/clocale:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:

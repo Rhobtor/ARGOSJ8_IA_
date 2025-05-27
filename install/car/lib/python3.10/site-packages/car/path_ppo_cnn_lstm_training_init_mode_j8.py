@@ -31,6 +31,7 @@ from scipy.ndimage      import (binary_dilation,
 import datetime
 from argj801_ctl_platform_interfaces.msg import CmdThrottleMsg
 from grid_map_msgs.msg import GridMap
+from rclpy.time import Time
 
 # ==============  PARÁMETROS GLOBALES  =====================================
 PATCH           = 128                       # lado del parche (celdas)
@@ -48,7 +49,7 @@ LOOK_A  = 2.0    # m (aceptación)
 # PPO
 ROLLOUT_STEPS   = 1024
 BATCH_SZ        = 256
-EPOCHS          = 500
+EPOCHS          = 10
 MAX_UPDATES     = 10
 GAMMA           = 0.99
 GAE_LAMBDA      = 0.95
@@ -60,8 +61,8 @@ STD_MIN         = 0.05
 STD_DECAY       = 0.995
 MAX_EPISODES = 300 
 MAX_TILT = 1.0
-MAX_STEERING = 70.0
-MAX_THROTTLE = 70.0
+MAX_STEERING = 40.0
+MAX_THROTTLE = 40.0
 WHEEL_BASE = 1.35        # m – distancia ejes
 DELTA_MAX  = math.radians(32)   # giro máx. ruedas
 K_STEER_LP = 0.7         # filtro exp. en steering
@@ -80,14 +81,20 @@ SLOPE_COST_GAIN = 20.0                            # peso en la métrica de coste
 
 # ─────────────────────────── stuck / reverse ────────────────────────────
 STUCK_DIST_THR   = 0.01     # m – avance mínimo para no considerarlo atascado
-STUCK_CYCLES_MAX = 120       # nº de ciclos consecutivos sin progreso
-REV_STEPS        = 30       # ciclos de marcha atrás
+STUCK_CYCLES_MAX = 60       # nº de ciclos consecutivos sin progreso
+REV_STEPS        = 60       # ciclos de marcha atrás
 REV_THROTTLE     = -0.4 * MAX_THROTTLE
 REV_STEER_SIGN   = +1      # cambia a −1 si quieres salir girando al otro lado
 # ─────────────────────────── scan extra ─────────────────────────────────
 UNKNOWN_FRAC_THR = 0.30     # % de celdas -1 en el frontal que dispara giro
 
+REACHED_F_THR = 2.5      # m – tolerancia para considerar “visitada”
 
+
+
+WEIGHT_GOAL   = 1.0      # peso de la distancia al goal
+WEIGHT_ROBOT  = 0.3      # peso de la distancia al robot
+CONE_DEG      = 45       # opcional: sólo frontiers dentro de ±45°
 
 
 DTYPE = np.float32
@@ -107,6 +114,14 @@ def idx_from_world(info, pt):
 
 def distance(a,b): return math.hypot(b[0]-a[0], b[1]-a[1])
 
+
+def _angle(a, b, c):
+    """ángulo (rad) entre ab y ac"""
+    v1 = (b[0]-a[0], b[1]-a[1])
+    v2 = (c[0]-a[0], c[1]-a[1])
+    dot = v1[0]*v2[0] + v1[1]*v2[1]
+    n1  = math.hypot(*v1); n2 = math.hypot(*v2)
+    return math.acos(max(-1.0, min(1.0, dot/(n1*n2+1e-9))))
 
 def height_at(arr_h, info_h, pt):
     """
@@ -229,7 +244,7 @@ class FlexPlanner(Node):
         qos=10
         self.create_subscription(Odometry,      "/ARGJ801/odom_demo",            self.cb_odom,     qos)
         self.create_subscription(PoseArray,     "/goal",            self.cb_goal,     qos)
-        self.create_subscription(OccupancyGrid, "/occupancy_grid",  self.cb_grid,     50)
+        self.create_subscription(OccupancyGrid, "/occupancy_grid",  self.cb_grid,     10)
         self.create_subscription(PoseArray,     "/safe_frontier_points_centroid",
                                  self.cb_frontier, qos)
         self.create_subscription(Bool,"/virtual_collision", self.cb_collision, qos)
@@ -241,8 +256,13 @@ class FlexPlanner(Node):
         # --- Publicadores
         self.path_pub  = self.create_publisher(Path,  "/global_path_predicted", qos)
         self.wps_pub   = self.create_publisher(Marker,"/path_waypoints_marker", qos)
-        self.coll_pub  = self.create_publisher(Bool,  "/virtual_collision", qos)
-        #self.goal_pub  = self.create_publisher(Bool,  "/goal_reached", qos)
+        self.bad_pub  = self.create_publisher(Marker, "/frontiers_bad", 10)
+        self.vis_pub  = self.create_publisher(Marker, "/frontiers_visited", 10)
+        self.mk_vis_pub = self.create_publisher(
+        Marker, "/frontiers_visited_marker", 10)
+        self.mk_bad_pub = self.create_publisher(
+                Marker, "/frontiers_bad_marker",     10)
+        self.goal_pub  = self.create_publisher(Bool,  "/goal_reached", qos)
         latched=QoSProfile(depth=1,
                            reliability=ReliabilityPolicy.RELIABLE,
                            durability=DurabilityPolicy.TRANSIENT_LOCAL)
@@ -280,6 +300,18 @@ class FlexPlanner(Node):
         self.reversing         = False
         self.rev_steps_left    = 0
         self.training = False
+
+        ### list frontier delete
+        self.bad_frontiers : list[tuple[float,float]] = []   
+        self.visited_frontiers  : list[tuple[float, float]] = []
+
+
+        ###########
+        self.map_max_age_sec = 0.5      # ← umbral; ajusta a tu ritmo de /occupancy_grid
+        self._grid_stamp     = None
+
+        self.active_target = None  # (x,y) del target activo
+
 
         self.last_cmd = CmdThrottleMsg()
 
@@ -335,7 +367,8 @@ class FlexPlanner(Node):
         """Guarda el GridMap de terreno más reciente."""
         self.height_map_msg = msg
 
-
+    def _too_close(self, p, q, tol=1.2):
+        return l2(p, q) < tol            # l2() ya la tienes definida
 
     def cb_grid(self, m: OccupancyGrid):
         # mezclamos capa estática + móviles
@@ -347,6 +380,7 @@ class FlexPlanner(Node):
         else:
             self.grid_dyn = static_arr
         self.grid_msg = m                              # conserva original
+        self._grid_stamp = Time.from_msg(m.header.stamp)  # guarda el timestamp del grid
 
     def cb_frontier(self,m):
         self.frontiers=[(p.position.x,p.position.y) for p in m.poses]
@@ -369,9 +403,15 @@ class FlexPlanner(Node):
             self.goal_counter  = 0
             self.goals_in_world = random.randint(5, 7)
             self.collided      = False
+            self.bad_frontiers.clear()
+            self.visited_frontiers.clear()
+            self.bad_pub.publish(PoseArray())    # lista vacía
+            self.vis_pub.publish(PoseArray())
             self.reset_buffers()
             self.get_logger().info("[Reset] confirmado por el supervisor")
 
+    def _near(self, p, q, tol=1.2):
+        return l2(p, q) < tol
 
     # --------------------------------------------------------------
     #  Mantiene el vehículo quieto compensando la pendiente
@@ -457,6 +497,18 @@ class FlexPlanner(Node):
         """Convierte ΔX,ΔY de frame 'map' a 'base_link'."""
         cos_y, sin_y = math.cos(-yaw), math.sin(-yaw)
         return dx*cos_y - dy*sin_y, dx*sin_y + dy*cos_y
+
+
+    def _list_to_posearray(self, lst, frame_id="map"):
+        pa = PoseArray()
+        pa.header.frame_id = frame_id
+        pa.header.stamp = self.get_clock().now().to_msg()
+        for x, y in lst:
+            pose = PoseStamped().pose    # truco rápido para un Pose vacío
+            pose.position.x, pose.position.y = x, y
+            pose.orientation.w = 1.0
+            pa.poses.append(pose)
+        return pa
 
 
     def entry_point_in_grid(self,cp, fp, info):
@@ -566,20 +618,48 @@ class FlexPlanner(Node):
 
 
     # ---------- Target robusto ----------
+    # def choose_target(self, cp, grid, info):
+    #     # 1) goal directo si está definido y visible
+    #     if self.goal:
+    #         gp = (self.goal.position.x, self.goal.position.y)
+    #         if bres_free(grid, info, cp, gp):
+    #             return gp, "GOAL"
+
+    #     # 2) cualquier frontier
+    #     if self.frontiers:
+    #         best = min(self.frontiers, key=lambda f: l2(f, gp if self.goal else cp))
+    #         return best, "FRONTIER"
+
+    #     # 3) nada de nada
+    #     return None, "NONE"
+
     def choose_target(self, cp, grid, info):
-        # 1) goal directo si está definido y visible
+        # 1) goal visible
         if self.goal:
             gp = (self.goal.position.x, self.goal.position.y)
             if bres_free(grid, info, cp, gp):
                 return gp, "GOAL"
+        else:
+            gp = None
 
-        # 2) cualquier frontier
-        if self.frontiers:
-            best = min(self.frontiers, key=lambda f: l2(f, gp if self.goal else cp))
-            return best, "FRONTIER"
+        # 2) frontiers recibidos (sin los malos / visitados)
+        if not self.frontiers:
+            return None, "NONE"
 
-        # 3) nada de nada
-        return None, "NONE"
+        remaining = [f for f in self.frontiers
+                    if f not in self.bad_frontiers
+                    and f not in self.visited_frontiers]
+
+        if not remaining:
+            return None, "NONE"
+
+        #
+        if gp:                                    # hay goal definido
+            best = min(remaining, key=lambda f: l2(f, gp))
+        else:                                     # sin goal → al más cercano al robot
+            best = min(remaining, key=lambda f: l2(f, cp))
+        return best, "FRONTIER"
+
 
 
 
@@ -878,8 +958,8 @@ class FlexPlanner(Node):
     #     omega = kappa * v_lin
 
     #     # 7) Mapea a unidades de throttle/steering
-    #     MAX_THROTTLE = 500.0   # unidad máxima de tu Ctrl
-    #     MAX_STEERING = 500.0   # idem
+    #     MAX_THROTTLE = 70.0   # unidad máxima de tu Ctrl
+    #     MAX_STEERING = 70.0   # idem
     
     #     thr_cmd = (v_lin / MAX_VEL) * MAX_THROTTLE
     #     str_cmd = -(omega / (2.0)) * MAX_STEERING  # si 2.0 rad/s fuera tu ω máx.
@@ -949,108 +1029,166 @@ class FlexPlanner(Node):
     #     )
 
 ####################################### bueno anterior
-    def follow_path(self, cp):
-        """
-        Pure-Pursuit mejorado:
-        · v_des depende de curvatura y pendiente
-        · steering via Ackermann
-        · throttle por control P en velocidad
-        · filtros de 1er orden para suavizar inercia
-        """
-        if self.wp_index >= len(self.current_path):
-            self.cmd_pub.publish(self._brake())
-            return
+    # def follow_path(self, cp):
+    #     """
+    #     Pure-Pursuit mejorado:
+    #     · v_des depende de curvatura y pendiente
+    #     · steering via Ackermann
+    #     · throttle por control P en velocidad
+    #     · filtros de 1er orden para suavizar inercia
+    #     """
+    #     if self.wp_index >= len(self.current_path):
+    #         self.cmd_pub.publish(self._brake())
+    #         return
 
-        # 1) Look-ahead dependiente de velocidad
+    #     # 1) Look-ahead dependiente de velocidad
+    #     v_curr = math.hypot(self.twist.linear.x, self.twist.linear.y)
+    #     Ld     = np.clip(1.6 * v_curr, 0.3, 4.0)      # m
+    #     self.wp_index = self._next_target_index(cp, Ld)
+    #     tgt = self.current_path[self.wp_index]
+
+    #     # 2) Transformación a frame del vehículo
+    #     dx_g, dy_g = tgt[0] - cp[0], tgt[1] - cp[1]
+    #     yaw = self._yaw_from_quaternion(self.pose.orientation)
+    #     dx, dy = self._global_to_local(dx_g, dy_g, yaw)
+
+    #     dist   = math.hypot(dx, dy)
+    #     # if dist < 1e-2:
+    #     #     self.cmd_pub.publish(self._brake()); return
+    #     at_last_wp = (self.wp_index == len(self.current_path)-1)
+    #     if at_last_wp and dist < 0.15:        # parada real
+    #         self.cmd_pub.publish(self._brake())
+    #         self.last_cmd = self._brake()
+    #         return
+
+    #     alpha  = math.atan2(dy, dx)
+    #     kappa  = 2.0 * math.sin(alpha) / max(dist, 1e-3)   # curvatura
+
+
+
+
+
+    #     # 3) Desired steering (Ackermann)
+    #     delta_des = math.atan(WHEEL_BASE * kappa)
+    #     delta_des = np.clip(delta_des, -DELTA_MAX, DELTA_MAX)
+    #     str_cmd   = -(delta_des / DELTA_MAX) * MAX_STEERING   # map to units
+
+    #     # 4) Desired speed (curvatura + pendiente)
+    #     slope = 0.0
+    #     if self.height_map_msg is not None:
+    #         h_arr,hm_info = gridmap_to_numpy(self.height_map_msg)
+    #         slope = abs(height_at(h_arr, hm_info, tgt) -
+    #                     height_at(h_arr, hm_info, cp)) / dist
+    #     # v_des = V_MAX * (1 - 0.7*abs(kappa)) * (1 - 0.5*slope)
+    #     # v_des = np.clip(v_des, V_MIN, V_MAX)
+    #     ##v_des = V_MAX * (1 - 0.7*abs(kappa)) * (1 - 0.5*slope)
+
+    #     v_des = V_MAX * (1 - 0.7*abs(kappa))
+    #     v_des *= 1.0 - 0.5*max(slope, 0)         # cuesta arriba
+    #     v_des *= 1.0 - 0.2*max(-slope, 0)        # cuesta abajo (menos severo)
+    #     v_des = np.clip(v_des, V_MIN, V_MAX)
+
+    #     # desaceleración progresiva en los últimos 0.6 m
+    #     if at_last_wp and dist < 0.6:
+    #         v_des *= dist / 0.6
+
+    #     # 5) Longitudinal control (P)
+    #     # thr_raw = KP_SPEED * (v_des - v_curr)          # N-units
+    #     err_v   = v_des - v_curr
+    #     # integral mínima para vencer rozamiento
+    #     self.int_err = getattr(self, 'int_err', 0.0) + err_v*0.01
+    #     self.int_err = np.clip(self.int_err, -2.0, 2.0)
+    #     ## thr_raw = KP_SPEED * err_v + self.int_err + THR_IDLE*np.sign(v_des)
+    #     # añade “boost” +10 % si estamos subiendo más de 5 %
+    #     boost = 0.10*MAX_THROTTLE if slope > 0.05 else 0.0
+    #     thr_raw = KP_SPEED * err_v + self.int_err + THR_IDLE*np.sign(v_des) + boost
+    #     thr_cmd = np.clip(thr_raw, -MAX_THROTTLE, MAX_THROTTLE)
+
+    #     # 6) Filtros y rampa
+    #     ##str_cmd = (1-K_STEER_LP) * str_cmd + K_STEER_LP * self.last_cmd.steering
+    #     # thr_cmd = (1-K_THROTTLE_LP) * thr_cmd + K_THROTTLE_LP * self.last_cmd.throttle
+    #     # # thr_cmd = (1-K_THROTTLE_LP)*thr_cmd + K_THROTTLE_LP*self.last_cmd.throttle
+    #     # # d_thr   = np.clip(thr_cmd - self.last_cmd.throttle,
+    #     # #                 -MAX_DTHR, MAX_DTHR)
+    #     str_filt = (1-K_STEER_LP)*str_cmd + K_STEER_LP*self.last_cmd.steering
+    #     thr_filt = (1-K_THROTTLE_LP)*thr_cmd + K_THROTTLE_LP*self.last_cmd.throttle
+
+    #     d_thr   = np.clip(thr_filt - self.last_cmd.throttle,
+    #                       -MAX_DTHR, MAX_DTHR)
+    #     thr_cmd = self.last_cmd.throttle + d_thr
+    #     str_cmd = str_filt
+
+    #     # 7) Publica
+    #     cmd = CmdThrottleMsg()
+    #     cmd.throttle = thr_cmd
+    #     cmd.steering = str_cmd
+    #     self.cmd_pub.publish(cmd)
+    #     self.last_cmd = cmd
+
+    #     self.get_logger().info(
+    #         f"[CTRL] wp={self.wp_index}/{len(self.current_path)-1} "
+    #         f"α={alpha*57.3:+.1f}° k={kappa:.3f} v={v_curr:.2f}->{v_des:.2f} "
+    #         f"thr={thr_cmd:.0f} str={str_cmd:.0f}"
+    #     )
+
+    def follow_path(self, cp):
+        if self.wp_index >= len(self.current_path):
+            self.cmd_pub.publish(self._brake()); return
+
+        # --- Look-ahead dinámico --------------------------------------
         v_curr = math.hypot(self.twist.linear.x, self.twist.linear.y)
-        Ld     = np.clip(1.6 * v_curr, 0.8, 4.0)      # m
+        Ld_min, Ld_max = 1.2, 4.5
+        Ld = np.clip(1.2 * max(v_curr, 0.1), Ld_min, Ld_max)
+
         self.wp_index = self._next_target_index(cp, Ld)
         tgt = self.current_path[self.wp_index]
 
-        # 2) Transformación a frame del vehículo
-        dx_g, dy_g = tgt[0] - cp[0], tgt[1] - cp[1]
+        # --- Geometría -------------------------------------------------
+        dx_g, dy_g = tgt[0]-cp[0], tgt[1]-cp[1]
         yaw = self._yaw_from_quaternion(self.pose.orientation)
-        dx, dy = self._global_to_local(dx_g, dy_g, yaw)
+        dx,  dy  = self._global_to_local(dx_g, dy_g, yaw)
+        dist = math.hypot(dx, dy)
+        alpha = math.atan2(dy, dx)
+        kappa = 0.0           # valor dummy; no se usa durante el spin-in-place
+        v_des = v_curr        # o 0.0 si prefieres
 
-        dist   = math.hypot(dx, dy)
-        # if dist < 1e-2:
-        #     self.cmd_pub.publish(self._brake()); return
-        at_last_wp = (self.wp_index == len(self.current_path)-1)
-        if at_last_wp and dist < 0.15:        # parada real
-            self.cmd_pub.publish(self._brake())
-            self.last_cmd = self._brake()
-            return
+        # # --- Modo giro en sitio vs avance ------------------------------
+        # if abs(alpha) > math.radians(45):             # giro puro
+        #     thr_pre = 0.0
+        #     str_pre = 0.85 * MAX_STEERING * np.sign(alpha)
+        # else:
+        # ----- Pure-pursuit suavizado ------------------------------
+        kappa = 2.0 * math.sin(alpha) / max(dist, 1e-3)
+        K_CURV = 0.6
+        delta_des = math.atan(WHEEL_BASE * K_CURV * kappa)
+        str_pre = -(delta_des / DELTA_MAX) * MAX_STEERING
+        # velocidad deseada
+        v_des = np.clip(V_MAX * (1 - 0.6*abs(kappa)), V_MIN, V_MAX)
+        # simple P
+        thr_pre = KP_SPEED * (v_des - v_curr) + THR_IDLE*np.sign(v_des)
 
-        alpha  = math.atan2(dy, dx)
-        kappa  = 2.0 * math.sin(alpha) / max(dist, 1e-3)   # curvatura
+        # --- Filtro crítico-amortiguado -------------------------------
+        TAU, dt = 0.25, 0.05
+        a1 = 2*TAU/(2*TAU+dt)
+        b1 = dt/(2*TAU+dt)
+        str_cmd = a1*str_pre + b1*(str_pre - self.last_cmd.steering)
+        thr_cmd = a1*thr_pre + b1*(thr_pre - self.last_cmd.throttle)
 
-
-
-
-
-        # 3) Desired steering (Ackermann)
-        delta_des = math.atan(WHEEL_BASE * kappa)
-        delta_des = np.clip(delta_des, -DELTA_MAX, DELTA_MAX)
-        str_cmd   = -(delta_des / DELTA_MAX) * MAX_STEERING   # map to units
-
-        # 4) Desired speed (curvatura + pendiente)
-        slope = 0.0
-        if self.height_map_msg is not None:
-            h_arr,hm_info = gridmap_to_numpy(self.height_map_msg)
-            slope = abs(height_at(h_arr, hm_info, tgt) -
-                        height_at(h_arr, hm_info, cp)) / dist
-        # v_des = V_MAX * (1 - 0.7*abs(kappa)) * (1 - 0.5*slope)
-        # v_des = np.clip(v_des, V_MIN, V_MAX)
-        ##v_des = V_MAX * (1 - 0.7*abs(kappa)) * (1 - 0.5*slope)
-        v_des = V_MAX * (1 - 0.7*abs(kappa))
-        v_des *= 1.0 - 0.5*max(slope, 0)         # cuesta arriba
-        v_des *= 1.0 - 0.2*max(-slope, 0)        # cuesta abajo (menos severo)
-        v_des = np.clip(v_des, V_MIN, V_MAX)
-
-        # desaceleración progresiva en los últimos 0.6 m
-        if at_last_wp and dist < 0.6:
-            v_des *= dist / 0.6
-
-        # 5) Longitudinal control (P)
-        # thr_raw = KP_SPEED * (v_des - v_curr)          # N-units
-        err_v   = v_des - v_curr
-        # integral mínima para vencer rozamiento
-        self.int_err = getattr(self, 'int_err', 0.0) + err_v*0.01
-        self.int_err = np.clip(self.int_err, -2.0, 2.0)
-        ## thr_raw = KP_SPEED * err_v + self.int_err + THR_IDLE*np.sign(v_des)
-        # añade “boost” +10 % si estamos subiendo más de 5 %
-        boost = 0.10*MAX_THROTTLE if slope > 0.05 else 0.0
-        thr_raw = KP_SPEED * err_v + self.int_err + THR_IDLE*np.sign(v_des) + boost
-        thr_cmd = np.clip(thr_raw, -MAX_THROTTLE, MAX_THROTTLE)
-
-        # 6) Filtros y rampa
-        ##str_cmd = (1-K_STEER_LP) * str_cmd + K_STEER_LP * self.last_cmd.steering
-        # thr_cmd = (1-K_THROTTLE_LP) * thr_cmd + K_THROTTLE_LP * self.last_cmd.throttle
-        # # thr_cmd = (1-K_THROTTLE_LP)*thr_cmd + K_THROTTLE_LP*self.last_cmd.throttle
-        # # d_thr   = np.clip(thr_cmd - self.last_cmd.throttle,
-        # #                 -MAX_DTHR, MAX_DTHR)
-        str_filt = (1-K_STEER_LP)*str_cmd + K_STEER_LP*self.last_cmd.steering
-        thr_filt = (1-K_THROTTLE_LP)*thr_cmd + K_THROTTLE_LP*self.last_cmd.throttle
-
-        d_thr   = np.clip(thr_filt - self.last_cmd.throttle,
-                          -MAX_DTHR, MAX_DTHR)
+        # --- Saturación y rampa longitudinal --------------------------
+        d_thr   = np.clip(thr_cmd - self.last_cmd.throttle, -MAX_DTHR, MAX_DTHR)
         thr_cmd = self.last_cmd.throttle + d_thr
-        str_cmd = str_filt
+        str_cmd = np.clip(str_cmd, -MAX_STEERING, MAX_STEERING)
 
-        # 7) Publica
+        # --- Publicar --------------------------------------------------
         cmd = CmdThrottleMsg()
-        cmd.throttle = thr_cmd
-        cmd.steering = str_cmd
+        cmd.throttle, cmd.steering = thr_cmd, str_cmd
         self.cmd_pub.publish(cmd)
         self.last_cmd = cmd
-
         self.get_logger().info(
             f"[CTRL] wp={self.wp_index}/{len(self.current_path)-1} "
             f"α={alpha*57.3:+.1f}° k={kappa:.3f} v={v_curr:.2f}->{v_des:.2f} "
             f"thr={thr_cmd:.0f} str={str_cmd:.0f}"
         )
-
-
 
 
 
@@ -1106,6 +1244,17 @@ class FlexPlanner(Node):
                 self.get_logger().info("[Reset] mundo cargado; reanudando")
             else:
                 return                                   # sigue en pausa
+
+
+        # #####
+        # now   = self.get_clock().now()
+        # age_s = (now - self._grid_stamp).nanoseconds * 1e-9 if self._grid_stamp else 0.0
+        # if age_s > self.map_max_age_sec:
+        #     # mapa “viejo” ⇒ mantente quieto
+        #     self._hold_position()
+        #     self.get_logger().debug(f"⏸  Esperando mapa (age={age_s:.2f}s)")
+        #     return
+###################
 
         # 1 · Validaciones mínimas ------------------------------------
         if None in (self.pose, self.goal, self.grid_msg):
@@ -1213,6 +1362,12 @@ class FlexPlanner(Node):
             self.get_logger().warn("Sin target válido")
             return
 
+        # comprueba si el target esta activo
+        if tgt != self.active_target:
+            need_replan = True
+            self.active_target = tgt
+
+
         # 3 · ¿Replanificamos? ----------------------------------------
         need_replan = (
             not self.current_path or
@@ -1220,14 +1375,37 @@ class FlexPlanner(Node):
             l2(cp, self.current_path[min(2, len(self.current_path)-1)]) > 0.8
         )
         if need_replan:
-            self.current_path = self.generate_flexible_path(cp, tgt, grid, info)
+
+            path_tmp = self.generate_flexible_path(cp, tgt, grid, info)
+
+            # → si la ruta resultó muy corta ( ≤2 puntos ) o vacía, marca esa frontier
+            if len(path_tmp) <= 2:
+                # sólo blacklist si era una frontier, no el goal
+                if mode == "FRONTIER":
+                    self.bad_frontiers.append(tgt)
+                    # self.bad_pub.publish(self._list_to_posearray(self.bad_frontiers))
+                    self._pub_frontier_set(self.bad_frontiers,     self.mk_bad_pub,
+                       (1.0, 1.0, 0.0), "bad")
+                    self.get_logger().info(
+                        f"❌  Frontier descartada por callejón sin salida {tgt}")
+                return                              # pide otro target en el próximo ciclo
+
+
+            self.current_path = path_tmp
             self.wp_index = 1
             self.get_logger().info(f"[PATH] len={len(self.current_path)} wps")
 
         # 4 · Seguimiento del path ------------------------------------
         self.follow_path(cp)
         self.publish_path(self.current_path)
-
+        # self._publish_frontier_markers()
+        # marca los frontiers visitados
+        if mode == "FRONTIER" and l2(cp, tgt) < REACHED_F_THR:
+            self.visited_frontiers.append(tgt)
+            #self.vis_pub.publish(self._list_to_posearray(self.visited_frontiers))
+            self._pub_frontier_set(self.visited_frontiers, self.mk_vis_pub,
+                       (0.0, 1.0, 1.0), "visited")
+            self.get_logger().info(f"✅  Frontier visitada {tgt}")
 
 
         # 5 · Recompensa + buffers PPO --------------------------------
@@ -1348,7 +1526,34 @@ class FlexPlanner(Node):
             self.cmd_pub.publish(CmdThrottleMsg())
             rclpy.shutdown()
 
+    # def _publish_frontier_markers(self):
+    #     header = Header(frame_id="map",
+    #                     stamp=self.get_clock().now().to_msg())
 
+    #     def mk(points, rgb, ns):
+    #         m = Marker(header=header, ns=ns, id=0,
+    #                 type=Marker.SPHERE_LIST, action=Marker.ADD)
+    #         m.scale.x = m.scale.y = m.scale.z = 2.0
+    #         m.color.a = 1.0
+    #         m.color.r, m.color.g, m.color.b = rgb
+    #         m.points = [Point(x=x, y=y, z=0.0) for x, y in points]
+    #         return m
+
+    #     self.wps_pub.publish(mk(self.frontiers,        (0.0, 1.0, 0.0), "safe"))
+    #     self.wps_pub.publish(mk(self.visited_frontiers,(0.0, 1.0, 1.0), "visited"))
+    #     self.wps_pub.publish(mk(self.bad_frontiers,    (1.0, 1.0, 0.0), "bad"))
+
+    def _pub_frontier_set(self, pts, pub, rgb, ns):
+        m = Marker()
+        m.header.frame_id = "map"
+        m.header.stamp    = self.get_clock().now().to_msg()
+        m.ns = ns;  m.id = 0
+        m.type   = Marker.SPHERE_LIST
+        m.action = Marker.ADD
+        m.scale.x = m.scale.y = m.scale.z = 2.5
+        m.color.r, m.color.g, m.color.b, m.color.a = *rgb, 1.0
+        m.points = [Point(x=x, y=y, z=0.25) for x, y in pts]
+        pub.publish(m)
 
     # ---------- Publicación RViz ----------
     def publish_path(self,pts):

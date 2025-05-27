@@ -29,7 +29,9 @@ car/path_ppo_cnn_lstm_training_init_mode_j8.py
 car/path_ppo_cnn_lstm_training_init_mode_simple.py
 car/planificador_script.py
 car/points_goal.py
+car/points_goal_old.py
 car/supervisor.py
+car/test_octomap.py
 car/test_vel.py
 config/display.rviz
 config/ekf_params.yaml

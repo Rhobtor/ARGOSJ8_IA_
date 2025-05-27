@@ -1,0 +1,125 @@
+[0.296s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp': CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_mapping:/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_server:/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins:/home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model:/home/rhobtor/PHD/ARGOJ8_IA/install/hector_gazebo_plugins:/home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg:/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:/home/rhobtor/packages/install/grid_map:/home/rhobtor/packages/install/grid_map_demos:/home/rhobtor/packages/install/grid_map_visualization:/home/rhobtor/packages/install/grid_map_sdf:/home/rhobtor/packages/install/grid_map_rviz_plugin:/home/rhobtor/packages/install/grid_map_pcl:/home/rhobtor/packages/install/grid_map_loader:/home/rhobtor/packages/install/grid_map_filters:/home/rhobtor/packages/install/grid_map_ros:/home/rhobtor/packages/install/grid_map_octomap:/home/rhobtor/packages/install/grid_map_msgs:/home/rhobtor/packages/install/grid_map_cv:/home/rhobtor/packages/install/grid_map_costmap_2d:/home/rhobtor/packages/install/grid_map_core:/home/rhobtor/packages/install/grid_map_cmake_helpers:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_server/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib:/home/rhobtor/packages/install/grid_map_demos/lib:/home/rhobtor/packages/install/grid_map_visualization/lib:/home/rhobtor/packages/install/grid_map_sdf/lib:/home/rhobtor/packages/install/grid_map_rviz_plugin/lib:/home/rhobtor/packages/install/grid_map_pcl/lib:/home/rhobtor/packages/install/grid_map_loader/lib:/home/rhobtor/packages/install/grid_map_filters/lib:/home/rhobtor/packages/install/grid_map_ros/lib:/home/rhobtor/packages/install/grid_map_octomap/lib:/home/rhobtor/packages/install/grid_map_msgs/lib:/home/rhobtor/packages/install/grid_map_cv/lib:/home/rhobtor/packages/install/grid_map_costmap_2d/lib:/home/rhobtor/packages/install/grid_map_core/lib:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server/lib:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins/lib:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp/lib:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp -- -j16 -l16
+[0.357s] [  7%] Built target navigation_nodes
+[0.361s] [ 15%] Built target navigation_nodes_ground
+[0.362s] [ 23%] Built target move_navigation_nodes_frontier
+[0.362s] [ 26%] [32mBuilding CXX object CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o[0m
+[0.362s] [ 34%] Built target frontier_values
+[0.362s] [ 42%] Built target occupied_nodes_near_obstacles
+[0.364s] [ 50%] Built target gridmap
+[0.364s] [ 65%] Built target obstacles_in_2d
+[0.365s] [ 65%] Built target filtered_navigation_nodes
+[0.366s] [ 73%] Built target check_goal
+[0.369s] [ 80%] Built target joints_plugin
+[0.375s] [ 88%] Built target drive_plugin
+[0.384s] [ 96%] Built target move_plugin
+[0.685s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:194:9:[m[K [01;31m[Kerror: [m[Kextended character … is not valid in an identifier
+[0.685s]   194 |         [01;31m[K…[m[K
+[0.685s]       |         [01;31m[K^[m[K
+[2.479s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:237:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[2.479s]   237 | }
+[2.479s]       |  [01;31m[K^[m[K
+[2.479s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:42:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.480s]    42 | [01;36m[K{[m[K
+[2.480s]       | [01;36m[K^[m[K
+[2.480s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:[m[K In constructor ‘[01m[KTerrainSlopeNode::TerrainSlopeNode()[m[K’:
+[2.480s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:44:52:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KTerrainSlopeNode[m[K’ does not have any field named ‘[01m[Ktf_buffer_[m[K’
+[2.480s]    44 |   TerrainSlopeNode() : Node("terrain_slope_node"), [01;31m[Ktf_buffer_[m[K(this->get_clock())
+[2.480s]       |                                                    [01;31m[K^~~~~~~~~~[m[K
+[2.487s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcell_size_[m[K’ was not declared in this scope
+[2.487s]    52 |     [01;31m[Kcell_size_[m[K                 = this->get_parameter("cell_size").as_double();
+[2.487s]       |     [01;31m[K^~~~~~~~~~[m[K
+[2.495s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_ground_variation_[m[K’ was not declared in this scope
+[2.495s]    53 |     [01;31m[Kmax_ground_variation_[m[K      = this->get_parameter("max_ground_height_variation").as_double();
+[2.495s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.501s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:54:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_slope_deg_[m[K’ was not declared in this scope
+[2.501s]    54 |     [01;31m[Kmin_slope_deg_[m[K             = this->get_parameter("min_slope_deg").as_double();
+[2.501s]       |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.508s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:55:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kroi_max_distance_[m[K’ was not declared in this scope
+[2.508s]    55 |     [01;31m[Kroi_max_distance_[m[K          = this->get_parameter("roi_max_distance").as_double();
+[2.508s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.516s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:58:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kslope_markers_pub_[m[K’ was not declared in this scope
+[2.516s]    58 |     [01;31m[Kslope_markers_pub_[m[K = this->create_publisher<visualization_msgs::msg::MarkerArray>("terrain_slope", 10);
+[2.516s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.529s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:59:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kslope_pose_array_pub_[m[K’ was not declared in this scope
+[2.529s]    59 |     [01;31m[Kslope_pose_array_pub_[m[K = this->create_publisher<visualization_msgs::msg::PoseArray>("terrain_slope_pose", 10);
+[2.529s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.529s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:59:77:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseArray[m[K’ is not a member of ‘[01m[Kvisualization_msgs::msg[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::PoseArray[m[K’?
+[2.529s]    59 |     slope_pose_array_pub_ = this->create_publisher<visualization_msgs::msg::[01;31m[KPoseArray[m[K>("terrain_slope_pose", 10);
+[2.529s]       |                                                                             [01;31m[K^~~~~~~~~[m[K
+[2.529s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_array.hpp:7[m[K,
+[2.529s]                  from [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:16[m[K:
+[2.529s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_array__struct.hpp:133:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::PoseArray[m[K’ declared here
+[2.529s]   133 | using [01;36m[KPoseArray[m[K =
+[2.529s]       |       [01;36m[K^~~~~~~~~[m[K
+[2.529s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:59:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTerrainSlopeNode::create_publisher<<expression error> >(const char [19], int)[m[K’
+[2.529s]    59 |     slope_pose_array_pub_ = [01;31m[Kthis->create_publisher<visualization_msgs::msg::PoseArray>("terrain_slope_pose", 10)[m[K;
+[2.529s]       |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.529s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[2.529s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.529s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.530s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.530s]                  from [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:7[m[K:
+[2.530s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.530s]    73 | [01;36m[KNode[m[K::create_publisher(
+[2.530s]       | [01;36m[K^~~~[m[K
+[2.530s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.530s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:59:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.530s]    59 |     slope_pose_array_pub_ = [01;31m[Kthis->create_publisher<visualization_msgs::msg::PoseArray>("terrain_slope_pose", 10)[m[K;
+[2.530s]       |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.534s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koctomap_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Koctomap_msgs[m[K’?
+[2.534s]    61 |     [01;31m[Koctomap_sub_[m[K = this->create_subscription<octomap_msgs::msg::Octomap>(
+[2.534s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.534s]       |     [32m[Koctomap_msgs[m[K
+[2.574s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:65:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_listener_[m[K’ was not declared in this scope
+[2.574s]    65 |     [01;31m[Ktf_listener_[m[K = std::make_shared<tf2_ros::TransformListener>(tf_buffer_, this);
+[2.574s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.578s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:65:65:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+[2.578s]    65 |     tf_listener_ = std::make_shared<tf2_ros::TransformListener>([01;31m[Ktf_buffer_[m[K, this);
+[2.578s]       |                                                                 [01;31m[K^~~~~~~~~~[m[K
+[2.587s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:[m[K In member function ‘[01m[Kvoid TerrainSlopeNode::octomapCallback(octomap_msgs::msg::Octomap_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.587s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:77:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+[2.587s]    77 |       tf_map_base = [01;31m[Ktf_buffer_[m[K.lookupTransform("map", "base_link", rclcpp::Time(0));
+[2.587s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[2.609s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:104:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kroi_max_distance_[m[K’ was not declared in this scope
+[2.609s]   104 |       if (dist_sq > [01;31m[Kroi_max_distance_[m[K * roi_max_distance_) {
+[2.609s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.615s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:108:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kcell_size_[m[K’ was not declared in this scope
+[2.615s]   108 |       CellKey key { static_cast<int>(std::floor(p.x() / [01;31m[Kcell_size_[m[K)),
+[2.615s]       |                                                         [01;31m[K^~~~~~~~~~[m[K
+[2.626s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:[m[K In lambda function:
+[2.626s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:136:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_ground_variation_[m[K’ was not declared in this scope
+[2.626s]   136 |           if (std::fabs(dz) < [01;31m[Kmax_ground_variation_[m[K) {
+[2.626s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.630s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:[m[K In member function ‘[01m[Kvoid TerrainSlopeNode::octomapCallback(octomap_msgs::msg::Octomap_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.631s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:151:92:[m[K [01;31m[Kerror: [m[K‘[01m[Kcell_size_[m[K’ was not declared in this scope
+[2.631s]   151 |                                         (have_dy ? dz_dy : 0.0)*(have_dy ? dz_dy : 0.0)) / [01;31m[Kcell_size_[m[K;
+[2.631s]       |                                                                                            [01;31m[K^~~~~~~~~~[m[K
+[2.638s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:154:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_slope_deg_[m[K’ was not declared in this scope; did you mean ‘[01m[Kslope_deg[m[K’?
+[2.638s]   154 |       if (slope_deg < [01;31m[Kmin_slope_deg_[m[K) {
+[2.638s]       |                       [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.638s]       |                       [32m[Kslope_deg[m[K
+[2.642s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:194:9:[m[K [01;31m[Kerror: [m[K‘[01m[K…[m[K’ was not declared in this scope
+[2.642s]   194 |         [01;31m[K…[m[K
+[2.642s]       |         [01;31m[K^[m[K
+[2.650s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:210:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kslope_markers_pub_[m[K’ was not declared in this scope
+[2.650s]   210 |     [01;31m[Kslope_markers_pub_[m[K->publish(markers);
+[2.650s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.659s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:211:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kslope_pose_array_pub_[m[K’ was not declared in this scope
+[2.659s]   211 |     [01;31m[Kslope_pose_array_pub_[m[K->publish(terrain_pa);
+[2.659s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.662s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:220:19:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::Buffer::Buffer()[m[K’
+[2.662s]   220 |   tf2_ros::Buffer [01;31m[Ktf_buffer_[m[K;
+[2.662s]       |                   [01;31m[K^~~~~~~~~~[m[K
+[2.662s] In file included from [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:13[m[K:
+[2.662s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:73:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_ros::Buffer::Buffer(rclcpp::Clock::SharedPtr, tf2::Duration, rclcpp::Node::SharedPtr)[m[K’
+[2.662s]    73 |   TF2_ROS_PUBLIC [01;36m[KBuffer[m[K(
+[2.662s]       |                  [01;36m[K^~~~~~[m[K
+[2.665s] [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:73:18:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[2.670s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:[m[K At global scope:
+[2.670s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:237:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[2.670s]   237 | }
+[2.670s]       |  [01;31m[K^[m[K
+[4.532s] gmake[2]: *** [CMakeFiles/slope_terrain.dir/build.make:76: CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o] Error 1
+[4.532s] gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/slope_terrain.dir/all] Error 2
+[4.533s] gmake: *** [Makefile:146: all] Error 2
+[4.535s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp' returned '2': CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_mapping:/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_server:/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins:/home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model:/home/rhobtor/PHD/ARGOJ8_IA/install/hector_gazebo_plugins:/home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg:/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces:/home/rhobtor/packages/install/grid_map:/home/rhobtor/packages/install/grid_map_demos:/home/rhobtor/packages/install/grid_map_visualization:/home/rhobtor/packages/install/grid_map_sdf:/home/rhobtor/packages/install/grid_map_rviz_plugin:/home/rhobtor/packages/install/grid_map_pcl:/home/rhobtor/packages/install/grid_map_loader:/home/rhobtor/packages/install/grid_map_filters:/home/rhobtor/packages/install/grid_map_ros:/home/rhobtor/packages/install/grid_map_octomap:/home/rhobtor/packages/install/grid_map_msgs:/home/rhobtor/packages/install/grid_map_cv:/home/rhobtor/packages/install/grid_map_costmap_2d:/home/rhobtor/packages/install/grid_map_core:/home/rhobtor/packages/install/grid_map_cmake_helpers:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_server/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/j8_xacro_model/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/car_cpp/lib:/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib:/home/rhobtor/packages/install/grid_map_demos/lib:/home/rhobtor/packages/install/grid_map_visualization/lib:/home/rhobtor/packages/install/grid_map_sdf/lib:/home/rhobtor/packages/install/grid_map_rviz_plugin/lib:/home/rhobtor/packages/install/grid_map_pcl/lib:/home/rhobtor/packages/install/grid_map_loader/lib:/home/rhobtor/packages/install/grid_map_filters/lib:/home/rhobtor/packages/install/grid_map_ros/lib:/home/rhobtor/packages/install/grid_map_octomap/lib:/home/rhobtor/packages/install/grid_map_msgs/lib:/home/rhobtor/packages/install/grid_map_cv/lib:/home/rhobtor/packages/install/grid_map_costmap_2d/lib:/home/rhobtor/packages/install/grid_map_core/lib:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server/lib:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins/lib:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp/lib:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp -- -j16 -l16

@@ -11,8 +11,12 @@ public:
   : Node("goal_reached_node"), goal_received_(false), odom_received_(false)
   {
     // Declarar parámetro para el umbral de llegada al goal (en metros)
-    this->declare_parameter("goal_threshold", 3.0);
-    goal_threshold_ = this->get_parameter("goal_threshold").as_double();
+    // this->declare_parameter("goal_threshold", 3.0);
+    this->declare_parameter("goal_threshold_xy", 3.0);   // antes: goal_threshold
+    this->declare_parameter("goal_threshold_z",  6.0);  // tolerancia vertical
+    tol_xy_ = this->get_parameter("goal_threshold_xy").as_double();
+    tol_z_  = this->get_parameter("goal_threshold_z").as_double();
+    // goal_threshold_ = this->get_parameter("goal_threshold").as_double();
 
     // Suscripción al topic "goal" (PoseArray)
     goal_sub_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
@@ -84,12 +88,24 @@ private:
     double dz = goal_z - robot_z;
     double distance = std::sqrt(dx * dx + dy * dy + dz * dz);
 
+    double dist_xy = std::hypot(dx, dy);
+    bool goal_reached = (dist_xy < tol_xy_) && (std::abs(dz) < tol_z_);
+
     // Logs para verificar los valores calculados
     RCLCPP_INFO(this->get_logger(), "Robot: [%.2f, %.2f, %.2f]", robot_x, robot_y, robot_z);
     RCLCPP_INFO(this->get_logger(), "Goal: [%.2f, %.2f, %.2f]", goal_x, goal_y, goal_z);
     RCLCPP_INFO(this->get_logger(), "dx: %.2f, dy: %.2f, dz: %.2f, distance: %.2f", dx, dy, dz, distance);
 
-    if (distance < goal_threshold_) {
+    // if (distance < goal_threshold_) {
+    //   std_msgs::msg::Bool reached_msg;
+    //   reached_msg.data = true;
+    //   goal_reached_pub_->publish(reached_msg);
+    //   RCLCPP_INFO(this->get_logger(), "Goal alcanzado. Distancia: %.2f m", distance);
+    //   // Reiniciamos la bandera para evitar múltiples publicaciones
+    //   goal_received_ = false;
+    // }
+
+    if (goal_reached) {
       std_msgs::msg::Bool reached_msg;
       reached_msg.data = true;
       goal_reached_pub_->publish(reached_msg);
@@ -97,6 +113,8 @@ private:
       // Reiniciamos la bandera para evitar múltiples publicaciones
       goal_received_ = false;
     }
+
+
   }
 
   rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr goal_sub_;
@@ -109,7 +127,9 @@ private:
   geometry_msgs::msg::Pose odom_pose_;
   bool goal_received_;
   bool odom_received_;
-  double goal_threshold_;
+  // double goal_threshold_;
+  double tol_xy_;
+  double tol_z_;
 };
 
 int main(int argc, char **argv)

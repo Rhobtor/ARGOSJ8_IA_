@@ -1,0 +1,87 @@
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:194:9:[m[K [01;31m[Kerror: [m[Kextended character … is not valid in an identifier
+  194 |         [01;31m[K…[m[K
+      |         [01;31m[K^[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:237:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  237 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:42:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   42 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:[m[K In constructor ‘[01m[KTerrainSlopeNode::TerrainSlopeNode()[m[K’:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:44:52:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KTerrainSlopeNode[m[K’ does not have any field named ‘[01m[Ktf_buffer_[m[K’
+   44 |   TerrainSlopeNode() : Node("terrain_slope_node"), [01;31m[Ktf_buffer_[m[K(this->get_clock())
+      |                                                    [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcell_size_[m[K’ was not declared in this scope
+   52 |     [01;31m[Kcell_size_[m[K                 = this->get_parameter("cell_size").as_double();
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_ground_variation_[m[K’ was not declared in this scope
+   53 |     [01;31m[Kmax_ground_variation_[m[K      = this->get_parameter("max_ground_height_variation").as_double();
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:54:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_slope_deg_[m[K’ was not declared in this scope
+   54 |     [01;31m[Kmin_slope_deg_[m[K             = this->get_parameter("min_slope_deg").as_double();
+      |     [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:55:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kroi_max_distance_[m[K’ was not declared in this scope
+   55 |     [01;31m[Kroi_max_distance_[m[K          = this->get_parameter("roi_max_distance").as_double();
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:58:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kslope_markers_pub_[m[K’ was not declared in this scope
+   58 |     [01;31m[Kslope_markers_pub_[m[K = this->create_publisher<visualization_msgs::msg::MarkerArray>("terrain_slope", 10);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:59:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kslope_pose_array_pub_[m[K’ was not declared in this scope
+   59 |     [01;31m[Kslope_pose_array_pub_[m[K = this->create_publisher<geometry_msgs::msg::PoseArray>("terrain_slope_pose", 10);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Koctomap_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Koctomap_msgs[m[K’?
+   61 |     [01;31m[Koctomap_sub_[m[K = this->create_subscription<octomap_msgs::msg::Octomap>(
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+      |     [32m[Koctomap_msgs[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:65:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_listener_[m[K’ was not declared in this scope
+   65 |     [01;31m[Ktf_listener_[m[K = std::make_shared<tf2_ros::TransformListener>(tf_buffer_, this);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:65:65:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+   65 |     tf_listener_ = std::make_shared<tf2_ros::TransformListener>([01;31m[Ktf_buffer_[m[K, this);
+      |                                                                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:[m[K In member function ‘[01m[Kvoid TerrainSlopeNode::octomapCallback(octomap_msgs::msg::Octomap_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:77:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+   77 |       tf_map_base = [01;31m[Ktf_buffer_[m[K.lookupTransform("map", "base_link", rclcpp::Time(0));
+      |                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:104:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kroi_max_distance_[m[K’ was not declared in this scope
+  104 |       if (dist_sq > [01;31m[Kroi_max_distance_[m[K * roi_max_distance_) {
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:108:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kcell_size_[m[K’ was not declared in this scope
+  108 |       CellKey key { static_cast<int>(std::floor(p.x() / [01;31m[Kcell_size_[m[K)),
+      |                                                         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:[m[K In lambda function:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:136:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_ground_variation_[m[K’ was not declared in this scope
+  136 |           if (std::fabs(dz) < [01;31m[Kmax_ground_variation_[m[K) {
+      |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:[m[K In member function ‘[01m[Kvoid TerrainSlopeNode::octomapCallback(octomap_msgs::msg::Octomap_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:151:92:[m[K [01;31m[Kerror: [m[K‘[01m[Kcell_size_[m[K’ was not declared in this scope
+  151 |                                         (have_dy ? dz_dy : 0.0)*(have_dy ? dz_dy : 0.0)) / [01;31m[Kcell_size_[m[K;
+      |                                                                                            [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:154:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_slope_deg_[m[K’ was not declared in this scope; did you mean ‘[01m[Kslope_deg[m[K’?
+  154 |       if (slope_deg < [01;31m[Kmin_slope_deg_[m[K) {
+      |                       [01;31m[K^~~~~~~~~~~~~~[m[K
+      |                       [32m[Kslope_deg[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:194:9:[m[K [01;31m[Kerror: [m[K‘[01m[K…[m[K’ was not declared in this scope
+  194 |         [01;31m[K…[m[K
+      |         [01;31m[K^[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:210:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kslope_markers_pub_[m[K’ was not declared in this scope
+  210 |     [01;31m[Kslope_markers_pub_[m[K->publish(markers);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:211:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kslope_pose_array_pub_[m[K’ was not declared in this scope
+  211 |     [01;31m[Kslope_pose_array_pub_[m[K->publish(terrain_pa);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:220:19:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Ktf2_ros::Buffer::Buffer()[m[K’
+  220 |   tf2_ros::Buffer [01;31m[Ktf_buffer_[m[K;
+      |                   [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:13[m[K:
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:73:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktf2_ros::Buffer::Buffer(rclcpp::Clock::SharedPtr, tf2::Duration, rclcpp::Node::SharedPtr)[m[K’
+   73 |   TF2_ROS_PUBLIC [01;36m[KBuffer[m[K(
+      |                  [01;36m[K^~~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:73:18:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:[m[K At global scope:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp/src/slope_terrain.cpp:237:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+  237 | }
+      |  [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/slope_terrain.dir/build.make:76: CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/slope_terrain.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

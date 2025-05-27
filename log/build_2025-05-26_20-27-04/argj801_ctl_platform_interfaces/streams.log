@@ -1,0 +1,25 @@
+[0.019s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces -- -j16 -l16
+[0.045s] [  1%] Built target argj801_ctl_platform_interfaces__cpp
+[0.048s] [ 12%] Built target argj801_ctl_platform_interfaces__rosidl_generator_c
+[0.053s] [ 12%] Built target ament_cmake_python_copy_argj801_ctl_platform_interfaces
+[0.062s] [ 23%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_cpp
+[0.065s] [ 34%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.069s] [ 45%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp
+[0.072s] [ 56%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c
+[0.074s] [ 67%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c
+[0.074s] [ 78%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_c
+[0.083s] [ 78%] Built target argj801_ctl_platform_interfaces
+[0.092s] [ 80%] Built target argj801_ctl_platform_interfaces__py
+[0.105s] [ 89%] Built target argj801_ctl_platform_interfaces__rosidl_generator_py
+[0.115s] [ 92%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.117s] [ 96%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.117s] [100%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_c__pyext
+[0.335s] running egg_info
+[0.335s] writing argj801_ctl_platform_interfaces.egg-info/PKG-INFO
+[0.335s] writing dependency_links to argj801_ctl_platform_interfaces.egg-info/dependency_links.txt
+[0.336s] writing top-level names to argj801_ctl_platform_interfaces.egg-info/top_level.txt
+[0.340s] reading manifest file 'argj801_ctl_platform_interfaces.egg-info/SOURCES.txt'
+[0.341s] writing manifest file 'argj801_ctl_platform_interfaces.egg-info/SOURCES.txt'
+[0.365s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_argj801_ctl_platform_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_argj801_ctl_platform_interfaces_egg] Interrupt
+[0.365s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_argj801_ctl_platform_interfaces_egg.dir/all] Interrupt
+[0.365s] gmake: *** [Makefile:146: all] Interrupt

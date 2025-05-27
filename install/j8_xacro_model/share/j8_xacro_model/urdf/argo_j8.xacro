@@ -1073,14 +1073,15 @@
     <right_joint>Suspension_7_Wheel_7_joint</right_joint>
     <right_joint>Suspension_8_Wheel_8_joint</right_joint>
     <!-- Kinematics -->
-    <wheel_separation>2.7</wheel_separation>
-    <wheel_separation>2.7</wheel_separation>
-    <wheel_separation>2.7</wheel_separation>
-    <wheel_separation>2.7</wheel_separation>
-    <wheel_diameter>0.64</wheel_diameter>
-    <wheel_diameter>0.64</wheel_diameter>
-    <wheel_diameter>0.64</wheel_diameter>
-    <wheel_diameter>0.64</wheel_diameter>
+    <wheel_separation>1.26</wheel_separation>   <!-- repítelo 4 veces -->
+    <wheel_separation>1.26</wheel_separation>
+    <wheel_separation>1.26</wheel_separation>
+    <wheel_separation>1.26</wheel_separation>
+
+    <wheel_diameter>0.596</wheel_diameter>      <!-- idem -->
+    <wheel_diameter>0.596</wheel_diameter>
+    <wheel_diameter>0.596</wheel_diameter>
+    <wheel_diameter>0.596</wheel_diameter>
     <!-- Limits -->
     <max_wheel_torque>100000000000</max_wheel_torque>
     <max_wheel_acceleration>100.0</max_wheel_acceleration>

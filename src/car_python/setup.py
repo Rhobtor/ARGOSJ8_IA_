@@ -48,6 +48,8 @@ setup(
             'path_ppo_cnn_lstm_training_init_mode_j8= car.path_ppo_cnn_lstm_training_init_mode_j8:main',
             'test_vel = car.test_vel:main',
             'map_navegation_test= car.map_test_navigation_hgh:main',
+            'points_goal_old= car.points_goal_old:main',
+            'test_octomap= car.test_octomap:main',
 
         ],
     },

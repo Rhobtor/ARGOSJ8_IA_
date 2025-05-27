@@ -894,3 +894,49 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:270 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:319 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:540 (find_external_library)"
+      - "/opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)"
+      - "/opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)"
+      - "CMakeLists.txt:15 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/CMakeScratch/TryCompile-4HTgYq"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/CMakeScratch/TryCompile-4HTgYq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/opt/ros/humble/share/tinyxml2_vendor/cmake/Modules;/usr/share/OGRE/cmake/modules;/usr/lib/OGRE/cmake;/usr/CMake;/opt/ros/humble/share/fastrtps_cmake_module/cmake/Modules;/usr/share/cmake/ignition-cmake2/cmake2;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/CMakeScratch/TryCompile-4HTgYq'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3085c/fast
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/CMakeScratch/TryCompile-4HTgYq'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3085c.dir/build.make CMakeFiles/cmTC_3085c.dir/build
+        gmake[2]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/CMakeScratch/TryCompile-4HTgYq'
+        Building C object CMakeFiles/cmTC_3085c.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_3085c.dir/test_mpi.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/CMakeScratch/TryCompile-4HTgYq/test_mpi.c
+        Linking C executable cmTC_3085c
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3085c.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_3085c.dir/test_mpi.c.o -o cmTC_3085c  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/CMakeScratch/TryCompile-4HTgYq'
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp/CMakeFiles/CMakeScratch/TryCompile-4HTgYq'
+        
+      exitCode: 0
+...

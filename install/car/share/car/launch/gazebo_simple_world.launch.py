@@ -178,6 +178,12 @@ def generate_launch_description():
         name='points_goal',  # Nombre del nodo
     )
 
+    poinst_goal_old = Node(
+        package='car',  # Asegúrate de que el paquete se llame 'car' o el que corresponda
+        executable='points_goal_old',  # Nombre del ejecutable (por ejemplo, si instalaste el script con entry_point)
+        name='points_goal_old',  # Nombre del nodo
+    )
+
     colision_zone = Node(
         package='car',  # Asegúrate de que el paquete se llame 'car' o el que corresponda
         executable='colision_zone',  # Nombre del ejecutable (por ejemplo, si instalaste el script con entry_point)
@@ -226,11 +232,12 @@ def generate_launch_description():
         occupied_nodes_near_obstacles,
         #move_navigation_nodes,
         check_goal,
-        poinst_goal,
+        #poinst_goal,
         colision_zone,
         navegation_map,
         memory_map,
         frontier_centroid,
-        gridmap
+        gridmap,
+        poinst_goal_old
 
     ])

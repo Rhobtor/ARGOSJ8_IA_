@@ -4,18 +4,18 @@
     <sensor type="gpu_ray" name="Lidar">
       <pose>0 0 0 0 0 0</pose>
       <visualize>0</visualize>
-      <update_rate>10</update_rate>
+      <update_rate>20.0</update_rate>
       <ray>
         <scan>
           <horizontal>
-            <samples>1280</samples>
+            <samples>360</samples>
             <resolution>1</resolution>
             <min_angle>0.6109</min_angle>  <!-- 35° -->
             <max_angle>2.5307</max_angle>  <!-- 145° -->
           </horizontal>
           <vertical>
             <!-- Ajusta estos valores según tu modelo de Velodyne -->
-            <samples>720</samples>        <!-- Número de canales -->
+            <samples>30</samples>        <!-- Número de canales -->
             <resolution>1</resolution>   <!-- (opcional) -->
             <!-- En radianes: convierte grados a radianes -->
             <min_angle>-0.6109</min_angle>  <!-- –35° -->
@@ -24,13 +24,13 @@
         </scan>
         <range>
           <min>0.2</min>
-          <max>20.0</max>
-          <resolution>0.001</resolution>
+          <max>40.0</max>
+          <resolution>0.01</resolution>
         </range>
         <noise>
           <type>gaussian</type>
           <mean>0.0</mean>
-          <stddev>0.008</stddev>
+          <stddev>0.01</stddev>
         </noise>
       </ray>
       <plugin  name="lidar_controller" filename="libgazebo_ros_ray_sensor.so">

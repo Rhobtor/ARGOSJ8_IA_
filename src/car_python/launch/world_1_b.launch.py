@@ -110,6 +110,12 @@ def generate_launch_description():
         name='frontier_values'
     )
 
+    octomap_params = PathJoinSubstitution([
+            FindPackageShare('car'),
+            'config',
+            'octomap_fast.yaml'      # <— el que acabas de crear
+        ])
+
     octomap = Node(
         package='octomap_server',
         executable='octomap_server_node',
@@ -122,6 +128,14 @@ def generate_launch_description():
         }],
         remappings=[('cloud_in', '/ARGJ801/Velodyne/scan_cloud')]
     )
+    # octomap = Node(
+    #     package='octomap_server',
+    #     executable='octomap_server_node',
+    #     name='octomap_server',
+    #     output='screen',
+    #     parameters=[octomap_params],            # <— aquí
+    #     remappings=[('cloud_in', '/ARGJ801/Velodyne/scan_cloud')]
+    # )
 
     map_odom_tf = Node(
         package='tf2_ros',
@@ -218,9 +232,9 @@ def generate_launch_description():
     return LaunchDescription([
 
         robot_state_publisher_node,
-        gazebo_server,
-        gazebo_client,
-        urdf_spawn_node,
+         gazebo_server,
+         gazebo_client,
+         urdf_spawn_node,
         filter_points_cloud,
         frontier_values,
         octomap,

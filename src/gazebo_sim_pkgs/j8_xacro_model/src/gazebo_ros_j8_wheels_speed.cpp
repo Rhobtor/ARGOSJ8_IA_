@@ -945,6 +945,13 @@ private:
   double max_steering_acc_{1.23};
   const double thr_to_rad_{0.254608412};
   const double str_to_rad_{0.05787372};
+  // const double thr_to_rad_ = 0.101;   // 100 % → 10 rad/s
+  // const double str_to_rad_ = 0.0423;  // 100 % → 4.23 rad/s
+  // double max_throttle_acc_ = 0.6;     // rad/s²  (≈0.18 m/s²)
+  // double max_steering_acc_ = 0.4;     // rad/s²
+
+
+
 
   // Estado
   double thr_cmd_{0.0}, str_cmd_{0.0};

@@ -248,13 +248,15 @@ class RandomGoalSelector(Node):
         self.declare_parameter('republish_hz', 2.0)  # Hz
 
         raw_points = self.get_parameter('goal_points').get_parameter_value().double_array_value
+
+
         # rclpy convierte listas de listas en un vector plano: [x1, y1, x2, y2, ...]
-        if len(raw_points) % 2 != 0:
+        if len(raw_points) % 3 != 0:
             raise ValueError('goal_points debe tener un número par de elementos (x1,y1,x2,y2,...)')
         self.goal_list: list[Pose] = []
-        for i in range(0, len(raw_points), 2):
-            x, y = raw_points[i], raw_points[i + 1]
-            self.goal_list.append(self._make_pose(x, y, 0.0))
+        for i in range(0, len(raw_points), 3):
+            x, y, z = raw_points[i : i+3]
+            self.goal_list.append(self._make_pose(x, y, z, 0.0))
 
         hz = self.get_parameter('republish_hz').value
 
@@ -424,10 +426,11 @@ class RandomGoalSelector(Node):
     # ============ Utilidades ============
 
     @staticmethod
-    def _make_pose(x: float, y: float, yaw_deg: float) -> Pose:
+    def _make_pose(x: float, y: float, z:float, yaw_deg: float) -> Pose:
         p = Pose()
         p.position.x = x
         p.position.y = y
+        p.position.z = z
         qx, qy, qz, qw = quaternion_from_euler(0.0, 0.0, math.radians(yaw_deg))
         p.orientation.x = qx
         p.orientation.y = qy
