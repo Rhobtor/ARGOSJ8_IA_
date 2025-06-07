@@ -1,1 +1,1 @@
-from argj801_ctl_platform_interfaces.msg._cmd_throttle_msg import CmdThrottleMsg  # noqa: F401
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_py/argj801_ctl_platform_interfaces/msg/__init__.py

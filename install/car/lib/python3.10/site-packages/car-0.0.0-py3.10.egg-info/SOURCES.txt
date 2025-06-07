@@ -16,6 +16,7 @@ car/filter_points_cloud.py
 car/frontier_centroid.py
 car/inference_full_model.py
 car/inference_training_mode_simple.py
+car/j8_test_ppo.py
 car/joystick_control.py
 car/keyboard_control.py
 car/lidar_obstacle_detection.py
@@ -124,6 +125,7 @@ worlds/river_and_forest.world
 worlds/test.world
 worlds/world_1.world
 worlds/world_1_b.world
+worlds/world_1_b1.world
 worlds/world_simple2.world
 worlds/world_simple3.world
 worlds/world_simple4.world

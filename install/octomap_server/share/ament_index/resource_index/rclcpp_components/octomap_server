@@ -1,6 +1,1 @@
-octomap_server::OctomapServerStatic;lib/liboctomap_server_static.so
-octomap_server::OctomapServer;lib/liboctomap_server.so
-octomap_server::OctomapServerMultilayer;lib/liboctomap_server_multilayer.so
-octomap_server::TrackingOctomapServer;lib/libtracking_octomap_server.so
-octomap_server::ColorOctomapServer;lib/libcolor_octomap_server.so
-octomap_server::OctomapSaver;lib/liboctomap_saver.so
+/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/octomap_server

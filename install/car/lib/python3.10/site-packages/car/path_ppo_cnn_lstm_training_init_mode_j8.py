@@ -32,6 +32,12 @@ import datetime
 from argj801_ctl_platform_interfaces.msg import CmdThrottleMsg
 from grid_map_msgs.msg import GridMap
 from rclpy.time import Time
+from heapq import heappush, heappop
+import numpy as np, math
+from scipy.interpolate import splprep, splev
+from visualization_msgs.msg import Marker, MarkerArray
+from std_msgs.msg import ColorRGBA
+from scipy.ndimage import zoom 
 
 # ==============  PARÁMETROS GLOBALES  =====================================
 PATCH           = 128                       # lado del parche (celdas)
@@ -47,7 +53,7 @@ MIN_VEL = 1.0          # m/s  (velocidad mínima deseada)
 MAX_VEL = 6.0          # m/s  (velocidad máxima permitida)
 LOOK_A  = 2.0    # m (aceptación)
 # PPO
-ROLLOUT_STEPS   = 1024
+ROLLOUT_STEPS   = 2048 
 BATCH_SZ        = 256
 EPOCHS          = 10
 MAX_UPDATES     = 10
@@ -56,9 +62,9 @@ GAE_LAMBDA      = 0.95
 CLIP_EPS        = 0.2
 LR_ACTOR        = 3e-4
 LR_CRITIC       = 1e-3
-STD_START       = 0.3
+STD_START       = 0.4
 STD_MIN         = 0.05
-STD_DECAY       = 0.995
+STD_DECAY       = 0.998
 MAX_EPISODES = 300 
 MAX_TILT = 1.0
 MAX_STEERING = 40.0
@@ -96,6 +102,16 @@ WEIGHT_GOAL   = 1.0      # peso de la distancia al goal
 WEIGHT_ROBOT  = 0.3      # peso de la distancia al robot
 CONE_DEG      = 45       # opcional: sólo frontiers dentro de ±45°
 
+
+# exploración de way-points
+EPS_WP_START  = 0.6      # probabilidad inicial de usar un wp exploratorio
+EPS_WP_END    = 0.05     # al final del entrenamiento
+EPS_DECAY_STEPS = 3000000
+RND_RADIUS_MAX = 3.0     # m  radio máx. para muestreo aleatorio
+
+
+
+BETA_SLOPE     = 10.0 
 
 DTYPE = np.float32
 
@@ -170,6 +186,7 @@ def fuse_dynamic_layer(grid_static, obstacles, info, decay_steps=5):
 
 
 
+
 def gridmap_to_numpy(msg: GridMap, layer=HEIGHT_LAYER):
     """
     Devuelve un np.ndarray (H×W) con la capa pedida.
@@ -216,10 +233,255 @@ def clearance_ok(grid, info, pt, r_m):
                 return False
     return True
 
+
+def slope_map(h_arr, info):
+    """Devuelve mapa |∇z| normalizado a 0..1."""
+    dy, dx = np.gradient(h_arr, info.resolution)
+    mag = np.hypot(dx, dy)
+    return np.clip(mag / 0.5, 0.0, 1.0)      # 0.5 ≃ 26°
+
+def smooth_bspline(pts, ds=0.25):
+    """Suaviza lista de puntos (x,y) con B-Spline y re-muestra cada ds metros."""
+    if len(pts) < 3:
+        return pts
+    x, y = zip(*pts)
+    tck, u = splprep([x, y], s=0.3)
+    # longitud total aproximada
+    dist = sum(math.hypot(x2-x1, y2-y1) for (x1,y1),(x2,y2) in zip(pts, pts[1:]))
+    n = max(2, int(dist/ds))
+    unew = np.linspace(0, 1, n)
+    x_s, y_s = splev(unew, tck)
+    return list(zip(x_s, y_s))
+
+def resize_to(arr, shape):
+    """Redimensiona 2-D arr a ‘shape’ con interpolación bilineal."""
+    sy = shape[0] / arr.shape[0]
+    sx = shape[1] / arr.shape[1]
+    return zoom(arr, (sy, sx), order=1)
+
+
+
+def _motion_primitives(r_min, step, n_head=16):
+    """Pre-genera (Δx,Δy,Δθ, cost) para n_head discretos."""
+    dθ = 2*math.pi/n_head
+    mp = [[] for _ in range(n_head)]
+    for h in range(n_head):
+        θ = h*dθ
+        for δ in (-1, 0, +1):          # izquierda, recto, derecha
+            if δ == 0:
+                dx = step*math.cos(θ);      dy = step*math.sin(θ)
+                mp[h].append( (dx,dy, 0, step) )
+            else:                       # arco de radio r_min
+                rad = r_min
+                ang = step/rad
+                dx = rad*(math.sin(δ*ang+θ) - math.sin(θ))
+                dy = rad*(-math.cos(δ*ang+θ) + math.cos(θ))
+                mp[h].append( (dx,dy, δ*ang, rad*abs(ang)) )
+    return mp, dθ
+
+# def hybastar(start_xy, goal_xy, *, grid_cost, res, origin=(0.0, 0.0),
+#              r_min=1.0, step=0.4, n_head=16, reverse_ok=False,
+#              goal_tol=0.35):
+#     """
+#     Devuelve lista [(x,y), …] o [] si falla.
+#     · origin  = (ox, oy) offset del mapa en mundo.
+#     · reverse_ok se ignora en esta versión (solo avance).
+#     """
+#     H, W = grid_cost.shape
+#     mp, dθ = _motion_primitives(r_min, step, n_head)
+
+#     ox, oy = origin
+#     to_idx = lambda p: (int((p[0] - ox) / res),
+#                         int((p[1] - oy) / res))
+
+#     sx, sy = start_xy
+#     gx, gy = goal_xy
+#     ix, iy = to_idx((sx, sy))
+#     gx_i, gy_i = to_idx((gx, gy))
+
+#     if not (0 <= ix < W and 0 <= iy < H):     # start fuera
+#         self.get_logger().warn(f"Start {start_xy} fuera del mapa")
+#         return []
+#     if not (0 <= gx_i < W and 0 <= gy_i < H): # goal fuera
+#         self.get_logger().warn(f"Goal {goal_xy} fuera del mapa")
+#         return []
+
+#     Node = lambda x, y, h, g, parent: (x, y, h, g, parent)
+#     occ_thr = 200
+#     openL, closed = [], {}
+
+#     h0 = int(((math.atan2(gy - sy, gx - sx) + 2*math.pi) % (2*math.pi)) // dθ)
+#     n0 = Node(sx, sy, h0, 0.0, None)
+#     heappush(openL, (0.0, n0))
+
+#     while openL:
+#         f, n = heappop(openL)
+#         key = (round((n[0]-ox)/res), round((n[1]-oy)/res), n[2])
+#         if key in closed:
+#             continue
+#         closed[key] = n
+
+#         if math.hypot(n[0] - gx, n[1] - gy) < goal_tol:
+#             # reconstruir camino
+#             path = [(n[0], n[1])]
+#             while n[4]:
+#                 n = n[4]
+#                 path.append((n[0], n[1]))
+#             return path[::-1]
+
+#         # expandir
+#         for dx, dy, dth, cost in mp[n[2]]:
+#             x2, y2 = n[0] + dx, n[1] + dy
+#             ix2, iy2 = to_idx((x2, y2))
+#             if not (0 <= ix2 < W and 0 <= iy2 < H):
+#                 continue
+#             if grid_cost[iy2, ix2] >= occ_thr:
+#                 continue
+#             h2 = (n[2] + int(round(dth / dθ))) % n_head
+#             g2 = n[3] + cost + 0.01 * grid_cost[iy2, ix2]   # coste terreno
+#             h_est = math.hypot(x2 - gx, y2 - gy)
+#             heappush(openL, (g2 + h_est, Node(x2, y2, h2, g2, n)))
+
+#     # ---------- fallback recto si la línea es libre ----------
+#     if (0 <= gx_i < W and 0 <= gy_i < H
+#             and 0 <= ix < W and 0 <= iy < H
+#             and np.all(grid_cost[min(iy, gy_i):max(iy, gy_i)+1,
+#                                 min(ix, gx_i):max(ix, gx_i)+1] < occ_thr)):
+#         return [start_xy, goal_xy]
+
+#     return []
+# # ──────────────
+# ─────────────────────────  RRT LIGHT  ──────────────────────────────
+class _RRTNode:
+    __slots__ = ("x", "y", "parent")
+    def __init__(self, x, y, parent):
+        self.x, self.y, self.parent = x, y, parent
+
+
+def _sample_free(info, grid, goal, goal_bias=0.15):
+    """Con prob.=goal_bias devuelve el propio goal; si no, un punto aleatorio
+    dentro del bbox del mapa cuya celda sea libre (<50)."""
+    if random.random() < goal_bias:
+        return goal
+    H, W = grid.shape
+    for _ in range(100):                     # 100 intentos máx.
+        i = random.randint(0, W-1)
+        j = random.randint(0, H-1)
+        if grid[j, i] < 50:                  # celda libre
+            x = info.origin.position.x + (i+0.5)*info.resolution
+            y = info.origin.position.y + (j+0.5)*info.resolution
+            return (x, y)
+    return goal                              # fallback
+
+
+def _nearest(tree, pt):
+    """Devuelve el nodo del árbol más cercano a pt (en L2)."""
+    return min(tree, key=lambda n: distance((n.x, n.y), pt))
+
+
+def _steer(from_pt, to_pt, max_step):
+    """Recorta el vector hasta longitud ≤ max_step."""
+    dx, dy = to_pt[0]-from_pt[0], to_pt[1]-from_pt[1]
+    d = math.hypot(dx, dy)
+    if d <= max_step:
+        return to_pt
+    k = max_step / d
+    return (from_pt[0] + k*dx, from_pt[1] + k*dy)
+
+def bres_line_free(grid, info, a, b):
+    """True si el rayo a→b no atraviesa celdas ≥50  (incluye “inflado”)."""
+    for i, j in bresenham_points(a, b, info):
+        if grid[j, i] >= 50:         # antes sólo mirabas 100
+            return False
+    return True
+
+def rrt_plan(start, goal, grid, info,
+             h_arr=None, hm_info=None,
+             max_iter=1200,  step=1.0,  goal_tol=0.8):
+    """
+    RRT goal-biased muy ligero.  Devuelve lista [(x,y), …] o [] si falla.
+    * step se da en metros.
+    * Filtra obstáculos (grid ≥50) y pendiente>30° si se pasa h_arr.
+    """
+    if distance(start, goal) < goal_tol:
+        return [start, goal]
+
+    tree = [_RRTNode(start[0], start[1], None)]
+    for _ in range(max_iter):
+        rnd = _sample_free(info, grid, goal)
+        nearest = _nearest(tree, rnd)
+        new_pt = _steer((nearest.x, nearest.y), rnd, step)
+
+        # ---- colisión y pendiente ----------------------------------
+        if not bres_line_free(grid, info, (nearest.x, nearest.y), new_pt):
+            continue
+        if not clearance_ok(grid, info, new_pt, CLEAR_MIN):
+            continue
+        if h_arr is not None:
+            _, slope = slope_ok(h_arr, hm_info, (nearest.x, nearest.y), new_pt)
+            if slope > math.tan(math.radians(30)):
+                continue
+
+        new_node = _RRTNode(new_pt[0], new_pt[1], nearest)
+        tree.append(new_node)
+
+        # ¿hemos llegado?
+        if distance(new_pt, goal) < goal_tol:
+            # reconstruye desde goal→start
+            path = [(goal[0], goal[1])]
+            n = new_node
+            while n:
+                path.append((n.x, n.y))
+                n = n.parent
+            return path[::-1]
+
+    return []            # agotado el número de iteraciones
+
+# ─── utils extra ─────────────────────────────────────────────────────────
+def bresenham_points(a, b, info):
+    """
+    Genera los índices (i,j) de todas las celdas que une el segmento a→b
+    usando Bresenham.  Se emplea para calcular costes de “rozar” obstáculos.
+    """
+    i0, j0 = idx_from_world(info, a)
+    i1, j1 = idx_from_world(info, b)
+    di, dj = abs(i1 - i0), abs(j1 - j0)
+    si = 1 if i0 < i1 else -1
+    sj = 1 if j0 < j1 else -1
+    err = di - dj
+    while True:
+        yield i0, j0
+        if (i0, j0) == (i1, j1):
+            break
+        e2 = 2 * err
+        if e2 > -dj:
+            err -= dj
+            i0 += si
+        if e2 < di:
+            err += di
+            j0 += sj
+
+
+def clearance(grid, info, pt, max_r=5.0):
+    """
+    Devuelve la distancia (m) libre desde `pt` hasta la celda ≥50 (o -1
+    si en un radio `max_r` no hay nada).  Se usa para bonificar holgura.
+    """
+    i, j = idx_from_world(info, pt)
+    r_lim = int(max_r / info.resolution)
+    for r in range(1, r_lim + 1):
+        ring = grid[max(j - r, 0): j + r + 1,
+                    max(i - r, 0): i + r + 1]
+        if np.any(ring >= 50):
+            return r * info.resolution
+    return -1.0
+
+
+
 # ==============  RED CNN + LSTM  ==========================================
 def build_policy():
     g   = tf.keras.Input(shape=(PATCH,PATCH,2), name="grid")
-    st  = tf.keras.Input(shape=(6,),            name="state")
+    st  = tf.keras.Input(shape=(7,),            name="state")
     w0  = tf.keras.Input(shape=(2,),            name="wp0")
     # CNN
     x = tf.keras.layers.Conv2D(16,3,padding="same",activation="relu")(g)
@@ -245,13 +507,13 @@ class FlexPlanner(Node):
         self.create_subscription(Odometry,      "/ARGJ801/odom_demo",            self.cb_odom,     qos)
         self.create_subscription(PoseArray,     "/goal",            self.cb_goal,     qos)
         self.create_subscription(OccupancyGrid, "/occupancy_grid",  self.cb_grid,     10)
-        self.create_subscription(PoseArray,     "/safe_frontier_points_centroid",
-                                 self.cb_frontier, qos)
+        #self.create_subscription(PoseArray,     "/safe_frontier_points_centroid",self.cb_frontier, qos)
         self.create_subscription(Bool,"/virtual_collision", self.cb_collision, qos)
         self.create_subscription(Bool,"/reset_confirmation",self.cb_reset_conf,qos)
         self.create_subscription(Bool,"/goal_reached",self.cb_goal_reached,qos)
         #self.create_subscription(PoseArray, "/obstacle_navigation_nodes_lidar",self.cb_obstacles, 10)
         self.create_subscription(GridMap,"/terrain_grid",self.cb_heightmap, 10)
+        self.create_subscription(PoseArray, "/safe_frontier_points", self.cb_frontier, qos)
 
         # --- Publicadores
         self.path_pub  = self.create_publisher(Path,  "/global_path_predicted", qos)
@@ -268,6 +530,7 @@ class FlexPlanner(Node):
                            durability=DurabilityPolicy.TRANSIENT_LOCAL)
         self.reset_pub = self.create_publisher(Bool,  "/reset_request", latched)
         self.cmd_pub   = self.create_publisher(CmdThrottleMsg, "/ARGJ801/cmd_throttle_msg", qos)
+        self.debug_wp_pub = self.create_publisher(Marker, "/debug_waypoints", 10)
 
         # --- Estado ROS
         self.waiting_reset=False
@@ -305,13 +568,15 @@ class FlexPlanner(Node):
         self.bad_frontiers : list[tuple[float,float]] = []   
         self.visited_frontiers  : list[tuple[float, float]] = []
 
+        self.declare_parameter("beta_slope", 10.0)
+        self.beta_slope = self.get_parameter("beta_slope").value
 
         ###########
         self.map_max_age_sec = 0.5      # ← umbral; ajusta a tu ritmo de /occupancy_grid
         self._grid_stamp     = None
 
         self.active_target = None  # (x,y) del target activo
-
+        self.total_steps = 0
 
         self.last_cmd = CmdThrottleMsg()
 
@@ -322,7 +587,7 @@ class FlexPlanner(Node):
         self.opt_actor  = tf.keras.optimizers.Adam(LR_ACTOR)
         self.opt_critic = tf.keras.optimizers.Adam(LR_CRITIC)
         self.value_net  = tf.keras.Sequential([
-            tf.keras.layers.Input(shape=(38,)),     # 32 (patch emb.) + 5 (state)
+            tf.keras.layers.Input(shape=(39,)),     # 32 (patch emb.) + 6 (state)
             tf.keras.layers.Dense(128,activation="tanh"),
             tf.keras.layers.Dense(1)
         ])
@@ -403,8 +668,8 @@ class FlexPlanner(Node):
             self.goal_counter  = 0
             self.goals_in_world = random.randint(5, 7)
             self.collided      = False
-            self.bad_frontiers.clear()
-            self.visited_frontiers.clear()
+            # self.bad_frontiers.clear()
+            # self.visited_frontiers.clear()
             self.bad_pub.publish(PoseArray())    # lista vacía
             self.vis_pub.publish(PoseArray())
             self.reset_buffers()
@@ -564,7 +829,82 @@ class FlexPlanner(Node):
     #     patch=np.pad(patch,pad,'constant',constant_values=-1)
     #     norm=((patch+1)/101.0).astype(np.float32)   # [-1,100] → [0,1]
     #     return np.expand_dims(norm,-1), arr, info
+    def hybastar(self,start_xy, goal_xy, *, grid_cost, res, origin=(0.0, 0.0),
+                r_min=1.0, step=0.4, n_head=16, reverse_ok=False,
+                goal_tol=0.35):
+        """
+        Devuelve lista [(x,y), …] o [] si falla.
+        · origin  = (ox, oy) offset del mapa en mundo.
+        · reverse_ok se ignora en esta versión (solo avance).
+        """
+        H, W = grid_cost.shape
+        mp, dθ = _motion_primitives(r_min, step, n_head)
 
+        ox, oy = origin
+        to_idx = lambda p: (int((p[0] - ox) / res),
+                            int((p[1] - oy) / res))
+
+        sx, sy = start_xy
+        gx, gy = goal_xy
+        ix, iy = to_idx((sx, sy))
+        gx_i, gy_i = to_idx((gx, gy))
+
+        if not (0 <= ix < W and 0 <= iy < H):     # start fuera
+            self.get_logger().warn(f"Start {start_xy} fuera del mapa")
+            return []
+        if not (0 <= gx_i < W and 0 <= gy_i < H): # goal fuera
+            self.get_logger().warn(f"Goal {goal_xy} fuera del mapa")
+            return []
+
+        Node = lambda x, y, h, g, parent: (x, y, h, g, parent)
+        occ_thr = 200
+        openL, closed = [], {}
+
+        h0 = int(((math.atan2(gy - sy, gx - sx) + 2*math.pi) % (2*math.pi)) // dθ)
+        n0 = Node(sx, sy, h0, 0.0, None)
+        heappush(openL, (0.0, n0))
+
+        while openL:
+            f, n = heappop(openL)
+            key = (round((n[0]-ox)/res), round((n[1]-oy)/res), n[2])
+            self.get_logger().debug(f"Explorando nodo {key} f={f:.2f} g={n[3]:.2f}")
+            if key in closed:
+                continue
+            closed[key] = n
+
+            if math.hypot(n[0] - gx, n[1] - gy) < goal_tol:
+                self.get_logger().info(f"Goal alcanzado: {n[0]:.2f}, {n[1]:.2f}")
+                self.get_logger().debug(f"Coste total: {n[3]:.2f}")
+                # reconstruir camino
+                path = [(n[0], n[1])]
+                while n[4]:
+                    n = n[4]
+                    path.append((n[0], n[1]))
+
+                return path[::-1]
+
+            # expandir
+            for dx, dy, dth, cost in mp[n[2]]:
+                x2, y2 = n[0] + dx, n[1] + dy
+                ix2, iy2 = to_idx((x2, y2))
+                if not (0 <= ix2 < W and 0 <= iy2 < H):
+                    continue
+                if grid_cost[iy2, ix2] >= occ_thr:
+                    continue
+                h2 = (n[2] + int(round(dth / dθ))) % n_head
+                g2 = n[3] + cost + 0.01 * grid_cost[iy2, ix2]   # coste terreno
+                h_est = math.hypot(x2 - gx, y2 - gy)
+                heappush(openL, (g2 + h_est, Node(x2, y2, h2, g2, n)))
+
+        # ---------- fallback recto si la línea es libre ----------
+        if (0 <= gx_i < W and 0 <= gy_i < H
+                and 0 <= ix < W and 0 <= iy < H
+                and np.all(grid_cost[min(iy, gy_i):max(iy, gy_i)+1,
+                                    min(ix, gx_i):max(ix, gx_i)+1] < occ_thr)):
+            return [start_xy, goal_xy]
+
+        return []
+    # ──────────────
 
 
     def extract_patch(self):
@@ -660,24 +1000,52 @@ class FlexPlanner(Node):
             best = min(remaining, key=lambda f: l2(f, cp))
         return best, "FRONTIER"
 
+    def recovery(self, cp, grid, info):
+        # 1) giro 180° buscando hueco
+        for _ in range(20):
+            self.cmd_pub.publish(self._spin_in_place(+1))
+            rclpy.spin_once(self, timeout_sec=0.05)
+            if clearance_ok(grid, info, cp, CLEAR_MIN*1.2):
+                return True
+        # 2) Hybrid-A* en reversa 2 m
+        yaw = self._yaw_from_quaternion(self.pose.orientation)
+        rev_goal = (cp[0] - 2*math.cos(yaw), cp[1] - 2*math.sin(yaw))
+        rev_path = self.hybastar(cp, rev_goal,
+                            grid_cost=grid,
+                            res=info.resolution,
+                            origin=(info.origin.position.x,
+                                    info.origin.position.y),
+                            r_min=1.2,
+                            step=0.3,
+                            reverse_ok=True)
+        if rev_path:
+            for p in smooth_bspline(rev_path):
+                self.cmd_pub.publish(self._reverse_cmd())
+                rclpy.spin_once(self, timeout_sec=0.05)
+            return True
+        return False
 
 
 
 
-    def bres_line_free(self,grid, info, a, b):
-        def idx(p):
-            return (int((p[0]-info.origin.position.x)/info.resolution),
-                    int((p[1]-info.origin.position.y)/info.resolution))
-        i0,j0 = idx(a); i1,j1 = idx(b)
-        di,dj = abs(i1-i0), abs(j1-j0); si = 1 if i0<i1 else -1; sj = 1 if j0<j1 else -1
-        err = di-dj; H,W = grid.shape
-        while True:
-            if not (0<=i0<W and 0<=j0<H) or grid[j0,i0] == -1 or grid[j0,i0] >= 100:
-                return False
-            if (i0,j0)==(i1,j1): return True
-            e2=2*err
-            if e2>-dj: err-=dj; i0+=si
-            if e2< di: err+=di; j0+=sj
+    # def bres_line_free(self,grid, info, a, b):
+    #     def idx(p):
+    #         return (int((p[0]-info.origin.position.x)/info.resolution),
+    #                 int((p[1]-info.origin.position.y)/info.resolution))
+    #     i0,j0 = idx(a); i1,j1 = idx(b)
+    #     di,dj = abs(i1-i0), abs(j1-j0); si = 1 if i0<i1 else -1; sj = 1 if j0<j1 else -1
+    #     err = di-dj; H,W = grid.shape
+    #     while True:
+    #         if not (0<=i0<W and 0<=j0<H) or grid[j0,i0] == -1 or grid[j0,i0] >= 100:
+    #             return False
+    #         if (i0,j0)==(i1,j1): return True
+    #         e2=2*err
+    #         if e2>-dj: err-=dj; i0+=si
+    #         if e2< di: err+=di; j0+=sj
+
+
+
+
 
 
     def densify(self, path):
@@ -739,71 +1107,225 @@ class FlexPlanner(Node):
 
 
 
-    def generate_flexible_path(self, start, target, grid, info):
-        """Como antes, pero descarta y penaliza pendientes > MAX_SLOPE_TAN."""
-        h_arr, hm_info= gridmap_to_numpy(self.height_map_msg) if self.height_map_msg else (None,None)
+    # def generate_flexible_path(self, start, target, grid, info):
+    #     """Como antes, pero descarta y penaliza pendientes > MAX_SLOPE_TAN."""
+    #     h_arr, hm_info= gridmap_to_numpy(self.height_map_msg) if self.height_map_msg else (None,None)
 
-        path = [start]
+    #     path = [start]
+    #     cp   = start
+    #     step_len = self.max_seg
+    #     angles = np.linspace(-math.pi/8,  math.pi/8, 10)     # ±22.5°
+    #     radii  = [step_len*0.5, step_len, step_len*1.5]
+
+    #     for _ in range(self.max_steps):
+    #         best = None
+    #         best_metric = (float("inf"), float("inf"))   # (slope, dist)
+
+
+    #         vec_t = (target[0]-cp[0], target[1]-cp[1])
+    #         ang0  = math.atan2(vec_t[1], vec_t[0])
+
+    #         for r in radii:
+    #             for a_off in angles:
+    #                 ang  = ang0 + a_off
+    #                 cand = (cp[0] + r*math.cos(ang),
+    #                         cp[1] + r*math.sin(ang))
+
+    #                 i, j = idx_from_world(info, cand)
+    #                 if not (0 <= i < grid.shape[1] and 0 <= j < grid.shape[0]):
+    #                     continue
+    #                 if grid[j, i] == -1 or grid[j, i] >= 100:
+    #                     continue
+    #                 if not self.bres_line_free(grid, info, cp, cand):
+    #                     continue
+    #                 if not clearance_ok(grid, info, cand, self.clear_min):
+    #                     continue
+
+    #                 # ---------- pendiente ----------
+    #                 if h_arr is not None:
+    #                     ok_slope, slope = slope_ok(h_arr, hm_info, cp, cand)
+    #                     if slope > math.tan(math.radians(30)): # cambio pasa todo except 30 o alguno peligroso
+    #                         continue                     # demasiado empinado
+    #                 else:
+    #                     slope = 0.0
+    #                 # clear = distance(cand,cp)
+    #                 # C_OBS = 4.0
+    #                 # # cost = (distance(cand, target)
+    #                 # #         + SLOPE_COST_GAIN * s        # penaliza subir/bajar
+    #                 # #         - 0.5 * self.clear_min)
+    #                 # cost = (distance(cand, target)
+    #                 #          + SLOPE_COST_GAIN * s
+    #                 #          + C_OBS / (clear + 1e-3)) 
+    #                 # if cost < best_cost:
+    #                 #     best_cost, best = cost, cand
+    #                 dist    = distance(cand, target)
+    #                 metric  = (slope, dist)          # primero slope, luego dist
+    #                 if metric < best_metric:
+    #                     best_metric, best = metric, cand
+
+    #         if best is None:
+    #             break
+    #         path.append(best)
+    #         cp = best
+    #         if distance(cp, target) < self.reach_thr:
+    #             break
+
+    #     path.append(target)
+    #     return self.densify(path)
+
+    def _eps_wp(self):
+        t = min(1.0, self.total_steps / EPS_DECAY_STEPS)
+        return EPS_WP_START + t * (EPS_WP_END - EPS_WP_START)
+
+
+
+    def generate_flexible_path(self, start, target, grid, info):
+        """
+        Intento ➊: RRT goal-biased rápido y seguro.
+        Si falla → intento ➋: el generador “fan + policy” que ya tienes.
+        """
+        h_arr, hm_info = (gridmap_to_numpy(self.height_map_msg)
+                        if self.height_map_msg else (None, None))
+
+        # ---------- ➊  RRT -------------------------------------------------
+        path_rrt = rrt_plan(start, target,
+                            grid, info,
+                            h_arr=h_arr, hm_info=hm_info,
+                            max_iter=1000, step=0.8, goal_tol=self.reach_thr)
+
+        #  Guarda cada segmento del árbol aceptado como transición “experta”
+        for a, b in zip(path_rrt[:-1], path_rrt[1:]):
+            # 1) parche centrado en `a`
+            self.pose.position.x, self.pose.position.y = a   # truco rápido
+            patch, _, _ = self.extract_patch()
+            # 2) estado de 7 elementos
+            st = np.zeros(7, np.float32)
+            st[-2:] = b[0]-a[0], b[1]-a[1]          # vector deseado
+            # 3) acción = Δ normalizado
+            d = distance(a, b) + 1e-6
+            act = np.array([(b[0]-a[0])/d,
+                            (b[1]-a[1])/d,
+                            0.0], dtype=np.float32)
+            # 4) push a los buffers como si fuesen “roll-outs”
+            self.patch_buf.append(patch.astype(DTYPE))
+            self.state_buf.append(st)
+            self.act_buf.append(act)
+            self.logp_buf.append(0.0)               # log-π(Fake)=0
+            self.rew_buf.append( 0.0 )              # sin recompensa
+            self.val_buf.append( 0.0 )
+            self.done_buf.append(False)
+
+
+        if len(path_rrt) >= 3:                       # éxito razonable
+            return self.densify(smooth_bspline(path_rrt, ds=0.25))
+
+        # ---------- ➋  fallback (policy + exploración) --------------------
+        return self._fan_path_with_policy(start, target, grid, info, h_arr, hm_info)
+
+
+# ─────────────────────────────────────────────────────────────
+#  Fallback planner: abanico  +  policy  +  ε-greedy
+# ─────────────────────────────────────────────────────────────
+    def _fan_path_with_policy(self,
+                            start,   # (x,y) robot
+                            target,  # (x,y) goal/frontier
+                            grid, info,
+                            h_arr, hm_info):
+        """
+        Devuelve lista [(x,y), …] construida paso a paso:
+        1. Δ sugerido por la policy CNN-LSTM.
+        2. Muestreo aleatorio (ε-greedy) p/ dar diversidad.
+        3. Heurística directa al target.
+        Cada candidato se filtra por:
+            · celda libre (<50) y línea Bresenham libre
+            · holgura ≥ CLEAR_MIN
+            · pendiente < 30°  (si hay mapa de alturas)
+        """
         cp   = start
-        step_len = self.max_seg
-        angles = np.linspace(-math.pi/8,  math.pi/8, 10)     # ±22.5°
-        radii  = [step_len*0.5, step_len, step_len*1.5]
+        path = [start]
+
+        # parche inicial centrado en el robot
+        patch, _, _ = self.extract_patch()        # (PATCH,PATCH,2) flotante
 
         for _ in range(self.max_steps):
-            best = None
-            best_metric = (float("inf"), float("inf"))   # (slope, dist)
 
+            # ─── 1)  Δ recomendado por la policy ────────────────────────
+            state_pol          = np.zeros(7, dtype=np.float32)
+            state_pol[-2]      = target[0] - cp[0]
+            state_pol[-1]      = target[1] - cp[1]
 
-            vec_t = (target[0]-cp[0], target[1]-cp[1])
-            ang0  = math.atan2(vec_t[1], vec_t[0])
+            delta = self.policy(
+                [patch[None, ...],          # (1,128,128,2)
+                state_pol[None, :],        # (1,7)
+                np.zeros((1, 2), np.float32)],
+                training=False
+            )[0].numpy()                   # (Δx,Δy,Δr) en –1…1
 
-            for r in radii:
-                for a_off in angles:
-                    ang  = ang0 + a_off
-                    cand = (cp[0] + r*math.cos(ang),
-                            cp[1] + r*math.sin(ang))
+            wp_pol = (cp[0] + delta[0]*self.max_seg,
+                    cp[1] + delta[1]*self.max_seg)
 
-                    i, j = idx_from_world(info, cand)
-                    if not (0 <= i < grid.shape[1] and 0 <= j < grid.shape[0]):
+            # ─── 2)  ε-greedy: muestra un punto aleatorio ───────────────
+            eps     = self._eps_wp()
+            wp_rnd  = None
+            if random.random() < eps:
+                ang = random.uniform(-math.pi,  math.pi)
+                rad = random.uniform(0.4,       RND_RADIUS_MAX)
+                wp_rnd = (cp[0] + rad*math.cos(ang),
+                        cp[1] + rad*math.sin(ang))
+
+            # ─── 3)  Heurística: un paso recto al goal ──────────────────
+            vec      = np.array(target) - np.array(cp)
+            dist_t   = np.linalg.norm(vec) + 1e-6
+            wp_heur  = (cp[0] + self.max_seg*vec[0]/dist_t,
+                        cp[1] + self.max_seg*vec[1]/dist_t)
+
+            cand_list = [wp_pol, wp_heur] + ([wp_rnd] if wp_rnd else [])
+
+            # ─── 4)  Selección del mejor candidato ──────────────────────
+            best, best_score = None, float("inf")
+            for cand in cand_list:
+
+                # 4.a dentro del mapa
+                i, j = idx_from_world(info, cand)
+                if not (0 <= i < grid.shape[1] and 0 <= j < grid.shape[0]):
+                    continue
+
+                # 4.b celda conocida y libre
+                if grid[j, i] == -1 or grid[j, i] >= 50:
+                    continue
+
+                # 4.c línea libre + holgura
+                if (not bres_line_free(grid, info, cp, cand) or
+                    not clearance_ok(grid, info, cand, CLEAR_MIN)):
+                    continue
+
+                # 4.d pendiente
+                slope = 0.0
+                if h_arr is not None:
+                    _, slope = slope_ok(h_arr, hm_info, cp, cand)
+                    if slope > math.tan(math.radians(30)):
                         continue
-                    if grid[j, i] == -1 or grid[j, i] >= 100:
-                        continue
-                    if not self.bres_line_free(grid, info, cp, cand):
-                        continue
-                    if not clearance_ok(grid, info, cand, self.clear_min):
-                        continue
 
-                    # ---------- pendiente ----------
-                    if h_arr is not None:
-                        ok_slope, slope = slope_ok(h_arr, hm_info, cp, cand)
-                        if not ok_slope:
-                            continue                     # demasiado empinado
-                    else:
-                        slope = 0.0
-                    # clear = distance(cand,cp)
-                    # C_OBS = 4.0
-                    # # cost = (distance(cand, target)
-                    # #         + SLOPE_COST_GAIN * s        # penaliza subir/bajar
-                    # #         - 0.5 * self.clear_min)
-                    # cost = (distance(cand, target)
-                    #          + SLOPE_COST_GAIN * s
-                    #          + C_OBS / (clear + 1e-3)) 
-                    # if cost < best_cost:
-                    #     best_cost, best = cost, cand
-                    dist    = distance(cand, target)
-                    metric  = (slope, dist)          # primero slope, luego dist
-                    if metric < best_metric:
-                        best_metric, best = metric, cand
+                score = 1.5*slope + distance(cand, target)   # pesos simples
+                if score < best_score:
+                    best, best_score = cand, score
 
+            # 5)  ¿avance posible?
             if best is None:
                 break
             path.append(best)
             cp = best
+
             if distance(cp, target) < self.reach_thr:
                 break
 
+            # 6)  Parche nuevo centrado en el nuevo cp para la próxima iteración
+            self.pose.position.x, self.pose.position.y = cp   # «truco» temporal
+            patch, _, _ = self.extract_patch()
+
         path.append(target)
         return self.densify(path)
+
 
 
 
@@ -870,6 +1392,94 @@ class FlexPlanner(Node):
         d_left  = min_dist(left)  * info.resolution
         d_right = min_dist(right) * info.resolution
         return d_front, d_left, d_right
+
+    # ─────────────────────────────────────────────────────────
+    #  RRT «solo» – sin policy, sin fan-planner
+    # ─────────────────────────────────────────────────────────
+    def rrt_plan_dbg(self,start, goal, grid, info,
+                 h_arr=None, hm_info=None,
+                 max_iter=1500, step=1.0, goal_tol=0.8,
+                 occ_thr=100,     # ← umbral flexible
+                 clear_r=0.6,     # ← holgura “light”
+                    max_slope_deg=30):
+        ok_slope_tan = math.tan(math.radians(max_slope_deg))
+
+        tree = [_RRTNode(start[0], start[1], None)]
+        reasons = {"occ":0, "clear":0, "slope":0, "bres":0}
+
+        for it in range(max_iter):
+            rnd     = _sample_free(info, grid, goal)
+            nearest = _nearest(tree, rnd)
+            new_pt  = _steer((nearest.x, nearest.y), rnd, step)
+
+            # 1) obstáculo directo
+            i, j = idx_from_world(info, new_pt)
+            if grid[j, i] >= occ_thr or grid[j, i] == -1:
+                reasons["occ"] += 1
+                continue
+
+            # 2) línea libre
+            if not bres_line_free(grid, info, (nearest.x, nearest.y), new_pt):
+                reasons["bres"] += 1
+                continue
+
+            # 3) holgura
+            if not clearance_ok(grid, info, new_pt, clear_r):
+                reasons["clear"] += 1
+                continue
+
+            # 4) pendiente
+            if h_arr is not None:
+                _, slope = slope_ok(h_arr, hm_info, (nearest.x, nearest.y), new_pt)
+                if slope > ok_slope_tan:
+                    reasons["slope"] += 1
+                    continue
+
+            new_node = _RRTNode(new_pt[0], new_pt[1], nearest)
+            tree.append(new_node)
+
+            if distance(new_pt, goal) < goal_tol:
+                # reconstruye ruta
+                path = [(goal[0], goal[1])]
+                n = new_node
+                while n:
+                    path.append((n.x, n.y))
+                    n = n.parent
+                return path[::-1], reasons   # ===== éxito =====
+
+        return [], reasons                    # ===== fracaso =====
+
+    def _rrt_only_path(self, start, target, grid, info):
+        """Sólo RRT + logs; sin fallback, sin suavizado."""
+        h_arr, hm_info = (gridmap_to_numpy(self.height_map_msg)
+                        if self.height_map_msg else (None, None))
+
+        path, stats = self.rrt_plan_dbg(
+            start, target,
+            grid, info,
+            h_arr=h_arr, hm_info=hm_info,
+            max_iter=2000,
+            step=max(info.resolution*3, 0.6),   # paso ≈ 3 celdas
+            goal_tol=self.reach_thr,
+            occ_thr=100,        # tu mapa marca 100 los ocupados
+            clear_r=0.6         # holgura relajada para explorar
+        )
+
+        if path:
+            self.get_logger().info(
+                f"✅  RRT ok  n={len(path)}  rechazados:"
+                f" occ={stats['occ']} bres={stats['bres']} "
+                f"clr={stats['clear']} slope={stats['slope']}"
+            )
+            return self.densify(path)
+
+        else:
+            self.get_logger().warn(
+                f"❌  RRT falló  rechazos:"
+                f" occ={stats['occ']} bres={stats['bres']} "
+                f"clr={stats['clear']} slope={stats['slope']}"
+            )
+            return []
 
 
 
@@ -1278,6 +1888,20 @@ class FlexPlanner(Node):
         #     else:
         #         self.reversing = False          # fin de la maniobra
         #  ▶ entrar en marcha atrás si acumulamos ciclos atascados
+        # if self.stuck_counter >= STUCK_CYCLES_MAX:
+        #     self.get_logger().warning("🚗  Atasco detectado → marcha atrás")
+        #     self.reversing       = True
+        #     self.rev_steps_left  = REV_STEPS
+
+        #     if self.reversing:
+        #         if self.rev_steps_left > 0:
+        #             self.cmd_pub.publish(self._reverse_cmd())
+        #             self.rev_steps_left -= 1
+        #             return
+        #         else:
+        #             self.reversing = False          # fin de la maniobra
+        #         self.stuck_counter   = 0
+        #     return
         if self.stuck_counter >= STUCK_CYCLES_MAX:
             self.get_logger().warning("🚗  Atasco detectado → marcha atrás")
             self.reversing       = True
@@ -1292,7 +1916,6 @@ class FlexPlanner(Node):
                     self.reversing = False          # fin de la maniobra
                 self.stuck_counter   = 0
             return
-
 
 
 
@@ -1350,6 +1973,7 @@ class FlexPlanner(Node):
         if overturned:
             self.get_logger().warning("🚨  Robot volcado")
             self.reset_pub.publish(Bool(data=True))
+            self.waiting_reset = True
             return                        # espera a que el mundo se reinicie
 
 
@@ -1376,7 +2000,8 @@ class FlexPlanner(Node):
         )
         if need_replan:
 
-            path_tmp = self.generate_flexible_path(cp, tgt, grid, info)
+            #path_tmp = self.generate_flexible_path(cp, tgt, grid, info)
+            path_tmp = self._rrt_only_path(cp, tgt, grid, info)
 
             # → si la ruta resultó muy corta ( ≤2 puntos ) o vacía, marca esa frontier
             if len(path_tmp) <= 2:
@@ -1394,6 +2019,15 @@ class FlexPlanner(Node):
             self.current_path = path_tmp
             self.wp_index = 1
             self.get_logger().info(f"[PATH] len={len(self.current_path)} wps")
+            
+            slopes = []
+            if self.height_map_msg:
+                h_arr, hm_info = gridmap_to_numpy(self.height_map_msg)
+                for a, b in zip(path_tmp, path_tmp[1:]):
+                    slopes.append(abs(height_at(h_arr, hm_info, b) -
+                                      height_at(h_arr, hm_info, a)) /
+                                  max(distance(a, b), 1e-3))
+            self.publish_debug_path(path_tmp, slopes+[0.0])
 
         # 4 · Seguimiento del path ------------------------------------
         self.follow_path(cp)
@@ -1464,15 +2098,17 @@ class FlexPlanner(Node):
         # acción ficticia (Δx,Δy de la policy, opcional)
         act_delta = np.zeros(3, DTYPE)
         slope_tgt = slope_curr
-        state5 = np.array([
+        roll, pitch = self._roll_pitch_from_quaternion(self.pose.orientation)
+        state6 = np.array([
                 d_front,
                 d_left,
                 d_right,
                 slope_tgt,
+                pitch,
                 tgt[0] - cp[0],
                 tgt[1] - cp[1]
             ], dtype=DTYPE)
-        self.state_buf.append(state5)
+        self.state_buf.append(state6)
         self.patch_buf.append(patch.astype(DTYPE))
         # self.state_buf.append(state_vec)
         self.act_buf.append(act_delta)
@@ -1482,8 +2118,9 @@ class FlexPlanner(Node):
         self.done_buf.append(reached)
         # state5 ya lo tienes definido como np.array([d_front,d_left,d_right, dx, dy])
         patch_emb32 = patch.flatten()[:32]
-        critic_input = np.concatenate([patch_emb32, state5])   # tamaño 37
+        critic_input = np.concatenate([patch_emb32, state6])   # tamaño 37
         self.val_buf.append(self.value_net(critic_input[None, ...])[0, 0])
+        self.total_steps += 1
 
         # 6 · Fin de episodio -----------------------------------------
         if reached:
@@ -1573,6 +2210,25 @@ class FlexPlanner(Node):
         mk.color.r=mk.color.g=1.0; mk.color.a=1.0
         mk.points=[Point(x=x,y=y) for x,y in pts[1:]]
         self.wps_pub.publish(mk)
+
+
+    def publish_debug_path(self, pts, slopes):
+            mk = Marker()
+            mk.header.frame_id = "map"
+            mk.header.stamp    = self.get_clock().now().to_msg()
+            mk.ns = "debug_wp"; mk.id = 0
+            mk.type  = Marker.SPHERE_LIST
+            mk.action= Marker.ADD
+            mk.scale.x = mk.scale.y = mk.scale.z = 0.25
+            mk.points = [Point(x=p[0], y=p[1], z=0.15) for p in pts]
+            for s in slopes:
+                c = ColorRGBA()
+                c.r, c.g, c.b, c.a = min(1.0, 2.0*s), 1.0-min(1.0,2.0*s), 0.2, 1.0
+                mk.colors.append(c)
+            self.debug_wp_pub.publish(mk)
+
+
+
 
     def update_ppo(self):
         # 1) Returns y ventajas ---------------------------------------

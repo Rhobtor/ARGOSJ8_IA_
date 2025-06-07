@@ -1,8 +1,1 @@
-setup.py
-car_interfaces/__init__.py
-car_interfaces.egg-info/PKG-INFO
-car_interfaces.egg-info/SOURCES.txt
-car_interfaces.egg-info/dependency_links.txt
-car_interfaces.egg-info/top_level.txt
-car_interfaces/msg/__init__.py
-car_interfaces/msg/_graph.py
+/home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces/ament_cmake_python/car_interfaces/car_interfaces.egg-info/SOURCES.txt

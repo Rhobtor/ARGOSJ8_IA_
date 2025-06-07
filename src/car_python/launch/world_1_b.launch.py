@@ -20,7 +20,7 @@ def generate_launch_description():
     world_arg = PathJoinSubstitution([
         FindPackageShare('car'),
         'worlds',
-        'world_1_b.world'
+        'world_1_b1.world'
     ])
 
     # Get the car URDF by processing the xacro file
@@ -89,10 +89,10 @@ def generate_launch_description():
         arguments=[
             '-entity', 'argo',
             '-topic', 'robot_description',
-            '-x', '18.0',   # Initial X position
-            '-y', '-3.7',   # Initial Y position
-            '-z', '4.5',  # Initial Z position (adjust if needed)
-            '-Y', '3.13' # Initial yaw (rotation around Z axis)
+            '-x', '23.27',   # Initial X position
+            '-y', '-5.1',   # Initial Y position
+            '-z', '4.73',  # Initial Z position (adjust if needed)
+            '-Y', '3.03' # Initial yaw (rotation around Z axis)
         ],
         output='screen'
     )

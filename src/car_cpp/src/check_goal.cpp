@@ -12,7 +12,7 @@ public:
   {
     // Declarar parámetro para el umbral de llegada al goal (en metros)
     // this->declare_parameter("goal_threshold", 3.0);
-    this->declare_parameter("goal_threshold_xy", 3.0);   // antes: goal_threshold
+    this->declare_parameter("goal_threshold_xy", 3.5);   // antes: goal_threshold
     this->declare_parameter("goal_threshold_z",  6.0);  // tolerancia vertical
     tol_xy_ = this->get_parameter("goal_threshold_xy").as_double();
     tol_z_  = this->get_parameter("goal_threshold_z").as_double();

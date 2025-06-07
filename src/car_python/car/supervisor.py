@@ -257,9 +257,7 @@ class SupervisorNode(Node):
             'launch_cmds',
             [
                 'ros2 launch car world_1_b.launch.py',
-                'ros2 launch car river_and_forest.launch.py',
-                'ros2 launch car easy_world.launch.py',
-                'ros2 launch car world_1.launch.py',
+
                 
             ])
         self.launch_cmds   = self.get_parameter('launch_cmds').value
@@ -320,7 +318,7 @@ class SupervisorNode(Node):
 
     # ------------------------------------------------------------ callbacks
     def reset_request_cb(self, msg: Bool):
-        if not msg.data or self.reset_in_prog:
+        if not msg.data or self.reset_in_prog or (self.env_process and self.env_process.poll() is None and self.env_process.pid == 0):
             return
 
         self.reset_in_prog = True

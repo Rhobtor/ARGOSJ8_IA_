@@ -1,0 +1,41 @@
+[0.036s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces -- -j16 -l16
+[0.072s] [  1%] Built target argj801_ctl_platform_interfaces__cpp
+[0.075s] [ 12%] Built target argj801_ctl_platform_interfaces__rosidl_generator_c
+[0.078s] [ 12%] Built target ament_cmake_python_symlink_argj801_ctl_platform_interfaces
+[0.115s] [ 23%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_cpp
+[0.124s] [ 34%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp
+[0.125s] [ 45%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_c
+[0.134s] [ 65%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c
+[0.136s] [ 76%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.136s] [ 78%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c
+[0.162s] [ 78%] Built target argj801_ctl_platform_interfaces
+[0.180s] [ 80%] Built target argj801_ctl_platform_interfaces__py
+[0.202s] [ 89%] Built target argj801_ctl_platform_interfaces__rosidl_generator_py
+[0.232s] [ 92%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.233s] [ 96%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_c__pyext
+[0.234s] [100%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.310s] Traceback (most recent call last):
+[0.310s]   File "/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/ament_cmake_python/argj801_ctl_platform_interfaces/setup.py", line 1, in <module>
+[0.310s]     from setuptools import find_packages
+[0.310s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[0.310s]     import setuptools.version
+[0.310s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[0.310s]     import pkg_resources
+[0.310s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 78, in <module>
+[0.316s]     __import__('pkg_resources.extern.packaging.requirements')
+[0.317s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/requirements.py", line 10, in <module>
+[0.318s]     from pkg_resources.extern.pyparsing import (  # noqa
+[0.319s]   File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+[0.319s]   File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+[0.329s]   File "<frozen importlib._bootstrap>", line 674, in _load_unlocked
+[0.329s]   File "<frozen importlib._bootstrap>", line 571, in module_from_spec
+[0.329s]   File "/usr/lib/python3/dist-packages/pkg_resources/extern/__init__.py", line 52, in create_module
+[0.329s]     return self.load_module(spec.name)
+[0.330s]   File "/usr/lib/python3/dist-packages/pkg_resources/extern/__init__.py", line 37, in load_module
+[0.330s]     __import__(extant)
+[0.330s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/pyparsing.py", line 4364, in <module>
+[0.336s]     class Suppress(TokenConverter):
+[0.336s] KeyboardInterrupt
+[0.337s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_argj801_ctl_platform_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_argj801_ctl_platform_interfaces_egg] Interrupt
+[0.337s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_argj801_ctl_platform_interfaces_egg.dir/all] Interrupt
+[0.337s] gmake: *** [Makefile:146: all] Interrupt

@@ -1,0 +1,66 @@
+[0.032s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins -- -j16 -l16
+[0.095s] [  2%] Built target hector_gazebo_plugins__cpp
+[0.095s] [ 10%] Built target hector_gazebo_plugins__rosidl_generator_c
+[0.100s] [ 10%] Built target ament_cmake_python_symlink_hector_gazebo_plugins
+[0.138s] [ 18%] Built target hector_gazebo_plugins__rosidl_typesupport_c
+[0.144s] [ 22%] Built target hector_gazebo_reset_plugin
+[0.146s] [ 26%] Built target hector_gazebo_ros_magnetic
+[0.154s] [ 34%] Built target hector_gazebo_plugins__rosidl_typesupport_cpp
+[0.155s] [ 42%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_c
+[0.159s] [ 51%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_cpp
+[0.163s] [ 59%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_c
+[0.169s] [ 71%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp
+[0.170s] [ 67%] Built target hector_gazebo_ros_sonar
+[0.202s] [ 71%] Built target hector_gazebo_plugins
+[0.212s] [ 75%] Built target hector_gazebo_ros_gps
+[0.219s] [ 79%] Built target hector_gazebo_ros_imu
+[0.226s] [ 81%] Built target hector_gazebo_plugins__py
+[0.244s] [ 87%] Built target hector_gazebo_plugins__rosidl_generator_py
+[0.264s] [ 91%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_c__pyext
+[0.266s] [ 95%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_c__pyext
+[0.271s] [100%] Built target hector_gazebo_plugins__rosidl_typesupport_c__pyext
+[0.294s] Traceback (most recent call last):
+[0.294s]   File "/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/ament_cmake_python/hector_gazebo_plugins/setup.py", line 1, in <module>
+[0.295s]     from setuptools import find_packages
+[0.295s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[0.299s]     import setuptools.version
+[0.300s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[0.300s]     import pkg_resources
+[0.300s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 76, in <module>
+[0.303s]     __import__('pkg_resources.extern.packaging.version')
+[0.305s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 257, in <module>
+[0.312s]     class Version(_BaseVersion):
+[0.315s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 259, in Version
+[0.315s]     _regex = re.compile(r"^\s*" + VERSION_PATTERN + r"\s*$", re.VERBOSE | re.IGNORECASE)
+[0.315s]   File "/usr/lib/python3.10/re.py", line 251, in compile
+[0.317s]     return _compile(pattern, flags)
+[0.317s]   File "/usr/lib/python3.10/re.py", line 303, in _compile
+[0.317s]     p = sre_compile.compile(pattern, flags)
+[0.317s]   File "/usr/lib/python3.10/sre_compile.py", line 788, in compile
+[0.319s]     p = sre_parse.parse(p, flags)
+[0.319s]   File "/usr/lib/python3.10/sre_parse.py", line 955, in parse
+[0.319s]     p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+[0.319s]   File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+[0.320s]     itemsappend(_parse(source, state, verbose, nested + 1,
+[0.320s]   File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+[0.320s]     p = _parse_sub(source, state, sub_verbose, nested + 1)
+[0.320s]   File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+[0.320s]     itemsappend(_parse(source, state, verbose, nested + 1,
+[0.320s]   File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+[0.320s]     p = _parse_sub(source, state, sub_verbose, nested + 1)
+[0.320s]   File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+[0.321s]     itemsappend(_parse(source, state, verbose, nested + 1,
+[0.321s]   File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+[0.322s]     p = _parse_sub(source, state, sub_verbose, nested + 1)
+[0.323s]   File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+[0.323s]     itemsappend(_parse(source, state, verbose, nested + 1,
+[0.323s]   File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+[0.323s]     p = _parse_sub(source, state, sub_verbose, nested + 1)
+[0.323s]   File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+[0.323s]     itemsappend(_parse(source, state, verbose, nested + 1,
+[0.323s]   File "/usr/lib/python3.10/sre_parse.py", line 668, in _parse
+[0.324s]     if not item or item[0][0] is AT:
+[0.324s] KeyboardInterrupt
+[0.324s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_hector_gazebo_plugins_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_hector_gazebo_plugins_egg] Interrupt
+[0.324s] gmake[1]: *** [CMakeFiles/Makefile2:457: CMakeFiles/ament_cmake_python_build_hector_gazebo_plugins_egg.dir/all] Interrupt
+[0.324s] gmake: *** [Makefile:146: all] Interrupt

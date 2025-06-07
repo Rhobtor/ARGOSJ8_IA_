@@ -1,1 +1,1 @@
-from car_interfaces.msg._graph import Graph  # noqa: F401
+/home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces/rosidl_generator_py/car_interfaces/msg/__init__.py

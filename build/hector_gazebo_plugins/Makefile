@@ -315,17 +315,17 @@ hector_gazebo_plugins__rosidl_typesupport_cpp/fast:
 .PHONY : hector_gazebo_plugins__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_hector_gazebo_plugins
+# Target rules for targets named ament_cmake_python_symlink_hector_gazebo_plugins
 
 # Build rule for target.
-ament_cmake_python_copy_hector_gazebo_plugins: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_hector_gazebo_plugins
-.PHONY : ament_cmake_python_copy_hector_gazebo_plugins
+ament_cmake_python_symlink_hector_gazebo_plugins: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_hector_gazebo_plugins
+.PHONY : ament_cmake_python_symlink_hector_gazebo_plugins
 
 # fast build rule for target.
-ament_cmake_python_copy_hector_gazebo_plugins/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_hector_gazebo_plugins.dir/build.make CMakeFiles/ament_cmake_python_copy_hector_gazebo_plugins.dir/build
-.PHONY : ament_cmake_python_copy_hector_gazebo_plugins/fast
+ament_cmake_python_symlink_hector_gazebo_plugins/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_hector_gazebo_plugins.dir/build.make CMakeFiles/ament_cmake_python_symlink_hector_gazebo_plugins.dir/build
+.PHONY : ament_cmake_python_symlink_hector_gazebo_plugins/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_hector_gazebo_plugins_egg
@@ -1060,7 +1060,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_hector_gazebo_plugins_egg"
-	@echo "... ament_cmake_python_copy_hector_gazebo_plugins"
+	@echo "... ament_cmake_python_symlink_hector_gazebo_plugins"
 	@echo "... hector_gazebo_plugins"
 	@echo "... hector_gazebo_plugins__cpp"
 	@echo "... hector_gazebo_plugins__py"

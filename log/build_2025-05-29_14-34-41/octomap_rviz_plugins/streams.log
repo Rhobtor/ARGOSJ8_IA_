@@ -1,0 +1,125 @@
+[0.020s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/plugin_rviz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins
+[0.079s] -- The C compiler identification is GNU 11.4.0
+[0.117s] -- The CXX compiler identification is GNU 11.4.0
+[0.131s] -- Detecting C compiler ABI info
+[0.179s] -- Detecting C compiler ABI info - done
+[0.187s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.187s] -- Detecting C compile features
+[0.188s] -- Detecting C compile features - done
+[0.195s] -- Detecting CXX compiler ABI info
+[0.258s] -- Detecting CXX compiler ABI info - done
+[0.268s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.268s] -- Detecting CXX compile features
+[0.269s] -- Detecting CXX compile features - done
+[0.272s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.419s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.482s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.662s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.669s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.680s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.696s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.719s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.869s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.873s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.988s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.020s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.067s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.078s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.142s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.144s] -- Found Threads: TRUE  
+[1.229s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[1.238s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.239s] -- Found OGRE
+[1.240s] --   static     : OFF
+[1.240s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.240s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.240s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.240s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.240s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[1.240s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.240s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[1.241s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.241s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.241s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.241s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.285s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11")  
+[1.297s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[1.497s] -- Found X11: /usr/include   
+[1.498s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.555s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.556s] -- Looking for gethostbyname
+[1.616s] -- Looking for gethostbyname - found
+[1.616s] -- Looking for connect
+[1.673s] -- Looking for connect - found
+[1.674s] -- Looking for remove
+[1.728s] -- Looking for remove - found
+[1.728s] -- Looking for shmat
+[1.783s] -- Looking for shmat - found
+[1.783s] -- Looking for IceConnectionNumber in ICE
+[1.838s] -- Looking for IceConnectionNumber in ICE - found
+[1.936s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.019s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.019s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.310s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.343s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.345s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.346s] -- Configured cppcheck include dirs: /home/rhobtor/PHD/ARGOJ8_IA/src/plugin_rviz/include
+[2.346s] -- Configured cppcheck exclude dirs and/or files: 
+[2.347s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.347s] -- Configured cpplint exclude dirs and/or files: 
+[2.349s] -- Added test 'lint_cmake' to check CMake code style
+[2.351s] -- Added test 'uncrustify' to check C / C++ code style
+[2.351s] -- Configured uncrustify additional arguments: 
+[2.352s] -- Added test 'xmllint' to check XML markup files
+[2.356s] -- Configuring done (2.3s)
+[2.388s] -- Generating done (0.0s)
+[2.395s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins
+[2.410s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/plugin_rviz -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins
+[2.412s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins -- -j16 -l16
+[2.455s] [  0%] Built target octomap_rviz_plugins_autogen_timestamp_deps
+[2.472s] [ 10%] [34m[1mAutomatic MOC for target octomap_rviz_plugins[0m
+[2.502s] [ 10%] Built target octomap_rviz_plugins_autogen
+[2.508s] [ 20%] [34m[1mGenerating include/octomap_rviz_plugins/moc_occupancy_grid_display.cpp[0m
+[2.510s] [ 30%] [34m[1mGenerating include/octomap_rviz_plugins/moc_occupancy_map_display.cpp[0m
+[2.548s] [ 40%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/include/octomap_rviz_plugins/moc_occupancy_grid_display.cpp.o[0m
+[2.549s] [ 50%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/octomap_rviz_plugins_autogen/mocs_compilation.cpp.o[0m
+[2.549s] [ 60%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/src/occupancy_grid_display.cpp.o[0m
+[2.549s] [ 70%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/include/octomap_rviz_plugins/moc_occupancy_map_display.cpp.o[0m
+[2.550s] [ 80%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/src/occupancy_map_display.cpp.o[0m
+[49.580s] [ 90%] [32m[1mLinking CXX shared library liboctomap_rviz_plugins.so[0m
+[53.282s] [100%] Built target octomap_rviz_plugins
+[53.326s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins -- -j16 -l16
+[53.330s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins
+[53.335s] -- Install configuration: ""
+[53.336s] -- Execute custom install script
+[53.337s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins//plugins_description.xml
+[53.337s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_grid_display.hpp
+[53.343s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_map_display.hpp
+[53.346s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/library_path.sh
+[53.349s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/library_path.dsv
+[53.358s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/lib/liboctomap_rviz_plugins.so
+[53.366s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/ColorOccupancyGrid.png
+[53.374s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyGrid.png
+[53.384s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyGridStamped.png
+[53.385s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyMap.png
+[53.390s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyMapStamped.png
+[53.394s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/ament_index/resource_index/package_run_dependencies/octomap_rviz_plugins
+[53.402s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/ament_index/resource_index/parent_prefix_path/octomap_rviz_plugins
+[53.405s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/ament_prefix_path.sh
+[53.414s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/ament_prefix_path.dsv
+[53.425s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/path.sh
+[53.430s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/path.dsv
+[53.442s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.bash
+[53.444s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.sh
+[53.451s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.zsh
+[53.458s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.dsv
+[53.464s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.dsv
+[53.468s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/ament_index/resource_index/packages/octomap_rviz_plugins
+[53.475s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/ament_index/resource_index/rviz_common__pluginlib__plugin/octomap_rviz_plugins
+[53.482s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[53.493s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+[53.504s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+[53.505s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig.cmake
+[53.512s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig-version.cmake
+[53.516s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.xml
+[53.527s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins

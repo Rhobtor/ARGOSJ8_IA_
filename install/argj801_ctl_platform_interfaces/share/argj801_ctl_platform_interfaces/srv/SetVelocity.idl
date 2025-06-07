@@ -1,15 +1,1 @@
-// generated from rosidl_adapter/resource/srv.idl.em
-// with input from argj801_ctl_platform_interfaces/srv/SetVelocity.srv
-// generated code does not contain a copyright notice
-
-
-module argj801_ctl_platform_interfaces {
-  module srv {
-    struct SetVelocity_Request {
-      int8 new_velocity;
-    };
-    struct SetVelocity_Response {
-      int8 actual_velocity;
-    };
-  };
-};
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/srv/SetVelocity.idl

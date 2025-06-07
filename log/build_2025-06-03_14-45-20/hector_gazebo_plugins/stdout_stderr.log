@@ -1,0 +1,65 @@
+[  2%] Built target hector_gazebo_plugins__cpp
+[ 10%] Built target hector_gazebo_plugins__rosidl_generator_c
+[ 10%] Built target ament_cmake_python_symlink_hector_gazebo_plugins
+[ 18%] Built target hector_gazebo_plugins__rosidl_typesupport_c
+[ 22%] Built target hector_gazebo_reset_plugin
+[ 26%] Built target hector_gazebo_ros_magnetic
+[ 34%] Built target hector_gazebo_plugins__rosidl_typesupport_cpp
+[ 42%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_c
+[ 51%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_cpp
+[ 59%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_c
+[ 71%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp
+[ 67%] Built target hector_gazebo_ros_sonar
+[ 71%] Built target hector_gazebo_plugins
+[ 75%] Built target hector_gazebo_ros_gps
+[ 79%] Built target hector_gazebo_ros_imu
+[ 81%] Built target hector_gazebo_plugins__py
+[ 87%] Built target hector_gazebo_plugins__rosidl_generator_py
+[ 91%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_c__pyext
+[ 95%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_c__pyext
+[100%] Built target hector_gazebo_plugins__rosidl_typesupport_c__pyext
+Traceback (most recent call last):
+  File "/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/ament_cmake_python/hector_gazebo_plugins/setup.py", line 1, in <module>
+    from setuptools import find_packages
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+    import setuptools.version
+  File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 76, in <module>
+    __import__('pkg_resources.extern.packaging.version')
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 257, in <module>
+    class Version(_BaseVersion):
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 259, in Version
+    _regex = re.compile(r"^\s*" + VERSION_PATTERN + r"\s*$", re.VERBOSE | re.IGNORECASE)
+  File "/usr/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.10/sre_compile.py", line 788, in compile
+    p = sre_parse.parse(p, flags)
+  File "/usr/lib/python3.10/sre_parse.py", line 955, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 841, in _parse
+    p = _parse_sub(source, state, sub_verbose, nested + 1)
+  File "/usr/lib/python3.10/sre_parse.py", line 444, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+  File "/usr/lib/python3.10/sre_parse.py", line 668, in _parse
+    if not item or item[0][0] is AT:
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_hector_gazebo_plugins_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_hector_gazebo_plugins_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:457: CMakeFiles/ament_cmake_python_build_hector_gazebo_plugins_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

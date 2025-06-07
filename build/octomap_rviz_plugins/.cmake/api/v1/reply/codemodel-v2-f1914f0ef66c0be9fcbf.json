@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1c1faa5efb47981fdf37.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "octomap_rviz_plugins",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_rviz_plugins::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_rviz_plugins-e10e2f95c0ec1dccc4b9.json",
+					"name" : "octomap_rviz_plugins",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_rviz_plugins_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_rviz_plugins_autogen-c3e2ed33c66e46669c37.json",
+					"name" : "octomap_rviz_plugins_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_rviz_plugins_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_rviz_plugins_autogen_timestamp_deps-4d48823368bca9afeccb.json",
+					"name" : "octomap_rviz_plugins_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "octomap_rviz_plugins_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-octomap_rviz_plugins_uninstall-5afac490512053cfadfd.json",
+					"name" : "octomap_rviz_plugins_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bf27cf630bcf297699d9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/src/plugin_rviz"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

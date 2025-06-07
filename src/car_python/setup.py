@@ -50,6 +50,7 @@ setup(
             'map_navegation_test= car.map_test_navigation_hgh:main',
             'points_goal_old= car.points_goal_old:main',
             'test_octomap= car.test_octomap:main',
+            'j8_test_ppo= car.j8_test_ppo:main',
 
         ],
     },

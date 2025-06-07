@@ -1,0 +1,20 @@
+[  2%] Built target hector_gazebo_plugins__cpp
+[ 10%] Built target hector_gazebo_plugins__rosidl_generator_c
+[ 10%] Built target ament_cmake_python_symlink_hector_gazebo_plugins
+[ 18%] Built target hector_gazebo_plugins__rosidl_typesupport_c
+[ 22%] Built target hector_gazebo_reset_plugin
+[ 26%] Built target hector_gazebo_ros_magnetic
+[ 34%] Built target hector_gazebo_plugins__rosidl_typesupport_cpp
+[ 42%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_c
+[ 51%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_cpp
+[ 59%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_c
+[ 71%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp
+[ 67%] Built target hector_gazebo_ros_sonar
+[ 71%] Built target hector_gazebo_plugins
+[ 75%] Built target hector_gazebo_ros_gps
+[ 79%] Built target hector_gazebo_ros_imu
+[ 81%] Built target hector_gazebo_plugins__py
+[ 87%] Built target hector_gazebo_plugins__rosidl_generator_py
+[ 91%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_c__pyext
+[ 95%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_c__pyext
+[100%] Built target hector_gazebo_plugins__rosidl_typesupport_c__pyext

@@ -1,0 +1,35 @@
+running develop
+running egg_info
+writing car.egg-info/PKG-INFO
+writing dependency_links to car.egg-info/dependency_links.txt
+writing entry points to car.egg-info/entry_points.txt
+writing requirements to car.egg-info/requires.txt
+writing top-level names to car.egg-info/top_level.txt
+reading manifest file 'car.egg-info/SOURCES.txt'
+writing manifest file 'car.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car.egg-link (link to .)
+Installing colision_zone script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing filter_points_cloud script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing frontier_centroid script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing inference_full_model script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing inference_training_mode_simple script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing joystick_control script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing keyboard_control script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing lidar_detection script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing map_navegation script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing map_navegation_test script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing memory_map script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing movement_predictive script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing path_ppo_cnn_lstm_full_model script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing path_ppo_cnn_lstm_training_init_mode script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing path_ppo_cnn_lstm_training_init_mode_j8 script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing path_ppo_cnn_lstm_training_init_mode_simple script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing points_goal script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing points_goal_old script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing supervisor_node script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing test_octomap script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+Installing test_vel script to /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car
+
+Installed /home/rhobtor/PHD/ARGOJ8_IA/build/car
+running symlink_data

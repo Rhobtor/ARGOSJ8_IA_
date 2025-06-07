@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model/libgazebo_ros_j8_wheels_plugin.so" "TARGETS" "gazebo_ros_j8_wheels_plugin" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

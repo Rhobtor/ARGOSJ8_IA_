@@ -1,1 +1,1 @@
-geometry_msgs/Vector3 bias
+/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/rosidl_cmake/srv/SetBias_Request.msg

@@ -1,3 +1,1 @@
-int8 new_velocity
----
-int8 actual_velocity
+/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform_interfaces/srv/SetVelocity.srv

@@ -1,4 +1,1 @@
-source;share/hector_gazebo_plugins/environment/ament_prefix_path.sh
-source;share/hector_gazebo_plugins/environment/library_path.sh
-source;share/hector_gazebo_plugins/environment/path.sh
-source;share/hector_gazebo_plugins/environment/pythonpath.sh
+/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/ament_cmake_environment_hooks/local_setup.dsv

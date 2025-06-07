@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6fe41e7c291c90a34fdf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "j8_xacro_model",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gazebo_ros_j8_wheels_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gazebo_ros_j8_wheels_plugin-ac7691c2074a3362bb9f.json",
+					"name" : "gazebo_ros_j8_wheels_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "j8_xacro_model_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-j8_xacro_model_uninstall-552a4415bf464c2b2f27.json",
+					"name" : "j8_xacro_model_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-96abb47980e1f69310da.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rhobtor/PHD/ARGOJ8_IA/build/j8_xacro_model",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/j8_xacro_model"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

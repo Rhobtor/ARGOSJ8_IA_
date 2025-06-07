@@ -1,0 +1,5 @@
+  File "/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/j8_test_ppo.py", line 4559
+    if self.goal_reached_flag
+                             ^
+SyntaxError: expected ':'
+

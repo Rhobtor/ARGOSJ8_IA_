@@ -4,6 +4,7 @@ filter_points_cloud = car.filter_points_cloud:main
 frontier_centroid = car.frontier_centroid:main
 inference_full_model = car.inference_full_model:main
 inference_training_mode_simple = car.inference_training_mode_simple:main
+j8_test_ppo = car.j8_test_ppo:main
 joystick_control = car.joystick_control:main
 keyboard_control = car.keyboard_control:main
 lidar_detection = car.lidar_obstacle_detection:main

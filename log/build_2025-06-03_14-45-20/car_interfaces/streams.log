@@ -1,0 +1,51 @@
+[0.040s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces -- -j16 -l16
+[0.071s] [  3%] Built target car_interfaces__cpp
+[0.075s] [ 12%] Built target car_interfaces__rosidl_generator_c
+[0.080s] [ 12%] Built target ament_cmake_python_symlink_car_interfaces
+[0.129s] [ 22%] Built target car_interfaces__rosidl_typesupport_cpp
+[0.130s] [ 32%] Built target car_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.130s] [ 41%] Built target car_interfaces__rosidl_typesupport_introspection_cpp
+[0.141s] [ 51%] Built target car_interfaces__rosidl_typesupport_introspection_c
+[0.147s] [ 61%] Built target car_interfaces__rosidl_typesupport_fastrtps_c
+[0.152s] [ 70%] Built target car_interfaces__rosidl_typesupport_c
+[0.176s] [ 70%] Built target car_interfaces
+[0.206s] [ 74%] Built target car_interfaces__py
+[0.223s] [ 80%] Built target car_interfaces__rosidl_generator_py
+[0.247s] [ 87%] Built target car_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.249s] [ 93%] Built target car_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.256s] [100%] Built target car_interfaces__rosidl_typesupport_c__pyext
+[0.316s] Traceback (most recent call last):
+[0.316s]   File "/home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces/ament_cmake_python/car_interfaces/setup.py", line 1, in <module>
+[0.317s]     from setuptools import find_packages
+[0.317s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[0.318s]     import setuptools.version
+[0.318s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[0.321s]     import pkg_resources
+[0.321s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>
+[0.339s]     def _initialize_master_working_set():
+[0.341s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside
+[0.341s]     f(*args, **kwargs)
+[0.341s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3279, in _initialize_master_working_set
+[0.341s]     working_set = WorkingSet._build_master()
+[0.341s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 564, in _build_master
+[0.341s]     ws = cls()
+[0.342s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 557, in __init__
+[0.342s]     self.add_entry(entry)
+[0.342s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry
+[0.343s]     for dist in find_distributions(entry, True):
+[0.343s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2073, in find_on_path
+[0.344s]     path_item_entries = _by_version_descending(filtered)
+[0.344s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2043, in _by_version_descending
+[0.344s]     return sorted(names, key=_by_version, reverse=True)
+[0.344s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2041, in _by_version
+[0.344s]     return [try_parse(part) for part in parts]
+[0.344s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2041, in <listcomp>
+[0.344s]     return [try_parse(part) for part in parts]
+[0.344s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2031, in try_parse
+[0.344s]     return packaging.version.Version(name)
+[0.344s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 266, in __init__
+[0.344s]     raise InvalidVersion(f"Invalid version: '{version}'")
+[0.344s] KeyboardInterrupt
+[0.345s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_car_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_car_interfaces_egg] Interrupt
+[0.345s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_car_interfaces_egg.dir/all] Interrupt
+[0.345s] gmake: *** [Makefile:146: all] Interrupt

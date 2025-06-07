@@ -1,1 +1,1 @@
-bool stop
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_cmake/srv/EmergencyStop_Request.msg

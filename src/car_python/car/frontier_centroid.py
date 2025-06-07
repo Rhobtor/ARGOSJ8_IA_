@@ -458,10 +458,10 @@ from visualization_msgs.msg import Marker
 from scipy.ndimage     import binary_dilation      # ← NEW
 
 # ───────────────────── Parámetros ajustables ────────────────────────────
-CLUSTER_DISTANCE_THRESHOLD = 3.0     # [m]  eps DBSCAN
-SAFE_DISTANCE_THRESHOLD    = 3.0     # [m]  obstáculo-centroide mínimo
+CLUSTER_DISTANCE_THRESHOLD = 2.0     # [m]  eps DBSCAN
+SAFE_DISTANCE_THRESHOLD    = 2.5     # [m]  obstáculo-centroide mínimo
 PERSISTENCE_TOLERANCE      = 0.5     # [m]  evita duplicados
-MAX_FRONTIER_DISTANCE      = 40.0    # [m]  radio máximo desde el robot
+MAX_FRONTIER_DISTANCE      = 50.0    # [m]  radio máximo desde el robot
 INTERIOR_SAMPLES           = 100     # nº máx de puntos interiores
 
 # ──────────────────────────── Nodo ───────────────────────────────────────

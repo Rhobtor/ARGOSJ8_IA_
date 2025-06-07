@@ -1,2 +1,1 @@
-from hector_gazebo_plugins.srv._set_bias import SetBias  # noqa: F401
-from hector_gazebo_plugins.srv._set_reference_geo_pose import SetReferenceGeoPose  # noqa: F401
+/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/rosidl_generator_py/hector_gazebo_plugins/srv/__init__.py

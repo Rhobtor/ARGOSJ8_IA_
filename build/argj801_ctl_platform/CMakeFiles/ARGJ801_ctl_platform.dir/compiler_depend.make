@@ -311,27 +311,27 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/arduino_interface/serial_arduino.cpp.o: 
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h
 
 CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_ctl_platform_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_ctl_platform/argj801_ctl_platform_node.cpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__traits.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__builder.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__struct.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__traits.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__builder.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__traits.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/emergency_stop.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/get_velocity.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/set_velocity.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__traits.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__builder.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__struct.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__traits.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__builder.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__traits.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/emergency_stop.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/get_velocity.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/set_velocity.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/arduino_interface/serial_arduino.h \
   /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_ctl_platform_node.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_kinematic_model.hpp \
@@ -1383,27 +1383,27 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_kinematic_m
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
 
 CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/main.cpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__traits.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__builder.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__struct.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__traits.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__builder.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__traits.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/emergency_stop.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/get_velocity.hpp \
-  /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/set_velocity.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__traits.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__builder.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__struct.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__traits.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__builder.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__traits.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/emergency_stop.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/get_velocity.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/set_velocity.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/arduino_interface/serial_arduino.h \
   /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_ctl_platform_node.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_kinematic_model.hpp \
@@ -2358,8 +2358,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/list:
 
-/usr/include/c++/11/iomanip:
-
 /usr/include/c++/11/cxxabi.h:
 
 /usr/include/c++/11/cstring:
@@ -2468,10 +2466,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h:
 
-/usr/include/c++/11/bits/std_function.h:
-
-/opt/ros/humble/include/rmw/rmw/time.h:
-
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
 
 /opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
@@ -2489,6 +2483,10 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /opt/ros/humble/include/rmw/rmw/localhost.h:
 
 /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
+
+/opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
+
+/opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
 
@@ -2508,35 +2506,23 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/get_velocity.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.hpp:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.hpp:
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__struct.hpp:
 
-/opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__builder.hpp:
 
-/opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp:
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.hpp:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__builder.hpp:
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
-/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Route.hpp:
+/usr/include/c++/11/typeinfo:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
-
-/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_cpu_msg.hpp:
-
-/usr/include/c++/11/bits/stl_numeric.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
-
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/termios-baud.h:
-
-/usr/include/c++/11/cerrno:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
 
 /usr/include/c++/11/bits/atomic_futex.h:
 
@@ -2548,19 +2534,23 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
 
+/usr/include/c++/11/iomanip:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp:
+
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
 /usr/include/c++/11/bits/move.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__builder.hpp:
+
 /usr/include/c++/11/bits/ostream_insert.h:
 
 /usr/include/c++/11/functional:
 
 /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:
-
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
@@ -2620,12 +2610,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__traits.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
@@ -2638,13 +2622,13 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/set_velocity.hpp:
-
 /usr/include/c++/11/sstream:
 
 /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h:
 
 /usr/include/c++/11/tr1/hypergeometric.tcc:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.hpp:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
@@ -2670,8 +2654,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__builder.hpp:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Point2D.hpp:
@@ -2679,6 +2661,10 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/c++/11/bits/stl_multimap.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/termios-baud.h:
+
+/usr/include/c++/11/cerrno:
 
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
@@ -2732,6 +2718,8 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
@@ -2747,10 +2735,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -2776,6 +2760,12 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
 
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
+
+/usr/include/x86_64-linux-gnu/asm/socket.h:
+
 /usr/include/c++/11/bits/stl_list.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
@@ -2800,8 +2790,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/bits/range_access.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__builder.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
@@ -2813,6 +2801,8 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__traits.hpp:
 
 /usr/include/netinet/in.h:
 
@@ -2856,10 +2846,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__traits.hpp:
-
-/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/c++/11/new:
@@ -2869,6 +2855,10 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_battery_msg.hpp:
 
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
@@ -2898,13 +2888,19 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/ios:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp:
+/usr/include/c++/11/bits/std_function.h:
+
+/opt/ros/humble/include/rmw/rmw/time.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/emergency_stop.hpp:
 
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/11/bits/memoryfwd.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp:
 
 /usr/include/c++/11/bits/localefwd.h:
 
@@ -2918,8 +2914,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/local/include/lcm/lcm_version.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp:
-
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
@@ -2930,17 +2924,17 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/bits/atomic_base.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
 /usr/include/poll.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/usr/include/strings.h:
 
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
@@ -3054,13 +3048,13 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/asm-generic/int-ll64.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.hpp:
-
 /usr/include/linux/errno.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/arduino_interface/serial_arduino.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/set_velocity.hpp:
 
 /usr/include/c++/11/bits/stl_tree.h:
 
@@ -3112,11 +3106,13 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/bits/basic_string.h:
 
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
 /opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__builder.hpp:
 
 /opt/ros/humble/include/rmw/rmw/qos_profiles.h:
-
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp:
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
@@ -3176,15 +3172,25 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
 /usr/include/c++/11/bits/hash_bytes.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
+
+/usr/include/c++/11/utility:
+
+/opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/features-time64.h:
 
@@ -3230,10 +3236,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/TemperatureSensor.hpp:
-
-/usr/include/c++/11/ext/alloc_traits.h:
-
 /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__type_support.hpp:
 
 /usr/include/locale.h:
@@ -3276,11 +3278,9 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__traits.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/c++/11/utility:
+/opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/state.hpp:
 
 /usr/include/c++/11/type_traits:
 
@@ -3297,8 +3297,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
-
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/emergency_stop.hpp:
 
 /usr/include/c++/11/cstdint:
 
@@ -3318,6 +3316,14 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/sockaddr.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
@@ -3332,11 +3338,9 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
-/usr/include/c++/11/typeinfo:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/get_velocity.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
@@ -3372,6 +3376,8 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/MissionEvent.hpp:
@@ -3406,6 +3412,12 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rcl/rcl/graph.h:
 
+/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Route.hpp:
+
+/usr/include/c++/11/ext/alloc_traits.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/TemperatureSensor.hpp:
+
 /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/VehicleInformation.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
@@ -3424,19 +3436,27 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
 
-/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_battery_msg.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
+/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_cpu_msg.hpp:
+
+/usr/include/c++/11/bits/stl_numeric.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
+
 /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_hardware_status_msg.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_station_heartbeat_msg.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_temperature_msg.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
@@ -3484,8 +3504,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.hpp:
-
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 
 /usr/include/c++/11/bits/functexcept.h:
@@ -3501,6 +3519,10 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
 
 /opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_status__type_support.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
+
+/opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__struct.hpp:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/rosidl_generator_c__visibility_control.h:
 
@@ -3546,9 +3568,9 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/diagnostic_updater/diagnostic_status_wrapper.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
-
 /usr/include/asm-generic/types.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
 
@@ -3563,10 +3585,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/transition.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
 
@@ -3583,8 +3601,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/yaml-cpp/node/parse.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
@@ -3612,6 +3628,8 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_publisher_payload.hpp:
 
+/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.h:
+
 /usr/include/c++/11/ostream:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.hpp:
@@ -3627,6 +3645,10 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__struct.h:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__type_support.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/state.hpp:
 
@@ -3772,8 +3794,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__traits.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__type_support.hpp:
@@ -3783,8 +3803,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
 
@@ -3801,8 +3819,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__struct.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
 
 /usr/include/semaphore.h:
 
@@ -3839,10 +3855,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/wchar.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
-
-/opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/detail/diagnostic_array__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
 
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 
@@ -3910,9 +3922,9 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
 
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
 
@@ -3929,8 +3941,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /opt/ros/humble/include/rclcpp/rclcpp/get_message_type_support_handle.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
-
-/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_setting.hpp:
 
@@ -3972,6 +3982,8 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:
@@ -3992,15 +4004,11 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
-
-/usr/include/x86_64-linux-gnu/asm/socket.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
-
 /usr/include/c++/11/tuple:
 
 /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp:
 
@@ -4031,8 +4039,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_publisher.hpp:
 
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/managed_entity.hpp:
-
-/opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/state.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/pointer_traits.hpp:
 
@@ -4075,9 +4081,3 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Waypoint.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
-
-/usr/include/strings.h:
-
-/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:

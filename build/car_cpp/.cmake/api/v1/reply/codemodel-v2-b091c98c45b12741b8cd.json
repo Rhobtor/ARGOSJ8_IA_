@@ -1,0 +1,187 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-140f9cb043cd97cc4c1b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "car_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "car_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-car_cpp_uninstall-110f0ff49d610b2d361f.json",
+					"name" : "car_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "check_goal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-check_goal-09c8d3b1654e3f30f223.json",
+					"name" : "check_goal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drive_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drive_plugin-fde2e7636d3c08a61d14.json",
+					"name" : "drive_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "filtered_navigation_nodes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-filtered_navigation_nodes-c097709d0090b8ae1cc2.json",
+					"name" : "filtered_navigation_nodes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "frontier_values::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-frontier_values-7a80b174e4d72e5df108.json",
+					"name" : "frontier_values",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gridmap::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gridmap-b97a1b4d96042c8f93a9.json",
+					"name" : "gridmap",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joints_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joints_plugin-27c8187e5244989fcae9.json",
+					"name" : "joints_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "move_navigation_nodes_frontier::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-move_navigation_nodes_frontier-dffb02efb4977bd07ae8.json",
+					"name" : "move_navigation_nodes_frontier",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "move_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-move_plugin-01e39a84aad29d9368b6.json",
+					"name" : "move_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigation_nodes::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigation_nodes-fe9db1c2753b00cc66d3.json",
+					"name" : "navigation_nodes",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "navigation_nodes_ground::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-navigation_nodes_ground-4bfd937f9e6896d140f8.json",
+					"name" : "navigation_nodes_ground",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "obstacles_in_2d::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-obstacles_in_2d-b26bed2b0d1d69db7eca.json",
+					"name" : "obstacles_in_2d",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "occupied_nodes_near_obstacles::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-occupied_nodes_near_obstacles-a6254ba85bbab2b226ad.json",
+					"name" : "occupied_nodes_near_obstacles",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "slope_terrain::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-slope_terrain-1dd293bc74fb3252655b.json",
+					"name" : "slope_terrain",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9bdae4ada331aa4563a6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

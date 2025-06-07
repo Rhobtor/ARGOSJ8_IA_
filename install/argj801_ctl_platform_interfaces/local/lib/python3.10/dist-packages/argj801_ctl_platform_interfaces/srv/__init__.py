@@ -1,3 +1,1 @@
-from argj801_ctl_platform_interfaces.srv._emergency_stop import EmergencyStop  # noqa: F401
-from argj801_ctl_platform_interfaces.srv._get_velocity import GetVelocity  # noqa: F401
-from argj801_ctl_platform_interfaces.srv._set_velocity import SetVelocity  # noqa: F401
+/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/__init__.py

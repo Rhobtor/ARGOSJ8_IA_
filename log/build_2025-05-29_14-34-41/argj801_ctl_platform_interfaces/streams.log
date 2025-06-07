@@ -1,0 +1,321 @@
+[0.016s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces
+[0.085s] -- The C compiler identification is GNU 11.4.0
+[0.127s] -- The CXX compiler identification is GNU 11.4.0
+[0.138s] -- Detecting C compiler ABI info
+[0.188s] -- Detecting C compiler ABI info - done
+[0.196s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.196s] -- Detecting C compile features
+[0.196s] -- Detecting C compile features - done
+[0.205s] -- Detecting CXX compiler ABI info
+[0.272s] -- Detecting CXX compiler ABI info - done
+[0.282s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.282s] -- Detecting CXX compile features
+[0.283s] -- Detecting CXX compile features - done
+[0.286s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.440s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.504s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.546s] -- Found rosidl_default_runtime: 1.2.0 (/opt/ros/humble/share/rosidl_default_runtime/cmake)
+[0.577s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.586s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.618s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.649s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.088s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.497s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.033s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.035s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[2.035s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.035s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.035s]   the cmake_policy command to set the policy and suppress this warning.
+[2.035s] 
+[2.035s] Call Stack (most recent call first):
+[2.035s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.035s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.035s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[2.035s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.035s] [0m
+[2.055s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.058s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.058s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[2.058s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.058s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.058s]   the cmake_policy command to set the policy and suppress this warning.
+[2.058s] 
+[2.058s] Call Stack (most recent call first):
+[2.058s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.058s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.058s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.058s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[2.058s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.058s] [0m
+[2.078s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[2.078s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.078s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.078s]   the cmake_policy command to set the policy and suppress this warning.
+[2.078s] 
+[2.078s] Call Stack (most recent call first):
+[2.078s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.079s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.079s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.079s]   CMakeLists.txt:17 (rosidl_generate_interfaces)
+[2.079s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.079s] [0m
+[2.085s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.085s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.085s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.085s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.108s] -- Found PythonExtra: .so  
+[2.162s] -- Configuring done (2.1s)
+[2.194s] -- Generating done (0.0s)
+[2.203s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces
+[2.210s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces
+[2.211s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces -- -j16 -l16
+[2.232s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.237s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.238s] [  3%] Built target ament_cmake_python_symlink_argj801_ctl_platform_interfaces
+[2.469s] running egg_info
+[2.470s] creating argj801_ctl_platform_interfaces.egg-info
+[2.470s] writing argj801_ctl_platform_interfaces.egg-info/PKG-INFO
+[2.470s] writing dependency_links to argj801_ctl_platform_interfaces.egg-info/dependency_links.txt
+[2.471s] writing top-level names to argj801_ctl_platform_interfaces.egg-info/top_level.txt
+[2.471s] writing manifest file 'argj801_ctl_platform_interfaces.egg-info/SOURCES.txt'
+[2.474s] reading manifest file 'argj801_ctl_platform_interfaces.egg-info/SOURCES.txt'
+[2.474s] writing manifest file 'argj801_ctl_platform_interfaces.egg-info/SOURCES.txt'
+[2.497s] [  3%] Built target ament_cmake_python_build_argj801_ctl_platform_interfaces_egg
+[2.684s] [  5%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.c.o[0m
+[2.687s] [  7%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/get_velocity__functions.c.o[0m
+[2.687s] [ 10%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.c.o[0m
+[2.687s] [ 10%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__functions.c.o[0m
+[2.754s] [ 10%] Built target argj801_ctl_platform_interfaces__cpp
+[2.761s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.763s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.763s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.763s] [ 18%] [32m[1mLinking C shared library libargj801_ctl_platform_interfaces__rosidl_generator_c.so[0m
+[2.803s] [ 18%] Built target argj801_ctl_platform_interfaces__rosidl_generator_c
+[2.811s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.811s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.812s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.343s] [ 25%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/argj801_ctl_platform_interfaces/srv/set_velocity__type_support.cpp.o[0m
+[3.348s] [ 27%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/argj801_ctl_platform_interfaces/srv/emergency_stop__type_support.cpp.o[0m
+[3.348s] [ 29%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg__type_support.cpp.o[0m
+[3.353s] [ 30%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/argj801_ctl_platform_interfaces/srv/get_velocity__type_support.cpp.o[0m
+[3.544s] [ 34%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.cpp.o[0m
+[3.545s] [ 34%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.cpp.o[0m
+[3.551s] [ 36%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.cpp.o[0m
+[3.553s] [ 38%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.cpp.o[0m
+[3.637s] [ 40%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/srv/set_velocity__type_support.cpp.o[0m
+[3.644s] [ 41%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/srv/get_velocity__type_support.cpp.o[0m
+[3.649s] [ 43%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg__type_support.cpp.o[0m
+[3.652s] [ 45%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/srv/emergency_stop__type_support.cpp.o[0m
+[3.665s] [ 47%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support_c.cpp.o[0m
+[3.672s] [ 49%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.c.o[0m
+[3.682s] [ 50%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support_c.cpp.o[0m
+[3.735s] [ 52%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support_c.cpp.o[0m
+[3.750s] [ 54%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.c.o[0m
+[3.758s] [ 56%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.c.o[0m
+[3.783s] [ 58%] [32m[1mLinking CXX shared library libargj801_ctl_platform_interfaces__rosidl_typesupport_c.so[0m
+[3.846s] [ 60%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.c.o[0m
+[3.873s] [ 61%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support_c.cpp.o[0m
+[3.894s] [ 61%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_c
+[4.004s] [ 63%] [32m[1mLinking C shared library libargj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c.so[0m
+[4.073s] [ 63%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c
+[4.299s] [ 65%] [32m[1mLinking CXX shared library libargj801_ctl_platform_interfaces__rosidl_typesupport_cpp.so[0m
+[4.373s] [ 65%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_cpp
+[4.734s] [ 67%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/argj801_ctl_platform_interfaces/srv/detail/dds_fastrtps/set_velocity__type_support.cpp.o[0m
+[4.737s] [ 69%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/argj801_ctl_platform_interfaces/srv/detail/dds_fastrtps/get_velocity__type_support.cpp.o[0m
+[4.739s] [ 70%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/argj801_ctl_platform_interfaces/msg/detail/dds_fastrtps/cmd_throttle_msg__type_support.cpp.o[0m
+[4.742s] [ 72%] [32mBuilding CXX object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/argj801_ctl_platform_interfaces/srv/detail/dds_fastrtps/emergency_stop__type_support.cpp.o[0m
+[4.790s] [ 74%] [32m[1mLinking CXX shared library libargj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[4.837s] [ 74%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp
+[5.880s] [ 76%] [32m[1mLinking CXX shared library libargj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[5.959s] [ 76%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c
+[5.967s] [ 78%] [32m[1mLinking CXX shared library libargj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.043s] [ 78%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp
+[6.061s] [ 78%] Built target argj801_ctl_platform_interfaces
+[6.085s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.857s] [ 80%] Built target argj801_ctl_platform_interfaces__py
+[8.885s] [ 81%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_set_velocity_s.c.o[0m
+[8.894s] [ 83%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_get_velocity_s.c.o[0m
+[8.902s] [ 85%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_emergency_stop_s.c.o[0m
+[8.908s] [ 87%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_py.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/msg/_cmd_throttle_msg_s.c.o[0m
+[9.209s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/argj801_ctl_platform_interfaces/libargj801_ctl_platform_interfaces__rosidl_generator_py.so[0m
+[9.253s] [ 89%] Built target argj801_ctl_platform_interfaces__rosidl_generator_py
+[9.284s] [ 90%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/_argj801_ctl_platform_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.289s] [ 92%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/_argj801_ctl_platform_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[9.297s] [ 94%] [32mBuilding C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/argj801_ctl_platform_interfaces/_argj801_ctl_platform_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[9.600s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.830s] [ 96%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c__pyext
+[10.156s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[10.509s] [ 98%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[10.649s] [100%] [32m[1mLinking C shared library rosidl_generator_py/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[10.864s] [100%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_c__pyext
+[10.894s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces -- -j16 -l16
+[10.902s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces
+[10.910s] -- Install configuration: ""
+[10.911s] -- Execute custom install script
+[10.912s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/ament_index/resource_index/rosidl_interfaces/argj801_ctl_platform_interfaces
+[10.919s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.h
+[10.925s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.h
+[10.927s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.h
+[10.931s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.h
+[10.936s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_generator_c__visibility_control.h
+[10.940s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__functions.h
+[10.947s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.h
+[10.951s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.h
+[10.959s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__functions.h
+[10.961s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__struct.h
+[10.966s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.h
+[10.971s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.h
+[10.976s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.h
+[10.981s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.h
+[10.988s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/emergency_stop.h
+[10.993s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/get_velocity.h
+[10.999s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/set_velocity.h
+[11.004s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/environment/library_path.sh
+[11.011s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/environment/library_path.dsv
+[11.018s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__rosidl_typesupport_fastrtps_c.h
+[11.022s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[11.042s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__rosidl_typesupport_fastrtps_c.h
+[11.045s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__rosidl_typesupport_fastrtps_c.h
+[11.045s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__rosidl_typesupport_fastrtps_c.h
+[11.045s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__rosidl_typesupport_introspection_c.h
+[11.052s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[11.054s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__rosidl_typesupport_introspection_c.h
+[11.059s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__rosidl_typesupport_introspection_c.h
+[11.062s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__rosidl_typesupport_introspection_c.h
+[11.067s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp
+[11.071s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp
+[11.075s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp
+[11.082s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp
+[11.087s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp
+[11.095s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[11.102s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp
+[11.114s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp
+[11.136s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__traits.hpp
+[11.144s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.hpp
+[11.152s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__builder.hpp
+[11.164s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__struct.hpp
+[11.170s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__traits.hpp
+[11.190s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.hpp
+[11.197s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__builder.hpp
+[11.205s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.hpp
+[11.216s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__traits.hpp
+[11.220s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.hpp
+[11.226s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/emergency_stop.hpp
+[11.231s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/get_velocity.hpp
+[11.238s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/set_velocity.hpp
+[11.249s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[11.258s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[11.267s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__rosidl_typesupport_fastrtps_cpp.hpp
+[11.272s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[11.276s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[11.284s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__rosidl_typesupport_introspection_cpp.hpp
+[11.291s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__rosidl_typesupport_introspection_cpp.hpp
+[11.295s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__rosidl_typesupport_introspection_cpp.hpp
+[11.304s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__rosidl_typesupport_introspection_cpp.hpp
+[11.307s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/environment/pythonpath.sh
+[11.319s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/environment/pythonpath.dsv
+[11.323s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[11.326s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[11.329s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[11.332s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[11.335s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/__init__.py
+[11.338s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/_argj801_ctl_platform_interfaces_s.ep.rosidl_typesupport_c.c
+[11.341s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/_argj801_ctl_platform_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[11.344s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/_argj801_ctl_platform_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[11.347s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[11.350s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[11.355s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[11.361s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/libargj801_ctl_platform_interfaces__rosidl_generator_py.so
+[11.366s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/msg/__init__.py
+[11.371s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/msg/_cmd_throttle_msg.py
+[11.379s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/msg/_cmd_throttle_msg_s.c
+[11.385s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/__init__.py
+[11.392s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/_emergency_stop.py
+[11.399s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/_emergency_stop_s.c
+[11.406s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/_get_velocity.py
+[11.411s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/_get_velocity_s.c
+[11.416s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/_set_velocity.py
+[11.421s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/_set_velocity_s.c
+[11.426s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[11.427s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[11.428s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[11.429s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/SetVelocity.idl
+[11.434s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/GetVelocity.idl
+[11.442s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/EmergencyStop.idl
+[11.444s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.idl
+[11.449s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/SetVelocity.srv
+[11.454s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/SetVelocity_Request.msg
+[11.459s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/SetVelocity_Response.msg
+[11.464s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/GetVelocity.srv
+[11.469s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/GetVelocity_Request.msg
+[11.474s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/GetVelocity_Response.msg
+[11.485s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/EmergencyStop.srv
+[11.492s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/EmergencyStop_Request.msg
+[11.497s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/srv/EmergencyStop_Response.msg
+[11.498s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.msg
+[11.499s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/ament_index/resource_index/package_run_dependencies/argj801_ctl_platform_interfaces
+[11.504s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/ament_index/resource_index/parent_prefix_path/argj801_ctl_platform_interfaces
+[11.509s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/environment/ament_prefix_path.sh
+[11.514s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/environment/ament_prefix_path.dsv
+[11.519s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/environment/path.sh
+[11.524s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/environment/path.dsv
+[11.529s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/local_setup.bash
+[11.534s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/local_setup.sh
+[11.544s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/local_setup.zsh
+[11.549s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/local_setup.dsv
+[11.555s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/package.dsv
+[11.562s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/ament_index/resource_index/packages/argj801_ctl_platform_interfaces
+[11.565s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/rosidl_cmake-extras.cmake
+[11.572s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.578s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[11.587s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[11.589s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[11.593s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.598s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[11.602s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/argj801_ctl_platform_interfacesConfig.cmake
+[11.608s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/argj801_ctl_platform_interfacesConfig-version.cmake
+[11.613s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/package.xml
+[11.618s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_generator_c.so
+[11.624s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_generator_c.so" to ""
+[11.624s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c.so
+[11.624s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[11.624s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c.so
+[11.624s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[11.625s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_c.so
+[11.625s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_c.so" to ""
+[11.627s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[11.627s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[11.628s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp.so
+[11.628s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[11.629s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_cpp.so
+[11.630s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_typesupport_cpp.so" to ""
+[11.762s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces'...
+[11.762s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/__init__.py'...
+[11.762s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/msg'...
+[11.762s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/msg/__init__.py'...
+[11.762s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/msg/_cmd_throttle_msg.py'...
+[11.762s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv'...
+[11.762s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/__init__.py'...
+[11.762s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/_emergency_stop.py'...
+[11.762s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/_get_velocity.py'...
+[11.762s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages/argj801_ctl_platform_interfaces/srv/_set_velocity.py'...
+[11.772s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_generator_py.so
+[11.776s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/lib/libargj801_ctl_platform_interfaces__rosidl_generator_py.so" to ""
+[11.776s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/export_argj801_ctl_platform_interfaces__rosidl_generator_cExport.cmake
+[11.776s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/export_argj801_ctl_platform_interfaces__rosidl_generator_cExport-noconfig.cmake
+[11.776s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/export_argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[11.777s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/export_argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[11.778s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[11.778s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[11.779s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/argj801_ctl_platform_interfaces__rosidl_typesupport_cExport.cmake
+[11.780s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/argj801_ctl_platform_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[11.782s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/export_argj801_ctl_platform_interfaces__rosidl_generator_cppExport.cmake
+[11.783s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/export_argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[11.783s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/export_argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[11.784s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[11.784s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[11.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/argj801_ctl_platform_interfaces__rosidl_typesupport_cppExport.cmake
+[11.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/argj801_ctl_platform_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[11.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/export_argj801_ctl_platform_interfaces__rosidl_generator_pyExport.cmake
+[11.790s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces/share/argj801_ctl_platform_interfaces/cmake/export_argj801_ctl_platform_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[11.813s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces

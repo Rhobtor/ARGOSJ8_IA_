@@ -1,0 +1,146 @@
+[0.020s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/fix_position_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg
+[0.029s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.197s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.206s] -- Found gazebo_dev: 3.9.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[0.241s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.277s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.278s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.283s] -- Searching for dependencies of ignition-math6
+[0.284s] -- Looking for OGRE...
+[0.291s] -- Found Ogre Ghadamon (1.9.0)
+[0.291s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.302s] -- Looking for OGRE_Paging...
+[0.302s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.302s] -- Looking for OGRE_Terrain...
+[0.302s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.302s] -- Looking for OGRE_Property...
+[0.302s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.302s] -- Looking for OGRE_RTShaderSystem...
+[0.302s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.303s] -- Looking for OGRE_Volume...
+[0.303s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.303s] -- Looking for OGRE_Overlay...
+[0.303s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.588s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.589s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.589s] -- Searching for dependencies of ignition-transport8
+[0.607s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.617s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.622s] -- Checking for module 'libzmq >= 4'
+[0.637s] --   Found libzmq, version 4.3.4
+[0.678s] -- Checking for module 'uuid'
+[0.693s] --   Found uuid, version 2.37.2
+[0.724s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.725s] -- Searching for dependencies of ignition-msgs5
+[0.744s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.750s] -- Checking for module 'tinyxml2'
+[0.768s] --   Found tinyxml2, version 9.0.0
+[0.805s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.805s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.805s] -- Searching for dependencies of ignition-common3
+[0.805s] -- Looking for dlfcn.h - found
+[0.806s] -- Looking for libdl - found
+[0.819s] -- Searching for <ignition-common3> component [graphics]
+[0.819s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[0.819s] -- Searching for dependencies of ignition-common3-graphics
+[0.820s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.820s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[0.821s] -- Searching for dependencies of ignition-fuel_tools4
+[0.855s] [0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake:2 (cmake_policy):
+[0.855s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[0.855s]   CMake.
+[0.855s] 
+[0.855s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.855s]   CMake that the project does not need compatibility with older versions.
+[0.855s] Call Stack (most recent call first):
+[0.855s]   /usr/share/cmake/ignition-cmake2/cmake2/FindJSONCPP.cmake:34 (find_package)
+[0.855s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools4/ignition-fuel_tools4-config.cmake:94 (find_package)
+[0.855s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:251 (find_package)
+[0.855s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[0.855s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[0.856s]   CMakeLists.txt:13 (find_package)
+[0.856s] 
+[0.856s] [0m
+[0.860s] -- Checking for module 'jsoncpp'
+[0.874s] --   Found jsoncpp, version 1.9.5
+[0.911s] -- Checking for module 'libzip'
+[0.923s] --   Found libzip, version 1.7.3
+[0.953s] -- Looking for ignition-common3 -- found version 3.14.0
+[0.953s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.953s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[0.955s] -- Gazebo version: 11.10
+[0.955s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.981s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.983s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.990s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.002s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.016s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.053s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.056s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.161s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.223s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.237s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.258s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[1.262s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.265s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.267s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.367s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.443s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.502s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.503s] -- Configured cppcheck include dirs: /home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/fix_position_pkg/include;$<BUILD_INTERFACE:/home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/fix_position_pkg/include>
+[1.503s] -- Configured cppcheck exclude dirs and/or files: 
+[1.503s] -- Added test 'lint_cmake' to check CMake code style
+[1.505s] -- Added test 'uncrustify' to check C / C++ code style
+[1.505s] -- Configured uncrustify additional arguments: 
+[1.505s] -- Added test 'xmllint' to check XML markup files
+[1.506s] -- Configuring done (1.5s)
+[1.558s] -- Generating done (0.0s)
+[1.568s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg
+[1.577s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/gazebo_sim_pkgs/fix_position_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg
+[1.579s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg -- -j16 -l16
+[1.626s] [ 33%] Built target gazebo_ros_gps_sensor_mod
+[1.631s] [ 66%] Built target gazebo_ros_fixposition_plugin
+[1.631s] [100%] Built target gazebo_ros_imu_sensor_mod
+[1.636s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg -- -j16 -l16
+[1.638s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg
+[1.640s] -- Install configuration: ""
+[1.640s] -- Execute custom install script
+[1.641s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/library_path.sh
+[1.641s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/library_path.dsv
+[1.641s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/lib/libgazebo_ros_fixposition_plugin.so
+[1.641s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/lib/libgazebo_ros_imu_sensor_mod.so
+[1.641s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/lib/libgazebo_ros_gps_sensor_mod.so
+[1.641s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//urdf/fixposition_holder.xacro
+[1.642s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//urdf/fixposition_main.xacro
+[1.642s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//urdf/fixposition_sensor.xacro
+[1.642s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Central_fixposition_feet.STL
+[1.642s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Central_fixposition_holder.STL
+[1.642s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fix_position_left_antenna.STL
+[1.642s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fix_position_metal_frame.STL
+[1.642s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fixposion_base.STL
+[1.643s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fixposition_camera.STL
+[1.643s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fixposition_lower_case.STL
+[1.643s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fixposition_right_antenna.STL
+[1.643s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Fixposition_upper_case.STL
+[1.643s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Front_camera.STL
+[1.643s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Left_fixposition_feet.STL
+[1.643s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Left_fixposition_holder.STL
+[1.643s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Right_fixposition_feet.STL
+[1.643s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg//meshes/Right_fixposition_holder.STL
+[1.644s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/ament_index/resource_index/package_run_dependencies/fixposition_sensor_pkg
+[1.644s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/ament_index/resource_index/parent_prefix_path/fixposition_sensor_pkg
+[1.644s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/ament_prefix_path.sh
+[1.644s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/ament_prefix_path.dsv
+[1.644s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/path.sh
+[1.644s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/environment/path.dsv
+[1.644s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/local_setup.bash
+[1.644s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/local_setup.sh
+[1.644s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/local_setup.zsh
+[1.645s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/local_setup.dsv
+[1.645s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/package.dsv
+[1.647s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/ament_index/resource_index/packages/fixposition_sensor_pkg
+[1.647s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+[1.648s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/cmake/fixposition_sensor_pkgConfig.cmake
+[1.648s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/cmake/fixposition_sensor_pkgConfig-version.cmake
+[1.648s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/fixposition_sensor_pkg/share/fixposition_sensor_pkg/package.xml
+[1.649s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/fixposition_sensor_pkg

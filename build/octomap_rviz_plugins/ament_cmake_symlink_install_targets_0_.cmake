@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins/liboctomap_rviz_plugins.so" "TARGETS" "octomap_rviz_plugins" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

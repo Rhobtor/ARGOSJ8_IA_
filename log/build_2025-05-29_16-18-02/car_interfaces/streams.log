@@ -1,0 +1,177 @@
+[0.043s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/car_interfaces -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces
+[0.060s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.627s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.698s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.996s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.018s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.083s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.208s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.310s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.374s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.100s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.628s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.162s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.164s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[4.164s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.164s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.164s]   the cmake_policy command to set the policy and suppress this warning.
+[4.164s] 
+[4.165s] Call Stack (most recent call first):
+[4.165s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.165s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.165s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[4.165s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.165s] [0m
+[4.192s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.193s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[4.193s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.193s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.194s]   the cmake_policy command to set the policy and suppress this warning.
+[4.194s] 
+[4.194s] Call Stack (most recent call first):
+[4.194s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.194s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.194s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.194s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[4.194s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.194s] [0m
+[4.219s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[4.219s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[4.219s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[4.219s]   the cmake_policy command to set the policy and suppress this warning.
+[4.220s] 
+[4.220s] Call Stack (most recent call first):
+[4.220s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[4.220s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[4.220s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[4.220s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[4.220s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[4.220s] [0m
+[4.222s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.222s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.222s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.327s] -- Configuring done (4.3s)
+[4.369s] -- Generating done (0.0s)
+[4.383s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces
+[4.391s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/src/car_interfaces -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces
+[4.395s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces -- -j16 -l16
+[4.420s] [  3%] Built target car_interfaces__cpp
+[4.422s] [ 12%] Built target car_interfaces__rosidl_generator_c
+[4.442s] [ 22%] Built target car_interfaces__rosidl_typesupport_fastrtps_cpp
+[4.442s] [ 32%] Built target car_interfaces__rosidl_typesupport_cpp
+[4.449s] [ 32%] Built target ament_cmake_python_symlink_car_interfaces
+[4.460s] [ 51%] Built target car_interfaces__rosidl_typesupport_introspection_c
+[4.462s] [ 48%] Built target car_interfaces__rosidl_typesupport_c
+[4.472s] [ 61%] Built target car_interfaces__rosidl_typesupport_introspection_cpp
+[4.490s] [ 70%] Built target car_interfaces__rosidl_typesupport_fastrtps_c
+[4.507s] [ 70%] Built target car_interfaces
+[4.524s] [ 74%] Built target car_interfaces__py
+[4.545s] [ 80%] Built target car_interfaces__rosidl_generator_py
+[4.566s] [ 87%] Built target car_interfaces__rosidl_typesupport_c__pyext
+[4.567s] [ 93%] Built target car_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[4.569s] [100%] Built target car_interfaces__rosidl_typesupport_introspection_c__pyext
+[4.742s] running egg_info
+[4.743s] writing car_interfaces.egg-info/PKG-INFO
+[4.743s] writing dependency_links to car_interfaces.egg-info/dependency_links.txt
+[4.744s] writing top-level names to car_interfaces.egg-info/top_level.txt
+[4.748s] reading manifest file 'car_interfaces.egg-info/SOURCES.txt'
+[4.748s] writing manifest file 'car_interfaces.egg-info/SOURCES.txt'
+[4.773s] [100%] Built target ament_cmake_python_build_car_interfaces_egg
+[4.779s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces -- -j16 -l16
+[4.781s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces
+[4.790s] -- Install configuration: ""
+[4.791s] -- Execute custom install script
+[4.792s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/ament_index/resource_index/rosidl_interfaces/car_interfaces
+[4.792s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__functions.h
+[4.792s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__struct.h
+[4.792s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__type_support.h
+[4.792s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/graph.h
+[4.792s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/rosidl_generator_c__visibility_control.h
+[4.794s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/environment/library_path.sh
+[4.794s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/environment/library_path.dsv
+[4.795s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__rosidl_typesupport_fastrtps_c.h
+[4.795s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.795s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__builder.hpp
+[4.796s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__struct.hpp
+[4.796s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__traits.hpp
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__type_support.hpp
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/graph.hpp
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__rosidl_typesupport_fastrtps_cpp.hpp
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__rosidl_typesupport_introspection_c.h
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/include/car_interfaces/car_interfaces/msg/detail/graph__rosidl_typesupport_introspection_cpp.hpp
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/environment/pythonpath.sh
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/environment/pythonpath.dsv
+[4.797s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[4.798s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.798s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.798s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[4.798s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/__init__.py
+[4.798s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/_car_interfaces_s.ep.rosidl_typesupport_c.c
+[4.798s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/_car_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.798s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/_car_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[4.798s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/car_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.798s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/car_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.799s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/car_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.799s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/libcar_interfaces__rosidl_generator_py.so
+[4.799s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/msg/__init__.py
+[4.799s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/msg/_graph.py
+[4.799s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/msg/_graph_s.c
+[4.799s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/car_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.799s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/car_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.800s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/car_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.800s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/msg/Graph.idl
+[4.800s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/msg/Graph.msg
+[4.800s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/ament_index/resource_index/package_run_dependencies/car_interfaces
+[4.800s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/ament_index/resource_index/parent_prefix_path/car_interfaces
+[4.800s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/environment/ament_prefix_path.sh
+[4.800s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/environment/ament_prefix_path.dsv
+[4.800s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/environment/path.sh
+[4.800s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/environment/path.dsv
+[4.801s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/local_setup.bash
+[4.801s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/local_setup.sh
+[4.801s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/local_setup.zsh
+[4.801s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/local_setup.dsv
+[4.801s] -- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/package.dsv
+[4.804s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/ament_index/resource_index/packages/car_interfaces
+[4.804s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/rosidl_cmake-extras.cmake
+[4.804s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.805s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.805s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.805s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.805s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.805s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.805s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/car_interfacesConfig.cmake
+[4.805s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/car_interfacesConfig-version.cmake
+[4.806s] -- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/package.xml
+[4.806s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib/libcar_interfaces__rosidl_generator_c.so
+[4.807s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib/libcar_interfaces__rosidl_typesupport_fastrtps_c.so
+[4.807s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib/libcar_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[4.808s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib/libcar_interfaces__rosidl_typesupport_introspection_c.so
+[4.808s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib/libcar_interfaces__rosidl_typesupport_c.so
+[4.808s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib/libcar_interfaces__rosidl_typesupport_introspection_cpp.so
+[4.808s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib/libcar_interfaces__rosidl_typesupport_cpp.so
+[4.848s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces'...
+[4.849s] Compiling '/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/__init__.py'...
+[4.849s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/local/lib/python3.10/dist-packages/car_interfaces/msg'...
+[4.854s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/lib/libcar_interfaces__rosidl_generator_py.so
+[4.854s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/export_car_interfaces__rosidl_generator_cExport.cmake
+[4.854s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/export_car_interfaces__rosidl_generator_cExport-noconfig.cmake
+[4.854s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/export_car_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[4.854s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/export_car_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.854s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/export_car_interfaces__rosidl_generator_cppExport.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/export_car_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/export_car_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/car_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/car_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/car_interfaces__rosidl_typesupport_cExport.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/car_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/car_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/car_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/car_interfaces__rosidl_typesupport_cppExport.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/car_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/export_car_interfaces__rosidl_generator_pyExport.cmake
+[4.855s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/install/car_interfaces/share/car_interfaces/cmake/export_car_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[4.857s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/install/car:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/build/car_interfaces

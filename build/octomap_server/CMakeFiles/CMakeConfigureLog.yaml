@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-CUPmTM"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-CUPmTM"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-zKUoW8"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-zKUoW8"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -70,13 +70,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-CUPmTM'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-zKUoW8'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8a1cd/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_8a1cd.dir/build.make CMakeFiles/cmTC_8a1cd.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-CUPmTM'
-        Building C object CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58503/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_58503.dir/build.make CMakeFiles/cmTC_58503.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-zKUoW8'
+        Building C object CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -86,8 +86,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a1cd.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8a1cd.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccQ6mqtD.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58503.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_58503.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc3s0OFJ.s
         GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -107,15 +107,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a1cd.dir/'
-         as -v --64 -o CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o /tmp/ccQ6mqtD.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58503.dir/'
+         as -v --64 -o CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o /tmp/cc3s0OFJ.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_8a1cd
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a1cd.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o -o cmTC_8a1cd 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_58503
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58503.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o -o cmTC_58503 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -128,10 +128,10 @@ events:
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a1cd' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8a1cd.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8JgZhe.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8a1cd /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a1cd' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8a1cd.'
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-CUPmTM'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58503' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_58503.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccizULcq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_58503 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58503' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_58503.'
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-zKUoW8'
         
       exitCode: 0
   -
@@ -165,13 +165,13 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-CUPmTM']
+        ignore line: [Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-zKUoW8']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8a1cd/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8a1cd.dir/build.make CMakeFiles/cmTC_8a1cd.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-CUPmTM']
-        ignore line: [Building C object CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_58503/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_58503.dir/build.make CMakeFiles/cmTC_58503.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-zKUoW8']
+        ignore line: [Building C object CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -181,8 +181,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a1cd.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8a1cd.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccQ6mqtD.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58503.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_58503.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc3s0OFJ.s]
         ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -202,15 +202,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a1cd.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o /tmp/ccQ6mqtD.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58503.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o /tmp/cc3s0OFJ.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_8a1cd]
-        ignore line: [/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a1cd.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o -o cmTC_8a1cd ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_58503]
+        ignore line: [/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58503.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o -o cmTC_58503 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -223,13 +223,13 @@ events:
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8a1cd' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8a1cd.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8JgZhe.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8a1cd /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_58503' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_58503.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccizULcq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_58503 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc8JgZhe.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccizULcq.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -247,7 +247,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_8a1cd] ==> ignore
+          arg [cmTC_58503] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -259,7 +259,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-          arg [CMakeFiles/cmTC_8a1cd.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_58503.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -299,8 +299,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-H2S9IT"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-H2S9IT"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-pJ3FBa"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-pJ3FBa"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -308,13 +308,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-H2S9IT'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-pJ3FBa'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_81ee2/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_81ee2.dir/build.make CMakeFiles/cmTC_81ee2.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-H2S9IT'
-        Building CXX object CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3ee64/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3ee64.dir/build.make CMakeFiles/cmTC_3ee64.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-pJ3FBa'
+        Building CXX object CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -324,8 +324,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_81ee2.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_81ee2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccDoeQem.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3ee64.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3ee64.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccb31she.s
         GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
@@ -349,15 +349,15 @@ events:
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
         Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_81ee2.dir/'
-         as -v --64 -o CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccDoeQem.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3ee64.dir/'
+         as -v --64 -o CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccb31she.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_81ee2
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81ee2.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_81ee2 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_3ee64
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ee64.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3ee64 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
@@ -370,10 +370,10 @@ events:
         gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81ee2' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_81ee2.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVefOq6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_81ee2 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81ee2' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_81ee2.'
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-H2S9IT'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3ee64' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3ee64.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRH8ev0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3ee64 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3ee64' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3ee64.'
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-pJ3FBa'
         
       exitCode: 0
   -
@@ -413,13 +413,13 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-H2S9IT']
+        ignore line: [Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-pJ3FBa']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_81ee2/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_81ee2.dir/build.make CMakeFiles/cmTC_81ee2.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-H2S9IT']
-        ignore line: [Building CXX object CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3ee64/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_3ee64.dir/build.make CMakeFiles/cmTC_3ee64.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-pJ3FBa']
+        ignore line: [Building CXX object CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -429,8 +429,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_81ee2.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_81ee2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccDoeQem.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3ee64.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3ee64.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccb31she.s]
         ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -454,15 +454,15 @@ events:
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
         ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_81ee2.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccDoeQem.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3ee64.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccb31she.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_81ee2]
-        ignore line: [/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81ee2.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_81ee2 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_3ee64]
+        ignore line: [/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ee64.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_3ee64 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
@@ -475,13 +475,13 @@ events:
         ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_81ee2' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_81ee2.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVefOq6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_81ee2 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3ee64' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_3ee64.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRH8ev0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3ee64 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccVefOq6.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccRH8ev0.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -499,7 +499,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_81ee2] ==> ignore
+          arg [cmTC_3ee64] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -511,7 +511,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-          arg [CMakeFiles/cmTC_81ee2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_3ee64.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -554,8 +554,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-4AlceU"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-4AlceU"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-ORoFqf"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-ORoFqf"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -565,17 +565,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-4AlceU'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-ORoFqf'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a3d35/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a3d35.dir/build.make CMakeFiles/cmTC_a3d35.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-4AlceU'
-        Building C object CMakeFiles/cmTC_a3d35.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_a3d35.dir/src.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-4AlceU/src.c
-        Linking C executable cmTC_a3d35
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3d35.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_a3d35.dir/src.c.o -o cmTC_a3d35 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-4AlceU'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_84437/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_84437.dir/build.make CMakeFiles/cmTC_84437.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-ORoFqf'
+        Building C object CMakeFiles/cmTC_84437.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_84437.dir/src.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-ORoFqf/src.c
+        Linking C executable cmTC_84437
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84437.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_84437.dir/src.c.o -o cmTC_84437 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-ORoFqf'
         
       exitCode: 0
   -
@@ -592,8 +592,8 @@ events:
       - "CMakeLists.txt:13 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-6JPClZ"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-6JPClZ"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fVCCSa"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fVCCSa"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -603,17 +603,17 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-6JPClZ'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fVCCSa'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8489d/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_8489d.dir/build.make CMakeFiles/cmTC_8489d.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-6JPClZ'
-        Building C object CMakeFiles/cmTC_8489d.dir/test_mpi.c.o
-        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_8489d.dir/test_mpi.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-6JPClZ/test_mpi.c
-        Linking C executable cmTC_8489d
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8489d.dir/link.txt --verbose=1
-        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_8489d.dir/test_mpi.c.o -o cmTC_8489d  /usr/lib/x86_64-linux-gnu/libmpi.so 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-6JPClZ'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ae9dd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ae9dd.dir/build.make CMakeFiles/cmTC_ae9dd.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fVCCSa'
+        Building C object CMakeFiles/cmTC_ae9dd.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_ae9dd.dir/test_mpi.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fVCCSa/test_mpi.c
+        Linking C executable cmTC_ae9dd
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae9dd.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_ae9dd.dir/test_mpi.c.o -o cmTC_ae9dd  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fVCCSa'
         
       exitCode: 0
   -
@@ -630,8 +630,8 @@ events:
     checks:
       - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-vNteUd"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-vNteUd"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-xdJ6mW"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-xdJ6mW"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -641,17 +641,17 @@ events:
       variable: "X11_LIB_X11_SOLO"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-vNteUd'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-xdJ6mW'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a7090/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_a7090.dir/build.make CMakeFiles/cmTC_a7090.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-vNteUd'
-        Building C object CMakeFiles/cmTC_a7090.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_a7090.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-vNteUd/CheckFunctionExists.c
-        Linking C executable cmTC_a7090
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7090.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_a7090.dir/CheckFunctionExists.c.o -o cmTC_a7090  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-vNteUd'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2b23/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f2b23.dir/build.make CMakeFiles/cmTC_f2b23.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-xdJ6mW'
+        Building C object CMakeFiles/cmTC_f2b23.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_f2b23.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-xdJ6mW/CheckFunctionExists.c
+        Linking C executable cmTC_f2b23
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2b23.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_f2b23.dir/CheckFunctionExists.c.o -o cmTC_f2b23  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-xdJ6mW'
         
       exitCode: 0
   -
@@ -668,8 +668,8 @@ events:
     checks:
       - "Looking for gethostbyname"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-tWdtQT"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-tWdtQT"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-lVhhTE"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-lVhhTE"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -679,17 +679,17 @@ events:
       variable: "CMAKE_HAVE_GETHOSTBYNAME"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-tWdtQT'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-lVhhTE'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9dd2b/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_9dd2b.dir/build.make CMakeFiles/cmTC_9dd2b.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-tWdtQT'
-        Building C object CMakeFiles/cmTC_9dd2b.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_9dd2b.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-tWdtQT/CheckFunctionExists.c
-        Linking C executable cmTC_9dd2b
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9dd2b.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_9dd2b.dir/CheckFunctionExists.c.o -o cmTC_9dd2b 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-tWdtQT'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cfc5c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cfc5c.dir/build.make CMakeFiles/cmTC_cfc5c.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-lVhhTE'
+        Building C object CMakeFiles/cmTC_cfc5c.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_cfc5c.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-lVhhTE/CheckFunctionExists.c
+        Linking C executable cmTC_cfc5c
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfc5c.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_cfc5c.dir/CheckFunctionExists.c.o -o cmTC_cfc5c 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-lVhhTE'
         
       exitCode: 0
   -
@@ -706,8 +706,8 @@ events:
     checks:
       - "Looking for connect"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-QeO39E"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-QeO39E"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-V7FWaE"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-V7FWaE"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -717,17 +717,17 @@ events:
       variable: "CMAKE_HAVE_CONNECT"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-QeO39E'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-V7FWaE'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04a2b/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_04a2b.dir/build.make CMakeFiles/cmTC_04a2b.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-QeO39E'
-        Building C object CMakeFiles/cmTC_04a2b.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_04a2b.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-QeO39E/CheckFunctionExists.c
-        Linking C executable cmTC_04a2b
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04a2b.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_04a2b.dir/CheckFunctionExists.c.o -o cmTC_04a2b 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-QeO39E'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f270b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f270b.dir/build.make CMakeFiles/cmTC_f270b.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-V7FWaE'
+        Building C object CMakeFiles/cmTC_f270b.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_f270b.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-V7FWaE/CheckFunctionExists.c
+        Linking C executable cmTC_f270b
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f270b.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_f270b.dir/CheckFunctionExists.c.o -o cmTC_f270b 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-V7FWaE'
         
       exitCode: 0
   -
@@ -744,8 +744,8 @@ events:
     checks:
       - "Looking for remove"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-NaR2ch"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-NaR2ch"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-Xaw2hH"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-Xaw2hH"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -755,17 +755,17 @@ events:
       variable: "CMAKE_HAVE_REMOVE"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-NaR2ch'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-Xaw2hH'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b3fb1/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_b3fb1.dir/build.make CMakeFiles/cmTC_b3fb1.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-NaR2ch'
-        Building C object CMakeFiles/cmTC_b3fb1.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_b3fb1.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-NaR2ch/CheckFunctionExists.c
-        Linking C executable cmTC_b3fb1
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b3fb1.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_b3fb1.dir/CheckFunctionExists.c.o -o cmTC_b3fb1 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-NaR2ch'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7d126/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7d126.dir/build.make CMakeFiles/cmTC_7d126.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-Xaw2hH'
+        Building C object CMakeFiles/cmTC_7d126.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_7d126.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-Xaw2hH/CheckFunctionExists.c
+        Linking C executable cmTC_7d126
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d126.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_7d126.dir/CheckFunctionExists.c.o -o cmTC_7d126 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-Xaw2hH'
         
       exitCode: 0
   -
@@ -782,8 +782,8 @@ events:
     checks:
       - "Looking for shmat"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fKGCsx"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fKGCsx"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-d0Cr1V"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-d0Cr1V"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -793,17 +793,17 @@ events:
       variable: "CMAKE_HAVE_SHMAT"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fKGCsx'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-d0Cr1V'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1b8f7/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_1b8f7.dir/build.make CMakeFiles/cmTC_1b8f7.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fKGCsx'
-        Building C object CMakeFiles/cmTC_1b8f7.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_1b8f7.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fKGCsx/CheckFunctionExists.c
-        Linking C executable cmTC_1b8f7
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b8f7.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_1b8f7.dir/CheckFunctionExists.c.o -o cmTC_1b8f7 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-fKGCsx'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d17d0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d17d0.dir/build.make CMakeFiles/cmTC_d17d0.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-d0Cr1V'
+        Building C object CMakeFiles/cmTC_d17d0.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_d17d0.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-d0Cr1V/CheckFunctionExists.c
+        Linking C executable cmTC_d17d0
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d17d0.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_d17d0.dir/CheckFunctionExists.c.o -o cmTC_d17d0 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-d0Cr1V'
         
       exitCode: 0
   -
@@ -820,8 +820,8 @@ events:
     checks:
       - "Looking for IceConnectionNumber in ICE"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-5X2a0B"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-5X2a0B"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-F6coOz"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-F6coOz"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -831,17 +831,143 @@ events:
       variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-5X2a0B'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-F6coOz'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_81640/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_81640.dir/build.make CMakeFiles/cmTC_81640.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-5X2a0B'
-        Building C object CMakeFiles/cmTC_81640.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_81640.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-5X2a0B/CheckFunctionExists.c
-        Linking C executable cmTC_81640
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81640.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_81640.dir/CheckFunctionExists.c.o -o cmTC_81640  -lICE 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-5X2a0B'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1ad35/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1ad35.dir/build.make CMakeFiles/cmTC_1ad35.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-F6coOz'
+        Building C object CMakeFiles/cmTC_1ad35.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_1ad35.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-F6coOz/CheckFunctionExists.c
+        Linking C executable cmTC_1ad35
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ad35.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_1ad35.dir/CheckFunctionExists.c.o -o cmTC_1ad35  -lICE 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-F6coOz'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:270 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:319 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:540 (find_external_library)"
+      - "CMakeLists.txt:13 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-rnS8Yz"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-rnS8Yz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-rnS8Yz'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_90d93/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_90d93.dir/build.make CMakeFiles/cmTC_90d93.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-rnS8Yz'
+        Building C object CMakeFiles/cmTC_90d93.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_90d93.dir/test_mpi.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-rnS8Yz/test_mpi.c
+        Linking C executable cmTC_90d93
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90d93.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_90d93.dir/test_mpi.c.o -o cmTC_90d93  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-rnS8Yz'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:270 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:319 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:540 (find_external_library)"
+      - "CMakeLists.txt:13 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-HsYf9b"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-HsYf9b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-HsYf9b'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_62be2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_62be2.dir/build.make CMakeFiles/cmTC_62be2.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-HsYf9b'
+        Building C object CMakeFiles/cmTC_62be2.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_62be2.dir/test_mpi.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-HsYf9b/test_mpi.c
+        Linking C executable cmTC_62be2
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62be2.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_62be2.dir/test_mpi.c.o -o cmTC_62be2  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-HsYf9b'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:270 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:319 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:540 (find_external_library)"
+      - "CMakeLists.txt:13 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-RbKlSm"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-RbKlSm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-RbKlSm'
+        
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d45b6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d45b6.dir/build.make CMakeFiles/cmTC_d45b6.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-RbKlSm'
+        Building C object CMakeFiles/cmTC_d45b6.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_d45b6.dir/test_mpi.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-RbKlSm/test_mpi.c
+        Linking C executable cmTC_d45b6
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d45b6.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_d45b6.dir/test_mpi.c.o -o cmTC_d45b6  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_server/CMakeFiles/CMakeScratch/TryCompile-RbKlSm'
         
       exitCode: 0
 ...
