@@ -51,6 +51,11 @@ setup(
             'points_goal_old= car.points_goal_old:main',
             'test_octomap= car.test_octomap:main',
             'j8_test_ppo= car.j8_test_ppo:main',
+            'inference_j8= car.inference_j8:main',
+            'j8_bueno= car.j8_bueno:main',
+            'j8_policy= car.j8_policy:main',
+            'test_j8_old= car.test_j8_old:main',
+            'inference_test_j8= car.inference_test_j8:main',
 
         ],
     },

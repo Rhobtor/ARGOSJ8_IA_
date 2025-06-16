@@ -7,9 +7,11 @@
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/lidar_obstacle_detection.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/test_octomap.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/frontier_centroid.py
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/j8_bueno.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/colision_zone.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/backup_model_ppo_cnn_lstm.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/inference_full_model.py
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/inference_j8.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__init__.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/inference_training_mode_simple.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/joystick_control.py
@@ -23,7 +25,10 @@
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/costmap.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/path_ppo_cnn_lstm_training_init_mode.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/path_ppo_cnn_lstm_training_init_mode_simple.py
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/inference_test_j8.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/filter_points_cloud.py
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/test_j8_old.py
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/j8_policy.py
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/points_goal_old.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/keyboard_control.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/memory_map.cpython-310.pyc
@@ -33,9 +38,11 @@
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/lidar_obstacle_detection.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/test_octomap.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/frontier_centroid.cpython-310.pyc
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/j8_bueno.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/colision_zone.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/backup_model_ppo_cnn_lstm.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/inference_full_model.cpython-310.pyc
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/inference_j8.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/__init__.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/inference_training_mode_simple.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/joystick_control.cpython-310.pyc
@@ -49,7 +56,10 @@
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/costmap.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/path_ppo_cnn_lstm_training_init_mode.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/path_ppo_cnn_lstm_training_init_mode_simple.cpython-310.pyc
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/inference_test_j8.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/filter_points_cloud.cpython-310.pyc
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/test_j8_old.cpython-310.pyc
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/python3.10/site-packages/car/__pycache__/j8_policy.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/share/ament_index/resource_index/packages/car
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/share/car/package.xml
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/share/car/launch/gazebo.launch.py
@@ -161,7 +171,11 @@
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/filter_points_cloud
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/frontier_centroid
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/inference_full_model
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/inference_j8
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/inference_test_j8
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/inference_training_mode_simple
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/j8_bueno
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/j8_policy
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/j8_test_ppo
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/joystick_control
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/keyboard_control
@@ -177,5 +191,6 @@
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/points_goal
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/points_goal_old
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/supervisor_node
+/home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/test_j8_old
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/test_octomap
 /home/rhobtor/PHD/ARGOJ8_IA/install/car/lib/car/test_vel

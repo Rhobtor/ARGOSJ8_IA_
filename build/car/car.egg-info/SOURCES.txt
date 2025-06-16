@@ -15,7 +15,11 @@ car/costmap.py
 car/filter_points_cloud.py
 car/frontier_centroid.py
 car/inference_full_model.py
+car/inference_j8.py
+car/inference_test_j8.py
 car/inference_training_mode_simple.py
+car/j8_bueno.py
+car/j8_policy.py
 car/j8_test_ppo.py
 car/joystick_control.py
 car/keyboard_control.py
@@ -32,6 +36,7 @@ car/planificador_script.py
 car/points_goal.py
 car/points_goal_old.py
 car/supervisor.py
+car/test_j8_old.py
 car/test_octomap.py
 car/test_vel.py
 config/display.rviz
