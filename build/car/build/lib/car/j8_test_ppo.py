@@ -5771,8 +5771,9 @@ import random
 import time
 import pathlib
 import copy
-
-
+from collections import deque
+import numpy as np
+import math, scipy.ndimage
 import numpy as np
 import tensorflow as tf
 import rclpy
@@ -5859,7 +5860,7 @@ MIN_WP_DIST   = 0.8        # distancia mínima desde el robot
 META_PERIOD   = 10         # ciclos (10 Hz) ≈ 1 s
 
 
-R_META            = 16.0       # m: radio máximo de waypoint relativo
+R_META            = 20.0       # m: radio máximo de waypoint relativo
 
 
 # Parámetros de energía para la recompensa
@@ -5887,7 +5888,8 @@ META_PERIOD = 15          # ciclos a 10 Hz → 1.5 s por waypoint
 RESET_GRACE_SEC = 15.0          # segundos que damos para estabilizar
 
 
-
+LAMBDA_DG = 1.5        # peso distancia goal  (mayor)
+LAMBDA_IG = 0.5        # peso información
 
 # CONSTANTES NUEVAS (colócalas junto al bloque global)
 EPSILON_MIN   = 0.05         # exploración mínima
@@ -6191,7 +6193,8 @@ class TerrainPPOTrainer(Node):
         self.wps_pub          = self.create_publisher(Marker,         "/path_waypoints_marker",   qos)
         self.waypoint_pub     = self.create_publisher(Marker,         "/current_waypoint_marker", qos)
         self.goal_pub         = self.create_publisher(Bool,           "/goal_reached",            qos)
-
+        self.frontier_goal_pub          = self.create_publisher(Marker,         "/frontier_goal_marker",   qos)
+        
         # Cliente para resetear octomap
         self.reset_client = self.create_client(Empty, 'octomap_server/reset')
         if not self.reset_client.wait_for_service(timeout_sec=2.0):
@@ -6384,7 +6387,7 @@ class TerrainPPOTrainer(Node):
             cp = (self.pose.position.x, self.pose.position.y)
             yaw = self._yaw_from_quaternion(self.pose.orientation)
             h_arr, hm_info = gridmap_to_numpy(self.height_map_msg)
-            esc_pt = self.find_escape_point(cp, yaw)
+            esc_pt = self.find_escape_point(cp)
             if esc_pt:
                 self.escape_path  = [cp, esc_pt]
                 self.current_path = self.escape_path
@@ -7071,36 +7074,108 @@ class TerrainPPOTrainer(Node):
         return self.stuck_counter > 10     # 1 s a 10 Hz
 
 
-    def find_escape_point(self, cp, yaw):
-        # si aún no tenemos mapa no intentes buscar nada
+    # def find_escape_point(self, cp, yaw):
+    #     # si aún no tenemos mapa no intentes buscar nada
+    #     if self.grid_msg is None or self.grid_dyn is None:
+    #         return None                              # ← ①  blindaje
+
+    #     grid = self.grid_dyn
+    #     info = self.grid_msg.info
+    #     h_arr, hm_info = gridmap_to_numpy(self.height_map_msg)
+
+    #     back_vec = (-math.cos(yaw), -math.sin(yaw))
+    #     for r in np.arange(0.5, R_META*1.2, 0.3):
+    #         for dθ in np.linspace(-math.radians(30), math.radians(30), 7):
+    #             vx =  math.cos(dθ)*back_vec[0] - math.sin(dθ)*back_vec[1]
+    #             vy =  math.sin(dθ)*back_vec[0] + math.cos(dθ)*back_vec[1]
+    #             cand = (cp[0] + r*vx, cp[1] + r*vy)
+
+    #             # si por cualquier motivo info es None salimos
+    #             if info is None:                      # ← ② blindaje
+    #                 return None
+
+    #             if not bres_line_free(grid, info, cp, cand):
+    #                 continue
+    #             if not clearance_ok(grid, info, cand, CLEAR_MIN):
+    #                 continue
+    #             # if h_arr is not None:
+    #             #     _, slope, _ = slope_ok(h_arr, hm_info, cp, cand)
+    #             #     if slope > SLOPE_MAX:
+    #             #         continue
+    #             return cand
+    #     return None
+
+
+
+    def find_escape_point(self, cp,            # (x,y) robot
+                            base_radius = 15.0,  # m   — primer anillo
+                            max_radius  = 25.0,  # m   — límite duro
+                            allow_unknown = True # admitir celdas -1
+                            ):
+        """
+        Devuelve un punto libre (x,y) para escapar SÓLO mirando OccupancyGrid.
+        Anatomía:
+        1) Infla obstáculos con el radio CLEAR_MIN.
+        2) BFS en anillos crecientes (15 m → 25 m máx.).
+        3) Requiere línea de visión libre (bres_line_free).
+        4) Si todo falla, devuelve la posición actual (evita None).
+        """
+        # ── comprobaciones mínimas ────────────────────────────────────────
         if self.grid_msg is None or self.grid_dyn is None:
-            return None                              # ← ①  blindaje
+            return cp                      # sin mapa → no te muevas
 
-        grid = self.grid_dyn
-        info = self.grid_msg.info
-        h_arr, hm_info = gridmap_to_numpy(self.height_map_msg)
+        info  = self.grid_msg.info
+        grid  = self.grid_dyn
+        res   = info.resolution
 
-        back_vec = (-math.cos(yaw), -math.sin(yaw))
-        for r in np.arange(0.5, R_META*1.2, 0.3):
-            for dθ in np.linspace(-math.radians(30), math.radians(30), 7):
-                vx =  math.cos(dθ)*back_vec[0] - math.sin(dθ)*back_vec[1]
-                vy =  math.sin(dθ)*back_vec[0] + math.cos(dθ)*back_vec[1]
-                cand = (cp[0] + r*vx, cp[1] + r*vy)
+        # ── 1) máscara de libres / ocupados ──────────────────────────────
+        occ      = (grid >= 50)                    # ocupadas
+        unknown  = (grid == -1)                    # celdas sin datos
+        cells_pad= int(CLEAR_MIN / res)            # dilatación
+        occ_infl = scipy.ndimage.binary_dilation(occ, iterations=cells_pad)
 
-                # si por cualquier motivo info es None salimos
-                if info is None:                      # ← ② blindaje
-                    return None
+        # “seguras” = libres   (y quizá desconocidas)
+        safe = ~occ_infl if not allow_unknown else ~(occ_infl & ~unknown)
 
-                if not bres_line_free(grid, info, cp, cand):
-                    continue
-                if not clearance_ok(grid, info, cand, CLEAR_MIN):
-                    continue
-                # if h_arr is not None:
-                #     _, slope, _ = slope_ok(h_arr, hm_info, cp, cand)
-                #     if slope > SLOPE_MAX:
-                #         continue
-                return cand
-        return None
+        # ── 2) BFS desde la celda del robot ──────────────────────────────
+        i0,j0 = idx_from_world(info, cp)
+        H,W   = safe.shape
+        if not (0<=i0<W and 0<=j0<H):
+            return cp
+
+        visited = np.zeros_like(safe, bool)
+        Q = deque([(i0,j0,0)])                     # (i,j,dist_cells)
+        visited[j0,i0] = True
+        max_cells = int(max_radius / res)
+
+        while Q:
+            i,j,d = Q.popleft()
+
+            # si superamos radio -→   deja de expandir camino
+            if d*res > max_radius: continue
+
+            # ¿libre y con LOS directa?
+            if safe[j,i] and bres_line_free(grid, info, cp,
+                                            (info.origin.position.x + (i+0.5)*res,
+                                            info.origin.position.y + (j+0.5)*res)):
+                x = info.origin.position.x + (i+0.5)*res
+                y = info.origin.position.y + (j+0.5)*res
+                # primer candidato válido → salir
+                return (x,y)
+
+            # expandir 4-vecinos
+            for di,dj in ((1,0),(-1,0),(0,1),(0,-1)):
+                ni,nj = i+di, j+dj
+                if 0<=ni<W and 0<=nj<H and not visited[nj,ni]:
+                    visited[nj,ni] = True
+                    Q.append((ni,nj,d+1))
+
+        self.get_logger().warning("[ESCAPE-BFS] sin salida tras buscar 25 m")
+        return cp   # fallback: no moverse
+
+
+
+
 
     def meta_store(self, reward, done):
         self.meta_rew_buf.append(np.float32(reward))
@@ -7657,6 +7732,19 @@ class TerrainPPOTrainer(Node):
 
 
 
+    def best_frontier(self, cp):
+        """Devuelve frontier con score máximo o None."""
+        if not self.frontiers:
+            return None, 0.0
+        best, best_s = None, -np.inf
+        for f in self.frontiers:
+            d_goal = l2(f, self.goal)
+            ig     = self.frontier_entropy.get(f, 0.0)   # [0-1]
+            s      = -LAMBDA_DG*d_goal + LAMBDA_IG*ig
+            if s > best_s:
+                best, best_s = f, s
+        return best, best_s
+    
 # ---------- Pure-Pursuit + lógica jerárquica (10 Hz) --------------------
     def step(self):
         """
@@ -7672,7 +7760,10 @@ class TerrainPPOTrainer(Node):
 
         if None in (self.pose, self.grid_msg, self.height_map_msg, self.goal):
             return                  # aún no llegó toda la información
-
+        if not self.robot_inside_grid():
+            self.get_logger().info("[STARTUP] fuera del OccupancyGrid: avanzando despacio…")
+            self.slow_forward(0.25)     # throttle suave, steering 0
+            return  
         cp   = (self.pose.position.x, self.pose.position.y)
         yaw  = self._yaw_from_quaternion(self.pose.orientation)
         prev_pose = copy.deepcopy(self.pose)
@@ -7689,91 +7780,154 @@ class TerrainPPOTrainer(Node):
 
        
         # ────────────────────── 2. META-PHASE ───────────────────────────────
-        if self.need_new_wp or self.meta_ticker <= 0:
+        # if self.need_new_wp or self.meta_ticker <= 0:
 
-            # 2.a) ----- Cerrar la transición anterior (si existe) -----
-            if self.meta_obs is not None:
-                r_meta = self.compute_reward_meta(
-                    d_prev    = self.meta_last_goal_dist,
-                    d_now     = l2(cp, self.goal),
-                    dz_acc    = self.meta_dz_acc,
-                    ig_chosen = self.meta_ig,
-                    collided  = self.meta_collided
-                )
-                self.meta_store(r_meta, done=True)      # push a buffers
-                self.meta_obs = None                    # limpiamos
+        #     # 2.a) ----- Cerrar la transición anterior (si existe) -----
+        #     if self.meta_obs is not None:
+        #         r_meta = self.compute_reward_meta(
+        #             d_prev    = self.meta_last_goal_dist,
+        #             d_now     = l2(cp, self.goal),
+        #             dz_acc    = self.meta_dz_acc,
+        #             ig_chosen = self.meta_ig,
+        #             collided  = self.meta_collided
+        #         )
+        #         self.meta_store(r_meta, done=True)      # push a buffers
+        #         self.meta_obs = None                    # limpiamos
 
-            # 2.b) ----- Entrada a la red (big-patch + vector goal) -----
-            big_patch = self.extract_big_patch()                       # (64×64×6)
-            vec_goal  = np.array([(self.goal[0]-cp[0])/self.curr_r_meta,
-                                (self.goal[1]-cp[1])/self.curr_r_meta],
-                                np.float32)
+        #     # 2.b) ----- Entrada a la red (big-patch + vector goal) -----
+        #     big_patch = self.extract_big_patch()                       # (64×64×6)
+        #     vec_goal  = np.array([(self.goal[0]-cp[0])/self.curr_r_meta,
+        #                         (self.goal[1]-cp[1])/self.curr_r_meta],
+        #                         np.float32)
 
-            mu_pred = self.meta_policy([big_patch[None,...],
-                                        vec_goal[None,...]])[0].numpy()   # salida de la red
+        #     mu_pred = self.meta_policy([big_patch[None,...],
+        #                                 vec_goal[None,...]])[0].numpy()   # salida de la red
 
-            # 2.c) ----- Teacher-forcing ε-greedy -----
-            use_teacher = (self.meta_episode < self.N_WARM) or \
-                        (np.random.rand() < self.eps_teacher)
+        #     # 2.c) ----- Teacher-forcing ε-greedy -----
+        #     use_teacher = (self.meta_episode < self.N_WARM) or \
+        #                 (np.random.rand() < self.eps_teacher)
 
-            if use_teacher:
-                tgt, t_mode = self.teacher_waypoint(cp)                 # GOAL / FRONTIER / None
-                if tgt is not None:                                     # hay teacher válido
-                    wp_rel = np.array([tgt[0]-cp[0], tgt[1]-cp[1]])
-                    # limita al radio actual
-                    if np.linalg.norm(wp_rel) > self.curr_r_meta:
-                        wp_rel = wp_rel / np.linalg.norm(wp_rel) * self.curr_r_meta
-                    mode = f"TEACH_{t_mode}"
-                else:                                                   # sin frontier → red
-                    wp_rel = np.clip(mu_pred, -1, 1) * self.curr_r_meta
-                    mode   = "NET_FALLBACK"
-            else:                                                       # política pura
-                wp_rel = np.clip(mu_pred, -1, 1) * self.curr_r_meta
-                mode   = "NET"
+        #     if use_teacher:
+        #         tgt, t_mode = self.teacher_waypoint(cp)                 # GOAL / FRONTIER / None
+        #         if tgt is not None:                                     # hay teacher válido
+        #             wp_rel = np.array([tgt[0]-cp[0], tgt[1]-cp[1]])
+        #             # limita al radio actual
+        #             if np.linalg.norm(wp_rel) > self.curr_r_meta:
+        #                 wp_rel = wp_rel / np.linalg.norm(wp_rel) * self.curr_r_meta
+        #             mode = f"TEACH_{t_mode}"
+        #         else:                                                   # sin frontier → red
+        #             wp_rel = np.clip(mu_pred, -1, 1) * self.curr_r_meta
+        #             mode   = "NET_FALLBACK"
+        #     else:                                                       # política pura
+        #         wp_rel = np.clip(mu_pred, -1, 1) * self.curr_r_meta
+        #         mode   = "NET"
 
-            # distancia mínima para evitar wp en el mismo sitio que el robot
-            if np.linalg.norm(wp_rel) < MIN_WP_DIST:
-                wp_rel = wp_rel / (np.linalg.norm(wp_rel)+1e-6) * MIN_WP_DIST
+        #     # distancia mínima para evitar wp en el mismo sitio que el robot
+        #     if np.linalg.norm(wp_rel) < MIN_WP_DIST:
+        #         wp_rel = wp_rel / (np.linalg.norm(wp_rel)+1e-6) * MIN_WP_DIST
 
-            waypoint = (cp[0] + wp_rel[0], cp[1] + wp_rel[1])
-            self.current_waypoint = waypoint
+        #     waypoint = (cp[0] + wp_rel[0], cp[1] + wp_rel[1])
+        #     self.current_waypoint = waypoint
 
-            # 2.d) ----- Seguridad: re-colocar si cae en obstáculo -----
+        #     # 2.d) ----- Seguridad: re-colocar si cae en obstáculo -----
+        #     if not clearance_ok(self.grid_dyn, self.grid_msg.info,
+        #                         waypoint, CLEAR_MIN):
+        #         waypoint = self.find_escape_point(cp, yaw) or waypoint
+
+        #     # 2.e) ----- Guardar la transición (obs, act, logp, val) -----
+        #     sigma_m = tf.exp(self.meta_log_std).numpy()
+        #     logp_m  = -0.5*np.sum(((wp_rel/self.curr_r_meta - mu_pred)/sigma_m)**2
+        #                         + 2*np.log(sigma_m) + np.log(2*np.pi))
+        #     val_m   = float(self.meta_value_net([big_patch[None,...],
+        #                                         vec_goal[None,...]])[0,0])
+        #     self.meta_obs_buf.append((big_patch, vec_goal))
+        #     self.meta_act_buf.append((wp_rel/self.curr_r_meta).astype(np.float32))
+        #     self.meta_logp_buf.append(float(logp_m))
+        #     self.meta_val_buf.append(val_m)
+
+        #     # 2.f) ----- Abrir nueva transición viva -----
+        #     self.meta_obs            = (big_patch, vec_goal)
+        #     self.meta_last_goal_dist = l2(cp, self.goal)
+        #     self.meta_dz_acc         = 0.0
+        #     self.meta_collided       = False
+        #     self.meta_ig             = self.frontier_entropy.get(waypoint, 0.0)
+
+        #     # 2.g) ----- Plan local corto + publicación RViz -----
+        #     self.current_path = self.generate_short_path(cp, waypoint)
+        #     self.wp_index     = 1
+        #     self.publish_path(self.current_path)
+        #     self.publish_arrow(cp, waypoint, ns="meta_wp",   color=(0.0,0.0,1.0))   # azul
+        #     self.publish_arrow(cp, self.goal,   ns="goal_vec", color=(1.0,0.0,0.0)) # rojo
+        #     self.publish_target_wp(waypoint)                           # esfera/colores
+
+        #     self.need_new_wp = False
+        #     self.meta_ticker = META_PERIOD
+
+        # else:
+        #     self.meta_ticker -= 1
+        # ─── 2. META-PHASE ──────────────────────────────────────────────────
+        if self.need_new_wp or self.meta_tick <= 0:
+
+            # a) escoger objetivo global: goal o frontier
+            goal_visible = bres_line_free(self.grid_dyn, self.grid_msg.info,
+                                        cp, self.goal)
+            if goal_visible:
+                target = self.goal
+                target_mode = "GOAL"
+            else:
+                target, _ = self.best_frontier(cp)
+                if target is None:              # sin frontier ⇒ fallback: hacia goal bruto
+                    target = self.goal
+                    target_mode = "GOAL_FALLBACK"
+                else:
+                    target_mode = "FRONTIER"
+
+            # b) construir waypoint-meta radial hacia ese target
+            vec_t = np.array([target[0]-cp[0], target[1]-cp[1]], np.float32)
+            dist  = np.linalg.norm(vec_t)
+            if dist < 1e-3: vec_t[:] = (1.0, 0.0)           # ev. nan
+            wp_rel = vec_t / dist * min(self.curr_r_meta, dist)   # dentro del radio
+            if np.linalg.norm(wp_rel) < MIN_WP_DIST:               # mínimo avance
+                wp_rel = wp_rel / np.linalg.norm(wp_rel) * MIN_WP_DIST
+            waypoint = (cp[0]+wp_rel[0], cp[1]+wp_rel[1])
+
+            # c) seguridad: si el waypoint cae en obstáculo ⇒ busca escape
             if not clearance_ok(self.grid_dyn, self.grid_msg.info,
                                 waypoint, CLEAR_MIN):
-                waypoint = self.find_escape_point(cp, yaw) or waypoint
-
-            # 2.e) ----- Guardar la transición (obs, act, logp, val) -----
-            sigma_m = tf.exp(self.meta_log_std).numpy()
-            logp_m  = -0.5*np.sum(((wp_rel/self.curr_r_meta - mu_pred)/sigma_m)**2
-                                + 2*np.log(sigma_m) + np.log(2*np.pi))
-            val_m   = float(self.meta_value_net([big_patch[None,...],
-                                                vec_goal[None,...]])[0,0])
+                waypoint = self.find_escape_point(cp)
+            # d) almacenar para entrenamiento meta-policy
+            big_patch = self.extract_big_patch()
+            vec_goal  = np.array([vec_t[0]/self.curr_r_meta,
+                                vec_t[1]/self.curr_r_meta], np.float32)
+            mu = self.meta_policy([big_patch[None,...], vec_goal[None,...]])[0]
+            logp = 0.0                               # (no usamos en inferencia)
             self.meta_obs_buf.append((big_patch, vec_goal))
-            self.meta_act_buf.append((wp_rel/self.curr_r_meta).astype(np.float32))
-            self.meta_logp_buf.append(float(logp_m))
-            self.meta_val_buf.append(val_m)
+            self.meta_act_buf.append(mu.numpy())
+            self.meta_logp_buf.append(float(logp))
+            self.meta_val_buf.append(0.0)
 
-            # 2.f) ----- Abrir nueva transición viva -----
+            # e) abrir transición
             self.meta_obs            = (big_patch, vec_goal)
             self.meta_last_goal_dist = l2(cp, self.goal)
             self.meta_dz_acc         = 0.0
             self.meta_collided       = False
-            self.meta_ig             = self.frontier_entropy.get(waypoint, 0.0)
+            self.meta_ig             = self.frontier_entropy.get(target, 0.0)
 
-            # 2.g) ----- Plan local corto + publicación RViz -----
+            # f) RRT* corto + publicación
+            self.current_waypoint = waypoint
             self.current_path = self.generate_short_path(cp, waypoint)
-            self.wp_index     = 1
+            self.wp_index      = 1
             self.publish_path(self.current_path)
-            self.publish_arrow(cp, waypoint, ns="meta_wp",   color=(0.0,0.0,1.0))   # azul
-            self.publish_arrow(cp, self.goal,   ns="goal_vec", color=(1.0,0.0,0.0)) # rojo
-            self.publish_target_wp(waypoint)                           # esfera/colores
+            # markers
+            self.publish_arrow(cp, waypoint, ns="meta_wp",   color=(0.0,0.0,1.0))  # azul
+            self.publish_arrow(cp, self.goal, ns="goal_vec", color=(1.0,0.0,0.0))  # rojo
+            self.publish_target_frontier_goal(target)  # esfera/colores
 
+            
             self.need_new_wp = False
-            self.meta_ticker = META_PERIOD
-
+            self.meta_tick   = META_PERIOD
         else:
-            self.meta_ticker -= 1
+            self.meta_tick -= 1
 
 
         # ────────────────────── 3. LOW-PHASE  (seguir path) ─────────────────
@@ -8029,9 +8183,26 @@ class TerrainPPOTrainer(Node):
         mk.type = Marker.SPHERE
         mk.action = Marker.ADD
         mk.pose.position.x, mk.pose.position.y, mk.pose.position.z = *waypoint, 0.15
-        mk.scale.x = mk.scale.y = mk.scale.z = 0.25
+        mk.scale.x = mk.scale.y = mk.scale.z = 2.5
         mk.color   = ColorRGBA(r=0.0, g=1.0, b=1.0, a=1.0)   # celeste
         self.waypoint_pub.publish(mk)
+
+
+
+    def publish_target_frontier_goal(self, waypoint):
+        mk = Marker()
+        mk.header.frame_id = "map"
+        mk.header.stamp    = self.get_clock().now().to_msg()
+        mk.ns   = "meta_wp_target"
+        mk.id   = 0
+        mk.type = Marker.SPHERE
+        mk.action = Marker.ADD
+        mk.pose.position.x, mk.pose.position.y, mk.pose.position.z = *waypoint, 0.15
+        mk.scale.x = mk.scale.y = mk.scale.z = 2.5
+        mk.color   = ColorRGBA(r=1.0, g=1.0, b=0.0, a=1.0)   # celeste
+        self.frontier_goal_pub.publish(mk)
+
+
 
     # ---------- Entrenamiento PPO Low-Level -----------
     def update_ppo(self):
