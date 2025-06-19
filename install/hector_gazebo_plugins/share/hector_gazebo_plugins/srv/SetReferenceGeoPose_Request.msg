@@ -1,1 +1,1 @@
-/home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/rosidl_cmake/srv/SetReferenceGeoPose_Request.msg
+geographic_msgs/GeoPose geo_pose

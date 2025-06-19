@@ -1,7 +1,7 @@
 CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_kinematic_model.cpp.o: \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_ctl_platform/argj801_kinematic_model.cpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_ctl_platform/argj801_kinematic_model.cpp \
  /usr/include/stdc-predef.h \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_kinematic_model.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_kinematic_model.hpp \
  /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

@@ -1,8 +1,8 @@
-# Install script for directory: /home/rhobtor/PHD/ARGOJ8_IA/build/hector_gazebo_plugins/hector_gazebo_plugins__py
+# Install script for directory: /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/hector_gazebo_plugins/hector_gazebo_plugins__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rhobtor/PHD/ARGOJ8_IA/install/hector_gazebo_plugins")
+  set(CMAKE_INSTALL_PREFIX "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/hector_gazebo_plugins")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

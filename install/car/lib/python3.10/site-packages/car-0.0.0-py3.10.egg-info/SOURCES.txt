@@ -35,6 +35,7 @@ car/path_ppo_cnn_lstm_training_init_mode_simple.py
 car/planificador_script.py
 car/points_goal.py
 car/points_goal_old.py
+car/scape_test.py
 car/supervisor.py
 car/test_j8_old.py
 car/test_octomap.py

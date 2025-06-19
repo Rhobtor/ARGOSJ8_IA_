@@ -1,7 +1,7 @@
 CMakeFiles/hector_gazebo_reset_plugin.dir/src/reset_plugin.cpp.o: \
- /home/rhobtor/PHD/ARGOJ8_IA/src/hector_gazebo/src/reset_plugin.cpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/hector_gazebo/src/reset_plugin.cpp \
  /usr/include/stdc-predef.h \
- /home/rhobtor/PHD/ARGOJ8_IA/src/hector_gazebo/include/hector_gazebo_plugins/reset_plugin.h \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/hector_gazebo/include/hector_gazebo_plugins/reset_plugin.h \
  /usr/include/gazebo-11/gazebo/common/Plugin.hh /usr/include/unistd.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

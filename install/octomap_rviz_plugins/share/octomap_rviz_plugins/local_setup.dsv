@@ -1,1 +1,3 @@
-/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins/ament_cmake_environment_hooks/local_setup.dsv
+source;share/octomap_rviz_plugins/environment/ament_prefix_path.sh
+source;share/octomap_rviz_plugins/environment/library_path.sh
+source;share/octomap_rviz_plugins/environment/path.sh

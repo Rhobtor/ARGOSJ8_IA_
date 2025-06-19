@@ -1,8 +1,8 @@
-# Install script for directory: /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm
+# Install script for directory: /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform")
+  set(CMAKE_INSTALL_PREFIX "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,9 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/argj801_lcm/" TYPE DIRECTORY FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/config")
 endif()
 

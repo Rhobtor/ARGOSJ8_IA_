@@ -1,1 +1,2 @@
-/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_mapping/ament_cmake_environment_hooks/local_setup.dsv
+source;share/octomap_mapping/environment/ament_prefix_path.sh
+source;share/octomap_mapping/environment/path.sh

@@ -1,1 +1,1 @@
-/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_cmake/srv/SetVelocity_Request.msg
+int8 new_velocity

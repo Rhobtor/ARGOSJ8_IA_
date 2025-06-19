@@ -1,8 +1,8 @@
-# Install script for directory: /home/rhobtor/PHD/ARGOJ8_IA/src/plugin_rviz
+# Install script for directory: /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/plugin_rviz
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rhobtor/PHD/ARGOJ8_IA/install/octomap_rviz_plugins")
+  set(CMAKE_INSTALL_PREFIX "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/octomap_rviz_plugins")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -42,8 +42,122 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/plugin_rviz/plugins_description.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/plugin_rviz/include/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins/environment" TYPE FILE FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins/environment" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_environment_hooks/library_path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liboctomap_rviz_plugins.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liboctomap_rviz_plugins.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liboctomap_rviz_plugins.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/liboctomap_rviz_plugins.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liboctomap_rviz_plugins.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liboctomap_rviz_plugins.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liboctomap_rviz_plugins.so"
+         OLD_RPATH "/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/liboctomap_rviz_plugins.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins" TYPE DIRECTORY FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/plugin_rviz/icons")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/octomap_rviz_plugins")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/octomap_rviz_plugins")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins/environment" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins/environment" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_environment_hooks/path.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_environment_hooks/local_setup.bash")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_environment_hooks/local_setup.sh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_environment_hooks/local_setup.zsh")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_environment_hooks/local_setup.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_environment_hooks/package.dsv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_index/share/ament_index/resource_index/packages/octomap_rviz_plugins")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/rviz_common__pluginlib__plugin" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_index/share/ament_index/resource_index/rviz_common__pluginlib__plugin/octomap_rviz_plugins")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins/cmake" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins/cmake" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins/cmake" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins/cmake" TYPE FILE FILES
+    "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_core/octomap_rviz_pluginsConfig.cmake"
+    "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/ament_cmake_core/octomap_rviz_pluginsConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/octomap_rviz_plugins" TYPE FILE FILES "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/plugin_rviz/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -54,5 +168,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rhobtor/PHD/ARGOJ8_IA/build/octomap_rviz_plugins/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/octomap_rviz_plugins/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,1 +1,2 @@
-/home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.msg
+float32 throttle
+float32 steering

@@ -1,12 +1,12 @@
 {
   "package_name": "argj801_ctl_platform_interfaces",
-  "output_dir": "/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces",
+  "output_dir": "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:srv/SetVelocity.idl",
-    "/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:srv/GetVelocity.idl",
-    "/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:srv/EmergencyStop.idl",
-    "/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:msg/CmdThrottleMsg.idl"
+    "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:srv/SetVelocity.idl",
+    "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:srv/GetVelocity.idl",
+    "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:srv/EmergencyStop.idl",
+    "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:msg/CmdThrottleMsg.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -24,9 +24,9 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/srv/SetVelocity.idl",
-    "/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/srv/GetVelocity.idl",
-    "/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/srv/EmergencyStop.idl",
-    "/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.idl"
+    "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/srv/SetVelocity.idl",
+    "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/srv/GetVelocity.idl",
+    "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/srv/EmergencyStop.idl",
+    "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.idl"
   ]
 }

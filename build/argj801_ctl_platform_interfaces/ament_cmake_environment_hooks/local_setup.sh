@@ -2,7 +2,7 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
-: ${AMENT_CURRENT_PREFIX:="/home/rhobtor/PHD/ARGOJ8_IA/install/argj801_ctl_platform_interfaces"}
+: ${AMENT_CURRENT_PREFIX:="/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces"}
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \

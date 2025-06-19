@@ -1,1 +1,0 @@
-/home/rhobtor/PHD/ARGOJ8_IA/src/car_python/launch/gazebo_simple9.launch.py

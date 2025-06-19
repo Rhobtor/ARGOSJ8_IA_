@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/rhobtor/PHD/ARGOJ8_IA/src/car_cpp
-# Build directory: /home/rhobtor/PHD/ARGOJ8_IA/build/car_cpp
+# Source directory: /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/car_cpp
+# Build directory: /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/build/car_cpp
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

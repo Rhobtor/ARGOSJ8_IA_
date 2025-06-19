@@ -1,1 +1,14 @@
-/home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.msg
+// generated code does not contain a copyright notice
+
+
+module argj801_ctl_platform_interfaces {
+  module msg {
+    struct CmdThrottleMsg {
+      float throttle;
+
+      float steering;
+    };
+  };
+};

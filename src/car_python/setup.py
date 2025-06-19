@@ -56,6 +56,7 @@ setup(
             'j8_policy= car.j8_policy:main',
             'test_j8_old= car.test_j8_old:main',
             'inference_test_j8= car.inference_test_j8:main',
+            'scape_test= car.scape_test:main',
 
         ],
     },

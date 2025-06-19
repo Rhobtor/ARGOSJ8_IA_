@@ -1,5 +1,5 @@
 CMakeFiles/ARGJ801_ctl_platform.dir/src/arduino_interface/serial_arduino.cpp.o: \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/arduino_interface/serial_arduino.cpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/arduino_interface/serial_arduino.cpp \
  /usr/include/stdc-predef.h /usr/include/assert.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -199,7 +199,7 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/arduino_interface/serial_arduino.cpp.o: 
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/c++/11/stdlib.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/arduino_interface/serial_arduino.h \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/include/arduino_interface/serial_arduino.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \

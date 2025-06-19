@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/octomap_rviz_plugins_autogen"
   "octomap_rviz_plugins_autogen/mocs_compilation.cpp"
-  "octomap_rviz_plugins_autogen/timestamp"
 )
 
 # Per-language clean rules from dependency scanning.

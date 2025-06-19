@@ -1,0 +1,5 @@
+  File "/home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/inference_test_j8.py", line 590
+    self.meta.load_weights(meta_ckpt, skip_mismatch=True)bad_layers = []
+                                                         ^^^^^^^^^^
+SyntaxError: invalid syntax
+

@@ -1,1 +1,2 @@
-/home/rhobtor/PHD/ARGOJ8_IA/src/hector_gazebo/srv/SetReferenceGeoPose.srv
+geographic_msgs/GeoPose geo_pose
+---

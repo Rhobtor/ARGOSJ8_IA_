@@ -1,7 +1,7 @@
 CMakeFiles/hector_gazebo_ros_magnetic.dir/src/gazebo_ros_magnetic.cpp.o: \
- /home/rhobtor/PHD/ARGOJ8_IA/src/hector_gazebo/src/gazebo_ros_magnetic.cpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/hector_gazebo/src/gazebo_ros_magnetic.cpp \
  /usr/include/stdc-predef.h \
- /home/rhobtor/PHD/ARGOJ8_IA/src/hector_gazebo/include/hector_gazebo_plugins/gazebo_ros_magnetic.h \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/hector_gazebo/include/hector_gazebo_plugins/gazebo_ros_magnetic.h \
  /usr/include/gazebo-11/gazebo/common/Plugin.hh /usr/include/unistd.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -1712,8 +1712,8 @@ CMakeFiles/hector_gazebo_ros_magnetic.dir/src/gazebo_ros_magnetic.cpp.o: \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/magnetic_field__traits.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/magnetic_field__type_support.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/hector_gazebo/include/hector_gazebo_plugins/sensor_model.h \
- /home/rhobtor/PHD/ARGOJ8_IA/src/hector_gazebo/include/hector_gazebo_plugins/update_timer.h \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/hector_gazebo/include/hector_gazebo_plugins/sensor_model.h \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/hector_gazebo/include/hector_gazebo_plugins/update_timer.h \
  /usr/include/gazebo-11/gazebo/physics/World.hh \
  /usr/include/gazebo-11/gazebo/transport/TransportTypes.hh \
  /usr/include/gazebo-11/gazebo/msgs/msgs.hh \

@@ -1,1 +1,2 @@
-/home/rhobtor/PHD/ARGOJ8_IA/src/hector_gazebo/srv/SetBias.srv
+geometry_msgs/Vector3 bias
+---

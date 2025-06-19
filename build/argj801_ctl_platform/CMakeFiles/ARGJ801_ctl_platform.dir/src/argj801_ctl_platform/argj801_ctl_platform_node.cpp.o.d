@@ -1,7 +1,7 @@
 CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_ctl_platform_node.cpp.o: \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_ctl_platform/argj801_ctl_platform_node.cpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_ctl_platform/argj801_ctl_platform_node.cpp \
  /usr/include/stdc-predef.h \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_ctl_platform_node.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_ctl_platform_node.hpp \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -665,7 +665,7 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_ctl_platfor
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/arduino_interface/serial_arduino.h \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/include/arduino_interface/serial_arduino.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -674,27 +674,27 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_ctl_platfor
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/set_velocity.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__builder.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__traits.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/get_velocity.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__struct.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__builder.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__traits.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/emergency_stop.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__traits.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/build/argj801_ctl_platform_interfaces/rosidl_generator_cpp/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/set_velocity.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__builder.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__traits.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/get_velocity.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__struct.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__builder.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__traits.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/emergency_stop.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__traits.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__type_support.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__builder.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp \
  /opt/ros/humble/include/std_srvs/std_srvs/srv/empty.hpp \
  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__struct.hpp \
  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__builder.hpp \
@@ -726,44 +726,45 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_ctl_platfor
  /opt/ros/humble/include/diagnostic_updater/diagnostic_status_wrapper.hpp \
  /opt/ros/humble/include/diagnostic_updater/update_functions.hpp \
  /usr/include/c++/11/math.h \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/argj801_lcm/LCM_interface.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/argj801_lcm/LCM_interface.hpp \
  /usr/local/include/lcm/lcm-cpp.hpp /usr/local/include/lcm/lcm.h \
+ /usr/local/include/lcm/lcm_c_namespace.h \
  /usr/local/include/lcm/lcm_version.h /usr/local/include/lcm/lcm_export.h \
  /usr/local/include/lcm/eventlog.h \
  /usr/local/include/lcm/lcm-cpp-impl.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/cmd_discrete_device_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/cmd_discrete_device_msg.hpp \
  /usr/local/include/lcm/lcm_coretypes.h \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/header2.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/DiscreteDevice.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/cmd_throttle_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/request_connection_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/cmd_velocity_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_station_heartbeat_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_driveline_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/header.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/MotorTelemetry.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_lidar_scan_line_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Point3D.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_vehicle_heartbeat_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/VehicleInformation.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/ControlMode.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_vehicle_telemetry_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Coordinate2D.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Point2D.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/AutonomyStatus.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/MissionEvent.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Route.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Waypoint.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Action.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/request_connection_response_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_cpu_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_hardware_status_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/HardwareItem.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_temperature_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/TemperatureSensor.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_battery_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_component_state_msg.hpp \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/ComponentItem.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/header2.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/DiscreteDevice.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/cmd_throttle_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/request_connection_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/cmd_velocity_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_station_heartbeat_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_driveline_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/header.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/MotorTelemetry.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_lidar_scan_line_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Point3D.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_vehicle_heartbeat_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/VehicleInformation.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/ControlMode.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_vehicle_telemetry_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Coordinate2D.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Point2D.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/AutonomyStatus.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/MissionEvent.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Route.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Waypoint.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Action.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/request_connection_response_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_cpu_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_hardware_status_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/HardwareItem.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_temperature_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/TemperatureSensor.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_battery_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/dat_component_state_msg.hpp \
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/ComponentItem.hpp \
  /usr/include/yaml-cpp/yaml.h /usr/include/yaml-cpp/parser.h \
  /usr/include/yaml-cpp/dll.h /usr/include/yaml-cpp/emitter.h \
  /usr/include/c++/11/cstddef /usr/include/yaml-cpp/binary.h \
@@ -788,4 +789,4 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_ctl_platfor
  /usr/include/yaml-cpp/node/parse.h /usr/include/yaml-cpp/node/emit.h \
  /usr/include/semaphore.h /usr/include/x86_64-linux-gnu/bits/semaphore.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/rhobtor/PHD/ARGOJ8_IA/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_kinematic_model.hpp
+ /home/rhobtor/PHD/ARGOS_J8/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_kinematic_model.hpp

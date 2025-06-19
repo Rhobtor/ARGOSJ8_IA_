@@ -1,1 +1,0 @@
-/home/rhobtor/PHD/ARGOJ8_IA/src/car_python/launch/river_and_forest.launch.py
