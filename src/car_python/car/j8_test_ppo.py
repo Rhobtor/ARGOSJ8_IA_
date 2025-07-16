@@ -83,13 +83,13 @@ MAX_TILT          = 1.0
 WHEEL_BASE        = 1.35
 DELTA_MAX         = math.radians(32)
 KP_SPEED          = 10.0
-V_MAX             = 3.0
+V_MAX             = 1.5
 V_REV_MAX         = 1.5                         # velocidad máxima en marcha atrás
 BACK_ALPHA_MIN    = math.radians(100)           # ángulo para activar reversa
 V_MIN             = 0.6
 THR_IDLE          = 2.0
 MAX_DTHR          = 2.0
-MAX_STEERING = 70.0
+MAX_STEERING = 40.0
 MAX_SLOPE_TAN     = math.tan(math.radians(90.0))
 MAX_HEIGHT        = 5.0
 
@@ -128,11 +128,11 @@ SLOPE_MAX         = 0.6       # tan(θ) ≈ 30°, descartar aristas con slope > 
 # Parámetros meta-policy
 R_META_INIT   = 5.0        # radio inicial del waypoint meta (m)
 R_META_GROWTH = {50: 3.0, 100: 4.0}
-MIN_WP_DIST   = 0.8        # distancia mínima desde el robot
+MIN_WP_DIST   = 0.6        # distancia mínima desde el robot
 META_PERIOD   = 10         # ciclos (10 Hz) ≈ 1 s
 
 
-R_META            = 20.0       # m: radio máximo de waypoint relativo
+R_META            = 60.0       # m: radio máximo de waypoint relativo
 
 
 # Parámetros de energía para la recompensa
@@ -1171,7 +1171,7 @@ class TerrainPPOTrainer(Node):
         path_msg = Path(header=hdr)
         for x, y in pts:
             ps = PoseStamped(header=hdr)
-            ps.pose.position.x = x; ps.pose.position.y = y
+            ps.pose.position.x = float(x); ps.pose.position.y = float(y)
             ps.pose.orientation.w = 1.0
             path_msg.poses.append(ps)
         self.path_pub.publish(path_msg)
@@ -1179,7 +1179,7 @@ class TerrainPPOTrainer(Node):
         mk = Marker(header=hdr, ns="wps", id=0, type=Marker.POINTS, action=Marker.ADD)
         mk.scale = Vector3(x=0.15, y=0.15, z=0.0)
         mk.color.r = mk.color.g = 1.0; mk.color.a = 1.0
-        mk.points = [Point(x=x, y=y, z=0.1) for x, y in pts[1:]]
+        mk.points = [Point(x=float(x), y=float(y), z=0.1) for x, y in pts[1:]]
         self.wps_pub.publish(mk)
 
     # ---------- RRT* cost + filtrar curvatura + suavizar/densificar  -----------

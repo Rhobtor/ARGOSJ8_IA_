@@ -1,8 +1,0 @@
-srv/SetBias.idl
-srv/SetBias.srv
-srv/SetBias_Request.msg
-srv/SetBias_Response.msg
-srv/SetReferenceGeoPose.idl
-srv/SetReferenceGeoPose.srv
-srv/SetReferenceGeoPose_Request.msg
-srv/SetReferenceGeoPose_Response.msg
