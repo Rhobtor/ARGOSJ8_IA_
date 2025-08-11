@@ -30,6 +30,8 @@ CtlMissionNode::CtlMissionNode(const std::string & node_name, bool intra_process
     transitionHandlers[Transition::EstoptoReady] = [this]() { this->onEstopToReadyTransition(); };
     transitionHandlers[Transition::ReadytoRecordPath] = [this]() { this->onReadyToRecordPathTransition(); };
     transitionHandlers[Transition::RecordPathtoReady] = [this]() { this->onRecordPathToReadyTransition(); };
+    trasitionHandlers[Transition::FollowZEDtoReady] = [this]() { this->onFollowZEDToReadyTransition(); };
+
     // For AlltoEstop, we handle it separately in changeMode
     // transitionHandlers[Transition::AlltoEstop] = [this]() { this->onAllToEstopTransition(/* ??? */); };
     this->declare_parameter("fsm.change_fsm_mode_srv_name", "change_fsm_mode");
@@ -129,6 +131,18 @@ void CtlMissionNode::onReadyToRecordPathTransition() {
     RCLCPP_INFO(get_logger(), "Transitioning from Ready to Record Path");
 }
 
+void CtlMissionNode::onFollowZEDToReadyTransition() {
+    sendLifecycleStateRequest(follow_zed_client, lifecycle_msgs::msg::Transition::TRANSITION_DEACTIVATE);
+    sendLifecycleStateRequest(ready_client, lifecycle_msgs::msg::Transition::TRANSITION_ACTIVATE);
+    RCLCPP_INFO(get_logger(), "Transitioning from Follow ZED to Ready");
+}
+
+void CtlMissionNode::onReadyToFollowZEDTransition() {
+    sendLifecycleStateRequest(follow_zed_client, lifecycle_msgs::msg::Transition::TRANSITION_ACTIVATE);
+    sendLifecycleStateRequest(ready_client, lifecycle_msgs::msg::Transition::TRANSITION_DEACTIVATE);
+    RCLCPP_INFO(get_logger(), "Transitioning from Ready to Follwow ZED");
+}
+
 void CtlMissionNode::onAllToEstopTransition(Mode old_mode) {
     RCLCPP_INFO(get_logger(), "Handling Emergency Stop from mode: %i", static_cast<int>(old_mode));
     switch (old_mode) {
@@ -153,6 +167,10 @@ void CtlMissionNode::onAllToEstopTransition(Mode old_mode) {
         case Mode::Ready:
             RCLCPP_INFO(get_logger(), "Estop from Ready");
             sendLifecycleStateRequest(ready_client, lifecycle_msgs::msg::Transition::TRANSITION_DEACTIVATE);
+            break;
+        case Mode::FollowZED:
+            RCLCPP_INFO(get_logger(), "Estop from FollowZED");
+            sendLifecycleStateRequest(follow_zed_client, lifecycle_msgs::msg::Transition::TRANSITION_DEACTIVATE);
             break;
         case Mode::EmergencyStop:
         default:
@@ -231,6 +249,7 @@ rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn CtlMis
     ready_client = this->create_client<lifecycle_msgs::srv::ChangeState>("ready_node/change_state");
     estop_client = this->create_client<lifecycle_msgs::srv::ChangeState>("estop_node/change_state");
     back_home_client  = this->create_client<lifecycle_msgs::srv::ChangeState>("back_home_node/change_state");
+    follow_zed_client = this->create_client<lifecycle_msgs::srv::ChangeState>("follow_zed_node/change_state");
     return rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn::SUCCESS;
 }
 

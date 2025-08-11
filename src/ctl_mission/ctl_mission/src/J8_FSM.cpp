@@ -17,7 +17,9 @@
             {{Mode::EmergencyStop, Transition::EstoptoReady}, Mode::Ready},
             {{Mode::Ready, Transition::ReadytoRecordPath}, Mode::RecordPath},
             {{Mode::RecordPath, Transition::RecordPathtoReady}, Mode::Ready},
-            {{Mode::Ready, Transition::AlltoEstop}, Mode::EmergencyStop}
+            {{Mode::Ready, Transition::AlltoEstop}, Mode::EmergencyStop},
+            {{Mode::Ready, Transition::ReadytoFollow}, Mode::FollowZED},
+            {{Mode::FollowZED, Transition::FollowZEDtoReady}, Mode::Ready},
             // ... other transitions
         };
         init_FSM();

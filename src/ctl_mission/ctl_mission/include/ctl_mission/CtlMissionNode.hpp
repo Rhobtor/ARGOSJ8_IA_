@@ -67,6 +67,8 @@ public:
     void onHomeToReadyTransition();
     void onReadyToHomeTransition();
     void onEstopToReadyTransition();
+    void onReadyToFollowZEDTransition();
+    void onFollowZEDToReadyTransition();
     void onReadyToRecordPathTransition();
     void onRecordPathToReadyTransition();
     void onAllToEstopTransition(Mode old_mode);

@@ -13,7 +13,8 @@ enum class Mode {
     GoingHome,
     EmergencyStop,
     RecordPath,
-    NumberOfModes
+    NumberOfModes,
+    FollowZED,
     // ... other modes
 };
 
@@ -27,7 +28,9 @@ enum class Transition {
     ReadytoRecordPath,
     RecordPathtoReady,
     EstoptoReady,
-    AlltoEstop
+    AlltoEstop,
+    ReadytoFollow,
+    FollowZEDtoReady,
     // ... other transitions
 };
 
