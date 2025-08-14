@@ -83,7 +83,7 @@ void TcpClient::reader_loop() {
 FollowZEDNode::FollowZEDNode(const std::string& name)
 : rclcpp_lifecycle::LifecycleNode(name) {
   // Declara parámetros con defaults
-  this->declare_parameter<std::string>("jetson.host", "192.168.1.50");
+  this->declare_parameter<std::string>("jetson.host", "192.168.1.141");
   this->declare_parameter<int>("jetson.port", 5000);
   this->declare_parameter<std::string>("commands.start", "START_FOLLOW\n");
   this->declare_parameter<std::string>("commands.stop",  "STOP_FOLLOW\n");

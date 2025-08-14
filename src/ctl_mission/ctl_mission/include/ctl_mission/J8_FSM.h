@@ -29,7 +29,7 @@ enum class Transition {
     RecordPathtoReady,
     EstoptoReady,
     AlltoEstop,
-    ReadytoFollow,
+    ReadytoFollowZED,
     FollowZEDtoReady,
     // ... other transitions
 };

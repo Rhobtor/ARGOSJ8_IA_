@@ -30,8 +30,10 @@ CtlMissionNode::CtlMissionNode(const std::string & node_name, bool intra_process
     transitionHandlers[Transition::EstoptoReady] = [this]() { this->onEstopToReadyTransition(); };
     transitionHandlers[Transition::ReadytoRecordPath] = [this]() { this->onReadyToRecordPathTransition(); };
     transitionHandlers[Transition::RecordPathtoReady] = [this]() { this->onRecordPathToReadyTransition(); };
-    trasitionHandlers[Transition::FollowZEDtoReady] = [this]() { this->onFollowZEDToReadyTransition(); };
+    transitionHandlers[Transition::ReadytoFollowZED] = [this]() { this->onReadyToFollowZEDTransition(); };
+    transitionHandlers[Transition::FollowZEDtoReady] = [this]() { this->onFollowZEDToReadyTransition(); };
 
+    
     // For AlltoEstop, we handle it separately in changeMode
     // transitionHandlers[Transition::AlltoEstop] = [this]() { this->onAllToEstopTransition(/* ??? */); };
     this->declare_parameter("fsm.change_fsm_mode_srv_name", "change_fsm_mode");
@@ -197,8 +199,10 @@ void CtlMissionNode::changeMode(const std::shared_ptr<ctl_mission_interfaces::sr
         return;
     }
     
-    RCLCPP_INFO(this->get_logger(), "current state %i", j8_fsm.get_FSM_mode() );
-    RCLCPP_INFO(this->get_logger(), "new state %i", newMode );
+    // RCLCPP_INFO(this->get_logger(), "current state %i", j8_fsm.get_FSM_mode() );
+    // RCLCPP_INFO(this->get_logger(), "new state %i", newMode );
+    RCLCPP_INFO(this->get_logger(), "current state %d", static_cast<int>(j8_fsm.get_FSM_mode()));
+    RCLCPP_INFO(this->get_logger(), "new state %d", static_cast<int>(newMode));
     RCLCPP_INFO(this->get_logger(), "asked transition %i", req->transition );
     
     if (newMode != old_mode) {

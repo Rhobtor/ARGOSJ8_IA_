@@ -50,6 +50,7 @@ from rclpy.duration import Duration
 #     pyside6-rcc resources.qrc -o resources_rc.py
 from .ui_tabs import Ui_MainWindow
 
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QPlainTextEdit
 
 class ConnectivityWorker(QObject):
     connectivity_signal = Signal(int)
@@ -141,6 +142,21 @@ class MainWindow(QMainWindow):
         #self.profiler.enable()  # Start profiling
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+
+        #########################################
+        # test new tab for followzed
+        ########################################
+
+        self.logs_tab = QWidget(self)
+        self.logs_layout = QVBoxLayout(self.logs_tab)
+        self.logs_view = QPlainTextEdit(self.logs_tab)
+        self.logs_view.setReadOnly(True)
+        self.logs_layout.addWidget(self.logs_view)
+        self.ui.tabWidget.addTab(self.logs_tab, "Logs")
+        self.logs_view.appendPlainText("hola")
+
+        #####################################
+
         rclpy.init(args=None)
         self.ros_class_topics = ros_classes.ROSclass_topics()
         topics_executor = rclpy.executors.SingleThreadedExecutor()
