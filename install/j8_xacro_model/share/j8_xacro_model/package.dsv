@@ -1,0 +1,11 @@
+source;share/j8_xacro_model/hook/cmake_prefix_path.ps1
+source;share/j8_xacro_model/hook/cmake_prefix_path.dsv
+source;share/j8_xacro_model/hook/cmake_prefix_path.sh
+source;share/j8_xacro_model/hook/ld_library_path_lib.ps1
+source;share/j8_xacro_model/hook/ld_library_path_lib.dsv
+source;share/j8_xacro_model/hook/ld_library_path_lib.sh
+source;share/j8_xacro_model/local_setup.bash
+source;share/j8_xacro_model/local_setup.dsv
+source;share/j8_xacro_model/local_setup.ps1
+source;share/j8_xacro_model/local_setup.sh
+source;share/j8_xacro_model/local_setup.zsh

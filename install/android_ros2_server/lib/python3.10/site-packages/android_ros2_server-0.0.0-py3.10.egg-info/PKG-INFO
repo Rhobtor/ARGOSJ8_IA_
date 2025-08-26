@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: android_ros2_server
+Version: 0.0.0
+Summary: TODO: Package description
+Maintainer: andabata
+Maintainer-email: 061949764x@uma.es
+License: TODO: License declaration
+Requires-Dist: setuptools
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

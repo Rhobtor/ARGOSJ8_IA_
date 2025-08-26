@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from path_manager_interfaces/srv/PlanPath.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "nav_msgs/msg/Path.idl"
+
+module path_manager_interfaces {
+  module srv {
+    struct PlanPath_Request {
+      geometry_msgs::msg::Point start;
+
+      geometry_msgs::msg::Point goal;
+    };
+    struct PlanPath_Response {
+      boolean ack;
+
+      nav_msgs::msg::Path path;
+    };
+  };
+};

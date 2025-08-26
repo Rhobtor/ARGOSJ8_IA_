@@ -1,0 +1,3 @@
+int8 new_velocity
+---
+int8 actual_velocity

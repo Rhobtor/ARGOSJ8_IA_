@@ -44,6 +44,17 @@ import cProfile
 import subprocess
 from rclpy.duration import Duration
 
+###################################### zed
+from PySide6 import QtCore
+from PySide6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QCheckBox
+from PySide6.QtGui import QImage, QPixmap
+from cv_bridge import CvBridge
+from sensor_msgs.msg import Image, CompressedImage
+from rclpy.qos import qos_profile_sensor_data, QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy, QoSDurabilityPolicy
+from PySide6.QtWidgets import QSplitter, QSizePolicy, QPlainTextEdit
+
+#########################################
+
 # Important:
 # You need to run the following command to generate the ui_form.py file
 #     pyside6-uic form.ui -o ui_form.py, and
@@ -136,25 +147,58 @@ class WorkerTimer(QObject):
 
 
 class MainWindow(QMainWindow):
+    follow_image_signal = QtCore.Signal(QImage)
     def __init__(self, parent=None):
+        
         super().__init__(parent)
         self.profiler = cProfile.Profile()
         #self.profiler.enable()  # Start profiling
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
+        self.ui.map_.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        self.ui.map_.setMinimumSize(1, 1)
         #########################################
         # test new tab for followzed
         ########################################
+  
+        self.bridge = CvBridge()
 
-        self.logs_tab = QWidget(self)
-        self.logs_layout = QVBoxLayout(self.logs_tab)
-        self.logs_view = QPlainTextEdit(self.logs_tab)
-        self.logs_view.setReadOnly(True)
-        self.logs_layout.addWidget(self.logs_view)
-        self.ui.tabWidget.addTab(self.logs_tab, "Logs")
-        self.logs_view.appendPlainText("hola")
+        self.follow_tab = QWidget(self)
+        self.follow_layout = QVBoxLayout(self.follow_tab)
 
+        # Cabecera con estado y check de escalado
+        header = QHBoxLayout()
+        self.follow_status_lbl = QLabel("Follow ZED: esperando…")
+        self.follow_scale_chk = QCheckBox("Ajustar a panel")
+        self.follow_scale_chk.setChecked(True)
+        header.addWidget(self.follow_status_lbl)
+        header.addStretch(1)
+        header.addWidget(self.follow_scale_chk)
+        self.follow_layout.addLayout(header)
+
+        # Visor de vídeo
+        self.follow_view = QLabel(alignment=QtCore.Qt.AlignCenter)
+        self.follow_view.setMinimumSize(320, 240)
+        self.follow_view.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        self.follow_layout.addWidget(self.follow_view)
+
+        # Logs (opcional)
+        self.follow_logs = QPlainTextEdit()
+        self.follow_logs.setReadOnly(True)
+        self.follow_logs.setMaximumHeight(130)
+        self.follow_layout.addWidget(self.follow_logs)
+
+        # Añade la pestaña al tabWidget existente
+        self.ui.tabWidget.addTab(self.follow_tab, "Follow ZED")
+        self._install_main_splitter()
+        # Señal para pintar el frame sin bloquear el hilo ROS
+        self.follow_image_signal.connect(self._on_follow_qimage)
+
+        # Último mapa renderizado (para reescalar al redimensionar)
+        self._last_map_pix = None
+
+  
         #####################################
 
         rclpy.init(args=None)
@@ -166,6 +210,7 @@ class MainWindow(QMainWindow):
         )
         topics_executor_thread.start()
         self.ros_class_srv = ros_classes.ROSclass_srv()
+        self._setup_follow_subscribers() # modo zed
         self.gui_path = []
         self.nav_path = Path()
         # thread = threading.Thread(target=rclpy.spin(ros_class), daemon=True)
@@ -241,6 +286,7 @@ class MainWindow(QMainWindow):
             "BackHome",
             "E-Stop",
             "RecordPath",
+            "FollowZED",
         ]
         self.possible_transitions = []
         self.local_path_gui = Path()
@@ -279,8 +325,162 @@ class MainWindow(QMainWindow):
             3: "GoingHome",
             4: "EmergencyStop",
             5: "RecordPath",
+            6: "FollowZED",
             # Add other modes as necessary
         }
+
+
+####################################################
+################### things for zed #########################
+    def _install_main_splitter(self):
+        """
+        Reubica el mapa grande (self.ui.map_) a la izquierda y el panel de pestañas
+        a la derecha dentro de un QSplitter horizontal para que sean ajustables.
+        """
+        # 1) Saca los widgets de sus layouts actuales
+        self.ui.map_.setParent(None)
+
+        # Opción A (simple): usar directamente el tabWidget como panel derecho
+        right_widget = self.ui.tabWidget
+        right_widget.setParent(None)
+
+        # --- Si tu 'derecha' no es solo el tabWidget sino un contenedor mayor,
+        # usa Opción B en su lugar:
+        # right_widget = self.ui.tabWidget.parentWidget()
+        # while right_widget and right_widget.parentWidget() and right_widget.parentWidget() is not self.ui.centralwidget:
+        #     right_widget = right_widget.parentWidget()
+        # right_widget.setParent(None)
+
+        # 2) Crea el splitter
+        self.main_splitter = QSplitter(Qt.Horizontal)
+
+        # contenedor izquierdo con el mapa
+        left = QWidget(); lv = QVBoxLayout(left)
+        lv.setContentsMargins(0, 0, 0, 0)
+        lv.addWidget(self.ui.map_)
+
+        # contenedor derecho con las pestañas
+        right = QWidget(); rv = QVBoxLayout(right)
+        rv.setContentsMargins(0, 0, 0, 0)
+        rv.addWidget(right_widget)
+
+        self.main_splitter.addWidget(left)
+        self.main_splitter.addWidget(right)
+        self.main_splitter.setStretchFactor(0, 7)  # más espacio al mapa
+        self.main_splitter.setStretchFactor(1, 3)
+
+        # 3) Nuevo central widget que contiene el splitter
+        cw = QWidget()
+        cl = QVBoxLayout(cw)
+        cl.setContentsMargins(0, 0, 0, 0)
+        cl.addWidget(self.main_splitter)
+        self.setCentralWidget(cw)
+
+        # tamaño inicial (opcional)
+        self.main_splitter.setSizes([int(self.width()*0.65), int(self.width()*0.35)])
+
+    def _setup_follow_subscribers(self):
+        """
+        Intenta suscribirse a imagen raw; si no existe, prueba con compressed.
+        Ajusta los nombres si usas otros tópicos.
+        """
+        self.follow_img_sub = None
+        topic_raw = "/follow_zed/image_for_gui"
+        topic_comp = topic_raw + "/compressed"
+        qos_img = qos_profile_sensor_data
+        node = self.ros_class_topics
+        try:
+            self.follow_img_sub = node.create_subscription(
+                Image, topic_raw, self._on_follow_img_raw, qos_img)
+            self.follow_status_lbl.setText(f"Follow ZED: sub a {topic_raw}")
+        except Exception:
+            try:
+                self.follow_img_sub = node.create_subscription(
+                    CompressedImage, topic_comp, self._on_follow_img_compressed, qos_img)
+                self.follow_status_lbl.setText(f"Follow ZED: sub a {topic_comp}")
+            except Exception as e:
+                self.follow_status_lbl.setText(f"Follow ZED: error de suscripción ({e})")
+
+    def _on_follow_img_raw(self, msg: Image):
+        try:
+            # Decodifica sin cv_bridge
+            arr = np.frombuffer(msg.data, dtype=np.uint8).reshape(msg.height, msg.width, -1)
+            if msg.encoding.lower() == 'rgb8':
+                cv_bgr = cv2.cvtColor(arr, cv2.COLOR_RGB2BGR)
+            elif msg.encoding.lower() == 'bgr8':
+                cv_bgr = arr
+            else:
+                self.follow_status_lbl.setText(f"Follow ZED: encoding no soportado: {msg.encoding}")
+                return
+
+            # Feedback visual para saber que llegan frames
+            self.follow_status_lbl.setText(f"Follow ZED: frame {msg.width}x{msg.height}")
+            self._emit_cv_frame(cv_bgr)
+
+        except Exception as e:
+            self.follow_status_lbl.setText(f"Follow ZED: error frame: {e}")
+
+    def _on_follow_img_compressed(self, msg: CompressedImage):
+        np_arr = np.frombuffer(msg.data, np.uint8)
+        cv_bgr = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+        if cv_bgr is not None:
+            self._emit_cv_frame(cv_bgr)
+
+    def _emit_cv_frame(self, cv_bgr):
+        cv_rgb = cv2.cvtColor(cv_bgr, cv2.COLOR_BGR2RGB)
+        h, w, ch = cv_rgb.shape
+        qimg = QImage(cv_rgb.data, w, h, ch * w, QImage.Format_RGB888).copy()
+        self.follow_image_signal.emit(qimg)
+
+    def _on_follow_qimage(self, qimg: QImage):
+        if self.follow_scale_chk.isChecked():
+            pix = QPixmap.fromImage(qimg).scaled(
+                self.follow_view.size(),
+                QtCore.Qt.KeepAspectRatio,
+                QtCore.Qt.SmoothTransformation
+            )
+        else:
+            pix = QPixmap.fromImage(qimg)
+        self.follow_view.setPixmap(pix)
+
+    def _log_follow(self, txt: str):
+        try:
+            # añade una línea al área de logs
+            self.follow_logs.appendPlainText(txt)
+        except Exception:
+            pass
+
+    def resizeEvent(self, event):
+        # Reescala la imagen si “Ajustar a panel” está activo
+        if hasattr(self, 'follow_view') and self.follow_view.pixmap() and self.follow_scale_chk.isChecked():
+            pix = self.follow_view.pixmap().scaled(
+                self.follow_view.size(),
+                QtCore.Qt.KeepAspectRatio,
+                QtCore.Qt.SmoothTransformation
+            )
+            self.follow_view.setPixmap(pix)
+        if getattr(self, '_last_map_pix', None) and hasattr(self, 'follow_map_label'):
+            self.follow_map_label.setPixmap(
+                self._last_map_pix.scaled(
+                    self.follow_map_label.size(),
+                    Qt.KeepAspectRatio,
+                    Qt.SmoothTransformation
+                )
+            )   
+        if getattr(self, '_last_map_pix', None):
+            self.ui.map_.setPixmap(self._last_map_pix.scaled(
+                self.ui.map_.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        
+        super().resizeEvent(event)
+
+
+
+
+
+
+
+
+#####################################################
 
     def update_localization_label(self):
         color = "black"  # Default to black for "Not started"
@@ -529,6 +729,7 @@ class MainWindow(QMainWindow):
             3: "GoingHome",
             4: "EmergencyStop",
             5: "RecordPath",
+            6: "FollowZED",
             # ... other modes
         }
         for mode_id, mode_name in MODE_NAMES.items():
@@ -890,6 +1091,25 @@ class MainWindow(QMainWindow):
         qImg = QImage(map_n_UGV.data, width, height, bytesPerLine, QImage.Format_RGB888)
         pixmap01 = QPixmap.fromImage(qImg)
         self.ui.map_.setPixmap(pixmap01)
+        self._last_map_pix = pixmap01  # guarda el último render del mapa
+        target = self.ui.map_.size()
+        if target.width() > 0 and target.height() > 0:
+            self.ui.map_.setPixmap(self._last_map_pix.scaled(
+                target, Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        else:
+            self.ui.map_.setPixmap(self._last_map_pix)
+        # Actualiza el preview del mapa en la pestaña Follow ZED (si existe)
+        try:
+            if hasattr(self, 'follow_map_label') and self.follow_map_label is not None:
+                self.follow_map_label.setPixmap(
+                    self._last_map_pix.scaled(
+                        self.follow_map_label.size(),
+                        Qt.KeepAspectRatio,
+                        Qt.SmoothTransformation
+                    )
+                )
+        except Exception:
+            pass
         self.ui.map_.update()
         # self.ui.map_.mousePressEvent = self.getPixel
 

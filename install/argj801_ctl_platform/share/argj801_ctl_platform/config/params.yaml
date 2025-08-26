@@ -1,0 +1,18 @@
+ARGJ801:
+  global_parameters:
+    secured_cmd_vel_topic_name: "secured_change"
+
+  argj801_ctrl_platform_node:
+      kinematic_parameters:
+        efective_radius : 0.283 
+        xICR : 0.95
+        throttle_to_percent : 3.9276
+        steer_to_percent : 17.2790
+      arduino_params:
+          port:  "/dev/ttyUSB0"
+          watchdog_active: true
+      lcm_params:
+          lcm_config_file:  "argj801_lcm_config_platform.yaml"
+      throttle_topic_name: "cmd_throttle_msg"
+      operation_mode: 1
+      self_test_active: false

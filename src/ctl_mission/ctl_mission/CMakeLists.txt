@@ -143,8 +143,30 @@ ament_target_dependencies( ready_node
 "geometry_msgs"
 "GeographicLib")
 
+
+# Executable for Follow ZED Node
+add_executable(follow_zed_node
+  src/FSM_states/follow_zed_node.cpp
+  src/FSM_states/follow_zed_main.cpp
+)
+
+target_include_directories(follow_zed_node
+  PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+)
+ament_target_dependencies(follow_zed_node
+  "rclcpp"
+  "rclcpp_lifecycle"
+  "lifecycle_msgs"
+  "sensor_msgs"
+)
+
+
+
+
 # Target dependencies for other executables
-set(OTHER_EXECUTABLES   path_following  path_record_node controller_node ready_node estop_node back_home_node)
+set(OTHER_EXECUTABLES   path_following  path_record_node controller_node ready_node follow_zed_node estop_node back_home_node)
 
 foreach(EXECUTABLE IN LISTS OTHER_EXECUTABLES)
 target_include_directories(${EXECUTABLE}
@@ -185,6 +207,7 @@ install(TARGETS
   ready_node
   estop_node
   back_home_node
+  follow_zed_node
   DESTINATION lib/${PROJECT_NAME})
 
   install(DIRECTORY include/

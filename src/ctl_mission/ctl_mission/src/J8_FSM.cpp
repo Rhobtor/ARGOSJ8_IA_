@@ -19,14 +19,14 @@
             {{Mode::RecordPath, Transition::RecordPathtoReady}, Mode::Ready},
             {{Mode::Ready, Transition::AlltoEstop}, Mode::EmergencyStop},
             {{Mode::Ready, Transition::ReadytoFollowZED}, Mode::FollowZED},
-            {{Mode::FollowZED, Transition::FollowZEDtoReady}, Mode::Ready},
+            {{Mode::FollowZED, Transition::FollowZEDtoReady}, Mode::Ready}
             // ... other transitions
         };
         init_FSM();
     }
 
     void J8_FSM::init_FSM() {
-        current_mode = Mode::Ready;
+        current_mode = Mode::FollowZED;
     }
 
     Mode J8_FSM::get_FSM_mode() const{

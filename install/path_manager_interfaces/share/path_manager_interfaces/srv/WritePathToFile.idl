@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from path_manager_interfaces/srv/WritePathToFile.srv
+// generated code does not contain a copyright notice
+
+
+module path_manager_interfaces {
+  module srv {
+    struct WritePathToFile_Request {
+      string filename;
+    };
+    struct WritePathToFile_Response {
+      boolean success;
+    };
+  };
+};
