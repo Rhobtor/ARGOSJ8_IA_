@@ -57,6 +57,7 @@ setup(
             'test_j8_old= car.test_j8_old:main',
             'inference_test_j8= car.inference_test_j8:main',
             'scape_test= car.scape_test:main',
+            'prior_map_builder= car.prior_map_builder:main',
 
         ],
     },

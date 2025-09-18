@@ -7,6 +7,8 @@ from launch_ros.actions import Node
 from launch.substitutions import PathJoinSubstitution, LaunchConfiguration
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.substitutions import FindPackageShare
+from launch.substitutions import Command
+from launch.actions import SetEnvironmentVariable
 import os
 import xacro
 
@@ -230,6 +232,7 @@ def generate_launch_description():
         name='slope_terrain',  # Nombre del nodo
     )
 
+
     return LaunchDescription([
 
         robot_state_publisher_node,
@@ -254,5 +257,6 @@ def generate_launch_description():
         frontier_centroid,
         gridmap,
         slope_terrain,
+
 
     ])

@@ -26,7 +26,7 @@
     }
 
     void J8_FSM::init_FSM() {
-        current_mode = Mode::FollowZED;
+        current_mode = Mode::Ready;
     }
 
     Mode J8_FSM::get_FSM_mode() const{

@@ -22,6 +22,7 @@ path_ppo_cnn_lstm_training_init_mode_j8 = car.path_ppo_cnn_lstm_training_init_mo
 path_ppo_cnn_lstm_training_init_mode_simple = car.path_ppo_cnn_lstm_training_init_mode_simple:main
 points_goal = car.points_goal:main
 points_goal_old = car.points_goal_old:main
+prior_map_builder = car.prior_map_builder:main
 scape_test = car.scape_test:main
 supervisor_node = car.supervisor:main
 test_j8_old = car.test_j8_old:main
