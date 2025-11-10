@@ -530,13 +530,15 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/frame_graph.hpp
- /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h
+ /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp
  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h
- /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.h
+ /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp
+ /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp
+ /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.hpp
  /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp
  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h
- /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h
+ /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.hpp
+ /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp
  /opt/ros/humble/include/tracetools/tracetools/config.h
  /opt/ros/humble/include/tracetools/tracetools/tracetools.h
  /opt/ros/humble/include/tracetools/tracetools/utils.hpp

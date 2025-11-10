@@ -189,6 +189,12 @@ controller_node: CMakeFiles/controller_node.dir/src/controllers/dynamic_la_pp_co
 controller_node: CMakeFiles/controller_node.dir/src/controllers/regulated_pure_pursuit_controller.cpp.o
 controller_node: CMakeFiles/controller_node.dir/build.make
 controller_node: /opt/ros/humble/lib/librclcpp_lifecycle.so
+controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
+controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
+controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
+controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
+controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so
 controller_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 controller_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 controller_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
@@ -223,6 +229,8 @@ controller_node: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_cpp.s
 controller_node: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_py.so
 controller_node: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_c.so
 controller_node: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_c.so
+controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so
+controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 controller_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 controller_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 controller_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so

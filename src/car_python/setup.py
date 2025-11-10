@@ -58,6 +58,11 @@ setup(
             'inference_test_j8= car.inference_test_j8:main',
             'scape_test= car.scape_test:main',
             'prior_map_builder= car.prior_map_builder:main',
+            'fusion= car.fusion:main',
+            'voxel_unity= car.voxel_unity:main',
+            'unity_goal= car.unity_goal:main',
+            'circuit_supervisor= car.supervisor_circuit:main',
+            'circuit1= car.circuit1:main',
 
         ],
     },

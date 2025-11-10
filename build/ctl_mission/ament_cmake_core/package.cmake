@@ -5,7 +5,7 @@ set(ctl_mission_BUILD_DEPENDS "lifecycle_msgs" "rclcpp_lifecycle" "rclcpp" "std_
 set(ctl_mission_BUILDTOOL_DEPENDS "ament_cmake" "ament_cmake_python")
 set(ctl_mission_BUILD_EXPORT_DEPENDS "rclpy" "example_interfaces" "tf2_geometry_msgs")
 set(ctl_mission_BUILDTOOL_EXPORT_DEPENDS )
-set(ctl_mission_EXEC_DEPENDS "rclcpp_lifecycle" "lifecycle_msgs" "std_msgs" "sensor_msgs" "ublox_msgs" "rosidl_default_runtime" "rclpy" "example_interfaces" "tf2_geometry_msgs")
+set(ctl_mission_EXEC_DEPENDS "rclcpp_lifecycle" "lifecycle_msgs" "std_msgs" "std_srvs" "sensor_msgs" "ublox_msgs" "rosidl_default_runtime" "rclpy" "example_interfaces" "tf2_geometry_msgs")
 set(ctl_mission_TEST_DEPENDS "ament_lint_auto" "ament_lint_common" "ros_testing" "ament_lint_auto" "ament_lint_common")
 set(ctl_mission_GROUP_DEPENDS )
 set(ctl_mission_MEMBER_OF_GROUPS "rosidl_interface_packages")

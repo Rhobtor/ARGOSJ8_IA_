@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-861b4b1b3f4df4d31ddb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "wiimote_msgs__py",
+					"jsonFile" : "directory-wiimote_msgs__py-299e99cc7359702061d8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/wiimote_msgs/wiimote_msgs__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "wiimote_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_wiimote_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_wiimote_msgs_egg-f755738b52a6e30e179a.json",
+					"name" : "ament_cmake_python_build_wiimote_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_wiimote_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_wiimote_msgs-75b83f4e0f43ea8635c2.json",
+					"name" : "ament_cmake_python_copy_wiimote_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-187c832534707376438b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs-55326a3784df136ee12b.json",
+					"name" : "wiimote_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__cpp-6a8846055b3415c5fdb8.json",
+					"name" : "wiimote_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "wiimote_msgs__py::@88744f3486e2fc6a7a43",
+					"jsonFile" : "target-wiimote_msgs__py-04d0c6ec3ddbd007cb25.json",
+					"name" : "wiimote_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_generator_c-5bcb1427ec9357b8f7b0.json",
+					"name" : "wiimote_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_generator_py-87342851e5e12cab45ec.json",
+					"name" : "wiimote_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_typesupport_c-d4244063213fc1dc7cd5.json",
+					"name" : "wiimote_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_typesupport_c__pyext-ed26944707e5a40b416f.json",
+					"name" : "wiimote_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_typesupport_cpp-378ff931dfb9a1de313f.json",
+					"name" : "wiimote_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_typesupport_fastrtps_c-aa6902305ccb1238ae05.json",
+					"name" : "wiimote_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_typesupport_fastrtps_c__pyext-eb7ae02df220f18a179c.json",
+					"name" : "wiimote_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_typesupport_fastrtps_cpp-1e9eca8ab6266c9db479.json",
+					"name" : "wiimote_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_typesupport_introspection_c-11677c2c9212cf043d78.json",
+					"name" : "wiimote_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_typesupport_introspection_c__pyext-b3d6f2f2510164084ab3.json",
+					"name" : "wiimote_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs__rosidl_typesupport_introspection_cpp-b4d2b47707c7cb8555d3.json",
+					"name" : "wiimote_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_msgs_uninstall-c57b1b811e9393e720f4.json",
+					"name" : "wiimote_msgs_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/wiimote_msgs",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8_joystick/wiimote_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

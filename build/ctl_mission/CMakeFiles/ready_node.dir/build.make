@@ -110,6 +110,12 @@ ready_node: CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o
 ready_node: CMakeFiles/ready_node.dir/build.make
 ready_node: /usr/lib/x86_64-linux-gnu/libGeographic.so
 ready_node: /opt/ros/humble/lib/librclcpp_lifecycle.so
+ready_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
+ready_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
+ready_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+ready_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
+ready_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
+ready_node: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so
 ready_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 ready_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 ready_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
@@ -144,6 +150,8 @@ ready_node: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_cpp.so
 ready_node: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_py.so
 ready_node: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_c.so
 ready_node: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_c.so
+ready_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so
+ready_node: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 ready_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 ready_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 ready_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so

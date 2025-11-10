@@ -2475,7 +2475,8 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: \
  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp \
@@ -2491,6 +2492,7 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/static_transform_broadcaster.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/static_transform_broadcaster.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_with_covariance_stamped.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp \
@@ -2573,7 +2575,7 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose2_d.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__builder.hpp \

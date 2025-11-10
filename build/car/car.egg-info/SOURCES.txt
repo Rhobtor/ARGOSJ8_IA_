@@ -10,10 +10,12 @@ setup.py
 ../../build/car/car.egg-info/zip-safe
 car/__init__.py
 car/backup_model_ppo_cnn_lstm.py
+car/circuit1.py
 car/colision_zone.py
 car/costmap.py
 car/filter_points_cloud.py
 car/frontier_centroid.py
+car/fusion.py
 car/inference_full_model.py
 car/inference_j8.py
 car/inference_test_j8.py
@@ -38,9 +40,13 @@ car/points_goal_old.py
 car/prior_map_builder.py
 car/scape_test.py
 car/supervisor.py
+car/supervisor_circuit.py
 car/test_j8_old.py
 car/test_octomap.py
 car/test_vel.py
+car/unity_goal.py
+car/voxel_unity.py
+config/circuit_1.yaml
 config/display.rviz
 config/ekf_params.yaml
 config/goal.yaml
@@ -50,6 +56,8 @@ config/octomap.yaml
 config/river_and_forest.yaml
 config/world1.yaml
 config/world_1_b.yaml
+launch/J8_unity.launch.py
+launch/circuit1.launch.py
 launch/control.launch.py
 launch/control_with_gazebo.launch.py
 launch/display.launch.py
@@ -69,6 +77,7 @@ launch/gazebo_simple7.launch.py
 launch/gazebo_simple8.launch.py
 launch/gazebo_simple9.launch.py
 launch/gazebo_simple_world.launch.py
+launch/goals_unity.launch.py
 launch/j8.launch.py
 launch/joystick.launch.py
 launch/object_move_gazebo.launch.py

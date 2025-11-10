@@ -109,6 +109,12 @@ follow_zed_node: CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.c
 follow_zed_node: CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_main.cpp.o
 follow_zed_node: CMakeFiles/follow_zed_node.dir/build.make
 follow_zed_node: /opt/ros/humble/lib/librclcpp_lifecycle.so
+follow_zed_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
+follow_zed_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
+follow_zed_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+follow_zed_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
+follow_zed_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
+follow_zed_node: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so
 follow_zed_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 follow_zed_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
 follow_zed_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
@@ -146,6 +152,8 @@ follow_zed_node: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_generator_c.so
 follow_zed_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 follow_zed_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
 follow_zed_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+follow_zed_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so
+follow_zed_node: /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so
 follow_zed_node: /usr/lib/x86_64-linux-gnu/liborocos-kdl.so
 follow_zed_node: /opt/ros/humble/lib/libtf2_ros.so
 follow_zed_node: /opt/ros/humble/lib/libtf2.so

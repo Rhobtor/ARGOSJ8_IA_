@@ -377,14 +377,35 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_main.cpp.o: /home/rhobt
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/int8.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__builder.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__struct.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__traits.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__type_support.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/set_bool.hpp \
   /opt/ros/humble/include/tracetools/tracetools/config.h \
   /opt/ros/humble/include/tracetools/tracetools/tracetools.h \
   /opt/ros/humble/include/tracetools/tracetools/utils.hpp \
@@ -1123,14 +1144,35 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__type_support.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/int8.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__builder.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__struct.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__traits.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__type_support.hpp \
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/set_bool.hpp \
   /opt/ros/humble/include/tracetools/tracetools/config.h \
   /opt/ros/humble/include/tracetools/tracetools/tracetools.h \
   /opt/ros/humble/include/tracetools/tracetools/utils.hpp \
@@ -1540,6 +1582,36 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
 /opt/ros/humble/include/rmw/rmw/init.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
@@ -1548,7 +1620,9 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
 
-/opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/c++/11/bits/predefined_ops.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
 
@@ -1567,6 +1641,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rmw/rmw/event_callback_type.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node.hpp:
+
+/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__builder.hpp:
 
 /opt/ros/humble/include/rmw/rmw/event.h:
 
@@ -1602,6 +1678,10 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
+/opt/ros/humble/include/rcutils/rcutils/allocator.h:
+
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/time.hpp:
@@ -1630,6 +1710,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp:
+
 /opt/ros/humble/include/rmw/rmw/message_sequence.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
@@ -1639,6 +1721,10 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rclcpp/rclcpp/visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/type_adapter.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/opt/ros/humble/include/rmw/rmw/security_options.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
 
@@ -1657,8 +1743,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
 
@@ -1711,10 +1795,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
-
-/usr/include/c++/11/bits/predefined_ops.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
 
@@ -1836,13 +1916,13 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
-
 /usr/include/c++/11/bits/locale_conv.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/int8.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp:
 
@@ -1851,8 +1931,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__type_support.hpp:
 
 /usr/include/c++/11/bits/atomic_base.h:
 
@@ -1869,6 +1947,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__type_support.hpp:
 
 /usr/include/c++/11/bits/ios_base.h:
 
@@ -1900,8 +1980,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
@@ -1913,6 +1991,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rcutils/rcutils/types.h:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__struct.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp:
 
 /usr/include/c++/11/list:
 
@@ -2002,6 +2082,10 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
 
+/opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp:
+
 /opt/ros/humble/include/rcl/rcl/client.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
@@ -2028,19 +2112,11 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
 
-/opt/ros/humble/include/rmw/rmw/security_options.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
 
 /usr/include/c++/11/bits/specfun.h:
 
 /usr/include/features.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
 
@@ -2080,8 +2156,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__type_support.hpp:
 
-/opt/ros/humble/include/rcl/rcl/log_level.h:
-
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
 
 /usr/include/linux/errno.h:
@@ -2109,6 +2183,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rcl/rcl/allocator.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
 
@@ -2150,8 +2226,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:
-
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__functions.h:
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
@@ -2163,6 +2237,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/c++/11/iterator:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
 
 /opt/ros/humble/include/rcl/rcl/types.h:
 
@@ -2206,8 +2282,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
@@ -2217,6 +2291,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/c++/11/pstl/pstl_config.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_event.hpp:
 
@@ -2316,6 +2392,10 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
 
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/transition.hpp:
@@ -2337,6 +2417,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/default_state_machine.h:
 
 /usr/include/c++/11/cstdlib:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
 
@@ -2370,15 +2452,13 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/c++/11/ext/new_allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_publisher.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__traits.hpp:
 
 /usr/include/c++/11/variant:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_subscription.hpp:
+
+/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:
 
@@ -2458,6 +2538,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/message_type_support.hpp:
 
+/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__struct.hpp:
+
 /usr/include/c++/11/ext/aligned_buffer.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
@@ -2490,19 +2572,51 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp:
+
+/usr/include/c++/11/bits/std_mutex.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp:
 
-/usr/include/c++/11/algorithm:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:
 
-/usr/include/c++/11/ext/alloc_traits.h:
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__builder.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__traits.hpp:
 
 /opt/ros/humble/include/rmw/rmw/localhost.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:
+/opt/ros/humble/include/rcl/rcl/log_level.h:
+
+/opt/ros/humble/include/std_srvs/std_srvs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__type_support.hpp:
+
+/usr/include/c++/11/condition_variable:
 
 /opt/ros/humble/include/tracetools/tracetools/tracetools.h:
 
@@ -2524,6 +2638,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rcl/rcl/init.h:
 
+/opt/ros/humble/include/std_srvs/std_srvs/srv/set_bool.hpp:
+
 /usr/include/asm-generic/bitsperlong.h:
 
 /usr/include/asm-generic/errno-base.h:
@@ -2531,6 +2647,10 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/asm-generic/errno.h:
 
 /usr/include/c++/11/debug/assertions.h:
+
+/usr/include/c++/11/algorithm:
+
+/usr/include/c++/11/ext/alloc_traits.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/loaned_message.hpp:
 
@@ -2551,6 +2671,10 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/c++/11/bits/basic_string.tcc:
 
 /usr/include/c++/11/bits/string_view.tcc:
+
+/usr/include/c++/11/unordered_map:
+
+/usr/include/c++/11/bits/charconv.h:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
@@ -2606,6 +2730,10 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
+/usr/include/c++/11/shared_mutex:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
 /usr/include/c++/11/bits/quoted_string.h:
@@ -2619,10 +2747,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/11/bits/std_abs.h:
-
-/usr/include/c++/11/bits/std_mutex.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/c++/11/bits/stl_algo.h:
 
@@ -2690,12 +2814,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/c++/11/cerrno:
 
-/usr/include/c++/11/condition_variable:
-
-/usr/include/c++/11/bits/charconv.h:
-
-/usr/include/c++/11/unordered_map:
-
 /usr/include/c++/11/bits/ostream.tcc:
 
 /usr/include/c++/11/cstdio:
@@ -2703,10 +2821,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/c++/11/thread:
 
 /usr/include/c++/11/cstring:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/c++/11/cwchar:
 
@@ -2754,10 +2868,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/c++/11/shared_mutex:
-
 /usr/include/c++/11/stdexcept:
 
 /usr/include/c++/11/stdlib.h:
@@ -2767,8 +2877,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/c++/11/bits/hashtable_policy.h:
 
 /usr/include/c++/11/streambuf:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/c++/11/chrono:
 
@@ -2788,13 +2896,15 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/c++/11/tr1/poly_hermite.tcc:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
 
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/11/tr1/special_function_util.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
 
@@ -2824,10 +2934,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/stdc-predef.h:
 
-/opt/ros/humble/include/rcutils/rcutils/allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/in.h:
 
 /usr/include/string.h:
@@ -2843,8 +2949,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/c++/11/typeindex:
 
 /usr/include/unistd.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
 /usr/include/wctype.h:
 
@@ -2912,8 +3016,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
 
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
 /usr/include/x86_64-linux-gnu/bits/sigstack.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
@@ -2924,10 +3026,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
 /opt/ros/humble/include/rcl/rcl/error_handling.h:
@@ -2937,8 +3035,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /opt/ros/humble/include/rmw/rmw/serialized_message.h:
 
@@ -2956,8 +3052,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
@@ -2968,20 +3062,10 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
 /usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/c++/11/tr1/poly_hermite.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:

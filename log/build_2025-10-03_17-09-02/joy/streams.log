@@ -1,0 +1,105 @@
+[0.048s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8_joystick/joy -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy
+[4.520s] -- The C compiler identification is GNU 11.4.0
+[4.521s] -- The CXX compiler identification is GNU 11.4.0
+[4.521s] -- Detecting C compiler ABI info
+[4.521s] -- Detecting C compiler ABI info - done
+[4.521s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.521s] -- Detecting C compile features
+[4.521s] -- Detecting C compile features - done
+[4.521s] -- Detecting CXX compiler ABI info
+[4.521s] -- Detecting CXX compiler ABI info - done
+[4.521s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.521s] -- Detecting CXX compile features
+[4.521s] -- Detecting CXX compile features - done
+[4.522s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[4.522s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.522s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[4.522s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.522s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.522s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.522s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.522s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.522s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.522s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.638s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.752s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.939s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.977s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.107s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.110s] -- Found Threads: TRUE  
+[5.274s] -- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)
+[5.344s] -- Found sdl2_vendor: 3.1.0 (/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor/share/sdl2_vendor/cmake)
+[5.356s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[5.533s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.764s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.764s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8_joystick/joy/include>
+[5.765s] -- Configured cppcheck exclude dirs and/or files: 
+[5.773s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[5.773s] -- Configured cpplint exclude dirs and/or files: 
+[5.777s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.778s] -- Added test 'lint_cmake' to check CMake code style
+[5.779s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.783s] -- Added test 'uncrustify' to check C / C++ code style
+[5.783s] -- Configured uncrustify additional arguments: 
+[5.783s] -- Added test 'xmllint' to check XML markup files
+[5.786s] -- Configuring done (5.7s)
+[5.824s] -- Generating done (0.0s)
+[5.845s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy
+[5.880s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8_joystick/joy -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy
+[5.882s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy -- -j16 -l16
+[13.783s] [ 16%] [32mBuilding CXX object CMakeFiles/joy.dir/src/joy.cpp.o[0m
+[13.783s] [ 33%] [32mBuilding CXX object CMakeFiles/joy_node.dir/rclcpp_components/node_main_joy_node.cpp.o[0m
+[13.783s] [ 50%] [32mBuilding CXX object CMakeFiles/joy_enumerate_devices.dir/src/joy_enumerate_devices.cpp.o[0m
+[13.783s] [ 66%] [32m[1mLinking CXX executable joy_enumerate_devices[0m
+[13.783s] [ 66%] Built target joy_enumerate_devices
+[21.633s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8_joystick/joy/src/joy.cpp:[m[K In member function ‘[01m[Kvoid joy::Joy::eventThread()[m[K’:
+[21.633s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8_joystick/joy/src/joy.cpp:489:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwheel_separation[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[21.633s]   489 |       float [01;35m[Kwheel_separation[m[K = 1.35;
+[21.633s]       |             [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[21.633s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8_joystick/joy/src/joy.cpp:512:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthrottle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[21.633s]   512 |       float [01;35m[Kthrottle[m[K = rad2per_throttle*(left_wheels + rigth_wheels)/wheels_radius;
+[21.633s]       |             [01;35m[K^~~~~~~~[m[K
+[21.639s] [01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8_joystick/joy/src/joy.cpp:513:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksteer[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[21.639s]   513 |       float [01;35m[Ksteer[m[K = rad2per_steer*(-rigth_wheels + left_wheels)/wheels_radius;
+[21.639s]       |             [01;35m[K^~~~~[m[K
+[26.944s] [ 83%] [32m[1mLinking CXX executable joy_node[0m
+[27.343s] [ 83%] Built target joy_node
+[44.838s] [100%] [32m[1mLinking CXX shared library libjoy.so[0m
+[45.503s] [100%] Built target joy
+[45.517s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy -- -j16 -l16
+[45.528s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy
+[51.570s] -- Install configuration: ""
+[51.570s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib/libjoy.so
+[51.570s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib/libjoy.so" to ""
+[51.570s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib/joy/joy_node
+[51.571s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib/joy/joy_node" to ""
+[51.572s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib/joy/joy_enumerate_devices
+[51.572s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/include/joy
+[51.573s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/include/joy/joy
+[51.573s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/include/joy/joy/joy.hpp
+[51.573s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/config
+[51.574s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/config/joy-params.yaml
+[51.575s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/launch
+[51.576s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/launch/joy-launch_test.py
+[51.576s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/launch/joy-composed-launch.py
+[51.576s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/ament_index/resource_index/package_run_dependencies/joy
+[51.576s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/ament_index/resource_index/parent_prefix_path/joy
+[51.578s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/environment/ament_prefix_path.sh
+[51.579s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/environment/ament_prefix_path.dsv
+[51.582s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/environment/path.sh
+[51.582s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/environment/path.dsv
+[51.583s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/local_setup.bash
+[51.584s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/local_setup.sh
+[51.585s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/local_setup.zsh
+[51.585s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/local_setup.dsv
+[51.587s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/package.dsv
+[51.588s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/ament_index/resource_index/packages/joy
+[51.590s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/ament_index/resource_index/rclcpp_components/joy
+[51.590s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/cmake/export_joyExport.cmake
+[51.592s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/cmake/export_joyExport-noconfig.cmake
+[51.596s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/cmake/ament_cmake_export_targets-extras.cmake
+[51.597s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/cmake/ament_cmake_export_dependencies-extras.cmake
+[51.597s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/cmake/joyConfig.cmake
+[51.597s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/cmake/joyConfig-version.cmake
+[51.597s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/share/joy/package.xml
+[51.621s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy' returned '0': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/joy

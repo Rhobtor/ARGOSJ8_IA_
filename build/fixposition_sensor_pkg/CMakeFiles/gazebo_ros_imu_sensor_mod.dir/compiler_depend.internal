@@ -471,8 +471,8 @@ CMakeFiles/gazebo_ros_imu_sensor_mod.dir/src/gazebo_ros_fixposition_imu_sensor.c
  /opt/ros/humble/include/tf2/tf2/visibility_control.h
  /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h
  /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h
- /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h
+ /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp
+ /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp
  /opt/ros/humble/include/tracetools/tracetools/config.h
  /opt/ros/humble/include/tracetools/tracetools/tracetools.h
  /opt/ros/humble/include/tracetools/tracetools/utils.hpp

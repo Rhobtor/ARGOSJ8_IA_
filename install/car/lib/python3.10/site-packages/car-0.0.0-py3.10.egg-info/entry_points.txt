@@ -1,7 +1,10 @@
 [console_scripts]
+circuit1 = car.circuit1:main
+circuit_supervisor = car.supervisor_circuit:main
 colision_zone = car.colision_zone:main
 filter_points_cloud = car.filter_points_cloud:main
 frontier_centroid = car.frontier_centroid:main
+fusion = car.fusion:main
 inference_full_model = car.inference_full_model:main
 inference_j8 = car.inference_j8:main
 inference_test_j8 = car.inference_test_j8:main
@@ -28,3 +31,5 @@ supervisor_node = car.supervisor:main
 test_j8_old = car.test_j8_old:main
 test_octomap = car.test_octomap:main
 test_vel = car.test_vel:main
+unity_goal = car.unity_goal:main
+voxel_unity = car.voxel_unity:main

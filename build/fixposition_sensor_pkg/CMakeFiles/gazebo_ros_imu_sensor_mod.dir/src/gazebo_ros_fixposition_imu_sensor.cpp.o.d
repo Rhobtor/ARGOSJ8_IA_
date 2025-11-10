@@ -2330,5 +2330,5 @@ CMakeFiles/gazebo_ros_imu_sensor_mod.dir/src/gazebo_ros_fixposition_imu_sensor.c
  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h
+ /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp

@@ -574,13 +574,15 @@ CMakeFiles/controller_node.dir/src/FSM_states/Ctrl_node.cpp.o: /home/rhobtor/PHD
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/frame_graph.hpp \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
   /opt/ros/humble/include/tracetools/tracetools/config.h \
   /opt/ros/humble/include/tracetools/tracetools/tracetools.h \
   /opt/ros/humble/include/tracetools/tracetools/utils.hpp \
@@ -1503,13 +1505,15 @@ CMakeFiles/controller_node.dir/src/FSM_states/Ctrl_node_main.cpp.o: /home/rhobto
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__traits.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/frame_graph.hpp \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
   /opt/ros/humble/include/tracetools/tracetools/config.h \
   /opt/ros/humble/include/tracetools/tracetools/tracetools.h \
   /opt/ros/humble/include/tracetools/tracetools/utils.hpp \
@@ -2315,8 +2319,8 @@ CMakeFiles/controller_node.dir/src/controllers/dynamic_la_pp_controller.cpp.o: /
   /opt/ros/humble/include/tf2/tf2/utils.hpp \
   /opt/ros/humble/include/tf2/tf2/visibility_control.h \
   /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
   /opt/ros/humble/include/tracetools/tracetools/config.h \
   /opt/ros/humble/include/tracetools/tracetools/tracetools.h \
   /opt/ros/humble/include/tracetools/tracetools/utils.hpp \
@@ -3122,8 +3126,8 @@ CMakeFiles/controller_node.dir/src/controllers/dynamic_pp_controller.cpp.o: /hom
   /opt/ros/humble/include/tf2/tf2/utils.hpp \
   /opt/ros/humble/include/tf2/tf2/visibility_control.h \
   /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
   /opt/ros/humble/include/tracetools/tracetools/config.h \
   /opt/ros/humble/include/tracetools/tracetools/tracetools.h \
   /opt/ros/humble/include/tracetools/tracetools/utils.hpp \
@@ -3929,8 +3933,8 @@ CMakeFiles/controller_node.dir/src/controllers/pure_pursuit_controller.cpp.o: /h
   /opt/ros/humble/include/tf2/tf2/utils.hpp \
   /opt/ros/humble/include/tf2/tf2/visibility_control.h \
   /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
   /opt/ros/humble/include/tracetools/tracetools/config.h \
   /opt/ros/humble/include/tracetools/tracetools/tracetools.h \
   /opt/ros/humble/include/tracetools/tracetools/utils.hpp \
@@ -4736,8 +4740,8 @@ CMakeFiles/controller_node.dir/src/controllers/regulated_pure_pursuit_controller
   /opt/ros/humble/include/tf2/tf2/utils.hpp \
   /opt/ros/humble/include/tf2/tf2/visibility_control.h \
   /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
   /opt/ros/humble/include/tracetools/tracetools/config.h \
   /opt/ros/humble/include/tracetools/tracetools/tracetools.h \
   /opt/ros/humble/include/tracetools/tracetools/utils.hpp \
@@ -5543,8 +5547,8 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
   /opt/ros/humble/include/tf2/tf2/utils.hpp \
   /opt/ros/humble/include/tf2/tf2/visibility_control.h \
   /opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
   /opt/ros/humble/include/tracetools/tracetools/config.h \
   /opt/ros/humble/include/tracetools/tracetools/tracetools.h \
   /opt/ros/humble/include/tracetools/tracetools/utils.hpp \
@@ -6143,8 +6147,6 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 
 /usr/include/c++/11/set:
 
-/usr/include/c++/11/pstl/glue_memory_defs.h:
-
 /usr/include/c++/11/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/11/optional:
@@ -6196,6 +6198,10 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 /usr/include/c++/11/cxxabi.h:
 
 /usr/include/c++/11/cwctype:
+
+/usr/include/c++/11/cwchar:
+
+/usr/include/c++/11/ctime:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
 
@@ -6300,6 +6306,8 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance_stamped__builder.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
 
@@ -6603,6 +6611,8 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp:
 
+/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:
+
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
@@ -6634,6 +6644,8 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__struct.hpp:
 
@@ -6678,6 +6690,10 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 /usr/include/c++/11/cerrno:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces/include/path_manager_interfaces/path_manager_interfaces/srv/detail/robot_path__builder.hpp:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp:
 
 /usr/include/c++/11/bits/localefwd.h:
 
@@ -6993,8 +7009,6 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 
 /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
 
-/opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h:
-
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/transition.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
@@ -7012,8 +7026,6 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 /opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
 
 /opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/visibility_control.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp:
 
@@ -7122,10 +7134,6 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/controllers/regulated_pure_pursuit_controller.cpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
-
-/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
 
@@ -7583,11 +7591,15 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp:
 
-/opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.h:
+/opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.hpp:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp:
 
-/opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp:
 
 /opt/ros/humble/include/tracetools/tracetools/tracetools.h:
 
@@ -7598,8 +7610,6 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 /opt/ros/humble/include/tracetools/tracetools/utils.hpp:
 
 /usr/include/alloca.h:
-
-/usr/include/c++/11/ctime:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -7760,5 +7770,3 @@ CMakeFiles/controller_node.dir/src/controllers/stanley_ctrl.cpp.o: /home/rhobtor
 /usr/include/c++/11/cstdio:
 
 /usr/include/c++/11/cstring:
-
-/usr/include/c++/11/cwchar:

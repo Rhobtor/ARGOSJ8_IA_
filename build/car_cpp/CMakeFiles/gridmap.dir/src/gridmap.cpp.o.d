@@ -975,8 +975,9 @@ CMakeFiles/gridmap.dir/src/gridmap.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__traits.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__type_support.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
  /opt/ros/humble/include/tf2/tf2/buffer_core.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
@@ -1007,10 +1008,10 @@ CMakeFiles/gridmap.dir/src/gridmap.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
  /opt/ros/humble/include/tf2/tf2/transform_datatypes.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
  /opt/ros/humble/include/tf2/tf2/convert.hpp \
  /opt/ros/humble/include/tf2/tf2/impl/convert.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/frame_graph.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__struct.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__builder.hpp \
@@ -1018,6 +1019,7 @@ CMakeFiles/gridmap.dir/src/gridmap.cpp.o: \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp \

@@ -17,6 +17,7 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_lifecycle REQUIRED)
 find_package(lifecycle_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(std_srvs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(Boost REQUIRED)
 find_package(tf2 REQUIRED)
@@ -45,6 +46,7 @@ ament_target_dependencies(ctl_mission
   "lifecycle_msgs"
   "rclcpp_lifecycle"
   "std_msgs"
+  "std_srvs"
   "sensor_msgs"
   "Boost"
   "tf2"
@@ -102,6 +104,7 @@ ament_target_dependencies( teleoperation_node
 "lifecycle_msgs"
 "rclcpp_lifecycle"
 "std_msgs"
+"std_srvs"
 "sensor_msgs"
 "Boost"
 "tf2"
@@ -130,6 +133,7 @@ ament_target_dependencies( ready_node
 "lifecycle_msgs"
 "rclcpp_lifecycle"
 "std_msgs"
+"std_srvs"
 "sensor_msgs"
 "Boost"
 "tf2"
@@ -181,6 +185,7 @@ foreach(EXECUTABLE ${OTHER_EXECUTABLES})
     "lifecycle_msgs"
     "rclcpp_lifecycle"
     "std_msgs"
+    "std_srvs"
     "sensor_msgs"
     "Boost"
     "tf2"

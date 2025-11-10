@@ -484,11 +484,13 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__type_support.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/static_transform_broadcaster.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/static_transform_broadcaster.hpp \
   /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h \
-  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.hpp \
+  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
   /opt/ros/humble/include/tracetools/tracetools/config.h \
   /opt/ros/humble/include/tracetools/tracetools/tracetools.h \
   /opt/ros/humble/include/tracetools/tracetools/utils.hpp \
@@ -4239,7 +4241,11 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 
 /usr/include/c++/11/bits/node_handle.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
+/usr/include/c++/11/bits/move.h:
+
+/usr/include/c++/11/streambuf:
+
+/usr/include/c++/11/bits/memoryfwd.h:
 
 /usr/include/gazebo-11/gazebo/msgs/joint.pb.h:
 
@@ -4270,6 +4276,8 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 /usr/include/boost/date_time/posix_time/time_period.hpp:
 
 /usr/include/boost/date_time/posix_time/posix_time_system.hpp:
+
+/usr/include/boost/predef/library/c/_prefix.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
@@ -4678,8 +4686,6 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp:
 
 /opt/ros/humble/include/tracetools/tracetools/tracetools.h:
-
-/opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h:
 
@@ -5151,6 +5157,8 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
+/opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp:
+
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:
 
 /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
@@ -5172,10 +5180,6 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__builder.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
-
-/usr/include/boost/predef/library/c/_prefix.h:
-
-/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
 
@@ -5443,6 +5447,10 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 
 /usr/include/boost/move/adl_move_swap.hpp:
 
+/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp:
+
+/usr/include/boost/predef/architecture/ppc.h:
+
 /usr/include/boost/atomic/detail/extra_ops_generic.hpp:
 
 /usr/include/ignition/msgs5/ignition/msgs/model_configuration.pb.h:
@@ -5676,6 +5684,8 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 /usr/include/boost/atomic/detail/fp_ops_generic.hpp:
 
 /usr/include/boost/atomic/detail/link.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.hpp:
 
 /usr/include/ignition/msgs5/ignition/msgs/Export.hh:
 
@@ -5967,10 +5977,6 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 
 /usr/include/boost/shared_ptr.hpp:
 
-/usr/include/c++/11/bits/shared_ptr.h:
-
-/usr/include/boost/detail/workaround.hpp:
-
 /usr/include/boost/bind/mem_fn.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
@@ -6086,8 +6092,6 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 /usr/include/boost/predef/library/std/roguewave.h:
 
 /usr/include/boost/config/no_tr1/memory.hpp:
-
-/usr/include/c++/11/bits/move.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
@@ -6593,6 +6597,12 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 
 /usr/include/boost/type_traits/remove_extent.hpp:
 
+/usr/include/c++/11/bits/shared_ptr.h:
+
+/usr/include/boost/detail/workaround.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
+
 /usr/include/boost/exception/detail/clone_current_exception.hpp:
 
 /usr/include/boost/smart_ptr/make_shared.hpp:
@@ -6806,10 +6816,6 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 /usr/include/boost/move/detail/config_end.hpp:
 
 /usr/include/boost/move/detail/iterator_to_raw_pointer.hpp:
-
-/usr/include/c++/11/streambuf:
-
-/usr/include/c++/11/bits/memoryfwd.h:
 
 /usr/include/boost/move/detail/meta_utils.hpp:
 
@@ -7189,8 +7195,6 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 
 /usr/include/boost/predef/architecture/arm.h:
 
-/usr/include/boost/predef/architecture/ppc.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
 
 /usr/include/boost/predef/architecture/ptx.h:
@@ -7402,6 +7406,8 @@ CMakeFiles/gazebo_ros_fixposition_plugin.dir/src/gazebo_ros_fixposition.cpp.o: /
 /usr/include/boost/predef/platform/mingw64.h:
 
 /usr/include/boost/thread/pthread/once_atomic.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/static_transform_broadcaster.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
 

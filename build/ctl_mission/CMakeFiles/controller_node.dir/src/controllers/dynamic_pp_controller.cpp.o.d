@@ -342,14 +342,14 @@ CMakeFiles/controller_node.dir/src/controllers/dynamic_pp_controller.cpp.o: \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
- /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp \
  /usr/include/c++/11/future /usr/include/c++/11/mutex \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /usr/include/c++/11/condition_variable /usr/include/c++/11/atomic \
  /usr/include/c++/11/bits/atomic_futex.h \
  /usr/include/c++/11/bits/std_thread.h \
- /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
+ /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.hpp \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \

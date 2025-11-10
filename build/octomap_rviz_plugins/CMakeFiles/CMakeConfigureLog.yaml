@@ -7,7 +7,7 @@ events:
       - "/opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 6.8.0-65-generic - x86_64
+      The system is: Linux - 6.8.0-85-generic - x86_64
   -
     kind: "message-v1"
     backtrace:
@@ -61,8 +61,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-FkF9Gg"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-FkF9Gg"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-nPmltL"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-nPmltL"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -70,25 +70,25 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-FkF9Gg'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-nPmltL'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_caa58/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_caa58.dir/build.make CMakeFiles/cmTC_caa58.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-FkF9Gg'
-        Building C object CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4ae04/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4ae04.dir/build.make CMakeFiles/cmTC_4ae04.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-nPmltL'
+        Building C object CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
         OFFLOAD_TARGET_DEFAULT=1
         Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
-        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_caa58.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_caa58.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccPFJCK9.s
-        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4ae04.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4ae04.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccPSIVHJ.s
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -102,36 +102,36 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_caa58.dir/'
-         as -v --64 -o CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o /tmp/ccPFJCK9.s
+        Compiler executable checksum: 4011c2103cba78949d7e02d0f0047a3d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4ae04.dir/'
+         as -v --64 -o CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o /tmp/ccPSIVHJ.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_caa58
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_caa58.dir/link.txt --verbose=1
-        /usr/bin/cc  -v CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o -o cmTC_caa58 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_4ae04
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ae04.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o -o cmTC_4ae04 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
         OFFLOAD_TARGET_DEFAULT=1
         Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
-        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_caa58' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_caa58.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6Jpy1M.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_caa58 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_caa58' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_caa58.'
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-FkF9Gg'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4ae04' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4ae04.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUrnw2z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4ae04 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4ae04' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4ae04.'
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-nPmltL'
         
       exitCode: 0
   -
@@ -165,25 +165,25 @@ events:
     message: |
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-FkF9Gg']
+        ignore line: [Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-nPmltL']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_caa58/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_caa58.dir/build.make CMakeFiles/cmTC_caa58.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-FkF9Gg']
-        ignore line: [Building C object CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4ae04/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_4ae04.dir/build.make CMakeFiles/cmTC_4ae04.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-nPmltL']
+        ignore line: [Building C object CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
         ignore line: [OFFLOAD_TARGET_DEFAULT=1]
         ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_caa58.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_caa58.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccPFJCK9.s]
-        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4ae04.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4ae04.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccPSIVHJ.s]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -197,39 +197,39 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_caa58.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o /tmp/ccPFJCK9.s]
+        ignore line: [Compiler executable checksum: 4011c2103cba78949d7e02d0f0047a3d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4ae04.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o /tmp/ccPSIVHJ.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_caa58]
-        ignore line: [/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_caa58.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o -o cmTC_caa58 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_4ae04]
+        ignore line: [/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ae04.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o -o cmTC_4ae04 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
         ignore line: [OFFLOAD_TARGET_DEFAULT=1]
         ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_caa58' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_caa58.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6Jpy1M.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_caa58 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4ae04' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4ae04.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUrnw2z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4ae04 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc6Jpy1M.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccUrnw2z.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -247,7 +247,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_caa58] ==> ignore
+          arg [cmTC_4ae04] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -259,7 +259,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-          arg [CMakeFiles/cmTC_caa58.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_4ae04.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -299,8 +299,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-Yw0Ea9"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-Yw0Ea9"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-updkcq"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-updkcq"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -308,25 +308,25 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-Yw0Ea9'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-updkcq'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_20491/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_20491.dir/build.make CMakeFiles/cmTC_20491.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-Yw0Ea9'
-        Building CXX object CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_282b1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_282b1.dir/build.make CMakeFiles/cmTC_282b1.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-updkcq'
+        Building CXX object CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
         OFFLOAD_TARGET_DEFAULT=1
         Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
-        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20491.dir/'
-         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_20491.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc6DjTFI.s
-        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_282b1.dir/'
+         /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_282b1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccQ9bNdD.s
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
@@ -344,36 +344,36 @@ events:
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+        GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)
         	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
         
         GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20491.dir/'
-         as -v --64 -o CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6DjTFI.s
+        Compiler executable checksum: 6c87588fc345655b93b8c25f48f88886
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_282b1.dir/'
+         as -v --64 -o CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccQ9bNdD.s
         GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_20491
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20491.dir/link.txt --verbose=1
-        /usr/bin/c++  -v CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_20491 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_282b1
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_282b1.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_282b1 
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
         OFFLOAD_TARGET_DEFAULT=1
         Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
-        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+        gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_20491' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_20491.'
-         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuIVdrh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_20491 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_20491' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_20491.'
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-Yw0Ea9'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_282b1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_282b1.'
+         /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8qIiud.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_282b1 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_282b1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_282b1.'
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-updkcq'
         
       exitCode: 0
   -
@@ -413,25 +413,25 @@ events:
     message: |
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
-        ignore line: [Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-Yw0Ea9']
+        ignore line: [Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-updkcq']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_20491/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_20491.dir/build.make CMakeFiles/cmTC_20491.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-Yw0Ea9']
-        ignore line: [Building CXX object CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_282b1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_282b1.dir/build.make CMakeFiles/cmTC_282b1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-updkcq']
+        ignore line: [Building CXX object CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o -c /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
         ignore line: [OFFLOAD_TARGET_DEFAULT=1]
         ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20491.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_20491.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc6DjTFI.s]
-        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_282b1.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/st/stm32cubeclt_1.18.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_282b1.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccQ9bNdD.s]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
@@ -449,39 +449,39 @@ events:
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+        ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04.2) version 11.4.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
         ignore line: []
         ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20491.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6DjTFI.s]
+        ignore line: [Compiler executable checksum: 6c87588fc345655b93b8c25f48f88886]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_282b1.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccQ9bNdD.s]
         ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_20491]
-        ignore line: [/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20491.dir/link.txt --verbose=1]
-        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_20491 ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_282b1]
+        ignore line: [/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_282b1.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_282b1 ]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
         ignore line: [OFFLOAD_TARGET_DEFAULT=1]
         ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04.2' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-2Y5pKs/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+        ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04.2) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_20491' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_20491.']
-        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuIVdrh.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_20491 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_282b1' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_282b1.']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8qIiud.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_282b1 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccuIVdrh.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc8qIiud.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -499,7 +499,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_20491] ==> ignore
+          arg [cmTC_282b1] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
@@ -511,7 +511,7 @@ events:
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
           arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
-          arg [CMakeFiles/cmTC_20491.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_282b1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -559,8 +559,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-VmsOU2"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-VmsOU2"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-62FGxD"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-62FGxD"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -569,17 +569,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-VmsOU2'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-62FGxD'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_788e6/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_788e6.dir/build.make CMakeFiles/cmTC_788e6.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-VmsOU2'
-        Building C object CMakeFiles/cmTC_788e6.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_788e6.dir/src.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-VmsOU2/src.c
-        Linking C executable cmTC_788e6
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_788e6.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_788e6.dir/src.c.o -o cmTC_788e6 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-VmsOU2'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_43c68/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_43c68.dir/build.make CMakeFiles/cmTC_43c68.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-62FGxD'
+        Building C object CMakeFiles/cmTC_43c68.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_43c68.dir/src.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-62FGxD/src.c
+        Linking C executable cmTC_43c68
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43c68.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_43c68.dir/src.c.o -o cmTC_43c68 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-62FGxD'
         
       exitCode: 0
   -
@@ -598,8 +598,8 @@ events:
     checks:
       - "Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-hu92cH"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-hu92cH"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-KZ56AN"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-KZ56AN"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -608,17 +608,17 @@ events:
       variable: "X11_LIB_X11_SOLO"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-hu92cH'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-KZ56AN'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9deec/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_9deec.dir/build.make CMakeFiles/cmTC_9deec.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-hu92cH'
-        Building C object CMakeFiles/cmTC_9deec.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_9deec.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-hu92cH/CheckFunctionExists.c
-        Linking C executable cmTC_9deec
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9deec.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_9deec.dir/CheckFunctionExists.c.o -o cmTC_9deec  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-hu92cH'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_83c57/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_83c57.dir/build.make CMakeFiles/cmTC_83c57.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-KZ56AN'
+        Building C object CMakeFiles/cmTC_83c57.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_83c57.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-KZ56AN/CheckFunctionExists.c
+        Linking C executable cmTC_83c57
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83c57.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_83c57.dir/CheckFunctionExists.c.o -o cmTC_83c57  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-KZ56AN'
         
       exitCode: 0
   -
@@ -637,8 +637,8 @@ events:
     checks:
       - "Looking for gethostbyname"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-EsINDM"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-EsINDM"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kWh2ZM"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kWh2ZM"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -647,17 +647,17 @@ events:
       variable: "CMAKE_HAVE_GETHOSTBYNAME"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-EsINDM'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kWh2ZM'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6a26/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_b6a26.dir/build.make CMakeFiles/cmTC_b6a26.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-EsINDM'
-        Building C object CMakeFiles/cmTC_b6a26.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_b6a26.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-EsINDM/CheckFunctionExists.c
-        Linking C executable cmTC_b6a26
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6a26.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_b6a26.dir/CheckFunctionExists.c.o -o cmTC_b6a26 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-EsINDM'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8f891/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8f891.dir/build.make CMakeFiles/cmTC_8f891.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kWh2ZM'
+        Building C object CMakeFiles/cmTC_8f891.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_8f891.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kWh2ZM/CheckFunctionExists.c
+        Linking C executable cmTC_8f891
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f891.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_8f891.dir/CheckFunctionExists.c.o -o cmTC_8f891 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kWh2ZM'
         
       exitCode: 0
   -
@@ -676,8 +676,8 @@ events:
     checks:
       - "Looking for connect"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-DKGWw0"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-DKGWw0"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-N5WqUl"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-N5WqUl"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -686,17 +686,17 @@ events:
       variable: "CMAKE_HAVE_CONNECT"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-DKGWw0'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-N5WqUl'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_10ae3/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_10ae3.dir/build.make CMakeFiles/cmTC_10ae3.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-DKGWw0'
-        Building C object CMakeFiles/cmTC_10ae3.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_10ae3.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-DKGWw0/CheckFunctionExists.c
-        Linking C executable cmTC_10ae3
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10ae3.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_10ae3.dir/CheckFunctionExists.c.o -o cmTC_10ae3 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-DKGWw0'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_887e9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_887e9.dir/build.make CMakeFiles/cmTC_887e9.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-N5WqUl'
+        Building C object CMakeFiles/cmTC_887e9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_887e9.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-N5WqUl/CheckFunctionExists.c
+        Linking C executable cmTC_887e9
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_887e9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_887e9.dir/CheckFunctionExists.c.o -o cmTC_887e9 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-N5WqUl'
         
       exitCode: 0
   -
@@ -715,8 +715,8 @@ events:
     checks:
       - "Looking for remove"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-sXvwwL"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-sXvwwL"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kH1mqT"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kH1mqT"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -725,17 +725,17 @@ events:
       variable: "CMAKE_HAVE_REMOVE"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-sXvwwL'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kH1mqT'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df9ec/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_df9ec.dir/build.make CMakeFiles/cmTC_df9ec.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-sXvwwL'
-        Building C object CMakeFiles/cmTC_df9ec.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_df9ec.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-sXvwwL/CheckFunctionExists.c
-        Linking C executable cmTC_df9ec
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df9ec.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_df9ec.dir/CheckFunctionExists.c.o -o cmTC_df9ec 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-sXvwwL'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e98c9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e98c9.dir/build.make CMakeFiles/cmTC_e98c9.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kH1mqT'
+        Building C object CMakeFiles/cmTC_e98c9.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_e98c9.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kH1mqT/CheckFunctionExists.c
+        Linking C executable cmTC_e98c9
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e98c9.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_e98c9.dir/CheckFunctionExists.c.o -o cmTC_e98c9 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-kH1mqT'
         
       exitCode: 0
   -
@@ -754,8 +754,8 @@ events:
     checks:
       - "Looking for shmat"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-zFN6x6"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-zFN6x6"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-6hIO0M"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-6hIO0M"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -764,17 +764,17 @@ events:
       variable: "CMAKE_HAVE_SHMAT"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-zFN6x6'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-6hIO0M'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6e59c/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_6e59c.dir/build.make CMakeFiles/cmTC_6e59c.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-zFN6x6'
-        Building C object CMakeFiles/cmTC_6e59c.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_6e59c.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-zFN6x6/CheckFunctionExists.c
-        Linking C executable cmTC_6e59c
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e59c.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_6e59c.dir/CheckFunctionExists.c.o -o cmTC_6e59c 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-zFN6x6'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_341b6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_341b6.dir/build.make CMakeFiles/cmTC_341b6.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-6hIO0M'
+        Building C object CMakeFiles/cmTC_341b6.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_341b6.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-6hIO0M/CheckFunctionExists.c
+        Linking C executable cmTC_341b6
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_341b6.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_341b6.dir/CheckFunctionExists.c.o -o cmTC_341b6 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-6hIO0M'
         
       exitCode: 0
   -
@@ -793,8 +793,8 @@ events:
     checks:
       - "Looking for IceConnectionNumber in ICE"
     directories:
-      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-8oXuYL"
-      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-8oXuYL"
+      source: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-iy5zae"
+      binary: "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-iy5zae"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -803,17 +803,17 @@ events:
       variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
       cached: true
       stdout: |
-        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-8oXuYL'
+        Change Dir: '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-iy5zae'
         
-        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eaf21/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_eaf21.dir/build.make CMakeFiles/cmTC_eaf21.dir/build
-        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-8oXuYL'
-        Building C object CMakeFiles/cmTC_eaf21.dir/CheckFunctionExists.c.o
-        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_eaf21.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-8oXuYL/CheckFunctionExists.c
-        Linking C executable cmTC_eaf21
-        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eaf21.dir/link.txt --verbose=1
-        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_eaf21.dir/CheckFunctionExists.c.o -o cmTC_eaf21  -lICE 
-        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-8oXuYL'
+        Run Build Command(s): /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_217ea/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_217ea.dir/build.make CMakeFiles/cmTC_217ea.dir/build
+        gmake[1]: Entering directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-iy5zae'
+        Building C object CMakeFiles/cmTC_217ea.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_217ea.dir/CheckFunctionExists.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-iy5zae/CheckFunctionExists.c
+        Linking C executable cmTC_217ea
+        /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_217ea.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_217ea.dir/CheckFunctionExists.c.o -o cmTC_217ea  -lICE 
+        gmake[1]: Leaving directory '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins/CMakeFiles/CMakeScratch/TryCompile-iy5zae'
         
       exitCode: 0
 ...

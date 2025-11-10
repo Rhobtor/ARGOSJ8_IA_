@@ -12,7 +12,7 @@ public:
   {
     // Declarar parámetro para el umbral de llegada al goal (en metros)
     // this->declare_parameter("goal_threshold", 3.0);
-    this->declare_parameter("goal_threshold_xy", 3.5);   // antes: goal_threshold
+    this->declare_parameter("goal_threshold_xy", 4.5);   // antes: goal_threshold
     this->declare_parameter("goal_threshold_z",  6.0);  // tolerancia vertical
     tol_xy_ = this->get_parameter("goal_threshold_xy").as_double();
     tol_z_  = this->get_parameter("goal_threshold_z").as_double();
@@ -25,7 +25,7 @@ public:
 
     // Suscripción al topic "odom" (nav_msgs/Odometry)
     odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "/ARGJ801/odom_demo", 10,
+      "/fixposition/odometry", 10,
       std::bind(&GoalReachedNode::odomCallback, this, std::placeholders::_1));
 
     // Publicador en el topic "goal_reached" (Bool)
@@ -62,9 +62,9 @@ private:
     odom_pose_ = msg->pose.pose;
     odom_received_ = true;
     RCLCPP_DEBUG(this->get_logger(), "Odom recibido: [%.2f, %.2f, %.2f]",
+                 odom_pose_.position.z,
                  odom_pose_.position.x,
-                 odom_pose_.position.y,
-                 odom_pose_.position.z);
+                 odom_pose_.position.y);
   }
 
   // Loop de control: compara la posición actual (odom) con el goal
@@ -75,16 +75,16 @@ private:
       return;
     }
 
-    double robot_x = odom_pose_.position.x;
-    double robot_y = odom_pose_.position.y;
-    double robot_z = odom_pose_.position.z;
+    double robot_x = odom_pose_.position.z;
+    double robot_y = odom_pose_.position.x;
+    double robot_z = odom_pose_.position.y;
 
     double goal_x = goal_pose_.position.x;
     double goal_y = goal_pose_.position.y;
     double goal_z = goal_pose_.position.z;
 
     double dx = goal_x - robot_x;
-    double dy = goal_y - robot_y;
+    double dy = goal_y - (-1*(robot_y));
     double dz = goal_z - robot_z;
     double distance = std::sqrt(dx * dx + dy * dy + dz * dz);
 

@@ -1,0 +1,46 @@
+[3.969s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/ntrip_client': PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ntrip_client build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/install.log --single-version-externally-managed install_data
+[4.341s] /home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[4.341s]   warnings.warn(msg)
+[4.341s] /home/rhobtor/.local/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+[4.342s] !!
+[4.342s] 
+[4.342s]         ********************************************************************************
+[4.342s]         Please consider removing the following classifiers in favor of a SPDX license expression:
+[4.342s] 
+[4.342s]         License :: OSI Approved :: MIT Software License
+[4.342s] 
+[4.342s]         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+[4.342s]         ********************************************************************************
+[4.342s] 
+[4.342s] !!
+[4.342s]   self._finalize_license_expression()
+[4.383s] running egg_info
+[4.405s] writing ../../../build/ntrip_client/ntrip_client.egg-info/PKG-INFO
+[4.406s] writing dependency_links to ../../../build/ntrip_client/ntrip_client.egg-info/dependency_links.txt
+[4.406s] writing requirements to ../../../build/ntrip_client/ntrip_client.egg-info/requires.txt
+[4.407s] writing top-level names to ../../../build/ntrip_client/ntrip_client.egg-info/top_level.txt
+[4.462s] reading manifest file '../../../build/ntrip_client/ntrip_client.egg-info/SOURCES.txt'
+[4.462s] adding license file 'LICENSE'
+[4.463s] writing manifest file '../../../build/ntrip_client/ntrip_client.egg-info/SOURCES.txt'
+[4.464s] running build
+[4.465s] running build_py
+[4.465s] copying src/ntrip_client/ntrip_client.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/build/lib/ntrip_client
+[4.466s] copying src/ntrip_client/rtcm_parser.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/build/lib/ntrip_client
+[4.466s] copying src/ntrip_client/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/build/lib/ntrip_client
+[4.467s] copying src/ntrip_client/nmea_parser.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/build/lib/ntrip_client
+[4.468s] running build_scripts
+[4.468s] running install
+[4.471s] running install_lib
+[4.488s] running install_data
+[4.489s] copying resource/ntrip_client -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client/share/ament_index/resource_index/packages
+[4.489s] copying package.xml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client/share/ntrip_client
+[4.490s] copying launch/gps_ntrip_launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client/share/ntrip_client
+[4.490s] copying launch/ntrip_client_launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client/share/ntrip_client
+[4.490s] running install_egg_info
+[4.511s] removing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client/lib/python3.10/site-packages/ntrip_client-1.2.0-py3.10.egg-info' (and everything under it)
+[4.511s] Copying ../../../build/ntrip_client/ntrip_client.egg-info to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client/lib/python3.10/site-packages/ntrip_client-1.2.0-py3.10.egg-info
+[4.511s] running install_scripts
+[4.529s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/build/scripts-3.10/ntrip_ros.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client/lib/ntrip_client
+[4.529s] changing mode of /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client/lib/ntrip_client/ntrip_ros.py to 775
+[4.533s] writing list of installed files to '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/install.log'
+[4.561s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/ntrip_client' returned '0': PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ntrip_client build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ntrip_client/install.log --single-version-externally-managed install_data
