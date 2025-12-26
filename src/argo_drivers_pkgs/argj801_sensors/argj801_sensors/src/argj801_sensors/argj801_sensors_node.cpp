@@ -1,5 +1,17 @@
 #include "argj801_sensors/argj801_sensors_node.hpp"
 
+// -----------------------------------------------------------------------------
+// Argj801SensorsNode
+// -----------------------------------------------------------------------------
+// Nodo Lifecycle que publica datos de sensores en tópicos ROS a partir de un
+// backend configurable.
+//
+// Flujo principal:
+// - on_configure(): lee parámetros, construye sensores vía Builder y prepara publishers.
+// - on_activate(): arranca el sensor y lanza timers para publicar a rate fijo.
+// - getFastData()/getSlowData(): llama al backend y actualiza diagnósticos.
+// -----------------------------------------------------------------------------
+
 
 /// LifecycleTalker constructor
 /**
@@ -11,10 +23,12 @@ Argj801SensorsNode::Argj801SensorsNode(std::shared_ptr<Builder::SensorBuilder> b
 rclcpp_lifecycle::LifecycleNode("argj08_sensors_node",rclcpp::NodeOptions().use_intra_process_comms(false)), builder(builder){
   this->declare_parameter("lcm_params.lcm_config_file", "argj801_lcm_config_sensors.yaml");
   
+  // Frames usados para rellenar `header.frame_id`.
   this->declare_parameter("robot_frame", "base_link");
   this->declare_parameter("velodyne_frame", "velodyne_link");
   this->declare_parameter("sick_frame", "sick_link");
 
+  // Flags para activar/desactivar streams concretos sin recompilar.
   this->declare_parameter("velodyne", true);
   this->declare_parameter("sick", true);
   this->declare_parameter("left_telemetry", true);
@@ -22,6 +36,7 @@ rclcpp_lifecycle::LifecycleNode("argj08_sensors_node",rclcpp::NodeOptions().use_
   this->declare_parameter("odometer", true);
   this->declare_parameter("twist", true);
   
+  // Parámetros de la cámara (RTSP) cuando se habilita `camera`.
   this->declare_parameter("camera",true);
   this->declare_parameter("camera_url","rtsp://192.168.0.61/axis-media/media.amp?camera=1&streamprofile=Balanced");
   this->declare_parameter("camera_frame","camera_link");
@@ -58,6 +73,8 @@ Argj801SensorsNode::on_configure(const rclcpp_lifecycle::State &)
 
  
   try {
+    // Nota: buildPreviousConfig() se usa para cargar config (LCM o cámara)
+    // antes de construir los objetos concretos.
     if(velodyne || sick || left_motor || right_motor || odometer || twist){
       builder->buildPreviousConfig(lcm_config_file);
     }

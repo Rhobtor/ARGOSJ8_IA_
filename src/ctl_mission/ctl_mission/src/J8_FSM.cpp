@@ -3,10 +3,21 @@
 #include "ctl_mission/J8_FSM.h"
 
 
+// Implementation notes
+// --------------------
+// This file contains the "pure" FSM logic. It has no ROS dependencies.
+// The ROS node (CtlMissionNode) consumes this class to decide whether a
+// requested transition is valid.
+//
+// The transition table is defined once in the constructor.
+// New modes/transitions should be added BOTH in the enums (J8_FSM.h) and here.
+
+
 
 
     J8_FSM::J8_FSM() {
-        // Initialize the transition table
+        // Transition table: (current mode, transition) -> new mode.
+        // This encodes the allowed state diagram.
         transitionTable = {
             {{Mode::Ready, Transition::ReadytoPath}, Mode::PathFollowing},
             {{Mode::PathFollowing, Transition::PathtoReady}, Mode::Ready},
@@ -19,9 +30,14 @@
             {{Mode::RecordPath, Transition::RecordPathtoReady}, Mode::Ready},
             {{Mode::Ready, Transition::AlltoEstop}, Mode::EmergencyStop},
             {{Mode::Ready, Transition::ReadytoFollowZED}, Mode::FollowZED},
-            {{Mode::FollowZED, Transition::FollowZEDtoReady}, Mode::Ready}
+            {{Mode::FollowZED, Transition::FollowZEDtoReady}, Mode::Ready},
+
+            // MPPI/SAC relay mode
+            {{Mode::Ready, Transition::ReadytoMppiSac}, Mode::MppiSac},
+            {{Mode::MppiSac, Transition::MppiSactoReady}, Mode::Ready}
             // ... other transitions
         };
+        // Start always in Ready.
         init_FSM();
     }
 
@@ -34,7 +50,8 @@
     }
 
 Mode J8_FSM::Finite_Machine_State(Transition transition) {
-    // Handle Emergency Stop transition separately
+    // Emergency Stop is modelled as a global transition.
+    // Note that CtlMissionNode additionally performs the actual lifecycle actions.
     if (transition == Transition::AlltoEstop) {
         current_mode = Mode::EmergencyStop;
     } else {
@@ -46,13 +63,17 @@ Mode J8_FSM::Finite_Machine_State(Transition transition) {
             // Transition found in the table, update the mode
             current_mode = it->second;
         } else {
-            // Transition not found, you can handle this case appropriately
-            // For example, log a warning or keep the current mode unchanged
+            // Transition not found => invalid request.
+            // We intentionally keep the mode unchanged.
         }
     }
     return current_mode;
 }
 std::vector<int> J8_FSM::get_possible_transitions() const {
+    // Contract used by both the GUI and scripts:
+    // - Size: NumberOfModes
+    // - Index: target Mode
+    // - Value: Transition id to go from current_mode -> target Mode (or -1)
     std::vector<int> possible_transitions(static_cast<int>(Mode::NumberOfModes), -1);
 
     for (const auto& entry : transitionTable) {
@@ -63,7 +84,8 @@ std::vector<int> J8_FSM::get_possible_transitions() const {
         }
     }
 
-    // Always add the transition to EmergencyStop
+    // Always add the transition to EmergencyStop.
+    // This makes E-Stop always visible/actionable regardless of current mode.
     int emergency_stop_index = static_cast<int>(Mode::EmergencyStop);
     possible_transitions[emergency_stop_index] = static_cast<int>(Transition::AlltoEstop);
 

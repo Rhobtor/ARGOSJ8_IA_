@@ -151,6 +151,19 @@ install(TARGETS
 )
 
 
+add_executable(voxel_grid_node src/voxel_grid_node.cpp)
+ament_target_dependencies(voxel_grid_node
+  rclcpp
+  sensor_msgs
+  tf2
+  tf2_ros
+  tf2_geometry_msgs
+)
+
+install(TARGETS voxel_grid_node
+  DESTINATION lib/${PROJECT_NAME})
+
+
 add_executable(gridmap src/gridmap.cpp)
 ament_target_dependencies(gridmap
   rclcpp

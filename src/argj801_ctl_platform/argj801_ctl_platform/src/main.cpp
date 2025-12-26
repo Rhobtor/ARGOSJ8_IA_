@@ -3,6 +3,15 @@
 #include "rclcpp_lifecycle/lifecycle_node.hpp"
 #include "argj801_ctl_platform/argj801_ctl_platform_node.hpp"
 
+// Entry-point del paquete `argj801_ctl_platform`.
+//
+// Aquí se construye el `CtlPlatformNode` (LifecycleNode) y se ejecuta dentro de
+// un `MultiThreadedExecutor`.
+//
+// El handler de SIGINT fuerza una transición ordenada del lifecycle:
+// deactivate -> cleanup -> shutdown, para minimizar efectos indeseados (por
+// ejemplo, dejar actuadores con el último comando válido).
+
 std::shared_ptr<CtlPlatformNode> node;
 
 void sigintHandler(int signal)

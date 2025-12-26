@@ -1,3 +1,28 @@
+"""argj801_setup.launch.J8_launch
+
+Launch principal del sistema ARGJ801.
+
+Este fichero define el *orquestador* de arranque del stack ROS 2 del rover/simulador.
+Su objetivo es:
+
+- Cargar una configuración única (`config/J8_params.yaml`) y repartirla a los nodos.
+- Lanzar un conjunto de nodos (muchos de ellos *LifecycleNodes*) bajo el namespace `ARGJ801`.
+- Gestionar una secuencia de transición de lifecycle (configure/activate) de forma diferida
+    para evitar carreras durante el arranque.
+
+Notas importantes:
+
+- Namespace: se usa `ARGJ801` de forma fija en este launch. Si en el futuro se quiere
+    soportar múltiples rovers, lo ideal es convertirlo en argumento de launch.
+- Lifecycle: algunos nodos se configuran siempre, pero sólo unos pocos se activan
+    automáticamente en `nodes_to_activate`.
+- Modo operación plataforma: el nodo `argj801_ctrl_platform_node` se crea mediante
+    `OpaqueFunction` para poder calcular `operation_mode` en runtime según el argumento
+    `robot` (robot real vs simulación).
+
+Este archivo *no* contiene lógica de control del rover; únicamente describe el arranque.
+"""
+
 import os
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, EmitEvent, LogInfo, TimerAction, GroupAction, OpaqueFunction
@@ -11,6 +36,14 @@ from launch_ros.events.lifecycle import ChangeState
 import yaml
 
 def load_yaml(file_path):
+    """Carga un YAML desde disco.
+
+    Args:
+        file_path: ruta absoluta al fichero YAML.
+
+    Returns:
+        Diccionario Python con el contenido del YAML.
+    """
     with open(file_path, 'r') as file:
         return yaml.safe_load(file)
 
@@ -29,10 +62,22 @@ def generate_launch_description():
 
     # Function to select appropriate parameters
     def select_params(node_name):
+        """Selecciona la sección de parámetros de un nodo.
+
+        En `J8_params.yaml` cada nodo tiene un bloque opcional con su nombre.
+        Si no existe, se devuelve `{}` para no romper el launch.
+        """
         return yaml_config['ARGJ801'].get(node_name, {})
 
     # Function to set operation_mode parameter
     def get_ctrl_plataform_node(context):
+        """Crea el LifecycleNode de plataforma calculando el modo de operación.
+
+        - operation_mode = 1: robot real (argumento `robot:=true`)
+        - operation_mode = 2: simulación / entorno no-robot
+
+        Se usa OpaqueFunction para poder leer el LaunchConfiguration ya resuelto.
+        """
         robot = LaunchConfiguration('robot').perform(context)
         operation_mode = 1 if robot == 'true' else 2
         ctrlPlataformNode = LifecycleNode(
@@ -40,7 +85,8 @@ def generate_launch_description():
             parameters=[global_params, select_params('argj801_ctrl_platform_node'), {'operation_mode': operation_mode}]
         )
 
-        # Add ctrlPlataformNode to config and activate events
+        # Añadimos también su configuración/activación a las listas globales.
+        # Nota: estas acciones se ejecutan más tarde vía TimerAction.
         config_events.append(
             EmitEvent(
                 event=ChangeState(
@@ -59,7 +105,14 @@ def generate_launch_description():
         )
         return [ctrlPlataformNode]
 
-    # Define nodes with conditions to select appropriate parameters
+    # -------------------------------------------------------------------------
+    # Definición de nodos
+    # -------------------------------------------------------------------------
+    # Nota general de diseño:
+    # - La mayoría son LifecycleNodes (gestionan configure/activate).
+    # - Se ejecutan bajo el namespace `ARGJ801` para que el GUI y el resto del
+    #   sistema trabajen con nombres como `/ARGJ801/fsm_mode`, etc.
+    # - Los parámetros se componen como [global_params, params_del_nodo].
     controlmissionNode = LifecycleNode(
         package='ctl_mission', executable='ctl_mission', name='ctl_mission_node', namespace='ARGJ801', output='screen', parameters=[global_params])
     controllerNode = LifecycleNode(
@@ -114,7 +167,14 @@ def generate_launch_description():
         package='GUI_pkg', executable='gui_node', name='gui_node', namespace='ARGJ801', output='screen',
         parameters=[global_params])
 
-    # Configuration and activation events
+    # -------------------------------------------------------------------------
+    # Secuencia de lifecycle: configurar y activar con delays
+    # -------------------------------------------------------------------------
+    # Usamos dos listas de eventos:
+    # - config_events: Transition.TRANSITION_CONFIGURE
+    # - activate_events: Transition.TRANSITION_ACTIVATE
+    # y las lanzamos con TimerAction (5s y 10s). Esto evita que algunos nodos
+    # empiecen a trabajar antes de que existan sus dependencias/TF/topics.
     global config_events, activate_events
     config_events = []
     activate_events = []
@@ -150,33 +210,35 @@ def generate_launch_description():
             )
         )
 
-    # Adding nodes to launch description based on conditions
+    # -------------------------------------------------------------------------
+    # Alta de acciones al LaunchDescription
+    # -------------------------------------------------------------------------
     ld.add_action(LogInfo(condition=IfCondition(LaunchConfiguration('simulator')), msg="Launching simulator nodes"))
     ld.add_action(LogInfo(condition=IfCondition(LaunchConfiguration('robot')), msg="Launching robot nodes"))
     ld.add_action(LogInfo(condition=IfCondition(LaunchConfiguration('use_gui')), msg="Launching GUI node"))
 
-    # Common nodes
+    # Nodos comunes (se lanzan siempre; su activación depende de los eventos)
     for node in [controlmissionNode, controllerNode, pathfollowingNode, teleoperationNode, pathRecordNode, readyNode,followZEDNode, estopNode, backhomeNode, pathManagerNode, securityCheckNode, MPCPlannerNode, android_server_node, laser_segmentation_node]:
         ld.add_action(node)
 
-    # Robot-specific nodes
+    # Nodos exclusivos de robot real (sensores/TF/hardware)
     robot_specific_nodes = [fixpositionDriverNode, tf_node_velodyne, tf_node_sick, argj801_sensors]
     for node in robot_specific_nodes:
         ld.add_action(GroupAction(actions=[node], condition=IfCondition(LaunchConfiguration('robot'))))
 
-    # Simulator-specific nodes
+    # Nodos exclusivos de simulación
     simulator_specific_nodes = [joystickNode]
     for node in simulator_specific_nodes:
         ld.add_action(GroupAction(actions=[node], condition=IfCondition(LaunchConfiguration('simulator'))))
 
-    # GUI node
+    # GUI legacy (GUI_pkg). Nota: el proyecto también contiene `j8_gui`.
     ld.add_action(GroupAction(actions=[gui_node], condition=IfCondition(LaunchConfiguration('use_gui'))))
 
-    # Delayed configuration and activation
+    # Disparo diferido de lifecycle (configure/activate)
     ld.add_action(TimerAction(period=5.0, actions=config_events))
     ld.add_action(TimerAction(period=10.0, actions=activate_events))
 
-    # Add the ctrlPlataformNode with the correct operation_mode
+    # Añade el nodo de plataforma con operation_mode calculado según `robot`.
     ld.add_action(OpaqueFunction(function=get_ctrl_plataform_node))
 
     return ld

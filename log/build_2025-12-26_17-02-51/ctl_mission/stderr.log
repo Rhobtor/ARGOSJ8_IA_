@@ -1,0 +1,24 @@
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/estop_node.cpp:[m[K In member function ‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn EstopNode::on_deactivate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/estop_node.cpp:69:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstate[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   69 | EstopNode::on_deactivate([01;35m[Kconst rclcpp_lifecycle::State & state[m[K) {
+      |                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/Ctrl_node.cpp:[m[K In member function ‘[01m[Kvoid CtrlNode::configPurePursuit(std::shared_ptr<ctl_mission_interfaces::srv::ConfigPurePursuitCtrl_Request_<std::allocator<void> > >, std::shared_ptr<ctl_mission_interfaces::srv::ConfigPurePursuitCtrl_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/Ctrl_node.cpp:252:87:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  252 | [01;35m[Kptr<ctl_mission_interfaces::srv::ConfigPurePursuitCtrl::Response> response[m[K)
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/Ctrl_node.cpp:[m[K In member function ‘[01m[Kvoid CtrlNode::configRegulatedPure(std::shared_ptr<ctl_mission_interfaces::srv::ConfigRegulatedPureCtrl_Request_<std::allocator<void> > >, std::shared_ptr<ctl_mission_interfaces::srv::ConfigRegulatedPureCtrl_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/Ctrl_node.cpp:261:89:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  261 | [01;35m[Kr<ctl_mission_interfaces::srv::ConfigRegulatedPureCtrl::Response> response[m[K)
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/Ctrl_node.cpp:[m[K In member function ‘[01m[Kvoid CtrlNode::configDynamic(std::shared_ptr<ctl_mission_interfaces::srv::ConfigDynamicPureCtrl_Request_<std::allocator<void> > >, std::shared_ptr<ctl_mission_interfaces::srv::ConfigDynamicPureCtrl_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/Ctrl_node.cpp:270:87:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  270 | [01;35m[Kptr<ctl_mission_interfaces::srv::ConfigDynamicPureCtrl::Response> response[m[K)
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/Ctrl_node.cpp:[m[K In member function ‘[01m[Kvoid CtrlNode::configDynamicLA(std::shared_ptr<ctl_mission_interfaces::srv::ConfigDynamicLAPureCtrl_Request_<std::allocator<void> > >, std::shared_ptr<ctl_mission_interfaces::srv::ConfigDynamicLAPureCtrl_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/Ctrl_node.cpp:279:89:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  279 | [01;35m[Kr<ctl_mission_interfaces::srv::ConfigDynamicLAPureCtrl::Response> response[m[K)
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+

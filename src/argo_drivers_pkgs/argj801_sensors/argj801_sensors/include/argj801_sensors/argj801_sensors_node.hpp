@@ -30,11 +30,36 @@
 
 using namespace std::chrono_literals;
 
+/**
+ * @brief Nodo Lifecycle que publica la telemetría/sensores del rover.
+ *
+ * Este nodo se construye alrededor de un patrón Builder + Visitor:
+ * - `Builder::SensorBuilder` instancia y configura qué sensores están activos
+ *   (lidars, driveline, odómetro, twist, cámara).
+ * - `Sensor` representa el dispositivo/stack que produce datos.
+ * - `Visitor::SensorDataVisitor` visita los objetos de datos y dispara la
+ *   publicación en ROS.
+ *
+ * Contrato ROS (tópicos publicados, relativos al namespace del nodo, p.ej. `/ARGJ801`):
+ * - `velodyne_scan` (sensor_msgs/LaserScan) [si `velodyne`]
+ * - `sick_scan` (sensor_msgs/LaserScan) [si `sick`]
+ * - `left_motor_telemetry`, `right_motor_telemetry` (argj801_sensors_msgs/MotorTelemetry)
+ * - `odometer` (argj801_sensors_msgs/Odometer)
+ * - `twist` (geometry_msgs/TwistStamped)
+ * - `camera_topic` (sensor_msgs/CompressedImage) [si `camera`]
+ *
+ * Parámetros:
+ * - lcm_params.lcm_config_file: YAML para URLs/canales LCM (modo sensores).
+ * - robot_frame / velodyne_frame / sick_frame / camera_frame: frame_id de los mensajes.
+ * - flags bool: velodyne, sick, left_telemetry, right_telemetry, odometer, twist, camera.
+ * - camera_url, camera_topic, image_compression_ratio, resize_image.
+ */
 class Argj801SensorsNode : public rclcpp_lifecycle::LifecycleNode
 {
 private:
 
-  std::unique_ptr<diagnostic_updater::Updater> diagnostic_; //! Object that allows the IMU diagnostic
+  // diagnostic_updater se usa para exponer frecuencia efectiva de publicación.
+  std::unique_ptr<diagnostic_updater::Updater> diagnostic_;
   double lidar_desired_freq_;
   std::unique_ptr<diagnostic_updater::FrequencyStatus> fast_freq_diag_; 
   double drive_line_desired_freq_;
@@ -72,13 +97,16 @@ private:
   std::shared_ptr<rclcpp::Publisher<geometry_msgs::msg::TwistStamped>> twist_publisher;
   rclcpp::Publisher<sensor_msgs::msg::CompressedImage>::SharedPtr camera_publisher;
 
-  rclcpp::TimerBase::SharedPtr lidarTimer; 
-  rclcpp::TimerBase::SharedPtr driveLineTimer; //! Timer to capture calibration data
-  rclcpp::TimerBase::SharedPtr cameraTimer; 
+  // Timers de adquisición. El periodo define el "target rate".
+  rclcpp::TimerBase::SharedPtr lidarTimer;
+  rclcpp::TimerBase::SharedPtr driveLineTimer;
+  rclcpp::TimerBase::SharedPtr cameraTimer;
 
   rclcpp::CallbackGroup::SharedPtr group1;
 
+  /// Datos de alta frecuencia (principalmente lidar/cámara).
   void getFastData();
+  /// Datos de baja frecuencia (driveline/odómetro/twist).
   void getSlowData();
   
 public:

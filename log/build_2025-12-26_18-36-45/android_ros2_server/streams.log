@@ -1,0 +1,27 @@
+[3.287s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/android_ros2_server': PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/android_ros2_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/android_ros2_server build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/android_ros2_server/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/android_ros2_server/install.log --single-version-externally-managed install_data
+[4.014s] /home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[4.018s]   warnings.warn(msg)
+[4.124s] running egg_info
+[4.129s] writing ../../build/android_ros2_server/android_ros2_server.egg-info/PKG-INFO
+[4.129s] writing dependency_links to ../../build/android_ros2_server/android_ros2_server.egg-info/dependency_links.txt
+[4.129s] writing entry points to ../../build/android_ros2_server/android_ros2_server.egg-info/entry_points.txt
+[4.129s] writing requirements to ../../build/android_ros2_server/android_ros2_server.egg-info/requires.txt
+[4.129s] writing top-level names to ../../build/android_ros2_server/android_ros2_server.egg-info/top_level.txt
+[4.130s] reading manifest file '../../build/android_ros2_server/android_ros2_server.egg-info/SOURCES.txt'
+[4.130s] writing manifest file '../../build/android_ros2_server/android_ros2_server.egg-info/SOURCES.txt'
+[4.130s] running build
+[4.130s] running build_py
+[4.131s] copying android_ros2_server/server.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/android_ros2_server/build/lib/android_ros2_server
+[4.131s] copying android_ros2_server/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/android_ros2_server/build/lib/android_ros2_server
+[4.131s] running install
+[4.131s] running install_lib
+[4.134s] running install_data
+[4.134s] copying resource/android_ros2_server -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server/share/ament_index/resource_index/packages
+[4.134s] copying package.xml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server/share/android_ros2_server
+[4.134s] running install_egg_info
+[4.134s] removing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server/lib/python3.10/site-packages/android_ros2_server-0.0.0-py3.10.egg-info' (and everything under it)
+[4.134s] Copying ../../build/android_ros2_server/android_ros2_server.egg-info to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server/lib/python3.10/site-packages/android_ros2_server-0.0.0-py3.10.egg-info
+[4.134s] running install_scripts
+[4.135s] Installing tcp_server_node script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server/lib/android_ros2_server
+[4.135s] writing list of installed files to '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/android_ros2_server/install.log'
+[4.233s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/android_ros2_server' returned '0': PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/android_ros2_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/android_ros2_server build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/android_ros2_server/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/android_ros2_server/install.log --single-version-externally-managed install_data

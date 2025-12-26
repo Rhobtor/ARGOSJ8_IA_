@@ -1,4 +1,10 @@
-Camera config
+## Camera config
+
+Este paquete puede publicar imágenes comprimidas desde una cámara RTSP.
+La configuración se controla con parámetros del nodo (`camera`, `camera_url`,
+`camera_topic`, `image_compression_ratio`, `resize_image`).
+
+Dependencia útil para debug visual:
 
 `sudo apt install ffmpeg`
 

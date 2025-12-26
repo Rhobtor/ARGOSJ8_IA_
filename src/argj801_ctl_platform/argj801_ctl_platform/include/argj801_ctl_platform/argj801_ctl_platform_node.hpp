@@ -46,6 +46,32 @@ using namespace std::chrono_literals;
 
 enum class PlatformOperationMode{Arduino,LCM,Gazebo};
 
+/**
+ * @class CtlPlatformNode
+ * @brief Nodo Lifecycle encargado del control de la plataforma (actuación) del rover.
+ *
+ * Este nodo recibe comandos de velocidad (Twist) y los transforma en comandos
+ * low-level dependiendo del modo de operación:
+ *
+ * - Arduino: comunica por puerto serie con un microcontrolador.
+ * - LCM: envía/recibe mensajes LCM hacia el stack de vehículo.
+ * - Gazebo: publica `CmdThrottleMsg` para simulación.
+ *
+ * Contrato ROS típico (namespace `/ARGJ801` en el launch):
+ * - Sub: `/ARGJ801/cmd_vel` (geometry_msgs/Twist)
+ * - Pub: `cmd_throttle_msg` (argj801_ctl_platform_interfaces/msg/CmdThrottleMsg) en modos LCM/Gazebo.
+ * - Services:
+ *   - `emergency_stop` (EmergencyStop)
+ *   - `set_velocity`, `get_velocity` (modo Arduino)
+ *   - `ping` (std_srvs/Empty)
+ *
+ * Parámetros relevantes (ver `argj801_setup/config/J8_params.yaml`):
+ * - operation_mode (0 Arduino, 1 LCM, 2 Gazebo) [según enum actual]
+ * - throttle_topic_name, secured_cmd_vel_topic_name
+ * - arduino_params.port, arduino_params.watchdog_active
+ * - lcm_params.lcm_config_file
+ * - kinematic_parameters.* (efective_radius, xICR, throttle_to_percent, steer_to_percent, ...)
+ */
 class CtlPlatformNode : public rclcpp_lifecycle::LifecycleNode
 {
 private:

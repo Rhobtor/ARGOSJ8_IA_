@@ -6,6 +6,15 @@
 
 module path_manager_interfaces {
   module srv {
+    @verbatim (language="comment", text=
+      "GetLLPath.srv" "\n"
+      "" "\n"
+      "Devuelve la ruta actual en formato latitud/longitud (habitualmente se usa un" "\n"
+      "nav_msgs/Path donde pose.position.x=lat y pose.position.y=lon)." "\n"
+      "" "\n"
+      "Response:" "\n"
+      "  - path: ruta en LL." "\n"
+      "  - success: true si se pudo generar/devolver.")
     struct GetLLPath_Request {
       uint8 structure_needs_at_least_one_member;
     };

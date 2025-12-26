@@ -1,3 +1,54 @@
+/**
+ * @file path_following_node.cpp
+ * @brief Lifecycle state node that computes / publishes a local path segment to follow.
+ *
+ * ## Role in the J8 mission FSM
+ * This node represents the "PathFollowing" state/capability. The mission/orchestrator
+ * activates it when the FSM enters the corresponding mode.
+ *
+ * The node is responsible for:
+ * - Requesting a global path via `path_manager`.
+ * - Transforming that path to the robot frame and local fixed frame using TF2.
+ * - Publishing a truncated look-ahead segment ("planner path") so a controller can track it.
+ * - Publishing diagnostic metrics like distance-to-goal and min distance to global path.
+ *
+ * When the remaining distance to the end of the path becomes small, it requests an FSM
+ * mode change via the mission service client.
+ *
+ * ## ROS contract (topics / services / params)
+ * ### Services (clients)
+ * - `path_service_name` (default: `get_fix_frame_path`) [path_manager_interfaces/srv/GetFixFramePath]
+ *      Used to fetch the current path to follow.
+ * - `fsm.change_fsm_mode_srv_name` (default: `change_fsm_mode`) [ctl_mission_interfaces/srv/ChangeMode]
+ *      Used to request a transition when the goal is reached.
+ *
+ * ### Subscriptions
+ * - `/fixposition/odometry_enu` [nav_msgs/msg/Odometry]
+ * - `joystick_topic_name` (default: `joy`) [sensor_msgs/msg/Joy]
+ * - `gps_topic` (default: `/fixposition/navsatfix`) [sensor_msgs/msg/NavSatFix]
+ *
+ * ### Publications
+ * - `cmd_vel_topic_name` (default: `cmd_vel_test`) [geometry_msgs/msg/Twist]
+ * - `local_path` [nav_msgs/msg/Path] (segment in local fixed frame)
+ * - `poi_path` [nav_msgs/msg/Path] (path in robot frame / POI frame)
+ * - `ecef_path` [nav_msgs/msg/Path] (as received / assumed ECEF)
+ * - `enu_path` [nav_msgs/msg/Path] (path in local ENU)
+ * - `dist_last_obj` [std_msgs/msg/Float32] distance remaining to final waypoint
+ * - `min_distance_to_path` [std_msgs/msg/Float32] min distance between current GPS fix and path
+ *
+ * ### Parameters
+ * - Frames: `robot_frame`, `local_fixed_frame`, `global_fixed_frame`
+ * - `target_distance` (m): length of the truncated path segment published.
+ * - `node_frequency` (Hz): timer rate while active.
+ * - Joystick: `joystick_topic_name`.
+ *
+ * ## Gotchas
+ * - Parts of this implementation mix frames and reuse `nav_msgs/Path` to convey paths in
+ *   different frames. Always inspect `header.frame_id` to interpret points.
+ * - The code currently contains a Twist publisher that is not always used (publishing commented
+ *   out in `joy_callback`). This is intentional in the current version.
+ */
+
 #include  "ctl_mission/PathFollowingNode.hpp"
 PathFollowingNode::PathFollowingNode(const std::string &node_name, bool intra_process_comms)
 : rclcpp_lifecycle::LifecycleNode(node_name, rclcpp::NodeOptions().use_intra_process_comms(intra_process_comms)) {

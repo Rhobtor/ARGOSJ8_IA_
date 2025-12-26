@@ -8,7 +8,18 @@
 module path_manager_interfaces {
   module srv {
     @verbatim (language="comment", text=
-      "AssistEmergency.srv")
+      "AssistEmergency.srv" "\n"
+      "" "\n"
+      "Servicio para generar una ruta de asistencia/emergencia desde start -> goal." "\n"
+      "En la implementación actual puede devolver una ruta \"simple\" (línea recta)" "\n"
+      "convertida a lat/lon, o usar un planificador más complejo si se habilita." "\n"
+      "" "\n"
+      "Request:" "\n"
+      "  - start: punto inicial (coordenadas según implementación)" "\n"
+      "  - goal: punto objetivo" "\n"
+      "Response:" "\n"
+      "  - success: true si se generó ruta" "\n"
+      "  - path: nav_msgs/Path resultante")
     struct AssistEmergency_Request {
       geometry_msgs::msg::Point start;
 

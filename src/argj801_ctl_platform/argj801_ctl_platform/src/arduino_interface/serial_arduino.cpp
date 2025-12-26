@@ -16,6 +16,20 @@
 #include "arduino_interface/serial_arduino.h"
 #include <poll.h>
 
+// -----------------------------------------------------------------------------
+// SerialArduino
+// -----------------------------------------------------------------------------
+// Driver de comunicación con el Arduino por puerto serie.
+//
+// Responsabilidades:
+// - Abrir/configurar el dispositivo (/dev/ttyUSB*, etc.) a 57600 baudios.
+// - Enviar comandos binarios al Arduino y esperar ACK/errores.
+// - Implementar reintento simple en caso de CHECKSUM_ERROR.
+//
+// Nota: el protocolo (comandos START/STOP/PING, etc.) y las constantes ACK/*
+// están definidas en el header `arduino_interface/serial_arduino.h`.
+// -----------------------------------------------------------------------------
+
 SerialArduino::SerialArduino():counter(0)
 {
   closePort();
@@ -29,7 +43,9 @@ void SerialArduino::openPort(const char *port_name)
 {
   closePort(); // In case it was previously open, try to close it first.
 
-  // Open the port
+  // Open the port.
+  // - O_NOCTTY: asegura que el tty no se convierta en controlling terminal.
+  // - O_NONBLOCK: evitamos bloquear al abrir; luego usamos poll/read con timeout.
   fd = open(port_name, O_RDWR | O_SYNC | O_NONBLOCK | O_NOCTTY, S_IRUSR | S_IWUSR );
   if (fd < 0)
   {
@@ -58,7 +74,8 @@ void SerialArduino::openPort(const char *port_name)
   if (fcntl(fd, F_SETLK, &fl) != 0)
     throw ArduinoException("Device " + std::string(port_name) +" is already locked. Try 'lsof | grep" + std::string(port_name) +"' to find other processes that currently have the port open");
 
-  // Change port settings
+  // Change port settings.
+  // cfmakeraw: modo "raw" (sin traducción de caracteres) para un protocolo binario.
   struct termios term;
   if (tcgetattr(fd, &term) < 0)
     throw ArduinoException("Unable to get serial port attributes. The port you specified"+ std::string(port_name)+ "may not be a serial port.");
@@ -70,7 +87,8 @@ void SerialArduino::openPort(const char *port_name)
   if (tcsetattr(fd, TCSAFLUSH, &term) < 0 )
     throw ArduinoException("Unable to set serial port attributes. The port you specified ("+std::string(port_name)+") may not be a serial port.");
 
-  // Make sure queues are empty before we begin
+  // Make sure queues are empty before we begin.
+  // Si hay bytes residuales en el buffer del driver, podrían desalinear el framing.
   if (tcflush(fd, TCIOFLUSH) != 0)
     throw ArduinoException("Tcflush failed. Please report this error if you see it.");
 }
@@ -92,9 +110,11 @@ void SerialArduino::closePort()
 bool SerialArduino::transac(std::uint8_t *buffer,uint8_t buffer_size,bool checksum,uint8_t *b_out) {
   uint8_t buffer_out[1];
 
+  // El checksum se pone en los dos últimos bytes del buffer (según protocolo).
   if(checksum)
     create_checksum(buffer,buffer_size-2,&buffer[buffer_size-2]);
 
+  // Enviamos y esperamos respuesta (ACK o error) con timeout.
   send(buffer,buffer_size);
   read_with_timeout(buffer_out,1,1000);
 
@@ -103,6 +123,7 @@ bool SerialArduino::transac(std::uint8_t *buffer,uint8_t buffer_size,bool checks
     return true;
     break;
   case CHECKSUM_ERROR:
+    // Reintento 1 vez: recalculamos checksum y reenviamos.
     create_checksum(buffer,buffer_size-2,&buffer[buffer_size-2]);
     send(buffer,buffer_size);
     read_with_timeout(buffer_out,1,1000);
@@ -119,6 +140,7 @@ bool SerialArduino::transac(std::uint8_t *buffer,uint8_t buffer_size,bool checks
     throw ArduinoException("Bad data");
     break;
   default:
+    // Se devuelve el primer byte recibido para diagnóstico (si b_out != nullptr).
     b_out[0] = buffer_out[0];
     return true;
     break;

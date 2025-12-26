@@ -3,9 +3,13 @@
 <package format="3">
   <name>argj801_sensors</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>
+    Drivers/nodo de sensores del rover ARGJ801: lidars, driveline (motor telemetry/odometer/twist)
+    y soporte opcional de cámara RTSP, publicado vía ROS 2 (LifecycleNode).
+  </description>
   <maintainer email="jage@uma.es">jage</maintainer>
-  <license>TODO: License declaration</license>
+  <!-- TODO: concretar licencia real del paquete. -->
+  <license>TODO</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <build_depend>rclcpp</build_depend>

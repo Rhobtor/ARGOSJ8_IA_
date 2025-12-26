@@ -6,6 +6,14 @@
 
 module path_manager_interfaces {
   module srv {
+    @verbatim (language="comment", text=
+      "ReturnRobotPath.srv" "\n"
+      "" "\n"
+      "Devuelve la ruta interna \"robot_path\" que el robot pretende seguir en modo" "\n"
+      "autónomo. No tiene request: simplemente responde con el path actual." "\n"
+      "" "\n"
+      "Response:" "\n"
+      "  - path: nav_msgs/Path (ver frame_id para interpretar coordenadas).")
     struct ReturnRobotPath_Request {
       uint8 structure_needs_at_least_one_member;
     };

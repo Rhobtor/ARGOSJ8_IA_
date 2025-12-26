@@ -1,3 +1,55 @@
+/**
+ * @file Ctrl_node.cpp
+ * @brief Lifecycle state node that turns a local trajectory into velocity commands (cmd_vel).
+ *
+ * ## Role in the J8 mission FSM
+ * `CtrlNode` is the "controller" state node. It consumes a local path/trajectory (typically
+ * produced by `PathFollowingNode` or other planners) and produces `geometry_msgs/Twist` commands
+ * for the platform.
+ *
+ * The mission/orchestrator (`CtlMissionNode`) activates/deactivates this node as part of the
+ * global FSM. When inactive, lifecycle publishers are deactivated, so this node should not
+ * command the vehicle.
+ *
+ * ## Controllers supported
+ * The controller algorithm is selected at runtime via the `ChangeController` service.
+ * Current expected values (see `available_controller_types_`):
+ * - `pure_pursuit`
+ * - `regulated_pure_pursuit`
+ * - `dynamic_pure_pursuit`
+ * - `dynamic_la_pure_pursuit`
+ *
+ * Each controller has its own configuration service (see ROS contract below).
+ *
+ * ## ROS contract (topics / services / params)
+ * ### Subscriptions
+ * - `local_trajectory_topic` (default: `local_trajectory`) [nav_msgs/msg/Path]
+ * - distance-to-goal input (topic name is part of the broader stack; see `getDistLastObj()`)
+ * - odometry input (used by dynamic look-ahead version)
+ *
+ * ### Publications
+ * - `cmd_vel_topic_name` (default: `cmd_vel_test`) [geometry_msgs/msg/Twist]
+ * - `pub_local_path` [nav_msgs/msg/Path] local path transformed into `robot_frame`
+ * - `pub_cte` [std_msgs/msg/Float32] cross-track error value
+ * - `pub_look_ahead`, `pub_look_ahead_distance`, `pub_la_pose` (debug/telemetry)
+ *
+ * ### Services (servers)
+ * - `change_controller_srv_name` (default: `change_controller_type`) [ctl_mission_interfaces/srv/ChangeController]
+ * - `pure_pursuit.config_pure_pursuit_ctrl_srv_name` (default: `config_pure_pursuit`) [ConfigPurePursuitCtrl]
+ * - `regulated_pure_pursuit.config_regulated_pure_ctrl_srv_name` (default: `config_regulated_pure`) [ConfigRegulatedPureCtrl]
+ * - `dynamic_pp.config_dynamic_pure_ctrl_srv_name` (default: `config_dynamic_pure`) [ConfigDynamicPureCtrl]
+ * - `dynamic_la_pp.config_dynamic_la_pure_ctrl_srv_name` (default: `config_dynamic_la_pure`) [ConfigDynamicLAPureCtrl]
+ *
+ * ### Key parameters
+ * - Frames: `robot_frame` (default: `FP_POI`), `local_fixed_frame` (default: `FP_ENU0`)
+ * - `controller_frequency` (default: 50 Hz)
+ * - Controller-specific params under namespaces like `pure_pursuit.*`, `dynamic_pp.*`, etc.
+ *
+ * ## Coordinate frames / TF
+ * Incoming path is assumed to be in `fixed_local_frame`. It is transformed into `robot_frame`
+ * before computing tracking errors / commands.
+ */
+
 #include "ctl_mission/CtrlNode.hpp"
 
 CtrlNode::CtrlNode(const std::string & node_name, bool intra_process_comms)

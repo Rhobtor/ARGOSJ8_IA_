@@ -1,3 +1,25 @@
+/**
+ * @file estop_node.cpp
+ * @brief Lifecycle state node that enforces an emergency stop by publishing zero cmd_vel.
+ *
+ * ## Role in the J8 mission FSM
+ * This is the global safety "E-STOP" state. The mission/orchestrator can transition to this
+ * state from anywhere (see `J8_FSM::AlltoEstop`).
+ *
+ * When **active**, the node publishes a zero Twist at `publish_rate` Hz.
+ * The intended effect is to override motion by constantly commanding zero velocity.
+ *
+ * ## ROS contract
+ * ### Publications
+ * - `cmd_vel_topic` (default: `cmd_vel`) [geometry_msgs/msg/Twist]
+ *
+ * ### Parameters
+ * - `publish_rate` (Hz, default: 50.0)
+ *
+ * @note This node doesn't (yet) cut power or touch low-level safety IO; it is a software
+ *       safety mechanism at the ROS command level.
+ */
+
 #include "ctl_mission/EstopNode.hpp"
 #include <chrono>
 #include <memory>

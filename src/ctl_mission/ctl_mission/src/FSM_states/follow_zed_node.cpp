@@ -1,3 +1,62 @@
+/**
+ * @file follow_zed_node.cpp
+ * @brief Lifecycle state node that bridges "Follow a person" behavior driven by a Jetson/ZED.
+ *
+ * ## Why this exists
+ * The J8 stack can run a vision-based follower on a Jetson (ZED camera). This ROS 2
+ * LifecycleNode plays two roles:
+ * 1) A simple TCP client to send start/stop/ping commands to the Jetson process.
+ * 2) A bridge between Jetson outputs (leader distance, emergency, enable, leader id) and the
+ *    rest of the ROS control pipeline (mainly `CtrlNode`).
+ *
+ * The mission/orchestrator activates/deactivates this node according to the global FSM.
+ *
+ * ## ROS contract (topics / services / params)
+ * ### TCP (Jetson)
+ * Controlled by parameters:
+ * - `jetson_host`, `jetson_port`
+ * - `cmd_start`, `cmd_stop`, `cmd_ping`
+ * - `ping_period_s`
+ *
+ * ### Subscriptions (inputs)
+ * - `leader_distance_topic_in` [std_msgs/msg/Float32] distance to the tracked leader (meters)
+ * - `follow_enabled_in_topic`  [std_msgs/msg/Bool] external enable switch
+ * - `emergency_in_topic`       [std_msgs/msg/Bool] emergency flag from vision system
+ * - `leader_id_in_topic`       [std_msgs/msg/Int32] id of the tracked person/leader
+ * - Gap tuning:
+ *   - `gap_incdec_topic` [std_msgs/msg/Int8] discrete gap +/- requests
+ *   - `gap_delta_topic`  [std_msgs/msg/Float32] continuous delta to add to gap
+ *   - `gap_set_topic`    [std_msgs/msg/Float32] absolute gap set
+ * - Optional video relay:
+ *   - `video_in_topic` [sensor_msgs/msg/Image]
+ *
+ * ### Publications (outputs)
+ * - `dist_last_obj_topic_out` [std_msgs/msg/Float32]
+ *     Distance-to-target published towards the controller layer.
+ * - `follow_state_topic` [std_msgs/msg/Bool] (latched)
+ *     True when internal FSM is in FOLLOWING.
+ * - `gap_state_topic` [std_msgs/msg/Float32] (latched)
+ *     Current follow gap in meters.
+ * - Optional video relay:
+ *   - `video_out_topic` [sensor_msgs/msg/Image]
+ *
+ * ### Services
+ * - `set_follow_enabled` [std_srvs/srv/SetBool]
+ *     Compatibility helper for GUIs / tools to enable/disable following.
+ *
+ * ## Internal state machine (inside this node)
+ * This file defines a small local FSM (`State::{IDLE, FOLLOWING, EMERGENCY}`) that is
+ * independent from the global mission FSM. It decides whether to issue START/STOP commands
+ * to the Jetson and what to publish to the rest of the stack.
+ *
+ * ## Lifecycle behavior
+ * - on_configure(): declares/reads parameters and sets up pubs/subs/services.
+ * - on_activate(): activates lifecycle publishers, starts timers, connects TCP.
+ * - on_deactivate(): stops timers, closes TCP, deactivates publishers.
+ *
+ * @note The top of this file contains commented legacy code kept for reference.
+ */
+
 // /////////////////////////////////////////
 // /// Placeholder for FollowZED.Cpp
 // //////////////////////////////////////////////

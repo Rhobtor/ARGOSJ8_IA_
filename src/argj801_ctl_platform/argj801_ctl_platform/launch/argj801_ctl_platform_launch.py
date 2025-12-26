@@ -10,6 +10,21 @@ from launch.events import matches_action
 from launch_ros.events.lifecycle import ChangeState
 from launch.actions import TimerAction
 import yaml
+
+"""Launch del nodo de control de plataforma (argj801_ctl_platform).
+
+Este launch arranca un `LifecycleNode` y dispara transiciones automáticas
+(configure/activate) con un retardo.
+
+Se carga la configuración desde `config/params.yaml` del paquete.
+
+Notas:
+- Namespace fijo: `ARGJ801`.
+- Los parámetros se dividen en:
+    - `global_parameters` (comunes: nombre de tópicos/etc.)
+    - `argj801_ctrl_platform_node` (config específica: modo Arduino/LCM/Gazebo,
+        params del modelo cinemático, puerto serie, etc.)
+"""
 def load_yaml(file_path):
     with open(file_path, 'r') as file:
         return yaml.safe_load(file)
@@ -29,11 +44,15 @@ def generate_launch_description():
     ld.add_action(DeclareLaunchArgument('configure', default_value='true', description='Whether or not to configure the node on startup'))
     ld.add_action(DeclareLaunchArgument('activate', default_value='true', description='Whether or not to activate the node on startup'))
 
+    # Nodo Lifecycle principal.
+    # executable: según CMake, suele mapear al binario que contiene `main.cpp`.
     ctrlPlataformNode = LifecycleNode(package='argj801_ctl_platform', executable='ARGJ801_ctl_platform',
                       name='argj801_ctrl_platform_node', namespace='ARGJ801', output='screen', 
                       parameters=[global_params, yaml_config['ARGJ801']['argj801_ctrl_platform_node']]) 
 
-    # Configuration and activation events
+    # Eventos de configuración y activación.
+    # Se usan `TimerAction` para dejar tiempo a que el executor arranque y ROS
+    # establezca comunicaciones antes de solicitar transiciones.
     config_events = []
     activate_events = []
 

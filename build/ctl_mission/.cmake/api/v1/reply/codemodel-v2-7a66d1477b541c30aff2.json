@@ -1,0 +1,178 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-64d4affd8851580678b1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ctl_mission",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ctl_mission_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ctl_mission_egg-RelWithDebInfo-7a4312d9f9155cdb0816.json",
+					"name" : "ament_cmake_python_build_ctl_mission_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ctl_mission::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ctl_mission-RelWithDebInfo-397ecb2437be2a9bbd78.json",
+					"name" : "ament_cmake_python_copy_ctl_mission",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "back_home_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-back_home_node-RelWithDebInfo-d01ca2340ce72047329e.json",
+					"name" : "back_home_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "controller_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-controller_node-RelWithDebInfo-4b75c8f3abac7f4a9015.json",
+					"name" : "controller_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ctl_mission::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ctl_mission-RelWithDebInfo-d9fac1111e3887dfd1ef.json",
+					"name" : "ctl_mission",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ctl_mission_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ctl_mission_uninstall-RelWithDebInfo-fb1438027fb1f83faa96.json",
+					"name" : "ctl_mission_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "estop_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-estop_node-RelWithDebInfo-933740f5b7bb39ba5e77.json",
+					"name" : "estop_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "follow_zed_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-follow_zed_node-RelWithDebInfo-d711f686f104a7c2c7fa.json",
+					"name" : "follow_zed_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mppi_sac_relay_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mppi_sac_relay_node-RelWithDebInfo-bba85994ce2824bb58ab.json",
+					"name" : "mppi_sac_relay_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "path_following::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-path_following-RelWithDebInfo-1ff124eb3a6d01a3e0c7.json",
+					"name" : "path_following",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "path_record_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-path_record_node-RelWithDebInfo-e76e47466e237178e98d.json",
+					"name" : "path_record_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ready_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ready_node-RelWithDebInfo-29a5e386b7baf27f0f33.json",
+					"name" : "ready_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teleoperation_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teleoperation_node-RelWithDebInfo-9a8c63708ac2f2de8c89.json",
+					"name" : "teleoperation_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-e6ec4056ddf0bf42ec74.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ctl_mission",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

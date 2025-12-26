@@ -1,5 +1,23 @@
 #include "argj801_lcm/LCM_interface.hpp"
 
+// -----------------------------------------------------------------------------
+// LCMInterface
+// -----------------------------------------------------------------------------
+// Wrapper de comunicaciones LCM para la plataforma.
+//
+// Este componente:
+// - Carga URLs (external/broadcast) y cabeceras desde un YAML.
+// - Crea varios handles LCM para publicar y subscribir a diferentes canales.
+// - Usa semáforos POSIX (sem_t) para sincronizar la llegada de mensajes.
+//
+// Canales típicos usados por este módulo (según configuración):
+// - cmd_throttle_msg, cmd_velocity_msg, cmd_discrete_device_msg (publicación)
+// - dat_* (subscrición: driveline, heartbeat, telemetry, battery, cpu, etc.)
+//
+// Importante: los types de mensajes LCM (`lcmmessages/*.hpp`) suelen ser
+// autogenerados. Documentamos el comportamiento aquí, sin tocar código generado.
+// -----------------------------------------------------------------------------
+
 using namespace argj801_lcm;
 
 LCMInterface::LCMInterface(std::string configPath,bool data_drive_line_msg,bool data_lidar_scan_line_msg,bool data_platform_heartbeat_msg,bool data_platform_telemetry_msg,bool request_connection_response_msg,bool data_battery_msg, bool data_commponet_state_msg, bool data_cpu_msg,bool data_hardware_status_msg,bool data_temperature_msg) : configPath(configPath),data_drive_line_msg(data_drive_line_msg),data_lidar_scan_line_msg(data_lidar_scan_line_msg),data_platform_heartbeat_msg(data_platform_heartbeat_msg),data_platform_telemetry_msg(data_platform_telemetry_msg),request_connection_response_msg(request_connection_response_msg),data_battery_msg(data_battery_msg),data_component_state_msg(data_commponet_state_msg),data_cpu_msg(data_cpu_msg),data_hardware_status_msg(data_hardware_status_msg),data_temperature_msg(data_temperature_msg)
@@ -116,6 +134,10 @@ LCMInterface::~LCMInterface()
 
 void LCMInterface::loadConfig()
 {
+    // El YAML define:
+    // - external_url / broadcast_url: endpoints de LCM
+    // - header2: metadatos (vehicle_id, station_id, etc.)
+    // - discrete_device, request_connection: defaults de mensajes
     YAML::Node config = YAML::LoadFile(configPath);
 
     std::cout << configPath << std::endl;
@@ -176,6 +198,7 @@ void LCMInterface::loadConfig()
 
 void LCMInterface::sendDiscreteDeviceMsg(DiscreteDeviceType type, bool state)
 {
+    // Publica un comando discreto (luces, actuadores tipo on/off..., según enum).
     discreteDeviceMsg.hdr = header_from_station;
     discreteDevice.state = int8_t(state);
     discreteDevice.type = int8_t(type);
@@ -186,7 +209,7 @@ void LCMInterface::sendDiscreteDeviceMsg(DiscreteDeviceType type, bool state)
 }
 
 void LCMInterface::sendThrottleMsg(float throttle,float steering) {
-    
+    // Publica throttle/steering low-level.
     throttleMsg.hdr = header_from_station;
     throttleMsg.throttle = throttle;
     throttleMsg.steering = steering;
@@ -196,7 +219,7 @@ void LCMInterface::sendThrottleMsg(float throttle,float steering) {
 }
 
 void LCMInterface::sendVelocityMsg(float forward_velocity, float angular_velocity) {
-        
+    // Publica velocidad (v, w) en canal LCM (si se usa ese modo de control).
     velocityMsg.hdr = header_from_station;
     velocityMsg.forward_velocity = forward_velocity;
     velocityMsg.angular_velocity = angular_velocity;

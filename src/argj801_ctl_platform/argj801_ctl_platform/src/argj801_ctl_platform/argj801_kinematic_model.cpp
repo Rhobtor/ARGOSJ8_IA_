@@ -1,5 +1,21 @@
 #include "argj801_ctl_platform/argj801_kinematic_model.hpp"
 
+// Implementación del modelo cinemático.
+//
+// Modelo diferencial simplificado:
+//   w_r = (v + w * xICR) / R
+//   w_l = (v - w * xICR) / R
+// y a partir de ahí:
+//   throttle_speed  = (w_r + w_l) / 2
+//   steering_speed  = (w_r - w_l) / 2
+//
+// Luego se aplican límites de aceleración (steer_acc / throttle_acc) para evitar
+// cambios bruscos de mando.
+//
+// Nota: El código actual fija t_step a 50Hz. Existe `desired_freq` en el objeto,
+// pero en esta implementación no se usa. No lo cambiamos por política de
+// "comentarios únicamente".
+
 Argo_J8_KinematicModel::Argo_J8_KinematicModel(double effective_radius, double xICR, double throttle_to_percent,
                              double steer_to_percent, double steer_acc, double throttle_acc, double desired_freq)
     : effective_radius_(effective_radius), xICR_(xICR), throttle_to_percent_(throttle_to_percent), steer_to_percent_(steer_to_percent), 
@@ -30,14 +46,16 @@ void Argo_J8_KinematicModel::calculate(double speed, double rotation) {
     double throttle_speed_ = (w_right_wheel + w_left_wheel) / 2;
     double steering_speed_ = (w_right_wheel - w_left_wheel) / 2;
 
-    // Time step for the control loop
+    // Time step for the control loop (fijado a 50Hz).
     double t_step = 1 / 50.0;  // 50 Hz control loop
 
     // Calculate the requested acceleration for throttle and steering
     double requested_throttle_acc = (throttle_speed_ - last_throttle_) / t_step;
     double requested_steer_acc = (steering_speed_ - last_steering_) / t_step;
 
-    // Check if throttle is increasing in absolute value
+    // Limitación por aceleración solicitada (throttle).
+    // Sólo limitamos cuando aumenta el valor absoluto, para permitir frenadas
+    // más agresivas si hiciera falta.
     if (fabs(throttle_speed_) > fabs(last_throttle_) && fabs(requested_throttle_acc) > throttle_acc) {
         // Throttle is increasing in absolute value and exceeds the allowed acceleration
         double throttle_change = std::copysign(throttle_acc * t_step, throttle_speed_ - last_throttle_);
@@ -45,7 +63,7 @@ void Argo_J8_KinematicModel::calculate(double speed, double rotation) {
         std::cout << "Throttle limited to: " << throttle_ << std::endl;
     } 
 
-    // Check if steering is increasing in absolute value
+    // Limitación por aceleración solicitada (steering).
     if (fabs(steering_speed_) > fabs(last_steering_) && fabs(requested_steer_acc) > steer_acc) {
         // Steering is increasing in absolute value and exceeds the allowed acceleration
         double steering_change = std::copysign(steer_acc * t_step, steering_speed_ - last_steering_);
@@ -59,7 +77,8 @@ void Argo_J8_KinematicModel::calculate(double speed, double rotation) {
     throttle_ = throttle_speed_ * throttle_to_percent_;
     steering_ = steering_speed_ * steer_to_percent_;
 
-    // Debug output
+    // Debug output.
+    // Ojo: estos prints pueden inundar consola a 50Hz.
     std::cout << "Throttle: " << throttle_ << std::endl;
     std::cout << "Steering: " << steering_ << std::endl;
     std::cout << "Requested Throttle Acc: " << requested_throttle_acc << std::endl;

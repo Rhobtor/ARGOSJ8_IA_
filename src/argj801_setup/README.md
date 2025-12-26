@@ -4,7 +4,15 @@
 
 ## Overview
 
-The `argj801_setup` package is the central configuration and launch management node for a the ROS2 system consisting of multiple nodes. This package is responsible for setting up and managing the lifecycle of various nodes essential for the ARGJ801 mission.
+El paquete `argj801_setup` centraliza la **configuración** y el **arranque** (launch) del
+sistema ROS 2 del rover **ARGJ801**. Su función es:
+
+- Cargar parámetros comunes desde `config/J8_params.yaml`.
+- Lanzar nodos de control, planificación y sensorización bajo el namespace `/ARGJ801`.
+- Orquestar transiciones de *Lifecycle* (configure/activate) con retardos para evitar
+  carreras durante el arranque.
+
+Este paquete no implementa lógica de control; sólo describe cómo se inicia el sistema.
 
 ## Table of Contents
 
@@ -42,7 +50,8 @@ The `argj801_setup` package is the central configuration and launch management n
 
 ### Launch the System
 
-The main launch file is `J8_launch.py`. This file is responsible for launching the necessary nodes based on the provided parameters. This launch also can be used on both the real and the simulated system. 
+El launch principal es `launch/J8_launch.py`. Este fichero puede usarse tanto para
+robot real como para simulación, habilitando/deshabilitando subconjuntos de nodos.
 
 #### Parameters
 
@@ -55,19 +64,19 @@ The main launch file is `J8_launch.py`. This file is responsible for launching t
 1. **Launching the Simulator without GUI:**
 
     ```sh
-    ros2 launch argj801_setup main_launch_file.launch.py simulator:=true use_gui:=false
+  ros2 launch argj801_setup J8_launch.py simulator:=true use_gui:=false
     ```
 
 2. **Launching the Real Robot:**
 
     ```sh
-    ros2 launch argj801_setup main_launch_file.launch.py robot:=true
+  ros2 launch argj801_setup J8_launch.py robot:=true
     ```
 
 3. **Launching the Simulator with GUI:**
 
     ```sh
-    ros2 launch argj801_setup main_launch_file.launch.py simulator:=true use_gui:=true
+  ros2 launch argj801_setup J8_launch.py simulator:=true use_gui:=true
     ```
 
 By using these parameters, you can easily switch between launching the system for the real robot or the simulator, and optionally include the GUI.
@@ -95,12 +104,21 @@ The `argj801_setup` package launchs the following nodes:
 
 Each node is configured and launched with specific parameters to perform its designated function in the system.
 
+### Lifecycle / secuencia de arranque
+
+Muchos de los nodos se lanzan como **LifecycleNode**. En `J8_launch.py` se disparan
+transiciones `CONFIGURE` y `ACTIVATE` con un retardo (TimerAction). Este comportamiento
+es importante si algunos nodos dependen de TF, servicios o tópicos que tardan en aparecer.
+
 ### Launch and congif files
 
 For more details on configuration and launch files, please refer to their respective README documents:
 
 - [Configuration Files README](./config/README.md)
 - [Launch Files README](./launch/README.md)
+
+> Nota: en este repositorio existe también un GUI nuevo (`j8_gui`). En `J8_launch.py`
+> actualmente se lanza el GUI legacy (`GUI_pkg`) cuando `use_gui:=true`.
 ## Contributing
 
 Contributions are welcome! Please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md) to submit your changes.

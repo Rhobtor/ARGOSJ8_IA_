@@ -1,6 +1,25 @@
 #include "path_manager/path_manager.hpp"
+
+/**
+ * @file path_manager.cpp
+ * @brief Implementación del nodo PathManager.
+ *
+ * Puntos clave del diseño actual:
+ * - Es un LifecycleNode: la creación de servicios/subs/pubs ocurre en on_configure().
+ * - Mantiene en memoria una ruta (`robot_path`) que representa el camino que el
+ *   robot intentará seguir en navegación autónoma.
+ * - Provee servicios para cargar/guardar rutas y para obtener la ruta en distintos
+ *   formatos/frames.
+ *
+ * Nota: además de la lógica “core” de path_manager, este archivo contiene código de
+ * planificación (DEMAIAS / emergency) que escribe ficheros dentro del share del paquete.
+ * Documentamos la intención, pero no cambiamos la lógica.
+ */
 PathManager::PathManager(const std::string & node_name, bool intra_process_comms)
 : rclcpp_lifecycle::LifecycleNode(node_name, rclcpp::NodeOptions().use_intra_process_comms(intra_process_comms)) {
+    // Parámetros (ver también `argj801_setup/config/J8_params.yaml`):
+    // - localization_method: nombre del método/driver de localización en uso.
+    // - *_service / *_topic: nombres ROS (normalmente relativos al namespace del nodo).
     this->declare_parameter("localization_method", "Fixposition");
     this->declare_parameter("read_path_service", "read_path_file");
     this->declare_parameter("return_path_service", "get_robot_Path");
@@ -12,13 +31,18 @@ PathManager::PathManager(const std::string & node_name, bool intra_process_comms
     this->declare_parameter("global_parameter_name", "test");}
 
 void PathManager::publish() {
-
+    // Hook de publicación periódica (timer_). Actualmente no publica nada.
+    // Posibles usos futuros: publicar la ruta latched, debug, métricas.
 }
 
 rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn
 PathManager::on_configure(const rclcpp_lifecycle::State &) {
+    // Timer de 1 Hz: llama a publish().
     timer_ = this->create_wall_timer(1s, [this]() {return this->publish();});
-    // Retrieve and use parameters for service and topic names
+
+    // ---------------------------------------------------------------------
+    // Recuperación de parámetros con nombres de interfaces ROS
+    // ---------------------------------------------------------------------
     std::string read_path_service, return_path_service, write_path_service;
     std::string get_ll_path_service, get_fix_frame_path_service;
     std::string fixed_frame_topic, ll_path_topic;
@@ -33,8 +57,14 @@ PathManager::on_configure(const rclcpp_lifecycle::State &) {
     this->get_parameter("localization_method", localization_method);
     this->get_parameter("global_parameter_name", global_param);
     std::cout<< "Global param is "<<global_param<<std::endl;
-    robot_path.poses.clear();// IMPORTANT!! robot_path will save the path to be attemptd by the robot when performing autonomous navigation
-    // Use the parameters for service and topic names
+
+    // IMPORTANT: `robot_path` guarda la ruta que se pretende que siga el robot
+    // durante navegación autónoma.
+    robot_path.poses.clear();
+
+    // ---------------------------------------------------------------------
+    // Servicios
+    // ---------------------------------------------------------------------
     readPathServ = this->create_service<path_manager_interfaces::srv::ReadPathFromFile>
     (read_path_service, std::bind(&PathManager::readPath, this, std::placeholders::_1, std::placeholders::_2));
     getRobotPath = this->create_service<path_manager_interfaces::srv::ReturnRobotPath>
@@ -45,9 +75,16 @@ PathManager::on_configure(const rclcpp_lifecycle::State &) {
     (get_ll_path_service, std::bind(&PathManager::getLatLonPath, this, std::placeholders::_1, std::placeholders::_2));
     getFixFramePath = this->create_service<path_manager_interfaces::srv::GetFixFramePath>
     (get_fix_frame_path_service, std::bind(&PathManager::getFFPath, this, std::placeholders::_1, std::placeholders::_2));
+
+    // Publisher lifecycle de la ruta en frame fijo.
     path_publisher_ = this->create_publisher<nav_msgs::msg::Path>(fixed_frame_topic, 10);
+
+    // Subscription: ruta en lat/lon (nav_msgs/Path). Se guarda en robot_path y se
+    // marca con frame_id = "ll".
     sub_ll_path = this->create_subscription<nav_msgs::msg::Path>(ll_path_topic, 10, 
     std::bind(&PathManager::ll_path_callback, this, std::placeholders::_1));
+
+    // Servicios adicionales (nombres hardcodeados actualmente).
     plannerPathServ = this->create_service<path_manager_interfaces::srv::PlanPath>("path_planner", 
     std::bind(&PathManager::planPath, this, std::placeholders::_1, std::placeholders::_2));
     receivePathserv = this->create_service<path_manager_interfaces::srv::RobotPath>("receive_ll_path", 
@@ -87,6 +124,7 @@ PathManager::on_shutdown(const rclcpp_lifecycle::State & state) {
 }
 
 void PathManager::ll_path_callback(const std::shared_ptr<nav_msgs::msg::Path> msg){
+    // Al recibir una ruta (lat/lon), sustituimos la ruta actual.
     robot_path.poses.clear();
     robot_path = *msg;
     robot_path.header.frame_id = "ll";
@@ -99,6 +137,7 @@ void PathManager::ConvertUTMToLatLon(double utmNorthing, double utmEasting, int 
 
 void PathManager::receivePath(const std::shared_ptr<path_manager_interfaces::srv::RobotPath::Request> req,
                            std::shared_ptr<path_manager_interfaces::srv::RobotPath::Response> res) {
+    // Servicio para inyectar directamente una ruta en memoria.
     robot_path.poses.clear();
     robot_path = req->path;
     
@@ -106,6 +145,10 @@ void PathManager::receivePath(const std::shared_ptr<path_manager_interfaces::srv
 
 void PathManager::assistEmergency(const std::shared_ptr<path_manager_interfaces::srv::AssistEmergency::Request> req,
                            std::shared_ptr<path_manager_interfaces::srv::AssistEmergency::Response> res) {
+    // Servicio orientado a emergencias: genera una ruta desde start -> goal.
+    // Actualmente implementa una planificación simplificada de línea recta
+    // (pasos de ~1m) y convierte UTM->lat/lon. Hay código comentado para
+    // usar DEMAIAS en lugar de la ruta recta.
         RCLCPP_ERROR(this->get_logger(), "Called assist emergency .");
         std::string package_path = ament_index_cpp::get_package_share_directory("path_manager");
         std::string demaias_planner_path = package_path + "/Demaias_planner_missions";  // Path to your subfolder

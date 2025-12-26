@@ -1,3 +1,19 @@
+/**
+ * @file ready_node.cpp
+ * @brief Lifecycle state node that keeps the platform stopped (publishes zero cmd_vel).
+ *
+ * ## Role in the J8 mission FSM
+ * The "READY" state is a safe idle state: the rover is not executing an autonomous mission,
+ * but the system is up and responsive.
+ *
+ * When this node is **active**, it continuously publishes a zero Twist at 50 Hz. This helps
+ * ensure the platform remains stopped even if another node previously commanded motion.
+ *
+ * ## ROS contract
+ * ### Publications
+ * - `cmd_vel_topic_name` (default: `cmd_vel`) [geometry_msgs/msg/Twist]
+ */
+
 #include "ctl_mission/ReadyNode.hpp"
 
 ReadyNode::ReadyNode(const std::string &node_name, bool intra_process_comms)

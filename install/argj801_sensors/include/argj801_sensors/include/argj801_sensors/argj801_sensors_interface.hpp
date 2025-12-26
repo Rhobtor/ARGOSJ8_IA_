@@ -17,6 +17,13 @@ namespace ARGJ801Sensors {
     SICK
   };
 
+  /**
+   * @brief Implementación `Sensor` basada en LCM para leer sensores del rover.
+   *
+   * Esta clase crea un `argj801_lcm::LCMInterface` y varios objetos de datos
+   * (LidarData, MotorTelemetry, OdometerData, Twist...), que a su vez se conectan
+   * a publishers ROS mediante el patrón Visitor.
+   */
   class ARGJ801SensorsInterface : public Sensor {
   private:
     std::shared_ptr<argj801_lcm::LCMInterface> lcmInterface;
@@ -49,6 +56,7 @@ namespace ARGJ801Sensors {
     void getFastData(std::shared_ptr<Visitor::Visitor> visitor);
     void getSlowData(std::shared_ptr<Visitor::Visitor> visitor);
 
+    /// Carga el YAML de LCM y construye el interface.
     void createPreviousConfig(std::string config_file); 
     void createVelocineLidarData(std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::LaserScan>> publisher, std::string frame_id);
     void createSickLidarData(std::shared_ptr<rclcpp::Publisher<sensor_msgs::msg::LaserScan>> publisher, std::string frame_id);

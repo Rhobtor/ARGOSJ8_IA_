@@ -1,3 +1,36 @@
+/**
+ * @file teleoperation_node.cpp
+ * @brief Lifecycle state node that provides manual drive (teleop) using a joystick.
+ *
+ * ## Role in the J8 mission FSM
+ * This node is one of the FSM "states" managed by the mission/orchestrator node
+ * (see `argj08_ctl_node.cpp`). The orchestrator activates/deactivates this node
+ * via ROS 2 Lifecycle transitions depending on the current FSM mode.
+ *
+ * When this node is **active**, it publishes velocity commands (`geometry_msgs/Twist`)
+ * based on the latest `sensor_msgs/Joy` input.
+ *
+ * ## ROS contract (topics / params)
+ * ### Subscriptions
+ * - `joystick_topic_name` (default: `joy`) [sensor_msgs/msg/Joy]
+ *
+ * ### Publications
+ * - `cmd_vel_topic_name` (default: `cmd_vel_test`) [geometry_msgs/msg/Twist]
+ *
+ * ### Parameters
+ * - `max_joy_msg_delay` (s): safety timeout. If no joystick data is received in time,
+ *   the node sends a (0,0) Twist.
+ * - `dead_man_button`: button index that must be pressed to enable motion.
+ * - `x_axis_button`, `z_axis_button`: axis indices for forward and yaw rate.
+ * - `x_multiplier`, `z_multiplier`: scaling factors.
+ *
+ * ## Safety behavior
+ * - If joystick messages become stale, the node forces a stop.
+ * - If the dead-man button isn't pressed, the node forces a stop.
+ *
+ * @note The node currently uses a fixed 50 Hz timer (0.02s) to publish cmd_vel while
+ *       active. That makes it tolerant to bursty joystick messages.
+ */
 
 #include "ctl_mission/TeleoperationNode.hpp"
 

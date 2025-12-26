@@ -3,7 +3,14 @@
 <package format="3">
   <name>argj801_ctl_platform_interfaces</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>
+    Interfaces ROS 2 (messages/services) para el control de la plataforma del rover ARGJ801.
+
+    Este paquete contiene:
+    - msg/CmdThrottleMsg.msg: mando low-level (throttle/steering).
+    - srv/SetVelocity.srv, GetVelocity.srv: servicios simples (modo Arduino).
+    - srv/EmergencyStop.srv: parada de emergencia.
+  </description>
   <maintainer email="jage@uma.es">jage</maintainer>
   <license>MIT</license>
 

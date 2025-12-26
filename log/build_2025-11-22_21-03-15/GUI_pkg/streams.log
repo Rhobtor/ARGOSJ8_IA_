@@ -1,0 +1,70 @@
+[4.649s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/GUI_pkg': PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/GUI_pkg build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/install.log --single-version-externally-managed
+[5.071s] /home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[5.071s]   warnings.warn(msg)
+[5.190s] running egg_info
+[5.213s] creating ../../build/GUI_pkg/GUI_pkg.egg-info
+[5.213s] writing ../../build/GUI_pkg/GUI_pkg.egg-info/PKG-INFO
+[5.213s] writing dependency_links to ../../build/GUI_pkg/GUI_pkg.egg-info/dependency_links.txt
+[5.213s] writing entry points to ../../build/GUI_pkg/GUI_pkg.egg-info/entry_points.txt
+[5.218s] writing requirements to ../../build/GUI_pkg/GUI_pkg.egg-info/requires.txt
+[5.218s] writing top-level names to ../../build/GUI_pkg/GUI_pkg.egg-info/top_level.txt
+[5.218s] writing manifest file '../../build/GUI_pkg/GUI_pkg.egg-info/SOURCES.txt'
+[5.262s] reading manifest file '../../build/GUI_pkg/GUI_pkg.egg-info/SOURCES.txt'
+[5.264s] writing manifest file '../../build/GUI_pkg/GUI_pkg.egg-info/SOURCES.txt'
+[5.264s] running build
+[5.264s] running build_py
+[5.264s] creating /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.264s] copying GUI_pkg/tabs.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.264s] copying GUI_pkg/profiler.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.265s] copying GUI_pkg/profile_analisys.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.265s] copying GUI_pkg/ui_form.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.266s] copying GUI_pkg/path_utils.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.266s] copying GUI_pkg/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.267s] copying GUI_pkg/ros_classes.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.267s] copying GUI_pkg/mainwindow.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.268s] copying GUI_pkg/ui_tabs.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.269s] copying GUI_pkg/geonav_conversions.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.270s] copying GUI_pkg/zoom_image_handler.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.270s] copying GUI_pkg/gui_node.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[5.271s] creating /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/cythonized_code
+[5.271s] copying GUI_pkg/cythonized_code/setup.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/cythonized_code
+[5.272s] copying GUI_pkg/cythonized_code/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/cythonized_code
+[5.273s] running install
+[5.284s] running install_lib
+[5.313s] creating /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.313s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/tabs.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.313s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/profiler.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.313s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/profile_analisys.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.313s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/ui_form.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.313s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/path_utils.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.317s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.317s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/ros_classes.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.317s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/mainwindow.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.317s] creating /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/cythonized_code
+[5.317s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/cythonized_code/setup.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/cythonized_code
+[5.317s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/cythonized_code/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/cythonized_code
+[5.317s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/ui_tabs.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.317s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/geonav_conversions.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.317s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/zoom_image_handler.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.317s] copying /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/gui_node.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg
+[5.317s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/tabs.py to tabs.cpython-310.pyc
+[5.324s] Sorry: IndentationError: unexpected indent (tabs.py, line 415)
+[5.324s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/profiler.py to profiler.cpython-310.pyc
+[5.325s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/profile_analisys.py to profile_analisys.cpython-310.pyc
+[5.325s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/ui_form.py to ui_form.cpython-310.pyc
+[5.330s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/path_utils.py to path_utils.cpython-310.pyc
+[5.331s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/__init__.py to __init__.cpython-310.pyc
+[5.331s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/ros_classes.py to ros_classes.cpython-310.pyc
+[5.335s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/mainwindow.py to mainwindow.cpython-310.pyc
+[5.344s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/cythonized_code/setup.py to setup.cpython-310.pyc
+[5.344s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/cythonized_code/__init__.py to __init__.cpython-310.pyc
+[5.344s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/ui_tabs.py to ui_tabs.cpython-310.pyc
+[5.350s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/geonav_conversions.py to geonav_conversions.cpython-310.pyc
+[5.353s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/zoom_image_handler.py to zoom_image_handler.cpython-310.pyc
+[5.353s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/gui_node.py to gui_node.cpython-310.pyc
+[5.354s] running install_egg_info
+[5.379s] Copying ../../build/GUI_pkg/GUI_pkg.egg-info to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg-0.0.0-py3.10.egg-info
+[5.382s] running install_scripts
+[5.431s] Installing gui_node script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/GUI_pkg
+[5.431s] writing list of installed files to '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/install.log'
+[5.693s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/GUI_pkg' returned '0': PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/GUI_pkg build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/install.log --single-version-externally-managed

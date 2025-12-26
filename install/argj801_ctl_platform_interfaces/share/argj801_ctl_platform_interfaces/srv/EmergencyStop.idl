@@ -5,6 +5,15 @@
 
 module argj801_ctl_platform_interfaces {
   module srv {
+    @verbatim (language="comment", text=
+      "EmergencyStop.srv" "\n"
+      "" "\n"
+      "Servicio para solicitar parada de emergencia de la plataforma." "\n"
+      "" "\n"
+      "Request:" "\n"
+      "- stop: normalmente true para ordenar parada. (Se mantiene como bool por compatibilidad)." "\n"
+      "" "\n"
+      "Response: vacío.")
     struct EmergencyStop_Request {
       boolean stop;
     };

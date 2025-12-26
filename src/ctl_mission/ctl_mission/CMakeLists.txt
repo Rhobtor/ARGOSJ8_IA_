@@ -167,10 +167,19 @@ ament_target_dependencies(follow_zed_node
 )
 
 
+# Executable for MPPI/SAC relay node (AI bridge)
+add_executable(mppi_sac_relay_node
+  src/FSM_states/mppi_sac_relay_node.cpp
+  src/FSM_states/mppi_sac_relay_node_main.cpp
+)
+
+
+
+
 
 
 # Target dependencies for other executables
-set(OTHER_EXECUTABLES   path_following  path_record_node controller_node ready_node follow_zed_node estop_node back_home_node)
+set(OTHER_EXECUTABLES   path_following  path_record_node controller_node ready_node follow_zed_node estop_node back_home_node mppi_sac_relay_node)
 
 foreach(EXECUTABLE IN LISTS OTHER_EXECUTABLES)
 target_include_directories(${EXECUTABLE}
@@ -213,6 +222,7 @@ install(TARGETS
   estop_node
   back_home_node
   follow_zed_node
+  mppi_sac_relay_node
   DESTINATION lib/${PROJECT_NAME})
 
   install(DIRECTORY include/

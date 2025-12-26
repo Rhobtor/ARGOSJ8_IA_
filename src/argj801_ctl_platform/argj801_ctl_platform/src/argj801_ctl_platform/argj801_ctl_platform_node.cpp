@@ -1,5 +1,17 @@
 #include "argj801_ctl_platform/argj801_ctl_platform_node.hpp"
 
+// -----------------------------------------------------------------------------
+// Implementación del nodo de control de plataforma (Lifecycle).
+//
+// Objetivo:
+// - Recibir comandos de alto nivel (Twist) y convertirlos a comandos de actuador
+//   según el modo de operación (Arduino / LCM / Gazebo).
+// - Implementar watchdog/self-test/diagnóstico para aumentar la seguridad.
+//
+// Nota de mantenimiento: en este repositorio estamos añadiendo documentación
+// (comentarios) sin modificar la lógica.
+// -----------------------------------------------------------------------------
+
 
 /// LifecycleTalker constructor
 /**

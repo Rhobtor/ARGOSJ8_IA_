@@ -1,0 +1,48 @@
+[0.613s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/Unity/J8_unity/install/teleop_twist_keyboard:/home/rhobtor/PHD/Unity/J8_unity/install/ros_tcp_endpoint:/home/rhobtor/PHD/Unity/J8_unity/install/my_robot_description:/home/rhobtor/PHD/Unity/J8_unity/install/lidar_subscriber:/home/rhobtor/PHD/Unity/J8_unity/install/fixposition_pkg:/home/rhobtor/PHD/Unity/J8_unity/install/camera_subscriber:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins -- -j16 -l16
+[0.693s] [  0%] Built target octomap_rviz_plugins_autogen_timestamp_deps
+[0.726s] [ 10%] Built target octomap_rviz_plugins_autogen
+[0.843s] [ 20%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/include/octomap_rviz_plugins/moc_occupancy_grid_display.cpp.o[0m
+[17.364s] [ 30%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/src/occupancy_map_display.cpp.o[0m
+[37.191s] [ 40%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/src/occupancy_grid_display.cpp.o[0m
+[53.880s] [ 50%] [32mBuilding CXX object CMakeFiles/octomap_rviz_plugins.dir/include/octomap_rviz_plugins/moc_occupancy_map_display.cpp.o[0m
+[61.383s] [ 60%] [32m[1mLinking CXX shared library liboctomap_rviz_plugins.so[0m
+[63.541s] [100%] Built target octomap_rviz_plugins
+[63.553s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/Unity/J8_unity/install/teleop_twist_keyboard:/home/rhobtor/PHD/Unity/J8_unity/install/ros_tcp_endpoint:/home/rhobtor/PHD/Unity/J8_unity/install/my_robot_description:/home/rhobtor/PHD/Unity/J8_unity/install/lidar_subscriber:/home/rhobtor/PHD/Unity/J8_unity/install/fixposition_pkg:/home/rhobtor/PHD/Unity/J8_unity/install/camera_subscriber:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins -- -j16 -l16
+[63.559s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/Unity/J8_unity/install/teleop_twist_keyboard:/home/rhobtor/PHD/Unity/J8_unity/install/ros_tcp_endpoint:/home/rhobtor/PHD/Unity/J8_unity/install/my_robot_description:/home/rhobtor/PHD/Unity/J8_unity/install/lidar_subscriber:/home/rhobtor/PHD/Unity/J8_unity/install/fixposition_pkg:/home/rhobtor/PHD/Unity/J8_unity/install/camera_subscriber:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins
+[63.565s] -- Install configuration: ""
+[63.565s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/plugins_description.xml
+[63.566s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/include
+[63.566s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/include/octomap_rviz_plugins
+[63.567s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_map_display.hpp
+[63.567s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/include/octomap_rviz_plugins/occupancy_grid_display.hpp
+[63.567s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/library_path.sh
+[63.567s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/library_path.dsv
+[63.568s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/lib/liboctomap_rviz_plugins.so
+[63.587s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/lib/liboctomap_rviz_plugins.so" to ""
+[63.587s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons
+[63.587s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes
+[63.587s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyGrid.png
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyGridStamped.png
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyMap.png
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/ColorOccupancyGrid.png
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/icons/classes/OccupancyMapStamped.png
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/ament_index/resource_index/package_run_dependencies/octomap_rviz_plugins
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/ament_index/resource_index/parent_prefix_path/octomap_rviz_plugins
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/ament_prefix_path.sh
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/ament_prefix_path.dsv
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/path.sh
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/environment/path.dsv
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.bash
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.sh
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.zsh
+[63.588s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/local_setup.dsv
+[63.588s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.dsv
+[63.596s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/ament_index/resource_index/packages/octomap_rviz_plugins
+[63.596s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/ament_index/resource_index/rviz_common__pluginlib__plugin/octomap_rviz_plugins
+[63.597s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[63.597s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+[63.597s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+[63.597s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig.cmake
+[63.597s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/cmake/octomap_rviz_pluginsConfig-version.cmake
+[63.597s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/share/octomap_rviz_plugins/package.xml
+[63.598s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/Unity/J8_unity/install/teleop_twist_keyboard:/home/rhobtor/PHD/Unity/J8_unity/install/ros_tcp_endpoint:/home/rhobtor/PHD/Unity/J8_unity/install/my_robot_description:/home/rhobtor/PHD/Unity/J8_unity/install/lidar_subscriber:/home/rhobtor/PHD/Unity/J8_unity/install/fixposition_pkg:/home/rhobtor/PHD/Unity/J8_unity/install/camera_subscriber:/home/rhobtor/PHD/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/octomap_rviz_plugins

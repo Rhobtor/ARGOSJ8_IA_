@@ -315,6 +315,19 @@ slope_terrain/fast:
 .PHONY : slope_terrain/fast
 
 #=============================================================================
+# Target rules for targets named voxel_grid_node
+
+# Build rule for target.
+voxel_grid_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 voxel_grid_node
+.PHONY : voxel_grid_node
+
+# fast build rule for target.
+voxel_grid_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_grid_node.dir/build.make CMakeFiles/voxel_grid_node.dir/build
+.PHONY : voxel_grid_node/fast
+
+#=============================================================================
 # Target rules for targets named gridmap
 
 # Build rule for target.
@@ -678,6 +691,30 @@ src/slope_terrain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/slope_terrain.dir/build.make CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.s
 .PHONY : src/slope_terrain.cpp.s
 
+src/voxel_grid_node.o: src/voxel_grid_node.cpp.o
+.PHONY : src/voxel_grid_node.o
+
+# target to build an object file
+src/voxel_grid_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_grid_node.dir/build.make CMakeFiles/voxel_grid_node.dir/src/voxel_grid_node.cpp.o
+.PHONY : src/voxel_grid_node.cpp.o
+
+src/voxel_grid_node.i: src/voxel_grid_node.cpp.i
+.PHONY : src/voxel_grid_node.i
+
+# target to preprocess a source file
+src/voxel_grid_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_grid_node.dir/build.make CMakeFiles/voxel_grid_node.dir/src/voxel_grid_node.cpp.i
+.PHONY : src/voxel_grid_node.cpp.i
+
+src/voxel_grid_node.s: src/voxel_grid_node.cpp.s
+.PHONY : src/voxel_grid_node.s
+
+# target to generate assembly for a file
+src/voxel_grid_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_grid_node.dir/build.make CMakeFiles/voxel_grid_node.dir/src/voxel_grid_node.cpp.s
+.PHONY : src/voxel_grid_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -706,6 +743,7 @@ help:
 	@echo "... obstacles_in_2d"
 	@echo "... occupied_nodes_near_obstacles"
 	@echo "... slope_terrain"
+	@echo "... voxel_grid_node"
 	@echo "... src/check_goal.o"
 	@echo "... src/check_goal.i"
 	@echo "... src/check_goal.s"
@@ -745,6 +783,9 @@ help:
 	@echo "... src/slope_terrain.o"
 	@echo "... src/slope_terrain.i"
 	@echo "... src/slope_terrain.s"
+	@echo "... src/voxel_grid_node.o"
+	@echo "... src/voxel_grid_node.i"
+	@echo "... src/voxel_grid_node.s"
 .PHONY : help
 
 

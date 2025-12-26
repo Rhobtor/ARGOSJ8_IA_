@@ -2,6 +2,18 @@
 #define ARGO_J8_KINEMATICMODEL_H
 #include <iostream>
 #include <cmath>
+
+/**
+ * @file argj801_kinematic_model.hpp
+ * @brief Modelo cinemático simple para convertir (speed, rotation) a (throttle, steering).
+ *
+ * Uso principal:
+ * - Se usa en `CtlPlatformNode` (modos LCM/Gazebo) para convertir el comando
+ *   `geometry_msgs/Twist` (v, w) a comandos de actuador, aplicando:
+ *   - geometría del rover (effective_radius, xICR)
+ *   - escalados `*_to_percent`
+ *   - límites de aceleración (steer_acc, throttle_acc)
+ */
 class Argo_J8_KinematicModel {
 public:
     Argo_J8_KinematicModel(double effective_radius, double xICR, double throttle_to_percent,
@@ -9,11 +21,16 @@ public:
 
     ~Argo_J8_KinematicModel();
 
-    // Method to update the robot's position based on the kinematic model
+    /**
+     * @brief Actualiza el modelo para un comando (speed, rotation).
+     * @param speed velocidad lineal deseada (m/s típicamente).
+     * @param rotation velocidad angular deseada (rad/s típicamente, yaw).
+     */
     void update(double speed, double rotation);
 
-    // Method to get the calculated throttle and steering values
+    /// @return Throttle calculado (normalizado/porcentaje según parámetros).
     double getThrottle() const;
+    /// @return Steering calculado (normalizado/porcentaje según parámetros).
     double getSteering() const;
 
 private:
@@ -30,6 +47,7 @@ private:
     double last_throttle_;
     double last_steering_;
 
+    /// Implementación interna del cálculo + limitación por aceleración.
     void calculate(double speed, double rotation);
 };
 

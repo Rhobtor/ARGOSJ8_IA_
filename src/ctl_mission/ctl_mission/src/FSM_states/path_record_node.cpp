@@ -1,3 +1,41 @@
+/**
+ * @file path_record_node.cpp
+ * @brief Lifecycle state node that records a driven trajectory into a simple lat/lon path.
+ *
+ * ## Role in the J8 mission FSM
+ * This node is activated by the mission/orchestrator when the operator wants to
+ * *drive and record* a path (typically to later reuse it for path following).
+ *
+ * While **active**:
+ * - Reads current GPS fix (lat/lon/alt).
+ * - Reads joystick input and publishes Twist (so the vehicle can be driven).
+ * - Periodically appends a new pose to `ll_path` when the driven distance exceeds
+ *   `distance_between_record_points`.
+ *
+ * On **deactivate** it publishes the accumulated `nav_msgs/Path` on `ll_path_topic`.
+ *
+ * ## ROS contract (topics / params)
+ * ### Subscriptions
+ * - `gps_topic` (default: `/fixposition/navsatfix`) [sensor_msgs/msg/NavSatFix]
+ * - `joystick_topic_name` (default: `joy`) [sensor_msgs/msg/Joy] (only created when active)
+ *
+ * ### Publications
+ * - `cmd_vel_topic_name` (default: `cmd_vel_test`) [geometry_msgs/msg/Twist]
+ * - `ll_path_topic` (default: `ll_path`) [nav_msgs/msg/Path]
+ *
+ * ### Parameters
+ * - `distance_between_record_points` (m): minimum spacing between successive recorded points.
+ * - `dead_man_button`, `x_axis_button`, `z_axis_button`: joystick mapping.
+ * - `x_multiplier`, `z_multiplier`: scaling factors applied to joystick axes.
+ * - `queue_size`: QoS depth for pubs/subs.
+ *
+ * ## Data model notes / gotchas
+ * - The recorded `nav_msgs/Path` stores latitude in `pose.position.x` and longitude in
+ *   `pose.position.y` (and altitude in `pose.position.z`). This is not a standard frame.
+ *   Downstream consumers should treat it as a "lat/lon list" rather than a metric map.
+ * - `latLonToUTM()` is used only to compute inter-point distance in meters.
+ */
+
 #include "ctl_mission/PathRecordNode.hpp"
 #include <cmath>
 #include <iostream>

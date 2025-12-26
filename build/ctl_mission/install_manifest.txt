@@ -7,6 +7,7 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/lib/ctl_mission/estop_node
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/lib/ctl_mission/back_home_node
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/lib/ctl_mission/follow_zed_node
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/lib/ctl_mission/mppi_sac_relay_node
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/include/ctl_mission/CtlMissionNode.hpp
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/include/ctl_mission/Regulated_Pure_Pursuit.h
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/include/ctl_mission/J8_FSM.h
@@ -1621,6 +1622,7 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/include/ctl_mission/Eigen-3.3/.hgtags
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/include/ctl_mission/Eigen-3.3/COPYING.README
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/include/ctl_mission/Eigen-3.3/.hgignore
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/include/ctl_mission/MppiSacRelayNode.hpp
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/include/ctl_mission/TeleoperationNode.hpp
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/include/ctl_mission/PathFollowingNode.hpp
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission/include/ctl_mission/Dynamic_PP.h

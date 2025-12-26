@@ -729,6 +729,7 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/sigaction.h \
   /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
@@ -745,8 +746,14 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
   /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -788,10 +795,12 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
@@ -846,6 +855,8 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
@@ -872,13 +883,19 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
@@ -946,6 +963,10 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/opt/ros/humble/include/rcl/rcl/event_callback.h:
+
 /usr/include/c++/11/tr1/exp_integral.tcc:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
@@ -973,6 +994,8 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:
 
@@ -1023,10 +1046,6 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__builder.hpp:
 
 /opt/ros/humble/include/rcl/rcl/domain_id.h:
-
-/opt/ros/humble/include/rcl/rcl/event_callback.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
 
@@ -1172,6 +1191,10 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
 /usr/include/c++/11/ext/type_traits.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
@@ -1222,6 +1245,10 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
+
 /usr/include/c++/11/map:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
@@ -1251,6 +1278,10 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /usr/include/x86_64-linux-gnu/sys/ucontext.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -1453,6 +1484,10 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /usr/include/c++/11/ext/new_allocator.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
 
@@ -1698,11 +1733,9 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
 
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/c++/11/tuple:
 
@@ -1898,6 +1931,8 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /opt/ros/humble/include/rmw/rmw/rmw.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
 /opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
 
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
@@ -1975,8 +2010,6 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /usr/include/c++/11/bits/unique_ptr.h:
 
 /usr/include/c++/11/string:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/argj08_ctl_node.cpp:
 
@@ -2098,8 +2131,6 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /usr/include/c++/11/bits/stl_numeric.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/11/bits/stl_set.h:
@@ -2163,6 +2194,8 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /usr/include/c++/11/iomanip:
 
 /usr/include/c++/11/iosfwd:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/c++/11/limits:
 
@@ -2296,7 +2329,11 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
 /opt/ros/humble/include/rmw/rmw/serialized_message.h:
 
@@ -2319,13 +2356,3 @@ CMakeFiles/ctl_mission.dir/src/argj08_ctl_node.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
-
-/usr/include/c++/11/bits/stl_tree.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:

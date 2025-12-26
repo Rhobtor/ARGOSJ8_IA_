@@ -10,6 +10,20 @@ from launch.events import matches_action
 from launch_ros.events.lifecycle import ChangeState
 from launch.actions import TimerAction
 import yaml
+
+"""Launch de `argj801_sensors` en modo LCM (lidars + driveline + opcionalmente cámara).
+
+Este launch arranca dos LifecycleNodes:
+- `argj801_sensors` (ARGJ801_sensors_node) que publica los tópicos de sensores.
+- `argj801_slow_republisher` (si está instalado) para republcar datos de baja frecuencia.
+
+También publica transforms estáticos (tf2_ros/static_transform_publisher) para los
+frames de los lidars respecto a `robot_frame`.
+
+Parámetros:
+- Se cargan desde `config/argj801_sensors_params_lcm_sensors.yaml`.
+- `configure` y `activate` controlan si se lanzan transiciones lifecycle.
+"""
 def load_yaml(file_path):
     with open(file_path, 'r') as file:
         return yaml.safe_load(file)
@@ -30,6 +44,7 @@ def generate_launch_description():
     ld.add_action(DeclareLaunchArgument('configure', default_value='true', description='Whether or not to configure the node on startup'))
     ld.add_action(DeclareLaunchArgument('activate', default_value='true', description='Whether or not to activate the node on startup'))
 
+    # LifecycleNode: ejecutable del paquete que contiene `Argj801SensorsNode`.
     argj801_sensors = LifecycleNode(package='argj801_sensors', executable='ARGJ801_sensors_node',
                       name='ARGJ801_sensors_node_lcm_sensors', namespace='ARGJ801', output='screen', parameters=[global_params, yaml_config['ARGJ801']['argj801_sensors']], arguments=["lcm_sensors"])
     
@@ -37,6 +52,7 @@ def generate_launch_description():
                       name='ARGJ801_slow_republisher_node', namespace='ARGJ801', output='screen', parameters=[yaml_config_slow['ARGJ801']['argj801_slow_republisher']])
   
 
+    # TFs estáticos de los sensores respecto al frame del robot.
     tf_node_velodyne = Node(package='tf2_ros', executable='static_transform_publisher', name='static_transform_publisher', output='screen',
                     arguments=['1.99348', '0', '0.27133', '1', '0', '0','0',yaml_config['ARGJ801']['global_parameters']['robot_frame'], yaml_config['ARGJ801']['global_parameters']['velodyne_frame']])
     ld.add_action(tf_node_velodyne)
@@ -45,7 +61,7 @@ def generate_launch_description():
                    arguments=['1.86558', '0', '0.37865', '1', '0', '0', '0',yaml_config['ARGJ801']['global_parameters']['robot_frame'], yaml_config['ARGJ801']['global_parameters']['sick_frame']])
     ld.add_action(tf_node_sick)
 
-    # Configuration and activation events
+    # Transiciones lifecycle (configure/activate) con retraso.
     config_events = []
     activate_events = []
 

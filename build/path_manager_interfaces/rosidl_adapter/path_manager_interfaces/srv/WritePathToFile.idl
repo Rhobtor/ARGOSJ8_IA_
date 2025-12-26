@@ -5,6 +5,15 @@
 
 module path_manager_interfaces {
   module srv {
+    @verbatim (language="comment", text=
+      "WritePathToFile.srv" "\n"
+      "" "\n"
+      "Solicita escribir la ruta actual (robot_path) a un fichero." "\n"
+      "" "\n"
+      "- filename: nombre destino." "\n"
+      "" "\n"
+      "Response:" "\n"
+      "- success: true si se pudo escribir.")
     struct WritePathToFile_Request {
       string filename;
     };

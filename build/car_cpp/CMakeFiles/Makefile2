@@ -72,6 +72,7 @@ all: CMakeFiles/obstacles_in_2d.dir/all
 all: CMakeFiles/check_goal.dir/all
 all: CMakeFiles/filtered_navigation_nodes.dir/all
 all: CMakeFiles/slope_terrain.dir/all
+all: CMakeFiles/voxel_grid_node.dir/all
 all: CMakeFiles/gridmap.dir/all
 all: CMakeFiles/joints_plugin.dir/all
 all: CMakeFiles/drive_plugin.dir/all
@@ -94,6 +95,7 @@ clean: CMakeFiles/obstacles_in_2d.dir/clean
 clean: CMakeFiles/check_goal.dir/clean
 clean: CMakeFiles/filtered_navigation_nodes.dir/clean
 clean: CMakeFiles/slope_terrain.dir/clean
+clean: CMakeFiles/voxel_grid_node.dir/clean
 clean: CMakeFiles/gridmap.dir/clean
 clean: CMakeFiles/joints_plugin.dir/clean
 clean: CMakeFiles/drive_plugin.dir/clean
@@ -385,6 +387,32 @@ slope_terrain: CMakeFiles/slope_terrain.dir/rule
 CMakeFiles/slope_terrain.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/slope_terrain.dir/build.make CMakeFiles/slope_terrain.dir/clean
 .PHONY : CMakeFiles/slope_terrain.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/voxel_grid_node.dir
+
+# All Build rule for target.
+CMakeFiles/voxel_grid_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_grid_node.dir/build.make CMakeFiles/voxel_grid_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_grid_node.dir/build.make CMakeFiles/voxel_grid_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/CMakeFiles --progress-num=27,28 "Built target voxel_grid_node"
+.PHONY : CMakeFiles/voxel_grid_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/voxel_grid_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/voxel_grid_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/voxel_grid_node.dir/rule
+
+# Convenience name for target.
+voxel_grid_node: CMakeFiles/voxel_grid_node.dir/rule
+.PHONY : voxel_grid_node
+
+# clean rule for target.
+CMakeFiles/voxel_grid_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_grid_node.dir/build.make CMakeFiles/voxel_grid_node.dir/clean
+.PHONY : CMakeFiles/voxel_grid_node.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/gridmap.dir

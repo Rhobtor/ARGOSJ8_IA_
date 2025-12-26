@@ -28,7 +28,7 @@ private:
     std::shared_ptr<rclcpp::Service<ctl_mission_interfaces::srv::GetMode>> getModeServ;
     rclcpp::Service<ctl_mission_interfaces::srv::GetPossibleTransitions>::SharedPtr get_transitions_service_;
     rclcpp::Client<lifecycle_msgs::srv::ChangeState>::SharedPtr path_follow_client, stanley_ctrl_client, teleoperation_client, 
-    path_record_client,follow_zed_client, ready_client, estop_client, back_home_client, mpc_planner_client;
+    path_record_client,follow_zed_client, mppi_sac_relay_client, ready_client, estop_client, back_home_client, mpc_planner_client;
     using TransitionHandler = std::function<void()>;
     std::map<Transition, TransitionHandler> transitionHandlers;
     std::shared_future<lifecycle_msgs::srv::ChangeState::Response::SharedPtr> service_future_;
@@ -36,7 +36,7 @@ private:
     std::string change_fsm_mode_srv_name, get_fsm_srv_name, get_fsm_topic_name, get_possible_transition_srv_name, 
                 get_possible_transition_topic_name;
     rclcpp::CallbackGroup::SharedPtr client_callback_group_;
-    ;
+
 
 
 public:
@@ -73,6 +73,8 @@ public:
     void onFollowZEDToReadyTransition();
     void onReadyToRecordPathTransition();
     void onRecordPathToReadyTransition();
+    void onReadyToMppiSacTransition();
+    void onMppiSacToReadyTransition();
     void onAllToEstopTransition(Mode old_mode);
 
     // Publish methods
