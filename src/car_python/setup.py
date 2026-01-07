@@ -31,6 +31,7 @@ setup(
         'console_scripts': [
             "keyboard_control=car.keyboard_control:main",
             "joystick_control=car.joystick_control:main",
+            "cmd_vel_to_throttle=car.cmd_vel_to_throttle:main",
             'filter_points_cloud = car.filter_points_cloud:main',
             'points_goal = car.points_goal:main',
             'colision_zone = car.colision_zone:main',

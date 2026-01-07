@@ -198,45 +198,6 @@ car_cpp_uninstall/fast:
 .PHONY : car_cpp_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named navigation_nodes
-
-# Build rule for target.
-navigation_nodes: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 navigation_nodes
-.PHONY : navigation_nodes
-
-# fast build rule for target.
-navigation_nodes/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_nodes.dir/build.make CMakeFiles/navigation_nodes.dir/build
-.PHONY : navigation_nodes/fast
-
-#=============================================================================
-# Target rules for targets named navigation_nodes_ground
-
-# Build rule for target.
-navigation_nodes_ground: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 navigation_nodes_ground
-.PHONY : navigation_nodes_ground
-
-# fast build rule for target.
-navigation_nodes_ground/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_nodes_ground.dir/build.make CMakeFiles/navigation_nodes_ground.dir/build
-.PHONY : navigation_nodes_ground/fast
-
-#=============================================================================
-# Target rules for targets named move_navigation_nodes_frontier
-
-# Build rule for target.
-move_navigation_nodes_frontier: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 move_navigation_nodes_frontier
-.PHONY : move_navigation_nodes_frontier
-
-# fast build rule for target.
-move_navigation_nodes_frontier/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_navigation_nodes_frontier.dir/build.make CMakeFiles/move_navigation_nodes_frontier.dir/build
-.PHONY : move_navigation_nodes_frontier/fast
-
-#=============================================================================
 # Target rules for targets named frontier_values
 
 # Build rule for target.
@@ -248,32 +209,6 @@ frontier_values: cmake_check_build_system
 frontier_values/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/frontier_values.dir/build.make CMakeFiles/frontier_values.dir/build
 .PHONY : frontier_values/fast
-
-#=============================================================================
-# Target rules for targets named occupied_nodes_near_obstacles
-
-# Build rule for target.
-occupied_nodes_near_obstacles: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 occupied_nodes_near_obstacles
-.PHONY : occupied_nodes_near_obstacles
-
-# fast build rule for target.
-occupied_nodes_near_obstacles/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/occupied_nodes_near_obstacles.dir/build.make CMakeFiles/occupied_nodes_near_obstacles.dir/build
-.PHONY : occupied_nodes_near_obstacles/fast
-
-#=============================================================================
-# Target rules for targets named obstacles_in_2d
-
-# Build rule for target.
-obstacles_in_2d: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 obstacles_in_2d
-.PHONY : obstacles_in_2d
-
-# fast build rule for target.
-obstacles_in_2d/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles_in_2d.dir/build.make CMakeFiles/obstacles_in_2d.dir/build
-.PHONY : obstacles_in_2d/fast
 
 #=============================================================================
 # Target rules for targets named check_goal
@@ -289,32 +224,6 @@ check_goal/fast:
 .PHONY : check_goal/fast
 
 #=============================================================================
-# Target rules for targets named filtered_navigation_nodes
-
-# Build rule for target.
-filtered_navigation_nodes: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 filtered_navigation_nodes
-.PHONY : filtered_navigation_nodes
-
-# fast build rule for target.
-filtered_navigation_nodes/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/filtered_navigation_nodes.dir/build.make CMakeFiles/filtered_navigation_nodes.dir/build
-.PHONY : filtered_navigation_nodes/fast
-
-#=============================================================================
-# Target rules for targets named slope_terrain
-
-# Build rule for target.
-slope_terrain: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 slope_terrain
-.PHONY : slope_terrain
-
-# fast build rule for target.
-slope_terrain/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slope_terrain.dir/build.make CMakeFiles/slope_terrain.dir/build
-.PHONY : slope_terrain/fast
-
-#=============================================================================
 # Target rules for targets named voxel_grid_node
 
 # Build rule for target.
@@ -326,19 +235,6 @@ voxel_grid_node: cmake_check_build_system
 voxel_grid_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/voxel_grid_node.dir/build.make CMakeFiles/voxel_grid_node.dir/build
 .PHONY : voxel_grid_node/fast
-
-#=============================================================================
-# Target rules for targets named gridmap
-
-# Build rule for target.
-gridmap: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gridmap
-.PHONY : gridmap
-
-# fast build rule for target.
-gridmap/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gridmap.dir/build.make CMakeFiles/gridmap.dir/build
-.PHONY : gridmap/fast
 
 #=============================================================================
 # Target rules for targets named joints_plugin
@@ -427,30 +323,6 @@ src/diffdrive_plugin_multi_wheel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/drive_plugin.dir/build.make CMakeFiles/drive_plugin.dir/src/diffdrive_plugin_multi_wheel.cpp.s
 .PHONY : src/diffdrive_plugin_multi_wheel.cpp.s
 
-src/filtered_navigation_nodes.o: src/filtered_navigation_nodes.cpp.o
-.PHONY : src/filtered_navigation_nodes.o
-
-# target to build an object file
-src/filtered_navigation_nodes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/filtered_navigation_nodes.dir/build.make CMakeFiles/filtered_navigation_nodes.dir/src/filtered_navigation_nodes.cpp.o
-.PHONY : src/filtered_navigation_nodes.cpp.o
-
-src/filtered_navigation_nodes.i: src/filtered_navigation_nodes.cpp.i
-.PHONY : src/filtered_navigation_nodes.i
-
-# target to preprocess a source file
-src/filtered_navigation_nodes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/filtered_navigation_nodes.dir/build.make CMakeFiles/filtered_navigation_nodes.dir/src/filtered_navigation_nodes.cpp.i
-.PHONY : src/filtered_navigation_nodes.cpp.i
-
-src/filtered_navigation_nodes.s: src/filtered_navigation_nodes.cpp.s
-.PHONY : src/filtered_navigation_nodes.s
-
-# target to generate assembly for a file
-src/filtered_navigation_nodes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/filtered_navigation_nodes.dir/build.make CMakeFiles/filtered_navigation_nodes.dir/src/filtered_navigation_nodes.cpp.s
-.PHONY : src/filtered_navigation_nodes.cpp.s
-
 src/frontier_values.o: src/frontier_values.cpp.o
 .PHONY : src/frontier_values.o
 
@@ -474,30 +346,6 @@ src/frontier_values.s: src/frontier_values.cpp.s
 src/frontier_values.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/frontier_values.dir/build.make CMakeFiles/frontier_values.dir/src/frontier_values.cpp.s
 .PHONY : src/frontier_values.cpp.s
-
-src/gridmap.o: src/gridmap.cpp.o
-.PHONY : src/gridmap.o
-
-# target to build an object file
-src/gridmap.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gridmap.dir/build.make CMakeFiles/gridmap.dir/src/gridmap.cpp.o
-.PHONY : src/gridmap.cpp.o
-
-src/gridmap.i: src/gridmap.cpp.i
-.PHONY : src/gridmap.i
-
-# target to preprocess a source file
-src/gridmap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gridmap.dir/build.make CMakeFiles/gridmap.dir/src/gridmap.cpp.i
-.PHONY : src/gridmap.cpp.i
-
-src/gridmap.s: src/gridmap.cpp.s
-.PHONY : src/gridmap.s
-
-# target to generate assembly for a file
-src/gridmap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gridmap.dir/build.make CMakeFiles/gridmap.dir/src/gridmap.cpp.s
-.PHONY : src/gridmap.cpp.s
 
 src/joints.o: src/joints.cpp.o
 .PHONY : src/joints.o
@@ -523,30 +371,6 @@ src/joints.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/joints_plugin.dir/build.make CMakeFiles/joints_plugin.dir/src/joints.cpp.s
 .PHONY : src/joints.cpp.s
 
-src/move_navigation_nodes_frontier.o: src/move_navigation_nodes_frontier.cpp.o
-.PHONY : src/move_navigation_nodes_frontier.o
-
-# target to build an object file
-src/move_navigation_nodes_frontier.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_navigation_nodes_frontier.dir/build.make CMakeFiles/move_navigation_nodes_frontier.dir/src/move_navigation_nodes_frontier.cpp.o
-.PHONY : src/move_navigation_nodes_frontier.cpp.o
-
-src/move_navigation_nodes_frontier.i: src/move_navigation_nodes_frontier.cpp.i
-.PHONY : src/move_navigation_nodes_frontier.i
-
-# target to preprocess a source file
-src/move_navigation_nodes_frontier.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_navigation_nodes_frontier.dir/build.make CMakeFiles/move_navigation_nodes_frontier.dir/src/move_navigation_nodes_frontier.cpp.i
-.PHONY : src/move_navigation_nodes_frontier.cpp.i
-
-src/move_navigation_nodes_frontier.s: src/move_navigation_nodes_frontier.cpp.s
-.PHONY : src/move_navigation_nodes_frontier.s
-
-# target to generate assembly for a file
-src/move_navigation_nodes_frontier.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_navigation_nodes_frontier.dir/build.make CMakeFiles/move_navigation_nodes_frontier.dir/src/move_navigation_nodes_frontier.cpp.s
-.PHONY : src/move_navigation_nodes_frontier.cpp.s
-
 src/move_object.o: src/move_object.cpp.o
 .PHONY : src/move_object.o
 
@@ -570,126 +394,6 @@ src/move_object.s: src/move_object.cpp.s
 src/move_object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_plugin.dir/build.make CMakeFiles/move_plugin.dir/src/move_object.cpp.s
 .PHONY : src/move_object.cpp.s
-
-src/navigation_nodes.o: src/navigation_nodes.cpp.o
-.PHONY : src/navigation_nodes.o
-
-# target to build an object file
-src/navigation_nodes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_nodes.dir/build.make CMakeFiles/navigation_nodes.dir/src/navigation_nodes.cpp.o
-.PHONY : src/navigation_nodes.cpp.o
-
-src/navigation_nodes.i: src/navigation_nodes.cpp.i
-.PHONY : src/navigation_nodes.i
-
-# target to preprocess a source file
-src/navigation_nodes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_nodes.dir/build.make CMakeFiles/navigation_nodes.dir/src/navigation_nodes.cpp.i
-.PHONY : src/navigation_nodes.cpp.i
-
-src/navigation_nodes.s: src/navigation_nodes.cpp.s
-.PHONY : src/navigation_nodes.s
-
-# target to generate assembly for a file
-src/navigation_nodes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_nodes.dir/build.make CMakeFiles/navigation_nodes.dir/src/navigation_nodes.cpp.s
-.PHONY : src/navigation_nodes.cpp.s
-
-src/navigation_nodes_ground.o: src/navigation_nodes_ground.cpp.o
-.PHONY : src/navigation_nodes_ground.o
-
-# target to build an object file
-src/navigation_nodes_ground.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_nodes_ground.dir/build.make CMakeFiles/navigation_nodes_ground.dir/src/navigation_nodes_ground.cpp.o
-.PHONY : src/navigation_nodes_ground.cpp.o
-
-src/navigation_nodes_ground.i: src/navigation_nodes_ground.cpp.i
-.PHONY : src/navigation_nodes_ground.i
-
-# target to preprocess a source file
-src/navigation_nodes_ground.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_nodes_ground.dir/build.make CMakeFiles/navigation_nodes_ground.dir/src/navigation_nodes_ground.cpp.i
-.PHONY : src/navigation_nodes_ground.cpp.i
-
-src/navigation_nodes_ground.s: src/navigation_nodes_ground.cpp.s
-.PHONY : src/navigation_nodes_ground.s
-
-# target to generate assembly for a file
-src/navigation_nodes_ground.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/navigation_nodes_ground.dir/build.make CMakeFiles/navigation_nodes_ground.dir/src/navigation_nodes_ground.cpp.s
-.PHONY : src/navigation_nodes_ground.cpp.s
-
-src/obstacles_in_2d.o: src/obstacles_in_2d.cpp.o
-.PHONY : src/obstacles_in_2d.o
-
-# target to build an object file
-src/obstacles_in_2d.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles_in_2d.dir/build.make CMakeFiles/obstacles_in_2d.dir/src/obstacles_in_2d.cpp.o
-.PHONY : src/obstacles_in_2d.cpp.o
-
-src/obstacles_in_2d.i: src/obstacles_in_2d.cpp.i
-.PHONY : src/obstacles_in_2d.i
-
-# target to preprocess a source file
-src/obstacles_in_2d.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles_in_2d.dir/build.make CMakeFiles/obstacles_in_2d.dir/src/obstacles_in_2d.cpp.i
-.PHONY : src/obstacles_in_2d.cpp.i
-
-src/obstacles_in_2d.s: src/obstacles_in_2d.cpp.s
-.PHONY : src/obstacles_in_2d.s
-
-# target to generate assembly for a file
-src/obstacles_in_2d.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/obstacles_in_2d.dir/build.make CMakeFiles/obstacles_in_2d.dir/src/obstacles_in_2d.cpp.s
-.PHONY : src/obstacles_in_2d.cpp.s
-
-src/occupied_nodes_near_obstacles.o: src/occupied_nodes_near_obstacles.cpp.o
-.PHONY : src/occupied_nodes_near_obstacles.o
-
-# target to build an object file
-src/occupied_nodes_near_obstacles.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/occupied_nodes_near_obstacles.dir/build.make CMakeFiles/occupied_nodes_near_obstacles.dir/src/occupied_nodes_near_obstacles.cpp.o
-.PHONY : src/occupied_nodes_near_obstacles.cpp.o
-
-src/occupied_nodes_near_obstacles.i: src/occupied_nodes_near_obstacles.cpp.i
-.PHONY : src/occupied_nodes_near_obstacles.i
-
-# target to preprocess a source file
-src/occupied_nodes_near_obstacles.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/occupied_nodes_near_obstacles.dir/build.make CMakeFiles/occupied_nodes_near_obstacles.dir/src/occupied_nodes_near_obstacles.cpp.i
-.PHONY : src/occupied_nodes_near_obstacles.cpp.i
-
-src/occupied_nodes_near_obstacles.s: src/occupied_nodes_near_obstacles.cpp.s
-.PHONY : src/occupied_nodes_near_obstacles.s
-
-# target to generate assembly for a file
-src/occupied_nodes_near_obstacles.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/occupied_nodes_near_obstacles.dir/build.make CMakeFiles/occupied_nodes_near_obstacles.dir/src/occupied_nodes_near_obstacles.cpp.s
-.PHONY : src/occupied_nodes_near_obstacles.cpp.s
-
-src/slope_terrain.o: src/slope_terrain.cpp.o
-.PHONY : src/slope_terrain.o
-
-# target to build an object file
-src/slope_terrain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slope_terrain.dir/build.make CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o
-.PHONY : src/slope_terrain.cpp.o
-
-src/slope_terrain.i: src/slope_terrain.cpp.i
-.PHONY : src/slope_terrain.i
-
-# target to preprocess a source file
-src/slope_terrain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slope_terrain.dir/build.make CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.i
-.PHONY : src/slope_terrain.cpp.i
-
-src/slope_terrain.s: src/slope_terrain.cpp.s
-.PHONY : src/slope_terrain.s
-
-# target to generate assembly for a file
-src/slope_terrain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/slope_terrain.dir/build.make CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.s
-.PHONY : src/slope_terrain.cpp.s
 
 src/voxel_grid_node.o: src/voxel_grid_node.cpp.o
 .PHONY : src/voxel_grid_node.o
@@ -732,17 +436,9 @@ help:
 	@echo "... uninstall"
 	@echo "... check_goal"
 	@echo "... drive_plugin"
-	@echo "... filtered_navigation_nodes"
 	@echo "... frontier_values"
-	@echo "... gridmap"
 	@echo "... joints_plugin"
-	@echo "... move_navigation_nodes_frontier"
 	@echo "... move_plugin"
-	@echo "... navigation_nodes"
-	@echo "... navigation_nodes_ground"
-	@echo "... obstacles_in_2d"
-	@echo "... occupied_nodes_near_obstacles"
-	@echo "... slope_terrain"
 	@echo "... voxel_grid_node"
 	@echo "... src/check_goal.o"
 	@echo "... src/check_goal.i"
@@ -750,39 +446,15 @@ help:
 	@echo "... src/diffdrive_plugin_multi_wheel.o"
 	@echo "... src/diffdrive_plugin_multi_wheel.i"
 	@echo "... src/diffdrive_plugin_multi_wheel.s"
-	@echo "... src/filtered_navigation_nodes.o"
-	@echo "... src/filtered_navigation_nodes.i"
-	@echo "... src/filtered_navigation_nodes.s"
 	@echo "... src/frontier_values.o"
 	@echo "... src/frontier_values.i"
 	@echo "... src/frontier_values.s"
-	@echo "... src/gridmap.o"
-	@echo "... src/gridmap.i"
-	@echo "... src/gridmap.s"
 	@echo "... src/joints.o"
 	@echo "... src/joints.i"
 	@echo "... src/joints.s"
-	@echo "... src/move_navigation_nodes_frontier.o"
-	@echo "... src/move_navigation_nodes_frontier.i"
-	@echo "... src/move_navigation_nodes_frontier.s"
 	@echo "... src/move_object.o"
 	@echo "... src/move_object.i"
 	@echo "... src/move_object.s"
-	@echo "... src/navigation_nodes.o"
-	@echo "... src/navigation_nodes.i"
-	@echo "... src/navigation_nodes.s"
-	@echo "... src/navigation_nodes_ground.o"
-	@echo "... src/navigation_nodes_ground.i"
-	@echo "... src/navigation_nodes_ground.s"
-	@echo "... src/obstacles_in_2d.o"
-	@echo "... src/obstacles_in_2d.i"
-	@echo "... src/obstacles_in_2d.s"
-	@echo "... src/occupied_nodes_near_obstacles.o"
-	@echo "... src/occupied_nodes_near_obstacles.i"
-	@echo "... src/occupied_nodes_near_obstacles.s"
-	@echo "... src/slope_terrain.o"
-	@echo "... src/slope_terrain.i"
-	@echo "... src/slope_terrain.s"
 	@echo "... src/voxel_grid_node.o"
 	@echo "... src/voxel_grid_node.i"
 	@echo "... src/voxel_grid_node.s"

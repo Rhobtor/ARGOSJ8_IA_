@@ -15,13 +15,20 @@ def generate_launch_description():
     # Get the share directory of your package
     share_dir = get_package_share_directory('j8_xacro_model')
 
-    # Instead of using os.path.join to build a string, use PathJoinSubstitution.
-    # This creates a substitution that is compatible with the launch system.
-    world_arg = PathJoinSubstitution([
+    # World selection
+    # NOTA: `empty.world` no tiene suelo, así que el robot cae infinitamente.
+    # El mundo `world_1.world` incluye un `ground_plane`.
+    default_world = PathJoinSubstitution([
         FindPackageShare('car'),
         'worlds',
         'world_1.world'
     ])
+    declared_world_arg = DeclareLaunchArgument(
+        'world',
+        default_value=default_world,
+        description='Ruta al archivo .world a cargar en Gazebo.'
+    )
+    world_arg = LaunchConfiguration('world')
 
     # Get the car URDF by processing the xacro file
     xacro_file = os.path.join(share_dir, 'urdf', 'argo_j8.xacro')
@@ -216,28 +223,28 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-
+        declared_world_arg,
         robot_state_publisher_node,
         gazebo_server,
         gazebo_client,
         urdf_spawn_node,
-        filter_points_cloud,
-        frontier_values,
-        octomap,
+        #filter_points_cloud,
+        #frontier_values,
+        #octomap,
         map_odom_tf,
-        navigation_nodes_ground,
-        filtered_navigation_nodes,
-        navigation_nodes,
-        obstacles_in_2d,
-        occupied_nodes_near_obstacles,
+        #navigation_nodes_ground,
+        #filtered_navigation_nodes,
+        #navigation_nodes,
+        #obstacles_in_2d,
+        #occupied_nodes_near_obstacles,
         #move_navigation_nodes,
-        check_goal,
-        points_goal,
-        colision_zone,
-        navegation_map,
-        memory_map,
-        frontier_centroid,
-        gridmap,
-        slope_terrain,
+        #check_goal,
+        #points_goal,
+        #colision_zone,
+        #navegation_map,
+        #memory_map,
+        #frontier_centroid,
+        #gridmap,
+        #slope_terrain,
 
     ])

@@ -14,7 +14,8 @@ class CircuitSupervisor(Node):
 
         # ---------- Parámetros ----------
         self.declare_parameter('launch_cmds', [
-            'ros2 launch car circuit1.launch.py',
+            'ros2 launch car circuit2.launch.py',
+            'ros2 launch car circuit3.launch.py',
             # 'ros2 launch car world_2_c.launch.py',
             # 'ros2 launch car world_3_d.launch.py',
         ])
@@ -32,16 +33,20 @@ class CircuitSupervisor(Node):
         self.visited_count = 0
         self.env_process   = None
         self.switching     = False
+        self.ignore_done_until = 0.0
 
         # ---------- QoS ----------
         qos_tl = QoSProfile(depth=1,
                             reliability=ReliabilityPolicy.RELIABLE,
                             durability=DurabilityPolicy.TRANSIENT_LOCAL)
+        qos_done = QoSProfile(depth=1,
+                      reliability=ReliabilityPolicy.RELIABLE,
+                      durability=DurabilityPolicy.VOLATILE)
         qos_r  = QoSProfile(depth=1, reliability=ReliabilityPolicy.RELIABLE)
 
         # ---------- Subs/Pubs ----------
         self.create_subscription(Bool, '/reset_request', self.reset_request_cb, qos_tl)
-        self.create_subscription(Bool, '/circuit/done', self.circuit_done_cb, qos_tl)
+        self.create_subscription(Bool, '/circuit/done', self.circuit_done_cb, qos_done)
         self.create_subscription(UInt32, '/circuit/visited', self.visited_cb, qos_r)
 
         self.reset_conf_pub = self.create_publisher(Bool, '/reset_confirmation', qos_tl)
@@ -93,6 +98,9 @@ class CircuitSupervisor(Node):
             self.switch_environment()
 
     def circuit_done_cb(self, msg: Bool):
+        # Evita re-disparos por mensajes encolados (o durabilidad) justo tras un cambio
+        if time.monotonic() < self.ignore_done_until:
+            return
         if self.switch_on_done and msg.data and not self.switching:
             self.get_logger().info("🏁 Señal de fin de circuito recibida. Cambiando de circuito…")
             self.switch_environment()
@@ -118,6 +126,8 @@ class CircuitSupervisor(Node):
 
         self.reset_conf_pub.publish(Bool(data=True))
         self.get_logger().info("✅ Cambio completado")
+        # Ventana corta para descartar un /circuit/done anterior que llegue tarde
+        self.ignore_done_until = time.monotonic() + 0.75
         self.switching = False
 
     # ------------------------------ shutdown
@@ -134,7 +144,10 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.shutdown()
+    except Exception:
+        pass
 
 if __name__ == '__main__':
     main()

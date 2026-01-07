@@ -1,0 +1,322 @@
+[0.896s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp': CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_serialization:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy_linux:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_setup:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/home/rhobtor/zed/install/zed_components/lib:/home/rhobtor/zed/install/zed_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/car_cpp -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp
+[6.420s] -- The C compiler identification is GNU 11.4.0
+[6.421s] -- The CXX compiler identification is GNU 11.4.0
+[6.421s] -- Detecting C compiler ABI info
+[6.421s] -- Detecting C compiler ABI info - done
+[6.421s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.424s] -- Detecting C compile features
+[6.424s] -- Detecting C compile features - done
+[6.424s] -- Detecting CXX compiler ABI info
+[6.424s] -- Detecting CXX compiler ABI info - done
+[6.424s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.424s] -- Detecting CXX compile features
+[6.425s] -- Detecting CXX compile features - done
+[6.425s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.425s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[6.425s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[6.425s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.425s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.425s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.425s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.430s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.430s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[6.430s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.430s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.431s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.433s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.433s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.440s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.440s] -- Found Threads: TRUE  
+[6.440s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[6.440s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[6.440s] -- Checking for module 'bullet>=2.82'
+[6.440s] --   Found bullet, version 3.05
+[6.440s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[6.440s] -- Found assimp: /usr/include (found version "5.2.0") 
+[6.440s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[6.441s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[6.441s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[6.441s] -- Looking for ignition-math6 -- found version 6.15.1
+[6.441s] -- Searching for dependencies of ignition-math6
+[6.441s] -- Looking for OGRE...
+[6.441s] -- OGRE_PREFIX_WATCH changed.
+[6.441s] -- Checking for module 'OGRE'
+[6.441s] --   Found OGRE, version 1.9.0
+[6.441s] -- Found Ogre Ghadamon (1.9.0)
+[6.441s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[6.441s] -- Looking for OGRE_Paging...
+[6.441s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[6.441s] -- Looking for OGRE_Terrain...
+[6.441s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[6.441s] -- Looking for OGRE_Property...
+[6.441s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[6.441s] -- Looking for OGRE_RTShaderSystem...
+[6.441s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[6.441s] -- Looking for OGRE_Volume...
+[6.441s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[6.441s] -- Looking for OGRE_Overlay...
+[6.442s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[6.548s] -- Looking for ignition-math6 -- found version 6.15.1
+[6.564s] -- Looking for ignition-transport8 -- found version 8.2.1
+[6.564s] -- Searching for dependencies of ignition-transport8
+[6.619s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[6.659s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[6.671s] -- Checking for module 'libzmq >= 4'
+[6.721s] --   Found libzmq, version 4.3.4
+[6.850s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[6.850s] -- Checking for module 'uuid'
+[6.880s] --   Found uuid, version 2.37.2
+[6.966s] -- Found UUID: TRUE  
+[6.975s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[6.976s] -- Searching for dependencies of ignition-msgs5
+[7.009s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.020s] -- Checking for module 'tinyxml2'
+[7.049s] --   Found tinyxml2, version 9.0.0
+[7.157s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[7.160s] -- Looking for ignition-common3 -- found version 3.14.0
+[7.160s] -- Searching for dependencies of ignition-common3
+[7.160s] -- Looking for dlfcn.h - found
+[7.160s] -- Looking for libdl - found
+[7.160s] -- Found DL: TRUE  
+[7.188s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[7.188s] -- Searching for <ignition-common3> component [graphics]
+[7.198s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[7.198s] -- Searching for dependencies of ignition-common3-graphics
+[7.199s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.215s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[7.215s] -- Searching for dependencies of ignition-fuel_tools4
+[7.443s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[7.455s] [0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake:2 (cmake_policy):
+[7.456s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[7.456s]   CMake.
+[7.456s] 
+[7.456s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[7.456s]   CMake that the project does not need compatibility with older versions.
+[7.456s] Call Stack (most recent call first):
+[7.456s]   /usr/share/cmake/ignition-cmake2/cmake2/FindJSONCPP.cmake:34 (find_package)
+[7.456s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools4/ignition-fuel_tools4-config.cmake:94 (find_package)
+[7.456s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:251 (find_package)
+[7.456s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[7.456s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[7.456s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[7.456s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[7.456s]   CMakeLists.txt:6 (find_package)
+[7.456s] 
+[7.456s] [0m
+[7.474s] -- Checking for module 'jsoncpp'
+[7.501s] --   Found jsoncpp, version 1.9.5
+[7.588s] -- Found JSONCPP: TRUE  
+[7.596s] -- Checking for module 'libzip'
+[7.631s] --   Found libzip, version 1.7.3
+[7.716s] -- Found ZIP: TRUE  
+[7.717s] -- Looking for ignition-common3 -- found version 3.14.0
+[7.718s] -- Looking for ignition-math6 -- found version 6.15.1
+[7.718s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[7.736s] -- Gazebo version: 11.10
+[7.744s] -- Checking for module 'tbb'
+[7.777s] --   Found tbb, version 2021.5.0
+[7.870s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[7.962s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[8.022s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[8.110s] -- Found octomap_msgs: 2.0.1 (/opt/ros/humble/share/octomap_msgs/cmake)
+[8.180s] -- Found octomap_ros: 0.4.4 (/opt/ros/humble/share/octomap_ros/cmake)
+[8.225s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[8.374s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+[8.374s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[8.374s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[8.374s]   cmake_policy command to set the policy and suppress this warning.
+[8.374s] 
+[8.374s]   CMake variable EIGEN_ROOT is set to:
+[8.374s] 
+[8.374s]     /usr/include/eigen3
+[8.374s] 
+[8.375s]   For compatibility, find_package is ignoring the variable, but code in a
+[8.375s]   .cmake module might still use it.
+[8.375s] Call Stack (most recent call first):
+[8.375s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+[8.375s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[8.375s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[8.375s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[8.375s]   CMakeLists.txt:15 (find_package)
+[8.375s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[8.375s] [0m
+[8.379s] -- Checking for module 'eigen3'
+[8.427s] --   Found eigen3, version 3.4.0
+[8.521s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[8.521s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[8.556s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[8.556s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[8.556s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[8.556s]   cmake_policy command to set the policy and suppress this warning.
+[8.556s] 
+[8.556s]   CMake variable FLANN_ROOT is set to:
+[8.556s] 
+[8.556s]     /usr
+[8.556s] 
+[8.556s]   For compatibility, find_package is ignoring the variable, but code in a
+[8.556s]   .cmake module might still use it.
+[8.556s] Call Stack (most recent call first):
+[8.556s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+[8.556s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+[8.556s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[8.556s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[8.556s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[8.557s]   CMakeLists.txt:15 (find_package)
+[8.557s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[8.557s] [0m
+[8.597s] -- Checking for module 'flann'
+[8.633s] --   Found flann, version 1.9.1
+[8.749s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[8.749s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[11.918s] -- Checking for module 'libusb-1.0'
+[11.961s] --   Found libusb-1.0, version 1.0.25
+[12.032s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[12.037s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[12.200s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[13.012s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[13.027s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[13.050s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[13.885s] -- Found Qhull version 8.0.2
+[14.718s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[15.715s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[15.718s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[15.727s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[15.731s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[15.739s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[15.740s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[15.747s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[15.747s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[15.751s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[15.754s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[15.760s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[15.767s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[15.773s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[15.776s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[15.782s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[15.787s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[15.795s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[15.802s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[15.803s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[15.805s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[15.814s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[15.815s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[15.821s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[15.825s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[15.828s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[15.846s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[15.941s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[15.987s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[16.007s] -- Found geographic_msgs: 1.0.6 (/opt/ros/humble/share/geographic_msgs/cmake)
+[16.081s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[16.289s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[16.313s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[16.316s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[16.316s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[16.325s] -- Looking for ignition-math6 -- found version 6.15.1
+[16.326s] -- Looking for ignition-common3 -- found version 3.14.0
+[16.330s] -- Found car_interfaces: 0.0.0 (/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/share/car_interfaces/cmake)
+[16.398s] -- Found grid_map_ros: 2.0.1 (/opt/ros/humble/share/grid_map_ros/cmake)
+[16.741s] -- Found OpenCV: /usr (found version "4.5.4") 
+[16.744s] -- Found OpenCV: /usr (found version "4.5.4") found components: core imgproc ximgproc 
+[17.675s] -- Configuring done (16.8s)
+[18.443s] -- Generating done (0.6s)
+[18.521s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp
+[18.576s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp' returned '0': CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_serialization:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy_linux:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_setup:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/home/rhobtor/zed/install/zed_components/lib:/home/rhobtor/zed/install/zed_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/car_cpp -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp
+[18.576s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp': CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_serialization:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy_linux:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_setup:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/home/rhobtor/zed/install/zed_components/lib:/home/rhobtor/zed/install/zed_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp -- -j16 -l16
+[18.621s] [  3%] [32mBuilding CXX object CMakeFiles/navigation_nodes.dir/src/navigation_nodes.cpp.o[0m
+[30.690s] [  7%] [32m[1mLinking CXX executable navigation_nodes[0m
+[32.141s] [  7%] Built target navigation_nodes
+[32.153s] [ 10%] [32mBuilding CXX object CMakeFiles/joints_plugin.dir/src/joints.cpp.o[0m
+[32.154s] [ 14%] [32mBuilding CXX object CMakeFiles/move_plugin.dir/src/move_object.cpp.o[0m
+[32.155s] [ 17%] [32mBuilding CXX object CMakeFiles/drive_plugin.dir/src/diffdrive_plugin_multi_wheel.cpp.o[0m
+[41.203s] [ 21%] [32m[1mLinking CXX shared library libmove_plugin.so[0m
+[41.441s] [ 21%] Built target move_plugin
+[41.450s] [ 25%] [32mBuilding CXX object CMakeFiles/voxel_grid_node.dir/src/voxel_grid_node.cpp.o[0m
+[41.452s] [ 28%] [32mBuilding CXX object CMakeFiles/gridmap.dir/src/gridmap.cpp.o[0m
+[41.454s] [ 32%] [32mBuilding CXX object CMakeFiles/slope_terrain.dir/src/slope_terrain.cpp.o[0m
+[42.172s] [ 35%] [32m[1mLinking CXX shared library libjoints_plugin.so[0m
+[42.658s] [ 35%] Built target joints_plugin
+[42.673s] [ 39%] [32mBuilding CXX object CMakeFiles/obstacles_in_2d.dir/src/obstacles_in_2d.cpp.o[0m
+[42.673s] [ 42%] [32mBuilding CXX object CMakeFiles/check_goal.dir/src/check_goal.cpp.o[0m
+[42.673s] [ 46%] [32mBuilding CXX object CMakeFiles/filtered_navigation_nodes.dir/src/filtered_navigation_nodes.cpp.o[0m
+[47.682s] [ 50%] [32m[1mLinking CXX shared library libdrive_plugin.so[0m
+[48.850s] [ 50%] Built target drive_plugin
+[48.879s] [ 53%] [32mBuilding CXX object CMakeFiles/occupied_nodes_near_obstacles.dir/src/occupied_nodes_near_obstacles.cpp.o[0m
+[48.881s] [ 57%] [32mBuilding CXX object CMakeFiles/frontier_values.dir/src/frontier_values.cpp.o[0m
+[52.559s] [ 60%] [32m[1mLinking CXX executable voxel_grid_node[0m
+[53.070s] [ 60%] Built target voxel_grid_node
+[54.591s] [ 64%] [32m[1mLinking CXX executable slope_terrain[0m
+[55.508s] [ 67%] [32m[1mLinking CXX executable check_goal[0m
+[55.978s] [ 67%] Built target slope_terrain
+[56.639s] [ 71%] [32m[1mLinking CXX executable gridmap[0m
+[56.735s] [ 75%] [32m[1mLinking CXX executable filtered_navigation_nodes[0m
+[56.861s] [ 75%] Built target check_goal
+[57.859s] [ 75%] Built target filtered_navigation_nodes
+[57.990s] [ 75%] Built target gridmap
+[58.938s] [ 78%] [32m[1mLinking CXX executable occupied_nodes_near_obstacles[0m
+[59.720s] [ 78%] Built target occupied_nodes_near_obstacles
+[60.843s] [ 82%] [32m[1mLinking CXX executable obstacles_in_2d[0m
+[61.417s] [ 85%] [32m[1mLinking CXX executable frontier_values[0m
+[62.404s] [ 85%] Built target frontier_values
+[62.465s] [ 85%] Built target obstacles_in_2d
+[62.477s] [ 89%] [32mBuilding CXX object CMakeFiles/move_navigation_nodes_frontier.dir/src/move_navigation_nodes_frontier.cpp.o[0m
+[74.242s] [ 92%] [32m[1mLinking CXX executable move_navigation_nodes_frontier[0m
+[75.376s] [ 92%] Built target move_navigation_nodes_frontier
+[75.389s] [ 96%] [32mBuilding CXX object CMakeFiles/navigation_nodes_ground.dir/src/navigation_nodes_ground.cpp.o[0m
+[81.582s] [100%] [32m[1mLinking CXX executable navigation_nodes_ground[0m
+[82.262s] [100%] Built target navigation_nodes_ground
+[82.267s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp' returned '0': CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_serialization:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy_linux:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_setup:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/home/rhobtor/zed/install/zed_components/lib:/home/rhobtor/zed/install/zed_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp -- -j16 -l16
+[82.270s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp': CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_serialization:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy_linux:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_setup:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/home/rhobtor/zed/install/zed_components/lib:/home/rhobtor/zed/install/zed_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp
+[82.272s] -- Install configuration: ""
+[82.272s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/navigation_nodes
+[82.277s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/navigation_nodes" to ""
+[82.277s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/navigation_nodes_ground
+[82.280s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/navigation_nodes_ground" to ""
+[82.280s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/move_navigation_nodes_frontier
+[82.285s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/move_navigation_nodes_frontier" to ""
+[82.286s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/frontier_values
+[82.289s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/frontier_values" to ""
+[82.289s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/occupied_nodes_near_obstacles
+[82.292s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/occupied_nodes_near_obstacles" to ""
+[82.292s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/obstacles_in_2d
+[82.298s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/obstacles_in_2d" to ""
+[82.298s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/check_goal
+[82.302s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/check_goal" to ""
+[82.302s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/filtered_navigation_nodes
+[82.306s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/filtered_navigation_nodes" to ""
+[82.306s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/slope_terrain
+[82.309s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/slope_terrain" to ""
+[82.309s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/voxel_grid_node
+[82.312s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/voxel_grid_node" to ""
+[82.312s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/gridmap
+[82.316s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/gridmap" to ""
+[82.316s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libmove_plugin.so
+[82.317s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libmove_plugin.so" to ""
+[82.317s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libdrive_plugin.so
+[82.323s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libdrive_plugin.so" to ""
+[82.323s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libjoints_plugin.so
+[82.325s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libjoints_plugin.so" to ""
+[82.325s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include/
+[82.325s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//utilities.hpp
+[82.327s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//obstacle_detection.hpp
+[82.327s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//visualization.hpp
+[82.327s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//motion.hpp
+[82.327s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//control_plugin.hpp
+[82.327s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//move_ros.hpp
+[82.327s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//odometria.hpp
+[82.327s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/ament_index/resource_index/package_run_dependencies/car_cpp
+[82.328s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/ament_index/resource_index/parent_prefix_path/car_cpp
+[82.328s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/ament_prefix_path.sh
+[82.328s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/ament_prefix_path.dsv
+[82.328s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/path.sh
+[82.328s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/path.dsv
+[82.328s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.bash
+[82.328s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.sh
+[82.328s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.zsh
+[82.328s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.dsv
+[82.328s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/package.dsv
+[82.329s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/ament_index/resource_index/packages/car_cpp
+[82.329s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/cmake/car_cppConfig.cmake
+[82.329s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/cmake/car_cppConfig-version.cmake
+[82.329s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/package.xml
+[82.330s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp' returned '0': CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_serialization:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy_linux:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_setup:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/octomap_rviz_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/home/rhobtor/zed/install/zed_components/lib:/home/rhobtor/zed/install/zed_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp

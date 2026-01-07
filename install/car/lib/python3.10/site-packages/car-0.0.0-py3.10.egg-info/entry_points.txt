@@ -1,6 +1,7 @@
 [console_scripts]
 circuit1 = car.circuit1:main
 circuit_supervisor = car.supervisor_circuit:main
+cmd_vel_to_throttle = car.cmd_vel_to_throttle:main
 colision_zone = car.colision_zone:main
 filter_points_cloud = car.filter_points_cloud:main
 frontier_centroid = car.frontier_centroid:main

@@ -1,0 +1,206 @@
+[2.361s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/car_python': CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_serialization:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy_linux:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_setup:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/home/rhobtor/zed/install/zed_components/lib:/home/rhobtor/zed/install/zed_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/car build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/install.log --single-version-externally-managed install_data
+[2.584s] /home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[2.584s]   warnings.warn(msg)
+[2.696s] running egg_info
+[2.718s] writing ../../build/car/car.egg-info/PKG-INFO
+[2.719s] writing dependency_links to ../../build/car/car.egg-info/dependency_links.txt
+[2.719s] writing entry points to ../../build/car/car.egg-info/entry_points.txt
+[2.719s] writing requirements to ../../build/car/car.egg-info/requires.txt
+[2.719s] writing top-level names to ../../build/car/car.egg-info/top_level.txt
+[2.952s] reading manifest file '../../build/car/car.egg-info/SOURCES.txt'
+[2.952s] writing manifest file '../../build/car/car.egg-info/SOURCES.txt'
+[2.952s] running build
+[2.952s] running build_py
+[2.953s] copying car/points_goal_old.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.953s] copying car/keyboard_control.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.953s] copying car/memory_map.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.953s] copying car/path_ppo_cnn_lstm_full_model.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.953s] copying car/j8_test_ppo.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.953s] copying car/scape_test.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.954s] copying car/movement_predictive.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.954s] copying car/cmd_vel_to_throttle.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.954s] copying car/lidar_obstacle_detection.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.954s] copying car/voxel_unity.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.955s] copying car/test_octomap.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.955s] copying car/frontier_centroid.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.955s] copying car/j8_bueno.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.955s] copying car/colision_zone.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.955s] copying car/supervisor_circuit.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.956s] copying car/backup_model_ppo_cnn_lstm.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.956s] copying car/inference_full_model.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.956s] copying car/prior_map_builder.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.956s] copying car/inference_j8.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.956s] copying car/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.957s] copying car/inference_training_mode_simple.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.961s] copying car/joystick_control.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.961s] copying car/planificador_script.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.961s] copying car/map_test_navigation_hgh.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.961s] copying car/circuit1.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.961s] copying car/points_goal.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.961s] copying car/path_ppo_cnn_lstm_training_init_mode_j8.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.965s] copying car/map_navegation.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.965s] copying car/test_vel.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.965s] copying car/supervisor.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.965s] copying car/costmap.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.965s] copying car/unity_goal.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.965s] copying car/path_ppo_cnn_lstm_training_init_mode.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.966s] copying car/path_ppo_cnn_lstm_training_init_mode_simple.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.966s] copying car/inference_test_j8.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.967s] copying car/filter_points_cloud.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.967s] copying car/test_j8_old.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.967s] copying car/fusion.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.968s] copying car/j8_policy.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build/lib/car
+[2.968s] running install
+[2.972s] running install_lib
+[2.985s] running install_data
+[2.985s] copying resource/car -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/ament_index/resource_index/packages
+[2.985s] copying package.xml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car
+[2.985s] copying launch/gazebo.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.985s] copying launch/ekf.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.985s] copying launch/control.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.985s] copying launch/gazebo_mountain.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.985s] copying launch/world_1_b.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.986s] copying launch/circuit1.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.986s] copying launch/gazebo_empty_world.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.986s] copying launch/gazebo_simple5.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.991s] copying launch/gazebo_simple2.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.996s] copying launch/gazebo_simple7.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.997s] copying launch/joystick.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.997s] copying launch/display.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.997s] copying launch/circuit4.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.997s] copying launch/river_and_forest.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.997s] copying launch/gazebo_simple8.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.997s] copying launch/rtamap_test.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.997s] copying launch/gazebo_simple_world.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.997s] copying launch/gazebo_simple9.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.998s] copying launch/circuit3.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.998s] copying launch/object_move_gazebo.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.998s] copying launch/world_1.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.998s] copying launch/circuit2.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.999s] copying launch/gazebo_simple3.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.999s] copying launch/gazebo_no_gui.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.999s] copying launch/easy_world.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.999s] copying launch/gazebo_simple6.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.999s] copying launch/gazebo_simple4.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.999s] copying launch/forest.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.999s] copying launch/J8_unity.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.999s] copying launch/goals_unity.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.999s] copying launch/control_with_gazebo.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[2.999s] copying launch/j8.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch
+[3.000s] copying urdf/object_movement.sdf -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf
+[3.000s] copying urdf/materials.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf
+[3.000s] copying urdf/car.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf
+[3.000s] copying urdf/camara.plugin.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf
+[3.000s] copying urdf/car.gazebo -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf
+[3.000s] copying urdf/lidar.plugin.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf
+[3.000s] copying urdf/control.plugin.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf
+[3.000s] copying urdf/virt_lidar.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf
+[3.001s] copying urdf/car.trans -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf
+[3.001s] copying worlds/grass.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.001s] copying worlds/world_simple_object.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.001s] copying worlds/hill_tagged.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.002s] copying worlds/world_simple3.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.002s] copying worlds/world_simple9.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.002s] copying worlds/world_simple6.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.003s] copying worlds/forest.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.004s] copying worlds/map1_test.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.004s] copying worlds/world_1.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.004s] copying worlds/world_simple8.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.004s] copying worlds/blender_builder.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.004s] copying worlds/mountain.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.004s] copying worlds/world_1_b1.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.004s] copying worlds/world_1_b.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/empty.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/easy_world.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/grass_test.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/park.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/obstacles_and_traps.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/world_simple5.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/obstacles.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/hill.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/world_simple7.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/test.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.005s] copying worlds/lake.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.011s] copying worlds/forest_tagged.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.012s] copying worlds/heightmap_world.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.012s] copying worlds/world_simple2.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.016s] copying worlds/park_tagged.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.016s] copying worlds/river_and_forest.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.016s] copying worlds/world_simple4.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.016s] copying worlds/lake_tagged.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds
+[3.017s] copying meshes/tire.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.018s] copying meshes/rim_front_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.018s] copying meshes/tire_front_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.020s] copying meshes/rim_back_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.021s] copying meshes/direction_front_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.021s] copying meshes/rim.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.021s] copying meshes/Lidar.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.022s] copying meshes/Camara.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.022s] copying meshes/tire_front_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.022s] copying meshes/base_link.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.022s] copying meshes/tire_back_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.023s] copying meshes/tire_back_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.023s] copying meshes/suspension_front_left__1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.023s] copying meshes/direction_front_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.024s] copying meshes/suspension_back_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.024s] copying meshes/chasis_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.024s] copying meshes/rim_front_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.026s] copying meshes/direction_back_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.026s] copying meshes/direction_back_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.026s] copying meshes/rim_back_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.034s] copying meshes/suspension_front_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.034s] copying meshes/suspension_back_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes
+[3.039s] copying config/world_1_b.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.039s] copying config/nav2.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.039s] copying config/circuit_1.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.039s] copying config/circuit_4.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.040s] copying config/circuit_3.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.041s] copying config/ekf_params.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.041s] copying config/display.rviz -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.042s] copying config/world1.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.044s] copying config/circuit_2.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.044s] copying config/mapper_params_online_async.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.044s] copying config/goal.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.044s] copying config/river_and_forest.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.044s] copying config/octomap.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config
+[3.044s] running install_egg_info
+[3.055s] removing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car-0.0.0-py3.10.egg-info' (and everything under it)
+[3.055s] Copying ../../build/car/car.egg-info to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car-0.0.0-py3.10.egg-info
+[3.055s] running install_scripts
+[3.061s] Installing circuit1 script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.061s] Installing circuit_supervisor script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.061s] Installing cmd_vel_to_throttle script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing colision_zone script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing filter_points_cloud script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing frontier_centroid script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing fusion script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing inference_full_model script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing inference_j8 script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing inference_test_j8 script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing inference_training_mode_simple script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing j8_bueno script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing j8_policy script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing j8_test_ppo script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing joystick_control script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing keyboard_control script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.062s] Installing lidar_detection script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.063s] Installing map_navegation script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.063s] Installing map_navegation_test script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.063s] Installing memory_map script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.063s] Installing movement_predictive script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.063s] Installing path_ppo_cnn_lstm_full_model script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.063s] Installing path_ppo_cnn_lstm_training_init_mode script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.063s] Installing path_ppo_cnn_lstm_training_init_mode_j8 script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.063s] Installing path_ppo_cnn_lstm_training_init_mode_simple script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.063s] Installing points_goal script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.063s] Installing points_goal_old script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.067s] Installing prior_map_builder script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.067s] Installing scape_test script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.067s] Installing supervisor_node script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.067s] Installing test_j8_old script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.067s] Installing test_octomap script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.067s] Installing test_vel script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.067s] Installing unity_goal script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.068s] Installing voxel_unity script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car
+[3.068s] writing list of installed files to '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/install.log'
+[3.087s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/car_python' returned '0': CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_serialization:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/sdl2_vendor:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy_linux:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_setup:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/wiimote_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_gps/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/spacenav/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/laser_segmentation/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/joy/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/path_manager_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_xacro_model/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_sensor_pkg/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_odometry_converter_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/home/rhobtor/zed/install/zed_components/lib:/home/rhobtor/zed/install/zed_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/car build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/install.log --single-version-externally-managed install_data

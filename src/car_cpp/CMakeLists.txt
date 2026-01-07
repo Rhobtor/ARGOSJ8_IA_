@@ -10,8 +10,8 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(octomap REQUIRED)
-find_package(octomap_msgs REQUIRED)
-find_package(octomap_ros REQUIRED)
+# find_package(octomap_msgs REQUIRED)
+# find_package(octomap_ros REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(pcl_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
@@ -65,37 +65,40 @@ set(LIBS
 
 
 
-add_executable(navigation_nodes src/navigation_nodes.cpp)
-ament_target_dependencies(navigation_nodes rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)  
+# add_executable(navigation_nodes src/navigation_nodes.cpp)
+# ament_target_dependencies(navigation_nodes rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)  
 
-install(TARGETS
-  navigation_nodes
-  DESTINATION lib/${PROJECT_NAME}
-)
-
-
-add_executable(navigation_nodes_ground src/navigation_nodes_ground.cpp)
-ament_target_dependencies(navigation_nodes_ground rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)  
-
-install(TARGETS
-  navigation_nodes_ground
-  DESTINATION lib/${PROJECT_NAME}
-)
+# install(TARGETS
+#   navigation_nodes
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 
-add_executable(move_navigation_nodes_frontier src/move_navigation_nodes_frontier.cpp)
-ament_target_dependencies(move_navigation_nodes_frontier rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)  
+# add_executable(navigation_nodes_ground src/navigation_nodes_ground.cpp)
+# ament_target_dependencies(navigation_nodes_ground rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)  
 
-install(TARGETS
-  move_navigation_nodes_frontier
-  DESTINATION lib/${PROJECT_NAME}
-)
+# install(TARGETS
+#   navigation_nodes_ground
+#   DESTINATION lib/${PROJECT_NAME}
+# )
+
+
+# add_executable(move_navigation_nodes_frontier src/move_navigation_nodes_frontier.cpp)
+# ament_target_dependencies(move_navigation_nodes_frontier rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)  
+
+# install(TARGETS
+#   move_navigation_nodes_frontier
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 
 add_executable(frontier_values src/frontier_values.cpp)
-ament_target_dependencies(frontier_values rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)  
-target_link_libraries(frontier_values
-  ${OpenCV_LIBS}
+ament_target_dependencies(frontier_values
+  rclcpp
+  nav_msgs
+  visualization_msgs
+  geometry_msgs
+  std_msgs
 )
 install(TARGETS
   frontier_values
@@ -105,28 +108,28 @@ install(TARGETS
 
 
 
-add_executable(occupied_nodes_near_obstacles src/occupied_nodes_near_obstacles.cpp)
-ament_target_dependencies(occupied_nodes_near_obstacles rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)  
+# add_executable(occupied_nodes_near_obstacles src/occupied_nodes_near_obstacles.cpp)
+# ament_target_dependencies(occupied_nodes_near_obstacles rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)  
 
-install(TARGETS
-  occupied_nodes_near_obstacles
-  DESTINATION lib/${PROJECT_NAME}
-)
-
-
+# install(TARGETS
+#   occupied_nodes_near_obstacles
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 
-add_executable(obstacles_in_2d src/obstacles_in_2d.cpp)
-ament_target_dependencies(obstacles_in_2d rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)
 
-install(TARGETS
-  obstacles_in_2d
-  DESTINATION lib/${PROJECT_NAME}
-)
+
+# add_executable(obstacles_in_2d src/obstacles_in_2d.cpp)
+# ament_target_dependencies(obstacles_in_2d rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)
+
+# install(TARGETS
+#   obstacles_in_2d
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 
 add_executable(check_goal src/check_goal.cpp)
-ament_target_dependencies(check_goal rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)
+ament_target_dependencies(check_goal rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap  pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)
 
 install(TARGETS
   check_goal
@@ -134,21 +137,21 @@ install(TARGETS
 )
 
 
-add_executable(filtered_navigation_nodes src/filtered_navigation_nodes.cpp)
-ament_target_dependencies(filtered_navigation_nodes rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)
+# add_executable(filtered_navigation_nodes src/filtered_navigation_nodes.cpp)
+# ament_target_dependencies(filtered_navigation_nodes rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)
 
-install(TARGETS
-  filtered_navigation_nodes
-  DESTINATION lib/${PROJECT_NAME}
-)
+# install(TARGETS
+#   filtered_navigation_nodes
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
-add_executable(slope_terrain src/slope_terrain.cpp)
-ament_target_dependencies(slope_terrain rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)
+# add_executable(slope_terrain src/slope_terrain.cpp)
+# ament_target_dependencies(slope_terrain rclcpp gazebo_ros std_msgs geometry_msgs sensor_msgs octomap octomap_msgs octomap_ros pcl_conversions pcl_msgs visualization_msgs nav_msgs std_srvs geographic_msgs tf2 tf2_ros tf2_msgs  rmw_implementation_cmake tf2_msgs std_srvs geographic_msgs tf2_ros tf2_msgs tf2_geometry_msgs)
 
-install(TARGETS
-  slope_terrain
-  DESTINATION lib/${PROJECT_NAME}
-)
+# install(TARGETS
+#   slope_terrain
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 
 add_executable(voxel_grid_node src/voxel_grid_node.cpp)
@@ -164,21 +167,21 @@ install(TARGETS voxel_grid_node
   DESTINATION lib/${PROJECT_NAME})
 
 
-add_executable(gridmap src/gridmap.cpp)
-ament_target_dependencies(gridmap
-  rclcpp
-  grid_map_ros
-  geometry_msgs
-  visualization_msgs
-  tf2_ros
-  nav_msgs
-  std_srvs          # <-- 2. enlazar contra la interfaz de servicios
-  OpenCV
-)
-install(TARGETS
- gridmap
- DESTINATION lib/${PROJECT_NAME}
- )
+# add_executable(gridmap src/gridmap.cpp)
+# ament_target_dependencies(gridmap
+#   rclcpp
+#   grid_map_ros
+#   geometry_msgs
+#   visualization_msgs
+#   tf2_ros
+#   nav_msgs
+#   std_srvs          # <-- 2. enlazar contra la interfaz de servicios
+#   OpenCV
+# )
+# install(TARGETS
+#  gridmap
+#  DESTINATION lib/${PROJECT_NAME}
+#  )
 
 
 

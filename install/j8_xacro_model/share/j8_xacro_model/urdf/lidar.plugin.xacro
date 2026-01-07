@@ -39,7 +39,12 @@
           <argument>use_sim_time:=true</argument>
           <remapping>~/out:=/ARGJ801/Velodyne/scan_cloud</remapping>
         </ros>
-        <!-- Fixed output type for all lidars -->
+        <!--
+          IMPORTANT:
+          Si publicamos la nube con frame_name=base_link, la nube se verá "girada" si
+          el link del sensor (Velodyne_link) tiene una orientación distinta en TF.
+          Publica con el frame del sensor para respetar el yaw/pitch/roll del joint.
+        -->
         <frame_name>Velodyne_link</frame_name>
         <output_type>sensor_msgs/PointCloud2</output_type>
         

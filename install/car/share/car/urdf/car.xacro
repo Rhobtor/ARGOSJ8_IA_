@@ -582,7 +582,12 @@
   <parent link="Lidar"/>
   <child link="lidar_footprint"/>
   <!-- Ajusta rpy para alinear el frame óptico -->
-  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <!--
+    Corrección de orientación:
+    Si la nube de puntos se ve girada +90° (hacia la izquierda visto desde el frente),
+    rotamos el frame del LiDAR -90° alrededor de Z.
+  -->
+  <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
 </joint>
 
 

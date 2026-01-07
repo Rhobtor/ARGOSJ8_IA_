@@ -5,6 +5,7 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/j8_test_ppo.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/scape_test.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/movement_predictive.py
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/cmd_vel_to_throttle.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/lidar_obstacle_detection.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/voxel_unity.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/test_octomap.py
@@ -43,6 +44,7 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/__pycache__/j8_test_ppo.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/__pycache__/scape_test.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/__pycache__/movement_predictive.cpython-310.pyc
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/__pycache__/cmd_vel_to_throttle.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/__pycache__/lidar_obstacle_detection.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/__pycache__/voxel_unity.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/__pycache__/test_octomap.cpython-310.pyc
@@ -88,13 +90,16 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/gazebo_simple7.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/joystick.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/display.launch.py
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/circuit4.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/river_and_forest.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/gazebo_simple8.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/rtamap_test.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/gazebo_simple_world.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/gazebo_simple9.launch.py
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/circuit3.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/object_move_gazebo.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/world_1.launch.py
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/circuit2.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/gazebo_simple3.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/gazebo_no_gui.launch.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch/easy_world.launch.py
@@ -171,9 +176,12 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/world_1_b.yaml
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/nav2.yaml
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/circuit_1.yaml
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/circuit_4.yaml
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/circuit_3.yaml
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/ekf_params.yaml
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/display.rviz
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/world1.yaml
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/circuit_2.yaml
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/mapper_params_online_async.yaml
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/goal.yaml
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config/river_and_forest.yaml
@@ -188,6 +196,7 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car-0.0.0-py3.10.egg-info/zip-safe
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car/circuit1
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car/circuit_supervisor
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car/cmd_vel_to_throttle
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car/colision_zone
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car/filter_points_cloud
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car/frontier_centroid

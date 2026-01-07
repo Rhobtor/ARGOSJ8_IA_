@@ -142,6 +142,7 @@ class SequentialGoalSelector(Node):
         self.grid_data = None
         self.grid_info = None
         self.visited = 0
+        self.done_signaled = False
 
         self.get_logger().info(f"✔️  Cargados {len(self.points)} puntos. Inicio en el punto #0.")
         self.publish_index(self.idx, initial=True)
@@ -160,6 +161,10 @@ class SequentialGoalSelector(Node):
     def goal_reached_cb(self, msg: Bool):
         if not msg.data:
             return
+
+        # Si ya hemos señalizado el fin (loop=False), ignoramos duplicados
+        if self.done_signaled:
+            return
         # Incrementa contador de puntos visitados
         self.visited += 1
         self.visited_pub.publish(UInt32(data=self.visited))
@@ -169,6 +174,7 @@ class SequentialGoalSelector(Node):
         if (not self.loop) and at_last and self.signal_done_on_last:
             self.get_logger().info('🏁 Fin de circuito alcanzado.')
             self.done_pub.publish(Bool(data=True))
+            self.done_signaled = True
             if self.hold_when_done:
                 self.goal_active = False   # deja de republicar
                 return
@@ -191,6 +197,7 @@ class SequentialGoalSelector(Node):
     def reset_circuit(self):
         self.idx = 0
         self.visited = 0
+        self.done_signaled = False
         self.publish_index(self.idx)
 
     def advance_to_next(self):
@@ -345,7 +352,11 @@ def main(args=None):
     except KeyboardInterrupt:
         pass
     node.destroy_node()
-    rclpy.shutdown()
+    try:
+        rclpy.shutdown()
+    except Exception:
+        # Puede llegar SIGINT y disparar shutdown desde el handler
+        pass
 
 
 if __name__ == '__main__':
