@@ -611,6 +611,7 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_ctl_platfor
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -1683,6 +1684,7 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -2509,6 +2511,8 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /opt/ros/humble/include/rmw/rmw/error_handling.h:
 
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
+
+/opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/AutonomyStatus.hpp:
 
@@ -3534,8 +3538,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/diagnostic_msgs/diagnostic_msgs/msg/diagnostic_array.hpp:
 
-/opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
-
 /usr/include/yaml-cpp/node/detail/node_iterator.h:
 
 /usr/include/yaml-cpp/node/detail/impl.h:
@@ -3917,6 +3919,8 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/c++/11/bits/stl_map.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
 

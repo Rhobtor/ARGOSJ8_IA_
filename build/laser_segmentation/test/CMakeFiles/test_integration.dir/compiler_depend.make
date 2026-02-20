@@ -32,6 +32,11 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/accel.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__traits.hpp \
@@ -306,6 +311,7 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -2076,8 +2082,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
@@ -2762,6 +2766,14 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /usr/include/c++/11/bits/stl_function.h:
 
+/usr/include/c++/11/bits/stl_construct.h:
+
+/usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/include/c++/11/bits/stl_algo.h:
+
+/usr/include/c++/11/bits/std_thread.h:
+
 /usr/include/boost/fusion/algorithm/query/find_if_fwd.hpp:
 
 /usr/include/boost/fusion/algorithm/query/find.hpp:
@@ -2799,6 +2811,10 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/boost/date_time/time_duration.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__type_support.hpp:
+
+/usr/include/c++/11/bits/stl_deque.h:
+
+/usr/include/boost/date_time/time.hpp:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
@@ -2912,10 +2928,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /usr/include/boost/mpl/distance.hpp:
 
-/usr/include/boost/fusion/algorithm/transformation/pop_front.hpp:
-
-/usr/include/boost/iterator/detail/config_def.hpp:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/include/c++/11/bits/this_thread_sleep.h:
@@ -2981,8 +2993,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /opt/ros/humble/include/tracetools/tracetools/visibility_control.hpp:
 
 /opt/ros/humble/include/tracetools/tracetools/utils.hpp:
-
-/usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/boost/fusion/iterator/deref.hpp:
 
@@ -3254,8 +3264,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rmw/rmw/init.h:
 
-/usr/include/boost/fusion/iterator/prior.hpp:
-
 /usr/include/boost/mpl/vector/aux_/pop_back.hpp:
 
 /usr/include/boost/fusion/adapted/mpl/detail/is_sequence_impl.hpp:
@@ -3384,10 +3392,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
 
-/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
-
-/usr/include/boost/mpl/deref.hpp:
-
 /usr/include/boost/date_time/microsec_time_clock.hpp:
 
 /usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
@@ -3502,13 +3506,23 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
+
+/usr/include/boost/fusion/mpl/pop_front.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:
+
+/usr/include/boost/fusion/container/vector/detail/advance_impl.hpp:
+
+/opt/ros/humble/include/rmw/rmw/serialized_message.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/publisher_factory.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
 /usr/include/eigen3/Eigen/Geometry:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__type_support.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
 
 /opt/ros/humble/src/gtest_vendor/include/gtest/internal/custom/gtest-port.h:
 
@@ -3535,10 +3549,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/boost/utility/detail/result_of_iterate.hpp:
 
 /opt/ros/humble/include/rcl/rcl/init_options.h:
-
-/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-printers.h:
-
-/usr/include/boost/config/user.hpp:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.h:
 
@@ -3608,24 +3618,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/boost/preprocessor/seq/for_each.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp:
-
-/usr/include/boost/type_traits/add_pointer.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/mod.hpp:
-
-/usr/include/assert.h:
-
-/usr/include/boost/fusion/iterator/detail/segmented_equal_to.hpp:
-
 /opt/ros/humble/include/rcl/rcl/allocator.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
@@ -3644,6 +3636,20 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp:
 
+/usr/include/boost/mpl/deref.hpp:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
+
+/usr/include/boost/date_time/time_clock.hpp:
+
+/usr/include/boost/date_time/gregorian/greg_ymd.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
+
+/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__type_support.hpp:
+
+/usr/include/boost/mpl/aux_/size_impl.hpp:
+
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__traits.hpp:
 
 /usr/include/boost/next_prior.hpp:
@@ -3656,19 +3662,7 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /usr/include/boost/preprocessor/logical/and.hpp:
 
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__traits.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
-
-/usr/include/boost/date_time/time_clock.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_ymd.hpp:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__type_support.hpp:
-
-/usr/include/boost/mpl/aux_/size_impl.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp:
 
@@ -3693,8 +3687,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /opt/ros/humble/include/rcutils/rcutils/logging.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
 
 /usr/include/boost/mpl/joint_view.hpp:
 
@@ -3742,12 +3734,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.hpp:
 
-/usr/include/boost/fusion/mpl/pop_front.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
 
 /usr/include/boost/fusion/adapted/mpl/detail/begin_impl.hpp:
@@ -3755,6 +3741,10 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_age.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
 
 /opt/ros/humble/include/rmw/rmw/event_callback_type.h:
 
@@ -3782,9 +3772,77 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp:
 
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
+
+/usr/include/boost/iterator/reverse_iterator.hpp:
+
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
 /usr/include/boost/mpl/empty_fwd.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+
+/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/transition.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/loaned_message.hpp:
+
+/usr/include/boost/type_traits/is_base_and_derived.hpp:
+
+/usr/include/boost/fusion/algorithm/query/find_fwd.hpp:
+
+/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
+
+/usr/include/c++/11/atomic:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
+
+/usr/include/boost/fusion/iterator/equal_to.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
+
+/usr/include/boost/config/detail/select_compiler_config.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
+
+/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__builder.hpp:
+
+/usr/include/boost/range/detail/safe_bool.hpp:
+
+/usr/include/boost/fusion/iterator/prior.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/boost/preprocessor/seq/for_each.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
+
+/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp:
+
+/usr/include/boost/type_traits/add_pointer.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/accel.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
 
 /opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
 
@@ -3793,30 +3851,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/c++/11/bits/functexcept.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
-
-/usr/include/boost/concept/detail/has_constraints.hpp:
-
-/usr/include/c++/11/cstdlib:
-
-/usr/include/boost/iterator/iterator_adaptor.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
-
-/usr/include/boost/preprocessor/comma_if.hpp:
-
-/opt/ros/humble/include/rmw/rmw/names_and_types.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/any_service_callback.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp:
-
-/usr/include/boost/concept/detail/backward_compatibility.hpp:
-
-/usr/include/boost/mpl/prior.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
 
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -3864,15 +3898,11 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+/usr/include/pcl-1.12/pcl/common/impl/io.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
 
-/usr/include/boost/mpl/advance.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
 
 /opt/ros/humble/include/pcl_ros/pcl_ros/transforms.hpp:
 
@@ -3882,7 +3912,29 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /usr/include/boost/mpl/size_t_fwd.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__struct.hpp:
+
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__type_support.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/any_service_callback.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp:
+
+/usr/include/boost/concept/detail/backward_compatibility.hpp:
+
+/opt/ros/humble/include/rmw/rmw/names_and_types.h:
+
+/usr/include/boost/mpl/prior.hpp:
+
+/usr/include/boost/mpl/advance.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
 
 /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-death-test.h:
 
@@ -3891,28 +3943,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
-
-/usr/include/boost/fusion/iterator/equal_to.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
-
-/usr/include/boost/config/detail/select_compiler_config.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
-
-/opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/visibility_control.h:
 
 /usr/include/boost/predef/os/bsd/dragonfly.h:
 
@@ -3923,6 +3953,40 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/linux/errno.h:
 
 /usr/include/boost/fusion/adapted/mpl/detail/size_impl.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:
+
+/usr/include/boost/date_time/gregorian/greg_day_of_year.hpp:
+
+/usr/include/boost/fusion/container/list/detail/empty_impl.hpp:
+
+/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
+
+/usr/include/c++/11/cctype:
+
+/usr/include/boost/mpl/is_sequence.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
+
+/usr/include/boost/date_time/gregorian_calendar.ipp:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/usr/include/c++/11/new:
+
+/usr/include/boost/fusion/support/detail/is_mpl_sequence.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
+
+/usr/include/boost/mpl/insert.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/lidar_process_pkgs/laser_segmentation/include/laser_segmentation/parula.hpp:
+
+/usr/include/boost/fusion/container/list/nil.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
 
 /usr/include/boost/range/concepts.hpp:
 
@@ -3935,12 +3999,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
-
-/usr/include/boost/fusion/algorithm/transformation/push_front.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
 
@@ -3968,6 +4026,14 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
 
+/usr/include/pcl-1.12/pcl/PCLPointField.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
+
+/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
+
+/usr/include/boost/date_time/time_system_counted.hpp:
+
 /opt/ros/humble/include/rcl/rcl/context.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
@@ -3988,18 +4054,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /usr/include/boost/mpl/aux_/config/intel.hpp:
 
-/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/transition.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/loaned_message.hpp:
-
-/usr/include/boost/type_traits/is_base_and_derived.hpp:
-
-/usr/include/boost/fusion/algorithm/query/find_fwd.hpp:
-
-/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
-
-/usr/include/c++/11/atomic:
-
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
@@ -4017,12 +4071,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/boost/algorithm/string/constants.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__builder.hpp:
-
-/usr/include/pcl-1.12/pcl/common/impl/io.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
 
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/model_coefficients.hpp:
 
@@ -4070,17 +4118,11 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
 
-/opt/ros/humble/include/rcl/rcl/guard_condition.h:
-
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/lidar_process_pkgs/laser_segmentation/include/laser_segmentation/segmentation/jump_distance.hpp:
 
+/opt/ros/humble/include/rcl/rcl/guard_condition.h:
+
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/segment.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/lidar_process_pkgs/laser_segmentation/include/laser_segmentation/parameter_handler.hpp:
 
@@ -4099,6 +4141,30 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
 /usr/include/boost/type_traits/is_unsigned.hpp:
+
+/usr/include/boost/concept/detail/has_constraints.hpp:
+
+/usr/include/c++/11/cstdlib:
+
+/usr/include/boost/iterator/iterator_adaptor.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/boost/preprocessor/comma_if.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
+
+/usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
+/opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/visibility_control.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
 
@@ -4136,13 +4202,23 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /usr/include/boost/iterator/iterator_concepts.hpp:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
+
+/usr/include/boost/fusion/iterator/detail/segmented_iterator.hpp:
+
+/usr/include/boost/mpl/aux_/push_front_impl.hpp:
+
+/usr/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp:
+
+/opt/ros/humble/include/rmw/rmw/macros.h:
+
+/usr/include/boost/type_traits/is_const.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp:
+
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp:
-
-/usr/include/boost/fusion/iterator/detail/segmented_next_impl.hpp:
-
-/usr/include/boost/predef/os/bsd.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
 
@@ -4155,6 +4231,12 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/c++/11/cassert:
 
 /usr/include/boost/range/begin.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp:
+
+/usr/include/boost/fusion/iterator/detail/segmented_next_impl.hpp:
+
+/usr/include/boost/predef/os/bsd.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp:
 
@@ -4172,22 +4254,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
-
-/usr/include/boost/fusion/iterator/detail/segmented_iterator.hpp:
-
-/usr/include/boost/mpl/aux_/push_front_impl.hpp:
-
-/usr/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp:
-
-/opt/ros/humble/include/rmw/rmw/macros.h:
-
-/usr/include/boost/type_traits/is_const.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp:
-
 /opt/ros/humble/include/rmw/rmw/localhost.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
@@ -4197,6 +4263,10 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/boost/range/config.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/opt/ros/humble/include/nav2_util/node_utils.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
@@ -4230,8 +4300,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
-
 /usr/include/boost/mpl/bind.hpp:
 
 /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
@@ -4250,39 +4318,9 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__traits.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
 
-/usr/include/boost/date_time/gregorian_calendar.ipp:
-
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
-/usr/include/c++/11/new:
-
-/usr/include/boost/fusion/support/detail/is_mpl_sequence.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
-
-/usr/include/boost/mpl/insert.hpp:
-
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/lidar_process_pkgs/laser_segmentation/include/laser_segmentation/parula.hpp:
-
-/usr/include/boost/fusion/container/list/nil.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
-
-/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_day_of_year.hpp:
-
-/usr/include/boost/fusion/container/list/detail/empty_impl.hpp:
-
-/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
-
-/usr/include/c++/11/cctype:
-
-/usr/include/boost/mpl/is_sequence.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -4382,6 +4420,12 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
 
+/usr/include/boost/preprocessor/arithmetic/mod.hpp:
+
+/usr/include/assert.h:
+
+/usr/include/boost/fusion/iterator/detail/segmented_equal_to.hpp:
+
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/point_cloud2.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/lidar_process_pkgs/laser_segmentation/include/laser_segmentation/laser_segmentation.hpp:
@@ -4479,8 +4523,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/get_message_type_support_handle.hpp:
-
-/usr/include/c++/11/bits/stl_construct.h:
 
 /opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/default_state_machine.h:
 
@@ -4580,6 +4622,8 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
@@ -4670,23 +4714,27 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h:
 
+/opt/ros/humble/src/gtest_vendor/include/gtest/gtest-printers.h:
+
+/usr/include/boost/config/user.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__traits.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
+
+/usr/include/boost/type_traits/declval.hpp:
+
 /usr/include/boost/date_time/special_defs.hpp:
 
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
 /usr/include/boost/fusion/adapted/mpl/detail/end_impl.hpp:
 
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp:
+/usr/include/boost/fusion/algorithm/transformation/pop_front.hpp:
 
-/usr/include/boost/iterator/reverse_iterator.hpp:
+/usr/include/boost/iterator/detail/config_def.hpp:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
-
-/usr/include/boost/fusion/container/vector/detail/advance_impl.hpp:
-
-/opt/ros/humble/include/rmw/rmw/serialized_message.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/publisher_factory.hpp:
+/usr/include/boost/fusion/algorithm/transformation/push_front.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
@@ -4733,8 +4781,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/boost/mpl/pair.hpp:
 
 /usr/include/boost/fusion/container/map/map_fwd.hpp:
-
-/usr/include/c++/11/bits/stl_algo.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
 
@@ -5116,10 +5162,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
-/usr/include/boost/date_time/time.hpp:
-
-/usr/include/c++/11/bits/stl_deque.h:
-
 /usr/include/boost/interprocess/detail/std_fwd.hpp:
 
 /usr/include/boost/interprocess/detail/workaround.hpp:
@@ -5274,14 +5316,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /usr/include/boost/mpl/plus.hpp:
 
-/usr/include/pcl-1.12/pcl/PCLPointField.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
-
-/usr/include/boost/date_time/time_system_counted.hpp:
-
-/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
-
 /usr/include/boost/fusion/container/list/detail/value_of_impl.hpp:
 
 /usr/include/boost/mpl/aux_/arity_spec.hpp:
@@ -5375,10 +5409,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/boost/mpl/aux_/config/nttp.hpp:
 
 /usr/include/boost/mpl/aux_/config/overload_resolution.hpp:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
-
-/usr/include/c++/11/bits/stl_bvector.h:
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
 
@@ -5537,10 +5567,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
-
-/usr/include/boost/type_traits/declval.hpp:
 
 /usr/include/boost/interprocess/detail/config_begin.hpp:
 
@@ -5782,8 +5808,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 
 /usr/include/boost/preprocessor/control/detail/while.hpp:
 
-/usr/include/c++/11/bits/stl_algobase.h:
-
 /usr/include/boost/preprocessor/control/iif.hpp:
 
 /usr/include/c++/11/tuple:
@@ -5889,12 +5913,6 @@ test/CMakeFiles/test_integration.dir/test_integration.cpp.o: /home/rhobtor/PHD/A
 /usr/include/boost/range/detail/has_member_size.hpp:
 
 /usr/include/boost/range/detail/misc_concept.hpp:
-
-/usr/include/boost/range/detail/safe_bool.hpp:
-
-/opt/ros/humble/include/nav2_util/node_utils.hpp:
-
-/usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/boost/range/detail/sfinae.hpp:
 

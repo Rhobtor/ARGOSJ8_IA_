@@ -119,6 +119,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/argj801_sensors/argj801_camera_builder.c
   /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp \
@@ -762,6 +763,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/argj801_sensors/argj801_camera_interface
   /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp \
@@ -1463,6 +1465,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/argj801_sensors/argj801_lcm_sensors_buil
   /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp \
@@ -2070,6 +2073,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/argj801_sensors/argj801_sensor_interface
   /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp \
@@ -2820,6 +2824,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/argj801_sensors/argj801_sensors_node.cpp
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -3611,6 +3616,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/data/CompressedImage.cpp.o: /home/rhobto
   /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp \
@@ -4077,6 +4083,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/data/LidarData.cpp.o: /home/rhobtor/PHD/
   /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp \
@@ -4549,6 +4556,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/data/MotorTelemetry.cpp.o: /home/rhobtor
   /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp \
@@ -5015,6 +5023,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/data/OdometerData.cpp.o: /home/rhobtor/P
   /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp \
@@ -5485,6 +5494,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/data/Twist.cpp.o: /home/rhobtor/PHD/ARGO
   /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp \
@@ -6162,6 +6172,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -6969,6 +6980,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/visitor/SensorDataVisitor.cpp.o: /home/r
   /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp \
@@ -7779,7 +7791,9 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/visitor/SensorDataVisitor.cpp.o: /home/r
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/src/argj801_lcm/include/lcmmessages/request_connection_msg.hpp:
 
-/usr/include/c++/11/bits/stringfwd.h:
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/src/data/LidarData.cpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/src/argj801_lcm/include/lcmmessages/header2.hpp:
 
 /usr/include/c++/11/bits/string_view.tcc:
 
@@ -7826,8 +7840,6 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/visitor/SensorDataVisitor.cpp.o: /home/r
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/11/bits/quoted_string.h:
-
-/usr/include/c++/11/pstl/glue_memory_defs.h:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
 
@@ -8025,9 +8037,9 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/visitor/SensorDataVisitor.cpp.o: /home/r
 
 /opt/ros/humble/include/rmw/rmw/localhost.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
-
 /opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
 
 /usr/include/c++/11/bits/stl_multiset.h:
 
@@ -8116,6 +8128,8 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/visitor/SensorDataVisitor.cpp.o: /home/r
 /usr/include/c++/11/bits/exception.h:
 
 /opt/ros/humble/include/rcl/rcl/graph.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /usr/include/opencv4/opencv2/core/persistence.hpp:
 
@@ -8575,6 +8589,28 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/visitor/SensorDataVisitor.cpp.o: /home/r
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
 
+/usr/include/c++/11/pstl/glue_memory_defs.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_event_handler.hpp:
+
+/opt/ros/humble/include/rcl/rcl/visibility_control.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp:
+
+/usr/include/opencv4/opencv2/flann/logger.h:
+
+/opt/ros/humble/include/rmw/rmw/publisher_options.h:
+
+/usr/include/opencv4/opencv2/highgui.hpp:
+
+/usr/include/c++/11/bits/basic_string.h:
+
+/usr/include/opencv4/opencv2/imgproc/imgproc.hpp:
+
+/usr/include/opencv4/opencv2/flann/miniflann.hpp:
+
+/opt/ros/humble/include/rmw/rmw/event.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:
 
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/transition.hpp:
@@ -8687,25 +8723,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/visitor/SensorDataVisitor.cpp.o: /home/r
 
 /usr/include/opencv4/opencv2/core/core.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_event_handler.hpp:
-
-/opt/ros/humble/include/rcl/rcl/visibility_control.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__builder.hpp:
-
-/usr/include/opencv4/opencv2/flann/logger.h:
-
-/opt/ros/humble/include/rmw/rmw/publisher_options.h:
-
-/usr/include/opencv4/opencv2/highgui.hpp:
-
-/usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/opencv4/opencv2/imgproc/imgproc.hpp:
-
-/usr/include/opencv4/opencv2/flann/miniflann.hpp:
-
-/opt/ros/humble/include/rmw/rmw/event.h:
+/usr/include/c++/11/bits/stringfwd.h:
 
 /opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
 
@@ -8914,10 +8932,6 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/visitor/SensorDataVisitor.cpp.o: /home/r
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/odometer.hpp:
 
 /usr/include/opencv4/opencv2/flann/dynamic_bitset.h:
-
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/src/data/LidarData.cpp:
-
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/src/argj801_lcm/include/lcmmessages/header2.hpp:
 
 /usr/include/c++/11/typeinfo:
 

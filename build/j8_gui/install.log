@@ -5,6 +5,7 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/followzed_widget.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/__init__.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/map_bridge.py
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/geo_local.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/control_widget.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/main_window.py
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/__pycache__/__init__.cpython-310.pyc
@@ -14,6 +15,7 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/__pycache__/followzed_widget.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/__pycache__/__init__.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/__pycache__/map_bridge.cpython-310.pyc
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/__pycache__/geo_local.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/__pycache__/control_widget.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui/app/__pycache__/main_window.cpython-310.pyc
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/ament_index/resource_index/packages/j8_gui

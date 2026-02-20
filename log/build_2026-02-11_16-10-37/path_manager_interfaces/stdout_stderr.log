@@ -1,0 +1,58 @@
+[  1%] Built target path_manager_interfaces__cpp
+[ 12%] Built target path_manager_interfaces__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_path_manager_interfaces
+[ 24%] Built target path_manager_interfaces__rosidl_typesupport_fastrtps_c
+[ 35%] Built target path_manager_interfaces__rosidl_typesupport_introspection_cpp
+[ 58%] Built target path_manager_interfaces__rosidl_typesupport_cpp
+[ 47%] Built target path_manager_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 70%] Built target path_manager_interfaces__rosidl_typesupport_introspection_c
+[ 81%] Built target path_manager_interfaces__rosidl_typesupport_c
+[ 81%] Built target path_manager_interfaces
+[ 82%] Built target path_manager_interfaces__py
+[ 93%] Built target path_manager_interfaces__rosidl_generator_py
+[ 95%] Built target path_manager_interfaces__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target path_manager_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target path_manager_interfaces__rosidl_typesupport_c__pyext
+Traceback (most recent call last):
+  File "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/path_manager_interfaces/ament_cmake_python/path_manager_interfaces/setup.py", line 4, in <module>
+    setup(
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 114, in setup
+    _install_setup_requires(attrs)
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 82, in _install_setup_requires
+    dist = MinimalDistribution(attrs)
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 64, in __init__
+    super().__init__(filtered)
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/dist.py", line 315, in __init__
+    for ep in metadata.entry_points(group='distutils.setup_keywords'):
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 1021, in entry_points
+    return SelectableGroups.load(eps).select(**params)
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 459, in load
+    ordered = sorted(eps, key=by_group)
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 1018, in <genexpr>
+    eps = itertools.chain.from_iterable(
+  File "/usr/lib/python3.10/importlib/metadata/_itertools.py", line 15, in unique_everseen
+    for element in iterable:
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 904, in <genexpr>
+    path.search(prepared) for path in map(FastPath, paths)
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 802, in search
+    return self.lookup(self.mtime).search(name)
+  File "/usr/lib/python3.10/importlib/metadata/_functools.py", line 80, in wrapper
+    return cached_method(*args, **kwargs)
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 812, in lookup
+    return Lookup(self)
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 828, in __init__
+    self.infos[normalized].append(path.joinpath(child))
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 785, in joinpath
+    return pathlib.Path(self.root, child)
+  File "/usr/lib/python3.10/pathlib.py", line 960, in __new__
+    self = cls._from_parts(args)
+  File "/usr/lib/python3.10/pathlib.py", line 594, in _from_parts
+    drv, root, parts = self._parse_args(args)
+  File "/usr/lib/python3.10/pathlib.py", line 587, in _parse_args
+    return cls._flavour.parse_parts(parts)
+  File "/usr/lib/python3.10/pathlib.py", line 67, in parse_parts
+    drv, root, rel = self.splitroot(part)
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_path_manager_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_path_manager_interfaces_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_path_manager_interfaces_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

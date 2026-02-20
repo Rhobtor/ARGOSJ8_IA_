@@ -188,7 +188,7 @@ path_manager_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fast
 path_manager_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 path_manager_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 path_manager_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-path_manager_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+path_manager_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 path_manager_node: /opt/ros/humble/lib/librmw.so
 path_manager_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
 path_manager_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

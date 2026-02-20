@@ -223,7 +223,7 @@ ARGJ801_ctl_platform: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupp
 ARGJ801_ctl_platform: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 ARGJ801_ctl_platform: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 ARGJ801_ctl_platform: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-ARGJ801_ctl_platform: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+ARGJ801_ctl_platform: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 ARGJ801_ctl_platform: /opt/ros/humble/lib/librmw.so
 ARGJ801_ctl_platform: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 ARGJ801_ctl_platform: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so

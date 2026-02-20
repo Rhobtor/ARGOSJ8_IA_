@@ -216,6 +216,7 @@ CMakeFiles/check_goal.dir/src/check_goal.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -726,8 +727,6 @@ CMakeFiles/check_goal.dir/src/check_goal.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
-/opt/ros/humble/include/rmw/rmw/rmw.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
@@ -895,6 +894,8 @@ CMakeFiles/check_goal.dir/src/check_goal.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
@@ -1568,6 +1569,8 @@ CMakeFiles/check_goal.dir/src/check_goal.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:
 
+/opt/ros/humble/include/rmw/rmw/rmw.h:
+
 /opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
 
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
@@ -1932,6 +1935,12 @@ CMakeFiles/check_goal.dir/src/check_goal.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
 
 /usr/include/c++/11/stdlib.h:
 
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/11/bits/hashtable_policy.h:
+
+/usr/include/c++/11/streambuf:
+
 /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/c++/11/chrono:
@@ -2141,9 +2150,3 @@ CMakeFiles/check_goal.dir/src/check_goal.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/c++/11/bits/hashtable_policy.h:
-
-/usr/include/c++/11/streambuf:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:

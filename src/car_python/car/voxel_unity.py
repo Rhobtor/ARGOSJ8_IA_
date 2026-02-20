@@ -109,7 +109,7 @@ class VoxelGridNode(Node):
         super().__init__("voxel_grid")
 
         # === Parámetros de IO (los mismos que tenías) ===
-        self.declare_parameter("input", "/camera/points")
+        self.declare_parameter("input", "/zed/zed_node/point_cloud/cloud_registered")
         self.declare_parameter("output", "/merged_points_filtered")
         self.declare_parameter("leaf_size", 0.15)
         # frame de salida (si vacío, usa el del mensaje de entrada)

@@ -252,7 +252,7 @@ libgazebo_ros_fixposition_plugin.so: /opt/ros/humble/lib/libgeometry_msgs__rosid
 libgazebo_ros_fixposition_plugin.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 libgazebo_ros_fixposition_plugin.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libgazebo_ros_fixposition_plugin.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libgazebo_ros_fixposition_plugin.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libgazebo_ros_fixposition_plugin.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libgazebo_ros_fixposition_plugin.so: /opt/ros/humble/lib/librmw.so
 libgazebo_ros_fixposition_plugin.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 libgazebo_ros_fixposition_plugin.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so

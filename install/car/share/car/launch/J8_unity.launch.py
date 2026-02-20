@@ -56,7 +56,12 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='static_map_to_odom',
-        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
+        arguments=[
+            '--frame-id', 'map',
+            '--child-frame-id', 'odom',
+            '--x', '0', '--y', '0', '--z', '0',
+            '--roll', '0', '--pitch', '0', '--yaw', '0',
+        ],
         output='screen'
     )
 
@@ -74,7 +79,12 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='static_base_to_camera',
-        arguments=['0.9206628', '0.0075201', '0.75542', '0', '0', '0', 'base_link', 'camera_link'],
+        arguments=[
+            '--frame-id', 'base_link',
+            '--child-frame-id', 'camera_link',
+            '--x', '0.9206628', '--y', '0.0075201', '--z', '0.75542',
+            '--roll', '0', '--pitch', '0', '--yaw', '0',
+        ],
         output='screen'
     )
 
@@ -83,7 +93,12 @@ def generate_launch_description():
         package='tf2_ros',
         executable='static_transform_publisher',
         name='velodyne_to_lidar_alias',
-        arguments=['0', '0', '0', '0', '0', '0', 'Velodyne_link', 'lidar_link'],
+        arguments=[
+            '--frame-id', 'Velodyne_link',
+            '--child-frame-id', 'lidar_link',
+            '--x', '0', '--y', '0', '--z', '0',
+            '--roll', '0', '--pitch', '0', '--yaw', '0',
+        ],
         output='screen',
         condition=IfCondition(use_lidar_alias)
     )

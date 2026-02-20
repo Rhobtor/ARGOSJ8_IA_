@@ -194,6 +194,7 @@ CMakeFiles/joints_plugin.dir/src/joints.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOS
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -3176,6 +3177,8 @@ CMakeFiles/joints_plugin.dir/src/joints.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOS
 
 /usr/include/dlfcn.h:
 
+/usr/include/c++/11/vector:
+
 /usr/include/boost/mpl/aux_/na.hpp:
 
 /usr/include/c++/11/iosfwd:
@@ -3303,8 +3306,6 @@ CMakeFiles/joints_plugin.dir/src/joints.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOS
 /usr/include/boost/mpl/aux_/na_fwd.hpp:
 
 /usr/include/boost/iterator/advance.hpp:
-
-/usr/include/c++/11/vector:
 
 /usr/include/boost/io/ios_state.hpp:
 
@@ -3512,6 +3513,8 @@ CMakeFiles/joints_plugin.dir/src/joints.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOS
 
 /usr/include/boost/core/allocator_access.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
+
 /usr/include/ignition/msgs5/ignition/msgs/world_reset.pb.h:
 
 /usr/include/ignition/msgs5/ignition/msgs/laserscan.pb.h:
@@ -3673,8 +3676,6 @@ CMakeFiles/joints_plugin.dir/src/joints.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOS
 /usr/include/boost/atomic/fences.hpp:
 
 /usr/include/boost/predef/os/bsd/dragonfly.h:
-
-/usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
 
 /usr/include/boost/mpl/aux_/config/eti.hpp:
 
@@ -3963,6 +3964,10 @@ CMakeFiles/joints_plugin.dir/src/joints.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOS
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:
+
+/opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
 
@@ -4299,8 +4304,6 @@ CMakeFiles/joints_plugin.dir/src/joints.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOS
 /usr/include/boost/type_traits/is_integral.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
-
-/usr/include/boost/move/detail/config_begin.hpp:
 
 /usr/include/boost/atomic/detail/addressof.hpp:
 
@@ -4930,6 +4933,8 @@ CMakeFiles/joints_plugin.dir/src/joints.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOS
 
 /usr/include/boost/regex/pattern_except.hpp:
 
+/usr/include/boost/move/detail/config_begin.hpp:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
@@ -5073,10 +5078,6 @@ CMakeFiles/joints_plugin.dir/src/joints.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOS
 /usr/include/boost/predef/architecture/blackfin.h:
 
 /usr/include/boost/predef/architecture/m68k.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
-
-/opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
 /usr/include/boost/type_traits/is_fundamental.hpp:
 
@@ -5375,6 +5376,8 @@ CMakeFiles/joints_plugin.dir/src/joints.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOS
 /usr/include/boost/type_traits/make_void.hpp:
 
 /usr/include/boost/preprocessor/punctuation/comma_if.hpp:
+
+/usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
 

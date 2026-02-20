@@ -14,8 +14,8 @@ class CircuitSupervisor(Node):
 
         # ---------- Parámetros ----------
         self.declare_parameter('launch_cmds', [
-            'ros2 launch car circuit2.launch.py',
-            'ros2 launch car circuit3.launch.py',
+            'ros2 launch car circuit1.launch.py',
+            #'ros2 launch car circuit3.launch.py',
             # 'ros2 launch car world_2_c.launch.py',
             # 'ros2 launch car world_3_d.launch.py',
         ])
@@ -43,11 +43,15 @@ class CircuitSupervisor(Node):
                       reliability=ReliabilityPolicy.RELIABLE,
                       durability=DurabilityPolicy.VOLATILE)
         qos_r  = QoSProfile(depth=1, reliability=ReliabilityPolicy.RELIABLE)
+        qos_world_reset = QoSProfile(depth=1,
+                         reliability=ReliabilityPolicy.RELIABLE,
+                         durability=DurabilityPolicy.VOLATILE)
 
         # ---------- Subs/Pubs ----------
         self.create_subscription(Bool, '/reset_request', self.reset_request_cb, qos_tl)
         self.create_subscription(Bool, '/circuit/done', self.circuit_done_cb, qos_done)
         self.create_subscription(UInt32, '/circuit/visited', self.visited_cb, qos_r)
+        self.create_subscription(Bool, '/world_reset_ok', self.world_reset_ok_cb, qos_world_reset)
 
         self.reset_conf_pub = self.create_publisher(Bool, '/reset_confirmation', qos_tl)
         self.goal_reached_pub = self.create_publisher(Bool, 'goal_reached', 10)
@@ -110,6 +114,12 @@ class CircuitSupervisor(Node):
             self.get_logger().info("🔄 Reset manual solicitado. Cambiando de circuito…")
             self.switch_environment()
 
+    def world_reset_ok_cb(self, msg: Bool):
+        # Cuando el mundo se resetea, reiniciamos al primer circuito (launch_cmds[0])
+        if msg.data and not self.switching:
+            self.get_logger().info("🌍 world_reset_ok=True. Reiniciando al primer circuito…")
+            self.restart_to_first()
+
     # ------------------------------ cambio de entorno
     def switch_environment(self):
         if self.switching:
@@ -127,6 +137,21 @@ class CircuitSupervisor(Node):
         self.reset_conf_pub.publish(Bool(data=True))
         self.get_logger().info("✅ Cambio completado")
         # Ventana corta para descartar un /circuit/done anterior que llegue tarde
+        self.ignore_done_until = time.monotonic() + 0.75
+        self.switching = False
+
+    def restart_to_first(self):
+        if self.switching:
+            return
+        self.switching = True
+
+        self.kill_environment()
+        self.current_index = 0
+        time.sleep(RELAUNCH_DELAY)
+        self.launch_environment()
+
+        self.reset_conf_pub.publish(Bool(data=True))
+        self.get_logger().info("✅ Reinicio completado (vuelta a launch_cmds[0])")
         self.ignore_done_until = time.monotonic() + 0.75
         self.switching = False
 

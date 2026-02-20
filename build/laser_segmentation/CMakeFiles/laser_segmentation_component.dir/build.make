@@ -469,7 +469,7 @@ liblaser_segmentation_component.so: /opt/ros/humble/lib/librosidl_typesupport_fa
 liblaser_segmentation_component.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_introspection_c.so
 liblaser_segmentation_component.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_fastrtps_cpp.so
 liblaser_segmentation_component.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-liblaser_segmentation_component.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+liblaser_segmentation_component.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 liblaser_segmentation_component.so: /opt/ros/humble/lib/librmw.so
 liblaser_segmentation_component.so: /opt/ros/humble/lib/liblifecycle_msgs__rosidl_typesupport_introspection_cpp.so
 liblaser_segmentation_component.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so

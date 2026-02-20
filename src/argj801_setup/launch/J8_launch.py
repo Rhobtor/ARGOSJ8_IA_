@@ -52,8 +52,43 @@ def generate_launch_description():
 
     # Declare launch arguments
     ld.add_action(DeclareLaunchArgument('robot', default_value='false', description='Launch robot nodes if true'))
+    ld.add_action(
+        DeclareLaunchArgument(
+            'platform_mode',
+            default_value='',
+            description=(
+                'Override argj801_ctrl_platform_node operation_mode. '
+                'Empty = auto (robot:=true -> 1 LCM, else 2 Gazebo). '
+                'Values: 0 Arduino, 1 LCM, 2 Gazebo.'
+            ),
+        )
+    )
     ld.add_action(DeclareLaunchArgument('simulator', default_value='false', description='Launch simulator nodes if true'))
     ld.add_action(DeclareLaunchArgument('use_gui', default_value='false', description='Launch GUI node if true'))
+    ld.add_action(
+        DeclareLaunchArgument(
+            'sensors_source',
+            default_value='lcm_sensors',
+            description='argj801_sensors source argument (e.g. lcm_sensors, camera).',
+        )
+    )
+    ld.add_action(
+        DeclareLaunchArgument(
+            'enable_mpc',
+            default_value='false',
+            description='Launch MPC node if true (requires Python package cvxpy).',
+        )
+    )
+    ld.add_action(
+        DeclareLaunchArgument(
+            'require_vehicle_heartbeat',
+            default_value='true',
+            description=(
+                'LCM safety: require dat_vehicle_heartbeat_msg to keep the platform node active. '
+                'Set to false ONLY for debugging/bringup when vehicle heartbeat is not available.'
+            ),
+        )
+    )
 
     # Load the configuration
     config_path = os.path.join(get_package_share_directory('argj801_setup'), 'config', 'J8_params.yaml')
@@ -79,10 +114,23 @@ def generate_launch_description():
         Se usa OpaqueFunction para poder leer el LaunchConfiguration ya resuelto.
         """
         robot = LaunchConfiguration('robot').perform(context)
-        operation_mode = 1 if robot == 'true' else 2
+        platform_mode = LaunchConfiguration('platform_mode').perform(context).strip()
+        require_vehicle_heartbeat_str = LaunchConfiguration('require_vehicle_heartbeat').perform(context).strip().lower()
+        require_vehicle_heartbeat = require_vehicle_heartbeat_str in ('true', '1', 'yes', 'y')
+        if platform_mode:
+            operation_mode = int(platform_mode)
+        else:
+            operation_mode = 1 if robot == 'true' else 2
         ctrlPlataformNode = LifecycleNode(
             package='argj801_ctl_platform', executable='ARGJ801_ctl_platform', name='argj801_ctrl_platform_node', namespace='ARGJ801', output='screen',
-            parameters=[global_params, select_params('argj801_ctrl_platform_node'), {'operation_mode': operation_mode}]
+            parameters=[
+                global_params,
+                select_params('argj801_ctrl_platform_node'),
+                {
+                    'operation_mode': operation_mode,
+                    'lcm_params.require_vehicle_heartbeat': require_vehicle_heartbeat,
+                },
+            ]
         )
 
         # Añadimos también su configuración/activación a las listas globales.
@@ -128,6 +176,10 @@ def generate_launch_description():
         package='ctl_mission', executable='ready_node', name='ready_node', namespace='ARGJ801', output='screen', parameters=[global_params])
     followZEDNode = LifecycleNode(
         package='ctl_mission', executable='follow_zed_node', name='follow_zed_node', namespace='ARGJ801', output='screen', parameters=[global_params])
+
+    mppiSacRelayNode = LifecycleNode(
+        package='ctl_mission', executable='mppi_sac_relay_node', name='mppi_sac_relay_node', namespace='ARGJ801', output='screen',
+        parameters=[global_params, select_params('mppi_sac_relay_node')])
     
     estopNode = LifecycleNode(
         package='ctl_mission', executable='estop_node', name='estop_node', namespace='ARGJ801', output='screen', parameters=[global_params])
@@ -141,7 +193,9 @@ def generate_launch_description():
         parameters=[global_params, select_params('security_check_node')])
     MPCPlannerNode = LifecycleNode(
         package='ctl_mission', executable='mpc_node.py', name='mpc_node', namespace='ARGJ801', output='screen',
-        parameters=[global_params, select_params('mpc_node')])
+        parameters=[global_params, select_params('mpc_node')],
+        condition=IfCondition(LaunchConfiguration('enable_mpc')),
+    )
     joystickNode = LifecycleNode(
         package='joy', executable='joy_node', name='joy_node', namespace='ARGJ801', output='screen',
         parameters=[global_params, select_params('argj801_ctrl_platform_node')])
@@ -150,7 +204,9 @@ def generate_launch_description():
         parameters=[global_params, select_params('fixposition_driver_ros2')])
     argj801_sensors = LifecycleNode(
         package='argj801_sensors', executable='ARGJ801_sensors_node', name='ARGJ801_sensors_node', namespace='ARGJ801', output='screen',
-        parameters=[global_params, select_params('argj801_sensors')])
+        parameters=[global_params, select_params('argj801_sensors')],
+        arguments=[LaunchConfiguration('sensors_source')],
+    )
     android_server_node = LifecycleNode(
         package='android_ros2_server', executable='tcp_server_node', name='android_server', namespace='ARGJ801', output='log',
         parameters=[global_params, select_params('android_server_node')])
@@ -182,7 +238,7 @@ def generate_launch_description():
     nodes_to_configure = [
         controlmissionNode, controllerNode, pathfollowingNode, backhomeNode, MPCPlannerNode,
         android_server_node, laser_segmentation_node, pathRecordNode, readyNode,followZEDNode, estopNode,
-        teleoperationNode, pathManagerNode, securityCheckNode
+        teleoperationNode, pathManagerNode, securityCheckNode, mppiSacRelayNode
     ]
 
     for node in nodes_to_configure:
@@ -218,7 +274,7 @@ def generate_launch_description():
     ld.add_action(LogInfo(condition=IfCondition(LaunchConfiguration('use_gui')), msg="Launching GUI node"))
 
     # Nodos comunes (se lanzan siempre; su activación depende de los eventos)
-    for node in [controlmissionNode, controllerNode, pathfollowingNode, teleoperationNode, pathRecordNode, readyNode,followZEDNode, estopNode, backhomeNode, pathManagerNode, securityCheckNode, MPCPlannerNode, android_server_node, laser_segmentation_node]:
+    for node in [controlmissionNode, controllerNode, pathfollowingNode, teleoperationNode, pathRecordNode, readyNode,followZEDNode, estopNode, backhomeNode, pathManagerNode, securityCheckNode, MPCPlannerNode, android_server_node, laser_segmentation_node, mppiSacRelayNode]:
         ld.add_action(node)
 
     # Nodos exclusivos de robot real (sensores/TF/hardware)

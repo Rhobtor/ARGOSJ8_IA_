@@ -474,6 +474,17 @@ void PathManager::getFFPath(const std::shared_ptr<path_manager_interfaces::srv::
     nav_msgs::msg::Path ff_path;
 
     if (localization_method == "Fixposition"){
+            // If the stored path is already expressed in ECEF (Fixposition global fixed frame),
+            // return it directly. This enables sending waypoints/paths using Fixposition-like
+            // coordinates without going through lat/lon conversion.
+            if (robot_path.header.frame_id == "ECEF") {
+                ff_path = robot_path;
+                ff_path.header.frame_id = "ECEF";
+                path_publisher_->publish(ff_path);
+                res->path = ff_path;
+                return;
+            }
+
       ff_path.header.frame_id = "ECEF";
 
       for (const auto& pose : robot_path.poses) {
@@ -485,6 +496,15 @@ void PathManager::getFFPath(const std::shared_ptr<path_manager_interfaces::srv::
       }
     }
     else if(localization_method == "Robot_localization"){
+            // If the stored path is already in UTM, return it directly.
+            if (robot_path.header.frame_id == "utm") {
+                ff_path = robot_path;
+                ff_path.header.frame_id = "utm";
+                path_publisher_->publish(ff_path);
+                res->path = ff_path;
+                return;
+            }
+
       ff_path.header.frame_id = "utm";
 
       for (const auto& pose : robot_path.poses) {

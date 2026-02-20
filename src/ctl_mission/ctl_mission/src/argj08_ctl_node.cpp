@@ -112,6 +112,14 @@ void CtlMissionNode::sendLifecycleStateRequest(
         return;
     }
 
+    if (!client->wait_for_service(1s)) {
+        RCLCPP_ERROR(
+            this->get_logger(),
+            "Lifecycle service not available: '%s' (transition_id=%u)",
+            client->get_service_name(), static_cast<unsigned>(transition_id));
+        return;
+    }
+
     // Prepare the request
     auto request = std::make_shared<lifecycle_msgs::srv::ChangeState::Request>();
     request->transition.id = transition_id;

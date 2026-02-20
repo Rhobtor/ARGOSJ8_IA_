@@ -1,0 +1,22 @@
+[0.572s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/local/lib/python3.10/dist-packages:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build
+[0.675s] /home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[0.675s]   warnings.warn(msg)
+[0.695s] Traceback (most recent call last):
+[0.695s]   File "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/setup.py", line 72, in <module>
+[0.695s]     setup(
+[0.695s]   File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 115, in setup
+[0.696s]     return distutils.core.setup(**attrs)
+[0.696s]   File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 173, in setup
+[0.696s]     ok = dist.parse_command_line()
+[0.696s]   File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 502, in parse_command_line
+[0.696s]     args = self._parse_command_opts(parser, args)
+[0.696s]   File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/dist.py", line 1003, in _parse_command_opts
+[0.697s]     nargs = _Distribution._parse_command_opts(self, parser, args)
+[0.697s]   File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 606, in _parse_command_opts
+[0.697s]     (args, opts) = parser.getopt(args[1:])
+[0.697s]   File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/fancy_getopt.py", line 243, in getopt
+[0.697s]     self._grok_option_table()
+[0.697s]   File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/fancy_getopt.py", line 214, in _grok_option_table
+[0.697s]     raise DistutilsGetoptError(
+[0.697s] distutils.errors.DistutilsGetoptError: invalid long option name 'script_dir' (must be letters, numbers, hyphens only
+[0.710s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car' returned '1': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/local/lib/python3.10/dist-packages:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build

@@ -191,6 +191,7 @@ CMakeFiles/ublox_logger.dir/src/logger_node_pa.cpp.o: /home/rhobtor/PHD/ARGOJ8_I
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -888,6 +889,7 @@ CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/A
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -1436,9 +1438,7 @@ CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/A
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
+/usr/include/linux/types.h:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
 
@@ -1649,6 +1649,8 @@ CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/A
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
@@ -2155,6 +2157,10 @@ CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/A
 /opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
 
@@ -2853,5 +2859,3 @@ CMakeFiles/ublox_logger.dir/src/raw_data_pa.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/A
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
 
 /usr/include/linux/posix_types.h:
-
-/usr/include/linux/types.h:

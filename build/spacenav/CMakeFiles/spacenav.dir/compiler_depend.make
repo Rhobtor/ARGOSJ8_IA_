@@ -208,6 +208,7 @@ CMakeFiles/spacenav.dir/src/spacenav.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -739,7 +740,7 @@ CMakeFiles/spacenav.dir/src/spacenav.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/opt/ros/humble/include/rmw/rmw/subscription_options.h:
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /opt/ros/humble/include/rmw/rmw/rmw.h:
 
@@ -915,6 +916,8 @@ CMakeFiles/spacenav.dir/src/spacenav.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
@@ -1000,10 +1003,6 @@ CMakeFiles/spacenav.dir/src/spacenav.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_
 /opt/ros/humble/include/rcl/rcl/node.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
-
-/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
 
 /usr/include/c++/11/bits/stl_multiset.h:
 
@@ -1363,10 +1362,6 @@ CMakeFiles/spacenav.dir/src/spacenav.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_
 
 /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/opt/ros/humble/include/rcl/rcl/guard_condition.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
@@ -1587,6 +1582,16 @@ CMakeFiles/spacenav.dir/src/spacenav.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
 
+/opt/ros/humble/include/rmw/rmw/subscription_options.h:
+
+/opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
+
+/opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/service_type_support_decl.hpp:
+
+/opt/ros/humble/include/rcl/rcl/guard_condition.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
 /usr/include/c++/11/bits/std_function.h:
 
 /opt/ros/humble/include/rmw/rmw/time.h:
@@ -1726,8 +1731,6 @@ CMakeFiles/spacenav.dir/src/spacenav.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_
 /usr/include/c++/11/bits/exception_defines.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
 
 /opt/ros/humble/include/rcl/rcl/event.h:
 

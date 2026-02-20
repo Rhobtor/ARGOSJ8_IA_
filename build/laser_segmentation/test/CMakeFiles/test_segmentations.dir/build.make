@@ -484,7 +484,7 @@ test/test_segmentations: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesuppo
 test/test_segmentations: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so
 test/test_segmentations: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 test/test_segmentations: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-test/test_segmentations: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+test/test_segmentations: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 test/test_segmentations: /opt/ros/humble/lib/librmw.so
 test/test_segmentations: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 test/test_segmentations: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so

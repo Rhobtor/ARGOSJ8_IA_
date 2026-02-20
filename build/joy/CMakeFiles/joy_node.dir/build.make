@@ -133,7 +133,7 @@ joy_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp
 joy_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 joy_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 joy_node: /opt/ros/humble/lib/librmw.so
-joy_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+joy_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 joy_node: /opt/ros/humble/lib/libcomposition_interfaces__rosidl_typesupport_introspection_cpp.so
 joy_node: /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so
 joy_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so

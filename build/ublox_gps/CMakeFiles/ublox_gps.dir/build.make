@@ -581,7 +581,7 @@ libublox_gps.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrt
 libublox_gps.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 libublox_gps.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libublox_gps.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libublox_gps.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libublox_gps.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libublox_gps.so: /opt/ros/humble/lib/librmw.so
 libublox_gps.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 libublox_gps.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

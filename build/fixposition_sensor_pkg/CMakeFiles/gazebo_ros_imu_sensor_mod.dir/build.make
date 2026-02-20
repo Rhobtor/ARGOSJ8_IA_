@@ -234,7 +234,7 @@ libgazebo_ros_imu_sensor_mod.so: /opt/ros/humble/lib/libaction_msgs__rosidl_type
 libgazebo_ros_imu_sensor_mod.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libgazebo_ros_imu_sensor_mod.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 libgazebo_ros_imu_sensor_mod.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libgazebo_ros_imu_sensor_mod.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libgazebo_ros_imu_sensor_mod.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libgazebo_ros_imu_sensor_mod.so: /opt/ros/humble/lib/librmw.so
 libgazebo_ros_imu_sensor_mod.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 libgazebo_ros_imu_sensor_mod.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

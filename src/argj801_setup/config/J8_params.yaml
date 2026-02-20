@@ -68,6 +68,17 @@ ARGJ801:
     # Tamaño de cola en subscriptions (rclcpp/rclpy QoS depth).
     queue_size: 10
 
+  mppi_sac_relay_node:
+    # Entrada: cmd_vel publicado por el ordenador remoto (por defecto queda en /ARGJ801/cmd_vel).
+    ai_cmd_topic_name: "external_cmd_vel"
+    # Salida: canal validado por security_check / límites del robot.
+    secured_cmd_vel_topic_name: "secured_cmd_vel"
+    queue_size: 10
+
+    # Handshake TCP: al activar el estado MPPI/SAC, se envía "START\n" a esta IP/puerto.
+    controller_ip: "192.168.1.116"
+    controller_port: 5555
+
   path_record_node:
     # Distancia mínima entre puntos consecutivos al grabar una ruta (m).
     distance_between_record_points: 1.0
@@ -174,10 +185,7 @@ ARGJ801:
     password_check_srv_name: "security_password_check"
     min_distance_to_path_topic_name: "min_distance_to_path"
 
-  # Nota: hay una posible errata en el nombre de bloque.
-  # En el launch se usa select_params('android_server_node') pero aquí aparece
-  # `andoid_server_node`. Si el nodo no recibe parámetros, revisad este typo.
-  andoid_server_node:
+  android_server_node:
     host: '0.0.0.0'
     port: 5001
     emergency_topic: '/Human/emergency_call'

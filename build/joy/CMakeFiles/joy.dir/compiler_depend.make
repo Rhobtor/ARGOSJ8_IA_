@@ -205,6 +205,7 @@ CMakeFiles/joy.dir/src/joy.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -1040,7 +1041,7 @@ CMakeFiles/joy.dir/src/joy.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h:
 
@@ -1251,6 +1252,8 @@ CMakeFiles/joy.dir/src/joy.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
 
 /usr/include/SDL2/SDL_assert.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
@@ -1567,10 +1570,6 @@ CMakeFiles/joy.dir/src/joy.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
 /usr/include/c++/11/bits/atomic_futex.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/c++/11/ext/string_conversions.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
 
@@ -1940,6 +1939,12 @@ CMakeFiles/joy.dir/src/joy.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
 
+/opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
+
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h:
@@ -2287,8 +2292,6 @@ CMakeFiles/joy.dir/src/joy.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/j8
 /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
 
 /usr/include/c++/11/bits/stl_numeric.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
 

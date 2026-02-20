@@ -6,6 +6,7 @@ Maintainer: author
 Maintainer-email: todo@todo.com
 License: TODO: License declaration
 Requires-Dist: setuptools
+Requires-Dist: pyproj
 Dynamic: license
 Dynamic: maintainer
 Dynamic: maintainer-email

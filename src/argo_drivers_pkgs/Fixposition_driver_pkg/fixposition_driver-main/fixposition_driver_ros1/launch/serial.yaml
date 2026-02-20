@@ -3,7 +3,7 @@ fp_output:
     type: serial
     port: "/dev/ttyUSB0"
     serial_baudrate: 115200
-    rate: 200
+    rate: 10
     reconnect_delay: 5.0 # wait time in [s] until retry connection
 
 customer_input:

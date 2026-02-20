@@ -231,6 +231,7 @@ CMakeFiles/odom_converter.dir/src/odom_converter_node.cpp.o: /home/rhobtor/PHD/A
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -932,6 +933,7 @@ CMakeFiles/odom_converter.dir/src/params.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -1477,10 +1479,6 @@ CMakeFiles/odom_converter.dir/src/params.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
-
 /opt/ros/humble/include/rmw/rmw/events_statuses/message_lost.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
@@ -1569,10 +1567,6 @@ CMakeFiles/odom_converter.dir/src/params.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
-
-/usr/include/c++/11/memory:
-
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_factory.hpp:
 
 /usr/include/c++/11/backward/binders.h:
@@ -1615,10 +1609,6 @@ CMakeFiles/odom_converter.dir/src/params.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface.hpp:
 
-/usr/include/c++/11/bits/predefined_ops.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_logging_interface.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp:
@@ -1630,6 +1620,8 @@ CMakeFiles/odom_converter.dir/src/params.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
@@ -2158,6 +2150,18 @@ CMakeFiles/odom_converter.dir/src/params.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/ARGO
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
+
+/usr/include/c++/11/memory:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/c++/11/bits/predefined_ops.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
 

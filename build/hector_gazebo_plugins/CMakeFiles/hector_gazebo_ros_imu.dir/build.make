@@ -266,7 +266,7 @@ libhector_gazebo_ros_imu.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_
 libhector_gazebo_ros_imu.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 libhector_gazebo_ros_imu.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libhector_gazebo_ros_imu.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libhector_gazebo_ros_imu.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libhector_gazebo_ros_imu.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libhector_gazebo_ros_imu.so: /opt/ros/humble/lib/librmw.so
 libhector_gazebo_ros_imu.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 libhector_gazebo_ros_imu.so: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so

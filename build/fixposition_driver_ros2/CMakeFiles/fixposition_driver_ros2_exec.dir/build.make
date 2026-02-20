@@ -231,7 +231,7 @@ fixposition_driver_ros2_exec: /opt/ros/humble/lib/librosidl_typesupport_fastrtps
 fixposition_driver_ros2_exec: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 fixposition_driver_ros2_exec: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 fixposition_driver_ros2_exec: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-fixposition_driver_ros2_exec: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+fixposition_driver_ros2_exec: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 fixposition_driver_ros2_exec: /opt/ros/humble/lib/librmw.so
 fixposition_driver_ros2_exec: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 fixposition_driver_ros2_exec: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so

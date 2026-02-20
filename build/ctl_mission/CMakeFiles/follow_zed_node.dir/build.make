@@ -236,7 +236,7 @@ follow_zed_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrt
 follow_zed_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 follow_zed_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 follow_zed_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-follow_zed_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+follow_zed_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 follow_zed_node: /opt/ros/humble/lib/librmw.so
 follow_zed_node: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_introspection_cpp.so
 follow_zed_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

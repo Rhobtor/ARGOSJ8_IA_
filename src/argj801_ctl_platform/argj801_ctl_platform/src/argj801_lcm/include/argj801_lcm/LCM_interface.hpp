@@ -56,6 +56,9 @@ namespace argj801_lcm {
         std::string external_url;
         std::string broadcast_url;
 
+        // Channel names (allow override from YAML, for compatibility with different stations)
+        std::string vehicle_heartbeat_channel = "dat_vehicle_heartbeat_msg";
+
         lcmmessages::cmd_discrete_device_msg discreteDeviceMsg;
         lcmmessages::header2 header_from_station;
         lcmmessages::DiscreteDevice discreteDevice;

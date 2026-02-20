@@ -1,13 +1,1 @@
-#ifndef DRIVE_LINE_H
-#define DRIVE_LINE_H
-
-#include "visitor/Visitor.hpp"
-#include <memory>
-namespace SensorData {
-  class DriveLine
-  {
-  public:
-    virtual void acceptDriveLine(std::shared_ptr<Visitor::Visitor> visitor) = 0;
-  };
-}
-#endif // DRIVE_LINE_H
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/include/data/DriveLine.hpp

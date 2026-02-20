@@ -1,0 +1,20 @@
+/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/setup.py", line 72, in <module>
+    setup(
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 115, in setup
+    return distutils.core.setup(**attrs)
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/core.py", line 173, in setup
+    ok = dist.parse_command_line()
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 502, in parse_command_line
+    args = self._parse_command_opts(parser, args)
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/dist.py", line 1003, in _parse_command_opts
+    nargs = _Distribution._parse_command_opts(self, parser, args)
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py", line 606, in _parse_command_opts
+    (args, opts) = parser.getopt(args[1:])
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/fancy_getopt.py", line 243, in getopt
+    self._grok_option_table()
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/fancy_getopt.py", line 214, in _grok_option_table
+    raise DistutilsGetoptError(
+distutils.errors.DistutilsGetoptError: invalid long option name 'script_dir' (must be letters, numbers, hyphens only

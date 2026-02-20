@@ -222,7 +222,7 @@ libhector_gazebo_plugins__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libhector_gazebo_plugins__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libhector_gazebo_plugins__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librmw.so
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libgeographic_msgs__rosidl_generator_c.so

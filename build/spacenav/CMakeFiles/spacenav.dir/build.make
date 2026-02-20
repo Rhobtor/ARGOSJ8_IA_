@@ -150,7 +150,7 @@ libspacenav.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtp
 libspacenav.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 libspacenav.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libspacenav.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libspacenav.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libspacenav.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libspacenav.so: /opt/ros/humble/lib/librmw.so
 libspacenav.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 libspacenav.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so

@@ -150,7 +150,7 @@ frontier_values: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrt
 frontier_values: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 frontier_values: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 frontier_values: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-frontier_values: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+frontier_values: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 frontier_values: /opt/ros/humble/lib/librmw.so
 frontier_values: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 frontier_values: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so

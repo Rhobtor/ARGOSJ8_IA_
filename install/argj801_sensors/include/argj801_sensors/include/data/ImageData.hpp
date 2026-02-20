@@ -1,14 +1,1 @@
-#ifndef IMAGE_H
-#define IMAGE_H
-
-
-#include "visitor/Visitor.hpp"
-#include <memory>
-namespace SensorData {
-  class ImageData
-  {
-  public:
-    virtual void acceptImage(std::shared_ptr<Visitor::Visitor> visitor) = 0;
-  };
-}
-#endif // IMAGE_H
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/include/data/ImageData.hpp

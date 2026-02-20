@@ -38,6 +38,11 @@ CMakeFiles/laser_segmentation_component.dir/src/laser_segmentation.cpp.o: /home/
   /opt/ros/humble/include/class_loader/class_loader/meta_object.hpp \
   /opt/ros/humble/include/class_loader/class_loader/register_macro.hpp \
   /opt/ros/humble/include/class_loader/class_loader/visibility_control.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/accel.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__traits.hpp \
@@ -312,6 +317,7 @@ CMakeFiles/laser_segmentation_component.dir/src/laser_segmentation.cpp.o: /home/
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -2253,6 +2259,7 @@ CMakeFiles/laser_segmentation_component.dir/src/parameter_handler.cpp.o: /home/r
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -3397,8 +3404,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
@@ -4063,19 +4068,13 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/c++/11/bits/stl_pair.h:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
+/usr/include/c++/11/bits/stl_numeric.h:
 
-/usr/include/boost/mpl/back.hpp:
+/usr/include/c++/11/bits/stl_multiset.h:
 
-/usr/include/boost/fusion/container/list/detail/next_impl.hpp:
+/usr/include/c++/11/bits/stl_multimap.h:
 
-/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.hpp:
-
-/usr/include/boost/fusion/container/list/detail/equal_to_impl.hpp:
-
-/usr/include/boost/mpl/aux_/static_cast.hpp:
-
-/usr/include/boost/mpl/erase.hpp:
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 /usr/include/boost/fusion/algorithm/query/find_if_fwd.hpp:
 
@@ -4135,10 +4134,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/boost/preprocessor/iteration/detail/bounds/lower1.hpp:
 
-/usr/include/boost/fusion/container/list/detail/empty_impl.hpp:
-
-/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
-
 /usr/include/c++/11/fstream:
 
 /usr/include/boost/date_time/gregorian/greg_date.hpp:
@@ -4191,10 +4186,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/boost/config/detail/select_stdlib_config.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/Visitor.h:
-
-/usr/include/boost/fusion/container/list/detail/end_impl.hpp:
-
 /usr/include/boost/config.hpp:
 
 /usr/include/boost/fusion/sequence/intrinsic/detail/segmented_end_impl.hpp:
@@ -4234,8 +4225,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_changed.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
-
-/usr/include/c++/11/bits/stl_numeric.h:
 
 /usr/include/boost/algorithm/string/detail/classification.hpp:
 
@@ -4295,10 +4284,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/tracetools/tracetools/utils.hpp:
 
-/usr/include/boost/fusion/support/is_sequence.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp:
-
 /usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/boost/fusion/iterator/deref.hpp:
@@ -4314,10 +4299,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__traits.hpp:
 
 /usr/include/boost/fusion/support/detail/segmented_fold_until_impl.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_day_of_year.hpp:
-
-/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__struct.hpp:
 
@@ -4451,8 +4432,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__builder.hpp:
 
-/usr/include/boost/fusion/container/list/detail/deref_impl.hpp:
-
 /usr/include/c++/11/set:
 
 /usr/include/boost/fusion/algorithm/transformation/erase.hpp:
@@ -4525,8 +4504,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/c++/11/bits/basic_ios.tcc:
 
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
-
 /usr/include/boost/fusion/algorithm/transformation/erase_key.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/struct_stat.h:
@@ -4554,8 +4531,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /opt/ros/humble/include/rmw/rmw/init_options.h:
 
 /opt/ros/humble/include/rmw/rmw/init.h:
-
-/usr/include/boost/fusion/iterator/prior.hpp:
 
 /usr/include/boost/mpl/vector/aux_/pop_back.hpp:
 
@@ -4671,10 +4646,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
 
-/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
-
-/usr/include/boost/mpl/deref.hpp:
-
 /usr/include/boost/date_time/microsec_time_clock.hpp:
 
 /usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
@@ -4682,10 +4653,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
 
 /usr/include/boost/algorithm/string/detail/trim.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__struct.hpp:
-
-/usr/include/boost/fusion/view/joint_view/detail/value_of_data_impl.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
 
@@ -4801,7 +4768,21 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_factory.hpp:
 
-/opt/ros/humble/include/rcl/rcl/timer.h:
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
+
+/usr/include/boost/date_time/special_defs.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_event_handler.hpp:
+
+/opt/ros/humble/include/rcl/rcl/visibility_control.h:
+
+/usr/include/boost/preprocessor/facilities/expand.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Product.h:
 
@@ -4817,8 +4798,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp:
 
-/usr/include/boost/config/user.hpp:
-
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.h:
 
 /usr/include/boost/date_time/date_iterator.hpp:
@@ -4827,9 +4806,9 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
 
-/usr/include/boost/date_time/posix_time/posix_time_config.hpp:
-
 /opt/ros/humble/include/rcl/rcl/service.h:
+
+/usr/include/boost/date_time/posix_time/posix_time_config.hpp:
 
 /usr/include/boost/fusion/container/vector/vector_fwd.hpp:
 
@@ -4849,29 +4828,11 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/rclcpp_components/rclcpp_components/node_factory_template.hpp:
 
-/opt/ros/humble/include/rcl/rcl/types.h:
-
-/opt/ros/humble/include/rcl/rcl/arguments.h:
-
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/sub.hpp:
-
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/point_indices.hpp:
 
 /usr/include/boost/predef/os/bsd/bsdi.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/intra_process_buffer.hpp:
-
-/opt/ros/humble/include/rcl/rcl/visibility_control.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_event_handler.hpp:
-
-/usr/include/boost/preprocessor/facilities/expand.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp:
-
-/usr/include/boost/preprocessor/list/fold_right.hpp:
 
 /opt/ros/humble/include/rmw/rmw/event.h:
 
@@ -4882,6 +4843,12 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /usr/include/boost/fusion/iterator/detail/distance.hpp:
 
 /usr/include/boost/utility/result_of.hpp:
+
+/usr/include/boost/fusion/view/joint_view/detail/value_of_data_impl.hpp:
+
+/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__struct.hpp:
+
+/usr/include/boost/fusion/container/list/detail/deref_impl.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
 
@@ -4904,18 +4871,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /usr/include/boost/config/pragma_message.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/boost/preprocessor/seq/for_each.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp:
-
-/usr/include/boost/type_traits/add_pointer.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
 /usr/include/boost/preprocessor/arithmetic/mod.hpp:
 
@@ -4942,6 +4897,10 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__type_support.hpp:
 
 /usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/boost/mpl/deref.hpp:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
 
 /usr/include/boost/date_time/time_clock.hpp:
 
@@ -4978,8 +4937,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__struct.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__type_support.hpp:
 
@@ -5070,6 +5027,34 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
+
+/usr/include/c++/11/bits/std_function.h:
+
+/opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
+
+/usr/include/boost/config/no_tr1/utility.hpp:
+
+/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__traits.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
+
+/usr/include/boost/config/detail/select_compiler_config.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
+
+/usr/include/boost/fusion/iterator/equal_to.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
+
+/usr/include/boost/mpl/aux_/O1_size_impl.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/offered_deadline_missed.h:
 
@@ -5179,14 +5164,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:
 
-/usr/include/boost/config/no_tr1/utility.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/point_indices__traits.hpp:
-
-/usr/include/c++/11/bits/std_function.h:
-
-/opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
@@ -5205,6 +5182,8 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/boost/mpl/size_t_fwd.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__struct.hpp:
+
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__type_support.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
@@ -5221,11 +5200,17 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/boost/mpl/prior.hpp:
 
-/usr/include/boost/mpl/advance.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
+
+/usr/include/boost/fusion/view/single_view/single_view.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
+/opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/visibility_control.h:
 
 /usr/include/boost/predef/os/bsd/dragonfly.h:
 
@@ -5236,6 +5221,14 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /usr/include/linux/errno.h:
 
 /usr/include/boost/fusion/adapted/mpl/detail/size_impl.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:
+
+/usr/include/boost/date_time/gregorian/greg_day_of_year.hpp:
+
+/usr/include/boost/fusion/container/list/detail/empty_impl.hpp:
+
+/usr/include/boost/mpl/aux_/is_msvc_eti_arg.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
 
@@ -5261,11 +5254,13 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/boost/fusion/container/list/nil.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
-
 /usr/include/boost/range/concepts.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp:
+
+/usr/include/boost/mpl/back.hpp:
 
 /opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:
 
@@ -5289,6 +5284,10 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/boost/mpl/lambda_fwd.hpp:
 
+/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.hpp:
+
+/usr/include/boost/fusion/container/list/detail/next_impl.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
@@ -5301,15 +5300,49 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+
+/usr/include/boost/mpl/advance.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/boost/preprocessor/seq/for_each.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
+
+/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp:
+
+/usr/include/boost/type_traits/add_pointer.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/accel.hpp:
+
+/usr/include/pcl-1.12/pcl/PCLPointField.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
+
+/usr/include/boost/date_time/time_system_counted.hpp:
+
+/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
+
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
 
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/c++/11/bits/stl_map.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/segment_array.hpp:
+
+/usr/include/boost/fusion/container/list/cons_fwd.hpp:
+
 /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
 
 /usr/include/boost/mpl/arg.hpp:
 
@@ -5323,25 +5356,25 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__traits.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__builder.hpp:
 
-/usr/include/boost/config/detail/select_compiler_config.hpp:
+/usr/include/boost/range/detail/safe_bool.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
+/usr/include/boost/fusion/adapted/mpl/detail/end_impl.hpp:
 
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
+/usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
-/usr/include/boost/fusion/iterator/equal_to.hpp:
+/usr/include/boost/mpl/bind.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
+/usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
 
-/usr/include/c++/11/cstddef:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
 
-/opt/ros/humble/include/rcl/rcl/wait.h:
+/opt/ros/humble/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
 
-/usr/include/boost/algorithm/string/constants.hpp:
+/usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__builder.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
 
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/model_coefficients.hpp:
 
@@ -5356,8 +5389,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:
 
 /usr/include/boost/fusion/container/vector/detail/equal_to_impl.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__type_support.hpp:
 
 /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
 
@@ -5395,13 +5426,15 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/rcl/rcl/guard_condition.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__builder.hpp:
+
+/opt/ros/humble/include/rcl/rcl/timer.h:
+
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/segment.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
+/usr/include/boost/fusion/iterator/prior.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/lidar_process_pkgs/laser_segmentation/include/laser_segmentation/parameter_handler.hpp:
 
@@ -5439,12 +5472,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
-
-/opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/visibility_control.h:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
 
 /usr/include/boost/fusion/container/vector/detail/distance_impl.hpp:
@@ -5452,10 +5479,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /usr/include/pcl-1.12/pcl/common/impl/transforms.hpp:
 
 /usr/include/boost/range/value_type.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp:
 
 /usr/include/boost/algorithm/string/config.hpp:
 
@@ -5480,6 +5503,18 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /usr/include/boost/fusion/view/filter_view/detail/value_of_impl.hpp:
 
 /usr/include/boost/iterator/iterator_concepts.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
+
+/usr/include/boost/fusion/iterator/detail/segmented_iterator.hpp:
+
+/usr/include/boost/mpl/aux_/push_front_impl.hpp:
+
+/usr/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp:
+
+/opt/ros/humble/include/rmw/rmw/macros.h:
+
+/usr/include/boost/type_traits/is_const.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
 
@@ -5513,18 +5548,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
-
-/usr/include/boost/fusion/iterator/detail/segmented_iterator.hpp:
-
-/usr/include/boost/mpl/aux_/push_front_impl.hpp:
-
-/usr/include/boost/fusion/algorithm/iteration/detail/segmented_for_each.hpp:
-
-/opt/ros/humble/include/rmw/rmw/macros.h:
-
-/usr/include/boost/type_traits/is_const.hpp:
-
 /opt/ros/humble/include/rmw/rmw/localhost.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
@@ -5534,6 +5557,10 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /usr/include/boost/range/config.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/opt/ros/humble/include/nav2_util/node_utils.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
@@ -5555,27 +5582,29 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__traits.hpp:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
+/opt/ros/humble/include/rcl/rcl/arguments.h:
 
-/usr/include/boost/fusion/adapted/mpl/detail/end_impl.hpp:
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__type_support.hpp:
 
-/usr/include/boost/config/stdlib/libstdcpp3.hpp:
+/usr/include/boost/preprocessor/arithmetic/sub.hpp:
 
-/usr/include/boost/mpl/bind.hpp:
+/opt/ros/humble/include/rcl/rcl/types.h:
 
-/usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_field__struct.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
 
-/usr/include/boost/fusion/view/single_view/single_view.hpp:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
+/usr/include/boost/preprocessor/list/fold_right.hpp:
 
-/usr/include/boost/mpl/aux_/O1_size_impl.hpp:
+/usr/include/boost/algorithm/string/constants.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/endian.h:
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__builder.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
+/usr/include/c++/11/cstddef:
+
+/opt/ros/humble/include/rcl/rcl/wait.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
@@ -5632,8 +5661,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /usr/include/c++/11/string:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
-
-/usr/include/c++/11/bits/stl_multimap.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -5903,17 +5930,11 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
-
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/segment_array.hpp:
-
-/usr/include/boost/fusion/container/list/cons_fwd.hpp:
-
-/usr/include/c++/11/bits/stl_map.h:
 
 /opt/ros/humble/include/rcl/rcl/event_callback.h:
 
@@ -5993,9 +6014,15 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/transition_event.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
+
+/usr/include/boost/config/user.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__traits.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
+
+/usr/include/boost/type_traits/declval.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mman.h:
 
@@ -6003,7 +6030,19 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h:
 
-/usr/include/boost/date_time/special_defs.hpp:
+/usr/include/eigen3/Eigen/src/Core/Visitor.h:
+
+/usr/include/boost/fusion/container/list/detail/end_impl.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp:
+
+/usr/include/boost/fusion/support/is_sequence.hpp:
+
+/usr/include/boost/fusion/container/list/detail/equal_to_impl.hpp:
+
+/usr/include/boost/mpl/aux_/static_cast.hpp:
+
+/usr/include/boost/mpl/erase.hpp:
 
 /usr/include/boost/fusion/container/list/detail/value_at_impl.hpp:
 
@@ -6369,8 +6408,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 
 /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:
 
-/usr/include/c++/11/bits/stl_multiset.h:
-
 /usr/include/boost/fusion/view/single_view/detail/value_of_impl.hpp:
 
 /opt/ros/humble/include/class_loader/class_loader/register_macro.hpp:
@@ -6560,14 +6597,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /usr/include/boost/mpl/distance_fwd.hpp:
 
 /usr/include/boost/mpl/plus.hpp:
-
-/usr/include/pcl-1.12/pcl/PCLPointField.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
-
-/usr/include/boost/date_time/time_system_counted.hpp:
-
-/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
 
 /usr/include/boost/fusion/container/list/detail/value_of_impl.hpp:
 
@@ -6828,10 +6857,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
-
-/usr/include/boost/type_traits/declval.hpp:
 
 /usr/include/boost/interprocess/detail/config_begin.hpp:
 
@@ -7188,12 +7213,6 @@ CMakeFiles/laser_segmentation_component.dir/src/segmentation/jump_distance_merge
 /usr/include/boost/range/detail/has_member_size.hpp:
 
 /usr/include/boost/range/detail/misc_concept.hpp:
-
-/usr/include/boost/range/detail/safe_bool.hpp:
-
-/opt/ros/humble/include/nav2_util/node_utils.hpp:
-
-/usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/boost/range/detail/sfinae.hpp:
 

@@ -1,0 +1,38 @@
+[3.929s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/GUI_pkg': PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/GUI_pkg build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/install.log --single-version-externally-managed
+[4.684s] /home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[4.684s]   warnings.warn(msg)
+[4.718s] running egg_info
+[4.748s] writing ../../build/GUI_pkg/GUI_pkg.egg-info/PKG-INFO
+[4.748s] writing dependency_links to ../../build/GUI_pkg/GUI_pkg.egg-info/dependency_links.txt
+[4.748s] writing entry points to ../../build/GUI_pkg/GUI_pkg.egg-info/entry_points.txt
+[4.749s] writing requirements to ../../build/GUI_pkg/GUI_pkg.egg-info/requires.txt
+[4.749s] writing top-level names to ../../build/GUI_pkg/GUI_pkg.egg-info/top_level.txt
+[4.772s] reading manifest file '../../build/GUI_pkg/GUI_pkg.egg-info/SOURCES.txt'
+[4.777s] writing manifest file '../../build/GUI_pkg/GUI_pkg.egg-info/SOURCES.txt'
+[4.778s] running build
+[4.779s] running build_py
+[4.780s] copying GUI_pkg/tabs.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.783s] copying GUI_pkg/profiler.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.784s] copying GUI_pkg/profile_analisys.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.785s] copying GUI_pkg/ui_form.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.785s] copying GUI_pkg/path_utils.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.790s] copying GUI_pkg/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.791s] copying GUI_pkg/ros_classes.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.791s] copying GUI_pkg/mainwindow.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.792s] copying GUI_pkg/ui_tabs.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.793s] copying GUI_pkg/geonav_conversions.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.793s] copying GUI_pkg/zoom_image_handler.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.798s] copying GUI_pkg/gui_node.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg
+[4.799s] copying GUI_pkg/cythonized_code/setup.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/cythonized_code
+[4.799s] copying GUI_pkg/cythonized_code/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build/lib/GUI_pkg/cythonized_code
+[4.800s] running install
+[4.805s] running install_lib
+[4.821s] byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg/tabs.py to tabs.cpython-310.pyc
+[4.835s] Sorry: IndentationError: unexpected indent (tabs.py, line 415)
+[4.852s] running install_egg_info
+[4.853s] removing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[4.854s] Copying ../../build/GUI_pkg/GUI_pkg.egg-info to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages/GUI_pkg-0.0.0-py3.10.egg-info
+[4.854s] running install_scripts
+[4.909s] Installing gui_node script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/GUI_pkg
+[4.910s] writing list of installed files to '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/install.log'
+[4.936s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/GUI_pkg' returned '0': PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/GUI_pkg build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/GUI_pkg/install.log --single-version-externally-managed

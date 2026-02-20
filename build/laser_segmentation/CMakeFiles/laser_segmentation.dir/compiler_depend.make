@@ -32,6 +32,11 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/accel.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__traits.hpp \
@@ -306,6 +311,7 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -2054,8 +2060,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
@@ -2712,9 +2716,9 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
-/usr/include/boost/fusion/container/map/map_fwd.hpp:
+/usr/include/c++/11/bits/streambuf.tcc:
 
-/usr/include/c++/11/bits/stl_algo.h:
+/usr/include/c++/11/bits/stream_iterator.h:
 
 /usr/include/boost/fusion/container/list/list_fwd.hpp:
 
@@ -2980,8 +2984,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/at_impl.hpp:
-
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__struct.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:
@@ -2997,6 +2999,10 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp:
 
 /usr/include/boost/preprocessor/control/deduce_d.hpp:
+
+/usr/include/c++/11/bits/stl_vector.h:
+
+/usr/include/boost/date_time/date.hpp:
 
 /usr/include/boost/date_time/constrained_value.hpp:
 
@@ -3220,8 +3226,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/rmw/rmw/init.h:
 
-/usr/include/boost/fusion/iterator/prior.hpp:
-
 /usr/include/boost/mpl/vector/aux_/pop_back.hpp:
 
 /usr/include/boost/fusion/adapted/mpl/detail/is_sequence_impl.hpp:
@@ -3342,10 +3346,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
 
-/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
-
-/usr/include/boost/mpl/deref.hpp:
-
 /usr/include/boost/date_time/microsec_time_clock.hpp:
 
 /usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
@@ -3369,10 +3369,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
 
 /usr/include/boost/preprocessor/slot/detail/def.hpp:
-
-/usr/include/boost/fusion/container/vector/detail/as_vector.hpp:
-
-/usr/include/boost/mpl/aux_/largest_int.hpp:
 
 /usr/include/boost/mpl/aux_/erase_impl.hpp:
 
@@ -3464,13 +3460,23 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
+
+/usr/include/boost/fusion/mpl/pop_front.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:
+
+/usr/include/boost/fusion/container/vector/detail/advance_impl.hpp:
+
+/opt/ros/humble/include/rmw/rmw/serialized_message.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/publisher_factory.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
 
 /usr/include/eigen3/Eigen/Geometry:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__type_support.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
 
 /opt/ros/humble/include/rcl/rcl/timer.h:
 
@@ -3491,8 +3497,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
-
-/usr/include/boost/config/user.hpp:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.h:
 
@@ -3556,18 +3560,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/boost/preprocessor/seq/for_each.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp:
-
-/usr/include/boost/type_traits/add_pointer.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
-
 /usr/include/boost/preprocessor/arithmetic/mod.hpp:
 
 /usr/include/assert.h:
@@ -3594,6 +3586,20 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/c++/11/bits/stl_function.h:
 
+/usr/include/boost/mpl/deref.hpp:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
+
+/usr/include/boost/date_time/time_clock.hpp:
+
+/usr/include/boost/date_time/gregorian/greg_ymd.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
+
+/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__type_support.hpp:
+
+/usr/include/boost/mpl/aux_/size_impl.hpp:
+
 /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker__traits.hpp:
 
 /usr/include/boost/next_prior.hpp:
@@ -3606,19 +3612,7 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/boost/preprocessor/logical/and.hpp:
 
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__traits.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__traits.hpp:
-
-/usr/include/boost/date_time/time_clock.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_ymd.hpp:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
-
-/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__type_support.hpp:
-
-/usr/include/boost/mpl/aux_/size_impl.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/header.hpp:
 
@@ -3643,8 +3637,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /opt/ros/humble/include/rcutils/rcutils/logging.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
 
 /usr/include/boost/mpl/joint_view.hpp:
 
@@ -3688,12 +3680,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point32.hpp:
 
-/usr/include/boost/fusion/mpl/pop_front.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/point_cloud2__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
 
 /usr/include/boost/fusion/adapted/mpl/detail/begin_impl.hpp:
@@ -3726,6 +3712,68 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/boost/mpl/aux_/config/has_apply.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
+
+/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/transition.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/loaned_message.hpp:
+
+/usr/include/boost/type_traits/is_base_and_derived.hpp:
+
+/usr/include/boost/fusion/algorithm/query/find_fwd.hpp:
+
+/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
+
+/usr/include/c++/11/atomic:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
+
+/usr/include/boost/fusion/iterator/equal_to.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
+
+/usr/include/boost/config/detail/select_compiler_config.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
+
+/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/model_coefficients__traits.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__builder.hpp:
+
+/usr/include/boost/range/detail/safe_bool.hpp:
+
+/usr/include/boost/fusion/iterator/prior.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/boost/preprocessor/seq/for_each.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
+
+/opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__struct.hpp:
+
+/usr/include/boost/type_traits/add_pointer.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/accel.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
+
 /opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
@@ -3733,24 +3781,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/c++/11/bits/functexcept.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
-
-/usr/include/boost/concept/detail/has_constraints.hpp:
-
-/usr/include/c++/11/cstdlib:
-
-/usr/include/boost/iterator/iterator_adaptor.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
-
-/usr/include/boost/preprocessor/comma_if.hpp:
-
-/opt/ros/humble/include/rmw/rmw/names_and_types.h:
-
-/usr/include/boost/mpl/prior.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
 
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -3798,15 +3828,11 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__type_support.hpp:
 
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+/usr/include/pcl-1.12/pcl/common/impl/io.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
 
-/usr/include/boost/mpl/advance.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
 
 /opt/ros/humble/include/pcl_ros/pcl_ros/transforms.hpp:
 
@@ -3816,35 +3842,29 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/boost/mpl/size_t_fwd.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__struct.hpp:
+
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/vertices__type_support.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__type_support.hpp:
+
+/opt/ros/humble/include/rmw/rmw/names_and_types.h:
+
+/usr/include/boost/mpl/prior.hpp:
+
+/usr/include/boost/mpl/advance.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
-
-/usr/include/boost/fusion/iterator/equal_to.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
-
-/usr/include/boost/config/detail/select_compiler_config.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
-
-/opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/visibility_control.h:
 
 /usr/include/boost/predef/os/bsd/dragonfly.h:
 
@@ -3856,6 +3876,32 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/boost/fusion/adapted/mpl/detail/size_impl.hpp:
 
+/opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
+
+/usr/include/c++/11/cctype:
+
+/usr/include/boost/mpl/is_sequence.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
+
+/usr/include/boost/date_time/gregorian_calendar.ipp:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/usr/include/c++/11/new:
+
+/usr/include/boost/fusion/support/detail/is_mpl_sequence.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
+
+/usr/include/boost/mpl/insert.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/lidar_process_pkgs/laser_segmentation/include/laser_segmentation/parula.hpp:
+
+/usr/include/boost/fusion/container/list/nil.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
+
 /usr/include/boost/range/concepts.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
@@ -3865,10 +3911,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
 
 /usr/include/boost/fusion/algorithm/transformation/push_front.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__type_support.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
 
@@ -3896,6 +3938,14 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/rclcpp/rclcpp/event.hpp:
 
+/usr/include/pcl-1.12/pcl/PCLPointField.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
+
+/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
+
+/usr/include/boost/date_time/time_system_counted.hpp:
+
 /opt/ros/humble/include/rcl/rcl/context.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
@@ -3916,19 +3966,13 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/boost/mpl/aux_/config/intel.hpp:
 
-/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/transition.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/loaned_message.hpp:
-
-/usr/include/boost/type_traits/is_base_and_derived.hpp:
-
-/usr/include/boost/fusion/algorithm/query/find_fwd.hpp:
-
-/usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp:
-
-/usr/include/c++/11/atomic:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion_stamped.hpp:
+
+/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
+
+/usr/include/boost/iterator/reverse_iterator.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
@@ -3957,12 +4001,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/boost/algorithm/string/constants.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__builder.hpp:
-
-/usr/include/pcl-1.12/pcl/common/impl/io.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
 
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/model_coefficients.hpp:
 
@@ -4000,14 +4038,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/pcl_msgs/pcl_msgs/msg/detail/polygon_mesh__builder.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
-
-/usr/include/boost/fusion/container/vector/convert.hpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
-
-/usr/include/boost/type_traits/is_same.hpp:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
@@ -4018,17 +4048,11 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
 
-/opt/ros/humble/include/rcl/rcl/guard_condition.h:
-
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/lidar_process_pkgs/laser_segmentation/include/laser_segmentation/segmentation/jump_distance.hpp:
 
+/opt/ros/humble/include/rcl/rcl/guard_condition.h:
+
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/segment.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/lidar_process_pkgs/laser_segmentation/include/laser_segmentation/parameter_handler.hpp:
 
@@ -4047,6 +4071,30 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
 /usr/include/boost/type_traits/is_unsigned.hpp:
+
+/usr/include/boost/concept/detail/has_constraints.hpp:
+
+/usr/include/c++/11/cstdlib:
+
+/usr/include/boost/iterator/iterator_adaptor.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
+
+/usr/include/boost/preprocessor/comma_if.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
+
+/usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
+/opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/visibility_control.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
 
@@ -4084,38 +4132,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/boost/iterator/iterator_concepts.hpp:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp:
-
-/usr/include/boost/fusion/iterator/detail/segmented_next_impl.hpp:
-
-/usr/include/boost/predef/os/bsd.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/11/ios:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
-
-/usr/include/c++/11/cassert:
-
-/usr/include/boost/range/begin.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp:
-
-/opt/ros/humble/include/rcl/rcl/graph.h:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
-
-/usr/include/boost/utility/base_from_member.hpp:
-
-/opt/ros/humble/include/rcl/rcl/node.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
 
 /usr/include/boost/fusion/iterator/detail/segmented_iterator.hpp:
@@ -4132,6 +4148,38 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp:
 
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/11/ios:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/or.hpp:
+
+/usr/include/c++/11/cassert:
+
+/usr/include/boost/range/begin.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__traits.hpp:
+
+/usr/include/boost/fusion/iterator/detail/segmented_next_impl.hpp:
+
+/usr/include/boost/predef/os/bsd.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point_stamped__type_support.hpp:
+
+/opt/ros/humble/include/rcl/rcl/graph.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
+
+/usr/include/boost/utility/base_from_member.hpp:
+
+/opt/ros/humble/include/rcl/rcl/node.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
+
 /opt/ros/humble/include/rmw/rmw/localhost.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
@@ -4141,6 +4189,10 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/boost/range/config.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/opt/ros/humble/include/nav2_util/node_utils.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
@@ -4174,8 +4226,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
-
 /usr/include/boost/mpl/bind.hpp:
 
 /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
@@ -4194,31 +4244,9 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__traits.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__builder.hpp:
 
-/usr/include/boost/date_time/gregorian_calendar.ipp:
-
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
-/usr/include/c++/11/new:
-
-/usr/include/boost/fusion/support/detail/is_mpl_sequence.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
-
-/usr/include/boost/mpl/insert.hpp:
-
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/lidar_process_pkgs/laser_segmentation/include/laser_segmentation/parula.hpp:
-
-/usr/include/boost/fusion/container/list/nil.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
-
-/usr/include/c++/11/cctype:
-
-/usr/include/boost/mpl/is_sequence.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
@@ -4526,6 +4554,8 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/rclcpp/rclcpp/expand_topic_or_service_name.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
@@ -4569,10 +4599,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/boost/date_time/gregorian/greg_weekday.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
-
-/usr/include/boost/iterator/iterator_facade.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
 
 /usr/include/boost/mpl/fold.hpp:
 
@@ -4630,23 +4656,41 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h:
 
+/usr/include/boost/config/user.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__traits.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
+
+/usr/include/boost/type_traits/declval.hpp:
+
 /usr/include/boost/date_time/special_defs.hpp:
 
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
 /usr/include/boost/fusion/adapted/mpl/detail/end_impl.hpp:
 
-/opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp:
+/usr/include/boost/fusion/container/map/map_fwd.hpp:
 
-/usr/include/boost/iterator/reverse_iterator.hpp:
+/usr/include/c++/11/bits/stl_algo.h:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
 
-/usr/include/boost/fusion/container/vector/detail/advance_impl.hpp:
+/usr/include/boost/fusion/container/vector/convert.hpp:
 
-/opt/ros/humble/include/rmw/rmw/serialized_message.h:
+/opt/ros/humble/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/publisher_factory.hpp:
+/usr/include/boost/iterator/iterator_facade.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/bind.hpp:
+
+/usr/include/boost/type_traits/is_same.hpp:
+
+/usr/include/boost/fusion/container/vector/detail/as_vector.hpp:
+
+/usr/include/boost/mpl/aux_/largest_int.hpp:
+
+/usr/include/boost/fusion/container/vector/detail/at_impl.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/Solve.h:
 
@@ -4779,8 +4823,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
 
 /usr/include/boost/fusion/sequence/convert.hpp:
-
-/usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/boost/fusion/sequence/intrinsic/begin.hpp:
 
@@ -5082,6 +5124,10 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/boost/iterator/distance.hpp:
 
+/usr/include/c++/11/bits/stl_tempbuf.h:
+
+/usr/include/boost/mpl/aux_/insert_range_impl.hpp:
+
 /usr/include/boost/fusion/mpl/push_front.hpp:
 
 /usr/include/boost/preprocessor/arithmetic/add.hpp:
@@ -5105,6 +5151,10 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/boost/move/detail/config_begin.hpp:
 
 /usr/include/boost/move/detail/meta_utils.hpp:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/boost/move/detail/std_ns_begin.hpp:
 
 /usr/include/boost/fusion/view/filter_view/detail/next_impl.hpp:
 
@@ -5172,14 +5222,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/boost/mpl/plus.hpp:
 
-/usr/include/pcl-1.12/pcl/PCLPointField.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp:
-
-/usr/include/boost/date_time/time_system_counted.hpp:
-
-/usr/include/boost/mpl/aux_/arithmetic_op.hpp:
-
 /usr/include/boost/fusion/container/list/detail/value_of_impl.hpp:
 
 /usr/include/boost/mpl/aux_/arity_spec.hpp:
@@ -5245,6 +5287,10 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/c++/11/bits/stl_iterator.h:
 
 /usr/include/boost/mpl/aux_/config/forwarding.hpp:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/boost/mpl/aux_/config/gcc.hpp:
 
 /usr/include/boost/fusion/view/filter_view/detail/deref_data_impl.hpp:
 
@@ -5436,10 +5482,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/times.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
-
-/usr/include/boost/type_traits/declval.hpp:
-
 /usr/include/boost/interprocess/detail/config_begin.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
@@ -5449,10 +5491,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/boost/mpl/aux_/reverse_fold_impl.hpp:
 
 /usr/include/boost/mpl/aux_/traits_lambda_spec.hpp:
-
-/usr/include/boost/mpl/aux_/config/gcc.hpp:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/boost/mpl/aux_/type_wrapper.hpp:
 
@@ -5601,10 +5639,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/boost/mpl/vector.hpp:
 
 /usr/include/boost/type_traits/is_volatile.hpp:
-
-/usr/include/boost/move/detail/std_ns_begin.hpp:
-
-/usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/boost/mpl/vector/aux_/O1_size.hpp:
 
@@ -5808,12 +5842,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 
 /usr/include/boost/range/detail/misc_concept.hpp:
 
-/usr/include/boost/range/detail/safe_bool.hpp:
-
-/opt/ros/humble/include/nav2_util/node_utils.hpp:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
 /usr/include/boost/range/detail/sfinae.hpp:
 
 /usr/include/boost/range/detail/str_types.hpp:
@@ -5903,10 +5931,6 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/boost/type_traits/function_traits.hpp:
 
 /usr/include/boost/type_traits/has_minus_assign.hpp:
-
-/usr/include/boost/mpl/aux_/insert_range_impl.hpp:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/boost/type_traits/has_plus.hpp:
 
@@ -6083,9 +6107,3 @@ CMakeFiles/laser_segmentation.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/AR
 /usr/include/c++/11/bits/stl_heap.h:
 
 /usr/include/c++/11/bits/stl_pair.h:
-
-/usr/include/boost/date_time/date.hpp:
-
-/usr/include/c++/11/bits/stl_vector.h:
-
-/usr/include/c++/11/bits/stream_iterator.h:

@@ -14,8 +14,10 @@ public:
     // this->declare_parameter("goal_threshold", 3.0);
     this->declare_parameter("goal_threshold_xy", 4.5);   // antes: goal_threshold
     this->declare_parameter("goal_threshold_z",  6.0);  // tolerancia vertical
+    this->declare_parameter<std::string>("odom_topic", "/zed/zed_node/odom");
     tol_xy_ = this->get_parameter("goal_threshold_xy").as_double();
     tol_z_  = this->get_parameter("goal_threshold_z").as_double();
+    const std::string odom_topic = this->get_parameter("odom_topic").as_string();
     // goal_threshold_ = this->get_parameter("goal_threshold").as_double();
 
     // Suscripción al topic "goal" (PoseArray)
@@ -25,7 +27,7 @@ public:
 
     // Suscripción al topic "odom" (nav_msgs/Odometry)
     odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      "/fixposition/odometry", 10,
+      odom_topic, 10,
       std::bind(&GoalReachedNode::odomCallback, this, std::placeholders::_1));
 
     // Publicador en el topic "goal_reached" (Bool)
@@ -36,7 +38,10 @@ public:
       std::chrono::milliseconds(100),
       std::bind(&GoalReachedNode::controlLoop, this));
 
-    RCLCPP_INFO(this->get_logger(), "GoalReachedNode iniciado usando odom y PoseArray para el goal.");
+    RCLCPP_INFO(
+      this->get_logger(),
+      "GoalReachedNode iniciado usando odom='%s' y PoseArray para el goal.",
+      odom_topic.c_str());
   }
 
 private:

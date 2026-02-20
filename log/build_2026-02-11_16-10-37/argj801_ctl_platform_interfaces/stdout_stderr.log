@@ -1,0 +1,44 @@
+[  1%] Built target argj801_ctl_platform_interfaces__cpp
+[ 12%] Built target argj801_ctl_platform_interfaces__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_argj801_ctl_platform_interfaces
+[ 23%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp
+[ 34%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 45%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c
+[ 56%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c
+[ 67%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_cpp
+[ 78%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_c
+[ 78%] Built target argj801_ctl_platform_interfaces
+[ 80%] Built target argj801_ctl_platform_interfaces__py
+[ 89%] Built target argj801_ctl_platform_interfaces__rosidl_generator_py
+[ 92%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_c__pyext
+[ 96%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c__pyext
+Traceback (most recent call last):
+  File "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/ament_cmake_python/argj801_ctl_platform_interfaces/setup.py", line 4, in <module>
+    setup(
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 114, in setup
+    _install_setup_requires(attrs)
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 82, in _install_setup_requires
+    dist = MinimalDistribution(attrs)
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 64, in __init__
+    super().__init__(filtered)
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/dist.py", line 315, in __init__
+    for ep in metadata.entry_points(group='distutils.setup_keywords'):
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 1021, in entry_points
+    return SelectableGroups.load(eps).select(**params)
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 459, in load
+    ordered = sorted(eps, key=by_group)
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 1019, in <genexpr>
+    dist.entry_points for dist in unique(distributions())
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 631, in entry_points
+    return EntryPoints._from_text_for(self.read_text('entry_points.txt'), self)
+  File "/usr/lib/python3.10/importlib/metadata/__init__.py", line 927, in read_text
+    return self._path.joinpath(filename).read_text(encoding='utf-8')
+  File "/usr/lib/python3.10/pathlib.py", line 851, in joinpath
+    return self._make_child(args)
+  File "/usr/lib/python3.10/pathlib.py", line 619, in _make_child
+    return self._from_parsed_parts(drv, root, parts)
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_argj801_ctl_platform_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_argj801_ctl_platform_interfaces_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_argj801_ctl_platform_interfaces_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

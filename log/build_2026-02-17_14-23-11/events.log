@@ -1,0 +1,180 @@
+[0.000000] (-) TimerEvent: {}
+[0.000184] (-) JobUnselected: {'identifier': 'GUI_pkg'}
+[0.000337] (-) JobUnselected: {'identifier': 'android_ros2_server'}
+[0.000355] (-) JobUnselected: {'identifier': 'argj801_ctl_platform'}
+[0.000370] (-) JobUnselected: {'identifier': 'argj801_ctl_platform_interfaces'}
+[0.000384] (-) JobUnselected: {'identifier': 'argj801_sensors'}
+[0.000398] (-) JobUnselected: {'identifier': 'argj801_sensors_msgs'}
+[0.000411] (-) JobUnselected: {'identifier': 'argj801_setup'}
+[0.000425] (-) JobUnselected: {'identifier': 'car'}
+[0.000438] (-) JobUnselected: {'identifier': 'car_interfaces'}
+[0.000452] (-) JobUnselected: {'identifier': 'ctl_mission'}
+[0.000465] (-) JobUnselected: {'identifier': 'ctl_mission_interfaces'}
+[0.000479] (-) JobUnselected: {'identifier': 'fixposition_driver_lib'}
+[0.000491] (-) JobUnselected: {'identifier': 'fixposition_driver_ros2'}
+[0.000504] (-) JobUnselected: {'identifier': 'fixposition_gnss_tf'}
+[0.000518] (-) JobUnselected: {'identifier': 'fixposition_odometry_converter_ros2'}
+[0.000531] (-) JobUnselected: {'identifier': 'fixposition_sensor_pkg'}
+[0.000545] (-) JobUnselected: {'identifier': 'hector_gazebo_plugins'}
+[0.000559] (-) JobUnselected: {'identifier': 'j8_gui'}
+[0.000573] (-) JobUnselected: {'identifier': 'j8_xacro_model'}
+[0.000587] (-) JobUnselected: {'identifier': 'joy'}
+[0.000600] (-) JobUnselected: {'identifier': 'joy_linux'}
+[0.000614] (-) JobUnselected: {'identifier': 'laser_segmentation'}
+[0.000627] (-) JobUnselected: {'identifier': 'ntrip_client'}
+[0.000641] (-) JobUnselected: {'identifier': 'path_manager'}
+[0.000654] (-) JobUnselected: {'identifier': 'path_manager_interfaces'}
+[0.000667] (-) JobUnselected: {'identifier': 'sdl2_vendor'}
+[0.000881] (-) JobUnselected: {'identifier': 'security_check'}
+[0.000989] (-) JobUnselected: {'identifier': 'security_check_interfaces'}
+[0.001002] (-) JobUnselected: {'identifier': 'slg_msgs'}
+[0.001161] (-) JobUnselected: {'identifier': 'spacenav'}
+[0.001175] (-) JobUnselected: {'identifier': 'ublox'}
+[0.001189] (-) JobUnselected: {'identifier': 'ublox_gps'}
+[0.001202] (-) JobUnselected: {'identifier': 'ublox_msgs'}
+[0.001215] (-) JobUnselected: {'identifier': 'ublox_serialization'}
+[0.001229] (-) JobUnselected: {'identifier': 'wiimote_msgs'}
+[0.001246] (car_cpp) JobQueued: {'identifier': 'car_cpp', 'dependencies': OrderedDict([('car_interfaces', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces')])}
+[0.001267] (car_cpp) JobStarted: {'identifier': 'car_cpp'}
+[0.015026] (car_cpp) JobProgress: {'identifier': 'car_cpp', 'progress': 'cmake'}
+[0.017620] (car_cpp) JobProgress: {'identifier': 'car_cpp', 'progress': 'build'}
+[0.018636] (car_cpp) Command: {'cmd': ['/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake', '--build', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp', '--', '-j16', '-l16'], 'cwd': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_JDWP_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('USER', 'rhobtor'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/home/rhobtor/zed/install/zed_components/lib:/home/rhobtor/zed/install/zed_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rhobtor'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.109.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/rhobtor/.sdkman/candidates/gradle/current'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1668'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1962'), ('BUNDLED_DEBUGPY_PATH', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5571'), ('COLCON_PREFIX_PATH', '/home/rhobtor/zed/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rhobtor'), ('SDKMAN_CANDIDATES_API', 'https://api.sdkman.io/2'), ('JOURNAL_STREAM', '8:22560'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rhobtor'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.1.0/resources/binaries/linux/x86_64:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.43.0/resources/cube-cmake/linux:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/usr/local/cuda/bin:/home/rhobtor/.sdkman/candidates/gradle/current/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/rhobtor/.dotnet/tools:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c:/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/bundled/scripts/noConfigScripts:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('SESSION_MANAGER', 'local/rhobtor-laptop:@/tmp/.ICE-unix/1933,unix/rhobtor-laptop:/tmp/.ICE-unix/1933'), ('SDKMAN_CANDIDATES_DIR', '/home/rhobtor/.sdkman/candidates'), ('INVOCATION_ID', '1e5cb9da2eb34165b90145bcabe942f1'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('RVIZ_PLUGIN_PATH', ':/opt/ros/humble/lib:/opt/ros/humble/lib'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/rhobtor/.config/Code/User/workspaceStorage/1c32105a34b1c46be90505797aea9c65/ms-python.python/pythonrc.py'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/rhobtor/.cache/dotnet_bundle_extract'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e8065a9e0.sock'), ('SDKMAN_DIR', '/home/rhobtor/.sdkman'), ('SDKMAN_PLATFORM', 'linuxx64'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('VSCODE_JAVA_EXEC', '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('ANDROID_SDK_ROOT', '/home/rhobtor/Android/Sdk'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/local/lib/python3.10/dist-packages:/home/rhobtor/zed/install/zed_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('ANDROID_NDK', '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/opt/ros/humble'), ('ANDROID_NDK_HOME', '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c')]), 'shell': False}
+[0.076186] (car_cpp) StdoutLine: {'line': b'[ 16%] Built target frontier_values\n'}
+[0.078754] (car_cpp) StdoutLine: {'line': b'[ 33%] Built target check_goal\n'}
+[0.088269] (car_cpp) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/voxel_grid_node.dir/src/voxel_grid_node.cpp.o\x1b[0m\n'}
+[0.099714] (-) TimerEvent: {}
+[0.121284] (car_cpp) StdoutLine: {'line': b'[ 58%] Built target joints_plugin\n'}
+[0.122648] (car_cpp) StdoutLine: {'line': b'[ 75%] Built target drive_plugin\n'}
+[0.122901] (car_cpp) StdoutLine: {'line': b'[ 91%] Built target move_plugin\n'}
+[0.199805] (-) TimerEvent: {}
+[0.300120] (-) TimerEvent: {}
+[0.401021] (-) TimerEvent: {}
+[0.501497] (-) TimerEvent: {}
+[0.601790] (-) TimerEvent: {}
+[0.702102] (-) TimerEvent: {}
+[0.802391] (-) TimerEvent: {}
+[0.902720] (-) TimerEvent: {}
+[1.003048] (-) TimerEvent: {}
+[1.103394] (-) TimerEvent: {}
+[1.203753] (-) TimerEvent: {}
+[1.304117] (-) TimerEvent: {}
+[1.404474] (-) TimerEvent: {}
+[1.504822] (-) TimerEvent: {}
+[1.605190] (-) TimerEvent: {}
+[1.705525] (-) TimerEvent: {}
+[1.805909] (-) TimerEvent: {}
+[1.906314] (-) TimerEvent: {}
+[2.006725] (-) TimerEvent: {}
+[2.107067] (-) TimerEvent: {}
+[2.207411] (-) TimerEvent: {}
+[2.307758] (-) TimerEvent: {}
+[2.408095] (-) TimerEvent: {}
+[2.508473] (-) TimerEvent: {}
+[2.608816] (-) TimerEvent: {}
+[2.709222] (-) TimerEvent: {}
+[2.809559] (-) TimerEvent: {}
+[2.909917] (-) TimerEvent: {}
+[3.010251] (-) TimerEvent: {}
+[3.110656] (-) TimerEvent: {}
+[3.210973] (-) TimerEvent: {}
+[3.311305] (-) TimerEvent: {}
+[3.411659] (-) TimerEvent: {}
+[3.512021] (-) TimerEvent: {}
+[3.612340] (-) TimerEvent: {}
+[3.712604] (-) TimerEvent: {}
+[3.812889] (-) TimerEvent: {}
+[3.913205] (-) TimerEvent: {}
+[4.013536] (-) TimerEvent: {}
+[4.114012] (-) TimerEvent: {}
+[4.214341] (-) TimerEvent: {}
+[4.314631] (-) TimerEvent: {}
+[4.414907] (-) TimerEvent: {}
+[4.515202] (-) TimerEvent: {}
+[4.615478] (-) TimerEvent: {}
+[4.715749] (-) TimerEvent: {}
+[4.816064] (-) TimerEvent: {}
+[4.916418] (-) TimerEvent: {}
+[5.016746] (-) TimerEvent: {}
+[5.117070] (-) TimerEvent: {}
+[5.217389] (-) TimerEvent: {}
+[5.317748] (-) TimerEvent: {}
+[5.418095] (-) TimerEvent: {}
+[5.518426] (-) TimerEvent: {}
+[5.618757] (-) TimerEvent: {}
+[5.719058] (-) TimerEvent: {}
+[5.819431] (-) TimerEvent: {}
+[5.919774] (-) TimerEvent: {}
+[6.020125] (-) TimerEvent: {}
+[6.120441] (-) TimerEvent: {}
+[6.220796] (-) TimerEvent: {}
+[6.321140] (-) TimerEvent: {}
+[6.421499] (-) TimerEvent: {}
+[6.521864] (-) TimerEvent: {}
+[6.622196] (-) TimerEvent: {}
+[6.722516] (-) TimerEvent: {}
+[6.822825] (-) TimerEvent: {}
+[6.923136] (-) TimerEvent: {}
+[7.023465] (-) TimerEvent: {}
+[7.123908] (-) TimerEvent: {}
+[7.224202] (-) TimerEvent: {}
+[7.324508] (-) TimerEvent: {}
+[7.424787] (-) TimerEvent: {}
+[7.525063] (-) TimerEvent: {}
+[7.625422] (-) TimerEvent: {}
+[7.725696] (-) TimerEvent: {}
+[7.826023] (-) TimerEvent: {}
+[7.926288] (-) TimerEvent: {}
+[8.026597] (-) TimerEvent: {}
+[8.126881] (-) TimerEvent: {}
+[8.227218] (-) TimerEvent: {}
+[8.327537] (-) TimerEvent: {}
+[8.427857] (-) TimerEvent: {}
+[8.528188] (-) TimerEvent: {}
+[8.628501] (-) TimerEvent: {}
+[8.728743] (-) TimerEvent: {}
+[8.829035] (-) TimerEvent: {}
+[8.929385] (-) TimerEvent: {}
+[8.990817] (car_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable voxel_grid_node\x1b[0m\n'}
+[9.029485] (-) TimerEvent: {}
+[9.129738] (-) TimerEvent: {}
+[9.230006] (-) TimerEvent: {}
+[9.330319] (-) TimerEvent: {}
+[9.430589] (-) TimerEvent: {}
+[9.454465] (car_cpp) StdoutLine: {'line': b'[100%] Built target voxel_grid_node\n'}
+[9.459533] (car_cpp) CommandEnded: {'returncode': 0}
+[9.461999] (car_cpp) JobProgress: {'identifier': 'car_cpp', 'progress': 'install'}
+[9.465472] (car_cpp) Command: {'cmd': ['/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake', '--install', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp'], 'cwd': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_JDWP_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('USER', 'rhobtor'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/home/rhobtor/zed/install/zed_components/lib:/home/rhobtor/zed/install/zed_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rhobtor'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.109.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/rhobtor/.sdkman/candidates/gradle/current'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1668'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1962'), ('BUNDLED_DEBUGPY_PATH', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5571'), ('COLCON_PREFIX_PATH', '/home/rhobtor/zed/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rhobtor'), ('SDKMAN_CANDIDATES_API', 'https://api.sdkman.io/2'), ('JOURNAL_STREAM', '8:22560'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rhobtor'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.1.0/resources/binaries/linux/x86_64:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.43.0/resources/cube-cmake/linux:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/usr/local/cuda/bin:/home/rhobtor/.sdkman/candidates/gradle/current/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/rhobtor/.dotnet/tools:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c:/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/bundled/scripts/noConfigScripts:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('SESSION_MANAGER', 'local/rhobtor-laptop:@/tmp/.ICE-unix/1933,unix/rhobtor-laptop:/tmp/.ICE-unix/1933'), ('SDKMAN_CANDIDATES_DIR', '/home/rhobtor/.sdkman/candidates'), ('INVOCATION_ID', '1e5cb9da2eb34165b90145bcabe942f1'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('RVIZ_PLUGIN_PATH', ':/opt/ros/humble/lib:/opt/ros/humble/lib'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/rhobtor/.config/Code/User/workspaceStorage/1c32105a34b1c46be90505797aea9c65/ms-python.python/pythonrc.py'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/rhobtor/.cache/dotnet_bundle_extract'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e8065a9e0.sock'), ('SDKMAN_DIR', '/home/rhobtor/.sdkman'), ('SDKMAN_PLATFORM', 'linuxx64'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('VSCODE_JAVA_EXEC', '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('ANDROID_SDK_ROOT', '/home/rhobtor/Android/Sdk'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp'), ('LC_ALL', 'en_US.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/local/lib/python3.10/dist-packages:/home/rhobtor/zed/install/zed_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('ANDROID_NDK', '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/opt/ros/humble'), ('ANDROID_NDK_HOME', '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c')]), 'shell': False}
+[9.469719] (car_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.469976] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/frontier_values\n'}
+[9.471082] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/check_goal\n'}
+[9.471407] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/voxel_grid_node\n'}
+[9.475092] (car_cpp) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/voxel_grid_node" to ""\n'}
+[9.475878] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libmove_plugin.so\n'}
+[9.476620] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libdrive_plugin.so\n'}
+[9.477364] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libjoints_plugin.so\n'}
+[9.477532] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include/\n'}
+[9.477666] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//utilities.hpp\n'}
+[9.477827] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//obstacle_detection.hpp\n'}
+[9.477916] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//visualization.hpp\n'}
+[9.478002] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//motion.hpp\n'}
+[9.478167] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//control_plugin.hpp\n'}
+[9.478252] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//move_ros.hpp\n'}
+[9.478324] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//odometria.hpp\n'}
+[9.478422] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/ament_index/resource_index/package_run_dependencies/car_cpp\n'}
+[9.478472] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/ament_index/resource_index/parent_prefix_path/car_cpp\n'}
+[9.478542] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/ament_prefix_path.sh\n'}
+[9.478618] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/ament_prefix_path.dsv\n'}
+[9.478707] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/path.sh\n'}
+[9.478839] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/path.dsv\n'}
+[9.478914] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.bash\n'}
+[9.478986] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.sh\n'}
+[9.479055] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.zsh\n'}
+[9.479122] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.dsv\n'}
+[9.479183] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/package.dsv\n'}
+[9.479244] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/ament_index/resource_index/packages/car_cpp\n'}
+[9.479312] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/cmake/car_cppConfig.cmake\n'}
+[9.479371] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/cmake/car_cppConfig-version.cmake\n'}
+[9.479431] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/package.xml\n'}
+[9.480393] (car_cpp) CommandEnded: {'returncode': 0}
+[9.499091] (car_cpp) JobEnded: {'identifier': 'car_cpp', 'rc': 0}
+[9.499767] (-) EventReactorShutdown: {}

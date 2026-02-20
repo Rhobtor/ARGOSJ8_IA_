@@ -1,5 +1,6 @@
 #include <csignal>
 #include "rclcpp/rclcpp.hpp"
+#include "rclcpp/utilities.hpp"
 #include "rclcpp_lifecycle/lifecycle_node.hpp"
 #include "argj801_sensors/argj801_sensors_node.hpp"
 #include "argj801_sensors/SensorBuilder.hpp"
@@ -30,6 +31,10 @@ int main(int argc, char *argv[])
 
   rclcpp::init(argc, argv);
 
+  // ROS 2 launch injects its own arguments (e.g. --ros-args, remaps, params).
+  // Strip those so we can reliably parse our own positional args.
+  const auto non_ros_args = rclcpp::remove_ros_arguments(argc, argv);
+
   std::signal(SIGINT, sigintHandler);
 
   // rclcpp::executors::SingleThreadedExecutor exe;
@@ -37,26 +42,25 @@ int main(int argc, char *argv[])
 
   std::shared_ptr<Builder::SensorBuilder> builder;
 
-  if(argc != 11) {
-    fprintf(stderr,"Invalid arguments. Usage: universal_imu_driver [sensor_source]\n sensor_source:\n - lcm_sensors\n - camera\n");
-    exit(1);
+  std::string sensor_source = "lcm_sensors";
+  if (non_ros_args.size() >= 2) {
+    sensor_source = non_ros_args[1];
   }
-  else {
-    if(!strcmp(argv[1],"lcm_sensors")) {
-      builder = std::make_shared<Builder::Argj801LCMSensorBuilder>();
-      node = std::make_shared<Argj801SensorsNode>(builder);
-    }
-    else if(!strcmp(argv[1],"camera")) {
-      builder = std::make_shared<Builder::Argj801CameraBuilder>();
-      node = std::make_shared<Argj801SensorsNode>(builder);
-    }
-    else {
-      fprintf(stderr,"Invalid arguments. Usage: universal_imu_driver [sensor_source]\n sensor_source:\n - lcm_sensors\n - camera\n");
-      exit(1);
-    }
+
+  if (sensor_source == "lcm_sensors") {
+    builder = std::make_shared<Builder::Argj801LCMSensorBuilder>();
+    node = std::make_shared<Argj801SensorsNode>(builder);
+  } else if (sensor_source == "camera") {
+    builder = std::make_shared<Builder::Argj801CameraBuilder>();
+    node = std::make_shared<Argj801SensorsNode>(builder);
+  } else {
+    fprintf(stderr,
+            "Invalid arguments. Usage: argj801_sensors [sensor_source]\n"
+            " sensor_source:\n"
+            " - lcm_sensors\n"
+            " - camera\n");
+    return 1;
   }
-  // Install the SIGINT signal handler
-  std::signal(SIGINT, sigintHandler);
 
   exe.add_node(node->get_node_base_interface());
 

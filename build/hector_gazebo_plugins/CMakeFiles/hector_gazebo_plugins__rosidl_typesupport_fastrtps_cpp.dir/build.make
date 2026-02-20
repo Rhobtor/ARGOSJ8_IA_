@@ -221,7 +221,7 @@ libhector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/li
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libhector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libhector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librmw.so
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libhector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librcutils.so

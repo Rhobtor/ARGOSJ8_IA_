@@ -158,6 +158,7 @@ add_executable(voxel_grid_node src/voxel_grid_node.cpp)
 ament_target_dependencies(voxel_grid_node
   rclcpp
   sensor_msgs
+  visualization_msgs
   tf2
   tf2_ros
   tf2_geometry_msgs

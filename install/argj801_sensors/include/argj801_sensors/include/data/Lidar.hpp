@@ -1,14 +1,1 @@
-#ifndef LIDAR_H
-#define LIDAR_H
-
-
-#include "visitor/Visitor.hpp"
-#include <memory>
-namespace SensorData {
-  class Lidar
-  {
-  public:
-    virtual void acceptLidar(std::shared_ptr<Visitor::Visitor> visitor) = 0;
-  };
-}
-#endif // LIDAR_H
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/include/data/Lidar.hpp

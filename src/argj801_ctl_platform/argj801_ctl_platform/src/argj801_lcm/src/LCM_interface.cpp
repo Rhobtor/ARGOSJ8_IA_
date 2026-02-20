@@ -51,7 +51,7 @@ LCMInterface::LCMInterface(std::string configPath,bool data_drive_line_msg,bool 
         lcmHandleBroadcastHeartbeat = std::make_shared<lcm::LCM>(broadcast_url);
         if(!lcmHandleBroadcastHeartbeat->good())
             throw LCMException("LCMInterface BroadcastHeartbeat constructor failed to initialize LCM handle.");
-        lcmHandleBroadcastHeartbeat->subscribe("dat_vehicle_heartbeat_msg", &LCMInterface::datPlatformHeartbeatMsgCallback, this);
+        lcmHandleBroadcastHeartbeat->subscribe(vehicle_heartbeat_channel, &LCMInterface::datPlatformHeartbeatMsgCallback, this);
         sem_init(&semDatPlatformHeartbeatMsg, 0, 0);
     }    
     if(data_platform_telemetry_msg) {
@@ -150,6 +150,11 @@ void LCMInterface::loadConfig()
         broadcast_url = config["broadcast_url"].as<std::string>();
     else
         throw LCMException("LCMInterface failed to load broadcast_url from config file.");
+
+    // Optional: channel name overrides (defaults are set in header)
+    if(config["vehicle_heartbeat_channel"]) {
+        vehicle_heartbeat_channel = config["vehicle_heartbeat_channel"].as<std::string>();
+    }
     
     YAML::Node header2 = config["header2"];
     if(header2["component_id"])

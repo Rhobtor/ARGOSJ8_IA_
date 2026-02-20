@@ -593,6 +593,7 @@ CMakeFiles/ublox_gps_node.dir/src/node_main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/A
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -2333,6 +2334,8 @@ CMakeFiles/ublox_gps_node.dir/src/node_main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/A
 
 /opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
 
+/opt/ros/humble/include/rmw/rmw/publisher_options.h:
+
 /usr/include/c++/11/bits/stl_pair.h:
 
 /usr/include/asio/traits/bulk_execute_free.hpp:
@@ -2898,8 +2901,6 @@ CMakeFiles/ublox_gps_node.dir/src/node_main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/A
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/include/ublox_msgs/ublox_msgs/msg/detail/cfg_gnss_block__struct.hpp:
-
-/opt/ros/humble/include/rmw/rmw/publisher_options.h:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/include/ublox_msgs/ublox_msgs/msg/detail/cfg_cfg__builder.hpp:
 
@@ -4042,6 +4043,8 @@ CMakeFiles/ublox_gps_node.dir/src/node_main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/A
 /usr/include/c++/11/bits/stl_map.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/buffer_implementation_base.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /usr/include/asio/impl/execution_context.hpp:
 

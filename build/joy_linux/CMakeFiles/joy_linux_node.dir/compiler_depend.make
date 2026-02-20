@@ -205,6 +205,7 @@ CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o: /home/rhobtor/PHD/ARGOJ8
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -816,6 +817,8 @@ CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o: /home/rhobtor/PHD/ARGOJ8
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
 /opt/ros/humble/include/rmw/rmw/types.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
@@ -895,8 +898,6 @@ CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o: /home/rhobtor/PHD/ARGOJ8
 /usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/time.hpp:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
@@ -1001,6 +1002,8 @@ CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o: /home/rhobtor/PHD/ARGOJ8
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
@@ -1684,6 +1687,8 @@ CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o: /home/rhobtor/PHD/ARGOJ8
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:
 
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/11/ratio:
@@ -2265,5 +2270,3 @@ CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o: /home/rhobtor/PHD/ARGOJ8
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:

@@ -1,6 +1,8 @@
 # j8_gui/app/state_widget.py
 import math
 import json
+import os
+import re
 from dataclasses import dataclass
 from typing import Optional, Dict, Callable, List, Tuple
 
@@ -20,6 +22,8 @@ from sensor_msgs.msg import Imu, NavSatFix
 from nav_msgs.msg import Odometry, Path
 from geometry_msgs.msg import PoseStamped
 from geometry_msgs.msg import Vector3Stamped
+
+from j8_gui.app.geo_local import ll2xy
 
 
 # ===================== Utils =====================
@@ -514,12 +518,16 @@ class TelemetryNode(Node):
     def _on_imu(self, msg: Imu):
         q = msg.orientation
         roll, pitch, yaw = quat_to_euler(q.x, q.y, q.z, q.w)
-        self._sig.attitude.emit(math.degrees(pitch), math.degrees(roll), (math.degrees(yaw) % 360.0))
+        yaw_deg_enu = (math.degrees(yaw) % 360.0)
+        # Compass-like bearing expected by the GUI/map: 0° = North, clockwise positive.
+        # ROS yaw in ENU: 0° = East, CCW positive.
+        bearing_deg = (90.0 - yaw_deg_enu) % 360.0
+        self._sig.attitude.emit(math.degrees(pitch), math.degrees(roll), bearing_deg)
 
         # If we already have a valid GPS fix, also publish the pose for the map.
         # Heading comes from IMU in degrees [0,360).
         if self._have_fix and self._lat is not None and self._lon is not None:
-            self._sig.gps_pose.emit(self._lat, self._lon, (math.degrees(yaw) % 360.0))
+            self._sig.gps_pose.emit(self._lat, self._lon, bearing_deg)
 
     def _on_odom(self, msg: Odometry):
         vx = msg.twist.twist.linear.x
@@ -533,11 +541,13 @@ class TelemetryNode(Node):
         try:
             q = msg.pose.pose.orientation
             roll, pitch, yaw = quat_to_euler(q.x, q.y, q.z, q.w)
-            self._sig.attitude.emit(math.degrees(pitch), math.degrees(roll), (math.degrees(yaw) % 360.0))
+            yaw_deg_enu = (math.degrees(yaw) % 360.0)
+            bearing_deg = (90.0 - yaw_deg_enu) % 360.0
+            self._sig.attitude.emit(math.degrees(pitch), math.degrees(roll), bearing_deg)
 
             # Also feed the GPS pose signal if we already have lat/lon.
             if self._have_fix and self._lat is not None and self._lon is not None:
-                self._sig.gps_pose.emit(self._lat, self._lon, (math.degrees(yaw) % 360.0))
+                self._sig.gps_pose.emit(self._lat, self._lon, bearing_deg)
         except Exception:
             pass
 
@@ -776,6 +786,12 @@ class MissionWidget(QWidget):
         self._js_call = js_call
         self._planned: List[Tuple[float,float]] = []
 
+        # Latest robot GPS fix (origin for local waypoint coordinates)
+        self._robot_lat: Optional[float] = None
+        self._robot_lon: Optional[float] = None
+        # Latest robot heading (compass bearing degrees: 0=N, clockwise)
+        self._robot_heading_deg: Optional[float] = None
+
         # FSM feedback cache
         self._fsm_mode = None
         self._possible_transitions = []
@@ -787,6 +803,8 @@ class MissionWidget(QWidget):
         # Conectar señales FSM (si el nodo ROS está adjunto)
         self.state._signals.fsm_mode.connect(self._on_fsm_mode)
         self.state._signals.possible_transitions.connect(self._on_possible_transitions)
+        # Cache robot GPS pose to use as origin for local conversion.
+        self.state._signals.gps_pose.connect(self._on_robot_gps_pose)
 
         # Abajo (planificador)
         plan = QWidget(); lay = QVBoxLayout(plan)
@@ -803,8 +821,9 @@ class MissionWidget(QWidget):
         row.addWidget(QLabel('Estado:')); row.addWidget(self.cmb_state); row.addWidget(self.btn_change_state)
         lay.addLayout(row)
 
-        self.tbl = QTableWidget(0, 3)
-        self.tbl.setHorizontalHeaderLabels(['#', 'Lat', 'Lon'])
+        self.tbl = QTableWidget(0, 5)
+        # Robot-frame local coordinates (base_link): X forward, Y left
+        self.tbl.setHorizontalHeaderLabels(['#', 'Lat', 'Lon', 'X_fwd (m)', 'Y_left (m)'])
         self.tbl.setSelectionBehavior(QAbstractItemView.SelectRows)
         self.tbl.setSelectionMode(QAbstractItemView.ExtendedSelection)  # multi-borrado
         self.tbl.cellDoubleClicked.connect(self._on_row_double_clicked) # opcional: doble click borra
@@ -888,6 +907,24 @@ class MissionWidget(QWidget):
         self._planned.append((lat, lon))
         self._refresh_table()
         self._js_set_mission()
+
+    def _on_robot_gps_pose(self, lat: float, lon: float, heading_deg):
+        # Called frequently (Fix/IMU/Odom). Keep it cheap.
+        try:
+            self._robot_lat = float(lat)
+            self._robot_lon = float(lon)
+        except Exception:
+            return
+
+        # heading_deg may be None (e.g., right after first GPS fix)
+        if heading_deg is not None:
+            try:
+                self._robot_heading_deg = float(heading_deg) % 360.0
+            except Exception:
+                pass
+
+        if self._planned:
+            self._refresh_table()
 
     # ---- Handlers GUI ----
     def _on_change_state(self):
@@ -1000,8 +1037,110 @@ class MissionWidget(QWidget):
 
     def _on_send_path(self):
         if not self._ros: return
+        # Export also to the car_python circuit config (robot-frame local coords)
+        try:
+            self._export_goal_points_to_circuit_yaml(self._planned)
+        except Exception as e:
+            print(f"[j8_gui] WARN: could not export circuit_1.yaml: {e}")
+
         # usa el helper del RosSide que ya tienes:
         self._ros.send_path(self._planned)
+
+    @staticmethod
+    def _find_circuit_yaml_path() -> Optional[str]:
+        """Locate the workspace root and circuit_1.yaml without hardcoding an absolute path."""
+        here = os.path.abspath(os.path.dirname(__file__))
+        for _ in range(12):
+            candidate = os.path.join(here, 'src', 'car_python', 'config', 'circuit_1.yaml')
+            if os.path.exists(candidate):
+                return candidate
+            parent = os.path.dirname(here)
+            if parent == here:
+                break
+            here = parent
+        return None
+
+    def _export_goal_points_to_circuit_yaml(self, planned_latlon: List[Tuple[float, float]]):
+        if not planned_latlon:
+            return
+
+        if (
+            self._robot_lat is None
+            or self._robot_lon is None
+            or self._robot_heading_deg is None
+        ):
+            raise RuntimeError('Missing robot origin/heading (need GPS + orientation)')
+
+        # Precompute yaw (ENU) from compass bearing
+        yaw_enu_deg = (90.0 - float(self._robot_heading_deg)) % 360.0
+        yaw = math.radians(yaw_enu_deg)
+        cy = math.cos(yaw)
+        sy = math.sin(yaw)
+
+        goal_pts: List[Tuple[float, float, float]] = []
+        for lat, lon in planned_latlon:
+            # ENU vector robot -> waypoint
+            x_e_m, y_n_m = ll2xy(lat, lon, self._robot_lat, self._robot_lon)
+            # Rotate ENU -> base_link (X forward, Y left)
+            x_fwd_m = (cy * x_e_m) + (sy * y_n_m)
+            y_left_m = (-sy * x_e_m) + (cy * y_n_m)
+            goal_pts.append((x_fwd_m, y_left_m, 0.0))
+
+        yaml_path = self._find_circuit_yaml_path()
+        if not yaml_path:
+            raise FileNotFoundError('Could not find src/car_python/config/circuit_1.yaml')
+
+        self._write_goal_points_in_yaml(yaml_path, goal_pts)
+        print(f"[j8_gui] Wrote {len(goal_pts)} goal_points to {yaml_path}")
+
+    @staticmethod
+    def _write_goal_points_in_yaml(yaml_path: str, goal_pts: List[Tuple[float, float, float]]):
+        with open(yaml_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Match the whole goal_points bracket list, preserving indentation and trailing comment.
+        # Example:
+        #   goal_points: [x,y,0.0,
+        #                ...]  # comment
+        pattern = re.compile(
+            r'(^[\t ]*goal_points:[\t ]*\[)(.*?)(\][^\n]*\n)',
+            re.MULTILINE | re.DOTALL,
+        )
+        m = pattern.search(content)
+        if not m:
+            raise RuntimeError('goal_points list not found in YAML')
+
+        prefix = m.group(1)
+        suffix = m.group(3)
+
+        indent = re.match(r'^[\t ]*', prefix).group(0)
+        cont_indent = indent + (' ' * 14)  # aligns with existing formatting
+
+        # Preserve any trailing comment after the closing bracket on the same line.
+        # suffix looks like: "]  # comment\n" or "]\n"
+        comment = ''
+        cm = re.match(r'\]([^\n]*)\n', suffix)
+        if cm and cm.group(1):
+            comment = cm.group(1)
+
+        # Build multiline list body (without the opening '[' and closing ']')
+        lines: List[str] = []
+        for i, (x, y, z) in enumerate(goal_pts):
+            if i == 0:
+                lines.append(f"{x:.3f},{y:.3f},{z:.1f},")
+            elif i == len(goal_pts) - 1:
+                lines.append(f"\n{cont_indent}{x:.3f},{y:.3f},{z:.1f}")
+            else:
+                lines.append(f"\n{cont_indent}{x:.3f},{y:.3f},{z:.1f},")
+
+        new_body = ''.join(lines)
+        new_suffix = f"]{comment}\n"
+        new_content = prefix + new_body + new_suffix
+
+        updated = content[:m.start()] + new_content + content[m.end():]
+
+        with open(yaml_path, 'w', encoding='utf-8') as f:
+            f.write(updated)
 
     def _on_clear(self):
         self._planned.clear()
@@ -1059,6 +1198,33 @@ class MissionWidget(QWidget):
             self.tbl.setItem(i, 0, QTableWidgetItem(str(i)))
             self.tbl.setItem(i, 1, QTableWidgetItem(f"{lat:.7f}"))
             self.tbl.setItem(i, 2, QTableWidgetItem(f"{lon:.7f}"))
+
+            if (
+                self._robot_lat is not None
+                and self._robot_lon is not None
+                and self._robot_heading_deg is not None
+            ):
+                try:
+                    # 1) Local ENU vector from robot to waypoint
+                    x_e_m, y_n_m = ll2xy(lat, lon, self._robot_lat, self._robot_lon)
+
+                    # 2) Convert compass bearing to ROS ENU yaw
+                    # bearing: 0=N, CW+. yaw_enu: 0=E, CCW+
+                    yaw_enu_deg = (90.0 - self._robot_heading_deg) % 360.0
+                    yaw = math.radians(yaw_enu_deg)
+
+                    # 3) Rotate ENU -> base_link (X forward, Y left)
+                    x_fwd_m = (math.cos(yaw) * x_e_m) + (math.sin(yaw) * y_n_m)
+                    y_left_m = (-math.sin(yaw) * x_e_m) + (math.cos(yaw) * y_n_m)
+
+                    self.tbl.setItem(i, 3, QTableWidgetItem(f"{x_fwd_m:.2f}"))
+                    self.tbl.setItem(i, 4, QTableWidgetItem(f"{y_left_m:.2f}"))
+                except Exception:
+                    self.tbl.setItem(i, 3, QTableWidgetItem(''))
+                    self.tbl.setItem(i, 4, QTableWidgetItem(''))
+            else:
+                self.tbl.setItem(i, 3, QTableWidgetItem(''))
+                self.tbl.setItem(i, 4, QTableWidgetItem(''))
 
     def _js_set_mission(self):
         js_array = json.dumps(self._planned)

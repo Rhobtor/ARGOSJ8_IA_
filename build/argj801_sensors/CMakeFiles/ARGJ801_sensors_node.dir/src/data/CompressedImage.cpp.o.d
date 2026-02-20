@@ -375,6 +375,7 @@ CMakeFiles/ARGJ801_sensors_node.dir/src/data/CompressedImage.cpp.o: \
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h \
  /opt/ros/humble/include/rmw/rmw/topic_endpoint_info.h \
  /opt/ros/humble/include/rclcpp/rclcpp/event.hpp \
+ /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/service.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/any_service_callback.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp \

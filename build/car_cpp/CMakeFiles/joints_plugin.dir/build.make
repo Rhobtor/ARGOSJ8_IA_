@@ -205,7 +205,7 @@ libjoints_plugin.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fast
 libjoints_plugin.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libjoints_plugin.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so
 libjoints_plugin.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-libjoints_plugin.so: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+libjoints_plugin.so: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 libjoints_plugin.so: /opt/ros/humble/lib/librmw.so
 libjoints_plugin.so: /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so
 libjoints_plugin.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so

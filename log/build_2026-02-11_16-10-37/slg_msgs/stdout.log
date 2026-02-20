@@ -1,0 +1,16 @@
+[  2%] Built target slg_msgs__cpp
+[  2%] Built target ament_cmake_python_copy_slg_msgs
+[ 10%] Built target slg_msgs__rosidl_generator_c
+[ 14%] Built target gtest
+[ 18%] Built target gtest_main
+[ 26%] Built target slg_msgs__rosidl_typesupport_cpp
+[ 34%] Built target slg_msgs__rosidl_typesupport_fastrtps_cpp
+[ 42%] Built target slg_msgs__rosidl_typesupport_introspection_cpp
+[ 51%] Built target slg_msgs__rosidl_typesupport_c
+[ 59%] Built target slg_msgs__rosidl_typesupport_introspection_c
+[ 63%] Built target test_polygon
+[ 71%] Built target slg_msgs__rosidl_typesupport_fastrtps_c
+[ 75%] Built target test_segment2d
+[ 79%] Built target test_point2d
+[ 79%] Built target slg_msgs
+[ 81%] Built target slg_msgs__py

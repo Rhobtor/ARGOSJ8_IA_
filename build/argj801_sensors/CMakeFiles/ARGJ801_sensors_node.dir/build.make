@@ -391,7 +391,7 @@ ARGJ801_sensors_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_f
 ARGJ801_sensors_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 ARGJ801_sensors_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 ARGJ801_sensors_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-ARGJ801_sensors_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+ARGJ801_sensors_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 ARGJ801_sensors_node: /opt/ros/humble/lib/librmw.so
 ARGJ801_sensors_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 ARGJ801_sensors_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so

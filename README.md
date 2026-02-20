@@ -58,6 +58,54 @@ colcon build --symlink-install
 
 Launch and configuraiton to run all the nodes can be found in a [dedicated package](https://github.com/Robotics-Mechatronics-UMA/argj801_setup).
 
+### Quick start (local)
+
+Source the workspace:
+
+```sh
+source install/setup.bash
+```
+
+#### Bringup without control center / without LCM
+
+This is the most robust way to start the stack when you don't have the external control center sending LCM heartbeats.
+
+```sh
+ros2 launch argj801_setup J8_launch.py \
+  robot:=true \
+  platform_mode:=2 \
+  sensors_source:=lcm_sensors \
+  enable_mpc:=false
+```
+
+Notes:
+
+- `platform_mode:=2` forces `argj801_ctrl_platform_node` to run in Gazebo mode (no LCM). Values: `0` Arduino, `1` LCM, `2` Gazebo.
+- `sensors_source` is a required CLI argument for `ARGJ801_sensors_node`. Valid values are `lcm_sensors` and `camera`.
+- `enable_mpc:=true` requires Python dependency `cvxpy`.
+
+#### Bringup with control center (LCM)
+
+If you want the rover to accept commands from the control center via LCM multicast:
+
+```sh
+ros2 launch argj801_setup J8_launch.py robot:=true platform_mode:=1
+```
+
+On the rover host, you must have a multicast route for `224.0.0.0/4` on the NIC connected to the rover network:
+
+```sh
+sudo ./scripts/ensure_multicast_route.sh <iface>
+```
+
+Verify that packets arrive:
+
+```sh
+sudo tcpdump -ni <iface> 'udp and (port 5004 or port 5006)'
+```
+
+If `tcpdump` shows **0 packets**, the issue is usually upstream (no sender, wrong network path, IGMP snooping/switch rules).
+
 
 ## Contributing
 We welcome contributions! Please follow these guidelines:

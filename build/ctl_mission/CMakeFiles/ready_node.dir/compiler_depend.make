@@ -218,6 +218,7 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node.cpp.o: /home/rhobtor/PHD/ARG
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -629,6 +630,7 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node.cpp.o: /home/rhobtor/PHD/ARG
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/sigaction.h \
   /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
@@ -645,8 +647,14 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node.cpp.o: /home/rhobtor/PHD/ARG
   /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -688,10 +696,12 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node.cpp.o: /home/rhobtor/PHD/ARG
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
@@ -938,6 +948,7 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -1349,6 +1360,7 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/sigaction.h \
   /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
@@ -1365,8 +1377,14 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
   /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
+  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
@@ -1408,10 +1426,12 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
@@ -1457,6 +1477,18 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
 /opt/ros/humble/include/rmw/rmw/init.h:
 
@@ -1514,8 +1546,6 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /opt/ros/humble/include/rcpputils/rcpputils/time.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
-
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/state.hpp:
 
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/managed_entity.hpp:
@@ -1542,9 +1572,13 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /opt/ros/humble/include/rclcpp/rclcpp/type_adapter.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:
 
@@ -1627,6 +1661,8 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/constants.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
@@ -1712,8 +1748,6 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:
 
-/opt/ros/humble/include/rmw/rmw/macros.h:
-
 /opt/ros/humble/include/rcutils/rcutils/qsort.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
@@ -1759,6 +1793,8 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/visibility_control.h:
 
@@ -1938,8 +1974,6 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
-
 /opt/ros/humble/include/rcl/rcl/context.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
@@ -1957,6 +1991,10 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 /usr/include/c++/11/bits/unique_lock.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
 
 /opt/ros/humble/include/rcl/rcl/client.h:
 
@@ -2089,8 +2127,6 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/state__struct.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
 
@@ -2310,6 +2346,8 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:
 
+/opt/ros/humble/include/rmw/rmw/macros.h:
+
 /opt/ros/humble/include/rmw/rmw/message_sequence.h:
 
 /opt/ros/humble/include/rmw/rmw/names_and_types.h:
@@ -2335,6 +2373,8 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 
 /opt/ros/humble/include/rmw/rmw/rmw.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
 
@@ -2472,8 +2512,6 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /usr/include/c++/11/bits/exception_ptr.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h:
-
 /opt/ros/humble/include/rcl/rcl/event.h:
 
 /usr/include/c++/11/bits/functional_hash.h:
@@ -2507,6 +2545,10 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 /usr/include/c++/11/bits/nested_exception.h:
 
 /usr/include/c++/11/bits/ostream_insert.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/usr/include/c++/11/bits/parse_numbers.h:
 
 /usr/include/c++/11/pstl/glue_memory_defs.h:
 
@@ -2574,9 +2616,9 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
-/usr/include/c++/11/bits/locale_classes.tcc:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
+
+/usr/include/c++/11/bits/locale_classes.tcc:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
@@ -2634,13 +2676,7 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /usr/include/c++/11/iomanip:
 
-/usr/include/c++/11/bits/parse_numbers.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
 /usr/include/c++/11/iosfwd:
-
-/usr/include/c++/11/limits:
 
 /usr/include/c++/11/map:
 
@@ -2721,6 +2757,12 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 /usr/include/string.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
+
+/usr/include/strings.h:
 
 /usr/include/c++/11/typeindex:
 
@@ -2806,7 +2848,11 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
@@ -2846,6 +2892,8 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
@@ -2864,20 +2912,12 @@ CMakeFiles/ready_node.dir/src/FSM_states/ready_node_main.cpp.o: /home/rhobtor/PH
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
+/usr/include/c++/11/limits:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
-
-/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
-
-/usr/include/strings.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:

@@ -147,7 +147,7 @@ joy_linux_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtp
 joy_linux_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 joy_linux_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 joy_linux_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-joy_linux_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+joy_linux_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 joy_linux_node: /opt/ros/humble/lib/librmw.so
 joy_linux_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 joy_linux_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so

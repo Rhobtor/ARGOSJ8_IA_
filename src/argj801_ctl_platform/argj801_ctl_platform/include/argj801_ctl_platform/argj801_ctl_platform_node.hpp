@@ -116,6 +116,7 @@ private:
 
   std::string lcm_config_path;
   std::string lcm_config_file;
+  bool require_vehicle_heartbeat = true;
   
   std::unique_ptr<Argo_J8_KinematicModel> argo_kinematic_model;
 

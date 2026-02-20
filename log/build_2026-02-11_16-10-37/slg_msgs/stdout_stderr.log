@@ -1,0 +1,50 @@
+[  2%] Built target slg_msgs__cpp
+[  2%] Built target ament_cmake_python_copy_slg_msgs
+[ 10%] Built target slg_msgs__rosidl_generator_c
+[ 14%] Built target gtest
+[ 18%] Built target gtest_main
+[ 26%] Built target slg_msgs__rosidl_typesupport_cpp
+[ 34%] Built target slg_msgs__rosidl_typesupport_fastrtps_cpp
+[ 42%] Built target slg_msgs__rosidl_typesupport_introspection_cpp
+[ 51%] Built target slg_msgs__rosidl_typesupport_c
+[ 59%] Built target slg_msgs__rosidl_typesupport_introspection_c
+[ 63%] Built target test_polygon
+[ 71%] Built target slg_msgs__rosidl_typesupport_fastrtps_c
+[ 75%] Built target test_segment2d
+[ 79%] Built target test_point2d
+[ 79%] Built target slg_msgs
+[ 81%] Built target slg_msgs__py
+Traceback (most recent call last):
+  File "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs/ament_cmake_python/slg_msgs/setup.py", line 1, in <module>
+    from setuptools import find_packages
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/__init__.py", line 26, in <module>
+gmake[1]: *** [CMakeFiles/Makefile2:514: CMakeFiles/slg_msgs__rosidl_generator_py.dir/all] Interrupt
+    from .dist import Distribution
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/dist.py", line 16, in <module>
+    from packaging.markers import InvalidMarker, Marker
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/packaging/markers.py", line 13, in <module>
+    from ._parser import MarkerAtom, MarkerList, Op, Value, Variable
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/packaging/_parser.py", line 12, in <module>
+    from ._tokenizer import DEFAULT_RULES, Tokenizer
+  File "/home/rhobtor/.local/lib/python3.10/site-packages/packaging/_tokenizer.py", line 77, in <module>
+    "SPECIFIER": re.compile(
+  File "/usr/lib/python3.10/re.py", line 251, in compile
+    return _compile(pattern, flags)
+  File "/usr/lib/python3.10/re.py", line 303, in _compile
+    p = sre_compile.compile(pattern, flags)
+  File "/usr/lib/python3.10/sre_compile.py", line 792, in compile
+    code = _code(p, flags)
+  File "/usr/lib/python3.10/sre_compile.py", line 631, in _code
+    _compile(code, p.data, flags)
+  File "/usr/lib/python3.10/sre_compile.py", line 184, in _compile
+    _compile(code, p, _combine_flags(flags, add_flags, del_flags))
+  File "/usr/lib/python3.10/sre_compile.py", line 225, in _compile
+    _compile(code, av, flags)
+  File "/usr/lib/python3.10/sre_compile.py", line 156, in _compile
+    if _simple(av[2]):
+  File "/usr/lib/python3.10/sre_compile.py", line 447, in _simple
+    def _simple(p):
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_slg_msgs_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_slg_msgs_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:487: CMakeFiles/ament_cmake_python_build_slg_msgs_egg.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

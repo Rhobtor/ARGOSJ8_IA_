@@ -253,7 +253,7 @@ ublox_gps_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtp
 ublox_gps_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 ublox_gps_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 ublox_gps_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-ublox_gps_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+ublox_gps_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 ublox_gps_node: /opt/ros/humble/lib/librmw.so
 ublox_gps_node: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ublox_msgs/lib/libublox_msgs__rosidl_typesupport_introspection_cpp.so
 ublox_gps_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so

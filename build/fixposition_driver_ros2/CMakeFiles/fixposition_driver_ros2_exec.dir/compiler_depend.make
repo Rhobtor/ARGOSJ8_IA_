@@ -22,6 +22,11 @@ CMakeFiles/fixposition_driver_ros2_exec.dir/src/data_to_ros2.cpp.o: /home/rhobto
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/accel.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp \
@@ -256,6 +261,7 @@ CMakeFiles/fixposition_driver_ros2_exec.dir/src/data_to_ros2.cpp.o: /home/rhobto
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -1945,6 +1951,7 @@ CMakeFiles/fixposition_driver_ros2_exec.dir/src/fixposition_driver_node.cpp.o: /
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -3629,6 +3636,7 @@ CMakeFiles/fixposition_driver_ros2_exec.dir/src/params.cpp.o: /home/rhobtor/PHD/
   /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp \
+  /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp \
   /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp \
@@ -4276,8 +4284,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
 
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cxxabi_tweaks.h:
@@ -4492,9 +4498,11 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 
 /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
 
-/usr/include/boost/mpl/aux_/config/nttp.hpp:
+/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
 
-/usr/include/boost/mpl/list/aux_/iterator.hpp:
+/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
 
 /usr/include/boost/mpl/aux_/config/msvc_typename.hpp:
 
@@ -4519,8 +4527,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 /usr/include/boost/mpl/aux_/push_back_impl.hpp:
 
 /usr/include/c++/11/debug/debug.h:
-
-/usr/include/boost/mpl/aux_/config/static_constant.hpp:
 
 /usr/include/boost/mpl/at_fwd.hpp:
 
@@ -4926,8 +4932,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 
 /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
 
-/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
-
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /usr/include/boost/mpl/size.hpp:
@@ -5015,6 +5019,10 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 /opt/ros/humble/include/tracetools/tracetools/config.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__traits.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/accel.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp:
 
@@ -5108,10 +5116,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 
 /opt/ros/humble/include/rmw/rmw/message_sequence.h:
 
-/usr/include/boost/type_traits/is_const.hpp:
-
-/opt/ros/humble/include/rmw/rmw/macros.h:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
@@ -5131,10 +5135,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 /opt/ros/humble/include/rcl/rcl/subscription.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
-
-/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
-
-/usr/include/c++/11/bits/locale_facets.tcc:
 
 /usr/include/boost/date_time/iso_format.hpp:
 
@@ -5174,6 +5174,22 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 
 /usr/include/boost/numeric/conversion/sign_mixture_enum.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
+
+/usr/include/boost/date_time/gregorian_calendar.ipp:
+
+/usr/include/boost/detail/basic_pointerbuf.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
+
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/opt/ros/humble/include/rcutils/rcutils/macros.h:
+
+/usr/include/boost/checked_delete.hpp:
+
+/usr/include/boost/mpl/tag.hpp:
+
 /usr/include/boost/date_time/time_facet.hpp:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__type_support.hpp:
@@ -5187,22 +5203,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
 
 /usr/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp:
-
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/frame_graph.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__builder.hpp:
-
-/usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
-
-/usr/include/boost/ref.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/dec.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
-
-/usr/include/boost/mpl/lambda_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/advance_forward.hpp:
 
@@ -5223,8 +5223,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
 
 /usr/include/boost/date_time/date_format_simple.hpp:
 
@@ -5249,6 +5247,8 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 /usr/include/boost/mpl/aux_/arithmetic_op.hpp:
 
 /usr/include/boost/date_time/time_system_counted.hpp:
+
+/usr/include/boost/mpl/aux_/config/static_constant.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
@@ -5276,6 +5276,10 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 
 /usr/include/boost/range/reverse_iterator.hpp:
 
+/usr/include/boost/type_traits/is_const.hpp:
+
+/opt/ros/humble/include/rmw/rmw/macros.h:
+
 /usr/include/c++/11/bits/std_function.h:
 
 /opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
@@ -5283,14 +5287,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__struct.hpp:
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__traits.hpp:
-
-/opt/ros/humble/include/rcl/rcl/guard_condition.h:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
-
-/usr/include/boost/range/concepts.hpp:
-
-/usr/include/boost/mpl/list/aux_/preprocessed/plain/list20.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
 
@@ -5420,6 +5416,8 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/vrtk.hpp:
 
 /usr/include/boost/type_traits/add_pointer.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__traits.hpp:
+
 /usr/include/boost/config/user.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
@@ -5442,15 +5440,7 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/vrtk.hpp:
 
 /opt/ros/humble/include/rcl/rcl/client.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:
-
-/usr/include/boost/checked_delete.hpp:
-
-/usr/include/boost/mpl/tag.hpp:
 
 /opt/ros/humble/include/rcl/rcl/types.h:
 
@@ -5486,14 +5476,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/vrtk.hpp:
 
 /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__type_support.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
-
-/usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
-
-/usr/include/boost/function/detail/maybe_include.hpp:
-
-/usr/include/boost/preprocessor/slot/detail/def.hpp:
-
 /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
 
 /opt/ros/humble/include/rcl/rcl/time.h:
@@ -5514,17 +5496,65 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/vrtk.hpp:
 
 /usr/include/boost/mpl/vector/vector10.hpp:
 
-/opt/ros/humble/include/rmw/rmw/names_and_types.h:
+/usr/include/boost/algorithm/string/config.hpp:
 
-/usr/include/boost/mpl/prior.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
 
-/usr/include/c++/11/list:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
+/usr/include/boost/range/value_type.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
+/usr/include/boost/range/rbegin.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
+/opt/ros/humble/include/rmw/rmw/visibility_control.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
+
+/usr/include/boost/date_time/posix_time/conversion.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/shared_library.h:
+
+/usr/include/c++/11/bits/postypes.h:
+
+/usr/include/boost/predef/detail/test.h:
+
+/usr/include/boost/preprocessor/repetition/enum_binary_params.hpp:
+
+/opt/ros/humble/include/rmw/rmw/event_callback_type.h:
+
+/usr/include/boost/mpl/aux_/config/typeof.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:
+
+/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
+
+/usr/include/c++/11/bits/locale_facets.tcc:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__struct.hpp:
+
+/usr/include/eigen3/Eigen/LU:
+
+/opt/ros/humble/include/rcl/rcl/guard_condition.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:
+
+/usr/include/boost/range/concepts.hpp:
+
+/usr/include/boost/mpl/list/aux_/preprocessed/plain/list20.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
+
+/opt/ros/humble/include/rcl/rcl/init.h:
+
+/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__traits.hpp:
 
@@ -5538,29 +5568,45 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/vrtk.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_options.hpp:
 
-/opt/ros/humble/include/rcl/rcl/init.h:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
 
-/usr/include/boost/lexical_cast/detail/converter_lexical_streams.hpp:
+/usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
 
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
+/usr/include/boost/function/detail/maybe_include.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp:
+/usr/include/boost/preprocessor/slot/detail/def.hpp:
 
-/usr/include/boost/date_time/posix_time/conversion.hpp:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__builder.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
+/usr/include/boost/range/detail/safe_bool.hpp:
 
-/opt/ros/humble/include/rcutils/rcutils/shared_library.h:
+/usr/include/c++/11/bits/enable_special_members.h:
 
-/usr/include/c++/11/bits/postypes.h:
+/opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
-/usr/include/boost/predef/detail/test.h:
+/opt/ros/humble/include/tracetools/tracetools/tracetools.h:
 
-/usr/include/boost/preprocessor/repetition/enum_binary_params.hpp:
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
+/usr/include/boost/mpl/list/aux_/front.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp:
+/usr/include/boost/mpl/list/aux_/push_back.hpp:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
+
+/usr/include/boost/lexical_cast.hpp:
+
+/usr/include/boost/preprocessor/stringize.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/accel__type_support.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
+
+/usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
 
 /opt/ros/humble/include/rcl/rcl/context.h:
 
@@ -5613,6 +5659,10 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/vrtk.hpp:
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
 
 rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__struct.hpp:
+
+/opt/ros/humble/include/rmw/rmw/localhost.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -5670,12 +5720,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/rosidl_generator_cpp__visibilit
 
 /usr/include/boost/date_time/gregorian/gregorian.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/any_service_callback.hpp:
-
-/usr/include/boost/concept/detail/backward_compatibility.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp:
-
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_ros2/src/data_to_ros2.cpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_buffer.hpp:
@@ -5702,6 +5746,18 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__builder.hpp:
 
 /usr/include/boost/utility/detail/result_of_iterate.hpp:
 
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/boost/mpl/aux_/has_size.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_ros2/src/fixposition_driver_node.cpp:
+
+/usr/include/boost/date_time/gregorian_calendar.hpp:
+
+/usr/include/c++/11/bits/locale_conv.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/rate.hpp:
@@ -5722,23 +5778,9 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__builder.hpp:
 
 /usr/include/boost/mpl/front_inserter.hpp:
 
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:
-
-/usr/include/boost/range/value_type.hpp:
-
-/usr/include/boost/algorithm/string/config.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
-
-/usr/include/boost/range/rbegin.hpp:
-
-/opt/ros/humble/include/rmw/rmw/visibility_control.h:
-
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/macros.h:
 
 /usr/include/boost/config/stdlib/libstdcpp3.hpp:
 
@@ -5752,11 +5794,7 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
-
-/usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:
-
-/usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
 
 /usr/include/c++/11/typeinfo:
 
@@ -5800,11 +5838,37 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__builder.hpp:
 
 /usr/include/boost/mpl/vector/aux_/empty.hpp:
 
-/usr/include/boost/mpl/void.hpp:
+/opt/ros/humble/include/rmw/rmw/names_and_types.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/any_service_callback.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion_stamped__traits.hpp:
+
+/usr/include/boost/concept/detail/backward_compatibility.hpp:
+
+/usr/include/boost/mpl/prior.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
+
+/usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
+
+/usr/include/c++/11/list:
+
+/opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
+
+/usr/include/boost/config/compiler/gcc.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
 
-/usr/include/boost/config/compiler/gcc.hpp:
+/usr/include/boost/mpl/plus.hpp:
+
+/usr/include/boost/date_time/posix_time/time_formatters.hpp:
+
+/usr/include/boost/date_time/gregorian/parsers.hpp:
+
+/usr/include/boost/mpl/void.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -5812,11 +5876,25 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__builder.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__builder.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
-
 /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
+
+/usr/include/boost/concept/detail/general.hpp:
+
+/usr/include/boost/date_time/date_names_put.hpp:
+
+/usr/include/boost/type_traits/is_enum.hpp:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:
+
+/usr/include/boost/mpl/arg.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
+
+rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__builder.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:
+
+/opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/static_transform_broadcaster.hpp:
 
@@ -5848,53 +5926,7 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/boost/algorithm/string/detail/sequence.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
-
-/opt/ros/humble/include/tracetools/tracetools/tracetools.h:
-
-/opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp:
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
-
-/opt/ros/humble/include/rmw/rmw/localhost.h:
-
-/usr/include/boost/mpl/list/aux_/front.hpp:
-
-/usr/include/boost/mpl/list/aux_/push_back.hpp:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
-
-/usr/include/boost/lexical_cast.hpp:
-
-/usr/include/boost/preprocessor/stringize.hpp:
-
 /usr/include/boost/date_time/date_formatting_locales.hpp:
-
-/usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/boost/mpl/aux_/has_size.hpp:
-
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_ros2/src/fixposition_driver_node.cpp:
-
-/usr/include/boost/date_time/gregorian_calendar.hpp:
-
-/usr/include/c++/11/bits/locale_conv.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -5906,51 +5938,61 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__builder.hpp:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
-/usr/include/libintl.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/executors/static_executor_entities_collector.hpp:
-
-/usr/include/boost/predef/version_number.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__builder.hpp:
 
 rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/future_return_code.hpp:
 
-/usr/include/boost/concept/detail/general.hpp:
+/usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
 
-/usr/include/boost/date_time/date_names_put.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
 
-/usr/include/boost/type_traits/is_enum.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/detail/qos_parameters.hpp:
 
-/opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/boost/mpl/arg.hpp:
+/usr/include/boost/algorithm/string/detail/sequence.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__traits.hpp:
 
-rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__builder.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:
 
-/opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__struct.hpp:
 
-/usr/include/boost/mpl/plus.hpp:
+/opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/frame_graph.hpp:
 
-/usr/include/boost/date_time/gregorian/parsers.hpp:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__builder.hpp:
 
-/usr/include/boost/date_time/posix_time/time_formatters.hpp:
+/usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
 
-/opt/ros/humble/include/rmw/rmw/event_callback_type.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__traits.hpp:
 
-/usr/include/boost/mpl/aux_/config/typeof.hpp:
+/usr/include/boost/ref.hpp:
 
-/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
+/usr/include/boost/preprocessor/arithmetic/dec.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
+
+/usr/include/boost/mpl/lambda_fwd.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__struct.hpp:
+
+/usr/include/libintl.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors/static_executor_entities_collector.hpp:
+
+/usr/include/boost/predef/version_number.h:
+
+/usr/include/boost/date_time/locale_config.hpp:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
 
 /usr/include/boost/date_time/special_values_formatter.hpp:
 
@@ -5977,14 +6019,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/speed__builder.hpp:
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
-
-/usr/include/boost/mpl/aux_/config/overload_resolution.hpp:
-
-/usr/include/boost/predef/architecture/x86/64.h:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
-
-/usr/include/c++/11/bits/stl_bvector.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
@@ -6053,6 +6087,10 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__type_support.hpp:
 /usr/include/boost/math/tools/config.hpp:
 
 /usr/include/boost/smart_ptr/detail/sp_noexcept.hpp:
+
+/usr/include/c++/11/thread:
+
+/usr/include/boost/algorithm/string/detail/find_format_store.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp:
 
@@ -6209,6 +6247,8 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__type_support.hpp:
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__type_support.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/error_handling.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/detail/node_interfaces_helpers.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -6428,10 +6468,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__type_support.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result_kind.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
-
 /usr/include/boost/date_time/microsec_time_clock.hpp:
 
 /usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
@@ -6480,23 +6516,21 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__type_support.hpp:
 
 /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
 
-/usr/include/boost/date_time/locale_config.hpp:
+/usr/include/boost/mpl/aux_/config/nttp.hpp:
 
-/usr/include/c++/11/bits/this_thread_sleep.h:
+/usr/include/boost/mpl/list/aux_/iterator.hpp:
 
-/usr/include/boost/mpl/list/aux_/pop_front.hpp:
+/usr/include/boost/mpl/aux_/config/overload_resolution.hpp:
+
+/usr/include/boost/predef/architecture/x86/64.h:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/types.hpp:
+
+/usr/include/c++/11/bits/stl_bvector.h:
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
-
-/usr/include/boost/date_time/gregorian_calendar.ipp:
-
-/usr/include/boost/detail/basic_pointerbuf.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
-
-/usr/include/c++/11/bits/unique_ptr.h:
+/usr/include/boost/mpl/list/aux_/pop_front.hpp:
 
 /usr/include/boost/mpl/aux_/config/use_preprocessed.hpp:
 
@@ -6713,8 +6747,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/detail/vrtk__type_support.hpp:
 /usr/include/boost/mpl/front_fwd.hpp:
 
 /usr/include/boost/type_traits/is_class.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
 
 /usr/include/boost/numeric/conversion/detail/meta.hpp:
 
@@ -7056,17 +7088,13 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/speed.hpp:
 
 /usr/include/boost/range/detail/misc_concept.hpp:
 
-/usr/include/boost/range/detail/safe_bool.hpp:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
 /usr/include/boost/range/detail/sfinae.hpp:
 
 /usr/include/boost/range/detail/str_types.hpp:
 
-/usr/include/boost/mpl/aux_/config/ttp.hpp:
-
 /usr/include/boost/mpl/aux_/config/dtp.hpp:
+
+/usr/include/boost/mpl/aux_/config/ttp.hpp:
 
 /usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
 
@@ -7205,6 +7233,14 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/speed.hpp:
 /usr/include/boost/type_traits/is_floating_point.hpp:
 
 /usr/include/c++/11/exception:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
+
+/opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
+
+/usr/include/boost/type_traits/is_integral.hpp:
 
 /usr/include/boost/type_traits/is_lvalue_reference.hpp:
 
@@ -7350,15 +7386,13 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/speed.hpp:
 
 /usr/include/c++/11/bits/stl_deque.h:
 
-/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
-
 /usr/include/boost/date_time/posix_time/posix_time.hpp:
+
+/usr/include/boost/mpl/aux_/config/preprocessor.hpp:
 
 /usr/include/c++/11/bits/ptr_traits.h:
 
 /usr/include/c++/11/shared_mutex:
-
-/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 
@@ -7499,12 +7533,6 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/speed.hpp:
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
 
 /usr/include/c++/11/string:
-
-/usr/include/boost/algorithm/string/detail/find_format_store.hpp:
-
-/usr/include/c++/11/thread:
-
-/usr/include/eigen3/Eigen/LU:
 
 /usr/include/c++/11/tr1/beta_function.tcc:
 
@@ -7687,11 +7715,3 @@ rosidl_generator_cpp/fixposition_driver_ros2/msg/speed.hpp:
 /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
 
 /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h:
-
-/opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
-
-/usr/include/boost/type_traits/is_integral.hpp:
-
-/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:

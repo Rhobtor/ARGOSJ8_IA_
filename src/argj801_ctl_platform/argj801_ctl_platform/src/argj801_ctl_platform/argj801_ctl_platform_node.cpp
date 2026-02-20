@@ -21,6 +21,7 @@
 CtlPlatformNode::CtlPlatformNode(const std::string &node_name, bool intra_process_comms):
 rclcpp_lifecycle::LifecycleNode(node_name,rclcpp::NodeOptions().use_intra_process_comms(intra_process_comms))
 {
+  platformHearbeatCount = 0;
   this->declare_parameter("operation_mode", 2);
   this->declare_parameter("self_test_active", false);
   this->declare_parameter("throttle_topic_name", "cmd_throttle_msg");
@@ -28,6 +29,8 @@ rclcpp_lifecycle::LifecycleNode(node_name,rclcpp::NodeOptions().use_intra_proces
   this->declare_parameter("arduino_params.port", "/dev/ttyUSB0");
   this->declare_parameter("arduino_params.watchdog_active", true);
   this->declare_parameter("lcm_params.lcm_config_file", "argj801_lcm_config_platform.yaml");
+  // Safety: by default we require vehicle heartbeat in LCM mode. Set to false ONLY for debugging/bringup.
+  this->declare_parameter("lcm_params.require_vehicle_heartbeat", true);
   this->declare_parameter("kinematic_parameters.efective_radius", 0.285);
   this->declare_parameter("kinematic_parameters.xICR", 1.0);
   this->declare_parameter("kinematic_parameters.throttle_to_percent", 3.9276);
@@ -98,6 +101,7 @@ CtlPlatformNode::on_configure(const rclcpp_lifecycle::State &)
   this->get_parameter("arduino_params.port", port);
   this->get_parameter("arduino_params.watchdog_active", watchdog_active);
   this->get_parameter("lcm_params.lcm_config_file", lcm_config_file);
+  this->get_parameter("lcm_params.require_vehicle_heartbeat", require_vehicle_heartbeat);
   this->get_parameter("kinematic_parameters.efective_radius", efective_radius );
   this->get_parameter("kinematic_parameters.xICR", xICR );
   this->get_parameter("kinematic_parameters.throttle_to_percent", throttle_to_percent );
@@ -541,6 +545,11 @@ void CtlPlatformNode::resumeTest(diagnostic_updater::DiagnosticStatusWrapper &st
 
 //////////////// LCM METHODS /////////////////
 void CtlPlatformNode::timerPlatformHeartBeatCallback() {
+  if(!require_vehicle_heartbeat) {
+    // Debug/bringup mode: do not require vehicle heartbeat.
+    // Note: platformHeartbeatMsg won't be updated in this mode.
+    return;
+  }
   try {
     platformHeartbeatMsg = lcmInterface->receiveDatPlatformHeartbeatMsg(1000);
     platformHearbeatCount=0;
@@ -572,10 +581,8 @@ void CtlPlatformNode::timerPlatformHeartBeatCallback() {
   catch(const std::exception& e) {
     RCLCPP_ERROR(get_logger(),"Vehicle heartbeat not received: %s", e.what());
     diagnostic_->broadcast(diagnostic_msgs::msg::DiagnosticStatus::ERROR,"Vehicle heartbeat not received: "+ std::string(e.what()));
-    if(platformHearbeatCount++ > HEARBEAT_COUNT_MAX)
+    if(++platformHearbeatCount > HEARBEAT_COUNT_MAX)
       this->deactivate();
-    else
-      platformHearbeatCount++;
   }
 }
 

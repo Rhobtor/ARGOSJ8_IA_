@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_sensors/ARGJ801_sensors_node" "TARGETS" "ARGJ801_sensors_node" "DESTINATION" "lib/argj801_sensors")

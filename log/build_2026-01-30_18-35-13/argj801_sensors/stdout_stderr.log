@@ -1,0 +1,77 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclcpp_lifecycle: 16.0.16 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found argj801_sensors_msgs: 0.0.0 (/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake)
+-- Found diagnostic_updater: 4.0.6 (/opt/ros/humble/share/diagnostic_updater/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_sensors
+[ 12%] Built target argj801_lcm
+[ 18%] [32mBuilding CXX object CMakeFiles/ARGJ801_sensors_node.dir/src/main.cpp.o[0m
+[ 25%] [32m[1mLinking CXX executable ARGJ801_sensors_node[0m
+[100%] Built target ARGJ801_sensors_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_lcm//config/argj801_lcm_config_platform.yaml
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_lcm//config/argj801_lcm_config_sensors.yaml
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/lib/argj801_sensors/ARGJ801_sensors_node
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors//launch/argj801_sensors_launch_camera_front.py
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors//launch/argj801_sensors_launch_camera_rear.py
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors//launch/argj801_sensors_launch_lcm_sensors.py
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors//config/argj801_sensors_params_camera_front.yaml
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors//config/argj801_sensors_params_camera_rear.yaml
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors//config/argj801_sensors_params_lcm_sensors.yaml
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/argj801_sensors/Sensor.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/argj801_sensors/SensorBuilder.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/argj801_sensors/argj801_camera_builder.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/argj801_sensors/argj801_camera_interface.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/argj801_sensors/argj801_lcm_sensors_builder.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/argj801_sensors/argj801_sensors_interface.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/argj801_sensors/argj801_sensors_node.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/data/Composite.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/data/CompressedImage.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/data/DriveLine.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/data/ImageData.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/data/Lidar.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/data/LidarData.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/data/MotorTelemetry.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/data/OdometerData.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/data/Twist.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/visitor/SensorDataVisitor.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/include/argj801_sensors/include/visitor/Visitor.hpp
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/ament_index/resource_index/package_run_dependencies/argj801_sensors
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/ament_index/resource_index/parent_prefix_path/argj801_sensors
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/environment/ament_prefix_path.sh
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/environment/ament_prefix_path.dsv
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/environment/path.sh
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/environment/path.dsv
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/local_setup.bash
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/local_setup.sh
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/local_setup.zsh
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/local_setup.dsv
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/package.dsv
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/ament_index/resource_index/packages/argj801_sensors
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/cmake/argj801_sensorsConfig.cmake
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/cmake/argj801_sensorsConfig-version.cmake
+-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_sensors/share/argj801_sensors/package.xml

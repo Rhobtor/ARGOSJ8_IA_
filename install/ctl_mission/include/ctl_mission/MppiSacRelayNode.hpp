@@ -42,6 +42,7 @@ protected:
 
 private:
   void on_ai_cmd(const geometry_msgs::msg::Twist::SharedPtr msg);
+  bool send_start_to_controller();
 
   std::shared_ptr<rclcpp_lifecycle::LifecyclePublisher<geometry_msgs::msg::Twist>> pub_secured_cmd_vel_;
   rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr sub_ai_cmd_;
@@ -49,6 +50,9 @@ private:
   std::string ai_cmd_topic_;
   std::string secured_cmd_topic_;
   int queue_size_ = 10;
+
+  std::string controller_ip_;
+  int controller_port_ = 5555;
 };
 
 #endif  // CTL_MISSION__MPPI_SAC_RELAY_NODE_HPP_
