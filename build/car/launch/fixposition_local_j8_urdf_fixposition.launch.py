@@ -1,0 +1,1 @@
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/car_python/launch/fixposition_local_j8_urdf_fixposition.launch.py

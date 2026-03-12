@@ -1,0 +1,511 @@
+[0.000000] (-) TimerEvent: {}
+[0.000368] (-) JobUnselected: {'identifier': 'GUI_pkg'}
+[0.000689] (-) JobUnselected: {'identifier': 'android_ros2_server'}
+[0.000840] (-) JobUnselected: {'identifier': 'argj801_ctl_platform'}
+[0.000980] (-) JobUnselected: {'identifier': 'argj801_ctl_platform_interfaces'}
+[0.001068] (-) JobUnselected: {'identifier': 'argj801_sensors'}
+[0.001106] (-) JobUnselected: {'identifier': 'argj801_sensors_msgs'}
+[0.001132] (-) JobUnselected: {'identifier': 'argj801_setup'}
+[0.001215] (-) JobUnselected: {'identifier': 'car'}
+[0.001240] (-) JobUnselected: {'identifier': 'car_cpp'}
+[0.001263] (-) JobUnselected: {'identifier': 'car_interfaces'}
+[0.001301] (-) JobUnselected: {'identifier': 'ctl_mission'}
+[0.001364] (-) JobUnselected: {'identifier': 'ctl_mission_interfaces'}
+[0.001388] (-) JobUnselected: {'identifier': 'fixposition_driver_lib'}
+[0.001413] (-) JobUnselected: {'identifier': 'fixposition_gnss_tf'}
+[0.001435] (-) JobUnselected: {'identifier': 'fixposition_odometry_converter_ros2'}
+[0.001457] (-) JobUnselected: {'identifier': 'fixposition_sensor_pkg'}
+[0.001518] (-) JobUnselected: {'identifier': 'hector_gazebo_plugins'}
+[0.001541] (-) JobUnselected: {'identifier': 'j8_gui'}
+[0.001562] (-) JobUnselected: {'identifier': 'j8_xacro_model'}
+[0.001762] (-) JobUnselected: {'identifier': 'joy'}
+[0.001962] (-) JobUnselected: {'identifier': 'joy_linux'}
+[0.002063] (-) JobUnselected: {'identifier': 'laser_segmentation'}
+[0.002079] (-) JobUnselected: {'identifier': 'ntrip_client'}
+[0.002094] (-) JobUnselected: {'identifier': 'path_manager'}
+[0.002107] (-) JobUnselected: {'identifier': 'path_manager_interfaces'}
+[0.002118] (-) JobUnselected: {'identifier': 'sdl2_vendor'}
+[0.002132] (-) JobUnselected: {'identifier': 'security_check'}
+[0.002145] (-) JobUnselected: {'identifier': 'security_check_interfaces'}
+[0.002156] (-) JobUnselected: {'identifier': 'slg_msgs'}
+[0.002166] (-) JobUnselected: {'identifier': 'spacenav'}
+[0.002179] (-) JobUnselected: {'identifier': 'ublox'}
+[0.002190] (-) JobUnselected: {'identifier': 'ublox_gps'}
+[0.002201] (-) JobUnselected: {'identifier': 'ublox_msgs'}
+[0.002211] (-) JobUnselected: {'identifier': 'ublox_serialization'}
+[0.002224] (-) JobUnselected: {'identifier': 'wiimote_msgs'}
+[0.002238] (fixposition_driver_ros2) JobQueued: {'identifier': 'fixposition_driver_ros2', 'dependencies': OrderedDict([('fixposition_gnss_tf', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf'), ('fixposition_driver_lib', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib')])}
+[0.002257] (fixposition_driver_ros2) JobStarted: {'identifier': 'fixposition_driver_ros2'}
+[0.011129] (fixposition_driver_ros2) JobProgress: {'identifier': 'fixposition_driver_ros2', 'progress': 'cmake'}
+[0.011584] (fixposition_driver_ros2) Command: {'cmd': ['/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_ros2', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2'], 'cwd': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_JDWP_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('USER', 'rhobtor'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rhobtor'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.109.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/rhobtor/.sdkman/candidates/gradle/current'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1637'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1931'), ('BUNDLED_DEBUGPY_PATH', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8825'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rhobtor'), ('SDKMAN_CANDIDATES_API', 'https://api.sdkman.io/2'), ('JOURNAL_STREAM', '8:1999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib/x86_64-linux-gnu/pkgconfig:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib/pkgconfig:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib/x86_64-linux-gnu/pkgconfig:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib/pkgconfig'), ('USERNAME', 'rhobtor'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.1.0/resources/binaries/linux/x86_64:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.43.0/resources/cube-cmake/linux:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/usr/local/cuda/bin:/home/rhobtor/.sdkman/candidates/gradle/current/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/rhobtor/.dotnet/tools:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c:/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/bundled/scripts/noConfigScripts:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('SESSION_MANAGER', 'local/rhobtor-laptop:@/tmp/.ICE-unix/1903,unix/rhobtor-laptop:/tmp/.ICE-unix/1903'), ('SDKMAN_CANDIDATES_DIR', '/home/rhobtor/.sdkman/candidates'), ('INVOCATION_ID', 'd40100ea118d4c78bccb56ac9edc054b'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('RVIZ_PLUGIN_PATH', ':/opt/ros/humble/lib:/opt/ros/humble/lib'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/rhobtor/.config/Code/User/workspaceStorage/1c32105a34b1c46be90505797aea9c65/ms-python.python/pythonrc.py'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/rhobtor/.cache/dotnet_bundle_extract'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e8065a9e0.sock'), ('SDKMAN_DIR', '/home/rhobtor/.sdkman'), ('SDKMAN_PLATFORM', 'linuxx64'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('VSCODE_JAVA_EXEC', '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('ANDROID_SDK_ROOT', '/home/rhobtor/Android/Sdk'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('ANDROID_NDK', '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('ANDROID_NDK_HOME', '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('CMAKE_PREFIX_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/opt/ros/humble')]), 'shell': False}
+[0.057888] (fixposition_driver_ros2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099714] (-) TimerEvent: {}
+[0.106421] (fixposition_driver_ros2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.122636] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.176012] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.184439] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.184673] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.184990] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.193109] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199798] (-) TimerEvent: {}
+[0.254684] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.263789] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.264063] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.264654] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.275138] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: date_time \n'}
+[0.283233] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299891] (-) TimerEvent: {}
+[0.395939] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400020] (-) TimerEvent: {}
+[0.452597] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.482247] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.500136] (-) TimerEvent: {}
+[0.520603] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.525862] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.534837] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.547486] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.564667] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600255] (-) TimerEvent: {}
+[0.632180] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.654264] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.663797] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.700382] (-) TimerEvent: {}
+[0.703500] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.706107] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.781762] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.800518] (-) TimerEvent: {}
+[0.809625] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.848537] (fixposition_driver_ros2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.857475] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.900656] (-) TimerEvent: {}
+[0.905771] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.906784] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.950283] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.960979] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.000749] (-) TimerEvent: {}
+[1.062055] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.18 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[1.100877] (-) TimerEvent: {}
+[1.201174] (-) TimerEvent: {}
+[1.301447] (-) TimerEvent: {}
+[1.401741] (-) TimerEvent: {}
+[1.448242] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.501841] (-) TimerEvent: {}
+[1.602153] (-) TimerEvent: {}
+[1.702399] (-) TimerEvent: {}
+[1.802629] (-) TimerEvent: {}
+[1.902871] (-) TimerEvent: {}
+[2.003157] (-) TimerEvent: {}
+[2.103420] (-) TimerEvent: {}
+[2.106158] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.203535] (-) TimerEvent: {}
+[2.303813] (-) TimerEvent: {}
+[2.404101] (-) TimerEvent: {}
+[2.421326] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.424486] (fixposition_driver_ros2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):\n'}
+[2.424709] (fixposition_driver_ros2) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.424812] (fixposition_driver_ros2) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.424902] (fixposition_driver_ros2) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.424988] (fixposition_driver_ros2) StderrLine: {'line': b'\n'}
+[2.425074] (fixposition_driver_ros2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.425164] (fixposition_driver_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.425246] (fixposition_driver_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.425327] (fixposition_driver_ros2) StderrLine: {'line': b'  CMakeLists.txt:26 (rosidl_generate_interfaces)\n'}
+[2.425410] (fixposition_driver_ros2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.425491] (fixposition_driver_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[2.443393] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.445331] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.445738] (fixposition_driver_ros2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):\n'}
+[2.445907] (fixposition_driver_ros2) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.446013] (fixposition_driver_ros2) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.446108] (fixposition_driver_ros2) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.446193] (fixposition_driver_ros2) StderrLine: {'line': b'\n'}
+[2.446280] (fixposition_driver_ros2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.446377] (fixposition_driver_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[2.446482] (fixposition_driver_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.446570] (fixposition_driver_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.446675] (fixposition_driver_ros2) StderrLine: {'line': b'  CMakeLists.txt:26 (rosidl_generate_interfaces)\n'}
+[2.446761] (fixposition_driver_ros2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.446877] (fixposition_driver_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[2.465343] (fixposition_driver_ros2) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):\n'}
+[2.465517] (fixposition_driver_ros2) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[2.465615] (fixposition_driver_ros2) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[2.465660] (fixposition_driver_ros2) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[2.465700] (fixposition_driver_ros2) StderrLine: {'line': b'\n'}
+[2.465739] (fixposition_driver_ros2) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.465777] (fixposition_driver_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[2.465815] (fixposition_driver_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[2.465853] (fixposition_driver_ros2) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[2.465891] (fixposition_driver_ros2) StderrLine: {'line': b'  CMakeLists.txt:26 (rosidl_generate_interfaces)\n'}
+[2.465930] (fixposition_driver_ros2) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.465968] (fixposition_driver_ros2) StderrLine: {'line': b'\x1b[0m\n'}
+[2.471936] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.472199] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.472319] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.472419] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.492149] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[2.504245] (-) TimerEvent: {}
+[2.604660] (-) TimerEvent: {}
+[2.608730] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Configuring done (2.6s)\n'}
+[2.671915] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.685366] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2\n'}
+[2.697060] (fixposition_driver_ros2) CommandEnded: {'returncode': 0}
+[2.698519] (fixposition_driver_ros2) JobProgress: {'identifier': 'fixposition_driver_ros2', 'progress': 'build'}
+[2.699038] (fixposition_driver_ros2) Command: {'cmd': ['/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake', '--build', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2', '--', '-j16', '-l16'], 'cwd': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_JDWP_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('USER', 'rhobtor'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rhobtor'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.109.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/rhobtor/.sdkman/candidates/gradle/current'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1637'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1931'), ('BUNDLED_DEBUGPY_PATH', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8825'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rhobtor'), ('SDKMAN_CANDIDATES_API', 'https://api.sdkman.io/2'), ('JOURNAL_STREAM', '8:1999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib/x86_64-linux-gnu/pkgconfig:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib/pkgconfig:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib/x86_64-linux-gnu/pkgconfig:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib/pkgconfig'), ('USERNAME', 'rhobtor'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.1.0/resources/binaries/linux/x86_64:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.43.0/resources/cube-cmake/linux:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/usr/local/cuda/bin:/home/rhobtor/.sdkman/candidates/gradle/current/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/rhobtor/.dotnet/tools:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c:/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/bundled/scripts/noConfigScripts:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('SESSION_MANAGER', 'local/rhobtor-laptop:@/tmp/.ICE-unix/1903,unix/rhobtor-laptop:/tmp/.ICE-unix/1903'), ('SDKMAN_CANDIDATES_DIR', '/home/rhobtor/.sdkman/candidates'), ('INVOCATION_ID', 'd40100ea118d4c78bccb56ac9edc054b'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('RVIZ_PLUGIN_PATH', ':/opt/ros/humble/lib:/opt/ros/humble/lib'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/rhobtor/.config/Code/User/workspaceStorage/1c32105a34b1c46be90505797aea9c65/ms-python.python/pythonrc.py'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/rhobtor/.cache/dotnet_bundle_extract'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e8065a9e0.sock'), ('SDKMAN_DIR', '/home/rhobtor/.sdkman'), ('SDKMAN_PLATFORM', 'linuxx64'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('VSCODE_JAVA_EXEC', '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('ANDROID_SDK_ROOT', '/home/rhobtor/Android/Sdk'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('ANDROID_NDK', '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('ANDROID_NDK_HOME', '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('CMAKE_PREFIX_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/opt/ros/humble')]), 'shell': False}
+[2.704729] (-) TimerEvent: {}
+[2.717144] (fixposition_driver_ros2) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.720042] (fixposition_driver_ros2) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.721873] (fixposition_driver_ros2) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_fixposition_driver_ros2\n'}
+[2.804823] (-) TimerEvent: {}
+[2.905096] (-) TimerEvent: {}
+[2.932338] (fixposition_driver_ros2) StdoutLine: {'line': b'running egg_info\n'}
+[2.949565] (fixposition_driver_ros2) StdoutLine: {'line': b'creating fixposition_driver_ros2.egg-info\n'}
+[2.949812] (fixposition_driver_ros2) StdoutLine: {'line': b'writing fixposition_driver_ros2.egg-info/PKG-INFO\n'}
+[2.950099] (fixposition_driver_ros2) StdoutLine: {'line': b'writing dependency_links to fixposition_driver_ros2.egg-info/dependency_links.txt\n'}
+[2.950333] (fixposition_driver_ros2) StdoutLine: {'line': b'writing top-level names to fixposition_driver_ros2.egg-info/top_level.txt\n'}
+[2.950495] (fixposition_driver_ros2) StdoutLine: {'line': b"writing manifest file 'fixposition_driver_ros2.egg-info/SOURCES.txt'\n"}
+[2.997175] (fixposition_driver_ros2) StdoutLine: {'line': b"reading manifest file 'fixposition_driver_ros2.egg-info/SOURCES.txt'\n"}
+[2.998106] (fixposition_driver_ros2) StdoutLine: {'line': b"writing manifest file 'fixposition_driver_ros2.egg-info/SOURCES.txt'\n"}
+[3.005194] (-) TimerEvent: {}
+[3.022871] (fixposition_driver_ros2) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_fixposition_driver_ros2_egg\n'}
+[3.105297] (-) TimerEvent: {}
+[3.107228] (fixposition_driver_ros2) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/fixposition_driver_ros2__rosidl_generator_c.dir/rosidl_generator_c/fixposition_driver_ros2/msg/detail/vrtk__functions.c.o\x1b[0m\n'}
+[3.108030] (fixposition_driver_ros2) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/fixposition_driver_ros2__rosidl_generator_c.dir/rosidl_generator_c/fixposition_driver_ros2/msg/detail/speed__functions.c.o\x1b[0m\n'}
+[3.129703] (fixposition_driver_ros2) StdoutLine: {'line': b'[  9%] Built target fixposition_driver_ros2__cpp\n'}
+[3.134764] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.135103] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.136267] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.205407] (-) TimerEvent: {}
+[3.220693] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libfixposition_driver_ros2__rosidl_generator_c.so\x1b[0m\n'}
+[3.264808] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 18%] Built target fixposition_driver_ros2__rosidl_generator_c\n'}
+[3.275321] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.275579] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.277572] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.305510] (-) TimerEvent: {}
+[3.406506] (-) TimerEvent: {}
+[3.506891] (-) TimerEvent: {}
+[3.589333] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fixposition_driver_ros2/msg/vrtk__type_support.cpp.o\x1b[0m\n'}
+[3.589689] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fixposition_driver_ros2/msg/speed__type_support.cpp.o\x1b[0m\n'}
+[3.608661] (-) TimerEvent: {}
+[3.619754] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fixposition_driver_ros2/msg/detail/vrtk__type_support.cpp.o\x1b[0m\n'}
+[3.620561] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fixposition_driver_ros2/msg/detail/speed__type_support.cpp.o\x1b[0m\n'}
+[3.677704] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fixposition_driver_ros2/msg/detail/dds_fastrtps/vrtk__type_support.cpp.o\x1b[0m\n'}
+[3.678116] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fixposition_driver_ros2/msg/detail/dds_fastrtps/speed__type_support.cpp.o\x1b[0m\n'}
+[3.708762] (-) TimerEvent: {}
+[3.809119] (-) TimerEvent: {}
+[3.859035] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fixposition_driver_ros2/msg/detail/vrtk__type_support_c.cpp.o\x1b[0m\n'}
+[3.859626] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fixposition_driver_ros2/msg/detail/speed__type_support_c.cpp.o\x1b[0m\n'}
+[3.894314] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fixposition_driver_ros2/msg/detail/vrtk__type_support.c.o\x1b[0m\n'}
+[3.894981] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fixposition_driver_ros2/msg/detail/speed__type_support.c.o\x1b[0m\n'}
+[3.909231] (-) TimerEvent: {}
+[3.996762] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking C shared library libfixposition_driver_ros2__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.005666] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/fixposition_driver_ros2/msg/vrtk__type_support.cpp.o\x1b[0m\n'}
+[4.005982] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_c.dir/rosidl_typesupport_c/fixposition_driver_ros2/msg/speed__type_support.cpp.o\x1b[0m\n'}
+[4.009361] (-) TimerEvent: {}
+[4.031893] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 55%] Built target fixposition_driver_ros2__rosidl_typesupport_introspection_c\n'}
+[4.057537] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libfixposition_driver_ros2__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.092708] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libfixposition_driver_ros2__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.109461] (-) TimerEvent: {}
+[4.112782] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 60%] Built target fixposition_driver_ros2__rosidl_typesupport_c\n'}
+[4.143789] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 60%] Built target fixposition_driver_ros2__rosidl_typesupport_cpp\n'}
+[4.159074] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2_exec.dir/src/fixposition_driver_node.cpp.o\x1b[0m\n'}
+[4.160676] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2_exec.dir/src/params.cpp.o\x1b[0m\n'}
+[4.160925] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/fixposition_driver_ros2_exec.dir/src/data_to_ros2.cpp.o\x1b[0m\n'}
+[4.209581] (-) TimerEvent: {}
+[4.292792] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libfixposition_driver_ros2__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.309670] (-) TimerEvent: {}
+[4.354660] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libfixposition_driver_ros2__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.386215] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 72%] Built target fixposition_driver_ros2__rosidl_typesupport_introspection_cpp\n'}
+[4.409774] (-) TimerEvent: {}
+[4.424364] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 72%] Built target fixposition_driver_ros2__rosidl_typesupport_fastrtps_cpp\n'}
+[4.509872] (-) TimerEvent: {}
+[4.572155] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libfixposition_driver_ros2__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.609994] (-) TimerEvent: {}
+[4.669766] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 74%] Built target fixposition_driver_ros2__rosidl_typesupport_fastrtps_c\n'}
+[4.679332] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 74%] Built target fixposition_driver_ros2\n'}
+[4.689106] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.710105] (-) TimerEvent: {}
+[4.810431] (-) TimerEvent: {}
+[4.910794] (-) TimerEvent: {}
+[5.011163] (-) TimerEvent: {}
+[5.111522] (-) TimerEvent: {}
+[5.211894] (-) TimerEvent: {}
+[5.312221] (-) TimerEvent: {}
+[5.399206] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 76%] Built target fixposition_driver_ros2__py\n'}
+[5.409189] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/fixposition_driver_ros2__rosidl_generator_py.dir/rosidl_generator_py/fixposition_driver_ros2/msg/_vrtk_s.c.o\x1b[0m\n'}
+[5.409482] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/fixposition_driver_ros2__rosidl_generator_py.dir/rosidl_generator_py/fixposition_driver_ros2/msg/_speed_s.c.o\x1b[0m\n'}
+[5.412326] (-) TimerEvent: {}
+[5.512665] (-) TimerEvent: {}
+[5.613012] (-) TimerEvent: {}
+[5.637924] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fixposition_driver_ros2/libfixposition_driver_ros2__rosidl_generator_py.so\x1b[0m\n'}
+[5.689544] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 83%] Built target fixposition_driver_ros2__rosidl_generator_py\n'}
+[5.701313] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fixposition_driver_ros2/_fixposition_driver_ros2_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.701685] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fixposition_driver_ros2/_fixposition_driver_ros2_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.702739] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/fixposition_driver_ros2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fixposition_driver_ros2/_fixposition_driver_ros2_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.713133] (-) TimerEvent: {}
+[5.813504] (-) TimerEvent: {}
+[5.844530] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.875056] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 93%] Built target fixposition_driver_ros2__rosidl_typesupport_introspection_c__pyext\n'}
+[5.907624] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.913616] (-) TimerEvent: {}
+[5.915026] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.938854] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 97%] Built target fixposition_driver_ros2__rosidl_typesupport_c__pyext\n'}
+[5.963240] (fixposition_driver_ros2) StdoutLine: {'line': b'[ 97%] Built target fixposition_driver_ros2__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.013729] (-) TimerEvent: {}
+[6.114082] (-) TimerEvent: {}
+[6.214406] (-) TimerEvent: {}
+[6.314760] (-) TimerEvent: {}
+[6.415060] (-) TimerEvent: {}
+[6.515382] (-) TimerEvent: {}
+[6.615803] (-) TimerEvent: {}
+[6.716168] (-) TimerEvent: {}
+[6.816567] (-) TimerEvent: {}
+[6.916900] (-) TimerEvent: {}
+[7.017257] (-) TimerEvent: {}
+[7.117666] (-) TimerEvent: {}
+[7.218053] (-) TimerEvent: {}
+[7.318459] (-) TimerEvent: {}
+[7.418785] (-) TimerEvent: {}
+[7.519111] (-) TimerEvent: {}
+[7.619420] (-) TimerEvent: {}
+[7.719725] (-) TimerEvent: {}
+[7.820050] (-) TimerEvent: {}
+[7.920409] (-) TimerEvent: {}
+[8.020755] (-) TimerEvent: {}
+[8.121565] (-) TimerEvent: {}
+[8.221834] (-) TimerEvent: {}
+[8.322155] (-) TimerEvent: {}
+[8.422422] (-) TimerEvent: {}
+[8.522738] (-) TimerEvent: {}
+[8.623042] (-) TimerEvent: {}
+[8.723305] (-) TimerEvent: {}
+[8.823580] (-) TimerEvent: {}
+[8.923837] (-) TimerEvent: {}
+[9.024067] (-) TimerEvent: {}
+[9.124382] (-) TimerEvent: {}
+[9.224630] (-) TimerEvent: {}
+[9.324901] (-) TimerEvent: {}
+[9.425186] (-) TimerEvent: {}
+[9.525483] (-) TimerEvent: {}
+[9.625762] (-) TimerEvent: {}
+[9.726059] (-) TimerEvent: {}
+[9.826370] (-) TimerEvent: {}
+[9.926669] (-) TimerEvent: {}
+[10.026948] (-) TimerEvent: {}
+[10.127226] (-) TimerEvent: {}
+[10.227507] (-) TimerEvent: {}
+[10.327749] (-) TimerEvent: {}
+[10.427974] (-) TimerEvent: {}
+[10.528234] (-) TimerEvent: {}
+[10.628657] (-) TimerEvent: {}
+[10.728927] (-) TimerEvent: {}
+[10.829161] (-) TimerEvent: {}
+[10.929425] (-) TimerEvent: {}
+[11.029684] (-) TimerEvent: {}
+[11.129896] (-) TimerEvent: {}
+[11.230143] (-) TimerEvent: {}
+[11.330363] (-) TimerEvent: {}
+[11.430591] (-) TimerEvent: {}
+[11.530798] (-) TimerEvent: {}
+[11.631028] (-) TimerEvent: {}
+[11.731304] (-) TimerEvent: {}
+[11.831554] (-) TimerEvent: {}
+[11.931765] (-) TimerEvent: {}
+[12.032019] (-) TimerEvent: {}
+[12.132268] (-) TimerEvent: {}
+[12.232523] (-) TimerEvent: {}
+[12.332778] (-) TimerEvent: {}
+[12.433045] (-) TimerEvent: {}
+[12.533337] (-) TimerEvent: {}
+[12.633618] (-) TimerEvent: {}
+[12.733898] (-) TimerEvent: {}
+[12.834169] (-) TimerEvent: {}
+[12.934471] (-) TimerEvent: {}
+[13.034733] (-) TimerEvent: {}
+[13.135089] (-) TimerEvent: {}
+[13.235481] (-) TimerEvent: {}
+[13.335760] (-) TimerEvent: {}
+[13.436059] (-) TimerEvent: {}
+[13.536293] (-) TimerEvent: {}
+[13.636550] (-) TimerEvent: {}
+[13.736779] (-) TimerEvent: {}
+[13.837074] (-) TimerEvent: {}
+[13.937364] (-) TimerEvent: {}
+[14.037646] (-) TimerEvent: {}
+[14.138065] (-) TimerEvent: {}
+[14.238314] (-) TimerEvent: {}
+[14.338543] (-) TimerEvent: {}
+[14.438789] (-) TimerEvent: {}
+[14.539027] (-) TimerEvent: {}
+[14.639307] (-) TimerEvent: {}
+[14.739565] (-) TimerEvent: {}
+[14.839878] (-) TimerEvent: {}
+[14.940104] (-) TimerEvent: {}
+[15.040441] (-) TimerEvent: {}
+[15.140651] (-) TimerEvent: {}
+[15.240979] (-) TimerEvent: {}
+[15.341312] (-) TimerEvent: {}
+[15.441600] (-) TimerEvent: {}
+[15.541817] (-) TimerEvent: {}
+[15.642085] (-) TimerEvent: {}
+[15.742341] (-) TimerEvent: {}
+[15.842749] (-) TimerEvent: {}
+[15.942974] (-) TimerEvent: {}
+[16.043215] (-) TimerEvent: {}
+[16.143495] (-) TimerEvent: {}
+[16.243768] (-) TimerEvent: {}
+[16.344024] (-) TimerEvent: {}
+[16.444233] (-) TimerEvent: {}
+[16.544452] (-) TimerEvent: {}
+[16.644685] (-) TimerEvent: {}
+[16.744985] (-) TimerEvent: {}
+[16.845332] (-) TimerEvent: {}
+[16.945603] (-) TimerEvent: {}
+[17.045822] (-) TimerEvent: {}
+[17.146163] (-) TimerEvent: {}
+[17.246377] (-) TimerEvent: {}
+[17.346645] (-) TimerEvent: {}
+[17.446866] (-) TimerEvent: {}
+[17.547096] (-) TimerEvent: {}
+[17.647391] (-) TimerEvent: {}
+[17.718322] (fixposition_driver_ros2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable fixposition_driver_ros2_exec\x1b[0m\n'}
+[17.747479] (-) TimerEvent: {}
+[17.831484] (fixposition_driver_ros2) StdoutLine: {'line': b'[100%] Built target fixposition_driver_ros2_exec\n'}
+[17.835312] (fixposition_driver_ros2) CommandEnded: {'returncode': 0}
+[17.835905] (fixposition_driver_ros2) JobProgress: {'identifier': 'fixposition_driver_ros2', 'progress': 'install'}
+[17.838357] (fixposition_driver_ros2) Command: {'cmd': ['/opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake', '--install', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2'], 'cwd': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_JDWP_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('USER', 'rhobtor'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rhobtor'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.109.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GRADLE_HOME', '/home/rhobtor/.sdkman/candidates/gradle/current'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1637'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '1931'), ('BUNDLED_DEBUGPY_PATH', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8825'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rhobtor'), ('SDKMAN_CANDIDATES_API', 'https://api.sdkman.io/2'), ('JOURNAL_STREAM', '8:1999'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('PKG_CONFIG_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib/x86_64-linux-gnu/pkgconfig:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib/lib/pkgconfig:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib/x86_64-linux-gnu/pkgconfig:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf/lib/pkgconfig'), ('USERNAME', 'rhobtor'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.1.0/resources/binaries/linux/x86_64:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.43.0/resources/cube-cmake/linux:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/usr/local/cuda/bin:/home/rhobtor/.sdkman/candidates/gradle/current/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/rhobtor/.dotnet/tools:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c:/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/bundled/scripts/noConfigScripts:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('SESSION_MANAGER', 'local/rhobtor-laptop:@/tmp/.ICE-unix/1903,unix/rhobtor-laptop:/tmp/.ICE-unix/1903'), ('SDKMAN_CANDIDATES_DIR', '/home/rhobtor/.sdkman/candidates'), ('INVOCATION_ID', 'd40100ea118d4c78bccb56ac9edc054b'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('RVIZ_PLUGIN_PATH', ':/opt/ros/humble/lib:/opt/ros/humble/lib'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/rhobtor/.config/Code/User/workspaceStorage/1c32105a34b1c46be90505797aea9c65/ms-python.python/pythonrc.py'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/rhobtor/.cache/dotnet_bundle_extract'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-0e8065a9e0.sock'), ('SDKMAN_DIR', '/home/rhobtor/.sdkman'), ('SDKMAN_PLATFORM', 'linuxx64'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('LC_MESSAGES', 'en_US.UTF-8'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('VSCODE_JAVA_EXEC', '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('ANDROID_SDK_ROOT', '/home/rhobtor/Android/Sdk'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('ANDROID_NDK', '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('ANDROID_NDK_HOME', '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c'), ('CMAKE_PREFIX_PATH', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_gnss_tf:/opt/ros/humble')]), 'shell': False}
+[17.839811] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[17.840271] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[17.840429] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/ament_index/resource_index/rosidl_interfaces/fixposition_driver_ros2\n'}
+[17.842139] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__functions.h\n'}
+[17.843640] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__struct.h\n'}
+[17.845314] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__type_support.h\n'}
+[17.846643] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__functions.h\n'}
+[17.847546] (-) TimerEvent: {}
+[17.848390] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__struct.h\n'}
+[17.850014] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__type_support.h\n'}
+[17.851454] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/rosidl_generator_c__visibility_control.h\n'}
+[17.852744] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/speed.h\n'}
+[17.854015] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/vrtk.h\n'}
+[17.855771] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/environment/library_path.sh\n'}
+[17.857438] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/environment/library_path.dsv\n'}
+[17.859050] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__rosidl_typesupport_fastrtps_c.h\n'}
+[17.860236] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__rosidl_typesupport_fastrtps_c.h\n'}
+[17.861542] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[17.863077] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__builder.hpp\n'}
+[17.864268] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__struct.hpp\n'}
+[17.865926] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__traits.hpp\n'}
+[17.867364] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__type_support.hpp\n'}
+[17.869079] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__builder.hpp\n'}
+[17.870832] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__struct.hpp\n'}
+[17.872517] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__traits.hpp\n'}
+[17.873815] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__type_support.hpp\n'}
+[17.875100] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[17.876963] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/speed.hpp\n'}
+[17.878277] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/vrtk.hpp\n'}
+[17.880033] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.881916] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[17.883305] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[17.884888] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__rosidl_typesupport_introspection_c.h\n'}
+[17.886702] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__rosidl_typesupport_introspection_c.h\n'}
+[17.888347] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[17.890312] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/speed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.891898] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/include/fixposition_driver_ros2/fixposition_driver_ros2/msg/detail/vrtk__rosidl_typesupport_introspection_cpp.hpp\n'}
+[17.893541] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/environment/pythonpath.sh\n'}
+[17.895252] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/environment/pythonpath.dsv\n'}
+[17.897272] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2-5.0.0-py3.10.egg-info/PKG-INFO\n'}
+[17.898958] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2-5.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[17.900800] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2-5.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[17.902129] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2-5.0.0-py3.10.egg-info/top_level.txt\n'}
+[17.903856] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/__init__.py\n'}
+[17.905161] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/_fixposition_driver_ros2_s.ep.rosidl_typesupport_c.c\n'}
+[17.906960] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/_fixposition_driver_ros2_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[17.908252] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/_fixposition_driver_ros2_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[17.909675] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[17.911419] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[17.912790] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[17.913977] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/libfixposition_driver_ros2__rosidl_generator_py.so\n'}
+[17.915798] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/msg/__init__.py\n'}
+[17.917362] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/msg/_speed.py\n'}
+[17.919056] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/msg/_speed_s.c\n'}
+[17.920795] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/msg/_vrtk.py\n'}
+[17.922510] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/msg/_vrtk_s.c\n'}
+[17.924248] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[17.924376] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[17.924512] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[17.924617] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/msg/VRTK.idl\n'}
+[17.926211] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/msg/Speed.idl\n'}
+[17.927518] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/msg/VRTK.msg\n'}
+[17.928795] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/msg/Speed.msg\n'}
+[17.930650] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/./fixposition_driver_ros2/data_to_ros2.hpp\n'}
+[17.932166] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/./fixposition_driver_ros2/fixposition_driver_node.hpp\n'}
+[17.933388] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/./fixposition_driver_ros2/params.hpp\n'}
+[17.934728] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/fixposition_driver_ros2/fixposition_driver_ros2_exec\n'}
+[17.936500] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2//launch/serial.launch\n'}
+[17.937748] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2//launch/serial.yaml\n'}
+[17.938987] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2//launch/tcp.launch\n'}
+[17.940876] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2//launch/tcp.yaml\n'}
+[17.942325] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/ament_index/resource_index/package_run_dependencies/fixposition_driver_ros2\n'}
+[17.943619] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/ament_index/resource_index/parent_prefix_path/fixposition_driver_ros2\n'}
+[17.945261] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/environment/ament_prefix_path.sh\n'}
+[17.946828] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/environment/ament_prefix_path.dsv\n'}
+[17.947655] (-) TimerEvent: {}
+[17.948471] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/environment/path.sh\n'}
+[17.949665] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/environment/path.dsv\n'}
+[17.951254] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/local_setup.bash\n'}
+[17.952799] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/local_setup.sh\n'}
+[17.954497] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/local_setup.zsh\n'}
+[17.956066] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/local_setup.dsv\n'}
+[17.957288] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/package.dsv\n'}
+[17.958952] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/ament_index/resource_index/packages/fixposition_driver_ros2\n'}
+[17.960455] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/rosidl_cmake-extras.cmake\n'}
+[17.961750] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.963268] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.964858] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.966066] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.967774] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.969334] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.970984] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/fixposition_driver_ros2Config.cmake\n'}
+[17.972599] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/fixposition_driver_ros2Config-version.cmake\n'}
+[17.974691] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Symlinking: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/package.xml\n'}
+[17.976768] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_generator_c.so\n'}
+[17.977018] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_generator_c.so" to ""\n'}
+[17.977101] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_fastrtps_c.so\n'}
+[17.977284] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.977343] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_fastrtps_cpp.so\n'}
+[17.977542] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[17.977608] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_introspection_c.so\n'}
+[17.977789] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.977845] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_c.so\n'}
+[17.978011] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_c.so" to ""\n'}
+[17.978071] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_introspection_cpp.so\n'}
+[17.978319] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[17.978456] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_cpp.so\n'}
+[17.978544] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_typesupport_cpp.so" to ""\n'}
+[18.001190] (fixposition_driver_ros2) StdoutLine: {'line': b"Listing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2'...\n"}
+[18.001361] (fixposition_driver_ros2) StdoutLine: {'line': b"Compiling '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/__init__.py'...\n"}
+[18.001451] (fixposition_driver_ros2) StdoutLine: {'line': b"Listing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/msg'...\n"}
+[18.001568] (fixposition_driver_ros2) StdoutLine: {'line': b"Compiling '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/msg/__init__.py'...\n"}
+[18.001656] (fixposition_driver_ros2) StdoutLine: {'line': b"Compiling '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/msg/_speed.py'...\n"}
+[18.001701] (fixposition_driver_ros2) StdoutLine: {'line': b"Compiling '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/msg/_vrtk.py'...\n"}
+[18.003888] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_generator_py.so\n'}
+[18.004129] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/lib/libfixposition_driver_ros2__rosidl_generator_py.so" to ""\n'}
+[18.004239] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/export_fixposition_driver_ros2__rosidl_generator_cExport.cmake\n'}
+[18.004320] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/export_fixposition_driver_ros2__rosidl_generator_cExport-release.cmake\n'}
+[18.004402] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/export_fixposition_driver_ros2__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[18.004458] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/export_fixposition_driver_ros2__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[18.004522] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/export_fixposition_driver_ros2__rosidl_generator_cppExport.cmake\n'}
+[18.004589] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/export_fixposition_driver_ros2__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[18.004672] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/export_fixposition_driver_ros2__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[18.004740] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/fixposition_driver_ros2__rosidl_typesupport_introspection_cExport.cmake\n'}
+[18.004808] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/fixposition_driver_ros2__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[18.004888] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/fixposition_driver_ros2__rosidl_typesupport_cExport.cmake\n'}
+[18.005084] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/fixposition_driver_ros2__rosidl_typesupport_cExport-release.cmake\n'}
+[18.005264] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/fixposition_driver_ros2__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[18.005401] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/fixposition_driver_ros2__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[18.005544] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/fixposition_driver_ros2__rosidl_typesupport_cppExport.cmake\n'}
+[18.005705] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/fixposition_driver_ros2__rosidl_typesupport_cppExport-release.cmake\n'}
+[18.005806] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/export_fixposition_driver_ros2__rosidl_generator_pyExport.cmake\n'}
+[18.005865] (fixposition_driver_ros2) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/cmake/export_fixposition_driver_ros2__rosidl_generator_pyExport-release.cmake\n'}
+[18.006876] (fixposition_driver_ros2) CommandEnded: {'returncode': 0}
+[18.018723] (fixposition_driver_ros2) JobEnded: {'identifier': 'fixposition_driver_ros2', 'rc': 0}
+[18.019108] (-) EventReactorShutdown: {}

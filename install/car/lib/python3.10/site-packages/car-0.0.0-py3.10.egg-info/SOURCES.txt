@@ -21,6 +21,9 @@ car/fixposition_map_anchor.py
 car/fixposition_map_odom_static_from_odom.py
 car/fixposition_odom_to_base_link_tf.py
 car/fixposition_reframe.py
+car/fixposition_tf_tree_for_zed.py
+car/fp_poi_map_odom_static_test.py
+car/fp_poi_map_static_from_start.py
 car/frontier_centroid.py
 car/fusion.py
 car/gnss_goal_circuit.py
@@ -87,9 +90,17 @@ launch/display.launch.py
 launch/easy_world.launch.py
 launch/ekf.launch.py
 launch/fixposition_local_j8_urdf.launch.py
+launch/fixposition_local_j8_urdf_fixposition.launch.py
 launch/fixposition_reframe.launch.py
+launch/fixposition_with_zed_fixposition_tf.launch.py
 launch/fixposition_with_zed_no_tf.launch.py
 launch/forest.launch.py
+launch/fp_poi_map_odom_base_link_camera_test.launch.py
+launch/fp_poi_map_odom_base_link_camera_zed_wrapper_test.launch.py
+launch/fp_poi_map_odom_base_link_camera_zed_wrapper_urdf_test.launch.py
+launch/fp_poi_map_odom_base_link_test.launch.py
+launch/fp_poi_map_odom_static_test.launch.py
+launch/fp_poi_map_static_from_start.launch.py
 launch/gazebo.launch.py
 launch/gazebo_empty_world.launch.py
 launch/gazebo_mountain.launch.py

@@ -1,0 +1,7 @@
+[ 11%] Built target gtest
+[ 23%] Built target gtest_main
+[ 52%] Built target laser_segmentation_component
+[ 64%] Built target laser_segmentation
+[ 76%] Built target test_segmentations
+[ 88%] Built target test_laser_segmentation
+[100%] Built target test_integration

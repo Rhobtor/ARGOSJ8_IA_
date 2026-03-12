@@ -211,13 +211,13 @@ def generate_launch_description():
         package='android_ros2_server', executable='tcp_server_node', name='android_server', namespace='ARGJ801', output='log',
         parameters=[global_params, select_params('android_server_node')])
     tf_node_velodyne = Node(
-        package='tf2_ros', executable='static_transform_publisher', name='static_transform_publisher', output='screen',
+        package='tf2_ros', executable='static_transform_publisher', name='static_transform_velodyne', output='screen',
         arguments=['1.99348', '0', '0.27133', '1', '0', '0', '0', yaml_config['ARGJ801']['global_parameters']['robot_frame'], yaml_config['ARGJ801']['global_parameters']['velodyne_frame']])
     laser_segmentation_node = LifecycleNode(
         package='laser_segmentation', namespace='ARGJ801', executable='laser_segmentation', name='laser_segmentation',
         parameters=[global_params, select_params('laser_segmentation')])
     tf_node_sick = Node(
-        package='tf2_ros', executable='static_transform_publisher', name='static_transform_publisher', output='screen',
+        package='tf2_ros', executable='static_transform_publisher', name='static_transform_sick', output='screen',
         arguments=['1.86558', '0', '0.37865', '1', '0', '0', '0', yaml_config['ARGJ801']['global_parameters']['robot_frame'], yaml_config['ARGJ801']['global_parameters']['sick_frame']])
     gui_node = Node(
         package='GUI_pkg', executable='gui_node', name='gui_node', namespace='ARGJ801', output='screen',

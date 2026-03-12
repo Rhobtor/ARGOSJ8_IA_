@@ -2,11 +2,7 @@ circuit1:
   ros__parameters:
 
 
-    goal_points: [78.09,-9.89,0.0,
-                  83.755,-18.155,0.0,
-                  86.182,-23.3,0.0,
-                  88.254,-28.793,0.0,
-                  93.145,-30.6,0.0]  # Coordenadas de la meta en Unity
+    goal_points: [7.333,6.302,0.0,]  # Coordenadas de la meta en Unity
 
     republish_hz: 2.0      # frecuencia a la que re‑publica la meta activa
 

@@ -32,6 +32,22 @@ def generate_launch_description():
     )
     use_lidar_alias = LaunchConfiguration('use_lidar_alias')
 
+    # ======= Compatibilidad con frame "mmap" (si RViz lo usa como Fixed Frame) =======
+    publish_mmap_alias_arg = DeclareLaunchArgument(
+        'publish_mmap_alias',
+        default_value='true',
+        description='Publicar TF estático identidad mmap -> map para conectar ambos árboles'
+    )
+    publish_mmap_alias = LaunchConfiguration('publish_mmap_alias')
+
+    # ======= TF odom -> base_link (solo si NO tienes odometría publicándolo ya) =======
+    publish_static_odom_to_base_arg = DeclareLaunchArgument(
+        'publish_static_odom_to_base',
+        default_value='true',
+        description='Publicar TF estático identidad odom -> base_link (desactívalo si ya existe odom->base_link dinámico)'
+    )
+    publish_static_odom_to_base = LaunchConfiguration('publish_static_odom_to_base')
+
     # ========== NODOS ==========
     # Robot State Publisher (publica TF del URDF)
     robot_state_publisher_node = Node(
@@ -65,14 +81,21 @@ def generate_launch_description():
         output='screen'
     )
 
-    # # odom -> base_link (identidad provisional hasta tener odometría)
-    # odom_base_tf = Node(
-    #     package='tf2_ros',
-    #     executable='static_transform_publisher',
-    #     name='static_odom_to_base',
-    #     arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_link'],
-    #     output='screen'
-    # )
+
+    # odom -> base_link (identidad provisional hasta tener odometría)
+    odom_base_tf = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_odom_to_base',
+        arguments=[
+            '--frame-id', 'odom',
+            '--child-frame-id', 'base_link',
+            '--x', '0', '--y', '0', '--z', '0',
+            '--roll', '0', '--pitch', '0', '--yaw', '0',
+        ],
+        output='screen',
+        condition=IfCondition(publish_static_odom_to_base)
+    )
 
     # base_link -> camera_link (posición tomada del URDF que me pasaste; RPY=0 para mapeo "frame base")
     base_camera_tf = Node(
@@ -94,8 +117,8 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='velodyne_to_lidar_alias',
         arguments=[
-            '--frame-id', 'Velodyne_link',
-            '--child-frame-id', 'lidar_link',
+            '--frame-id', 'base_link',
+            '--child-frame-id', 'Velodyne_link',
             '--x', '0', '--y', '0', '--z', '0',
             '--roll', '0', '--pitch', '0', '--yaw', '0',
         ],
@@ -105,9 +128,12 @@ def generate_launch_description():
 
     return LaunchDescription([
         use_lidar_alias_arg,
+        publish_mmap_alias_arg,
+        publish_static_odom_to_base_arg,
         robot_state_publisher_node,
         joint_state_publisher_node,
         map_odom_tf,
+        odom_base_tf,
         base_camera_tf,
         velodyne_to_lidar_alias,
     ])

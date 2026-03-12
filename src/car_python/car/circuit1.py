@@ -60,9 +60,10 @@ from rclpy.node import Node
 from geometry_msgs.msg import PoseArray, Pose
 from std_msgs.msg import Bool, String, UInt32
 from visualization_msgs.msg import Marker
-from nav_msgs.msg import OccupancyGrid
+from nav_msgs.msg import OccupancyGrid, Odometry
 from rclpy.qos import QoSProfile, ReliabilityPolicy, DurabilityPolicy
 from tf_transformations import quaternion_from_euler
+from tf2_ros import Buffer, TransformListener
 
 # ---------- Umbrales de colisión y búsqueda ----------
 OBSTACLE_COST_TH = 50        # ≥50 ⇒ ocupado
@@ -83,6 +84,11 @@ class SequentialGoalSelector(Node):
         self.declare_parameter('reset_values', ['STUCK'])
         self.declare_parameter('signal_done_on_last', True)
         self.declare_parameter('hold_when_done', True)
+        self.declare_parameter('goal_points_relative_to_robot', False)
+        self.declare_parameter('relative_goal_anchor_mode', 'startup')
+        self.declare_parameter('relative_pose_frame', 'base_link')
+        self.declare_parameter('use_tf_for_relative_goals', True)
+        self.declare_parameter('odom_topic', '/fixposition/odometry_enu')
 
         raw_points = (
             self.get_parameter('goal_points').get_parameter_value()
@@ -110,11 +116,25 @@ class SequentialGoalSelector(Node):
         self.reset_values           = list(self.get_parameter('reset_values').value)
         self.signal_done_on_last    = bool(self.get_parameter('signal_done_on_last').value)
         self.hold_when_done         = bool(self.get_parameter('hold_when_done').value)
+        self.goal_points_relative   = bool(self.get_parameter('goal_points_relative_to_robot').value)
+        self.relative_anchor_mode   = str(self.get_parameter('relative_goal_anchor_mode').value).strip().lower()
+        self.relative_pose_frame    = str(self.get_parameter('relative_pose_frame').value).strip()
+        self.use_tf_relative_goals  = bool(self.get_parameter('use_tf_for_relative_goals').value)
+        self.odom_topic             = str(self.get_parameter('odom_topic').value)
+
+        if self.relative_anchor_mode not in {'startup', 'current'}:
+            self.get_logger().warn(
+                f"relative_goal_anchor_mode='{self.relative_anchor_mode}' inválido; usando 'startup'."
+            )
+            self.relative_anchor_mode = 'startup'
 
         hz = float(self.get_parameter('republish_hz').value)
         if hz <= 0:
             hz = 2.0
             self.get_logger().warn('republish_hz <= 0; usando 2.0 Hz por defecto.')
+
+        self._tf_buffer = Buffer()
+        self._tf_listener = TransformListener(self._tf_buffer, self)
 
         # --- QoS ---
         qos_done = QoSProfile(depth=1,
@@ -125,6 +145,7 @@ class SequentialGoalSelector(Node):
         self.map_sub = self.create_subscription(OccupancyGrid, '/occupancy_grid', self.map_cb, 10)
         self.goal_reached_sub = self.create_subscription(Bool, 'goal_reached', self.goal_reached_cb, 10)
         self.episode_done_sub = self.create_subscription(String, '/env/episode_done', self.episode_done_cb, 10)
+        self.odom_sub = self.create_subscription(Odometry, self.odom_topic, self.odom_cb, 10)
 
         # --- Publicadores ---
         self.goal_pub   = self.create_publisher(PoseArray, 'goal', 10)
@@ -143,8 +164,18 @@ class SequentialGoalSelector(Node):
         self.grid_info = None
         self.visited = 0
         self.done_signaled = False
+        self.latest_odom_pose: Pose | None = None
+        self.relative_anchor_pose: Pose | None = None
+        self._relative_pose_warning_emitted = False
 
-        self.get_logger().info(f"✔️  Cargados {len(self.points)} puntos. Inicio en el punto #0.")
+        mode_msg = 'absolutos en map'
+        if self.goal_points_relative:
+            mode_msg = (
+                f"relativos a '{self.relative_pose_frame}' y anclados en modo '{self.relative_anchor_mode}'"
+            )
+        self.get_logger().info(
+            f"✔️  Cargados {len(self.points)} puntos ({mode_msg}). Inicio en el punto #0."
+        )
         self.publish_index(self.idx, initial=True)
 
     # ==================== Callbacks ====================
@@ -189,15 +220,23 @@ class SequentialGoalSelector(Node):
             self.get_logger().info(f"🔄 Reset por episodio: '{msg.data}'. Volviendo al primer punto…")
             self.reset_circuit()
 
+    def odom_cb(self, msg: Odometry):
+        self.latest_odom_pose = self.copy_pose(msg.pose.pose)
+
     def timer_cb(self):
         if self.goal_active and self.current_goal:
             self.publish_pose(self.current_goal)
+        elif self.goal_points_relative and self.current_goal is None and self.points:
+            # Si el circuito arrancó antes de tener pose/TF, reintenta publicar la meta actual.
+            self.publish_index(self.idx)
 
     # ==================== Lógica de circuito ====================
     def reset_circuit(self):
         self.idx = 0
         self.visited = 0
         self.done_signaled = False
+        if self.goal_points_relative and self.relative_anchor_mode == 'startup':
+            self.relative_anchor_pose = None
         self.publish_index(self.idx)
 
     def advance_to_next(self):
@@ -215,11 +254,32 @@ class SequentialGoalSelector(Node):
         self.publish_index(self.idx)
 
     def publish_index(self, index: int, initial: bool = False):
-        base_pose = self.copy_pose(self.points[index])
-        if self.compute_yaw_from_path and len(self.points) >= 2:
+        raw_base_pose = self.copy_pose(self.points[index])
+        raw_next_pose = None
+        if len(self.points) >= 2:
             nxt = (index + 1) % len(self.points) if self.loop else min(index + 1, len(self.points) - 1)
-            yaw = math.atan2(self.points[nxt].position.y - base_pose.position.y,
-                             self.points[nxt].position.x - base_pose.position.x)
+            raw_next_pose = self.copy_pose(self.points[nxt])
+
+        reference_pose = self.get_reference_pose_for_relative_goals()
+        if self.goal_points_relative:
+            if reference_pose is None:
+                if not initial:
+                    self.get_logger().warn('Aún no hay pose del robot para transformar goal_points relativos.')
+                self.goal_active = False
+                self.current_goal = None
+                return
+            base_pose = self.transform_relative_goal_to_map(raw_base_pose, reference_pose)
+            next_pose = (
+                self.transform_relative_goal_to_map(raw_next_pose, reference_pose)
+                if raw_next_pose is not None else None
+            )
+        else:
+            base_pose = raw_base_pose
+            next_pose = raw_next_pose
+
+        if self.compute_yaw_from_path and next_pose is not None:
+            yaw = math.atan2(next_pose.position.y - base_pose.position.y,
+                             next_pose.position.x - base_pose.position.x)
             qx, qy, qz, qw = quaternion_from_euler(0.0, 0.0, yaw)
             base_pose.orientation.x, base_pose.orientation.y, base_pose.orientation.z, base_pose.orientation.w = qx, qy, qz, qw
 
@@ -237,9 +297,15 @@ class SequentialGoalSelector(Node):
         self.publish_pose(pose_to_publish)
 
         if not initial:
-            self.get_logger().info(
-                f"➡️  Meta #{index} publicada: x={pose_to_publish.position.x:.2f}, "
-                f"y={pose_to_publish.position.y:.2f}, z={pose_to_publish.position.z:.2f}")
+            if self.goal_points_relative:
+                self.get_logger().info(
+                    f"➡️  Meta relativa #{index} -> map: raw=({raw_base_pose.position.x:.2f}, {raw_base_pose.position.y:.2f}, {raw_base_pose.position.z:.2f}) "
+                    f"=> map=({pose_to_publish.position.x:.2f}, {pose_to_publish.position.y:.2f}, {pose_to_publish.position.z:.2f})"
+                )
+            else:
+                self.get_logger().info(
+                    f"➡️  Meta #{index} publicada: x={pose_to_publish.position.x:.2f}, "
+                    f"y={pose_to_publish.position.y:.2f}, z={pose_to_publish.position.z:.2f}")
 
     # ==================== Publicación ====================
     def publish_pose(self, pose: Pose):
@@ -334,13 +400,88 @@ class SequentialGoalSelector(Node):
         return None
 
     # ==================== Miscelánea ====================
+    def get_reference_pose_for_relative_goals(self) -> Pose | None:
+        if not self.goal_points_relative:
+            return None
+
+        if self.relative_anchor_mode == 'startup' and self.relative_anchor_pose is not None:
+            return self.copy_pose(self.relative_anchor_pose)
+
+        current_pose = self.lookup_robot_pose_in_goal_frame()
+        if current_pose is None:
+            return None
+
+        if self.relative_anchor_mode == 'startup' and self.relative_anchor_pose is None:
+            self.relative_anchor_pose = self.copy_pose(current_pose)
+            self.get_logger().info(
+                f"📍 Anclando goal_points relativos en {self.frame_id}: "
+                f"x={current_pose.position.x:.2f}, y={current_pose.position.y:.2f}, z={current_pose.position.z:.2f}"
+            )
+
+        return self.copy_pose(self.relative_anchor_pose if self.relative_anchor_mode == 'startup' else current_pose)
+
+    def lookup_robot_pose_in_goal_frame(self) -> Pose | None:
+        if self.use_tf_relative_goals and self.relative_pose_frame and self.relative_pose_frame != self.frame_id:
+            try:
+                tf = self._tf_buffer.lookup_transform(
+                    self.frame_id,
+                    self.relative_pose_frame,
+                    rclpy.time.Time(),
+                )
+                pose = Pose()
+                pose.position.x = float(tf.transform.translation.x)
+                pose.position.y = float(tf.transform.translation.y)
+                pose.position.z = float(tf.transform.translation.z)
+                pose.orientation.x = float(tf.transform.rotation.x)
+                pose.orientation.y = float(tf.transform.rotation.y)
+                pose.orientation.z = float(tf.transform.rotation.z)
+                pose.orientation.w = float(tf.transform.rotation.w)
+                return pose
+            except Exception as ex:
+                if not self._relative_pose_warning_emitted:
+                    self.get_logger().warn(
+                        f"No TF {self.frame_id}<-{self.relative_pose_frame}; usando fallback odom si existe. ({ex})"
+                    )
+                    self._relative_pose_warning_emitted = True
+
+        if self.latest_odom_pose is None:
+            return None
+
+        return self.copy_pose(self.latest_odom_pose)
+
+    def transform_relative_goal_to_map(self, relative_pose: Pose, reference_pose: Pose) -> Pose:
+        yaw = self.yaw_from_pose(reference_pose)
+        c = math.cos(yaw)
+        s = math.sin(yaw)
+
+        out = self.copy_pose(relative_pose)
+        rx = float(relative_pose.position.x)
+        ry = float(relative_pose.position.y)
+
+        out.position.x = float(reference_pose.position.x + (c * rx - s * ry))
+        out.position.y = float(reference_pose.position.y + (s * rx + c * ry))
+        out.position.z = float(reference_pose.position.z + relative_pose.position.z)
+        out.orientation = reference_pose.orientation
+        return out
+
+    @staticmethod
+    def yaw_from_pose(pose: Pose) -> float:
+        q = pose.orientation
+        return math.atan2(
+            2.0 * (float(q.w) * float(q.z) + float(q.x) * float(q.y)),
+            1.0 - 2.0 * (float(q.y) * float(q.y) + float(q.z) * float(q.z)),
+        )
+
     @staticmethod
     def copy_pose(p: Pose) -> Pose:
         q = Pose()
         q.position.x = p.position.x
         q.position.y = p.position.y
         q.position.z = p.position.z
-        q.orientation = p.orientation
+        q.orientation.x = p.orientation.x
+        q.orientation.y = p.orientation.y
+        q.orientation.z = p.orientation.z
+        q.orientation.w = p.orientation.w
         return q
 
 

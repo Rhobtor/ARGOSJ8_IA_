@@ -1,0 +1,1 @@
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/car_python/launch/fp_poi_map_static_from_start.launch.py

@@ -1,0 +1,410 @@
+[0.000000] (-) TimerEvent: {}
+[0.000144] (-) JobUnselected: {'identifier': 'GUI_pkg'}
+[0.000256] (-) JobUnselected: {'identifier': 'android_ros2_server'}
+[0.000269] (-) JobUnselected: {'identifier': 'argj801_ctl_platform'}
+[0.000279] (-) JobUnselected: {'identifier': 'argj801_ctl_platform_interfaces'}
+[0.000288] (-) JobUnselected: {'identifier': 'argj801_sensors'}
+[0.000298] (-) JobUnselected: {'identifier': 'argj801_sensors_msgs'}
+[0.000307] (-) JobUnselected: {'identifier': 'argj801_setup'}
+[0.000316] (-) JobUnselected: {'identifier': 'car_cpp'}
+[0.000324] (-) JobUnselected: {'identifier': 'car_interfaces'}
+[0.000333] (-) JobUnselected: {'identifier': 'ctl_mission'}
+[0.000342] (-) JobUnselected: {'identifier': 'ctl_mission_interfaces'}
+[0.000350] (-) JobUnselected: {'identifier': 'fixposition_driver_lib'}
+[0.000359] (-) JobUnselected: {'identifier': 'fixposition_driver_ros2'}
+[0.000367] (-) JobUnselected: {'identifier': 'fixposition_gnss_tf'}
+[0.000376] (-) JobUnselected: {'identifier': 'fixposition_odometry_converter_ros2'}
+[0.000385] (-) JobUnselected: {'identifier': 'fixposition_sensor_pkg'}
+[0.000394] (-) JobUnselected: {'identifier': 'hector_gazebo_plugins'}
+[0.000403] (-) JobUnselected: {'identifier': 'j8_gui'}
+[0.000412] (-) JobUnselected: {'identifier': 'j8_xacro_model'}
+[0.000421] (-) JobUnselected: {'identifier': 'joy'}
+[0.000433] (-) JobUnselected: {'identifier': 'joy_linux'}
+[0.000441] (-) JobUnselected: {'identifier': 'laser_segmentation'}
+[0.000450] (-) JobUnselected: {'identifier': 'ntrip_client'}
+[0.000459] (-) JobUnselected: {'identifier': 'path_manager'}
+[0.000468] (-) JobUnselected: {'identifier': 'path_manager_interfaces'}
+[0.000477] (-) JobUnselected: {'identifier': 'sdl2_vendor'}
+[0.000486] (-) JobUnselected: {'identifier': 'security_check'}
+[0.000496] (-) JobUnselected: {'identifier': 'security_check_interfaces'}
+[0.000516] (-) JobUnselected: {'identifier': 'slg_msgs'}
+[0.000547] (-) JobUnselected: {'identifier': 'spacenav'}
+[0.000560] (-) JobUnselected: {'identifier': 'ublox'}
+[0.000569] (-) JobUnselected: {'identifier': 'ublox_gps'}
+[0.000579] (-) JobUnselected: {'identifier': 'ublox_msgs'}
+[0.000588] (-) JobUnselected: {'identifier': 'ublox_serialization'}
+[0.000597] (-) JobUnselected: {'identifier': 'wiimote_msgs'}
+[0.000608] (car) JobQueued: {'identifier': 'car', 'dependencies': OrderedDict([('argj801_ctl_platform_interfaces', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces'), ('car_interfaces', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces')])}
+[0.000795] (car) JobStarted: {'identifier': 'car'}
+[0.099853] (-) TimerEvent: {}
+[0.200099] (-) TimerEvent: {}
+[0.300344] (-) TimerEvent: {}
+[0.400568] (-) TimerEvent: {}
+[0.500795] (-) TimerEvent: {}
+[0.601050] (-) TimerEvent: {}
+[0.634053] (car) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_JDWP_ADAPTER_ENDPOINTS': '/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt', 'CUDACXX': '/usr/local/cuda/bin/nvcc', 'USER': 'rhobtor', 'LC_TIME': 'en_GB.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/lib:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/local/cuda/lib64:/usr/local/cuda/lib64:/usr/local/cuda-12.1/lib64:/usr/local/cuda-11.8/lib64:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/rhobtor', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.109.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GRADLE_HOME': '/home/rhobtor/.sdkman/candidates/gradle/current', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_GB.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1637', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '1931', 'BUNDLED_DEBUGPY_PATH': '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '8825', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'rhobtor', 'SDKMAN_CANDIDATES_API': 'https://api.sdkman.io/2', 'JOURNAL_STREAM': '8:1999', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rhobtor', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'ROS_LOCALHOST_ONLY': '0', 'HISTCONTROL': 'ignorespace', 'WINDOWPATH': '2', 'PATH': '/usr/local/cuda/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-core-1.1.0/resources/binaries/linux/x86_64:/home/rhobtor/.vscode/extensions/stmicroelectronics.stm32cube-ide-build-cmake-1.43.0/resources/cube-cmake/linux:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/usr/local/cuda/bin:/home/rhobtor/.sdkman/candidates/gradle/current/bin:/usr/local/cuda/bin:/usr/local/cuda-12.1/bin:/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/lib/dotnet/dotnet:/home/rhobtor/.local/bin:/opt/st/stm32cubeclt_1.18.0:/opt/st/stm32cubeclt_1.18.0/STM32CubeProgrammer/bin:/opt/st/stm32cubeclt_1.18.0/STLink-gdb-server/bin:/opt/st/stm32cubeclt_1.18.0/CMake/bin:/opt/st/stm32cubeclt_1.18.0/Ninja/bin:/opt/st/stm32cubeclt_1.18.0/GNU-tools-for-STM32/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/rhobtor/.dotnet/tools:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c:/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/rhobtor/.vscode/extensions/vscjava.vscode-java-debug-0.58.5/bundled/scripts/noConfigScripts:/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c', 'SESSION_MANAGER': 'local/rhobtor-laptop:@/tmp/.ICE-unix/1903,unix/rhobtor-laptop:/tmp/.ICE-unix/1903', 'SDKMAN_CANDIDATES_DIR': '/home/rhobtor/.sdkman/candidates', 'INVOCATION_ID': 'd40100ea118d4c78bccb56ac9edc054b', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_GB.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'RVIZ_PLUGIN_PATH': ':/opt/ros/humble/lib:/opt/ros/humble/lib', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-7b2e1197747a3554.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/rhobtor/.config/Code/User/workspaceStorage/1c32105a34b1c46be90505797aea9c65/ms-python.python/pythonrc.py', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/rhobtor/.cache/dotnet_bundle_extract', 'LC_TELEPHONE': 'en_GB.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-0e8065a9e0.sock', 'SDKMAN_DIR': '/home/rhobtor/.sdkman', 'SDKMAN_PLATFORM': 'linuxx64', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces:/opt/ros/humble', 'LC_MESSAGES': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LC_NAME': 'en_GB.UTF-8', 'VSCODE_JAVA_EXEC': '/usr/lib/jvm/java-11-openjdk-amd64/bin/java', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_GB.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'en_GB.UTF-8', 'ANDROID_SDK_ROOT': '/home/rhobtor/Android/Sdk', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car', 'LC_ALL': 'en_US.UTF-8', 'CUDA_HOME': '/usr/local/cuda', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/local/lib/python3.10/dist-packages:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'en_GB.UTF-8', 'ANDROID_NDK': '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c', 'LC_PAPER': 'en_GB.UTF-8', 'COLCON': '1', 'ANDROID_NDK_HOME': '/home/rhobtor/Android/Sdk/ndk/android-ndk-r27c', 'CMAKE_PREFIX_PATH': '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces'}, 'shell': False}
+[0.701134] (-) TimerEvent: {}
+[0.755617] (car) StderrLine: {'line': b"/home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'\n"}
+[0.755765] (car) StderrLine: {'line': b'  warnings.warn(msg)\n'}
+[0.778830] (car) StdoutLine: {'line': b'running develop\n'}
+[0.778982] (car) StdoutLine: {'line': b'running install\n'}
+[0.801212] (-) TimerEvent: {}
+[0.806487] (car) StdoutLine: {'line': b'running build\n'}
+[0.806665] (car) StdoutLine: {'line': b'running build_py\n'}
+[0.818848] (car) StdoutLine: {'line': b'copying car/latlon_circuit.py -> build/lib/car\n'}
+[0.819028] (car) StdoutLine: {'line': b'copying car/points_goal_old.py -> build/lib/car\n'}
+[0.819151] (car) StdoutLine: {'line': b'copying car/keyboard_control.py -> build/lib/car\n'}
+[0.819256] (car) StdoutLine: {'line': b'copying car/memory_map.py -> build/lib/car\n'}
+[0.819356] (car) StdoutLine: {'line': b'copying car/path_ppo_cnn_lstm_full_model.py -> build/lib/car\n'}
+[0.819483] (car) StdoutLine: {'line': b'copying car/j8_test_ppo.py -> build/lib/car\n'}
+[0.819790] (car) StdoutLine: {'line': b'copying car/scape_test.py -> build/lib/car\n'}
+[0.819958] (car) StdoutLine: {'line': b'copying car/movement_predictive.py -> build/lib/car\n'}
+[0.820066] (car) StdoutLine: {'line': b'copying car/cmd_vel_to_throttle.py -> build/lib/car\n'}
+[0.820157] (car) StdoutLine: {'line': b'copying car/goal_local_marker.py -> build/lib/car\n'}
+[0.820244] (car) StdoutLine: {'line': b'copying car/gnss_goal_circuit.py -> build/lib/car\n'}
+[0.820330] (car) StdoutLine: {'line': b'copying car/navsatfix_to_ecef.py -> build/lib/car\n'}
+[0.820416] (car) StdoutLine: {'line': b'copying car/lidar_obstacle_detection.py -> build/lib/car\n'}
+[0.820501] (car) StdoutLine: {'line': b'copying car/voxel_unity.py -> build/lib/car\n'}
+[0.820584] (car) StdoutLine: {'line': b'copying car/check_goal_gnss.py -> build/lib/car\n'}
+[0.820667] (car) StdoutLine: {'line': b'copying car/test_octomap.py -> build/lib/car\n'}
+[0.820749] (car) StdoutLine: {'line': b'copying car/frontier_centroid.py -> build/lib/car\n'}
+[0.820864] (car) StdoutLine: {'line': b'copying car/fixposition_map_anchor.py -> build/lib/car\n'}
+[0.820969] (car) StdoutLine: {'line': b'copying car/fixposition_local_tf_from_odom.py -> build/lib/car\n'}
+[0.821143] (car) StdoutLine: {'line': b'copying car/j8_bueno.py -> build/lib/car\n'}
+[0.821386] (car) StdoutLine: {'line': b'copying car/colision_zone.py -> build/lib/car\n'}
+[0.821494] (car) StdoutLine: {'line': b'copying car/supervisor_circuit.py -> build/lib/car\n'}
+[0.821580] (car) StdoutLine: {'line': b'copying car/backup_model_ppo_cnn_lstm.py -> build/lib/car\n'}
+[0.821684] (car) StdoutLine: {'line': b'copying car/odom_to_tf.py -> build/lib/car\n'}
+[0.821770] (car) StdoutLine: {'line': b'copying car/inference_full_model.py -> build/lib/car\n'}
+[0.821908] (car) StdoutLine: {'line': b'copying car/prior_map_builder.py -> build/lib/car\n'}
+[0.822039] (car) StdoutLine: {'line': b'copying car/inference_j8.py -> build/lib/car\n'}
+[0.822141] (car) StdoutLine: {'line': b'copying car/__init__.py -> build/lib/car\n'}
+[0.822216] (car) StdoutLine: {'line': b'copying car/latlon_posearray_to_local.py -> build/lib/car\n'}
+[0.822321] (car) StdoutLine: {'line': b'copying car/fixposition_map_odom_static_from_odom.py -> build/lib/car\n'}
+[0.822411] (car) StdoutLine: {'line': b'copying car/inference_training_mode_simple.py -> build/lib/car\n'}
+[0.822524] (car) StdoutLine: {'line': b'copying car/joystick_control.py -> build/lib/car\n'}
+[0.822602] (car) StdoutLine: {'line': b'copying car/planificador_script.py -> build/lib/car\n'}
+[0.822702] (car) StdoutLine: {'line': b'copying car/map_test_navigation_hgh.py -> build/lib/car\n'}
+[0.822796] (car) StdoutLine: {'line': b'copying car/circuit1.py -> build/lib/car\n'}
+[0.822896] (car) StdoutLine: {'line': b'copying car/fixposition_reframe.py -> build/lib/car\n'}
+[0.822989] (car) StdoutLine: {'line': b'copying car/points_goal.py -> build/lib/car\n'}
+[0.823093] (car) StdoutLine: {'line': b'copying car/path_ppo_cnn_lstm_training_init_mode_j8.py -> build/lib/car\n'}
+[0.823229] (car) StdoutLine: {'line': b'copying car/fixposition_tf_tree_for_zed.py -> build/lib/car\n'}
+[0.823329] (car) StdoutLine: {'line': b'copying car/map_navegation.py -> build/lib/car\n'}
+[0.823429] (car) StdoutLine: {'line': b'copying car/fixposition_odom_to_base_link_tf.py -> build/lib/car\n'}
+[0.823519] (car) StdoutLine: {'line': b'copying car/test_vel.py -> build/lib/car\n'}
+[0.823606] (car) StdoutLine: {'line': b'copying car/zed_static_tf_tree.py -> build/lib/car\n'}
+[0.823693] (car) StdoutLine: {'line': b'copying car/supervisor.py -> build/lib/car\n'}
+[0.823778] (car) StdoutLine: {'line': b'copying car/costmap.py -> build/lib/car\n'}
+[0.823872] (car) StdoutLine: {'line': b'copying car/navsatfix_goal_to_map_pose.py -> build/lib/car\n'}
+[0.823960] (car) StdoutLine: {'line': b'copying car/unity_goal.py -> build/lib/car\n'}
+[0.824045] (car) StdoutLine: {'line': b'copying car/path_ppo_cnn_lstm_training_init_mode.py -> build/lib/car\n'}
+[0.824145] (car) StdoutLine: {'line': b'copying car/path_ppo_cnn_lstm_training_init_mode_simple.py -> build/lib/car\n'}
+[0.824252] (car) StdoutLine: {'line': b'copying car/latlon_posearray_to_local_utm.py -> build/lib/car\n'}
+[0.824359] (car) StdoutLine: {'line': b'copying car/inference_test_j8.py -> build/lib/car\n'}
+[0.824459] (car) StdoutLine: {'line': b'copying car/filter_points_cloud.py -> build/lib/car\n'}
+[0.824542] (car) StdoutLine: {'line': b'copying car/test_j8_old.py -> build/lib/car\n'}
+[0.824664] (car) StdoutLine: {'line': b'copying car/fusion.py -> build/lib/car\n'}
+[0.824757] (car) StdoutLine: {'line': b'copying car/j8_policy.py -> build/lib/car\n'}
+[0.825590] (car) StdoutLine: {'line': b'running install_lib\n'}
+[0.837209] (car) StdoutLine: {'line': b'copying build/lib/car/latlon_circuit.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837367] (car) StdoutLine: {'line': b'copying build/lib/car/points_goal_old.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837441] (car) StdoutLine: {'line': b'copying build/lib/car/keyboard_control.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837479] (car) StdoutLine: {'line': b'copying build/lib/car/memory_map.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837523] (car) StdoutLine: {'line': b'copying build/lib/car/path_ppo_cnn_lstm_full_model.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837580] (car) StdoutLine: {'line': b'copying build/lib/car/j8_test_ppo.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837704] (car) StdoutLine: {'line': b'copying build/lib/car/scape_test.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837761] (car) StdoutLine: {'line': b'copying build/lib/car/movement_predictive.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837822] (car) StdoutLine: {'line': b'copying build/lib/car/cmd_vel_to_throttle.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837883] (car) StdoutLine: {'line': b'copying build/lib/car/goal_local_marker.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837933] (car) StdoutLine: {'line': b'copying build/lib/car/gnss_goal_circuit.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.837983] (car) StdoutLine: {'line': b'copying build/lib/car/navsatfix_to_ecef.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838031] (car) StdoutLine: {'line': b'copying build/lib/car/lidar_obstacle_detection.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838082] (car) StdoutLine: {'line': b'copying build/lib/car/voxel_unity.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838137] (car) StdoutLine: {'line': b'copying build/lib/car/check_goal_gnss.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838191] (car) StdoutLine: {'line': b'copying build/lib/car/test_octomap.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838242] (car) StdoutLine: {'line': b'copying build/lib/car/frontier_centroid.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838304] (car) StdoutLine: {'line': b'copying build/lib/car/fixposition_map_anchor.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838359] (car) StdoutLine: {'line': b'copying build/lib/car/fixposition_local_tf_from_odom.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838417] (car) StdoutLine: {'line': b'copying build/lib/car/j8_bueno.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838580] (car) StdoutLine: {'line': b'copying build/lib/car/colision_zone.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838634] (car) StdoutLine: {'line': b'copying build/lib/car/supervisor_circuit.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838686] (car) StdoutLine: {'line': b'copying build/lib/car/backup_model_ppo_cnn_lstm.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838749] (car) StdoutLine: {'line': b'copying build/lib/car/odom_to_tf.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838801] (car) StdoutLine: {'line': b'copying build/lib/car/inference_full_model.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838866] (car) StdoutLine: {'line': b'copying build/lib/car/prior_map_builder.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838924] (car) StdoutLine: {'line': b'copying build/lib/car/inference_j8.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.838987] (car) StdoutLine: {'line': b'copying build/lib/car/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839056] (car) StdoutLine: {'line': b'copying build/lib/car/latlon_posearray_to_local.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839125] (car) StdoutLine: {'line': b'copying build/lib/car/fixposition_map_odom_static_from_odom.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839189] (car) StdoutLine: {'line': b'copying build/lib/car/inference_training_mode_simple.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839238] (car) StdoutLine: {'line': b'copying build/lib/car/joystick_control.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839288] (car) StdoutLine: {'line': b'copying build/lib/car/planificador_script.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839351] (car) StdoutLine: {'line': b'copying build/lib/car/map_test_navigation_hgh.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839411] (car) StdoutLine: {'line': b'copying build/lib/car/circuit1.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839467] (car) StdoutLine: {'line': b'copying build/lib/car/fixposition_reframe.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839519] (car) StdoutLine: {'line': b'copying build/lib/car/points_goal.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839587] (car) StdoutLine: {'line': b'copying build/lib/car/path_ppo_cnn_lstm_training_init_mode_j8.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839684] (car) StdoutLine: {'line': b'copying build/lib/car/fixposition_tf_tree_for_zed.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839758] (car) StdoutLine: {'line': b'copying build/lib/car/map_navegation.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839846] (car) StdoutLine: {'line': b'copying build/lib/car/fixposition_odom_to_base_link_tf.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839899] (car) StdoutLine: {'line': b'copying build/lib/car/test_vel.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.839953] (car) StdoutLine: {'line': b'copying build/lib/car/zed_static_tf_tree.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840005] (car) StdoutLine: {'line': b'copying build/lib/car/supervisor.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840082] (car) StdoutLine: {'line': b'copying build/lib/car/costmap.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840126] (car) StdoutLine: {'line': b'copying build/lib/car/navsatfix_goal_to_map_pose.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840168] (car) StdoutLine: {'line': b'copying build/lib/car/unity_goal.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840213] (car) StdoutLine: {'line': b'copying build/lib/car/path_ppo_cnn_lstm_training_init_mode.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840285] (car) StdoutLine: {'line': b'copying build/lib/car/path_ppo_cnn_lstm_training_init_mode_simple.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840350] (car) StdoutLine: {'line': b'copying build/lib/car/latlon_posearray_to_local_utm.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840408] (car) StdoutLine: {'line': b'copying build/lib/car/inference_test_j8.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840478] (car) StdoutLine: {'line': b'copying build/lib/car/filter_points_cloud.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840529] (car) StdoutLine: {'line': b'copying build/lib/car/test_j8_old.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840712] (car) StdoutLine: {'line': b'copying build/lib/car/fusion.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.840863] (car) StdoutLine: {'line': b'copying build/lib/car/j8_policy.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car\n'}
+[0.841472] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/latlon_circuit.py to latlon_circuit.cpython-310.pyc\n'}
+[0.842550] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/points_goal_old.py to points_goal_old.cpython-310.pyc\n'}
+[0.843631] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/keyboard_control.py to keyboard_control.cpython-310.pyc\n'}
+[0.844567] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/memory_map.py to memory_map.cpython-310.pyc\n'}
+[0.845027] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/path_ppo_cnn_lstm_full_model.py to path_ppo_cnn_lstm_full_model.cpython-310.pyc\n'}
+[0.850526] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/j8_test_ppo.py to j8_test_ppo.cpython-310.pyc\n'}
+[0.861631] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/scape_test.py to scape_test.cpython-310.pyc\n'}
+[0.863504] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/movement_predictive.py to movement_predictive.cpython-310.pyc\n'}
+[0.864613] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/cmd_vel_to_throttle.py to cmd_vel_to_throttle.cpython-310.pyc\n'}
+[0.865313] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/goal_local_marker.py to goal_local_marker.cpython-310.pyc\n'}
+[0.865986] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/gnss_goal_circuit.py to gnss_goal_circuit.cpython-310.pyc\n'}
+[0.866876] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/navsatfix_to_ecef.py to navsatfix_to_ecef.cpython-310.pyc\n'}
+[0.867398] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/lidar_obstacle_detection.py to lidar_obstacle_detection.cpython-310.pyc\n'}
+[0.868314] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/voxel_unity.py to voxel_unity.cpython-310.pyc\n'}
+[0.869397] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/check_goal_gnss.py to check_goal_gnss.cpython-310.pyc\n'}
+[0.870123] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/test_octomap.py to test_octomap.cpython-310.pyc\n'}
+[0.870549] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/frontier_centroid.py to frontier_centroid.cpython-310.pyc\n'}
+[0.871774] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/fixposition_map_anchor.py to fixposition_map_anchor.cpython-310.pyc\n'}
+[0.873447] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/fixposition_local_tf_from_odom.py to fixposition_local_tf_from_odom.cpython-310.pyc\n'}
+[0.875342] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/j8_bueno.py to j8_bueno.cpython-310.pyc\n'}
+[0.883365] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/colision_zone.py to colision_zone.cpython-310.pyc\n'}
+[0.883986] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/supervisor_circuit.py to supervisor_circuit.cpython-310.pyc\n'}
+[0.884869] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/backup_model_ppo_cnn_lstm.py to backup_model_ppo_cnn_lstm.cpython-310.pyc\n'}
+[0.888443] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/odom_to_tf.py to odom_to_tf.cpython-310.pyc\n'}
+[0.888987] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/inference_full_model.py to inference_full_model.cpython-310.pyc\n'}
+[0.890936] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/prior_map_builder.py to prior_map_builder.cpython-310.pyc\n'}
+[0.892133] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/inference_j8.py to inference_j8.cpython-310.pyc\n'}
+[0.893764] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/__init__.py to __init__.cpython-310.pyc\n'}
+[0.893859] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/latlon_posearray_to_local.py to latlon_posearray_to_local.cpython-310.pyc\n'}
+[0.895830] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/fixposition_map_odom_static_from_odom.py to fixposition_map_odom_static_from_odom.cpython-310.pyc\n'}
+[0.897272] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/inference_training_mode_simple.py to inference_training_mode_simple.cpython-310.pyc\n'}
+[0.898964] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/joystick_control.py to joystick_control.cpython-310.pyc\n'}
+[0.899364] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/planificador_script.py to planificador_script.cpython-310.pyc\n'}
+[0.901302] (-) TimerEvent: {}
+[0.902125] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/map_test_navigation_hgh.py to map_test_navigation_hgh.cpython-310.pyc\n'}
+[0.903768] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/circuit1.py to circuit1.cpython-310.pyc\n'}
+[0.905305] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/fixposition_reframe.py to fixposition_reframe.cpython-310.pyc\n'}
+[0.905934] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/points_goal.py to points_goal.cpython-310.pyc\n'}
+[0.907332] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/path_ppo_cnn_lstm_training_init_mode_j8.py to path_ppo_cnn_lstm_training_init_mode_j8.cpython-310.pyc\n'}
+[0.916067] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/fixposition_tf_tree_for_zed.py to fixposition_tf_tree_for_zed.cpython-310.pyc\n'}
+[0.918090] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/map_navegation.py to map_navegation.cpython-310.pyc\n'}
+[0.919159] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/fixposition_odom_to_base_link_tf.py to fixposition_odom_to_base_link_tf.cpython-310.pyc\n'}
+[0.920593] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/test_vel.py to test_vel.cpython-310.pyc\n'}
+[0.921324] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/zed_static_tf_tree.py to zed_static_tf_tree.cpython-310.pyc\n'}
+[0.921945] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/supervisor.py to supervisor.cpython-310.pyc\n'}
+[0.922558] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/costmap.py to costmap.cpython-310.pyc\n'}
+[0.923043] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/navsatfix_goal_to_map_pose.py to navsatfix_goal_to_map_pose.cpython-310.pyc\n'}
+[0.923831] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/unity_goal.py to unity_goal.cpython-310.pyc\n'}
+[0.924303] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/path_ppo_cnn_lstm_training_init_mode.py to path_ppo_cnn_lstm_training_init_mode.cpython-310.pyc\n'}
+[0.928121] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/path_ppo_cnn_lstm_training_init_mode_simple.py to path_ppo_cnn_lstm_training_init_mode_simple.cpython-310.pyc\n'}
+[0.932019] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/latlon_posearray_to_local_utm.py to latlon_posearray_to_local_utm.cpython-310.pyc\n'}
+[0.934313] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/inference_test_j8.py to inference_test_j8.cpython-310.pyc\n'}
+[0.937477] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/filter_points_cloud.py to filter_points_cloud.cpython-310.pyc\n'}
+[0.938012] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/test_j8_old.py to test_j8_old.cpython-310.pyc\n'}
+[0.945617] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/fusion.py to fusion.cpython-310.pyc\n'}
+[0.946822] (car) StdoutLine: {'line': b'byte-compiling /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car/j8_policy.py to j8_policy.cpython-310.pyc\n'}
+[0.954592] (car) StdoutLine: {'line': b'running install_data\n'}
+[0.965909] (car) StdoutLine: {'line': b'copying resource/car -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/ament_index/resource_index/packages\n'}
+[0.966063] (car) StdoutLine: {'line': b'copying package.xml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car\n'}
+[0.966184] (car) StdoutLine: {'line': b'copying launch/gazebo.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.966270] (car) StdoutLine: {'line': b'copying launch/ekf.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.966346] (car) StdoutLine: {'line': b'copying launch/fixposition_local_j8_urdf.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.966431] (car) StdoutLine: {'line': b'copying launch/control.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.966503] (car) StdoutLine: {'line': b'copying launch/gazebo_mountain.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.966578] (car) StdoutLine: {'line': b'copying launch/world_1_b.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.966652] (car) StdoutLine: {'line': b'copying launch/circuit1.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.966724] (car) StdoutLine: {'line': b'copying launch/gazebo_empty_world.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.966799] (car) StdoutLine: {'line': b'copying launch/gazebo_simple5.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.966881] (car) StdoutLine: {'line': b'copying launch/gazebo_simple2.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.966962] (car) StdoutLine: {'line': b'copying launch/gnss_goals.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.967034] (car) StdoutLine: {'line': b'copying launch/gazebo_simple7.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.967111] (car) StdoutLine: {'line': b'copying launch/fixposition_local_j8_urdf_fixposition.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.967191] (car) StdoutLine: {'line': b'copying launch/fixposition_with_zed_fixposition_tf.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.967269] (car) StdoutLine: {'line': b'copying launch/joystick.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.967341] (car) StdoutLine: {'line': b'copying launch/display.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.967602] (car) StdoutLine: {'line': b'copying launch/circuit4.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.967860] (car) StdoutLine: {'line': b'copying launch/river_and_forest.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.968078] (car) StdoutLine: {'line': b'copying launch/gazebo_simple8.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.968281] (car) StdoutLine: {'line': b'copying launch/rtamap_test.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.968477] (car) StdoutLine: {'line': b'copying launch/gazebo_simple_world.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.968677] (car) StdoutLine: {'line': b'copying launch/fixposition_with_zed_no_tf.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.968886] (car) StdoutLine: {'line': b'copying launch/fixposition_reframe.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.969115] (car) StdoutLine: {'line': b'copying launch/gazebo_simple9.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.969317] (car) StdoutLine: {'line': b'copying launch/circuit3.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.969445] (car) StdoutLine: {'line': b'copying launch/rviz_fixposition_j8.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.969569] (car) StdoutLine: {'line': b'copying launch/object_move_gazebo.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.969642] (car) StdoutLine: {'line': b'copying launch/world_1.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.969726] (car) StdoutLine: {'line': b'copying launch/circuit2.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.969812] (car) StdoutLine: {'line': b'copying launch/gazebo_simple3.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.969918] (car) StdoutLine: {'line': b'copying launch/gazebo_no_gui.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.969996] (car) StdoutLine: {'line': b'copying launch/easy_world.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970083] (car) StdoutLine: {'line': b'copying launch/gazebo_simple6.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970161] (car) StdoutLine: {'line': b'copying launch/gazebo_simple4.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970238] (car) StdoutLine: {'line': b'copying launch/forest.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970320] (car) StdoutLine: {'line': b'copying launch/J8_unity.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970397] (car) StdoutLine: {'line': b'copying launch/goals_unity.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970470] (car) StdoutLine: {'line': b'copying launch/control_with_gazebo.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970550] (car) StdoutLine: {'line': b'copying launch/tf_fixposition_j8.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970631] (car) StdoutLine: {'line': b'copying launch/rviz_fixposition_urdf.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970710] (car) StdoutLine: {'line': b'copying launch/j8.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970795] (car) StdoutLine: {'line': b'copying launch/tf_fixposition_map_odom_static_j8.launch.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/launch\n'}
+[0.970944] (car) StdoutLine: {'line': b'copying urdf/object_movement.sdf -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf\n'}
+[0.971025] (car) StdoutLine: {'line': b'copying urdf/materials.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf\n'}
+[0.971112] (car) StdoutLine: {'line': b'copying urdf/car.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf\n'}
+[0.971199] (car) StdoutLine: {'line': b'copying urdf/camara.plugin.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf\n'}
+[0.971272] (car) StdoutLine: {'line': b'copying urdf/car.gazebo -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf\n'}
+[0.971351] (car) StdoutLine: {'line': b'copying urdf/lidar.plugin.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf\n'}
+[0.971420] (car) StdoutLine: {'line': b'copying urdf/control.plugin.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf\n'}
+[0.971490] (car) StdoutLine: {'line': b'copying urdf/virt_lidar.xacro -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf\n'}
+[0.971566] (car) StdoutLine: {'line': b'copying urdf/car.trans -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/urdf\n'}
+[0.971689] (car) StdoutLine: {'line': b'copying worlds/grass.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.971769] (car) StdoutLine: {'line': b'copying worlds/world_simple_object.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.971923] (car) StdoutLine: {'line': b'copying worlds/hill_tagged.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.972669] (car) StdoutLine: {'line': b'copying worlds/world_simple3.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.972744] (car) StdoutLine: {'line': b'copying worlds/world_simple9.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.972855] (car) StdoutLine: {'line': b'copying worlds/world_simple6.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.972987] (car) StdoutLine: {'line': b'copying worlds/forest.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.974163] (car) StdoutLine: {'line': b'copying worlds/map1_test.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.974301] (car) StdoutLine: {'line': b'copying worlds/world_1.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.974385] (car) StdoutLine: {'line': b'copying worlds/world_simple8.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.974463] (car) StdoutLine: {'line': b'copying worlds/blender_builder.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.974543] (car) StdoutLine: {'line': b'copying worlds/mountain.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.974618] (car) StdoutLine: {'line': b'copying worlds/world_1_b1.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.974722] (car) StdoutLine: {'line': b'copying worlds/world_1_b.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.974801] (car) StdoutLine: {'line': b'copying worlds/empty.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.974945] (car) StdoutLine: {'line': b'copying worlds/easy_world.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.975105] (car) StdoutLine: {'line': b'copying worlds/grass_test.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.975236] (car) StdoutLine: {'line': b'copying worlds/park.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.975782] (car) StdoutLine: {'line': b'copying worlds/obstacles_and_traps.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.975876] (car) StdoutLine: {'line': b'copying worlds/world_simple5.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.975981] (car) StdoutLine: {'line': b'copying worlds/obstacles.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.976070] (car) StdoutLine: {'line': b'copying worlds/hill.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.976799] (car) StdoutLine: {'line': b'copying worlds/world_simple7.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.976876] (car) StdoutLine: {'line': b'copying worlds/test.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.976954] (car) StdoutLine: {'line': b'copying worlds/lake.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.977460] (car) StdoutLine: {'line': b'copying worlds/forest_tagged.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.978510] (car) StdoutLine: {'line': b'copying worlds/heightmap_world.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.978563] (car) StdoutLine: {'line': b'copying worlds/world_simple2.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.978667] (car) StdoutLine: {'line': b'copying worlds/park_tagged.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.978998] (car) StdoutLine: {'line': b'copying worlds/river_and_forest.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.979078] (car) StdoutLine: {'line': b'copying worlds/world_simple4.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.979169] (car) StdoutLine: {'line': b'copying worlds/lake_tagged.world -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/worlds\n'}
+[0.979713] (car) StdoutLine: {'line': b'copying meshes/tire.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.980221] (car) StdoutLine: {'line': b'copying meshes/rim_front_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.980875] (car) StdoutLine: {'line': b'copying meshes/tire_front_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.981330] (car) StdoutLine: {'line': b'copying meshes/rim_back_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.981985] (car) StdoutLine: {'line': b'copying meshes/direction_front_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.982065] (car) StdoutLine: {'line': b'copying meshes/rim.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.982734] (car) StdoutLine: {'line': b'copying meshes/Lidar.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.982785] (car) StdoutLine: {'line': b'copying meshes/Camara.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.982856] (car) StdoutLine: {'line': b'copying meshes/tire_front_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.983348] (car) StdoutLine: {'line': b'copying meshes/base_link.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.983413] (car) StdoutLine: {'line': b'copying meshes/tire_back_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.983881] (car) StdoutLine: {'line': b'copying meshes/tire_back_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.984380] (car) StdoutLine: {'line': b'copying meshes/suspension_front_left__1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.984433] (car) StdoutLine: {'line': b'copying meshes/direction_front_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.984520] (car) StdoutLine: {'line': b'copying meshes/suspension_back_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.984603] (car) StdoutLine: {'line': b'copying meshes/chasis_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.984676] (car) StdoutLine: {'line': b'copying meshes/rim_front_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.985339] (car) StdoutLine: {'line': b'copying meshes/direction_back_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.985393] (car) StdoutLine: {'line': b'copying meshes/direction_back_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.985481] (car) StdoutLine: {'line': b'copying meshes/rim_back_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.986116] (car) StdoutLine: {'line': b'copying meshes/suspension_front_right_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.986205] (car) StdoutLine: {'line': b'copying meshes/suspension_back_left_1.stl -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/meshes\n'}
+[0.986346] (car) StdoutLine: {'line': b'copying config/world_1_b.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.986427] (car) StdoutLine: {'line': b'copying config/nav2.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.986503] (car) StdoutLine: {'line': b'copying config/circuit_1.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.986588] (car) StdoutLine: {'line': b'copying config/circuit_4.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.986642] (car) StdoutLine: {'line': b'copying config/circuit_3.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.986709] (car) StdoutLine: {'line': b'copying config/ekf_params.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.986774] (car) StdoutLine: {'line': b'copying config/display.rviz -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.986847] (car) StdoutLine: {'line': b'copying config/world1.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.986916] (car) StdoutLine: {'line': b'copying config/circuit_2.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.986984] (car) StdoutLine: {'line': b'copying config/mapper_params_online_async.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.987052] (car) StdoutLine: {'line': b'copying config/goal.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.987120] (car) StdoutLine: {'line': b'copying config/river_and_forest.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.987187] (car) StdoutLine: {'line': b'copying config/gnss_goals.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.987255] (car) StdoutLine: {'line': b'copying config/octomap.yaml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/share/car/config\n'}
+[0.987365] (car) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.001386] (-) TimerEvent: {}
+[1.014442] (car) StdoutLine: {'line': b'running egg_info\n'}
+[1.027631] (car) StdoutLine: {'line': b'writing car.egg-info/PKG-INFO\n'}
+[1.028052] (car) StdoutLine: {'line': b'writing dependency_links to car.egg-info/dependency_links.txt\n'}
+[1.028473] (car) StdoutLine: {'line': b'writing entry points to car.egg-info/entry_points.txt\n'}
+[1.028686] (car) StdoutLine: {'line': b'writing requirements to car.egg-info/requires.txt\n'}
+[1.028800] (car) StdoutLine: {'line': b'writing top-level names to car.egg-info/top_level.txt\n'}
+[1.041889] (car) StdoutLine: {'line': b"reading manifest file 'car.egg-info/SOURCES.txt'\n"}
+[1.045598] (car) StdoutLine: {'line': b"writing manifest file 'car.egg-info/SOURCES.txt'\n"}
+[1.045790] (car) StdoutLine: {'line': b'Copying car.egg-info to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/python3.10/site-packages/car-0.0.0-py3.10.egg-info\n'}
+[1.046324] (car) StdoutLine: {'line': b'running install_scripts\n'}
+[1.071648] (car) StdoutLine: {'line': b'Installing check_goal_gnss script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.071862] (car) StdoutLine: {'line': b'Installing circuit1 script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.072010] (car) StdoutLine: {'line': b'Installing circuit_supervisor script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.072146] (car) StdoutLine: {'line': b'Installing cmd_vel_to_throttle script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.072271] (car) StdoutLine: {'line': b'Installing colision_zone script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.072392] (car) StdoutLine: {'line': b'Installing filter_points_cloud script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.072511] (car) StdoutLine: {'line': b'Installing fixposition_local_tf_from_odom script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.072638] (car) StdoutLine: {'line': b'Installing fixposition_map_anchor script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.072761] (car) StdoutLine: {'line': b'Installing fixposition_map_odom_static_from_odom script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.072888] (car) StdoutLine: {'line': b'Installing fixposition_odom_to_base_link_tf script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.073049] (car) StdoutLine: {'line': b'Installing fixposition_reframe script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.073168] (car) StdoutLine: {'line': b'Installing fixposition_tf_tree_for_zed script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.073274] (car) StdoutLine: {'line': b'Installing frontier_centroid script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.073369] (car) StdoutLine: {'line': b'Installing fusion script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.073485] (car) StdoutLine: {'line': b'Installing gnss_goal_circuit script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.073599] (car) StdoutLine: {'line': b'Installing goal_local_marker script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.073739] (car) StdoutLine: {'line': b'Installing inference_full_model script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074083] (car) StdoutLine: {'line': b'Installing inference_j8 script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074286] (car) StdoutLine: {'line': b'Installing inference_test_j8 script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074365] (car) StdoutLine: {'line': b'Installing inference_training_mode_simple script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074464] (car) StdoutLine: {'line': b'Installing j8_bueno script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074527] (car) StdoutLine: {'line': b'Installing j8_policy script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074587] (car) StdoutLine: {'line': b'Installing j8_test_ppo script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074699] (car) StdoutLine: {'line': b'Installing joystick_control script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074759] (car) StdoutLine: {'line': b'Installing keyboard_control script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074823] (car) StdoutLine: {'line': b'Installing latlon_circuit script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074933] (car) StdoutLine: {'line': b'Installing latlon_posearray_to_local script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.074994] (car) StdoutLine: {'line': b'Installing latlon_posearray_to_local_utm script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075052] (car) StdoutLine: {'line': b'Installing lidar_detection script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075110] (car) StdoutLine: {'line': b'Installing map_navegation script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075216] (car) StdoutLine: {'line': b'Installing map_navegation_test script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075279] (car) StdoutLine: {'line': b'Installing memory_map script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075397] (car) StdoutLine: {'line': b'Installing movement_predictive script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075463] (car) StdoutLine: {'line': b'Installing navsatfix_goal_to_map_pose script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075522] (car) StdoutLine: {'line': b'Installing navsatfix_to_ecef script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075583] (car) StdoutLine: {'line': b'Installing odom_to_tf script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075641] (car) StdoutLine: {'line': b'Installing path_ppo_cnn_lstm_full_model script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075700] (car) StdoutLine: {'line': b'Installing path_ppo_cnn_lstm_training_init_mode script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075759] (car) StdoutLine: {'line': b'Installing path_ppo_cnn_lstm_training_init_mode_j8 script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075878] (car) StdoutLine: {'line': b'Installing path_ppo_cnn_lstm_training_init_mode_simple script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.075954] (car) StdoutLine: {'line': b'Installing points_goal script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076070] (car) StdoutLine: {'line': b'Installing points_goal_old script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076138] (car) StdoutLine: {'line': b'Installing prior_map_builder script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076244] (car) StdoutLine: {'line': b'Installing scape_test script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076308] (car) StdoutLine: {'line': b'Installing supervisor_node script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076371] (car) StdoutLine: {'line': b'Installing test_j8_old script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076432] (car) StdoutLine: {'line': b'Installing test_octomap script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076492] (car) StdoutLine: {'line': b'Installing test_vel script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076551] (car) StdoutLine: {'line': b'Installing unity_goal script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076656] (car) StdoutLine: {'line': b'Installing voxel_unity script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076721] (car) StdoutLine: {'line': b'Installing zed_static_tf_tree script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car/lib/car\n'}
+[1.076813] (car) StdoutLine: {'line': b'running symlink_data\n'}
+[1.096825] (car) CommandEnded: {'returncode': 0}
+[1.101443] (-) TimerEvent: {}
+[1.110455] (car) JobEnded: {'identifier': 'car', 'rc': 0}
+[1.111386] (-) EventReactorShutdown: {}

@@ -315,17 +315,17 @@ fixposition_driver_ros2__rosidl_typesupport_cpp/fast:
 .PHONY : fixposition_driver_ros2__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_fixposition_driver_ros2
+# Target rules for targets named ament_cmake_python_symlink_fixposition_driver_ros2
 
 # Build rule for target.
-ament_cmake_python_copy_fixposition_driver_ros2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_fixposition_driver_ros2
-.PHONY : ament_cmake_python_copy_fixposition_driver_ros2
+ament_cmake_python_symlink_fixposition_driver_ros2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_fixposition_driver_ros2
+.PHONY : ament_cmake_python_symlink_fixposition_driver_ros2
 
 # fast build rule for target.
-ament_cmake_python_copy_fixposition_driver_ros2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_fixposition_driver_ros2.dir/build.make CMakeFiles/ament_cmake_python_copy_fixposition_driver_ros2.dir/build
-.PHONY : ament_cmake_python_copy_fixposition_driver_ros2/fast
+ament_cmake_python_symlink_fixposition_driver_ros2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_fixposition_driver_ros2.dir/build.make CMakeFiles/ament_cmake_python_symlink_fixposition_driver_ros2.dir/build
+.PHONY : ament_cmake_python_symlink_fixposition_driver_ros2/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_fixposition_driver_ros2_egg
@@ -960,7 +960,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_fixposition_driver_ros2_egg"
-	@echo "... ament_cmake_python_copy_fixposition_driver_ros2"
+	@echo "... ament_cmake_python_symlink_fixposition_driver_ros2"
 	@echo "... fixposition_driver_ros2"
 	@echo "... fixposition_driver_ros2__cpp"
 	@echo "... fixposition_driver_ros2__py"

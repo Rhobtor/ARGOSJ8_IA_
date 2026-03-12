@@ -23,9 +23,22 @@
 /* PACKAGE */
 #include <fixposition_driver_ros2/data_to_ros2.hpp>
 
+/* ROS */
+#include <rclcpp/rclcpp.hpp>
+
 namespace fixposition {
+
+static inline builtin_interfaces::msg::Time StampToRosTime(const times::GpsTime& stamp) {
+    // Fixposition can output tow/wno=0 during bringup/no-fix. Publishing stamp=0
+    // leads to TF_OLD_DATA and broken message filters; fallback to current time.
+    if (stamp.tow == 0.0 && stamp.wno == 0) {
+        return rclcpp::Clock(RCL_SYSTEM_TIME).now();
+    }
+    return GpsTimeToMsgTime(stamp);
+}
+
 void ImuDataToMsg(const ImuData& data, sensor_msgs::msg::Imu& msg) {
-    msg.header.stamp = GpsTimeToMsgTime(data.stamp);
+    msg.header.stamp = StampToRosTime(data.stamp);
     msg.header.frame_id = data.frame_id;
 
     tf2::toMsg(data.linear_acceleration, msg.linear_acceleration);
@@ -38,7 +51,7 @@ void NavSatStatusDataToMsg(const NavSatStatusData& data, sensor_msgs::msg::NavSa
 }
 
 void NavSatFixDataToMsg(const NavSatFixData& data, sensor_msgs::msg::NavSatFix& msg) {
-    msg.header.stamp = GpsTimeToMsgTime(data.stamp);
+    msg.header.stamp = StampToRosTime(data.stamp);
     msg.header.frame_id = data.frame_id;
     NavSatStatusDataToMsg(data.status, msg.status);
     msg.latitude = data.latitude;
@@ -69,7 +82,7 @@ void TwistWithCovDataToMsg(const fixposition::TwistWithCovData& data, geometry_m
 }
 
 void OdometryDataToMsg(const fixposition::OdometryData& data, nav_msgs::msg::Odometry& msg) {
-    msg.header.stamp = GpsTimeToMsgTime(data.stamp);
+    msg.header.stamp = StampToRosTime(data.stamp);
     msg.header.frame_id = data.frame_id;
     msg.child_frame_id = data.child_frame_id;
 
@@ -78,7 +91,7 @@ void OdometryDataToMsg(const fixposition::OdometryData& data, nav_msgs::msg::Odo
 }
 
 void VrtkDataToMsg(const VrtkData& data, fixposition_driver_ros2::msg::VRTK& msg) {
-    msg.header.stamp = GpsTimeToMsgTime(data.stamp);
+    msg.header.stamp = StampToRosTime(data.stamp);
     msg.header.frame_id = data.frame_id;
     msg.pose_frame = data.pose_frame;
     msg.kin_frame = data.kin_frame;
@@ -98,11 +111,7 @@ void TfDataToMsg(const TfData& data, geometry_msgs::msg::TransformStamped& msg) 
     msg.header.frame_id = data.frame_id;
     msg.child_frame_id = data.child_frame_id;
 
-    if (data.stamp.tow == 0.0 && data.stamp.wno == 0) {
-        msg.header.stamp = rclcpp::Clock().now();
-    } else {
-        msg.header.stamp = GpsTimeToMsgTime(data.stamp);
-    }
+    msg.header.stamp = StampToRosTime(data.stamp);
 
     msg.transform.rotation = tf2::toMsg(data.rotation);
     tf2::toMsg(data.translation, msg.transform.translation);

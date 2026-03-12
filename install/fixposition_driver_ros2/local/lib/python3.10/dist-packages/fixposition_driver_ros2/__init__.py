@@ -1,0 +1,1 @@
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_generator_py/fixposition_driver_ros2/__init__.py

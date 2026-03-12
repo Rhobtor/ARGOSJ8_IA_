@@ -41,13 +41,26 @@ def generate_launch_description():
         package='car_cpp',  # Asegúrate de que el paquete se llame 'car' o el que corresponda
         executable='check_goal',  # Nombre del ejecutable (por ejemplo, si instalaste el script con entry_point)
         name='check_goal',  # Nombre del nodo
+        parameters=[{
+            'odom_topic': '/fixposition/odometry_enu',
+            'legacy_axis_mapping': False,
+        }],
     )
 
     points_goal = Node(
         package     = 'car',            # o el paquete que corresponda
         executable  = 'circuit1',    # tu ejecutable
         name        = 'circuit1',
-        parameters  = [goal_yaml]       #  ← aquí se inyecta el YAML
+        parameters  = [
+            goal_yaml,
+            {
+                'goal_points_relative_to_robot': True,
+                'relative_goal_anchor_mode': 'startup',
+                'relative_pose_frame': 'base_link',
+                'use_tf_for_relative_goals': True,
+                'odom_topic': '/fixposition/odometry_enu',
+            },
+        ]       #  ← aquí se inyecta el YAML
     )
 
 

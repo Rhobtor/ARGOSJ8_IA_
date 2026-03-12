@@ -137,6 +137,10 @@ setup(
 
             'fixposition_map_anchor=car.fixposition_map_anchor:main',
 
+            'fp_poi_map_odom_static_test=car.fp_poi_map_odom_static_test:main',
+
+            'fp_poi_map_static_from_start=car.fp_poi_map_static_from_start:main',
+
             'zed_static_tf_tree=car.zed_static_tf_tree:main',
 
             'latlon_posearray_to_local=car.latlon_posearray_to_local:main',
@@ -150,6 +154,8 @@ setup(
             'fixposition_local_tf_from_odom=car.fixposition_local_tf_from_odom:main',
 
             'fixposition_reframe=car.fixposition_reframe:main',
+
+            'fixposition_tf_tree_for_zed=car.fixposition_tf_tree_for_zed:main',
 
             'latlon_posearray_to_local_utm=car.latlon_posearray_to_local_utm:main',
 

@@ -1,2 +1,1 @@
-from fixposition_driver_ros2.msg._speed import Speed  # noqa: F401
-from fixposition_driver_ros2.msg._vrtk import VRTK  # noqa: F401
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_generator_py/fixposition_driver_ros2/msg/__init__.py

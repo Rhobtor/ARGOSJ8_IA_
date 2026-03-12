@@ -27,9 +27,9 @@ public:
   {
     // ---------- IO ----------
     input_topic_ = this->declare_parameter<std::string>(
-      "input", "/zed/zed_node/point_cloud/cloud_registered");
-    // input_topic_ = this->declare_parameter<std::string>(
-    //   "input", "/camera/points");
+     "input", "/zed/zed_node/point_cloud/cloud_registered");
+     //input_topic_ = this->declare_parameter<std::string>(
+      // "input", "/camera/points");
     output_topic_ = this->declare_parameter<std::string>(
       "output", "/merged_points_filtered");
 

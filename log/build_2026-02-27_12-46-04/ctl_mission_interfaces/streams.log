@@ -1,0 +1,445 @@
+[0.243s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ctl_mission_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ctl_mission_interfaces -- -j16 -l16
+[6.221s] [ 12%] Built target ctl_mission_interfaces__rosidl_generator_c
+[6.221s] [ 12%] Built target ctl_mission_interfaces__cpp
+[6.221s] [ 12%] Built target ament_cmake_python_copy_ctl_mission_interfaces
+[6.221s] [ 24%] Built target ctl_mission_interfaces__rosidl_typesupport_c
+[6.222s] [ 36%] Built target ctl_mission_interfaces__rosidl_typesupport_introspection_c
+[6.222s] [ 37%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/change_mode__type_support.cpp.o[0m
+[6.222s] [ 38%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/change_mode__type_support.cpp.o[0m
+[6.222s] [ 38%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/get_mode__type_support.cpp.o[0m
+[6.223s] [ 39%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/change_speed__type_support.cpp.o[0m
+[6.223s] [ 40%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/config_simple_ctl__type_support.cpp.o[0m
+[6.233s] [ 41%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/get_mode__type_support.cpp.o[0m
+[6.233s] [ 42%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/change_controller__type_support.cpp.o[0m
+[6.233s] [ 43%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/change_speed__type_support.cpp.o[0m
+[6.233s] [ 44%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/get_possible_transitions__type_support.cpp.o[0m
+[6.234s] [ 45%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/config_simple_ctl__type_support.cpp.o[0m
+[6.234s] [ 46%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__type_support.cpp.o[0m
+[6.234s] [ 47%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/get_possible_transitions__type_support.cpp.o[0m
+[6.234s] [ 48%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/change_controller__type_support.cpp.o[0m
+[6.234s] [ 49%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/change_mode__type_support.cpp.o[0m
+[6.235s] [ 50%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/change_mode__type_support_c.cpp.o[0m
+[7.390s] running egg_info
+[7.487s] writing ctl_mission_interfaces.egg-info/PKG-INFO
+[7.488s] writing dependency_links to ctl_mission_interfaces.egg-info/dependency_links.txt
+[7.488s] writing top-level names to ctl_mission_interfaces.egg-info/top_level.txt
+[7.727s] reading manifest file 'ctl_mission_interfaces.egg-info/SOURCES.txt'
+[7.734s] writing manifest file 'ctl_mission_interfaces.egg-info/SOURCES.txt'
+[8.279s] [ 50%] Built target ament_cmake_python_build_ctl_mission_interfaces_egg
+[11.088s] [ 51%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/config_simple_ctl__type_support.cpp.o[0m
+[12.746s] [ 52%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/config_regulated_pure_ctrl__type_support.cpp.o[0m
+[12.782s] [ 53%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__type_support.cpp.o[0m
+[13.577s] [ 54%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/config_simple_ctl__type_support_c.cpp.o[0m
+[14.285s] [ 55%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/change_controller__type_support.cpp.o[0m
+[15.297s] [ 56%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/config_dynamic_la_pure_ctrl__type_support.cpp.o[0m
+[16.815s] [ 57%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/get_possible_transitions__type_support.cpp.o[0m
+[16.899s] [ 58%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/change_controller__type_support_c.cpp.o[0m
+[17.400s] [ 59%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/config_dynamic_pure_ctrl__type_support.cpp.o[0m
+[18.590s] [ 60%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__type_support.cpp.o[0m
+[19.012s] [ 60%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/config_stanley_ctrl__type_support.cpp.o[0m
+[20.287s] [ 61%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__type_support.cpp.o[0m
+[20.491s] [ 62%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/config_stanley_ctrl__type_support.cpp.o[0m
+[21.352s] [ 63%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__type_support_c.cpp.o[0m
+[21.800s] [ 64%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ctl_mission_interfaces/srv/config_pure_pursuit_ctrl__type_support.cpp.o[0m
+[23.188s] [ 65%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__type_support.cpp.o[0m
+[23.382s] [ 65%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/config_dynamic_la_pure_ctrl__type_support.cpp.o[0m
+[23.389s] [ 66%] [32m[1mLinking CXX shared library libctl_mission_interfaces__rosidl_typesupport_cpp.so[0m
+[23.603s] [ 67%] Built target ctl_mission_interfaces__rosidl_typesupport_cpp
+[23.654s] [ 68%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__type_support_c.cpp.o[0m
+[24.974s] [ 69%] [32m[1mLinking CXX shared library libctl_mission_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[25.406s] [ 70%] Built target ctl_mission_interfaces__rosidl_typesupport_introspection_cpp
+[26.457s] [ 71%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/config_regulated_pure_ctrl__type_support.cpp.o[0m
+[28.288s] [ 72%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__type_support_c.cpp.o[0m
+[30.873s] [ 73%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__type_support_c.cpp.o[0m
+[31.076s] [ 74%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/config_dynamic_pure_ctrl__type_support.cpp.o[0m
+[33.644s] [ 75%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__type_support_c.cpp.o[0m
+[34.739s] [ 76%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/config_pure_pursuit_ctrl__type_support.cpp.o[0m
+[36.753s] [ 76%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/get_possible_transitions__type_support_c.cpp.o[0m
+[38.087s] [ 77%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/change_speed__type_support.cpp.o[0m
+[38.643s] [ 78%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/change_speed__type_support_c.cpp.o[0m
+[40.498s] [ 79%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ctl_mission_interfaces/srv/detail/dds_fastrtps/get_mode__type_support.cpp.o[0m
+[41.411s] [ 80%] [32mBuilding CXX object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ctl_mission_interfaces/srv/detail/get_mode__type_support_c.cpp.o[0m
+[43.593s] [ 81%] [32m[1mLinking CXX shared library libctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[44.174s] [ 81%] Built target ctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp
+[44.179s] [ 82%] [32m[1mLinking CXX shared library libctl_mission_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[44.943s] [ 83%] Built target ctl_mission_interfaces__rosidl_typesupport_fastrtps_c
+[45.033s] [ 83%] Built target ctl_mission_interfaces
+[45.142s] [ 84%] Built target ctl_mission_interfaces__py
+[45.299s] [ 85%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_change_mode_s.c.o[0m
+[45.967s] [ 86%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_config_regulated_pure_ctrl_s.c.o[0m
+[46.518s] [ 87%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_config_dynamic_la_pure_ctrl_s.c.o[0m
+[47.219s] [ 88%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_config_dynamic_pure_ctrl_s.c.o[0m
+[48.251s] [ 89%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_config_stanley_ctrl_s.c.o[0m
+[49.146s] [ 90%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_config_pure_pursuit_ctrl_s.c.o[0m
+[49.910s] [ 90%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_change_controller_s.c.o[0m
+[50.407s] [ 91%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_get_possible_transitions_s.c.o[0m
+[51.084s] [ 92%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_config_simple_ctl_s.c.o[0m
+[51.653s] [ 93%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_change_speed_s.c.o[0m
+[52.137s] [ 94%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ctl_mission_interfaces/srv/_get_mode_s.c.o[0m
+[52.616s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/ctl_mission_interfaces/libctl_mission_interfaces__rosidl_generator_py.so[0m
+[53.033s] [ 95%] Built target ctl_mission_interfaces__rosidl_generator_py
+[53.130s] [ 96%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ctl_mission_interfaces/_ctl_mission_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[54.793s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[54.960s] [ 97%] Built target ctl_mission_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[55.077s] [ 97%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ctl_mission_interfaces/_ctl_mission_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[55.933s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[56.262s] [ 98%] Built target ctl_mission_interfaces__rosidl_typesupport_c__pyext
+[56.390s] [ 99%] [32mBuilding C object CMakeFiles/ctl_mission_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ctl_mission_interfaces/_ctl_mission_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[57.698s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[57.900s] [100%] Built target ctl_mission_interfaces__rosidl_typesupport_introspection_c__pyext
+[57.948s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ctl_mission_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ctl_mission_interfaces -- -j16 -l16
+[57.966s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ctl_mission_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ctl_mission_interfaces
+[82.609s] -- Install configuration: ""
+[82.609s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ament_index/resource_index/rosidl_interfaces/ctl_mission_interfaces
+[82.610s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces
+[82.610s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv
+[82.610s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_stanley_ctrl.h
+[82.610s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/change_speed.h
+[82.610s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_dynamic_pure_ctrl.h
+[82.611s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/change_controller.h
+[82.612s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_dynamic_la_pure_ctrl.h
+[82.625s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail
+[82.625s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__functions.c
+[82.626s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__functions.c
+[82.626s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__type_support.h
+[82.626s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__type_support.h
+[82.626s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__functions.c
+[82.626s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__struct.h
+[82.627s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__struct.h
+[82.627s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__struct.h
+[82.650s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__type_support.h
+[82.650s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__functions.c
+[82.651s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__functions.h
+[82.651s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__functions.h
+[82.651s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__struct.h
+[82.651s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__struct.h
+[82.651s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__struct.h
+[82.652s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__type_support.h
+[82.652s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__type_support.h
+[82.652s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__functions.h
+[82.652s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__functions.c
+[82.652s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__type_support.h
+[82.653s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__functions.c
+[82.658s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__type_support.h
+[82.658s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__type_support.h
+[82.659s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__functions.h
+[82.659s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__functions.h
+[82.659s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__functions.h
+[82.659s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__functions.c
+[82.660s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__functions.c
+[82.660s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__functions.h
+[82.660s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__functions.h
+[82.660s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__struct.h
+[82.660s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__struct.h
+[82.661s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__functions.c
+[82.671s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__struct.h
+[82.671s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__functions.c
+[82.671s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__struct.h
+[82.672s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__functions.h
+[82.672s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__functions.h
+[82.672s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__type_support.h
+[82.672s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__type_support.h
+[82.672s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__type_support.h
+[82.672s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__functions.h
+[82.673s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__struct.h
+[82.673s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__functions.c
+[82.673s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/change_mode.h
+[82.673s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/get_possible_transitions.h
+[82.673s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_regulated_pure_ctrl.h
+[82.673s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/get_mode.h
+[82.674s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_simple_ctl.h
+[82.679s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_pure_pursuit_ctrl.h
+[82.679s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/msg
+[82.679s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/msg/rosidl_generator_c__visibility_control.h
+[82.679s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/environment/library_path.sh
+[82.680s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/environment/library_path.dsv
+[82.680s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_generator_c.so
+[82.680s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces
+[82.680s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv
+[82.681s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail
+[82.681s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__rosidl_typesupport_fastrtps_c.h
+[82.697s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__rosidl_typesupport_fastrtps_c.h
+[82.699s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__rosidl_typesupport_fastrtps_c.h
+[82.700s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__rosidl_typesupport_fastrtps_c.h
+[82.700s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__rosidl_typesupport_fastrtps_c.h
+[82.700s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__rosidl_typesupport_fastrtps_c.h
+[82.700s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__rosidl_typesupport_fastrtps_c.h
+[82.700s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__rosidl_typesupport_fastrtps_c.h
+[82.701s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__rosidl_typesupport_fastrtps_c.h
+[82.701s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__rosidl_typesupport_fastrtps_c.h
+[82.701s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__rosidl_typesupport_fastrtps_c.h
+[82.701s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/msg
+[82.701s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[82.702s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_typesupport_fastrtps_c.so
+[82.715s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[82.717s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces
+[82.717s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv
+[82.717s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail
+[82.717s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__type_support.c
+[82.718s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__rosidl_typesupport_introspection_c.h
+[82.718s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__type_support.c
+[82.718s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__type_support.c
+[82.718s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__type_support.c
+[82.723s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__rosidl_typesupport_introspection_c.h
+[82.723s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__type_support.c
+[82.724s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__type_support.c
+[82.724s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__type_support.c
+[82.724s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__rosidl_typesupport_introspection_c.h
+[82.724s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__rosidl_typesupport_introspection_c.h
+[82.724s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__rosidl_typesupport_introspection_c.h
+[82.725s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__rosidl_typesupport_introspection_c.h
+[82.725s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__rosidl_typesupport_introspection_c.h
+[82.725s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__type_support.c
+[82.725s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__type_support.c
+[82.725s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__rosidl_typesupport_introspection_c.h
+[82.726s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__type_support.c
+[82.729s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__rosidl_typesupport_introspection_c.h
+[82.729s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__rosidl_typesupport_introspection_c.h
+[82.730s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__type_support.c
+[82.730s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__rosidl_typesupport_introspection_c.h
+[82.730s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/msg
+[82.730s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[82.730s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_typesupport_introspection_c.so
+[82.731s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_typesupport_c.so
+[82.755s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces
+[82.756s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv
+[82.756s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_simple_ctl.hpp
+[82.756s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_dynamic_la_pure_ctrl.hpp
+[82.756s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_dynamic_pure_ctrl.hpp
+[82.756s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/change_mode.hpp
+[82.757s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/get_mode.hpp
+[82.757s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_regulated_pure_ctrl.hpp
+[82.757s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/get_possible_transitions.hpp
+[82.757s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/change_speed.hpp
+[82.757s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail
+[82.758s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__type_support.hpp
+[82.758s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__traits.hpp
+[82.758s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__traits.hpp
+[82.758s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__struct.hpp
+[82.758s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__type_support.hpp
+[82.758s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__traits.hpp
+[82.759s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__builder.hpp
+[82.762s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__builder.hpp
+[82.762s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__builder.hpp
+[82.762s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__struct.hpp
+[82.762s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__builder.hpp
+[82.763s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__traits.hpp
+[82.763s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__type_support.hpp
+[82.763s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__struct.hpp
+[82.763s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__struct.hpp
+[82.763s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__struct.hpp
+[82.763s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__traits.hpp
+[82.764s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__builder.hpp
+[82.764s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__builder.hpp
+[82.764s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__traits.hpp
+[82.764s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__builder.hpp
+[82.764s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__type_support.hpp
+[82.765s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__type_support.hpp
+[82.769s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__traits.hpp
+[82.769s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__builder.hpp
+[82.770s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__struct.hpp
+[82.770s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__type_support.hpp
+[82.770s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__type_support.hpp
+[82.770s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__traits.hpp
+[82.770s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__traits.hpp
+[82.770s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__type_support.hpp
+[82.771s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__builder.hpp
+[82.771s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__builder.hpp
+[82.771s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__type_support.hpp
+[82.771s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__type_support.hpp
+[82.771s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__struct.hpp
+[82.772s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__traits.hpp
+[82.775s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__struct.hpp
+[82.775s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__struct.hpp
+[82.775s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__traits.hpp
+[82.776s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__struct.hpp
+[82.776s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__builder.hpp
+[82.776s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__struct.hpp
+[82.776s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__type_support.hpp
+[82.776s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_stanley_ctrl.hpp
+[82.777s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/config_pure_pursuit_ctrl.hpp
+[82.777s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/change_controller.hpp
+[82.777s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/msg
+[82.777s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[82.777s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces
+[82.777s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv
+[82.778s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail
+[82.798s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[82.799s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[82.799s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__rosidl_typesupport_fastrtps_cpp.hpp
+[82.799s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__rosidl_typesupport_fastrtps_cpp.hpp
+[82.799s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__rosidl_typesupport_fastrtps_cpp.hpp
+[82.799s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__rosidl_typesupport_fastrtps_cpp.hpp
+[82.800s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[82.800s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[82.800s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/dds_fastrtps
+[82.800s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[82.800s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[82.800s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[82.801s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/msg
+[82.801s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[82.801s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[82.801s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[82.802s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces
+[82.802s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv
+[82.802s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail
+[82.802s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__rosidl_typesupport_introspection_cpp.hpp
+[82.802s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[82.803s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__type_support.cpp
+[82.803s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__rosidl_typesupport_introspection_cpp.hpp
+[82.803s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__rosidl_typesupport_introspection_cpp.hpp
+[82.803s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__rosidl_typesupport_introspection_cpp.hpp
+[82.803s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[82.804s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__type_support.cpp
+[82.808s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__type_support.cpp
+[82.811s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_pure_ctrl__type_support.cpp
+[82.812s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_simple_ctl__rosidl_typesupport_introspection_cpp.hpp
+[82.812s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__type_support.cpp
+[82.812s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_possible_transitions__type_support.cpp
+[82.812s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_pure_pursuit_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[82.812s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_stanley_ctrl__type_support.cpp
+[82.813s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__type_support.cpp
+[82.813s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_mode__rosidl_typesupport_introspection_cpp.hpp
+[82.813s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_dynamic_la_pure_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[82.813s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_speed__type_support.cpp
+[82.813s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/config_regulated_pure_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[82.814s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/change_controller__type_support.cpp
+[82.818s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/include/ctl_mission_interfaces/ctl_mission_interfaces/srv/detail/get_mode__type_support.cpp
+[82.828s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_typesupport_introspection_cpp.so
+[82.828s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[82.828s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_typesupport_cpp.so
+[82.829s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_typesupport_cpp.so" to ""
+[82.829s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/environment/pythonpath.sh
+[82.829s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/environment/pythonpath.dsv
+[82.829s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces-0.0.0-py3.10.egg-info
+[82.830s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[82.830s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[82.830s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[82.831s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[82.831s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces
+[82.831s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv
+[82.831s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_pure_pursuit_ctrl_s.c
+[82.831s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_stanley_ctrl_s.c
+[82.832s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_pure_pursuit_ctrl.py
+[82.832s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_dynamic_pure_ctrl_s.c
+[82.832s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_regulated_pure_ctrl_s.c
+[82.832s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_get_possible_transitions.py
+[82.832s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_change_mode_s.c
+[82.833s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_dynamic_la_pure_ctrl_s.c
+[82.833s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_regulated_pure_ctrl.py
+[82.833s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_change_controller_s.c
+[82.833s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_get_mode.py
+[82.833s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_change_controller.py
+[82.834s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/__init__.py
+[82.837s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_simple_ctl.py
+[82.848s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_change_speed.py
+[82.849s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_change_speed_s.c
+[82.849s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_dynamic_pure_ctrl.py
+[82.849s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_get_mode_s.c
+[82.849s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_change_mode.py
+[82.850s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_stanley_ctrl.py
+[82.850s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_simple_ctl_s.c
+[82.850s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_config_dynamic_la_pure_ctrl.py
+[82.850s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv/_get_possible_transitions_s.c
+[82.851s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[82.851s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[82.851s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/_ctl_mission_interfaces_s.ep.rosidl_typesupport_c.c
+[82.851s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[82.856s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/__init__.py
+[82.856s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/_ctl_mission_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[82.856s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/_ctl_mission_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[82.856s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/libctl_mission_interfaces__rosidl_generator_py.so
+[83.147s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces'...
+[83.147s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/srv'...
+[83.198s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[83.201s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[83.203s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[83.205s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[83.207s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[83.209s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/local/lib/python3.10/dist-packages/ctl_mission_interfaces/ctl_mission_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[83.213s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_generator_py.so
+[83.215s] -- Set non-toolchain portion of runtime path of "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/lib/libctl_mission_interfaces__rosidl_generator_py.so" to ""
+[83.215s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeMode.idl
+[83.216s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/GetMode.idl
+[83.217s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeSpeed.idl
+[83.217s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigSimpleCtl.idl
+[83.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/GetPossibleTransitions.idl
+[83.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeController.idl
+[83.220s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigPurePursuitCtrl.idl
+[83.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigStanleyCtrl.idl
+[83.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigDynamicPureCtrl.idl
+[83.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigDynamicLAPureCtrl.idl
+[83.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigRegulatedPureCtrl.idl
+[83.225s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeMode.srv
+[83.225s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeMode_Request.msg
+[83.226s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeMode_Response.msg
+[83.228s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/GetMode.srv
+[83.229s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/GetMode_Request.msg
+[83.232s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/GetMode_Response.msg
+[83.232s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeSpeed.srv
+[83.233s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeSpeed_Request.msg
+[83.235s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeSpeed_Response.msg
+[83.236s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigSimpleCtl.srv
+[83.236s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigSimpleCtl_Request.msg
+[83.238s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigSimpleCtl_Response.msg
+[83.238s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/GetPossibleTransitions.srv
+[83.239s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/GetPossibleTransitions_Request.msg
+[83.240s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/GetPossibleTransitions_Response.msg
+[83.245s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeController.srv
+[83.245s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeController_Request.msg
+[83.246s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ChangeController_Response.msg
+[83.248s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigPurePursuitCtrl.srv
+[83.256s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigPurePursuitCtrl_Request.msg
+[83.256s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigPurePursuitCtrl_Response.msg
+[83.256s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigStanleyCtrl.srv
+[83.256s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigStanleyCtrl_Request.msg
+[83.257s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigStanleyCtrl_Response.msg
+[83.257s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigDynamicPureCtrl.srv
+[83.257s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigDynamicPureCtrl_Request.msg
+[83.257s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigDynamicPureCtrl_Response.msg
+[83.258s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigDynamicLAPureCtrl.srv
+[83.258s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigDynamicLAPureCtrl_Request.msg
+[83.258s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigDynamicLAPureCtrl_Response.msg
+[83.258s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigRegulatedPureCtrl.srv
+[83.258s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigRegulatedPureCtrl_Request.msg
+[83.271s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/srv/ConfigRegulatedPureCtrl_Response.msg
+[83.271s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ament_index/resource_index/package_run_dependencies/ctl_mission_interfaces
+[83.272s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ament_index/resource_index/parent_prefix_path/ctl_mission_interfaces
+[83.272s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/environment/ament_prefix_path.sh
+[83.272s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/environment/ament_prefix_path.dsv
+[83.279s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/environment/path.sh
+[83.282s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/environment/path.dsv
+[83.283s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/local_setup.bash
+[83.283s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/local_setup.sh
+[83.283s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/local_setup.zsh
+[83.283s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/local_setup.dsv
+[83.286s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/package.dsv
+[83.295s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ament_index/resource_index/packages/ctl_mission_interfaces
+[83.297s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/export_ctl_mission_interfaces__rosidl_generator_cExport.cmake
+[83.299s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/export_ctl_mission_interfaces__rosidl_generator_cExport-noconfig.cmake
+[83.328s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/export_ctl_mission_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[83.329s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/export_ctl_mission_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[83.342s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ctl_mission_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[83.343s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ctl_mission_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[83.357s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ctl_mission_interfaces__rosidl_typesupport_cExport.cmake
+[83.358s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ctl_mission_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[83.365s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/export_ctl_mission_interfaces__rosidl_generator_cppExport.cmake
+[83.368s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/export_ctl_mission_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[83.368s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/export_ctl_mission_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[83.369s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ctl_mission_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[83.369s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ctl_mission_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[83.369s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ctl_mission_interfaces__rosidl_typesupport_cppExport.cmake
+[83.369s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ctl_mission_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[83.377s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/export_ctl_mission_interfaces__rosidl_generator_pyExport.cmake
+[83.377s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/export_ctl_mission_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[83.377s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/rosidl_cmake-extras.cmake
+[83.377s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[83.378s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[83.378s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[83.378s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[83.378s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[83.379s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[83.379s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ctl_mission_interfacesConfig.cmake
+[83.379s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/cmake/ctl_mission_interfacesConfig-version.cmake
+[83.379s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ctl_mission_interfaces/share/ctl_mission_interfaces/package.xml
+[83.564s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ctl_mission_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ctl_mission_interfaces

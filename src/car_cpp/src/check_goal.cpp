@@ -14,10 +14,13 @@ public:
     // this->declare_parameter("goal_threshold", 3.0);
     this->declare_parameter("goal_threshold_xy", 4.5);   // antes: goal_threshold
     this->declare_parameter("goal_threshold_z",  6.0);  // tolerancia vertical
-    this->declare_parameter<std::string>("odom_topic", "/zed/zed_node/odom");
+    //this->declare_parameter<std::string>("odom_topic", "/zed/zed_node/odom");
+    this->declare_parameter<std::string>("odom_topic", "/fixposition/odometry");
+    this->declare_parameter<bool>("legacy_axis_mapping", false);
     tol_xy_ = this->get_parameter("goal_threshold_xy").as_double();
     tol_z_  = this->get_parameter("goal_threshold_z").as_double();
     const std::string odom_topic = this->get_parameter("odom_topic").as_string();
+    legacy_axis_mapping_ = this->get_parameter("legacy_axis_mapping").as_bool();
     // goal_threshold_ = this->get_parameter("goal_threshold").as_double();
 
     // Suscripción al topic "goal" (PoseArray)
@@ -40,8 +43,8 @@ public:
 
     RCLCPP_INFO(
       this->get_logger(),
-      "GoalReachedNode iniciado usando odom='%s' y PoseArray para el goal.",
-      odom_topic.c_str());
+      "GoalReachedNode iniciado usando odom='%s', legacy_axis_mapping=%s y PoseArray para el goal.",
+      odom_topic.c_str(), legacy_axis_mapping_ ? "true" : "false");
   }
 
 private:
@@ -80,16 +83,26 @@ private:
       return;
     }
 
-    double robot_x = odom_pose_.position.z;
-    double robot_y = odom_pose_.position.x;
-    double robot_z = odom_pose_.position.y;
+    double robot_x;
+    double robot_y;
+    double robot_z;
+
+    if (legacy_axis_mapping_) {
+      robot_x = odom_pose_.position.z;
+      robot_y = odom_pose_.position.x;
+      robot_z = odom_pose_.position.y;
+    } else {
+      robot_x = odom_pose_.position.x;
+      robot_y = odom_pose_.position.y;
+      robot_z = odom_pose_.position.z;
+    }
 
     double goal_x = goal_pose_.position.x;
     double goal_y = goal_pose_.position.y;
     double goal_z = goal_pose_.position.z;
 
     double dx = goal_x - robot_x;
-    double dy = goal_y - (-1*(robot_y));
+    double dy = legacy_axis_mapping_ ? (goal_y - (-1 * robot_y)) : (goal_y - robot_y);
     double dz = goal_z - robot_z;
     double distance = std::sqrt(dx * dx + dy * dy + dz * dz);
 
@@ -135,6 +148,7 @@ private:
   // double goal_threshold_;
   double tol_xy_;
   double tol_z_;
+  bool legacy_axis_mapping_;
 };
 
 int main(int argc, char **argv)
