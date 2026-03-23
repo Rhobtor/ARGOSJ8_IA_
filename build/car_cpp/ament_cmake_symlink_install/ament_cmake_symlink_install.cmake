@@ -55,6 +55,11 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
         # remove trailing slash
         string(SUBSTRING "${dir}" 0 ${offset} dir)
       endif()
+      
+      # Create destination directory.
+      # This does *not* solve the problem of empty directories WITHIN the install tree,
+      # but does make sure that the top-level directory specified by the caller gets created.
+      file(MAKE_DIRECTORY "${destination}")
 
       # glob recursive files
       set(relative_files "")
@@ -319,14 +324,17 @@ include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symli
 # install("TARGETS" "voxel_grid_node" "DESTINATION" "lib/car_cpp")
 include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "move_plugin" "LIBRARY_DESTINATION" "lib")
+# install("TARGETS" "velodyne_noise_filter_node" "DESTINATION" "lib/car_cpp")
 include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "drive_plugin" "LIBRARY_DESTINATION" "lib")
+# install("TARGETS" "move_plugin" "LIBRARY_DESTINATION" "lib")
 include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "joints_plugin" "LIBRARY_DESTINATION" "lib")
+# install("TARGETS" "drive_plugin" "LIBRARY_DESTINATION" "lib")
 include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "joints_plugin" "LIBRARY_DESTINATION" "lib")
+include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_6_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "include/" "DESTINATION" "include/")
 ament_cmake_symlink_install_directory("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/car_cpp" DIRECTORY "include/" "DESTINATION" "include/")

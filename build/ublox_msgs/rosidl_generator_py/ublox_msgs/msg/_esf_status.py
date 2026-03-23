@@ -153,14 +153,12 @@ class EsfSTATUS(metaclass=Metaclass_EsfSTATUS):
         if 'reserved1' not in kwargs:
             self.reserved1 = numpy.zeros(7, dtype=numpy.uint8)
         else:
-            self.reserved1 = numpy.array(kwargs.get('reserved1'), dtype=numpy.uint8)
-            assert self.reserved1.shape == (7, )
+            self.reserved1 = kwargs.get('reserved1')
         self.fusion_mode = kwargs.get('fusion_mode', int())
         if 'reserved2' not in kwargs:
             self.reserved2 = numpy.zeros(2, dtype=numpy.uint8)
         else:
-            self.reserved2 = numpy.array(kwargs.get('reserved2'), dtype=numpy.uint8)
-            assert self.reserved2.shape == (2, )
+            self.reserved2 = kwargs.get('reserved2')
         self.num_sens = kwargs.get('num_sens', int())
         self.sens = kwargs.get('sens', [])
 

@@ -131,7 +131,7 @@ cdr_deserialize(
   cdr >> ros_message.vel_cov_dd;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_ublox_msgs

@@ -118,8 +118,7 @@ class RxmRTCM(metaclass=Metaclass_RxmRTCM):
         if 'reserved0' not in kwargs:
             self.reserved0 = numpy.zeros(2, dtype=numpy.uint8)
         else:
-            self.reserved0 = numpy.array(kwargs.get('reserved0'), dtype=numpy.uint8)
-            assert self.reserved0.shape == (2, )
+            self.reserved0 = kwargs.get('reserved0')
         self.ref_station = kwargs.get('ref_station', int())
         self.msg_type = kwargs.get('msg_type', int())
 

@@ -1,0 +1,44 @@
+[7.024s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/test_gui_j8/src/j8_gui': PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/j8_gui build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/install.log --single-version-externally-managed install_data
+[7.978s] /home/rhobtor/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[7.979s]   warnings.warn(msg)
+[8.223s] running egg_info
+[8.277s] writing ../../../../build/j8_gui/j8_gui.egg-info/PKG-INFO
+[8.278s] writing dependency_links to ../../../../build/j8_gui/j8_gui.egg-info/dependency_links.txt
+[8.278s] writing entry points to ../../../../build/j8_gui/j8_gui.egg-info/entry_points.txt
+[8.284s] writing requirements to ../../../../build/j8_gui/j8_gui.egg-info/requires.txt
+[8.285s] writing top-level names to ../../../../build/j8_gui/j8_gui.egg-info/top_level.txt
+[8.433s] reading manifest file '../../../../build/j8_gui/j8_gui.egg-info/SOURCES.txt'
+[8.441s] writing manifest file '../../../../build/j8_gui/j8_gui.egg-info/SOURCES.txt'
+[8.444s] running build
+[8.445s] running build_py
+[8.445s] copying j8_gui/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build/lib/j8_gui
+[8.445s] copying j8_gui/ros_api.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build/lib/j8_gui
+[8.445s] copying j8_gui/gui_node.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build/lib/j8_gui
+[8.446s] copying j8_gui/app/state_widget.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build/lib/j8_gui/app
+[8.446s] copying j8_gui/app/followzed_widget.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build/lib/j8_gui/app
+[8.450s] copying j8_gui/app/__init__.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build/lib/j8_gui/app
+[8.450s] copying j8_gui/app/map_bridge.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build/lib/j8_gui/app
+[8.450s] copying j8_gui/app/geo_local.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build/lib/j8_gui/app
+[8.450s] copying j8_gui/app/control_widget.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build/lib/j8_gui/app
+[8.451s] copying j8_gui/app/main_window.py -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build/lib/j8_gui/app
+[8.461s] running install
+[8.471s] running install_lib
+[8.565s] running install_data
+[8.566s] copying resource/j8_gui -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/ament_index/resource_index/packages
+[8.566s] copying package.xml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/j8_gui
+[8.566s] copying j8_gui/resources/map.html -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/j8_gui/resources
+[8.566s] copying resource/j8_gui -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/ament_index/resource_index/packages
+[8.567s] copying package.xml -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/j8_gui
+[8.569s] copying j8_gui/resources/map.html -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/j8_gui/resources
+[8.570s] copying j8_gui/resources/vendor/leaflet/leaflet.js -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/j8_gui/resources/vendor/leaflet
+[8.570s] copying j8_gui/resources/vendor/leaflet/leaflet.css -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/j8_gui/resources/vendor/leaflet
+[8.570s] copying j8_gui/resources/vendor/leaflet/images/marker-icon.png -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/j8_gui/resources/vendor/leaflet/images
+[8.570s] copying j8_gui/resources/vendor/leaflet/images/marker-icon-2x.png -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/j8_gui/resources/vendor/leaflet/images
+[8.571s] copying j8_gui/resources/vendor/leaflet/images/marker-shadow.png -> /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/share/j8_gui/resources/vendor/leaflet/images
+[8.571s] running install_egg_info
+[8.659s] removing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui-0.1.0-py3.10.egg-info' (and everything under it)
+[8.660s] Copying ../../../../build/j8_gui/j8_gui.egg-info to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages/j8_gui-0.1.0-py3.10.egg-info
+[8.667s] running install_scripts
+[8.838s] Installing gui script to /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/j8_gui
+[8.838s] writing list of installed files to '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/install.log'
+[9.121s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/test_gui_j8/src/j8_gui' returned '0': PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/j8_gui build --build-base /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/build install --record /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/j8_gui/install.log --single-version-externally-managed install_data

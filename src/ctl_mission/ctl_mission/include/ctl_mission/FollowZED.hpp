@@ -8,6 +8,7 @@
 
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp_lifecycle/lifecycle_node.hpp>
+#include <geometry_msgs/msg/twist.hpp>
 #include <sensor_msgs/msg/image.hpp>
 #include <std_msgs/msg/bool.hpp>
 #include <std_msgs/msg/float32.hpp>
@@ -75,6 +76,7 @@ private:
   void on_follow_enabled_in(const std_msgs::msg::Bool::SharedPtr msg);
   void on_emergency_in(const std_msgs::msg::Bool::SharedPtr msg);
   void on_leader_id_in(const std_msgs::msg::Int32::SharedPtr msg);
+  void on_follow_cmd(const geometry_msgs::msg::Twist::SharedPtr msg);
   void on_gap_incdec(const std_msgs::msg::Int8::SharedPtr msg);
   void on_gap_delta(const std_msgs::msg::Float32::SharedPtr msg);
   void on_gap_set(const std_msgs::msg::Float32::SharedPtr msg);
@@ -93,6 +95,8 @@ private:
 
   /* --------- Helpers --------- */
   void publish_gap_state();
+  bool has_fresh_leader_sample(const rclcpp::Time& now) const;
+  void publish_stop_cmd();
 
   /* ================== Parámetros generales (TCP / vídeo) ================== */
   std::string jetson_host_{"127.0.0.1"};
@@ -101,6 +105,7 @@ private:
   std::string cmd_stop_ {"STOP_FOLLOW\n"};
   std::string cmd_ping_ {"PING\n"};
   double      ping_period_s_{2.0};
+  bool        auto_follow_on_activate_{true};
 
   bool relay_video_{true};
   std::string video_in_topic_{"/zed/person_follow/image_raw"};
@@ -111,6 +116,10 @@ private:
   std::string follow_enabled_in_topic_ {"/follow_zed/follow_enabled"};
   std::string emergency_in_topic_      {"/follow_zed/emergency_stop"};
   std::string leader_id_in_topic_      {"/follow_zed/leader_id"};
+  std::string leader_distance_state_topic_{"/follow_zed/leader_distance_state_m"};
+  std::string follow_cmd_topic_name_{"external_cmd_vel"};
+  std::string secured_cmd_vel_topic_name_{"secured_cmd_vel"};
+  int         cmd_vel_queue_size_{10};
 
   std::string dist_last_obj_topic_out_ {"dist_last_obj"};
   std::string follow_state_topic_      {"/follow_zed/follow_state"};
@@ -135,7 +144,9 @@ private:
   // Publishers (Lifecycle)
   rclcpp_lifecycle::LifecyclePublisher<sensor_msgs::msg::Image>::SharedPtr img_pub_;
   rclcpp_lifecycle::LifecyclePublisher<std_msgs::msg::Float32>::SharedPtr dist_last_obj_pub_;
+  rclcpp_lifecycle::LifecyclePublisher<std_msgs::msg::Float32>::SharedPtr leader_distance_state_pub_;
   rclcpp_lifecycle::LifecyclePublisher<std_msgs::msg::Bool>::SharedPtr     follow_state_pub_;
+  rclcpp_lifecycle::LifecyclePublisher<geometry_msgs::msg::Twist>::SharedPtr secured_cmd_vel_pub_;
   rclcpp_lifecycle::LifecyclePublisher<std_msgs::msg::Float32>::SharedPtr  gap_state_pub_;
 
   // Subscribers
@@ -144,6 +155,7 @@ private:
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr      follow_enabled_in_sub_;
   rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr      emergency_in_sub_;
   rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr     leader_id_in_sub_;
+  rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr follow_cmd_sub_;
   rclcpp::Subscription<std_msgs::msg::Int8>::SharedPtr      gap_incdec_sub_;
   rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr   gap_delta_sub_;
   rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr   gap_set_sub_;
@@ -165,4 +177,5 @@ private:
   float        last_raw_dist_{std::numeric_limits<float>::quiet_NaN()};
   float        last_filtered_dist_{std::numeric_limits<float>::quiet_NaN()};
   rclcpp::Time last_msg_time_;
+  bool         last_motion_cmd_allowed_{false};
 };

@@ -384,6 +384,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/argj801_ctl_platform_interfaces/msg" TYPE FILE FILES "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/msg/KinematicDebugMsg.idl")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/argj801_ctl_platform_interfaces/srv" TYPE FILE FILES "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform_interfaces/srv/SetVelocity.srv")
 endif()
 
@@ -421,6 +425,10 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/argj801_ctl_platform_interfaces/msg" TYPE FILE FILES "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.msg")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/argj801_ctl_platform_interfaces/msg" TYPE FILE FILES "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform_interfaces/msg/KinematicDebugMsg.msg")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

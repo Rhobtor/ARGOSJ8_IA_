@@ -32,6 +32,14 @@ public:
     double getThrottle() const;
     /// @return Steering calculado (normalizado/porcentaje según parámetros).
     double getSteering() const;
+    /// @return Aceleración de throttle solicitada antes de saturar.
+    double getRequestedThrottleAcc() const;
+    /// @return Aceleración de steering solicitada antes de saturar.
+    double getRequestedSteeringAcc() const;
+    /// @return true si el throttle quedó limitado en la última actualización.
+    bool isThrottleLimited() const;
+    /// @return true si el steering quedó limitado en la última actualización.
+    bool isSteeringLimited() const;
 
 private:
     double effective_radius_;
@@ -46,6 +54,10 @@ private:
     double desired_freq;
     double last_throttle_;
     double last_steering_;
+    double requested_throttle_acc_;
+    double requested_steer_acc_;
+    bool throttle_limited_;
+    bool steering_limited_;
 
     /// Implementación interna del cálculo + limitación por aceleración.
     void calculate(double speed, double rotation);

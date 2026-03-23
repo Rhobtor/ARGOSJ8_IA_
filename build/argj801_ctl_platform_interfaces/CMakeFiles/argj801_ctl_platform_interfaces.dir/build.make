@@ -76,6 +76,7 @@ CMakeFiles/argj801_ctl_platform_interfaces: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_
 CMakeFiles/argj801_ctl_platform_interfaces: rosidl_cmake/srv/EmergencyStop_Request.msg
 CMakeFiles/argj801_ctl_platform_interfaces: rosidl_cmake/srv/EmergencyStop_Response.msg
 CMakeFiles/argj801_ctl_platform_interfaces: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.msg
+CMakeFiles/argj801_ctl_platform_interfaces: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform_interfaces/msg/KinematicDebugMsg.msg
 
 argj801_ctl_platform_interfaces: CMakeFiles/argj801_ctl_platform_interfaces
 argj801_ctl_platform_interfaces: CMakeFiles/argj801_ctl_platform_interfaces.dir/build.make

@@ -52,7 +52,7 @@ cdr_deserialize(
   cdr >> ros_message.s_t_tag;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_ublox_msgs

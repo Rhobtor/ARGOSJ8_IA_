@@ -143,8 +143,7 @@ class NavSVIN(metaclass=Metaclass_NavSVIN):
         if 'reserved0' not in kwargs:
             self.reserved0 = numpy.zeros(3, dtype=numpy.uint8)
         else:
-            self.reserved0 = numpy.array(kwargs.get('reserved0'), dtype=numpy.uint8)
-            assert self.reserved0.shape == (3, )
+            self.reserved0 = kwargs.get('reserved0')
         self.i_tow = kwargs.get('i_tow', int())
         self.dur = kwargs.get('dur', int())
         self.mean_x = kwargs.get('mean_x', int())
@@ -161,8 +160,7 @@ class NavSVIN(metaclass=Metaclass_NavSVIN):
         if 'reserved3' not in kwargs:
             self.reserved3 = numpy.zeros(2, dtype=numpy.uint8)
         else:
-            self.reserved3 = numpy.array(kwargs.get('reserved3'), dtype=numpy.uint8)
-            assert self.reserved3.shape == (2, )
+            self.reserved3 = kwargs.get('reserved3')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

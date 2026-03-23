@@ -5,6 +5,9 @@ CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext
   rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.h \
   rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.h \
   rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.h \
+  rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.h \
+  rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__struct.h \
+  rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__type_support.h \
   rosidl_generator_c/argj801_ctl_platform_interfaces/msg/rosidl_generator_c__visibility_control.h \
   rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__functions.h \
   rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.h \
@@ -309,10 +312,6 @@ CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
@@ -365,17 +364,9 @@ CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/string.h:
-
-/usr/include/python3.10/cpython/pydebug.h:
-
-rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx.h:
-
-/opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/python3.10/cpython/fileutils.h:
 
@@ -403,11 +394,15 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__ty
 
 /usr/include/inttypes.h:
 
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__type_support.h:
+
 /usr/include/python3.10/pymacro.h:
 
 /usr/include/python3.10/classobject.h:
-
-/usr/include/python3.10/cpython/pyfpe.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -447,13 +442,21 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__
 
 /usr/include/linux/posix_types.h:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+/usr/include/linux/limits.h:
 
-/usr/include/python3.10/tracemalloc.h:
+/usr/include/linux/close_range.h:
 
 /usr/include/python3.10/code.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx.h:
+
+/opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
+
+/usr/include/python3.10/cpython/pydebug.h:
 
 /usr/include/math.h:
 
@@ -473,13 +476,13 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/get_velocity__func
 
 rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__functions.h:
 
-/usr/include/limits.h:
-
-/usr/include/python3.10/cpython/object.h:
-
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h:
+
+/usr/include/limits.h:
+
+/usr/include/python3.10/cpython/object.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -507,12 +510,6 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__
 
 /usr/include/python3.10/longobject.h:
 
-rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.h:
-
-/usr/include/python3.10/weakrefobject.h:
-
-/usr/include/stdint.h:
-
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/python3.10/abstract.h:
@@ -522,6 +519,28 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type
 /usr/include/python3.10/cpython/unicodeobject.h:
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/python3.10/longintrepr.h:
+
+/usr/include/python3.10/floatobject.h:
+
+rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.h:
+
+/usr/include/python3.10/weakrefobject.h:
+
+/usr/include/stdint.h:
+
+/usr/include/python3.10/cpython/initconfig.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
+
+/usr/include/python3.10/tracemalloc.h:
+
+rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/python3.10/cpython/fileobject.h:
 
 /usr/include/sched.h:
 
@@ -547,17 +566,11 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type
 
 /usr/include/python3.10/import.h:
 
-/usr/include/linux/close_range.h:
-
 /usr/include/python3.10/cpython/pyctype.h:
 
 /usr/include/asm-generic/types.h:
 
-/usr/include/python3.10/cpython/initconfig.h:
-
-/usr/include/python3.10/cpython/fileobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__struct.h:
 
 rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.h:
 
@@ -583,7 +596,11 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__stru
 
 /usr/include/ctype.h:
 
-/usr/include/linux/limits.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/string.h:
+
+/usr/include/python3.10/cpython/pyfpe.h:
 
 /usr/include/python3.10/cpython/pylifecycle.h:
 
@@ -610,10 +627,6 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__stru
 /usr/include/python3.10/cpython/odictobject.h:
 
 /usr/include/python3.10/fileobject.h:
-
-/usr/include/python3.10/longintrepr.h:
-
-/usr/include/python3.10/floatobject.h:
 
 /usr/include/python3.10/namespaceobject.h:
 
@@ -729,6 +742,12 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/get_velocity__stru
 
 /usr/include/python3.10/warnings.h:
 
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/stdc-predef.h:
+
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
 /usr/include/stdio.h:
@@ -754,13 +773,3 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/get_velocity__stru
 /usr/include/x86_64-linux-gnu/asm/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn.h:

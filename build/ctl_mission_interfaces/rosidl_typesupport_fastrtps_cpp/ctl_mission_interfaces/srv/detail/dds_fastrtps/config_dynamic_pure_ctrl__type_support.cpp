@@ -72,7 +72,7 @@ cdr_deserialize(
   cdr >> ros_message.max_lin_dec;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_ctl_mission_interfaces
@@ -364,7 +364,7 @@ cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_ctl_mission_interfaces

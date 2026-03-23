@@ -167,6 +167,18 @@ ament_target_dependencies(voxel_grid_node
 install(TARGETS voxel_grid_node
   DESTINATION lib/${PROJECT_NAME})
 
+add_executable(velodyne_noise_filter_node src/velodyne_noise_filter_node.cpp)
+ament_target_dependencies(velodyne_noise_filter_node
+  rclcpp
+  sensor_msgs
+  tf2
+  tf2_ros
+  tf2_geometry_msgs
+)
+
+install(TARGETS velodyne_noise_filter_node
+  DESTINATION lib/${PROJECT_NAME})
+
 
 # add_executable(gridmap src/gridmap.cpp)
 # ament_target_dependencies(gridmap

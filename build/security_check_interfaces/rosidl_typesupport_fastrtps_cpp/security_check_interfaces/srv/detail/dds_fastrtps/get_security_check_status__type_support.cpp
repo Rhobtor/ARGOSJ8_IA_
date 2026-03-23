@@ -47,7 +47,7 @@ cdr_deserialize(
   cdr >> ros_message.structure_needs_at_least_one_member;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_security_check_interfaces
@@ -263,7 +263,7 @@ cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_security_check_interfaces

@@ -1,0 +1,196 @@
+[2.800s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins -- -j16 -l16
+[3.948s] [  2%] Built target hector_gazebo_plugins__cpp
+[3.948s] [  6%] Built target hector_gazebo_ros_sonar
+[3.949s] [ 14%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_cpp
+[3.949s] [ 22%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp
+[3.949s] [ 30%] Built target hector_gazebo_plugins__rosidl_typesupport_cpp
+[3.949s] [ 34%] Built target hector_gazebo_ros_magnetic
+[3.949s] [ 38%] Built target hector_gazebo_ros_gps
+[3.949s] [ 42%] Built target hector_gazebo_ros_imu
+[3.950s] [ 46%] Built target hector_gazebo_reset_plugin
+[3.950s] [ 46%] Built target ament_cmake_python_copy_hector_gazebo_plugins
+[3.950s] [ 55%] Built target hector_gazebo_plugins__rosidl_generator_c
+[5.346s] running egg_info
+[5.354s] writing hector_gazebo_plugins.egg-info/PKG-INFO
+[5.354s] writing dependency_links to hector_gazebo_plugins.egg-info/dependency_links.txt
+[5.354s] writing top-level names to hector_gazebo_plugins.egg-info/top_level.txt
+[5.366s] reading manifest file 'hector_gazebo_plugins.egg-info/SOURCES.txt'
+[5.366s] writing manifest file 'hector_gazebo_plugins.egg-info/SOURCES.txt'
+[5.367s] [ 55%] Built target ament_cmake_python_build_hector_gazebo_plugins_egg
+[5.372s] [ 63%] Built target hector_gazebo_plugins__rosidl_typesupport_c
+[5.374s] [ 71%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_c
+[5.416s] [ 79%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_c
+[5.460s] [ 79%] Built target hector_gazebo_plugins
+[5.502s] [ 81%] Built target hector_gazebo_plugins__py
+[5.565s] [ 87%] Built target hector_gazebo_plugins__rosidl_generator_py
+[5.604s] [ 91%] Built target hector_gazebo_plugins__rosidl_typesupport_fastrtps_c__pyext
+[5.656s] [ 95%] Built target hector_gazebo_plugins__rosidl_typesupport_c__pyext
+[5.715s] [100%] Built target hector_gazebo_plugins__rosidl_typesupport_introspection_c__pyext
+[6.244s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins -- -j16 -l16
+[6.259s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins
+[7.358s] -- Install configuration: ""
+[7.358s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/ament_index/resource_index/rosidl_interfaces/hector_gazebo_plugins
+[7.359s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins
+[7.359s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv
+[7.359s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/set_bias.h
+[7.359s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/set_reference_geo_pose.h
+[7.359s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail
+[7.359s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__struct.h
+[7.359s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__struct.h
+[7.360s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__type_support.h
+[7.360s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__functions.c
+[7.360s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__functions.c
+[7.360s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__functions.h
+[7.360s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__type_support.h
+[7.360s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__functions.h
+[7.361s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/msg
+[7.361s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/msg/rosidl_generator_c__visibility_control.h
+[7.363s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/environment/library_path.sh
+[7.363s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/environment/library_path.dsv
+[7.364s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_plugins__rosidl_generator_c.so
+[7.364s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins
+[7.364s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv
+[7.364s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail
+[7.365s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__rosidl_typesupport_fastrtps_c.h
+[7.365s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__rosidl_typesupport_fastrtps_c.h
+[7.366s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/msg
+[7.366s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.367s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_plugins__rosidl_typesupport_fastrtps_c.so
+[7.367s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins
+[7.367s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv
+[7.367s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail
+[7.367s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__traits.hpp
+[7.367s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__traits.hpp
+[7.368s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__type_support.hpp
+[7.368s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__builder.hpp
+[7.368s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__type_support.hpp
+[7.368s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__struct.hpp
+[7.368s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__struct.hpp
+[7.368s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__builder.hpp
+[7.369s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/set_bias.hpp
+[7.369s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/set_reference_geo_pose.hpp
+[7.369s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/msg
+[7.369s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.369s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins
+[7.369s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv
+[7.370s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail
+[7.370s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__rosidl_typesupport_fastrtps_cpp.hpp
+[7.370s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/dds_fastrtps
+[7.371s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[7.371s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/msg
+[7.373s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.378s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_plugins__rosidl_typesupport_fastrtps_cpp.so
+[7.378s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins
+[7.379s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv
+[7.379s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail
+[7.379s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__type_support.c
+[7.379s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__type_support.c
+[7.379s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__rosidl_typesupport_introspection_c.h
+[7.380s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__rosidl_typesupport_introspection_c.h
+[7.380s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/msg
+[7.380s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.380s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_plugins__rosidl_typesupport_introspection_c.so
+[7.381s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_plugins__rosidl_typesupport_c.so
+[7.381s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins
+[7.381s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv
+[7.381s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail
+[7.382s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__rosidl_typesupport_introspection_cpp.hpp
+[7.384s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__rosidl_typesupport_introspection_cpp.hpp
+[7.384s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_reference_geo_pose__type_support.cpp
+[7.384s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/hector_gazebo_plugins/hector_gazebo_plugins/srv/detail/set_bias__type_support.cpp
+[7.385s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_plugins__rosidl_typesupport_introspection_cpp.so
+[7.385s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_plugins__rosidl_typesupport_cpp.so
+[7.385s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/environment/pythonpath.sh
+[7.385s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/environment/pythonpath.dsv
+[7.385s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins-0.5.4-py3.10.egg-info
+[7.386s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins-0.5.4-py3.10.egg-info/top_level.txt
+[7.386s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins-0.5.4-py3.10.egg-info/SOURCES.txt
+[7.386s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins-0.5.4-py3.10.egg-info/PKG-INFO
+[7.386s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins-0.5.4-py3.10.egg-info/dependency_links.txt
+[7.387s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins
+[7.387s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/srv
+[7.392s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/srv/_set_reference_geo_pose.py
+[7.393s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/srv/_set_bias_s.c
+[7.393s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/srv/_set_bias.py
+[7.393s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/srv/__init__.py
+[7.394s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/srv/_set_reference_geo_pose_s.c
+[7.394s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/hector_gazebo_plugins_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.394s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/hector_gazebo_plugins_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.394s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/_hector_gazebo_plugins_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.394s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/_hector_gazebo_plugins_s.ep.rosidl_typesupport_c.c
+[7.395s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/_hector_gazebo_plugins_s.ep.rosidl_typesupport_introspection_c.c
+[7.395s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/__init__.py
+[7.395s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/libhector_gazebo_plugins__rosidl_generator_py.so
+[7.395s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/hector_gazebo_plugins_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.396s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins'...
+[7.407s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/srv'...
+[7.408s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/hector_gazebo_plugins_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.408s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/hector_gazebo_plugins_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.409s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages/hector_gazebo_plugins/hector_gazebo_plugins_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.409s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_plugins__rosidl_generator_py.so
+[7.409s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/srv/SetBias.idl
+[7.409s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/srv/SetReferenceGeoPose.idl
+[7.409s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/srv/SetBias.srv
+[7.410s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/srv/SetBias_Request.msg
+[7.412s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/srv/SetBias_Response.msg
+[7.412s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/srv/SetReferenceGeoPose.srv
+[7.413s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/srv/SetReferenceGeoPose_Request.msg
+[7.413s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/srv/SetReferenceGeoPose_Response.msg
+[7.413s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include
+[7.413s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/update_timer.h
+[7.414s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/gazebo_ros_imu.h
+[7.414s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/sensor_model.h
+[7.414s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/gazebo_ros_magnetic.h
+[7.414s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/gnss_config.h
+[7.414s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/diffdrive_plugin_multi_wheel.h
+[7.415s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/reset_plugin.h
+[7.415s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/servo_plugin.h
+[7.415s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/gazebo_ros_gps.h
+[7.415s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/gazebo_ros_force_based_move.h
+[7.415s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/diffdrive_plugin_6w.h
+[7.416s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/include/gazebo_ros_sonar.h
+[7.416s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_reset_plugin.so
+[7.416s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_ros_imu.so
+[7.417s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_ros_magnetic.so
+[7.417s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_ros_gps.so
+[7.417s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/lib/libhector_gazebo_ros_sonar.so
+[7.417s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/ament_index/resource_index/package_run_dependencies/hector_gazebo_plugins
+[7.418s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/ament_index/resource_index/parent_prefix_path/hector_gazebo_plugins
+[7.418s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/environment/ament_prefix_path.sh
+[7.418s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/environment/ament_prefix_path.dsv
+[7.418s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/environment/path.sh
+[7.418s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/environment/path.dsv
+[7.419s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/local_setup.bash
+[7.419s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/local_setup.sh
+[7.419s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/local_setup.zsh
+[7.419s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/local_setup.dsv
+[7.419s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/package.dsv
+[7.420s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/ament_index/resource_index/packages/hector_gazebo_plugins
+[7.425s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/export_hector_gazebo_plugins__rosidl_generator_cExport.cmake
+[7.425s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/export_hector_gazebo_plugins__rosidl_generator_cExport-noconfig.cmake
+[7.425s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/export_hector_gazebo_plugins__rosidl_typesupport_fastrtps_cExport.cmake
+[7.425s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/export_hector_gazebo_plugins__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.426s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/export_hector_gazebo_plugins__rosidl_generator_cppExport.cmake
+[7.426s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/export_hector_gazebo_plugins__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.433s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/export_hector_gazebo_plugins__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.433s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/hector_gazebo_plugins__rosidl_typesupport_introspection_cExport.cmake
+[7.433s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/hector_gazebo_plugins__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.433s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/hector_gazebo_plugins__rosidl_typesupport_cExport.cmake
+[7.434s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/hector_gazebo_plugins__rosidl_typesupport_cExport-noconfig.cmake
+[7.434s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/hector_gazebo_plugins__rosidl_typesupport_introspection_cppExport.cmake
+[7.434s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/hector_gazebo_plugins__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.434s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/hector_gazebo_plugins__rosidl_typesupport_cppExport.cmake
+[7.434s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/hector_gazebo_plugins__rosidl_typesupport_cppExport-noconfig.cmake
+[7.435s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/export_hector_gazebo_plugins__rosidl_generator_pyExport.cmake
+[7.436s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/export_hector_gazebo_plugins__rosidl_generator_pyExport-noconfig.cmake
+[7.437s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/rosidl_cmake-extras.cmake
+[7.437s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.437s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.438s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/ament_cmake_export_libraries-extras.cmake
+[7.438s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/ament_cmake_export_targets-extras.cmake
+[7.438s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.438s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.438s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/hector_gazebo_pluginsConfig.cmake
+[7.439s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/cmake/hector_gazebo_pluginsConfig-version.cmake
+[7.439s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/hector_gazebo_plugins/share/hector_gazebo_plugins/package.xml
+[8.579s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins

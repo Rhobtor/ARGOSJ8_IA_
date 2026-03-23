@@ -300,14 +300,12 @@ class MonHW6(metaclass=Metaclass_MonHW6):
         if 'vp' not in kwargs:
             self.vp = numpy.zeros(25, dtype=numpy.uint8)
         else:
-            self.vp = numpy.array(kwargs.get('vp'), dtype=numpy.uint8)
-            assert self.vp.shape == (25, )
+            self.vp = kwargs.get('vp')
         self.jam_ind = kwargs.get('jam_ind', int())
         if 'reserved1' not in kwargs:
             self.reserved1 = numpy.zeros(2, dtype=numpy.uint8)
         else:
-            self.reserved1 = numpy.array(kwargs.get('reserved1'), dtype=numpy.uint8)
-            assert self.reserved1.shape == (2, )
+            self.reserved1 = kwargs.get('reserved1')
         self.pin_irq = kwargs.get('pin_irq', int())
         self.pull_h = kwargs.get('pull_h', int())
         self.pull_l = kwargs.get('pull_l', int())

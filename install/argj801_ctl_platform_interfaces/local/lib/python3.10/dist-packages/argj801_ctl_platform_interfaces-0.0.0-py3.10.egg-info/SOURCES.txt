@@ -6,6 +6,7 @@ argj801_ctl_platform_interfaces.egg-info/dependency_links.txt
 argj801_ctl_platform_interfaces.egg-info/top_level.txt
 argj801_ctl_platform_interfaces/msg/__init__.py
 argj801_ctl_platform_interfaces/msg/_cmd_throttle_msg.py
+argj801_ctl_platform_interfaces/msg/_kinematic_debug_msg.py
 argj801_ctl_platform_interfaces/srv/__init__.py
 argj801_ctl_platform_interfaces/srv/_emergency_stop.py
 argj801_ctl_platform_interfaces/srv/_get_velocity.py

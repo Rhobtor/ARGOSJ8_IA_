@@ -13,6 +13,7 @@ The YAML file contains the configuraiton parameters for all the running nodes, a
 
 - `cmd_vel_topic_name`: (string) Topic name for command velocity.
 - `secured_cmd_vel_topic_name`: (string) Topic name for command velocity after the security check is performed.
+- `follow_cmd_topic_name`: (string) Topic name for the external Twist used by the FollowZED FSM when a leader is detected.
 - `joystick_topic_name`: (string) Topic name for joystick messages.
 - `gps_topic`: (string) Topic name for GPS data.
 - `ll_path_topic`: (string) Topic name for path in latitude-longitude format.

@@ -122,8 +122,7 @@ class NavATT(metaclass=Metaclass_NavATT):
         if 'reserved0' not in kwargs:
             self.reserved0 = numpy.zeros(3, dtype=numpy.uint8)
         else:
-            self.reserved0 = numpy.array(kwargs.get('reserved0'), dtype=numpy.uint8)
-            assert self.reserved0.shape == (3, )
+            self.reserved0 = kwargs.get('reserved0')
         self.roll = kwargs.get('roll', int())
         self.pitch = kwargs.get('pitch', int())
         self.heading = kwargs.get('heading', int())

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_py/argj801_ctl_platform_interfaces/msg/__init__.py"
   "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_py/argj801_ctl_platform_interfaces/msg/_cmd_throttle_msg.py"
   "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_py/argj801_ctl_platform_interfaces/msg/_cmd_throttle_msg_s.c"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_py/argj801_ctl_platform_interfaces/msg/_kinematic_debug_msg.py"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_py/argj801_ctl_platform_interfaces/msg/_kinematic_debug_msg_s.c"
   "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/__init__.py"
   "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_emergency_stop.py"
   "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_py/argj801_ctl_platform_interfaces/srv/_emergency_stop_s.c"

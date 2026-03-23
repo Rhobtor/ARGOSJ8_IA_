@@ -103,8 +103,7 @@ class EsfRAW(metaclass=Metaclass_EsfRAW):
         if 'reserved0' not in kwargs:
             self.reserved0 = numpy.zeros(4, dtype=numpy.uint8)
         else:
-            self.reserved0 = numpy.array(kwargs.get('reserved0'), dtype=numpy.uint8)
-            assert self.reserved0.shape == (4, )
+            self.reserved0 = kwargs.get('reserved0')
         self.blocks = kwargs.get('blocks', [])
 
     def __repr__(self):

@@ -23,6 +23,7 @@
  * - `follow_enabled_in_topic`  [std_msgs/msg/Bool] external enable switch
  * - `emergency_in_topic`       [std_msgs/msg/Bool] emergency flag from vision system
  * - `leader_id_in_topic`       [std_msgs/msg/Int32] id of the tracked person/leader
+ * - `follow_cmd_topic_name`    [geometry_msgs/msg/Twist] external velocity command for follow-me
  * - Gap tuning:
  *   - `gap_incdec_topic` [std_msgs/msg/Int8] discrete gap +/- requests
  *   - `gap_delta_topic`  [std_msgs/msg/Float32] continuous delta to add to gap
@@ -33,8 +34,12 @@
  * ### Publications (outputs)
  * - `dist_last_obj_topic_out` [std_msgs/msg/Float32]
  *     Distance-to-target published towards the controller layer.
+ * - `leader_distance_state_topic` [std_msgs/msg/Float32]
+ *     Filtered distance from robot to tracked person, without subtracting the configured gap.
  * - `follow_state_topic` [std_msgs/msg/Bool] (latched)
  *     True when internal FSM is in FOLLOWING.
+ * - `secured_cmd_vel_topic_name` [geometry_msgs/msg/Twist]
+ *     Forwarded velocity command, but only while the FSM is FOLLOWING and the leader is fresh.
  * - `gap_state_topic` [std_msgs/msg/Float32] (latched)
  *     Current follow gap in meters.
  * - Optional video relay:
@@ -266,6 +271,7 @@
 #include <algorithm>
 #include <cmath>
 #include <cstring>
+#include <limits>
 
 /* =============================== TcpClient =============================== */
 bool TcpClient::connect(const std::string& host, int port) {
@@ -378,6 +384,11 @@ void FollowZEDNode::set_state(State s, const char* reason) {
     else                             client_.send_line(cmd_stop_);
   }
 
+  if (state_ != State::FOLLOWING) {
+    publish_stop_cmd();
+    last_motion_cmd_allowed_ = false;
+  }
+
   RCLCPP_WARN(this->get_logger(), "[FSM] %s → %s (%s)",
               state_name(prev), state_name(state_), reason);
 }
@@ -393,6 +404,7 @@ CallbackReturn FollowZEDNode::on_configure(const rclcpp_lifecycle::State&) {
   this->declare_parameter<std::string>("cmd_stop",  cmd_stop_);
   this->declare_parameter<std::string>("cmd_ping",  cmd_ping_);
   this->declare_parameter<double>("ping_period_s",  ping_period_s_);
+  this->declare_parameter<bool>("auto_follow_on_activate", auto_follow_on_activate_);
 
   this->declare_parameter<bool>("relay_video",        relay_video_);
   this->declare_parameter<std::string>("video_in_topic",  video_in_topic_);
@@ -403,6 +415,10 @@ CallbackReturn FollowZEDNode::on_configure(const rclcpp_lifecycle::State&) {
   this->declare_parameter<std::string>("follow_enabled_in_topic",  follow_enabled_in_topic_);
   this->declare_parameter<std::string>("emergency_in_topic",       emergency_in_topic_);
   this->declare_parameter<std::string>("leader_id_in_topic",       leader_id_in_topic_);
+  this->declare_parameter<std::string>("leader_distance_state_topic", leader_distance_state_topic_);
+  this->declare_parameter<std::string>("follow_cmd_topic_name", follow_cmd_topic_name_);
+  this->declare_parameter<std::string>("secured_cmd_vel_topic_name", secured_cmd_vel_topic_name_);
+  this->declare_parameter<int>("cmd_vel_queue_size", cmd_vel_queue_size_);
 
   this->declare_parameter<std::string>("dist_last_obj_topic_out",  dist_last_obj_topic_out_);
   this->declare_parameter<std::string>("follow_state_topic",       follow_state_topic_);
@@ -428,6 +444,7 @@ CallbackReturn FollowZEDNode::on_configure(const rclcpp_lifecycle::State&) {
   this->get_parameter("cmd_stop",    cmd_stop_);
   this->get_parameter("cmd_ping",    cmd_ping_);
   this->get_parameter("ping_period_s", ping_period_s_);
+  this->get_parameter("auto_follow_on_activate", auto_follow_on_activate_);
 
   this->get_parameter("relay_video",       relay_video_);
   this->get_parameter("video_in_topic",    video_in_topic_);
@@ -437,6 +454,10 @@ CallbackReturn FollowZEDNode::on_configure(const rclcpp_lifecycle::State&) {
   this->get_parameter("follow_enabled_in_topic",  follow_enabled_in_topic_);
   this->get_parameter("emergency_in_topic",       emergency_in_topic_);
   this->get_parameter("leader_id_in_topic",       leader_id_in_topic_);
+  this->get_parameter("leader_distance_state_topic", leader_distance_state_topic_);
+  this->get_parameter("follow_cmd_topic_name", follow_cmd_topic_name_);
+  this->get_parameter("secured_cmd_vel_topic_name", secured_cmd_vel_topic_name_);
+  this->get_parameter("cmd_vel_queue_size", cmd_vel_queue_size_);
 
   this->get_parameter("dist_last_obj_topic_out",  dist_last_obj_topic_out_);
   this->get_parameter("follow_state_topic",       follow_state_topic_);
@@ -468,8 +489,12 @@ CallbackReturn FollowZEDNode::on_configure(const rclcpp_lifecycle::State&) {
 
   // Estados latched (transient local)
   auto latched = rclcpp::QoS(rclcpp::KeepLast(1)).transient_local();
+  leader_distance_state_pub_ = this->create_publisher<std_msgs::msg::Float32>(
+      leader_distance_state_topic_, latched);
   follow_state_pub_ = this->create_publisher<std_msgs::msg::Bool>(
       follow_state_topic_, latched);
+  secured_cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>(
+      secured_cmd_vel_topic_name_, rclcpp::QoS(std::max(1, cmd_vel_queue_size_)));
   gap_state_pub_ = this->create_publisher<std_msgs::msg::Float32>(
       gap_state_topic_, latched);
 
@@ -496,6 +521,10 @@ CallbackReturn FollowZEDNode::on_configure(const rclcpp_lifecycle::State&) {
       leader_id_in_topic_, rclcpp::QoS(10),
       std::bind(&FollowZEDNode::on_leader_id_in, this, _1));
 
+    follow_cmd_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
+      follow_cmd_topic_name_, rclcpp::QoS(std::max(1, cmd_vel_queue_size_)),
+      std::bind(&FollowZEDNode::on_follow_cmd, this, _1));
+
   gap_incdec_sub_ = this->create_subscription<std_msgs::msg::Int8>(
       gap_incdec_topic_, rclcpp::QoS(10),
       std::bind(&FollowZEDNode::on_gap_incdec, this, _1));
@@ -519,6 +548,7 @@ CallbackReturn FollowZEDNode::on_configure(const rclcpp_lifecycle::State&) {
   last_raw_dist_      = std::numeric_limits<float>::quiet_NaN();
   last_msg_time_      = rclcpp::Time(0, 0, this->get_clock()->get_clock_type());
   state_              = State::IDLE;
+  last_motion_cmd_allowed_ = false;
 
   // Callback TCP (recibir líneas)
   client_.set_on_line(std::bind(&FollowZEDNode::on_tcp_line, this, std::placeholders::_1));
@@ -527,9 +557,11 @@ CallbackReturn FollowZEDNode::on_configure(const rclcpp_lifecycle::State&) {
   publish_gap_state();
 
   RCLCPP_INFO(this->get_logger(),
-    "FollowZED configured. Jetson %s:%d  relay_video=%s  in='%s'  out='%s'  gap=%.2fm",
+    "FollowZED configured. Jetson %s:%d  relay_video=%s  in='%s'  out='%s'  leader_state='%s'  cmd_in='%s'  cmd_out='%s'  gap=%.2fm",
     jetson_host_.c_str(), jetson_port_, relay_video_ ? "ON" : "OFF",
-    leader_distance_topic_in_.c_str(), dist_last_obj_topic_out_.c_str(), follow_gap_m_);
+    leader_distance_topic_in_.c_str(), dist_last_obj_topic_out_.c_str(),
+    leader_distance_state_topic_.c_str(), follow_cmd_topic_name_.c_str(),
+    secured_cmd_vel_topic_name_.c_str(), follow_gap_m_);
 
   return CallbackReturn::SUCCESS;
 }
@@ -538,8 +570,13 @@ CallbackReturn FollowZEDNode::on_configure(const rclcpp_lifecycle::State&) {
 CallbackReturn FollowZEDNode::on_activate(const rclcpp_lifecycle::State&) {
   if (img_pub_)           img_pub_->on_activate();
   if (dist_last_obj_pub_) dist_last_obj_pub_->on_activate();
+  if (leader_distance_state_pub_) leader_distance_state_pub_->on_activate();
   if (follow_state_pub_)  follow_state_pub_->on_activate();
+  if (secured_cmd_vel_pub_) secured_cmd_vel_pub_->on_activate();
   if (gap_state_pub_)     gap_state_pub_->on_activate();
+
+  state_ = auto_follow_on_activate_ ? State::FOLLOWING : State::IDLE;
+  last_motion_cmd_allowed_ = false;
 
   // Timer de ping TCP
   ping_timer_ = this->create_wall_timer(
@@ -555,13 +592,16 @@ CallbackReturn FollowZEDNode::on_activate(const rclcpp_lifecycle::State&) {
   // Conectar TCP
   start_tcp();
 
-  // Publicar estado actual (IDLE)
+  // Publicar estado actual
   if (follow_state_pub_) {
-    std_msgs::msg::Bool st; st.data = false;
+    std_msgs::msg::Bool st;
+    st.data = (state_ == State::FOLLOWING);
     follow_state_pub_->publish(st);
   }
+  publish_stop_cmd();
 
-  RCLCPP_INFO(this->get_logger(), "FollowZED activated.");
+  RCLCPP_INFO(this->get_logger(), "FollowZED activated. initial_state=%s auto_follow_on_activate=%s",
+              state_name(state_), auto_follow_on_activate_ ? "true" : "false");
   return CallbackReturn::SUCCESS;
 }
 
@@ -571,12 +611,22 @@ CallbackReturn FollowZEDNode::on_deactivate(const rclcpp_lifecycle::State&) {
   ping_timer_.reset();
   tick_timer_.reset();
 
+  // Enviar STOP al salir del modo antes de cerrar TCP
+  if (client_.is_connected()) {
+    if (state_ != State::IDLE) set_state(State::IDLE, "lifecycle_deactivate");
+    else                       client_.send_line(cmd_stop_);
+  }
+  publish_stop_cmd();
+  last_motion_cmd_allowed_ = false;
+
   // TCP
   stop_tcp();
 
   if (img_pub_)           img_pub_->on_deactivate();
   if (dist_last_obj_pub_) dist_last_obj_pub_->on_deactivate();
+  if (leader_distance_state_pub_) leader_distance_state_pub_->on_deactivate();
   if (follow_state_pub_)  follow_state_pub_->on_deactivate();
+  if (secured_cmd_vel_pub_) secured_cmd_vel_pub_->on_deactivate();
   if (gap_state_pub_)     gap_state_pub_->on_deactivate();
 
   RCLCPP_INFO(this->get_logger(), "FollowZED deactivated.");
@@ -587,7 +637,9 @@ CallbackReturn FollowZEDNode::on_deactivate(const rclcpp_lifecycle::State&) {
 CallbackReturn FollowZEDNode::on_cleanup(const rclcpp_lifecycle::State&) {
   img_pub_.reset();
   dist_last_obj_pub_.reset();
+  leader_distance_state_pub_.reset();
   follow_state_pub_.reset();
+  secured_cmd_vel_pub_.reset();
   gap_state_pub_.reset();
 
   img_sub_.reset();
@@ -595,6 +647,7 @@ CallbackReturn FollowZEDNode::on_cleanup(const rclcpp_lifecycle::State&) {
   follow_enabled_in_sub_.reset();
   emergency_in_sub_.reset();
   leader_id_in_sub_.reset();
+  follow_cmd_sub_.reset();
   gap_incdec_sub_.reset();
   gap_delta_sub_.reset();
   gap_set_sub_.reset();
@@ -651,6 +704,26 @@ void FollowZEDNode::on_leader_id_in(const std_msgs::msg::Int32::SharedPtr msg) {
                        "[follow_zed] leader_id=%d", last_leader_id_);
 }
 
+void FollowZEDNode::on_follow_cmd(const geometry_msgs::msg::Twist::SharedPtr msg) {
+  if (!secured_cmd_vel_pub_) {
+    return;
+  }
+
+  const bool can_forward =
+    state_ == State::FOLLOWING && has_fresh_leader_sample(this->get_clock()->now());
+
+  if (!can_forward) {
+    if (last_motion_cmd_allowed_) {
+      publish_stop_cmd();
+      last_motion_cmd_allowed_ = false;
+    }
+    return;
+  }
+
+  secured_cmd_vel_pub_->publish(*msg);
+  last_motion_cmd_allowed_ = true;
+}
+
 /* GAP */
 void FollowZEDNode::on_gap_incdec(const std_msgs::msg::Int8::SharedPtr msg) {
   int step = static_cast<int>(msg->data);
@@ -681,6 +754,24 @@ void FollowZEDNode::publish_gap_state() {
   gap_state_pub_->publish(msg);
 }
 
+bool FollowZEDNode::has_fresh_leader_sample(const rclcpp::Time& now) const {
+  if (last_msg_time_.nanoseconds() <= 0 || !std::isfinite(last_filtered_dist_)) {
+    return false;
+  }
+
+  const auto age_ms = static_cast<int64_t>((now - last_msg_time_).nanoseconds() / 1000000);
+  return age_ms <= lost_timeout_ms_;
+}
+
+void FollowZEDNode::publish_stop_cmd() {
+  if (!secured_cmd_vel_pub_) {
+    return;
+  }
+
+  geometry_msgs::msg::Twist stop_cmd;
+  secured_cmd_vel_pub_->publish(stop_cmd);
+}
+
 /* Servicio compatibilidad GUI */
 void FollowZEDNode::on_set_follow_enabled(
   const std::shared_ptr<std_srvs::srv::SetBool::Request> req,
@@ -707,21 +798,37 @@ void FollowZEDNode::tick() {
   if (!dist_last_obj_pub_) return;
 
   std_msgs::msg::Float32 out;
+  std_msgs::msg::Float32 leader_distance_out;
+
+  const rclcpp::Time now = this->get_clock()->now();
+  const bool fresh = has_fresh_leader_sample(now);
+
+  if (fresh && std::isfinite(last_filtered_dist_)) {
+    leader_distance_out.data = last_filtered_dist_;
+  } else if (publish_on_lost_ == "nan") {
+    leader_distance_out.data = std::numeric_limits<float>::quiet_NaN();
+  } else if (publish_on_lost_ == "hold") {
+    leader_distance_out.data = std::isfinite(last_filtered_dist_) ?
+      last_filtered_dist_ : std::numeric_limits<float>::quiet_NaN();
+  } else {
+    leader_distance_out.data = std::numeric_limits<float>::max();
+  }
+
+  if (leader_distance_state_pub_) {
+    leader_distance_state_pub_->publish(leader_distance_out);
+  }
+
+  const bool motion_allowed = state_ == State::FOLLOWING && fresh && std::isfinite(last_filtered_dist_);
+  if (!motion_allowed && last_motion_cmd_allowed_) {
+    publish_stop_cmd();
+    last_motion_cmd_allowed_ = false;
+  }
 
   // EMERGENCIA: paro inmediato
   if (state_ == State::EMERGENCY) {
     out.data = 0.0f;
     dist_last_obj_pub_->publish(out);
     return;
-  }
-
-  const rclcpp::Time now = this->get_clock()->now();
-  const bool have_sample = last_msg_time_.nanoseconds() > 0;
-
-  bool fresh = false;
-  if (have_sample) {
-    const auto age_ms = static_cast<int64_t>((now - last_msg_time_).nanoseconds() / 1000000);
-    fresh = (age_ms <= lost_timeout_ms_);
   }
 
   if (state_ == State::FOLLOWING) {

@@ -15,6 +15,14 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_main.cpp.o
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp
@@ -794,6 +802,14 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp
  /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp

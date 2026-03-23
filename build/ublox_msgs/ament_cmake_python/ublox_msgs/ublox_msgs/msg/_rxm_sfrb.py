@@ -104,8 +104,7 @@ class RxmSFRB(metaclass=Metaclass_RxmSFRB):
         if 'dwrd' not in kwargs:
             self.dwrd = numpy.zeros(10, dtype=numpy.uint32)
         else:
-            self.dwrd = numpy.array(kwargs.get('dwrd'), dtype=numpy.uint32)
-            assert self.dwrd.shape == (10, )
+            self.dwrd = kwargs.get('dwrd')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

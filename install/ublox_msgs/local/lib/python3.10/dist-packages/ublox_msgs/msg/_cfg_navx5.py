@@ -232,8 +232,7 @@ class CfgNAVX5(metaclass=Metaclass_CfgNAVX5):
         if 'reserved1' not in kwargs:
             self.reserved1 = numpy.zeros(2, dtype=numpy.uint8)
         else:
-            self.reserved1 = numpy.array(kwargs.get('reserved1'), dtype=numpy.uint8)
-            assert self.reserved1.shape == (2, )
+            self.reserved1 = kwargs.get('reserved1')
         self.min_svs = kwargs.get('min_svs', int())
         self.max_svs = kwargs.get('max_svs', int())
         self.min_cno = kwargs.get('min_cno', int())
@@ -242,29 +241,25 @@ class CfgNAVX5(metaclass=Metaclass_CfgNAVX5):
         if 'reserved3' not in kwargs:
             self.reserved3 = numpy.zeros(2, dtype=numpy.uint8)
         else:
-            self.reserved3 = numpy.array(kwargs.get('reserved3'), dtype=numpy.uint8)
-            assert self.reserved3.shape == (2, )
+            self.reserved3 = kwargs.get('reserved3')
         self.ack_aiding = kwargs.get('ack_aiding', int())
         self.wkn_rollover = kwargs.get('wkn_rollover', int())
         self.sig_atten_comp_mode = kwargs.get('sig_atten_comp_mode', int())
         if 'reserved4' not in kwargs:
             self.reserved4 = numpy.zeros(5, dtype=numpy.uint8)
         else:
-            self.reserved4 = numpy.array(kwargs.get('reserved4'), dtype=numpy.uint8)
-            assert self.reserved4.shape == (5, )
+            self.reserved4 = kwargs.get('reserved4')
         self.use_ppp = kwargs.get('use_ppp', int())
         self.aop_cfg = kwargs.get('aop_cfg', int())
         if 'reserved5' not in kwargs:
             self.reserved5 = numpy.zeros(2, dtype=numpy.uint8)
         else:
-            self.reserved5 = numpy.array(kwargs.get('reserved5'), dtype=numpy.uint8)
-            assert self.reserved5.shape == (2, )
+            self.reserved5 = kwargs.get('reserved5')
         self.aop_orb_max_err = kwargs.get('aop_orb_max_err', int())
         if 'reserved6' not in kwargs:
             self.reserved6 = numpy.zeros(7, dtype=numpy.uint8)
         else:
-            self.reserved6 = numpy.array(kwargs.get('reserved6'), dtype=numpy.uint8)
-            assert self.reserved6.shape == (7, )
+            self.reserved6 = kwargs.get('reserved6')
         self.use_adr = kwargs.get('use_adr', int())
 
     def __repr__(self):

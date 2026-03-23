@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg__type_support.cpp.o"
   "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg__type_support.cpp.o.d"
+  "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/msg/kinematic_debug_msg__type_support.cpp.o"
+  "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/msg/kinematic_debug_msg__type_support.cpp.o.d"
   "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/srv/emergency_stop__type_support.cpp.o"
   "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/srv/emergency_stop__type_support.cpp.o.d"
   "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/argj801_ctl_platform_interfaces/srv/get_velocity__type_support.cpp.o"
@@ -10,6 +12,7 @@ file(REMOVE_RECURSE
   "libargj801_ctl_platform_interfaces__rosidl_typesupport_c.pdb"
   "libargj801_ctl_platform_interfaces__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/argj801_ctl_platform_interfaces/msg/cmd_throttle_msg__type_support.cpp"
+  "rosidl_typesupport_c/argj801_ctl_platform_interfaces/msg/kinematic_debug_msg__type_support.cpp"
   "rosidl_typesupport_c/argj801_ctl_platform_interfaces/srv/emergency_stop__type_support.cpp"
   "rosidl_typesupport_c/argj801_ctl_platform_interfaces/srv/get_velocity__type_support.cpp"
   "rosidl_typesupport_c/argj801_ctl_platform_interfaces/srv/set_velocity__type_support.cpp"

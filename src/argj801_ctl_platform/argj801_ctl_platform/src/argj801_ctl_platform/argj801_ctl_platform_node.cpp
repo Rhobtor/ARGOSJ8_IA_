@@ -25,6 +25,7 @@ rclcpp_lifecycle::LifecycleNode(node_name,rclcpp::NodeOptions().use_intra_proces
   this->declare_parameter("operation_mode", 2);
   this->declare_parameter("self_test_active", false);
   this->declare_parameter("throttle_topic_name", "cmd_throttle_msg");
+  this->declare_parameter("kinematic_debug_topic_name", "kinematic_debug");
   this->declare_parameter("secured_cmd_vel_topic_name", "secure_cmd_vel");
   this->declare_parameter("arduino_params.port", "/dev/ttyUSB0");
   this->declare_parameter("arduino_params.watchdog_active", true);
@@ -107,6 +108,7 @@ CtlPlatformNode::on_configure(const rclcpp_lifecycle::State &)
   this->get_parameter("kinematic_parameters.throttle_to_percent", throttle_to_percent );
   this->get_parameter("kinematic_parameters.steer_to_percent", steer_to_percent );
   this->get_parameter("throttle_topic_name", cmd_throttle_name);
+  this->get_parameter("kinematic_debug_topic_name", kinematic_debug_topic_name);
   this->get_parameter("secured_cmd_vel_topic_name", cmd_vel_name_in);
   this->get_parameter("steer_acc", steer_acc);
   this->get_parameter("throttle_acc", throttle_acc);
@@ -139,6 +141,9 @@ CtlPlatformNode::on_configure(const rclcpp_lifecycle::State &)
     case PlatformOperationMode::LCM:
       RCLCPP_INFO(get_logger(), "LCM mode");
 
+      cmdThrottlePub = this->create_publisher<argj801_ctl_platform_interfaces::msg::CmdThrottleMsg>(cmd_throttle_name, 10);
+      kinematicDebugPub = this->create_publisher<argj801_ctl_platform_interfaces::msg::KinematicDebugMsg>(kinematic_debug_topic_name, 10);
+
       
       lcm_config_path = ament_index_cpp::get_package_share_directory("argj801_ctl_platform");
       lcm_config_path = lcm_config_path + "/../argj801_lcm/config/" + lcm_config_file;
@@ -169,6 +174,7 @@ CtlPlatformNode::on_configure(const rclcpp_lifecycle::State &)
       RCLCPP_INFO(get_logger(), "Gazebo mode");
 
       cmdThrottlePub = this->create_publisher<argj801_ctl_platform_interfaces::msg::CmdThrottleMsg>(cmd_throttle_name, 10);
+      kinematicDebugPub = this->create_publisher<argj801_ctl_platform_interfaces::msg::KinematicDebugMsg>(kinematic_debug_topic_name, 10);
 
       argo_kinematic_model = std::make_unique<Argo_J8_KinematicModel>(efective_radius, xICR, throttle_to_percent, steer_to_percent, 
                                                                       steer_acc, throttle_acc, desired_freq_);
@@ -597,6 +603,32 @@ void CtlPlatformNode::timerStationHeartBeatCallback() {
 
 }
 
+void CtlPlatformNode::publishCmdThrottle(double throttle, double steering) {
+  if(!cmdThrottlePub) {
+    return;
+  }
+
+  argj801_ctl_platform_interfaces::msg::CmdThrottleMsg cmdThrottleMsg;
+  cmdThrottleMsg.throttle = throttle;
+  cmdThrottleMsg.steering = steering;
+  cmdThrottlePub->publish(cmdThrottleMsg);
+}
+
+void CtlPlatformNode::publishKinematicDebug(double throttle, double steering) {
+  if(!kinematicDebugPub || !argo_kinematic_model) {
+    return;
+  }
+
+  argj801_ctl_platform_interfaces::msg::KinematicDebugMsg debugMsg;
+  debugMsg.throttle = throttle;
+  debugMsg.steering = steering;
+  debugMsg.requested_throttle_acc = argo_kinematic_model->getRequestedThrottleAcc();
+  debugMsg.requested_steering_acc = argo_kinematic_model->getRequestedSteeringAcc();
+  debugMsg.throttle_limited = argo_kinematic_model->isThrottleLimited();
+  debugMsg.steering_limited = argo_kinematic_model->isSteeringLimited();
+  kinematicDebugPub->publish(debugMsg);
+}
+
 void CtlPlatformNode::timerWellsSpeedCallback() {
   rclcpp::Time current_time = this->now();
   double elapsed_time = (current_time - last_twist_time_).seconds();
@@ -606,25 +638,19 @@ void CtlPlatformNode::timerWellsSpeedCallback() {
       // RCLCPP_WARN(this->get_logger(), "The last Twist message is too old (%.2f seconds). Sending 0,0 commands.", elapsed_time);
       if(pOpMode == PlatformOperationMode::LCM)
         lcmInterface->sendThrottleMsg(0.0, 0.0);
-      else if(pOpMode == PlatformOperationMode::Gazebo) {
-        argj801_ctl_platform_interfaces::msg::CmdThrottleMsg cmdThrottleMsg;
-        cmdThrottleMsg.throttle = 0.0;
-        cmdThrottleMsg.steering = 0.0;
-        cmdThrottlePub->publish(cmdThrottleMsg);
-      }
+      publishCmdThrottle(0.0, 0.0);
+      publishKinematicDebug(0.0, 0.0);
   } else {
       // Process the message as usual
       argo_kinematic_model->update(target_x_, target_rot_);
+      const double throttle = argo_kinematic_model->getThrottle();
+      const double steering = argo_kinematic_model->getSteering();
       if(pOpMode == PlatformOperationMode::LCM) {
-        lcmInterface->sendThrottleMsg(argo_kinematic_model->getThrottle(), argo_kinematic_model->getSteering());
-        // RCLCPP_INFO(get_logger(),"Throttle: %f, Steering: %f", argo_kinematic_model->getThrottle(), argo_kinematic_model->getSteering());
+        lcmInterface->sendThrottleMsg(throttle, steering);
+        // RCLCPP_INFO(get_logger(),"Throttle: %f, Steering: %f", throttle, steering);
       }  
-      else if(pOpMode == PlatformOperationMode::Gazebo) {
-        argj801_ctl_platform_interfaces::msg::CmdThrottleMsg cmdThrottleMsg;
-        cmdThrottleMsg.throttle = argo_kinematic_model->getThrottle();
-        cmdThrottleMsg.steering = argo_kinematic_model->getSteering();
-        cmdThrottlePub->publish(cmdThrottleMsg);
-      }
+      publishCmdThrottle(throttle, steering);
+      publishKinematicDebug(throttle, steering);
   }
   freq_diag_->tick();
 }

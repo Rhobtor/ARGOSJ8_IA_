@@ -8,6 +8,7 @@
 
     Este paquete contiene:
     - msg/CmdThrottleMsg.msg: mando low-level (throttle/steering).
+    - msg/KinematicDebugMsg.msg: estado cinemático y limitaciones aplicadas al mando.
     - srv/SetVelocity.srv, GetVelocity.srv: servicios simples (modo Arduino).
     - srv/EmergencyStop.srv: parada de emergencia.
   </description>

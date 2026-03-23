@@ -237,6 +237,19 @@ voxel_grid_node/fast:
 .PHONY : voxel_grid_node/fast
 
 #=============================================================================
+# Target rules for targets named velodyne_noise_filter_node
+
+# Build rule for target.
+velodyne_noise_filter_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 velodyne_noise_filter_node
+.PHONY : velodyne_noise_filter_node
+
+# fast build rule for target.
+velodyne_noise_filter_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velodyne_noise_filter_node.dir/build.make CMakeFiles/velodyne_noise_filter_node.dir/build
+.PHONY : velodyne_noise_filter_node/fast
+
+#=============================================================================
 # Target rules for targets named joints_plugin
 
 # Build rule for target.
@@ -395,6 +408,30 @@ src/move_object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_plugin.dir/build.make CMakeFiles/move_plugin.dir/src/move_object.cpp.s
 .PHONY : src/move_object.cpp.s
 
+src/velodyne_noise_filter_node.o: src/velodyne_noise_filter_node.cpp.o
+.PHONY : src/velodyne_noise_filter_node.o
+
+# target to build an object file
+src/velodyne_noise_filter_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velodyne_noise_filter_node.dir/build.make CMakeFiles/velodyne_noise_filter_node.dir/src/velodyne_noise_filter_node.cpp.o
+.PHONY : src/velodyne_noise_filter_node.cpp.o
+
+src/velodyne_noise_filter_node.i: src/velodyne_noise_filter_node.cpp.i
+.PHONY : src/velodyne_noise_filter_node.i
+
+# target to preprocess a source file
+src/velodyne_noise_filter_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velodyne_noise_filter_node.dir/build.make CMakeFiles/velodyne_noise_filter_node.dir/src/velodyne_noise_filter_node.cpp.i
+.PHONY : src/velodyne_noise_filter_node.cpp.i
+
+src/velodyne_noise_filter_node.s: src/velodyne_noise_filter_node.cpp.s
+.PHONY : src/velodyne_noise_filter_node.s
+
+# target to generate assembly for a file
+src/velodyne_noise_filter_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/velodyne_noise_filter_node.dir/build.make CMakeFiles/velodyne_noise_filter_node.dir/src/velodyne_noise_filter_node.cpp.s
+.PHONY : src/velodyne_noise_filter_node.cpp.s
+
 src/voxel_grid_node.o: src/voxel_grid_node.cpp.o
 .PHONY : src/voxel_grid_node.o
 
@@ -439,6 +476,7 @@ help:
 	@echo "... frontier_values"
 	@echo "... joints_plugin"
 	@echo "... move_plugin"
+	@echo "... velodyne_noise_filter_node"
 	@echo "... voxel_grid_node"
 	@echo "... src/check_goal.o"
 	@echo "... src/check_goal.i"
@@ -455,6 +493,9 @@ help:
 	@echo "... src/move_object.o"
 	@echo "... src/move_object.i"
 	@echo "... src/move_object.s"
+	@echo "... src/velodyne_noise_filter_node.o"
+	@echo "... src/velodyne_noise_filter_node.i"
+	@echo "... src/velodyne_noise_filter_node.s"
 	@echo "... src/voxel_grid_node.o"
 	@echo "... src/voxel_grid_node.i"
 	@echo "... src/voxel_grid_node.s"

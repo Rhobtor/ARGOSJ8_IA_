@@ -145,8 +145,7 @@ class CfgDAT(metaclass=Metaclass_CfgDAT):
         if 'datum_name' not in kwargs:
             self.datum_name = numpy.zeros(6, dtype=numpy.uint8)
         else:
-            self.datum_name = numpy.array(kwargs.get('datum_name'), dtype=numpy.uint8)
-            assert self.datum_name.shape == (6, )
+            self.datum_name = kwargs.get('datum_name')
         self.maj_a = kwargs.get('maj_a', float())
         self.flat = kwargs.get('flat', float())
         self.d_x = kwargs.get('d_x', float())

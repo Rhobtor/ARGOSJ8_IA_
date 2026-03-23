@@ -74,7 +74,7 @@ cdr_deserialize(
     cdr, ros_message.path);
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_path_manager_interfaces
@@ -300,7 +300,7 @@ cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_path_manager_interfaces

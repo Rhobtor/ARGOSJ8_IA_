@@ -144,13 +144,11 @@ class CfgINFBlock(metaclass=Metaclass_CfgINFBlock):
         if 'reserved1' not in kwargs:
             self.reserved1 = numpy.zeros(3, dtype=numpy.uint8)
         else:
-            self.reserved1 = numpy.array(kwargs.get('reserved1'), dtype=numpy.uint8)
-            assert self.reserved1.shape == (3, )
+            self.reserved1 = kwargs.get('reserved1')
         if 'inf_msg_mask' not in kwargs:
             self.inf_msg_mask = numpy.zeros(6, dtype=numpy.uint8)
         else:
-            self.inf_msg_mask = numpy.array(kwargs.get('inf_msg_mask'), dtype=numpy.uint8)
-            assert self.inf_msg_mask.shape == (6, )
+            self.inf_msg_mask = kwargs.get('inf_msg_mask')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

@@ -107,13 +107,11 @@ class MonVER(metaclass=Metaclass_MonVER):
         if 'sw_version' not in kwargs:
             self.sw_version = numpy.zeros(30, dtype=numpy.uint8)
         else:
-            self.sw_version = numpy.array(kwargs.get('sw_version'), dtype=numpy.uint8)
-            assert self.sw_version.shape == (30, )
+            self.sw_version = kwargs.get('sw_version')
         if 'hw_version' not in kwargs:
             self.hw_version = numpy.zeros(10, dtype=numpy.uint8)
         else:
-            self.hw_version = numpy.array(kwargs.get('hw_version'), dtype=numpy.uint8)
-            assert self.hw_version.shape == (10, )
+            self.hw_version = kwargs.get('hw_version')
         self.extension = kwargs.get('extension', [])
 
     def __repr__(self):

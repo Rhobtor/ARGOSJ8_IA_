@@ -1,0 +1,133 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c1e7120b3f621935942a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "car_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "car_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-car_cpp_uninstall-b4c8b5345387400ba204.json",
+					"name" : "car_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "check_goal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-check_goal-3d0a69511033588220f9.json",
+					"name" : "check_goal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "drive_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-drive_plugin-e281317ce4aa81597b1f.json",
+					"name" : "drive_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "frontier_values::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-frontier_values-e326c21d618b2ad459b4.json",
+					"name" : "frontier_values",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "joints_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-joints_plugin-5364cb812c9d17e9abf8.json",
+					"name" : "joints_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "move_plugin::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-move_plugin-705ad3dcd1a73f1d4d3a.json",
+					"name" : "move_plugin",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-9bdae4ada331aa4563a6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "velodyne_noise_filter_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-velodyne_noise_filter_node-e104add9b30e497949af.json",
+					"name" : "velodyne_noise_filter_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "voxel_grid_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-voxel_grid_node-7620aaa2a5ba47fec60d.json",
+					"name" : "voxel_grid_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp",
+		"source" : "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/car_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -19,7 +19,8 @@
 Argo_J8_KinematicModel::Argo_J8_KinematicModel(double effective_radius, double xICR, double throttle_to_percent,
                              double steer_to_percent, double steer_acc, double throttle_acc, double desired_freq)
     : effective_radius_(effective_radius), xICR_(xICR), throttle_to_percent_(throttle_to_percent), steer_to_percent_(steer_to_percent), 
-    throttle_(0), steering_(0), steer_acc(steer_acc), throttle_acc(throttle_acc), desired_freq(desired_freq), last_throttle_(0), last_steering_(0) {
+    throttle_(0), steering_(0), steer_acc(steer_acc), throttle_acc(throttle_acc), desired_freq(desired_freq), last_throttle_(0), last_steering_(0),
+    requested_throttle_acc_(0), requested_steer_acc_(0), throttle_limited_(false), steering_limited_(false) {
 }
 
 Argo_J8_KinematicModel::~Argo_J8_KinematicModel() {
@@ -37,6 +38,22 @@ double Argo_J8_KinematicModel::getSteering() const {
     return steering_;
 }
 
+double Argo_J8_KinematicModel::getRequestedThrottleAcc() const {
+    return requested_throttle_acc_;
+}
+
+double Argo_J8_KinematicModel::getRequestedSteeringAcc() const {
+    return requested_steer_acc_;
+}
+
+bool Argo_J8_KinematicModel::isThrottleLimited() const {
+    return throttle_limited_;
+}
+
+bool Argo_J8_KinematicModel::isSteeringLimited() const {
+    return steering_limited_;
+}
+
 void Argo_J8_KinematicModel::calculate(double speed, double rotation) {
     // Calculate wheel velocities
     double w_right_wheel = (speed + rotation * xICR_) / effective_radius_;
@@ -50,25 +67,29 @@ void Argo_J8_KinematicModel::calculate(double speed, double rotation) {
     double t_step = 1 / 50.0;  // 50 Hz control loop
 
     // Calculate the requested acceleration for throttle and steering
-    double requested_throttle_acc = (throttle_speed_ - last_throttle_) / t_step;
-    double requested_steer_acc = (steering_speed_ - last_steering_) / t_step;
+    requested_throttle_acc_ = (throttle_speed_ - last_throttle_) / t_step;
+    requested_steer_acc_ = (steering_speed_ - last_steering_) / t_step;
+    throttle_limited_ = false;
+    steering_limited_ = false;
 
     // Limitación por aceleración solicitada (throttle).
     // Sólo limitamos cuando aumenta el valor absoluto, para permitir frenadas
     // más agresivas si hiciera falta.
-    if (fabs(throttle_speed_) > fabs(last_throttle_) && fabs(requested_throttle_acc) > throttle_acc) {
+    if (fabs(throttle_speed_) > fabs(last_throttle_) && fabs(requested_throttle_acc_) > throttle_acc) {
         // Throttle is increasing in absolute value and exceeds the allowed acceleration
         double throttle_change = std::copysign(throttle_acc * t_step, throttle_speed_ - last_throttle_);
         throttle_speed_ = last_throttle_ + throttle_change;
-        std::cout << "Throttle limited to: " << throttle_ << std::endl;
+        throttle_limited_ = true;
+        std::cout << "Throttle limited to: " << throttle_speed_ * throttle_to_percent_ << std::endl;
     } 
 
     // Limitación por aceleración solicitada (steering).
-    if (fabs(steering_speed_) > fabs(last_steering_) && fabs(requested_steer_acc) > steer_acc) {
+    if (fabs(steering_speed_) > fabs(last_steering_) && fabs(requested_steer_acc_) > steer_acc) {
         // Steering is increasing in absolute value and exceeds the allowed acceleration
         double steering_change = std::copysign(steer_acc * t_step, steering_speed_ - last_steering_);
         steering_speed_ = last_steering_ + steering_change;
-        std::cout << "Steering limited to: " << steering_ << std::endl;
+        steering_limited_ = true;
+        std::cout << "Steering limited to: " << steering_speed_ * steer_to_percent_ << std::endl;
     } 
 
     // Update the last throttle and steering values for the next iteration
@@ -81,8 +102,8 @@ void Argo_J8_KinematicModel::calculate(double speed, double rotation) {
     // Ojo: estos prints pueden inundar consola a 50Hz.
     std::cout << "Throttle: " << throttle_ << std::endl;
     std::cout << "Steering: " << steering_ << std::endl;
-    std::cout << "Requested Throttle Acc: " << requested_throttle_acc << std::endl;
-    std::cout << "Requested Steering Acc: " << requested_steer_acc << std::endl;
+    std::cout << "Requested Throttle Acc: " << requested_throttle_acc_ << std::endl;
+    std::cout << "Requested Steering Acc: " << requested_steer_acc_ << std::endl;
 }
 
 

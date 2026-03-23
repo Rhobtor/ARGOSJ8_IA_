@@ -1,0 +1,174 @@
+[0.408s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs -- -j16 -l16
+[2.718s] [  2%] Built target slg_msgs__cpp
+[2.718s] [  6%] Built target gtest
+[2.719s] [ 14%] Built target slg_msgs__rosidl_typesupport_introspection_cpp
+[2.719s] [ 22%] Built target slg_msgs__rosidl_typesupport_fastrtps_cpp
+[2.719s] [ 30%] Built target slg_msgs__rosidl_typesupport_cpp
+[2.719s] [ 34%] Built target gtest_main
+[2.719s] [ 34%] Built target ament_cmake_python_copy_slg_msgs
+[2.723s] [ 38%] Built target test_segment2d
+[2.724s] running egg_info
+[2.724s] writing slg_msgs.egg-info/PKG-INFO
+[2.724s] writing dependency_links to slg_msgs.egg-info/dependency_links.txt
+[2.726s] writing top-level names to slg_msgs.egg-info/top_level.txt
+[2.726s] reading manifest file 'slg_msgs.egg-info/SOURCES.txt'
+[2.727s] writing manifest file 'slg_msgs.egg-info/SOURCES.txt'
+[2.727s] [ 38%] Built target ament_cmake_python_build_slg_msgs_egg
+[2.786s] [ 42%] Built target test_polygon
+[2.842s] [ 46%] Built target test_point2d
+[2.903s] [ 55%] Built target slg_msgs__rosidl_generator_c
+[2.959s] [ 63%] Built target slg_msgs__rosidl_typesupport_fastrtps_c
+[3.007s] [ 71%] Built target slg_msgs__rosidl_typesupport_c
+[3.067s] [ 79%] Built target slg_msgs__rosidl_typesupport_introspection_c
+[3.117s] [ 79%] Built target slg_msgs
+[3.168s] [ 81%] Built target slg_msgs__py
+[3.216s] [ 87%] Built target slg_msgs__rosidl_generator_py
+[3.259s] [ 91%] Built target slg_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.316s] [ 95%] Built target slg_msgs__rosidl_typesupport_c__pyext
+[3.369s] [100%] Built target slg_msgs__rosidl_typesupport_introspection_c__pyext
+[3.876s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs -- -j16 -l16
+[3.877s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs
+[4.559s] -- Install configuration: "Release"
+[4.559s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/ament_index/resource_index/rosidl_interfaces/slg_msgs
+[4.559s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs
+[4.560s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg
+[4.560s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/segment_array.h
+[4.560s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/segment.h
+[4.560s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/rosidl_generator_c__visibility_control.h
+[4.560s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail
+[4.561s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__functions.c
+[4.561s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__type_support.h
+[4.561s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__functions.h
+[4.561s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__functions.c
+[4.561s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__type_support.h
+[4.562s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__struct.h
+[4.562s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__functions.h
+[4.562s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__struct.h
+[4.563s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/environment/library_path.sh
+[4.563s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/environment/library_path.dsv
+[4.563s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib/libslg_msgs__rosidl_generator_c.so
+[4.563s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs
+[4.564s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg
+[4.567s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail
+[4.567s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__rosidl_typesupport_fastrtps_c.h
+[4.568s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__rosidl_typesupport_fastrtps_c.h
+[4.568s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.568s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib/libslg_msgs__rosidl_typesupport_fastrtps_c.so
+[4.568s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs
+[4.568s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg
+[4.569s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.571s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail
+[4.571s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__type_support.c
+[4.571s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__type_support.c
+[4.572s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__rosidl_typesupport_introspection_c.h
+[4.572s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__rosidl_typesupport_introspection_c.h
+[4.572s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib/libslg_msgs__rosidl_typesupport_introspection_c.so
+[4.572s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib/libslg_msgs__rosidl_typesupport_c.so
+[4.572s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs
+[4.573s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg
+[4.573s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.573s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/segment_array.hpp
+[4.573s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail
+[4.573s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__type_support.hpp
+[4.574s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__struct.hpp
+[4.574s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__builder.hpp
+[4.574s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__builder.hpp
+[4.574s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__struct.hpp
+[4.574s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__type_support.hpp
+[4.579s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__traits.hpp
+[4.579s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__traits.hpp
+[4.580s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/segment.hpp
+[4.580s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs
+[4.581s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg
+[4.581s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.581s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail
+[4.581s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__rosidl_typesupport_fastrtps_cpp.hpp
+[4.581s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__rosidl_typesupport_fastrtps_cpp.hpp
+[4.582s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/dds_fastrtps
+[4.582s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib/libslg_msgs__rosidl_typesupport_fastrtps_cpp.so
+[4.582s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs
+[4.582s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg
+[4.582s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail
+[4.583s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__type_support.cpp
+[4.583s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__rosidl_typesupport_introspection_cpp.hpp
+[4.583s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment_array__rosidl_typesupport_introspection_cpp.hpp
+[4.583s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/slg_msgs/msg/detail/segment__type_support.cpp
+[4.583s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib/libslg_msgs__rosidl_typesupport_introspection_cpp.so
+[4.591s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib/libslg_msgs__rosidl_typesupport_cpp.so
+[4.591s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/environment/pythonpath.sh
+[4.592s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/environment/pythonpath.dsv
+[4.592s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs-3.8.0-py3.10.egg-info
+[4.592s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs-3.8.0-py3.10.egg-info/top_level.txt
+[4.592s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs-3.8.0-py3.10.egg-info/SOURCES.txt
+[4.592s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs-3.8.0-py3.10.egg-info/PKG-INFO
+[4.592s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs-3.8.0-py3.10.egg-info/dependency_links.txt
+[4.592s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs
+[4.593s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/slg_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.593s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/_slg_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.593s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/_slg_msgs_s.ep.rosidl_typesupport_c.c
+[4.593s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/_slg_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[4.593s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/__init__.py
+[4.594s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/slg_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.594s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/slg_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.594s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/msg
+[4.599s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/msg/_segment_array_s.c
+[4.600s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/msg/__init__.py
+[4.600s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/msg/_segment_array.py
+[4.600s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/msg/_segment_s.c
+[4.600s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/msg/_segment.py
+[4.601s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/libslg_msgs__rosidl_generator_py.so
+[4.696s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs'...
+[4.697s] Listing '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/msg'...
+[4.697s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/slg_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.697s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/slg_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.698s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/local/lib/python3.10/dist-packages/slg_msgs/slg_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.698s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/lib/libslg_msgs__rosidl_generator_py.so
+[4.698s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/msg/Segment.idl
+[4.698s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/msg/SegmentArray.idl
+[4.699s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/msg/Segment.msg
+[4.699s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/msg/SegmentArray.msg
+[4.699s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs
+[4.699s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/segment2D.hpp
+[4.700s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/polygon.hpp
+[4.700s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/include/slg_msgs/point2D.hpp
+[4.700s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/ament_index/resource_index/package_run_dependencies/slg_msgs
+[4.700s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/ament_index/resource_index/parent_prefix_path/slg_msgs
+[4.701s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/environment/ament_prefix_path.sh
+[4.701s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/environment/ament_prefix_path.dsv
+[4.701s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/environment/path.sh
+[4.701s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/environment/path.dsv
+[4.702s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/local_setup.bash
+[4.702s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/local_setup.sh
+[4.702s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/local_setup.zsh
+[4.702s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/local_setup.dsv
+[4.702s] -- Installing: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/package.dsv
+[4.703s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/ament_index/resource_index/packages/slg_msgs
+[4.703s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/export_slg_msgs__rosidl_generator_cExport.cmake
+[4.703s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/export_slg_msgs__rosidl_generator_cExport-release.cmake
+[4.703s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/export_slg_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[4.704s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/export_slg_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[4.704s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/slg_msgs__rosidl_typesupport_introspection_cExport.cmake
+[4.705s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/slg_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[4.707s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/slg_msgs__rosidl_typesupport_cExport.cmake
+[4.711s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/slg_msgs__rosidl_typesupport_cExport-release.cmake
+[4.712s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/export_slg_msgs__rosidl_generator_cppExport.cmake
+[4.712s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/export_slg_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.712s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/export_slg_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[4.712s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/slg_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[4.713s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/slg_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[4.713s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/slg_msgs__rosidl_typesupport_cppExport.cmake
+[4.713s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/slg_msgs__rosidl_typesupport_cppExport-release.cmake
+[4.713s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/export_slg_msgs__rosidl_generator_pyExport.cmake
+[4.713s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/export_slg_msgs__rosidl_generator_pyExport-release.cmake
+[4.714s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/export_slg_msgsExport.cmake
+[4.714s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/rosidl_cmake-extras.cmake
+[4.714s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.714s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.715s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.715s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.715s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.719s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.719s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/slg_msgsConfig.cmake
+[4.719s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/cmake/slg_msgsConfig-version.cmake
+[4.720s] -- Up-to-date: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/slg_msgs/share/slg_msgs/package.xml
+[5.286s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/opt/ros/humble /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --install /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs

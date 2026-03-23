@@ -10,6 +10,7 @@ This node is in charge of working with the robot's hardware to send it speed com
 
 - Subcriptors: `secured_cmd_vel_topic_name` with message [Twist](https://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/Twist.html)
 - Publishers: `cmd_throttle_name` with message [CmdThrottleMsg](https://github.com/Robotics-Mechatronics-UMA/argj801_ctl_platform/blob/master/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.msg)
+- Publishers: `kinematic_debug_topic_name` with message `KinematicDebugMsg` para exponer el estado que antes solo salia por log (`throttle`, `steering`, aceleraciones solicitadas y flags de limitacion)
 
 # Services
 - emergency_stop: deactivate the node to stop sending speed commands. 
@@ -29,6 +30,7 @@ This node is in charge of working with the robot's hardware to send it speed com
 - watchdog_active: Active is the watchdog that terminates the node if no message arrives on the topic. It can be deactivated to debug issues. This param only works in Arduino mode.
 - lcm_config_file: config file of [argj801_lcm](https://github.com/Robotics-Mechatronics-UMA/argj801_lcm) package.
 - throttle_topic_name: name of the topic in which the node publishes the speed commands in Gazebo mode. 
+- kinematic_debug_topic_name: name of the topic in which the node publishes the internal kinematic debug state in LCM and Gazebo modes.
 - efective_radius: effective wheel radius.
 - xICR: X-Coordinate of the Instantaneous Rotation Center
 - throttle_to_percent: factor to convert from angular velocity to throttle motor percentage.

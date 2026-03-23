@@ -316,6 +316,11 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/argj801_ctl_platform/argj801_ctl_platfor
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__builder.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__struct.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__traits.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/kinematic_debug_msg.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp \
@@ -1389,6 +1394,11 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__traits.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__builder.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__struct.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__traits.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__type_support.hpp \
+  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/kinematic_debug_msg.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__builder.hpp \
   /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp \
@@ -2394,8 +2404,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/bits/locale_facets_nonio.h:
 
-/usr/include/c++/11/bits/list.tcc:
-
 /usr/include/c++/11/bits/enable_special_members.h:
 
 /usr/include/c++/11/bits/atomic_futex.h:
@@ -2514,13 +2522,13 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/AutonomyStatus.hpp:
+/usr/include/c++/11/pstl/glue_numeric_defs.h:
 
-/usr/include/yaml-cpp/node/node.h:
+/opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
 
-/opt/ros/humble/include/rcl/rcl/node.h:
+/opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
+/opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/set_velocity.hpp:
 
@@ -2539,6 +2547,16 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.hpp:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__struct.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__traits.hpp:
+
+/usr/include/linux/falloc.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__struct.hpp:
+
+/usr/include/c++/11/bits/list.tcc:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__builder.hpp:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.hpp:
 
@@ -2760,6 +2778,8 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__type_support.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
@@ -2771,8 +2791,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
-
-/opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.hpp:
 
@@ -2810,8 +2828,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/bits/stl_vector.h:
 
-/opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
-
 /usr/include/c++/11/bits/range_access.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
@@ -2831,14 +2847,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/yaml-cpp/ostream_wrapper.h:
 
 /usr/include/c++/11/bits/stl_raw_storage_iter.h:
-
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/ComponentItem.hpp:
-
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/header2.hpp:
-
-/usr/include/c++/11/type_traits:
-
-/opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
@@ -2968,6 +2976,12 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/poll.h:
 
+/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
+
+/usr/include/strings.h:
+
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/get_velocity__type_support.hpp:
 
 /usr/include/c++/11/array:
@@ -2975,6 +2989,8 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/c++/11/iostream:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__struct.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/msg/kinematic_debug_msg.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h:
 
@@ -2995,10 +3011,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/c++/11/system_error:
-
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Action.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
 
 /usr/include/c++/11/bits/stringfwd.h:
 
@@ -3262,12 +3274,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_kinematic_model.hpp:
-
-/usr/include/yaml-cpp/node/detail/memory.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
-
 /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/empty__type_support.hpp:
 
 /usr/include/locale.h:
@@ -3320,6 +3326,18 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/c++/11/utility:
 
+/opt/ros/humble/include/rcl/rcl/guard_condition.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/ComponentItem.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/header2.hpp:
+
+/usr/include/c++/11/type_traits:
+
+/opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp:
+
 /usr/include/c++/11/stdlib.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
@@ -3360,8 +3378,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_event.hpp:
 
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/sockaddr.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/message_info.hpp:
@@ -3386,15 +3402,13 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /usr/include/limits.h:
 
+/opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
+
+/usr/include/ctype.h:
+
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces/include/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__traits.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
-
-/usr/include/linux/falloc.h:
-
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
-/opt/ros/humble/include/rcl/rcl/guard_condition.h:
 
 /usr/include/linux/limits.h:
 
@@ -3421,6 +3435,26 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /usr/include/time.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/include/argj801_ctl_platform/argj801_kinematic_model.hpp:
+
+/usr/include/yaml-cpp/node/detail/memory.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface.hpp:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/Action.hpp:
+
+/usr/include/yaml-cpp/node/node.h:
+
+/opt/ros/humble/include/rcl/rcl/node.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/src/argj801_lcm/include/lcmmessages/AutonomyStatus.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
@@ -3820,10 +3854,6 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
-/usr/include/ctype.h:
-
-/opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
-
 /usr/include/c++/11/unordered_set:
 
 /usr/include/c++/11/cstdlib:
@@ -4075,13 +4105,3 @@ CMakeFiles/ARGJ801_ctl_platform.dir/src/main.cpp.o: /home/rhobtor/PHD/ARGOJ8_IA/
 /opt/ros/humble/include/rcl/rcl/service.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
-
-/usr/include/c++/11/pstl/glue_numeric_defs.h:
-
-/opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h:
-
-/usr/include/strings.h:
-
-/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:

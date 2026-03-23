@@ -150,8 +150,7 @@ class NavCOV(metaclass=Metaclass_NavCOV):
         if 'reserved_0' not in kwargs:
             self.reserved_0 = numpy.zeros(9, dtype=numpy.uint8)
         else:
-            self.reserved_0 = numpy.array(kwargs.get('reserved_0'), dtype=numpy.uint8)
-            assert self.reserved_0.shape == (9, )
+            self.reserved_0 = kwargs.get('reserved_0')
         self.pos_cov_nn = kwargs.get('pos_cov_nn', float())
         self.pos_cov_ne = kwargs.get('pos_cov_ne', float())
         self.pos_cov_nd = kwargs.get('pos_cov_nd', float())

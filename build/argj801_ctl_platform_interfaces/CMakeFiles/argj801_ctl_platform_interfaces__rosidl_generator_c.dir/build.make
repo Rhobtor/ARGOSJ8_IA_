@@ -86,6 +86,7 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h: rosidl_ad
 rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h: rosidl_adapter/argj801_ctl_platform_interfaces/srv/GetVelocity.idl
 rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h: rosidl_adapter/argj801_ctl_platform_interfaces/srv/EmergencyStop.idl
 rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h: rosidl_adapter/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.idl
+rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h: rosidl_adapter/argj801_ctl_platform_interfaces/msg/KinematicDebugMsg.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c__arguments.json
 
@@ -134,6 +135,18 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__
 rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.h: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.h
 
+rosidl_generator_c/argj801_ctl_platform_interfaces/msg/kinematic_debug_msg.h: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/argj801_ctl_platform_interfaces/msg/kinematic_debug_msg.h
+
+rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.h: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.h
+
+rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__struct.h: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__struct.h
+
+rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__type_support.h: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__type_support.h
+
 rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.c: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.c
 
@@ -145,6 +158,9 @@ rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__fu
 
 rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.c: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.c
+
+rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/set_velocity.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c
 
 CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.c.o: CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.c.o: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.c
@@ -202,12 +218,27 @@ CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_genera
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.c -o CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.c.s
 
+CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.o: CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.o: rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c
+CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.o: CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.o -MF CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.o.d -o CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.o -c /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c
+
+CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c > CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.i
+
+CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c -o CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.s
+
 # Object files for target argj801_ctl_platform_interfaces__rosidl_generator_c
 argj801_ctl_platform_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.c.o" \
 "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/get_velocity__functions.c.o" \
 "CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__functions.c.o" \
-"CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.c.o"
+"CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.c.o" \
+"CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.o"
 
 # External object files for target argj801_ctl_platform_interfaces__rosidl_generator_c
 argj801_ctl_platform_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -216,11 +247,12 @@ libargj801_ctl_platform_interfaces__rosidl_generator_c.so: CMakeFiles/argj801_ct
 libargj801_ctl_platform_interfaces__rosidl_generator_c.so: CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/get_velocity__functions.c.o
 libargj801_ctl_platform_interfaces__rosidl_generator_c.so: CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__functions.c.o
 libargj801_ctl_platform_interfaces__rosidl_generator_c.so: CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.c.o
+libargj801_ctl_platform_interfaces__rosidl_generator_c.so: CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c.o
 libargj801_ctl_platform_interfaces__rosidl_generator_c.so: CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/build.make
 libargj801_ctl_platform_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libargj801_ctl_platform_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libargj801_ctl_platform_interfaces__rosidl_generator_c.so: CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libargj801_ctl_platform_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library libargj801_ctl_platform_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -236,6 +268,11 @@ CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosid
 CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.h
 CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.h
 CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__type_support.h
+CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.c
+CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.h
+CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__struct.h
+CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__type_support.h
+CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/msg/kinematic_debug_msg.h
 CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__functions.c
 CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__functions.h
 CMakeFiles/argj801_ctl_platform_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/emergency_stop__struct.h

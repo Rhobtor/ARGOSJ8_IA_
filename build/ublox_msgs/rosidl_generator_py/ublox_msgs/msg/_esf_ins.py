@@ -177,8 +177,7 @@ class EsfINS(metaclass=Metaclass_EsfINS):
         if 'reserved1' not in kwargs:
             self.reserved1 = numpy.zeros(4, dtype=numpy.uint8)
         else:
-            self.reserved1 = numpy.array(kwargs.get('reserved1'), dtype=numpy.uint8)
-            assert self.reserved1.shape == (4, )
+            self.reserved1 = kwargs.get('reserved1')
         self.i_tow = kwargs.get('i_tow', int())
         self.x_ang_rate = kwargs.get('x_ang_rate', int())
         self.y_ang_rate = kwargs.get('y_ang_rate', int())

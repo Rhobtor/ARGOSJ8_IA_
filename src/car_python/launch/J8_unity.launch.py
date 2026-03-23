@@ -24,7 +24,7 @@ def generate_launch_description():
     robot_description_config = xacro.process_file(xacro_path)
     robot_urdf = robot_description_config.toxml()
 
-    # ======= Parámetro opcional para el alias Velodyne_link → lidar_link =======
+    # ======= Parámetro opcional para el alias Velodyne_link -> lidar_link =======
     use_lidar_alias_arg = DeclareLaunchArgument(
         'use_lidar_alias',
         default_value='true',
@@ -111,14 +111,51 @@ def generate_launch_description():
         output='screen'
     )
 
+    velodyne_noise_filter = Node(
+        package='car_cpp',
+        executable='velodyne_noise_filter_node',
+        name='velodyne_noise_filter',
+        output='screen',
+        parameters=[{
+            'input': '/ARGJ801/Velodyne/scan_cloud',
+            'output': '/ARGJ801/Velodyne/scan_cloud_filtered',
+            'leaf_size': 0.15,
+            'support_leaf_size': 0.35,
+            'support_radius_voxels': 1,
+            'min_support_points': 3,
+            'min_range': 1.0,
+            'max_range': 60.0,
+            'min_z': -3.0,
+            'max_z': 3.0,
+            'reject_origin_enabled': True,
+            'reject_origin_epsilon': 0.05,
+            'exclude_box_enabled': True,
+            'exclude_box_frame': 'base_link',
+            'exclude_box_center_x': 0.35,
+            'exclude_box_center_y': 0.0,
+            'exclude_box_center_z': 0.35,
+            'exclude_box_size_x': 3.10,
+            'exclude_box_size_y': 1.80,
+            'exclude_box_size_z': 1.40,
+            'hood_box_enabled': True,
+            'hood_box_center_x': 1.00,
+            'hood_box_center_y': 0.0,
+            'hood_box_center_z': 0.20,
+            'hood_box_size_x': 1.40,
+            'hood_box_size_y': 1.20,
+            'hood_box_size_z': 1.10,
+            'debug_log': True,
+        }]
+    )
+
     # (Opcional) alias Velodyne_link -> lidar_link (identidad)
     velodyne_to_lidar_alias = Node(
         package='tf2_ros',
         executable='static_transform_publisher',
         name='velodyne_to_lidar_alias',
         arguments=[
-            '--frame-id', 'base_link',
-            '--child-frame-id', 'Velodyne_link',
+            '--frame-id', 'Velodyne_link',
+            '--child-frame-id', 'lidar_link',
             '--x', '0', '--y', '0', '--z', '0',
             '--roll', '0', '--pitch', '0', '--yaw', '0',
         ],
@@ -135,5 +172,6 @@ def generate_launch_description():
         map_odom_tf,
         odom_base_tf,
         base_camera_tf,
+        velodyne_noise_filter,
         velodyne_to_lidar_alias,
     ])

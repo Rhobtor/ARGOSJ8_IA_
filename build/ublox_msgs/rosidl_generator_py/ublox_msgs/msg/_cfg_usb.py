@@ -142,30 +142,25 @@ class CfgUSB(metaclass=Metaclass_CfgUSB):
         if 'reserved1' not in kwargs:
             self.reserved1 = numpy.zeros(2, dtype=numpy.uint8)
         else:
-            self.reserved1 = numpy.array(kwargs.get('reserved1'), dtype=numpy.uint8)
-            assert self.reserved1.shape == (2, )
+            self.reserved1 = kwargs.get('reserved1')
         if 'reserved2' not in kwargs:
             self.reserved2 = numpy.zeros(2, dtype=numpy.uint8)
         else:
-            self.reserved2 = numpy.array(kwargs.get('reserved2'), dtype=numpy.uint8)
-            assert self.reserved2.shape == (2, )
+            self.reserved2 = kwargs.get('reserved2')
         self.power_consumption = kwargs.get('power_consumption', int())
         self.flags = kwargs.get('flags', int())
         if 'vendor_string' not in kwargs:
             self.vendor_string = numpy.zeros(32, dtype=numpy.int8)
         else:
-            self.vendor_string = numpy.array(kwargs.get('vendor_string'), dtype=numpy.int8)
-            assert self.vendor_string.shape == (32, )
+            self.vendor_string = kwargs.get('vendor_string')
         if 'product_string' not in kwargs:
             self.product_string = numpy.zeros(32, dtype=numpy.int8)
         else:
-            self.product_string = numpy.array(kwargs.get('product_string'), dtype=numpy.int8)
-            assert self.product_string.shape == (32, )
+            self.product_string = kwargs.get('product_string')
         if 'serial_number' not in kwargs:
             self.serial_number = numpy.zeros(32, dtype=numpy.int8)
         else:
-            self.serial_number = numpy.array(kwargs.get('serial_number'), dtype=numpy.int8)
-            assert self.serial_number.shape == (32, )
+            self.serial_number = kwargs.get('serial_number')
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')

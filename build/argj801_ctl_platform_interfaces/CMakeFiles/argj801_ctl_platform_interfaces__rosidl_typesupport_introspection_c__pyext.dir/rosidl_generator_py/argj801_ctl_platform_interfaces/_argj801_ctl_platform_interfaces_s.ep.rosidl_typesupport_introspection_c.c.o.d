@@ -205,6 +205,9 @@ CMakeFiles/argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c__
  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/rosidl_generator_c__visibility_control.h \
  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__struct.h \
  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/cmd_throttle_msg__functions.h \
+ /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__type_support.h \
+ /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__struct.h \
+ /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/msg/detail/kinematic_debug_msg__functions.h \
  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__type_support.h \
  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__struct.h \
  /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_c/argj801_ctl_platform_interfaces/srv/detail/set_velocity__functions.h \

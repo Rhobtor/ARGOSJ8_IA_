@@ -22,6 +22,7 @@
 #include "argj801_ctl_platform_interfaces/srv/get_velocity.hpp"
 #include "argj801_ctl_platform_interfaces/srv/emergency_stop.hpp"
 #include "argj801_ctl_platform_interfaces/msg/cmd_throttle_msg.hpp"
+#include "argj801_ctl_platform_interfaces/msg/kinematic_debug_msg.hpp"
 
 #include "std_srvs/srv/empty.hpp"
 
@@ -88,7 +89,7 @@ private:
   std::unique_ptr<diagnostic_updater::FrequencyStatus> freq_diag_; 
   bool self_test_active;
 
-  std::string cmd_vel_namespace, cmd_vel_name_in, cmd_throttle_name;
+  std::string cmd_vel_namespace, cmd_vel_name_in, cmd_throttle_name, kinematic_debug_topic_name;
 
   rclcpp::CallbackGroup::SharedPtr group1;
 
@@ -137,10 +138,13 @@ private:
   float target_rot_ = 0;
 
   void timerWellsSpeedCallback();
+  void publishCmdThrottle(double throttle, double steering);
+  void publishKinematicDebug(double throttle, double steering);
 
   /////////// End LCM Mode ///////////
 
   rclcpp::Publisher<argj801_ctl_platform_interfaces::msg::CmdThrottleMsg>::SharedPtr cmdThrottlePub;  
+  rclcpp::Publisher<argj801_ctl_platform_interfaces::msg::KinematicDebugMsg>::SharedPtr kinematicDebugPub;
   /////////////// End LCM Methods ///////////////
 
   int cont=0;

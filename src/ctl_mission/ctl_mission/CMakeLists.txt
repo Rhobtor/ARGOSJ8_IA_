@@ -163,7 +163,10 @@ ament_target_dependencies(follow_zed_node
   "rclcpp"
   "rclcpp_lifecycle"
   "lifecycle_msgs"
+  "geometry_msgs"
   "sensor_msgs"
+  "std_msgs"
+  "std_srvs"
 )
 
 

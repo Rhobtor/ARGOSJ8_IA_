@@ -19,6 +19,7 @@ ARGJ801:
     # Topics principales de mando.
     cmd_vel_topic_name: "cmd_vel"
     secured_cmd_vel_topic_name: "secured_cmd_vel"
+    follow_cmd_topic_name: "external_cmd_vel"
 
     # Topic del joystick (mensajes sensor_msgs/Joy típicamente).
     joystick_topic_name: "joy"

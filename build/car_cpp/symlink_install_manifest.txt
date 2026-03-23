@@ -1,6 +1,7 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/frontier_values
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/check_goal
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/voxel_grid_node
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/velodyne_noise_filter_node
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libmove_plugin.so
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libdrive_plugin.so
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libjoints_plugin.so

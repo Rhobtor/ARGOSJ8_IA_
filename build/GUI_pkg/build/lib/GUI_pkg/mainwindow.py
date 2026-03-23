@@ -50,8 +50,14 @@ from PySide6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QLabel, QCheckB
 from PySide6.QtGui import QImage, QPixmap
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image, CompressedImage
+from std_msgs.msg import Float32, Int32
 from rclpy.qos import qos_profile_sensor_data, QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy, QoSDurabilityPolicy
 from PySide6.QtWidgets import QSplitter, QSizePolicy, QPlainTextEdit
+
+try:
+    from rosidl_runtime_py.utilities import get_message
+except ImportError:
+    get_message = None
 
 #########################################
 
@@ -148,6 +154,7 @@ class WorkerTimer(QObject):
 
 class MainWindow(QMainWindow):
     follow_image_signal = QtCore.Signal(QImage)
+    follow_leader_signal = QtCore.Signal(str, str)
     def __init__(self, parent=None):
         
         super().__init__(parent)
@@ -183,6 +190,14 @@ class MainWindow(QMainWindow):
         self.follow_view.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.follow_layout.addWidget(self.follow_view)
 
+        telemetry = QHBoxLayout()
+        self.follow_person_id_lbl = QLabel("ID persona: --")
+        self.follow_person_dist_lbl = QLabel("Distancia: --")
+        telemetry.addWidget(self.follow_person_id_lbl)
+        telemetry.addStretch(1)
+        telemetry.addWidget(self.follow_person_dist_lbl)
+        self.follow_layout.addLayout(telemetry)
+
         # Logs (opcional)
         self.follow_logs = QPlainTextEdit()
         self.follow_logs.setReadOnly(True)
@@ -194,9 +209,11 @@ class MainWindow(QMainWindow):
         self._install_main_splitter()
         # Señal para pintar el frame sin bloquear el hilo ROS
         self.follow_image_signal.connect(self._on_follow_qimage)
+        self.follow_leader_signal.connect(self._on_follow_leader_snapshot)
 
         # Último mapa renderizado (para reescalar al redimensionar)
         self._last_map_pix = None
+        self._follow_leader_last_rendered = (None, None)
 
   
         #####################################
@@ -385,6 +402,14 @@ class MainWindow(QMainWindow):
         Ajusta los nombres si usas otros tópicos.
         """
         self.follow_img_sub = None
+        self.follow_leader_position_sub = None
+        self.follow_leader_probe_timer = None
+        self.follow_leader_id_sub = None
+        self.follow_leader_distance_sub = None
+        self.follow_leader_distance_fallback_sub = None
+        self._follow_leader_topic = "/follow_zed/leader_position_camera"
+        self._follow_leader_id = None
+        self._follow_leader_distance = math.nan
         topic_raw = "/follow_zed/image_for_gui"
         topic_comp = topic_raw + "/compressed"
         qos_img = qos_profile_sensor_data
@@ -400,6 +425,17 @@ class MainWindow(QMainWindow):
                 self.follow_status_lbl.setText(f"Follow ZED: sub a {topic_comp}")
             except Exception as e:
                 self.follow_status_lbl.setText(f"Follow ZED: error de suscripción ({e})")
+
+        self.follow_leader_id_sub = node.create_subscription(
+            Int32, "/follow_zed/leader_id", self._on_follow_leader_id_msg, 10)
+        self.follow_leader_distance_sub = node.create_subscription(
+            Float32, "/follow_zed/leader_distance_state_m", self._on_follow_leader_distance_msg, 10)
+        self.follow_leader_distance_fallback_sub = node.create_subscription(
+            Float32, "/follow_zed/leader_distance_m", self._on_follow_leader_distance_msg, 10)
+
+        if get_message is not None:
+            self.follow_leader_probe_timer = node.create_timer(
+                1.0, self._ensure_follow_leader_subscription)
 
     def _on_follow_img_raw(self, msg: Image):
         try:
@@ -449,6 +485,132 @@ class MainWindow(QMainWindow):
             self.follow_logs.appendPlainText(txt)
         except Exception:
             pass
+
+    def _on_follow_leader_snapshot(self, person_id_text: str, distance_text: str):
+        self.follow_person_id_lbl.setText(f"ID persona: {person_id_text}")
+        self.follow_person_dist_lbl.setText(f"Distancia: {distance_text}")
+
+        snapshot = (person_id_text, distance_text)
+        if snapshot != self._follow_leader_last_rendered and snapshot != ("--", "--"):
+            self._follow_leader_last_rendered = snapshot
+            self._log_follow(f"Leader -> ID: {person_id_text} | Distancia: {distance_text}")
+
+    def _publish_follow_leader_snapshot(self):
+        person_id_text = "--" if self._follow_leader_id is None else str(self._follow_leader_id)
+        if math.isfinite(self._follow_leader_distance):
+            distance_text = f"{self._follow_leader_distance:.2f} m"
+        else:
+            distance_text = "--"
+        self.follow_leader_signal.emit(person_id_text, distance_text)
+
+    def _on_follow_leader_id_msg(self, msg: Int32):
+        if msg.data < 0:
+            return
+        self._follow_leader_id = int(msg.data)
+        self._publish_follow_leader_snapshot()
+
+    def _on_follow_leader_distance_msg(self, msg: Float32):
+        distance = float(msg.data)
+        if not math.isfinite(distance) or distance < 0.0:
+            return
+        self._follow_leader_distance = distance
+        self._publish_follow_leader_snapshot()
+
+    def _ensure_follow_leader_subscription(self):
+        if self.follow_leader_position_sub is not None or get_message is None:
+            return
+
+        try:
+            topic_map = dict(self.ros_class_topics.get_topic_names_and_types())
+        except Exception:
+            return
+
+        topic_types = topic_map.get(self._follow_leader_topic)
+        if not topic_types:
+            return
+
+        try:
+            msg_type = get_message(topic_types[0])
+            self.follow_leader_position_sub = self.ros_class_topics.create_subscription(
+                msg_type,
+                self._follow_leader_topic,
+                self._on_follow_leader_position_msg,
+                QoSProfile(depth=10),
+            )
+            self._log_follow(
+                f"Leader topic -> {self._follow_leader_topic} [{topic_types[0]}]")
+            if self.follow_leader_probe_timer is not None:
+                self.follow_leader_probe_timer.cancel()
+        except Exception as exc:
+            self._log_follow(f"Leader topic no disponible: {exc}")
+
+    def _message_fields(self, msg):
+        if hasattr(msg, "get_fields_and_field_types"):
+            return list(msg.get_fields_and_field_types().keys())
+        return []
+
+    def _extract_numeric_field(self, obj, field_names, depth=0):
+        if obj is None or depth > 3:
+            return None
+
+        for field_name in field_names:
+            if hasattr(obj, field_name):
+                value = getattr(obj, field_name)
+                if isinstance(value, (int, float, np.integer, np.floating)):
+                    value = float(value)
+                    if math.isfinite(value):
+                        return value
+
+        for field_name in self._message_fields(obj):
+            value = getattr(obj, field_name)
+            if hasattr(value, "get_fields_and_field_types"):
+                result = self._extract_numeric_field(value, field_names, depth + 1)
+                if result is not None:
+                    return result
+
+        return None
+
+    def _extract_xyz(self, obj, depth=0):
+        if obj is None or depth > 3:
+            return None
+
+        if all(hasattr(obj, axis) for axis in ("x", "y", "z")):
+            try:
+                x = float(getattr(obj, "x"))
+                y = float(getattr(obj, "y"))
+                z = float(getattr(obj, "z"))
+            except (TypeError, ValueError):
+                x = y = z = math.nan
+
+            if all(math.isfinite(value) for value in (x, y, z)):
+                return (x, y, z)
+
+        for field_name in self._message_fields(obj):
+            value = getattr(obj, field_name)
+            if hasattr(value, "get_fields_and_field_types"):
+                coords = self._extract_xyz(value, depth + 1)
+                if coords is not None:
+                    return coords
+
+        return None
+
+    def _on_follow_leader_position_msg(self, msg):
+        leader_id = self._extract_numeric_field(
+            msg, ("person_id", "leader_id", "track_id", "tracking_id", "id", "object_id"))
+        if leader_id is not None:
+            self._follow_leader_id = int(leader_id)
+
+        distance = self._extract_numeric_field(
+            msg, ("distance_m", "distance", "dist", "range", "depth_m", "depth"))
+        if distance is None:
+            coords = self._extract_xyz(msg)
+            if coords is not None:
+                distance = math.sqrt(sum(value * value for value in coords))
+
+        if distance is not None and math.isfinite(distance) and distance >= 0.0:
+            self._follow_leader_distance = float(distance)
+
+        self._publish_follow_leader_snapshot()
 
     def resizeEvent(self, event):
         # Reescala la imagen si “Ajustar a panel” está activo

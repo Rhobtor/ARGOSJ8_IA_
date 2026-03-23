@@ -14,6 +14,14 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_main.cpp.o: /home/rhobt
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp \
@@ -792,6 +800,14 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp \
   /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp \
@@ -1650,6 +1666,14 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
 /opt/ros/humble/include/rmw/rmw/init.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
@@ -1692,10 +1716,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/c++/11/mutex:
 
-/opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
-
 /opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
 
 /usr/include/c++/11/bits/stl_vector.h:
@@ -1724,10 +1744,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rcpputils/rcpputils/time.hpp:
 
-/opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
-
-/opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp:
-
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/state.hpp:
 
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/managed_entity.hpp:
@@ -1747,8 +1763,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/storage_policy_common.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.hpp:
-
-/opt/ros/humble/include/rmw/rmw/message_sequence.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set.hpp:
 
@@ -1812,8 +1826,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface_traits.hpp:
 
-/opt/ros/humble/include/rmw/rmw/publisher_options.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_value.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
@@ -1873,12 +1885,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/generic_subscription.hpp:
-
-/opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
@@ -1940,55 +1946,35 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:
 
-/opt/ros/humble/include/rmw/rmw/macros.h:
-
 /opt/ros/humble/include/rcutils/rcutils/qsort.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:
 
-/opt/ros/humble/include/rcl/rcl/node.h:
+/opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
+/usr/include/c++/11/ext/new_allocator.h:
 
-/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__builder.hpp:
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
-/usr/include/c++/11/bits/node_handle.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
-/usr/include/c++/11/bits/stl_multiset.h:
+/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/follow_zed_node.cpp:
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
-
-/usr/include/c++/11/bits/align.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/c++/11/bits/locale_conv.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
-
-/opt/ros/humble/include/std_msgs/std_msgs/msg/int8.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp:
-
-/usr/include/c++/11/istream:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__traits.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
 /usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/c++/11/tr1/legendre_function.tcc:
 
-/opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/visibility_control.h:
-
 /opt/ros/humble/include/rcl/rcl/timer.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:
 
@@ -2006,6 +1992,12 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
+/opt/ros/humble/include/rcl_lifecycle/rcl_lifecycle/visibility_control.h:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
+
+/usr/include/c++/11/bits/stl_multiset.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
@@ -2015,6 +2007,14 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/lifecycle_node.hpp:
 
 /opt/ros/humble/include/rcl/rcl/rcl.h:
+
+/opt/ros/humble/include/rcl/rcl/node.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
+
+/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__builder.hpp:
+
+/usr/include/c++/11/bits/node_handle.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -2026,19 +2026,49 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/libintl.h:
 
+/opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
+
+/opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
+
+/opt/ros/humble/include/rcpputils/rcpputils/visibility_control.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/function_traits.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_topics_interface.hpp:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/metric_details_interface.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
-
-/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types.h:
+
+/opt/ros/humble/include/rcl/rcl/arguments.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
+
+/opt/ros/humble/include/rcl/rcl/types.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/stdio.h:
+
+/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/rosidl_generator_c__visibility_control.h:
+
+/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition_event__struct.h:
 
@@ -2052,7 +2082,7 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/include/ctl_mission/FollowZED.hpp:
 
-/opt/ros/humble/include/rcl/rcl/init_options.h:
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -2070,9 +2100,17 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
 
-/opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
 
-/usr/include/ctype.h:
+/usr/include/c++/11/bits/locale_conv.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/int8.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp:
+
+/usr/include/c++/11/istream:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
@@ -2082,21 +2120,31 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
+
+/opt/ros/humble/include/rcl/rcl/init_options.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
+/usr/include/ctype.h:
 
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+/opt/ros/humble/include/rcutils/rcutils/types/string_map.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/timex.h:
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
+/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
+/usr/include/c++/11/bits/unique_ptr.h:
+
+/usr/include/c++/11/string:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 
@@ -2118,19 +2166,15 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__struct.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
-
 /opt/ros/humble/include/rcutils/rcutils/logging_macros.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/opt/ros/humble/include/rmw/rmw/serialized_message.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
 
 /usr/include/c++/11/bits/unique_lock.h:
 
@@ -2158,12 +2202,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
 
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/follow_zed_main.cpp:
-
-/usr/include/c++/11/bits/nested_exception.h:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_publisher.hpp:
@@ -2184,7 +2222,31 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
 
-/usr/include/stdio.h:
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__builder.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__builder.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
+
+/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__type_support.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__struct.hpp:
 
@@ -2206,32 +2268,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/c++/11/bits/stl_multimap.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
-
-/opt/ros/humble/include/rcl/rcl/graph.h:
-
-/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.h:
-
-/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__type_support.hpp:
-
-/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
-
-/usr/include/linux/errno.h:
-
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
-
-/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__traits.hpp:
-
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
-
-/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/rosidl_generator_c__visibility_control.h:
-
-/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
 
 /opt/ros/humble/include/rmw/rmw/impl/config.h:
@@ -2245,6 +2281,46 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_time_source_interface.hpp:
+
+/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
+
+/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
+
+/usr/include/linux/errno.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__traits.hpp:
+
+/opt/ros/humble/include/rcl/rcl/graph.h:
+
+/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__struct.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
+
+/opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/detail/transition__traits.hpp:
+
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/follow_zed_node.cpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
+
+/usr/include/c++/11/bits/align.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
+
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/ctl_mission/ctl_mission/src/FSM_states/follow_zed_main.cpp:
+
+/usr/include/c++/11/bits/nested_exception.h:
 
 /opt/ros/humble/include/lifecycle_msgs/lifecycle_msgs/msg/transition.hpp:
 
@@ -2272,8 +2348,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
-
 /opt/ros/humble/include/rmw/rmw/error_handling.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__struct.hpp:
@@ -2296,19 +2370,7 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__traits.hpp:
 
-/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp:
-
-/opt/ros/humble/include/rcl/rcl/types.h:
-
-/opt/ros/humble/include/rcl/rcl/arguments.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_value.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_payload.hpp:
 
 /usr/include/c++/11/tuple:
 
@@ -2376,8 +2438,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
-/opt/ros/humble/include/rmw/rmw/names_and_types.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/list_parameters_result__type_support.hpp:
 
 /usr/include/c++/11/typeinfo:
@@ -2393,12 +2453,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__builder.hpp:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_lost.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__traits.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_enable_topic_statistics.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__builder.hpp:
 
@@ -2417,10 +2471,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/c++/11/pstl/execution_defs.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/detail/rmw_implementation_specific_subscription_payload.hpp:
 
 /opt/ros/humble/include/rclcpp_lifecycle/rclcpp_lifecycle/node_interfaces/lifecycle_node_interface.hpp:
 
@@ -2441,10 +2491,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/c++/11/array:
 
 /usr/include/c++/11/iostream:
-
-/usr/include/errno.h:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
@@ -2474,8 +2520,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/int32.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/resolve_intra_process_buffer_type.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
@@ -2492,19 +2536,9 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters_atomically.hpp:
 
-/opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
-
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_client.hpp:
-
-/opt/ros/humble/include/rclcpp/rclcpp/utilities.hpp:
-
-/usr/include/c++/11/ext/new_allocator.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_publisher.hpp:
 
@@ -2522,6 +2556,8 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rmw/rmw/get_topic_names_and_types.h:
 
+/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__struct.hpp:
@@ -2530,9 +2566,27 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_subscription.hpp:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
+/opt/ros/humble/include/rmw/rmw/macros.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/detail/subscription_callback_type_helper.hpp:
+/opt/ros/humble/include/rmw/rmw/message_sequence.h:
+
+/opt/ros/humble/include/rmw/rmw/names_and_types.h:
+
+/opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp:
+
+/opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
+
+/opt/ros/humble/include/rmw/rmw/publisher_options.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__traits.hpp:
+
+/usr/include/errno.h:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
+
+/opt/ros/humble/include/rmw/rmw/qos_policy_kind.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/client.hpp:
 
@@ -2658,8 +2712,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__struct.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int8__traits.hpp:
 
 /opt/ros/humble/include/rmw/rmw/localhost.h:
@@ -2719,6 +2771,14 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/math.h:
 
 /usr/include/c++/11/bits/allocated_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
+
+/opt/ros/humble/include/rcl/rcl/service.h:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/11/cxxabi.h:
 
@@ -2843,12 +2903,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/c++/11/bits/stringfwd.h:
-
-/opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h:
-
-/usr/include/c++/11/bits/unique_ptr.h:
-
-/usr/include/c++/11/string:
 
 /usr/include/c++/11/bits/unordered_set.h:
 
@@ -3032,8 +3086,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
@@ -3076,10 +3128,6 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 
 /usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__type_support.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
-
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
 
 /usr/include/x86_64-linux-gnu/bits/socket2.h:
@@ -3097,19 +3145,3 @@ CMakeFiles/follow_zed_node.dir/src/FSM_states/follow_zed_node.cpp.o: /home/rhobt
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
-
-/opt/ros/humble/include/rmw/rmw/serialized_message.h:
-
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
-
-/opt/ros/humble/include/rcl/rcl/service.h:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:

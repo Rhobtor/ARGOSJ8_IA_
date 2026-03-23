@@ -262,8 +262,7 @@ class NavRELPOSNED9(metaclass=Metaclass_NavRELPOSNED9):
         if 'reserved2' not in kwargs:
             self.reserved2 = numpy.zeros(4, dtype=numpy.uint8)
         else:
-            self.reserved2 = numpy.array(kwargs.get('reserved2'), dtype=numpy.uint8)
-            assert self.reserved2.shape == (4, )
+            self.reserved2 = kwargs.get('reserved2')
         self.rel_pos_hpn = kwargs.get('rel_pos_hpn', int())
         self.rel_pos_hpe = kwargs.get('rel_pos_hpe', int())
         self.rel_pos_hpd = kwargs.get('rel_pos_hpd', int())
@@ -276,8 +275,7 @@ class NavRELPOSNED9(metaclass=Metaclass_NavRELPOSNED9):
         if 'reserved3' not in kwargs:
             self.reserved3 = numpy.zeros(4, dtype=numpy.uint8)
         else:
-            self.reserved3 = numpy.array(kwargs.get('reserved3'), dtype=numpy.uint8)
-            assert self.reserved3.shape == (4, )
+            self.reserved3 = kwargs.get('reserved3')
         self.flags = kwargs.get('flags', int())
 
     def __repr__(self):

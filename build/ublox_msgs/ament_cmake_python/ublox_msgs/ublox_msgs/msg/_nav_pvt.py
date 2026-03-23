@@ -433,8 +433,7 @@ class NavPVT(metaclass=Metaclass_NavPVT):
         if 'reserved1' not in kwargs:
             self.reserved1 = numpy.zeros(6, dtype=numpy.uint8)
         else:
-            self.reserved1 = numpy.array(kwargs.get('reserved1'), dtype=numpy.uint8)
-            assert self.reserved1.shape == (6, )
+            self.reserved1 = kwargs.get('reserved1')
         self.head_veh = kwargs.get('head_veh', int())
         self.mag_dec = kwargs.get('mag_dec', int())
         self.mag_acc = kwargs.get('mag_acc', int())

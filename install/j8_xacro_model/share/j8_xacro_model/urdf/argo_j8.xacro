@@ -261,7 +261,7 @@
     </collision>
   </link>
   <joint name="Velodyne_joint" type="fixed">
-    <origin rpy="0 0 -1.5707963267948966" xyz="1.6279 -0.0022244 0.17"/>
+    <origin rpy="0 0 0" xyz="1.6279 -0.0022244 0.17"/>
     <parent link="J8_top"/>
     <child link="Velodyne_link"/>
     <axis xyz="0 0 0"/>

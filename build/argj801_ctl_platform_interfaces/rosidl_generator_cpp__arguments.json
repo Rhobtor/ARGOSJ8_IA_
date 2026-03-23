@@ -6,7 +6,8 @@
     "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:srv/SetVelocity.idl",
     "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:srv/GetVelocity.idl",
     "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:srv/EmergencyStop.idl",
-    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:msg/CmdThrottleMsg.idl"
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:msg/CmdThrottleMsg.idl",
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces:msg/KinematicDebugMsg.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -27,6 +28,7 @@
     "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/srv/SetVelocity.idl",
     "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/srv/GetVelocity.idl",
     "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/srv/EmergencyStop.idl",
-    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.idl"
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/msg/CmdThrottleMsg.idl",
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_adapter/argj801_ctl_platform_interfaces/msg/KinematicDebugMsg.idl"
   ]
 }
