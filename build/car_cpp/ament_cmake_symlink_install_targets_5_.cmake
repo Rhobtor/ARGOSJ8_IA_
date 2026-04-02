@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/termical_camera_ffmpeg_pipe" "TARGETS" "termical_camera_ffmpeg_pipe" "DESTINATION" "lib/car_cpp")

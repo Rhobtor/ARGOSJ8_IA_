@@ -1,1 +1,0 @@
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/argj801_sensors/argj801_sensors/include/data/Lidar.hpp

@@ -1,2 +1,0 @@
-[console_scripts]
-gui = j8_gui.gui_node:main

@@ -1,1 +1,0 @@
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_sensors/ament_cmake_environment_hooks/local_setup.sh

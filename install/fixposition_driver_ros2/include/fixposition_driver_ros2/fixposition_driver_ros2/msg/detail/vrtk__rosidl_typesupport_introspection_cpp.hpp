@@ -1,1 +1,0 @@
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_typesupport_introspection_cpp/fixposition_driver_ros2/msg/detail/vrtk__rosidl_typesupport_introspection_cpp.hpp

@@ -1,6 +1,0 @@
-[ 16%] Built target frontier_values
-[ 33%] Built target voxel_grid_node
-[ 50%] Built target check_goal
-[ 66%] Built target joints_plugin
-[ 83%] Built target move_plugin
-[100%] Built target drive_plugin

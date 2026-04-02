@@ -1,0 +1,15 @@
+# Ignore everything at the repository root by default.
+/*
+
+# Keep Git control files and the repository scope we want to version.
+!/.gitignore
+!/.gitmodules
+!/README.md
+!/dockerfile
+!/entrypoint.sh
+!/install.sh
+!/local_cyclonedds.xml
+!/local_cyclonedds2.xml
+!/init_profile_results.prof
+!/src/
+!/src/**

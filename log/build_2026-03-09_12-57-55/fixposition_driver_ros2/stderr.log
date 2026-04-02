@@ -1,7 +1,0 @@
-[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_ros2/src/data_to_ros2.cpp:[m[K In function ‘[01m[Kbuiltin_interfaces::msg::Time fixposition::StampToRosTime(const fixposition::times::GpsTime&)[m[K’:
-[01m[K/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_ros2/src/data_to_ros2.cpp:35:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Time[m[K’ has no member named ‘[01m[Kto_msg[m[K’
-   35 |         return rclcpp::Clock(RCL_SYSTEM_TIME).now().[01;31m[Kto_msg[m[K();
-      |                                                     [01;31m[K^~~~~~[m[K
-gmake[2]: *** [CMakeFiles/fixposition_driver_ros2_exec.dir/build.make:104: CMakeFiles/fixposition_driver_ros2_exec.dir/src/data_to_ros2.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/fixposition_driver_ros2_exec.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

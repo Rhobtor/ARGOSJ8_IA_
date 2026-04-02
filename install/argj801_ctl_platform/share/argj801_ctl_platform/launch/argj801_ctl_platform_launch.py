@@ -1,1 +1,0 @@
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform/launch/argj801_ctl_platform_launch.py

@@ -1,9 +1,0 @@
-setup.py
-argj801_sensors_msgs/__init__.py
-argj801_sensors_msgs.egg-info/PKG-INFO
-argj801_sensors_msgs.egg-info/SOURCES.txt
-argj801_sensors_msgs.egg-info/dependency_links.txt
-argj801_sensors_msgs.egg-info/top_level.txt
-argj801_sensors_msgs/msg/__init__.py
-argj801_sensors_msgs/msg/_motor_telemetry.py
-argj801_sensors_msgs/msg/_odometer.py

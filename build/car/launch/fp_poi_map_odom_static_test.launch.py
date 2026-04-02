@@ -1,1 +1,0 @@
-/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/car_python/launch/fp_poi_map_odom_static_test.launch.py
