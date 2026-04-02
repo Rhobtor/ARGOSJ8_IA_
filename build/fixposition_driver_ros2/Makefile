@@ -418,6 +418,19 @@ fixposition_driver_ros2__py/fast:
 	$(MAKE) $(MAKESILENT) -f /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/fixposition_driver_ros2__py/CMakeFiles/fixposition_driver_ros2__py.dir/build.make /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/fixposition_driver_ros2__py/CMakeFiles/fixposition_driver_ros2__py.dir/build
 .PHONY : fixposition_driver_ros2__py/fast
 
+#=============================================================================
+# Target rules for targets named fixposition_driver_ros2__rs
+
+# Build rule for target.
+fixposition_driver_ros2__rs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fixposition_driver_ros2__rs
+.PHONY : fixposition_driver_ros2__rs
+
+# fast build rule for target.
+fixposition_driver_ros2__rs/fast:
+	$(MAKE) $(MAKESILENT) -f /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/fixposition_driver_ros2__rs/CMakeFiles/fixposition_driver_ros2__rs.dir/build.make /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/fixposition_driver_ros2__rs/CMakeFiles/fixposition_driver_ros2__rs.dir/build
+.PHONY : fixposition_driver_ros2__rs/fast
+
 rosidl_generator_c/fixposition_driver_ros2/msg/detail/speed__functions.o: rosidl_generator_c/fixposition_driver_ros2/msg/detail/speed__functions.c.o
 .PHONY : rosidl_generator_c/fixposition_driver_ros2/msg/detail/speed__functions.o
 
@@ -964,6 +977,7 @@ help:
 	@echo "... fixposition_driver_ros2"
 	@echo "... fixposition_driver_ros2__cpp"
 	@echo "... fixposition_driver_ros2__py"
+	@echo "... fixposition_driver_ros2__rs"
 	@echo "... fixposition_driver_ros2_uninstall"
 	@echo "... uninstall"
 	@echo "... fixposition_driver_ros2__rosidl_generator_c"

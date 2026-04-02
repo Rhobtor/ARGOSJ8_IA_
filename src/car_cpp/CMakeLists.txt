@@ -1,6 +1,11 @@
 cmake_minimum_required(VERSION 3.5)
 project(car_cpp)
 
+if(POLICY CMP0144)
+  cmake_policy(SET CMP0144 NEW)
+  set(CMAKE_POLICY_DEFAULT_CMP0144 NEW)
+endif()
+
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(gazebo_ros REQUIRED)
@@ -27,8 +32,8 @@ find_package(ignition-math6 REQUIRED)
 find_package(ignition-common3 REQUIRED)
 find_package(car_interfaces REQUIRED)
 find_package(grid_map_ros REQUIRED)
-find_package(OpenCV REQUIRED)
-find_package(OpenCV REQUIRED COMPONENTS core imgproc ximgproc)
+find_package(cv_bridge REQUIRED)
+find_package(OpenCV REQUIRED COMPONENTS core imgproc ximgproc videoio)
 
 
 # Agregar directorios de encabezados
@@ -177,6 +182,30 @@ ament_target_dependencies(velodyne_noise_filter_node
 )
 
 install(TARGETS velodyne_noise_filter_node
+  DESTINATION lib/${PROJECT_NAME})
+
+
+
+add_executable(termical_camera src/termical_hikmicro.cpp)
+ament_target_dependencies(termical_camera
+  rclcpp
+  sensor_msgs
+  cv_bridge
+)
+target_link_libraries(termical_camera
+  ${OpenCV_LIBRARIES}
+)
+
+install(TARGETS termical_camera
+  DESTINATION lib/${PROJECT_NAME})
+
+add_executable(termical_camera_ffmpeg_pipe src/termical_hikmicro_ffmpeg_pipe.cpp)
+ament_target_dependencies(termical_camera_ffmpeg_pipe
+  rclcpp
+  sensor_msgs
+)
+
+install(TARGETS termical_camera_ffmpeg_pipe
   DESTINATION lib/${PROJECT_NAME})
 
 

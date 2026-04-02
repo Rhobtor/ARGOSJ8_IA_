@@ -1,0 +1,175 @@
+[0.355s] Invoking command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp -- -j16 -l16
+[0.375s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.524s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.531s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.563s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.565s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.570s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.581s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.601s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.631s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.633s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.741s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.810s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.855s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.890s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.890s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.896s] -- Searching for dependencies of ignition-math6
+[0.898s] -- Looking for OGRE...
+[0.904s] -- Found Ogre Ghadamon (1.9.0)
+[0.905s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.916s] -- Looking for OGRE_Paging...
+[0.916s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.916s] -- Looking for OGRE_Terrain...
+[0.916s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.916s] -- Looking for OGRE_Property...
+[0.916s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.916s] -- Looking for OGRE_RTShaderSystem...
+[0.916s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.916s] -- Looking for OGRE_Volume...
+[0.916s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.917s] -- Looking for OGRE_Overlay...
+[0.917s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.054s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.055s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.055s] -- Searching for dependencies of ignition-transport8
+[1.074s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.087s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.092s] -- Checking for module 'libzmq >= 4'
+[1.101s] --   Found libzmq, version 4.3.4
+[1.130s] -- Checking for module 'uuid'
+[1.139s] --   Found uuid, version 2.37.2
+[1.161s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.161s] -- Searching for dependencies of ignition-msgs5
+[1.180s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.185s] -- Checking for module 'tinyxml2'
+[1.194s] --   Found tinyxml2, version 9.0.0
+[1.217s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.217s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.217s] -- Searching for dependencies of ignition-common3
+[1.218s] -- Looking for dlfcn.h - found
+[1.218s] -- Looking for libdl - found
+[1.230s] -- Searching for <ignition-common3> component [graphics]
+[1.230s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.230s] -- Searching for dependencies of ignition-common3-graphics
+[1.231s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.232s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.232s] -- Searching for dependencies of ignition-fuel_tools4
+[1.261s] [0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake:2 (cmake_policy):
+[1.261s]   Compatibility with CMake < 3.5 will be removed from a future version of
+[1.262s]   CMake.
+[1.262s] 
+[1.262s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[1.262s]   CMake that the project does not need compatibility with older versions.
+[1.262s] Call Stack (most recent call first):
+[1.262s]   /usr/share/cmake/ignition-cmake2/cmake2/FindJSONCPP.cmake:34 (find_package)
+[1.262s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools4/ignition-fuel_tools4-config.cmake:94 (find_package)
+[1.262s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:251 (find_package)
+[1.262s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[1.262s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[1.262s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.262s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[1.262s]   CMakeLists.txt:6 (find_package)
+[1.262s] 
+[1.262s] [0m
+[1.266s] -- Checking for module 'jsoncpp'
+[1.276s] --   Found jsoncpp, version 1.9.5
+[1.305s] -- Checking for module 'libzip'
+[1.318s] --   Found libzip, version 1.7.3
+[1.339s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.339s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.340s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.342s] -- Gazebo version: 11.10
+[1.343s] -- Found pluginlib: 5.1.3 (/opt/ros/humble/share/pluginlib/cmake)
+[1.354s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.365s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.380s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.410s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:146 (find_package):
+[1.410s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.410s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.410s]   cmake_policy command to set the policy and suppress this warning.
+[1.410s] 
+[1.410s]   CMake variable EIGEN_ROOT is set to:
+[1.410s] 
+[1.410s]     /usr/include/eigen3
+[1.410s] 
+[1.410s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.410s]   .cmake module might still use it.
+[1.410s] Call Stack (most recent call first):
+[1.410s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:299 (find_eigen)
+[1.410s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[1.410s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.410s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.410s]   CMakeLists.txt:15 (find_package)
+[1.410s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.410s] [0m
+[1.414s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.420s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:44 (find_package):
+[1.421s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[1.421s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[1.421s]   cmake_policy command to set the policy and suppress this warning.
+[1.421s] 
+[1.421s]   CMake variable FLANN_ROOT is set to:
+[1.421s] 
+[1.421s]     /usr
+[1.421s] 
+[1.421s]   For compatibility, find_package is ignoring the variable, but code in a
+[1.421s]   .cmake module might still use it.
+[1.421s] Call Stack (most recent call first):
+[1.421s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:256 (find_package)
+[1.421s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:301 (find_flann)
+[1.421s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:543 (find_external_library)
+[1.421s]   /opt/ros/humble/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.421s]   /opt/ros/humble/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)
+[1.421s]   CMakeLists.txt:15 (find_package)
+[1.421s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.421s] [0m
+[1.440s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.750s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.754s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.978s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.983s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.988s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.188s] -- Found Qhull version 8.0.2
+[2.411s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.688s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.715s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.731s] -- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)
+[2.739s] -- Found geographic_msgs: 1.0.6 (/opt/ros/humble/share/geographic_msgs/cmake)
+[2.763s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[2.766s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.827s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.831s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.832s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.833s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.833s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.834s] -- Found car_interfaces: 0.0.0 (/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/share/car_interfaces/cmake)
+[2.847s] -- Found grid_map_ros: 2.0.1 (/opt/ros/humble/share/grid_map_ros/cmake)
+[2.923s] -- Found OpenCV: /usr (found version "4.5.4") 
+[2.924s] -- Found OpenCV: /usr (found version "4.5.4") found components: core imgproc ximgproc 
+[3.006s] -- Configuring done (2.6s)
+[3.098s] -- Generating done (0.1s)
+[3.111s] -- Build files have been written to: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp
+[3.136s] [  6%] [32mBuilding CXX object CMakeFiles/termical_camera.dir/src/termical_hikmicro.cpp.o[0m
+[3.142s] [ 18%] Built target velodyne_noise_filter_node
+[3.143s] [ 31%] Built target frontier_values
+[3.144s] [ 43%] Built target voxel_grid_node
+[3.146s] [ 56%] Built target check_goal
+[3.151s] [ 68%] Built target drive_plugin
+[3.155s] [ 81%] Built target joints_plugin
+[3.158s] [ 93%] Built target move_plugin
+[6.379s] [100%] [32m[1mLinking CXX executable termical_camera[0m
+[6.591s] /usr/bin/ld: CMakeFiles/termical_camera.dir/src/termical_hikmicro.cpp.o: in function `RtspThermalNode::RtspThermalNode()':
+[6.591s] termical_hikmicro.cpp:(.text._ZN15RtspThermalNodeC2Ev[_ZN15RtspThermalNodeC5Ev]+0x15e): undefined reference to `cv::VideoCapture::VideoCapture()'
+[6.591s] /usr/bin/ld: termical_hikmicro.cpp:(.text._ZN15RtspThermalNodeC2Ev[_ZN15RtspThermalNodeC5Ev]+0xa48): undefined reference to `cv::VideoCapture::open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
+[6.591s] /usr/bin/ld: termical_hikmicro.cpp:(.text._ZN15RtspThermalNodeC2Ev[_ZN15RtspThermalNodeC5Ev]+0xc3b): undefined reference to `cv::VideoCapture::set(int, double)'
+[6.591s] /usr/bin/ld: termical_hikmicro.cpp:(.text._ZN15RtspThermalNodeC2Ev[_ZN15RtspThermalNodeC5Ev]+0x1302): undefined reference to `cv::VideoCapture::~VideoCapture()'
+[6.591s] /usr/bin/ld: CMakeFiles/termical_camera.dir/src/termical_hikmicro.cpp.o: in function `RtspThermalNode::tick()':
+[6.591s] termical_hikmicro.cpp:(.text._ZN15RtspThermalNode4tickEv[_ZN15RtspThermalNode4tickEv]+0x71): undefined reference to `cv::VideoCapture::read(cv::_OutputArray const&)'
+[6.592s] /usr/bin/ld: CMakeFiles/termical_camera.dir/src/termical_hikmicro.cpp.o: in function `RtspThermalNode::~RtspThermalNode()':
+[6.592s] termical_hikmicro.cpp:(.text._ZN15RtspThermalNodeD2Ev[_ZN15RtspThermalNodeD5Ev]+0x50): undefined reference to `cv::VideoCapture::~VideoCapture()'
+[6.613s] collect2: error: ld returned 1 exit status
+[6.614s] gmake[2]: *** [CMakeFiles/termical_camera.dir/build.make:179: termical_camera] Error 1
+[6.614s] gmake[1]: *** [CMakeFiles/Makefile2:255: CMakeFiles/termical_camera.dir/all] Error 2
+[6.614s] gmake: *** [Makefile:146: all] Error 2
+[6.616s] Invoked command in '/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp' returned '2': AMENT_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/zed/install/zed_ros2:/home/rhobtor/zed/install/zed_wrapper:/home/rhobtor/zed/install/zed_components:/home/rhobtor/zed/install/zed_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/car_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /opt/st/stm32cubeclt_1.18.0/CMake/bin/cmake --build /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp -- -j16 -l16

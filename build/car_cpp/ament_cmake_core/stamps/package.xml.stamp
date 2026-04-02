@@ -30,6 +30,7 @@
   <build_depend>grid_map_ros</build_depend>
   <build_depend>opencv</build_depend>
   <exec_depend>grid_map_ros</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
 
 
 

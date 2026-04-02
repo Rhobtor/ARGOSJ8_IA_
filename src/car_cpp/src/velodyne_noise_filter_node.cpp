@@ -24,8 +24,8 @@ public:
   VelodyneNoiseFilterNode()
   : Node("velodyne_noise_filter")
   {
-    input_topic_ = this->declare_parameter<std::string>("input", "/ARGJ801/Velodyne/scan_cloud");
-    output_topic_ = this->declare_parameter<std::string>("output", "/ARGJ801/Velodyne/scan_cloud_filtered");
+    input_topic_ = this->declare_parameter<std::string>("input", "/velodyne_points");
+    output_topic_ = this->declare_parameter<std::string>("output", "/velodyne_points_filtered");
     output_frame_id_ = this->declare_parameter<std::string>("output_frame_id", "");
 
     leaf_size_ = this->declare_parameter<double>("leaf_size", 0.15);

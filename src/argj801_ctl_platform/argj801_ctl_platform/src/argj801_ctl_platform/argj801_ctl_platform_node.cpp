@@ -27,6 +27,7 @@ rclcpp_lifecycle::LifecycleNode(node_name,rclcpp::NodeOptions().use_intra_proces
   this->declare_parameter("throttle_topic_name", "cmd_throttle_msg");
   this->declare_parameter("kinematic_debug_topic_name", "kinematic_debug");
   this->declare_parameter("secured_cmd_vel_topic_name", "secure_cmd_vel");
+  this->declare_parameter("cmd_timeout_sec", 0.2);
   this->declare_parameter("arduino_params.port", "/dev/ttyUSB0");
   this->declare_parameter("arduino_params.watchdog_active", true);
   this->declare_parameter("lcm_params.lcm_config_file", "argj801_lcm_config_platform.yaml");
@@ -110,13 +111,18 @@ CtlPlatformNode::on_configure(const rclcpp_lifecycle::State &)
   this->get_parameter("throttle_topic_name", cmd_throttle_name);
   this->get_parameter("kinematic_debug_topic_name", kinematic_debug_topic_name);
   this->get_parameter("secured_cmd_vel_topic_name", cmd_vel_name_in);
+  this->get_parameter("cmd_timeout_sec", cmd_timeout_sec_);
   this->get_parameter("steer_acc", steer_acc);
   this->get_parameter("throttle_acc", throttle_acc);
   this->get_parameter("kinematic_parameters.steer_acc", steer_acc);
   this->get_parameter("kinematic_parameters.throttle_acc", throttle_acc);
 
   emergencyStopServ = this->create_service<argj801_ctl_platform_interfaces::srv::EmergencyStop>("emergency_stop",std::bind(&CtlPlatformNode::emergencyStop,this,std::placeholders::_1,std::placeholders::_2));
-  subscription = this->create_subscription<geometry_msgs::msg::Twist>("/ARGJ801/cmd_vel" ,rclcpp::SensorDataQoS(),std::bind(&CtlPlatformNode::cmd_vel_callback, this, std::placeholders::_1));
+  subscription = this->create_subscription<geometry_msgs::msg::Twist>(
+    cmd_vel_name_in,
+    rclcpp::QoS(rclcpp::KeepLast(10)).reliable(),
+    std::bind(&CtlPlatformNode::cmd_vel_callback, this, std::placeholders::_1));
+  RCLCPP_INFO(get_logger(), "Listening for platform velocity commands on '%s'", subscription->get_topic_name());
 
   diagnostic_ = std::make_shared<diagnostic_updater::Updater>(this);
   diagnostic_->setHardwareID("Ctl_Platform_J8");
@@ -633,13 +639,20 @@ void CtlPlatformNode::timerWellsSpeedCallback() {
   rclcpp::Time current_time = this->now();
   double elapsed_time = (current_time - last_twist_time_).seconds();
 
-  if (elapsed_time > MESSAGE_TIMEOUT) {
-      // The last Twist message is considered old, log a warning and send 0,0 commands
-      // RCLCPP_WARN(this->get_logger(), "The last Twist message is too old (%.2f seconds). Sending 0,0 commands.", elapsed_time);
-      if(pOpMode == PlatformOperationMode::LCM)
-        lcmInterface->sendThrottleMsg(0.0, 0.0);
-      publishCmdThrottle(0.0, 0.0);
-      publishKinematicDebug(0.0, 0.0);
+  if (elapsed_time > cmd_timeout_sec_) {
+      // Match the cmd_vel safety path: feed a zero Twist through the kinematic model.
+      // That keeps the internal throttle/steering state synchronized and applies the
+      // same stopping behavior as a normal zero-velocity command.
+      target_x_ = 0.0;
+      target_rot_ = 0.0;
+      argo_kinematic_model->update(target_x_, target_rot_);
+      const double throttle = argo_kinematic_model->getThrottle();
+      const double steering = argo_kinematic_model->getSteering();
+      if(pOpMode == PlatformOperationMode::LCM) {
+        lcmInterface->sendThrottleMsg(throttle, steering);
+      }
+      publishCmdThrottle(throttle, steering);
+      publishKinematicDebug(throttle, steering);
   } else {
       // Process the message as usual
       argo_kinematic_model->update(target_x_, target_rot_);

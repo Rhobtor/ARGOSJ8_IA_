@@ -445,6 +445,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/fixposition_driver_ros2__py/cmake_install.cmake")
+  include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/fixposition_driver_ros2__rs/cmake_install.cmake")
 
 endif()
 

@@ -55,6 +55,11 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
         # remove trailing slash
         string(SUBSTRING "${dir}" 0 ${offset} dir)
       endif()
+      
+      # Create destination directory.
+      # This does *not* solve the problem of empty directories WITHIN the install tree,
+      # but does make sure that the top-level directory specified by the caller gets created.
+      file(MAKE_DIRECTORY "${destination}")
 
       # glob recursive files
       set(relative_files "")
@@ -357,6 +362,12 @@ include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/a
 
 # install("TARGETS" "fixposition_driver_ros2__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/fixposition_driver_ros2")
 include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/ament_cmake_index/share/ament_index/resource_index/rust_packages/fixposition_driver_ros2" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+ament_cmake_symlink_install_files("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_ros2" FILES "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/ament_cmake_index/share/ament_index/resource_index/rust_packages/fixposition_driver_ros2" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+
+# install(DIRECTORY "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_generator_rs/fixposition_driver_ros2/rust" "DESTINATION" "share/fixposition_driver_ros2")
+ament_cmake_symlink_install_directory("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_ros2" DIRECTORY "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_generator_rs/fixposition_driver_ros2/rust" "DESTINATION" "share/fixposition_driver_ros2")
 
 # install(FILES "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_adapter/fixposition_driver_ros2/msg/VRTK.idl" "DESTINATION" "share/fixposition_driver_ros2/msg")
 ament_cmake_symlink_install_files("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/argo_drivers_pkgs/Fixposition_driver_pkg/fixposition_driver-main/fixposition_driver_ros2" FILES "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_adapter/fixposition_driver_ros2/msg/VRTK.idl" "DESTINATION" "share/fixposition_driver_ros2/msg")

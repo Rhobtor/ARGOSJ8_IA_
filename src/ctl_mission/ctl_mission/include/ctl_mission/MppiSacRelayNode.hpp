@@ -1,6 +1,7 @@
 #ifndef CTL_MISSION__MPPI_SAC_RELAY_NODE_HPP_
 #define CTL_MISSION__MPPI_SAC_RELAY_NODE_HPP_
 
+#include <chrono>
 #include <memory>
 #include <string>
 
@@ -42,15 +43,25 @@ protected:
 
 private:
   void on_ai_cmd(const geometry_msgs::msg::Twist::SharedPtr msg);
+  void publish_relay_cmd();
+  void publish_stop();
   bool send_start_to_controller();
 
   std::shared_ptr<rclcpp_lifecycle::LifecyclePublisher<geometry_msgs::msg::Twist>> pub_secured_cmd_vel_;
   rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr sub_ai_cmd_;
+  rclcpp::TimerBase::SharedPtr relay_timer_;
 
   std::string ai_cmd_topic_;
   std::string secured_cmd_topic_;
   int queue_size_ = 10;
+  double cmd_timeout_sec_ = 1.0;
+  double publisher_disconnect_timeout_sec_ = 0.2;
+  rclcpp::Time last_ai_cmd_time_;
+  geometry_msgs::msg::Twist latest_ai_cmd_;
+  bool have_ai_cmd_ = false;
+  bool timeout_active_ = false;
 
+  bool controller_handshake_enabled_ = false;
   std::string controller_ip_;
   int controller_port_ = 5555;
 };

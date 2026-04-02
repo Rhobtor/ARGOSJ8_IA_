@@ -2,6 +2,7 @@ import os
 import re
 import json
 import threading
+import time
 import mimetypes
 import http.server
 import socketserver
@@ -723,6 +724,7 @@ class MainWindow(QMainWindow):
         self.tabs = QTabWidget()
         self._build_tab_mission()
         self._build_tab_control()
+        self.tabs.currentChanged.connect(self._on_tab_changed)
 
         right = QWidget()
         rv = QVBoxLayout(right); rv.setContentsMargins(0,0,0,0)
@@ -779,6 +781,15 @@ class MainWindow(QMainWindow):
     def _build_tab_follow(self):
         self.follow_tab = FollowZEDWidget(self._ros)
         self.tabs.addTab(self.follow_tab, 'FollowZED')
+
+    def _on_tab_changed(self, index: int):
+        if not hasattr(self, 'follow_tab'):
+            return
+        if self.tabs.widget(index) is self.follow_tab:
+            try:
+                self.follow_tab.ensure_started()
+            except Exception as e:
+                print(f"[GUI] FollowZED init failed: {e}")
 
     def _init_map(self):
         # settings
@@ -908,12 +919,23 @@ class MainWindow(QMainWindow):
         self._ros = RosSide()
         self._exec = rclpy.executors.SingleThreadedExecutor()
         self._exec.add_node(self._ros)
-        self._th = threading.Thread(target=self._exec.spin, daemon=True)
+        self._th = threading.Thread(target=self._spin_executor, daemon=True)
         self._th.start()
         self._build_tab_follow()
         self.mission_tab.set_ros(self._ros)
         self.mission_tab.attach_ros(self._exec)  # puedes pasar topics={'imu':'/mavros/imu/data', ...}
         self.control_tab.set_ros(self._ros)
+
+    def _spin_executor(self):
+        while rclpy.ok():
+            try:
+                self._exec.spin_once(timeout_sec=0.25)
+            except RuntimeError as e:
+                print(f"[GUI] executor runtime error: {e}")
+                time.sleep(0.1)
+            except Exception as e:
+                print(f"[GUI] executor error: {e}")
+                time.sleep(0.25)
 
     # ===== GUI slots =====
     def _on_change_state(self):

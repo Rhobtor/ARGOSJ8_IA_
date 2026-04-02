@@ -30,6 +30,7 @@ public:
     explicit SecurityCheckNode(const std::string & node_name, bool intra_process_comms = false);
     
     void cmdvelCallbak(const geometry_msgs::msg::Twist::SharedPtr msg);
+    void externalCmdvelCallbak(const geometry_msgs::msg::Twist::SharedPtr msg);
     void lidarCallback(const sensor_msgs::msg::LaserScan::SharedPtr msg);
     void handle_security_service(const std::shared_ptr<std_srvs::srv::SetBool::Request> request,
                                  std::shared_ptr<std_srvs::srv::SetBool::Response> response);
@@ -67,6 +68,7 @@ private:
     std::shared_ptr<rclcpp_lifecycle::LifecyclePublisher<geometry_msgs::msg::Twist>> pub_cmd_vel;
     geometry_msgs::msg::Twist::SharedPtr received_cmd_vel, safe_cmd_vel, last_cmd_vel, adjusted_msg;
     std::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::Twist>> sub_cmd_vel;
+    std::shared_ptr<rclcpp::Subscription<geometry_msgs::msg::Twist>> sub_external_cmd_vel;
     std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::LaserScan>> sub_lidar;
     std::shared_ptr<rclcpp::Subscription<std_msgs::msg::Float32>> sub_min_distance_;
     rclcpp::Service<security_check_interfaces::srv::GetSecurityCheckStatus>::SharedPtr getSecurityChecksrv;
@@ -75,7 +77,7 @@ private:
     std::mutex mutex_;
     bool obstacle_detected, disable_check, security_enabled_, security_bypass_enabled_;
     std::map<std::string, sensor_msgs::msg::LaserScan> last_lidar_messages_;
-    std::string input_cmd_vel_topic, output_cmd_vel_topic, lidar_topic, min_distance_to_path_topic_name, get_security_check_srv_name, password_check_srv_name, 
+    std::string input_cmd_vel_topic, external_cmd_vel_topic, output_cmd_vel_topic, lidar_topic, min_distance_to_path_topic_name, get_security_check_srv_name, password_check_srv_name, 
                 dissable_srv_name, change_fsm_mode_srv_name, get_fsm_srv_name;
     std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
     std::shared_ptr<tf2_ros::TransformListener> tf_listener_;

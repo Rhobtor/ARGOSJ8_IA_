@@ -54,6 +54,12 @@
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/local/lib/python3.10/dist-packages/fixposition_driver_ros2/fixposition_driver_ros2_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/ament_index/resource_index/rust_packages/fixposition_driver_ros2
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/rust/Cargo.toml
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/rust/build.rs
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/rust/src/lib.rs
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/rust/src/msg.rs
+/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/rust/src/msg/rmw.rs
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/msg/VRTK.idl
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/msg/Speed.idl
 /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/fixposition_driver_ros2/share/fixposition_driver_ros2/msg/VRTK.msg

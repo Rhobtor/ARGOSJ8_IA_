@@ -327,14 +327,20 @@ include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symli
 # install("TARGETS" "velodyne_noise_filter_node" "DESTINATION" "lib/car_cpp")
 include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "move_plugin" "LIBRARY_DESTINATION" "lib")
+# install("TARGETS" "termical_camera" "DESTINATION" "lib/car_cpp")
 include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "drive_plugin" "LIBRARY_DESTINATION" "lib")
+# install("TARGETS" "termical_camera_ffmpeg_pipe" "DESTINATION" "lib/car_cpp")
 include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "joints_plugin" "LIBRARY_DESTINATION" "lib")
+# install("TARGETS" "move_plugin" "LIBRARY_DESTINATION" "lib")
 include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_6_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "drive_plugin" "LIBRARY_DESTINATION" "lib")
+include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_7_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "joints_plugin" "LIBRARY_DESTINATION" "lib")
+include("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/car_cpp/ament_cmake_symlink_install_targets_8_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "include/" "DESTINATION" "include/")
 ament_cmake_symlink_install_directory("/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/src/car_cpp" DIRECTORY "include/" "DESTINATION" "include/")

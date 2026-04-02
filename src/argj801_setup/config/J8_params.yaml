@@ -18,6 +18,7 @@ ARGJ801:
 
     # Topics principales de mando.
     cmd_vel_topic_name: "cmd_vel"
+    external_cmd_vel_topic_name: "external_cmd_vel"
     secured_cmd_vel_topic_name: "secured_cmd_vel"
     follow_cmd_topic_name: "external_cmd_vel"
 
@@ -75,8 +76,17 @@ ARGJ801:
     # Salida: canal validado por security_check / límites del robot.
     secured_cmd_vel_topic_name: "secured_cmd_vel"
     queue_size: 10
+    # Si el publicador sigue vivo pero manda más lento, mantenemos el último mando
+    # durante más tiempo para evitar tirones.
+    cmd_timeout_sec: 1.0
+    # Si el publicador desaparece (por ejemplo Ctrl+C), el relay corta rápido.
+    publisher_disconnect_timeout_sec: 0.2
 
-    # Handshake TCP: al activar el estado MPPI/SAC, se envía "START\n" a esta IP/puerto.
+    # En modo topic-only el FSM escucha /ARGJ801/external_cmd_vel sin depender de una IP fija.
+    controller_handshake_enabled: false
+
+    # Handshake TCP opcional: si algún día lo reactivas, al entrar en CONTROL IA
+    # se enviará "START\n" a esta IP/puerto.
     controller_ip: "192.168.1.116"
     controller_port: 5555
 
@@ -155,6 +165,7 @@ ARGJ801:
 
   argj801_ctrl_platform_node:
     # Parámetros cinemáticos del vehículo (unidades típicas: metros, radianes, etc.).
+    cmd_timeout_sec: 0.2
     kinematic_parameters:
       efective_radius : 0.295
       xICR : 0.70

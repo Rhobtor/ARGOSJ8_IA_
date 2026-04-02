@@ -39,7 +39,6 @@
 
 
 
-#define MESSAGE_TIMEOUT 1.0 //seconds
 #define PLATFORM_ID -1299645807
 #define HEARBEAT_COUNT_MAX 3
 
@@ -133,6 +132,7 @@ private:
   float throttle_acc;
   int platformHearbeatCount;
   rclcpp::Time last_twist_time_;
+  double cmd_timeout_sec_ = 0.2;
 
   float target_x_ = 0;
   float target_rot_ = 0;

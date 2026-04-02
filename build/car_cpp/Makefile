@@ -250,6 +250,32 @@ velodyne_noise_filter_node/fast:
 .PHONY : velodyne_noise_filter_node/fast
 
 #=============================================================================
+# Target rules for targets named termical_camera
+
+# Build rule for target.
+termical_camera: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 termical_camera
+.PHONY : termical_camera
+
+# fast build rule for target.
+termical_camera/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/termical_camera.dir/build.make CMakeFiles/termical_camera.dir/build
+.PHONY : termical_camera/fast
+
+#=============================================================================
+# Target rules for targets named termical_camera_ffmpeg_pipe
+
+# Build rule for target.
+termical_camera_ffmpeg_pipe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 termical_camera_ffmpeg_pipe
+.PHONY : termical_camera_ffmpeg_pipe
+
+# fast build rule for target.
+termical_camera_ffmpeg_pipe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/termical_camera_ffmpeg_pipe.dir/build.make CMakeFiles/termical_camera_ffmpeg_pipe.dir/build
+.PHONY : termical_camera_ffmpeg_pipe/fast
+
+#=============================================================================
 # Target rules for targets named joints_plugin
 
 # Build rule for target.
@@ -408,6 +434,54 @@ src/move_object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_plugin.dir/build.make CMakeFiles/move_plugin.dir/src/move_object.cpp.s
 .PHONY : src/move_object.cpp.s
 
+src/termical_hikmicro.o: src/termical_hikmicro.cpp.o
+.PHONY : src/termical_hikmicro.o
+
+# target to build an object file
+src/termical_hikmicro.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/termical_camera.dir/build.make CMakeFiles/termical_camera.dir/src/termical_hikmicro.cpp.o
+.PHONY : src/termical_hikmicro.cpp.o
+
+src/termical_hikmicro.i: src/termical_hikmicro.cpp.i
+.PHONY : src/termical_hikmicro.i
+
+# target to preprocess a source file
+src/termical_hikmicro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/termical_camera.dir/build.make CMakeFiles/termical_camera.dir/src/termical_hikmicro.cpp.i
+.PHONY : src/termical_hikmicro.cpp.i
+
+src/termical_hikmicro.s: src/termical_hikmicro.cpp.s
+.PHONY : src/termical_hikmicro.s
+
+# target to generate assembly for a file
+src/termical_hikmicro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/termical_camera.dir/build.make CMakeFiles/termical_camera.dir/src/termical_hikmicro.cpp.s
+.PHONY : src/termical_hikmicro.cpp.s
+
+src/termical_hikmicro_ffmpeg_pipe.o: src/termical_hikmicro_ffmpeg_pipe.cpp.o
+.PHONY : src/termical_hikmicro_ffmpeg_pipe.o
+
+# target to build an object file
+src/termical_hikmicro_ffmpeg_pipe.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/termical_camera_ffmpeg_pipe.dir/build.make CMakeFiles/termical_camera_ffmpeg_pipe.dir/src/termical_hikmicro_ffmpeg_pipe.cpp.o
+.PHONY : src/termical_hikmicro_ffmpeg_pipe.cpp.o
+
+src/termical_hikmicro_ffmpeg_pipe.i: src/termical_hikmicro_ffmpeg_pipe.cpp.i
+.PHONY : src/termical_hikmicro_ffmpeg_pipe.i
+
+# target to preprocess a source file
+src/termical_hikmicro_ffmpeg_pipe.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/termical_camera_ffmpeg_pipe.dir/build.make CMakeFiles/termical_camera_ffmpeg_pipe.dir/src/termical_hikmicro_ffmpeg_pipe.cpp.i
+.PHONY : src/termical_hikmicro_ffmpeg_pipe.cpp.i
+
+src/termical_hikmicro_ffmpeg_pipe.s: src/termical_hikmicro_ffmpeg_pipe.cpp.s
+.PHONY : src/termical_hikmicro_ffmpeg_pipe.s
+
+# target to generate assembly for a file
+src/termical_hikmicro_ffmpeg_pipe.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/termical_camera_ffmpeg_pipe.dir/build.make CMakeFiles/termical_camera_ffmpeg_pipe.dir/src/termical_hikmicro_ffmpeg_pipe.cpp.s
+.PHONY : src/termical_hikmicro_ffmpeg_pipe.cpp.s
+
 src/velodyne_noise_filter_node.o: src/velodyne_noise_filter_node.cpp.o
 .PHONY : src/velodyne_noise_filter_node.o
 
@@ -476,6 +550,8 @@ help:
 	@echo "... frontier_values"
 	@echo "... joints_plugin"
 	@echo "... move_plugin"
+	@echo "... termical_camera"
+	@echo "... termical_camera_ffmpeg_pipe"
 	@echo "... velodyne_noise_filter_node"
 	@echo "... voxel_grid_node"
 	@echo "... src/check_goal.o"
@@ -493,6 +569,12 @@ help:
 	@echo "... src/move_object.o"
 	@echo "... src/move_object.i"
 	@echo "... src/move_object.s"
+	@echo "... src/termical_hikmicro.o"
+	@echo "... src/termical_hikmicro.i"
+	@echo "... src/termical_hikmicro.s"
+	@echo "... src/termical_hikmicro_ffmpeg_pipe.o"
+	@echo "... src/termical_hikmicro_ffmpeg_pipe.i"
+	@echo "... src/termical_hikmicro_ffmpeg_pipe.s"
 	@echo "... src/velodyne_noise_filter_node.o"
 	@echo "... src/velodyne_noise_filter_node.i"
 	@echo "... src/velodyne_noise_filter_node.s"

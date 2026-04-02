@@ -5,7 +5,7 @@ set(car_cpp_BUILD_DEPENDS "rclcpp" "std_msgs" "geometry_msgs" "sensor_msgs" "oct
 set(car_cpp_BUILDTOOL_DEPENDS "ament_cmake" "rosidl_default_generators")
 set(car_cpp_BUILD_EXPORT_DEPENDS "car_interfaces")
 set(car_cpp_BUILDTOOL_EXPORT_DEPENDS )
-set(car_cpp_EXEC_DEPENDS "grid_map_ros" "rclcpp" "std_msgs" "geometry_msgs" "sensor_msgs" "octomap" "octomap_msgs" "octomap_ros" "tf2" "tf2_ros" "tf2_msgs" "pcl_conversions" "pcl_msgs" "visualization_msgs" "nav_msgs" "ignition-math6" "rosidl_default_generators" "car_interfaces")
+set(car_cpp_EXEC_DEPENDS "grid_map_ros" "cv_bridge" "rclcpp" "std_msgs" "geometry_msgs" "sensor_msgs" "octomap" "octomap_msgs" "octomap_ros" "tf2" "tf2_ros" "tf2_msgs" "pcl_conversions" "pcl_msgs" "visualization_msgs" "nav_msgs" "ignition-math6" "rosidl_default_generators" "car_interfaces")
 set(car_cpp_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(car_cpp_GROUP_DEPENDS )
 set(car_cpp_MEMBER_OF_GROUPS )
