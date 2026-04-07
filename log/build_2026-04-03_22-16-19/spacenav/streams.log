@@ -1,0 +1,37 @@
+[3.865s] Invoking command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --build /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav -- -j20 -l20
+[4.375s] [ 50%] Built target spacenav_node
+[4.503s] [100%] Built target spacenav
+[5.535s] Invoked command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --build /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav -- -j20 -l20
+[5.946s] Invoking command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --install /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav
+[6.164s] -- Install configuration: ""
+[6.481s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/lib/libspacenav.so
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/lib/spacenav/spacenav_node
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/include/spacenav
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/include/spacenav/spacenav
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/include/spacenav/spacenav/spacenav.hpp
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav//launch
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav//launch/classic-launch.py
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav//launch/static_deadband-launch.py
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav//launch/no_deadband-launch.py
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/lib/libspacenav.so
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/ament_index/resource_index/package_run_dependencies/spacenav
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/ament_index/resource_index/parent_prefix_path/spacenav
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/environment/ament_prefix_path.sh
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/environment/ament_prefix_path.dsv
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/environment/path.sh
+[6.482s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/environment/path.dsv
+[6.483s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/local_setup.bash
+[6.483s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/local_setup.sh
+[6.483s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/local_setup.zsh
+[6.483s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/local_setup.dsv
+[6.483s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/package.dsv
+[6.488s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/ament_index/resource_index/packages/spacenav
+[6.489s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/ament_index/resource_index/rclcpp_components/spacenav
+[6.686s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/export_spacenavExport.cmake
+[6.687s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/export_spacenavExport-noconfig.cmake
+[6.687s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/ament_cmake_export_targets-extras.cmake
+[6.687s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.687s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/spacenavConfig.cmake
+[6.687s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/spacenavConfig-version.cmake
+[6.687s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/package.xml
+[7.410s] Invoked command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --install /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav

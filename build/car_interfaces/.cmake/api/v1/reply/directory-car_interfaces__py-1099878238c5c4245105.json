@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "car_interfaces__py",
+		"source" : "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/car_interfaces/car_interfaces__py"
+	}
+}

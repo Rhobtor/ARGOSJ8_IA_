@@ -1,0 +1,25 @@
+[2.988s] Invoking command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --build /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/joy_linux -- -j20 -l20
+[3.502s] [ 50%] [32mBuilding CXX object CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o[0m
+[10.856s] [100%] [32m[1mLinking CXX executable joy_linux_node[0m
+[11.183s] [100%] Built target joy_linux_node
+[11.345s] Invoked command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --build /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/joy_linux -- -j20 -l20
+[11.347s] Invoking command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --install /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/joy_linux
+[11.384s] -- Install configuration: ""
+[11.384s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/lib/joy_linux/joy_linux_node
+[11.387s] -- Set runtime path of "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/lib/joy_linux/joy_linux_node" to ""
+[11.387s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/ament_index/resource_index/package_run_dependencies/joy_linux
+[11.387s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/ament_index/resource_index/parent_prefix_path/joy_linux
+[11.596s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/environment/ament_prefix_path.sh
+[11.596s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/environment/ament_prefix_path.dsv
+[11.606s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/environment/path.sh
+[11.606s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/environment/path.dsv
+[11.606s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/local_setup.bash
+[11.606s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/local_setup.sh
+[11.606s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/local_setup.zsh
+[11.606s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/local_setup.dsv
+[11.664s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/package.dsv
+[11.716s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/ament_index/resource_index/packages/joy_linux
+[11.717s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/cmake/joy_linuxConfig.cmake
+[11.717s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/cmake/joy_linuxConfig-version.cmake
+[11.717s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/joy_linux/share/joy_linux/package.xml
+[11.749s] Invoked command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --install /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/joy_linux

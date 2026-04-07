@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-2013396905b55b255436.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "argj801_ctl_platform_interfaces__py",
+					"jsonFile" : "directory-argj801_ctl_platform_interfaces__py-7b720ce7fdcac9a74a3e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "argj801_ctl_platform_interfaces__rs",
+					"jsonFile" : "directory-argj801_ctl_platform_interfaces__rs-dbb57d12cc3fef3acfce.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "argj801_ctl_platform_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_argj801_ctl_platform_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_argj801_ctl_platform_interfaces_egg-bc7eee882051aa9adbf9.json",
+					"name" : "ament_cmake_python_build_argj801_ctl_platform_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_argj801_ctl_platform_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_argj801_ctl_platform_interfaces-f0be7a852219eb5c6ba0.json",
+					"name" : "ament_cmake_python_copy_argj801_ctl_platform_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces-36b7f87e8b7c0a29c4e8.json",
+					"name" : "argj801_ctl_platform_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__cpp-0b7d66b031266c24a59b.json",
+					"name" : "argj801_ctl_platform_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "argj801_ctl_platform_interfaces__py::@d8575be6be455e7af982",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__py-74d0b9ef16cd8c196ff3.json",
+					"name" : "argj801_ctl_platform_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_generator_c-814de5833494b2b8030c.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_generator_py-4538a4c7e47949dba9f6.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_typesupport_c-94263817d775b91d4695.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_typesupport_c__pyext-7285c0c565c383b362f6.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_typesupport_cpp-c30345b91fe2f03ddfd0.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c-4a98ea2a74bf96a2959a.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext-4b89eff96e2702491844.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp-6c31caa064d0da3603f6.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c-d448cfcbeb48a66732ae.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c__pyext-0bc0c146ee2da24cd778.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp-431139371926077d2eed.json",
+					"name" : "argj801_ctl_platform_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "argj801_ctl_platform_interfaces__rs::@94e319f3751c2a0c5d90",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces__rs-76ae3183b19096a7f31c.json",
+					"name" : "argj801_ctl_platform_interfaces__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "argj801_ctl_platform_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-argj801_ctl_platform_interfaces_uninstall-aaa25937edf3957673f7.json",
+					"name" : "argj801_ctl_platform_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-85261d702b21ff8c09b8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces",
+		"source" : "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/src/argj801_ctl_platform/argj801_ctl_platform_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

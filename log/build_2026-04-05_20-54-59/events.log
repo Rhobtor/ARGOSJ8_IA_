@@ -1,0 +1,602 @@
+[0.000000] (-) TimerEvent: {}
+[0.000272] (-) JobUnselected: {'identifier': 'GUI_pkg'}
+[0.000738] (-) JobUnselected: {'identifier': 'android_ros2_server'}
+[0.000863] (-) JobUnselected: {'identifier': 'argj801_ctl_platform'}
+[0.000889] (-) JobUnselected: {'identifier': 'argj801_ctl_platform_interfaces'}
+[0.000920] (-) JobUnselected: {'identifier': 'argj801_sensors'}
+[0.000947] (-) JobUnselected: {'identifier': 'argj801_sensors_msgs'}
+[0.001176] (-) JobUnselected: {'identifier': 'argj801_setup'}
+[0.001205] (-) JobUnselected: {'identifier': 'car'}
+[0.001223] (-) JobUnselected: {'identifier': 'car_interfaces'}
+[0.001243] (-) JobUnselected: {'identifier': 'ctl_mission'}
+[0.001343] (-) JobUnselected: {'identifier': 'ctl_mission_interfaces'}
+[0.001368] (-) JobUnselected: {'identifier': 'fixposition_driver_lib'}
+[0.001483] (-) JobUnselected: {'identifier': 'fixposition_driver_ros2'}
+[0.001515] (-) JobUnselected: {'identifier': 'fixposition_gnss_tf'}
+[0.001544] (-) JobUnselected: {'identifier': 'fixposition_odometry_converter_ros2'}
+[0.001574] (-) JobUnselected: {'identifier': 'fixposition_sensor_pkg'}
+[0.001591] (-) JobUnselected: {'identifier': 'hector_gazebo_plugins'}
+[0.001608] (-) JobUnselected: {'identifier': 'j8_gui'}
+[0.001624] (-) JobUnselected: {'identifier': 'j8_xacro_model'}
+[0.001642] (-) JobUnselected: {'identifier': 'joy'}
+[0.001680] (-) JobUnselected: {'identifier': 'joy_linux'}
+[0.001728] (-) JobUnselected: {'identifier': 'laser_segmentation'}
+[0.001759] (-) JobUnselected: {'identifier': 'ntrip_client'}
+[0.001812] (-) JobUnselected: {'identifier': 'path_manager'}
+[0.001880] (-) JobUnselected: {'identifier': 'path_manager_interfaces'}
+[0.001899] (-) JobUnselected: {'identifier': 'sdl2_vendor'}
+[0.001917] (-) JobUnselected: {'identifier': 'security_check'}
+[0.001942] (-) JobUnselected: {'identifier': 'security_check_interfaces'}
+[0.002052] (-) JobUnselected: {'identifier': 'slg_msgs'}
+[0.002072] (-) JobUnselected: {'identifier': 'spacenav'}
+[0.002080] (-) JobUnselected: {'identifier': 'ublox'}
+[0.002086] (-) JobUnselected: {'identifier': 'ublox_gps'}
+[0.002093] (-) JobUnselected: {'identifier': 'ublox_msgs'}
+[0.002100] (-) JobUnselected: {'identifier': 'ublox_serialization'}
+[0.002107] (-) JobUnselected: {'identifier': 'wiimote_msgs'}
+[0.002117] (car_cpp) JobQueued: {'identifier': 'car_cpp', 'dependencies': OrderedDict([('car_interfaces', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces')])}
+[0.002133] (car_cpp) JobStarted: {'identifier': 'car_cpp'}
+[0.099683] (-) TimerEvent: {}
+[0.158978] (car_cpp) JobProgress: {'identifier': 'car_cpp', 'progress': 'cmake'}
+[0.199855] (-) TimerEvent: {}
+[0.204739] (car_cpp) Command: {'cmd': ['/usr/bin/cmake', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/src/car_cpp', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp'], 'cwd': '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/car_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rhobtor'), ('LC_TIME', 'es_ES.UTF-8'), ('GIT_EDITOR', ':'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rhobtor'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/rhobtor/PHD'), ('TERM_PROGRAM_VERSION', '1.113.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2097'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2353'), ('BUNDLED_DEBUGPY_PATH', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3051'), ('COLCON_PREFIX_PATH', '/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rhobtor'), ('JOURNAL_STREAM', '8:25839'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rhobtor'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/rhobtor/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/rhobtor:@/tmp/.ICE-unix/2330,unix/rhobtor:/tmp/.ICE-unix/2330'), ('INVOCATION_ID', 'c86a0139bce14a2ca76b37388fcda2f9'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d5c1cfd496512b7f.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/rhobtor/.config/Code/User/workspaceStorage/2193c80b199ddd073f48698b22577f8d/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2774418c92.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/car_cpp'), ('GIT_MERGE_AUTOEDIT', 'no'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces/local/lib/python3.10/dist-packages:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car/lib/python3.10/site-packages:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble')]), 'shell': False}
+[0.300015] (-) TimerEvent: {}
+[0.400317] (-) TimerEvent: {}
+[0.412457] (car_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500409] (-) TimerEvent: {}
+[0.587476] (car_cpp) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.600541] (-) TimerEvent: {}
+[0.700739] (-) TimerEvent: {}
+[0.800965] (-) TimerEvent: {}
+[0.836397] (car_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.837654] (car_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.840937] (car_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.846719] (car_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.855458] (car_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.875599] (car_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.876439] (car_cpp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.901096] (-) TimerEvent: {}
+[0.955821] (car_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.001218] (-) TimerEvent: {}
+[1.005848] (car_cpp) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[1.101373] (-) TimerEvent: {}
+[1.201824] (-) TimerEvent: {}
+[1.302094] (-) TimerEvent: {}
+[1.446943] (-) TimerEvent: {}
+[1.547145] (-) TimerEvent: {}
+[1.647350] (-) TimerEvent: {}
+[1.747520] (-) TimerEvent: {}
+[1.770245] (car_cpp) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.847629] (-) TimerEvent: {}
+[1.947813] (-) TimerEvent: {}
+[2.047976] (-) TimerEvent: {}
+[2.148166] (-) TimerEvent: {}
+[2.248364] (-) TimerEvent: {}
+[2.348548] (-) TimerEvent: {}
+[2.448839] (-) TimerEvent: {}
+[2.548632] (car_cpp) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[2.548863] (-) TimerEvent: {}
+[2.649338] (-) TimerEvent: {}
+[2.669410] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.749449] (-) TimerEvent: {}
+[2.849687] (-) TimerEvent: {}
+[2.949936] (-) TimerEvent: {}
+[3.050214] (-) TimerEvent: {}
+[3.066795] (car_cpp) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[3.089287] (car_cpp) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[3.118351] (car_cpp) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[3.150336] (-) TimerEvent: {}
+[3.208978] (car_cpp) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[3.219307] (car_cpp) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[3.219489] (car_cpp) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[3.219530] (car_cpp) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[3.219562] (car_cpp) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[3.219593] (car_cpp) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[3.219622] (car_cpp) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[3.219659] (car_cpp) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[3.219769] (car_cpp) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[3.219863] (car_cpp) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[3.219934] (car_cpp) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[3.220027] (car_cpp) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[3.220068] (car_cpp) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[3.250523] (-) TimerEvent: {}
+[3.350923] (-) TimerEvent: {}
+[3.451198] (-) TimerEvent: {}
+[3.551475] (-) TimerEvent: {}
+[3.651701] (-) TimerEvent: {}
+[3.751985] (-) TimerEvent: {}
+[3.753274] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.798524] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[3.798920] (car_cpp) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[3.852143] (-) TimerEvent: {}
+[3.862240] (car_cpp) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[3.872921] (car_cpp) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[3.876450] (car_cpp) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[3.952312] (-) TimerEvent: {}
+[4.052589] (-) TimerEvent: {}
+[4.152781] (-) TimerEvent: {}
+[4.152973] (car_cpp) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[4.198093] (car_cpp) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[4.233875] (car_cpp) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[4.252873] (-) TimerEvent: {}
+[4.300474] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.300758] (car_cpp) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[4.313549] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.324215] (car_cpp) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[4.352965] (-) TimerEvent: {}
+[4.440182] (car_cpp) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[4.453070] (-) TimerEvent: {}
+[4.475952] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.500622] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[4.501150] (car_cpp) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[4.512319] (car_cpp) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[4.512447] (car_cpp) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[4.543943] (car_cpp) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[4.553166] (-) TimerEvent: {}
+[4.591732] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[4.591994] (car_cpp) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[4.592275] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.653256] (-) TimerEvent: {}
+[4.672595] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[4.672896] (car_cpp) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[4.753355] (-) TimerEvent: {}
+[4.853545] (-) TimerEvent: {}
+[4.926789] (car_cpp) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[4.943706] (car_cpp) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[4.953736] (-) TimerEvent: {}
+[4.986686] (car_cpp) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[5.018057] (car_cpp) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[5.043142] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[5.043368] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.043486] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[5.053827] (-) TimerEvent: {}
+[5.125581] (car_cpp) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[5.126708] (car_cpp) StdoutLine: {'line': b'-- Found pluginlib: 5.1.3 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[5.136685] (car_cpp) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[5.144088] (car_cpp) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.153944] (-) TimerEvent: {}
+[5.254171] (-) TimerEvent: {}
+[5.276291] (car_cpp) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[5.354286] (-) TimerEvent: {}
+[5.454502] (-) TimerEvent: {}
+[5.518509] (car_cpp) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[5.554600] (-) TimerEvent: {}
+[5.611411] (car_cpp) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[5.654745] (-) TimerEvent: {}
+[5.754995] (-) TimerEvent: {}
+[5.855247] (-) TimerEvent: {}
+[5.955504] (-) TimerEvent: {}
+[6.055696] (-) TimerEvent: {}
+[6.155883] (-) TimerEvent: {}
+[6.256104] (-) TimerEvent: {}
+[6.356315] (-) TimerEvent: {}
+[6.456571] (-) TimerEvent: {}
+[6.556790] (-) TimerEvent: {}
+[6.657017] (-) TimerEvent: {}
+[6.757281] (-) TimerEvent: {}
+[6.857505] (-) TimerEvent: {}
+[6.957722] (-) TimerEvent: {}
+[7.057924] (-) TimerEvent: {}
+[7.158139] (-) TimerEvent: {}
+[7.258356] (-) TimerEvent: {}
+[7.358745] (-) TimerEvent: {}
+[7.459138] (-) TimerEvent: {}
+[7.559357] (-) TimerEvent: {}
+[7.659540] (-) TimerEvent: {}
+[7.759714] (-) TimerEvent: {}
+[7.859889] (-) TimerEvent: {}
+[7.960063] (-) TimerEvent: {}
+[8.060250] (-) TimerEvent: {}
+[8.160448] (-) TimerEvent: {}
+[8.260912] (-) TimerEvent: {}
+[8.361116] (-) TimerEvent: {}
+[8.461288] (-) TimerEvent: {}
+[8.561456] (-) TimerEvent: {}
+[8.661629] (-) TimerEvent: {}
+[8.761890] (-) TimerEvent: {}
+[8.862044] (-) TimerEvent: {}
+[8.962220] (-) TimerEvent: {}
+[9.062366] (-) TimerEvent: {}
+[9.164602] (-) TimerEvent: {}
+[9.264819] (-) TimerEvent: {}
+[9.365033] (-) TimerEvent: {}
+[9.466907] (-) TimerEvent: {}
+[9.567133] (-) TimerEvent: {}
+[9.667357] (-) TimerEvent: {}
+[9.767599] (-) TimerEvent: {}
+[9.867832] (-) TimerEvent: {}
+[9.968072] (-) TimerEvent: {}
+[10.068298] (-) TimerEvent: {}
+[10.168487] (-) TimerEvent: {}
+[10.268671] (-) TimerEvent: {}
+[10.368816] (-) TimerEvent: {}
+[10.468980] (-) TimerEvent: {}
+[10.569174] (-) TimerEvent: {}
+[10.669373] (-) TimerEvent: {}
+[10.769556] (-) TimerEvent: {}
+[10.869696] (-) TimerEvent: {}
+[10.969849] (-) TimerEvent: {}
+[11.070034] (-) TimerEvent: {}
+[11.170218] (-) TimerEvent: {}
+[11.270428] (-) TimerEvent: {}
+[11.370666] (-) TimerEvent: {}
+[11.470850] (-) TimerEvent: {}
+[11.571029] (-) TimerEvent: {}
+[11.671217] (-) TimerEvent: {}
+[11.771400] (-) TimerEvent: {}
+[11.871565] (-) TimerEvent: {}
+[11.971720] (-) TimerEvent: {}
+[12.073503] (-) TimerEvent: {}
+[12.173727] (-) TimerEvent: {}
+[12.273916] (-) TimerEvent: {}
+[12.374132] (-) TimerEvent: {}
+[12.474330] (-) TimerEvent: {}
+[12.574516] (-) TimerEvent: {}
+[12.674704] (-) TimerEvent: {}
+[12.774882] (-) TimerEvent: {}
+[12.875042] (-) TimerEvent: {}
+[12.975273] (-) TimerEvent: {}
+[13.077471] (-) TimerEvent: {}
+[13.177654] (-) TimerEvent: {}
+[13.278128] (-) TimerEvent: {}
+[13.378322] (-) TimerEvent: {}
+[13.478545] (-) TimerEvent: {}
+[13.578703] (-) TimerEvent: {}
+[13.678885] (-) TimerEvent: {}
+[13.780171] (-) TimerEvent: {}
+[13.827770] (car_cpp) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[13.855204] (car_cpp) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[13.880312] (-) TimerEvent: {}
+[13.974218] (car_cpp) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[13.979149] (car_cpp) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[13.980357] (-) TimerEvent: {}
+[13.984997] (car_cpp) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[14.080467] (-) TimerEvent: {}
+[14.120936] (car_cpp) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[14.180573] (-) TimerEvent: {}
+[14.230975] (car_cpp) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[14.280697] (-) TimerEvent: {}
+[14.343535] (car_cpp) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[14.359421] (car_cpp) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[14.380793] (-) TimerEvent: {}
+[14.424927] (car_cpp) StdoutLine: {'line': b'-- Found std_srvs: 4.9.1 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[14.480868] (-) TimerEvent: {}
+[14.581028] (-) TimerEvent: {}
+[14.590354] (car_cpp) StdoutLine: {'line': b'-- Found geographic_msgs: 1.0.6 (/opt/ros/humble/share/geographic_msgs/cmake)\n'}
+[14.670153] (car_cpp) StdoutLine: {'line': b'-- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)\n'}
+[14.673403] (car_cpp) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[14.681128] (-) TimerEvent: {}
+[14.717431] (car_cpp) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[14.719311] (car_cpp) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[14.720154] (car_cpp) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[14.721111] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[14.721270] (car_cpp) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[14.747075] (car_cpp) StdoutLine: {'line': b'-- Found car_interfaces: 0.0.0 (/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces/share/car_interfaces/cmake)\n'}
+[14.782452] (car_cpp) StdoutLine: {'line': b'-- Found grid_map_ros: 2.0.1 (/opt/ros/humble/share/grid_map_ros/cmake)\n'}
+[14.782719] (-) TimerEvent: {}
+[14.827316] (car_cpp) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[14.828259] (car_cpp) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") found components: core imgproc ximgproc \n'}
+[14.882871] (-) TimerEvent: {}
+[14.983147] (-) TimerEvent: {}
+[15.083408] (-) TimerEvent: {}
+[15.096914] (car_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[15.185446] (-) TimerEvent: {}
+[15.285720] (-) TimerEvent: {}
+[15.385936] (-) TimerEvent: {}
+[15.486165] (-) TimerEvent: {}
+[15.586399] (-) TimerEvent: {}
+[15.686576] (-) TimerEvent: {}
+[15.786755] (-) TimerEvent: {}
+[15.886912] (-) TimerEvent: {}
+[15.987084] (-) TimerEvent: {}
+[16.087243] (-) TimerEvent: {}
+[16.187421] (-) TimerEvent: {}
+[16.287597] (-) TimerEvent: {}
+[16.388095] (-) TimerEvent: {}
+[16.488280] (-) TimerEvent: {}
+[16.589407] (-) TimerEvent: {}
+[16.689596] (-) TimerEvent: {}
+[16.789772] (-) TimerEvent: {}
+[16.889044] (car_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[16.889858] (-) TimerEvent: {}
+[16.912918] (car_cpp) StdoutLine: {'line': b'-- Build files have been written to: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/car_cpp\n'}
+[16.930140] (car_cpp) CommandEnded: {'returncode': 0}
+[16.931155] (car_cpp) JobProgress: {'identifier': 'car_cpp', 'progress': 'build'}
+[16.932523] (car_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/car_cpp', '--', '-j20', '-l20'], 'cwd': '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/car_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rhobtor'), ('LC_TIME', 'es_ES.UTF-8'), ('GIT_EDITOR', ':'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rhobtor'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/rhobtor/PHD'), ('TERM_PROGRAM_VERSION', '1.113.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2097'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2353'), ('BUNDLED_DEBUGPY_PATH', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3051'), ('COLCON_PREFIX_PATH', '/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rhobtor'), ('JOURNAL_STREAM', '8:25839'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rhobtor'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/rhobtor/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/rhobtor:@/tmp/.ICE-unix/2330,unix/rhobtor:/tmp/.ICE-unix/2330'), ('INVOCATION_ID', 'c86a0139bce14a2ca76b37388fcda2f9'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d5c1cfd496512b7f.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/rhobtor/.config/Code/User/workspaceStorage/2193c80b199ddd073f48698b22577f8d/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2774418c92.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/car_cpp'), ('GIT_MERGE_AUTOEDIT', 'no'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces/local/lib/python3.10/dist-packages:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car/lib/python3.10/site-packages:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble')]), 'shell': False}
+[16.989999] (-) TimerEvent: {}
+[17.041732] (car_cpp) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target joints_plugin\n'}
+[17.043316] (car_cpp) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target drive_plugin\n'}
+[17.051435] (car_cpp) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target check_goal\n'}
+[17.051618] (car_cpp) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target velodyne_noise_filter_node\n'}
+[17.056265] (car_cpp) StdoutLine: {'line': b'[  7%] Building CXX object CMakeFiles/joints_plugin.dir/src/joints.cpp.o\n'}
+[17.060740] (car_cpp) StdoutLine: {'line': b'[ 21%] Building CXX object CMakeFiles/velodyne_noise_filter_node.dir/src/velodyne_noise_filter_node.cpp.o\n'}
+[17.060845] (car_cpp) StdoutLine: {'line': b'[ 21%] Building CXX object CMakeFiles/check_goal.dir/src/check_goal.cpp.o\n'}
+[17.061925] (car_cpp) StdoutLine: {'line': b'[ 28%] Building CXX object CMakeFiles/drive_plugin.dir/src/diffdrive_plugin_multi_wheel.cpp.o\n'}
+[17.062324] (car_cpp) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target voxel_grid_node\n'}
+[17.074742] (car_cpp) StdoutLine: {'line': b'[ 35%] Building CXX object CMakeFiles/voxel_grid_node.dir/src/voxel_grid_node.cpp.o\n'}
+[17.076908] (car_cpp) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target move_plugin\n'}
+[17.090145] (-) TimerEvent: {}
+[17.095159] (car_cpp) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target frontier_values\n'}
+[17.095557] (car_cpp) StdoutLine: {'line': b'[ 42%] Building CXX object CMakeFiles/move_plugin.dir/src/move_object.cpp.o\n'}
+[17.108551] (car_cpp) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/frontier_values.dir/src/frontier_values.cpp.o\n'}
+[17.190256] (-) TimerEvent: {}
+[17.291085] (-) TimerEvent: {}
+[17.391280] (-) TimerEvent: {}
+[17.491461] (-) TimerEvent: {}
+[17.591660] (-) TimerEvent: {}
+[17.691817] (-) TimerEvent: {}
+[17.791992] (-) TimerEvent: {}
+[17.892266] (-) TimerEvent: {}
+[17.992473] (-) TimerEvent: {}
+[18.093100] (-) TimerEvent: {}
+[18.193289] (-) TimerEvent: {}
+[18.293461] (-) TimerEvent: {}
+[18.393636] (-) TimerEvent: {}
+[18.493874] (-) TimerEvent: {}
+[18.594172] (-) TimerEvent: {}
+[18.694350] (-) TimerEvent: {}
+[18.794522] (-) TimerEvent: {}
+[18.896251] (-) TimerEvent: {}
+[18.996433] (-) TimerEvent: {}
+[19.096597] (-) TimerEvent: {}
+[19.196799] (-) TimerEvent: {}
+[19.297023] (-) TimerEvent: {}
+[19.397261] (-) TimerEvent: {}
+[19.497492] (-) TimerEvent: {}
+[19.597681] (-) TimerEvent: {}
+[19.697930] (-) TimerEvent: {}
+[19.798180] (-) TimerEvent: {}
+[19.898418] (-) TimerEvent: {}
+[19.998640] (-) TimerEvent: {}
+[20.098878] (-) TimerEvent: {}
+[20.199139] (-) TimerEvent: {}
+[20.299476] (-) TimerEvent: {}
+[20.399842] (-) TimerEvent: {}
+[20.500102] (-) TimerEvent: {}
+[20.600373] (-) TimerEvent: {}
+[20.700673] (-) TimerEvent: {}
+[20.800934] (-) TimerEvent: {}
+[20.901200] (-) TimerEvent: {}
+[21.001498] (-) TimerEvent: {}
+[21.101801] (-) TimerEvent: {}
+[21.202172] (-) TimerEvent: {}
+[21.302458] (-) TimerEvent: {}
+[21.402734] (-) TimerEvent: {}
+[21.503002] (-) TimerEvent: {}
+[21.604259] (-) TimerEvent: {}
+[21.704519] (-) TimerEvent: {}
+[21.805489] (-) TimerEvent: {}
+[21.906047] (-) TimerEvent: {}
+[22.010220] (-) TimerEvent: {}
+[22.110481] (-) TimerEvent: {}
+[22.210708] (-) TimerEvent: {}
+[22.310929] (-) TimerEvent: {}
+[22.411125] (-) TimerEvent: {}
+[22.511324] (-) TimerEvent: {}
+[22.611533] (-) TimerEvent: {}
+[22.711756] (-) TimerEvent: {}
+[22.812011] (-) TimerEvent: {}
+[22.912330] (-) TimerEvent: {}
+[23.012605] (-) TimerEvent: {}
+[23.112845] (-) TimerEvent: {}
+[23.213113] (-) TimerEvent: {}
+[23.313334] (-) TimerEvent: {}
+[23.413665] (-) TimerEvent: {}
+[23.513973] (-) TimerEvent: {}
+[23.614277] (-) TimerEvent: {}
+[23.714615] (-) TimerEvent: {}
+[23.814910] (-) TimerEvent: {}
+[23.915228] (-) TimerEvent: {}
+[24.015519] (-) TimerEvent: {}
+[24.115815] (-) TimerEvent: {}
+[24.216181] (-) TimerEvent: {}
+[24.316452] (-) TimerEvent: {}
+[24.416696] (-) TimerEvent: {}
+[24.516913] (-) TimerEvent: {}
+[24.617112] (-) TimerEvent: {}
+[24.717305] (-) TimerEvent: {}
+[24.817522] (-) TimerEvent: {}
+[24.917710] (-) TimerEvent: {}
+[25.017912] (-) TimerEvent: {}
+[25.118159] (-) TimerEvent: {}
+[25.218794] (-) TimerEvent: {}
+[25.319226] (-) TimerEvent: {}
+[25.419450] (-) TimerEvent: {}
+[25.519701] (-) TimerEvent: {}
+[25.620166] (-) TimerEvent: {}
+[25.720404] (-) TimerEvent: {}
+[25.820592] (-) TimerEvent: {}
+[25.920790] (-) TimerEvent: {}
+[26.020994] (-) TimerEvent: {}
+[26.121203] (-) TimerEvent: {}
+[26.221400] (-) TimerEvent: {}
+[26.321583] (-) TimerEvent: {}
+[26.421779] (-) TimerEvent: {}
+[26.521943] (-) TimerEvent: {}
+[26.622152] (-) TimerEvent: {}
+[26.723010] (-) TimerEvent: {}
+[26.823177] (-) TimerEvent: {}
+[26.923365] (-) TimerEvent: {}
+[27.023569] (-) TimerEvent: {}
+[27.123828] (-) TimerEvent: {}
+[27.224061] (-) TimerEvent: {}
+[27.327307] (-) TimerEvent: {}
+[27.427542] (-) TimerEvent: {}
+[27.527717] (-) TimerEvent: {}
+[27.627896] (-) TimerEvent: {}
+[27.728078] (-) TimerEvent: {}
+[27.828243] (-) TimerEvent: {}
+[27.928443] (-) TimerEvent: {}
+[28.028785] (-) TimerEvent: {}
+[28.129173] (-) TimerEvent: {}
+[28.229529] (-) TimerEvent: {}
+[28.329736] (-) TimerEvent: {}
+[28.429988] (-) TimerEvent: {}
+[28.530301] (-) TimerEvent: {}
+[28.630669] (-) TimerEvent: {}
+[28.731013] (-) TimerEvent: {}
+[28.831382] (-) TimerEvent: {}
+[28.877338] (car_cpp) StdoutLine: {'line': b'[ 57%] Linking CXX executable voxel_grid_node\n'}
+[28.931525] (-) TimerEvent: {}
+[29.031844] (-) TimerEvent: {}
+[29.132151] (-) TimerEvent: {}
+[29.211921] (car_cpp) StdoutLine: {'line': b'[ 57%] Built target voxel_grid_node\n'}
+[29.232280] (-) TimerEvent: {}
+[29.332524] (-) TimerEvent: {}
+[29.432763] (-) TimerEvent: {}
+[29.533051] (-) TimerEvent: {}
+[29.633345] (-) TimerEvent: {}
+[29.733605] (-) TimerEvent: {}
+[29.833841] (-) TimerEvent: {}
+[29.934150] (-) TimerEvent: {}
+[29.959432] (car_cpp) StdoutLine: {'line': b'[ 64%] Linking CXX executable velodyne_noise_filter_node\n'}
+[30.011788] (car_cpp) StdoutLine: {'line': b'[ 71%] Linking CXX executable frontier_values\n'}
+[30.034364] (-) TimerEvent: {}
+[30.128275] (car_cpp) StdoutLine: {'line': b'[ 71%] Built target velodyne_noise_filter_node\n'}
+[30.134467] (-) TimerEvent: {}
+[30.188323] (car_cpp) StdoutLine: {'line': b'[ 71%] Built target frontier_values\n'}
+[30.234619] (-) TimerEvent: {}
+[30.334876] (-) TimerEvent: {}
+[30.435061] (-) TimerEvent: {}
+[30.535243] (-) TimerEvent: {}
+[30.635426] (-) TimerEvent: {}
+[30.735612] (-) TimerEvent: {}
+[30.835825] (-) TimerEvent: {}
+[30.936047] (-) TimerEvent: {}
+[31.036235] (-) TimerEvent: {}
+[31.136436] (-) TimerEvent: {}
+[31.236675] (-) TimerEvent: {}
+[31.336922] (-) TimerEvent: {}
+[31.437163] (-) TimerEvent: {}
+[31.537376] (-) TimerEvent: {}
+[31.637660] (-) TimerEvent: {}
+[31.662225] (car_cpp) StdoutLine: {'line': b'[ 78%] Linking CXX executable check_goal\n'}
+[31.737740] (-) TimerEvent: {}
+[31.837976] (-) TimerEvent: {}
+[31.938208] (-) TimerEvent: {}
+[32.038453] (-) TimerEvent: {}
+[32.138729] (-) TimerEvent: {}
+[32.238927] (-) TimerEvent: {}
+[32.339143] (-) TimerEvent: {}
+[32.439348] (-) TimerEvent: {}
+[32.539575] (-) TimerEvent: {}
+[32.639825] (-) TimerEvent: {}
+[32.740091] (-) TimerEvent: {}
+[32.840301] (-) TimerEvent: {}
+[32.940599] (-) TimerEvent: {}
+[33.040802] (-) TimerEvent: {}
+[33.141030] (-) TimerEvent: {}
+[33.241243] (-) TimerEvent: {}
+[33.341474] (-) TimerEvent: {}
+[33.441697] (-) TimerEvent: {}
+[33.515533] (car_cpp) StdoutLine: {'line': b'[ 85%] Linking CXX shared library libjoints_plugin.so\n'}
+[33.541875] (-) TimerEvent: {}
+[33.642051] (-) TimerEvent: {}
+[33.742282] (-) TimerEvent: {}
+[33.812397] (car_cpp) StdoutLine: {'line': b'[ 85%] Built target joints_plugin\n'}
+[33.842435] (-) TimerEvent: {}
+[33.942719] (-) TimerEvent: {}
+[34.042963] (-) TimerEvent: {}
+[34.143224] (-) TimerEvent: {}
+[34.243504] (-) TimerEvent: {}
+[34.343730] (-) TimerEvent: {}
+[34.354522] (car_cpp) StdoutLine: {'line': b'[ 92%] Linking CXX shared library libmove_plugin.so\n'}
+[34.443873] (-) TimerEvent: {}
+[34.544133] (-) TimerEvent: {}
+[34.545611] (car_cpp) StdoutLine: {'line': b'[ 92%] Built target move_plugin\n'}
+[34.615271] (car_cpp) StdoutLine: {'line': b'[ 92%] Built target check_goal\n'}
+[34.644843] (-) TimerEvent: {}
+[34.745010] (-) TimerEvent: {}
+[34.845204] (-) TimerEvent: {}
+[34.946393] (-) TimerEvent: {}
+[35.046547] (-) TimerEvent: {}
+[35.147537] (-) TimerEvent: {}
+[35.247845] (-) TimerEvent: {}
+[35.348140] (-) TimerEvent: {}
+[35.448387] (-) TimerEvent: {}
+[35.548666] (-) TimerEvent: {}
+[35.648951] (-) TimerEvent: {}
+[35.749253] (-) TimerEvent: {}
+[35.849533] (-) TimerEvent: {}
+[35.949839] (-) TimerEvent: {}
+[36.050125] (-) TimerEvent: {}
+[36.151546] (-) TimerEvent: {}
+[36.251694] (-) TimerEvent: {}
+[36.351853] (-) TimerEvent: {}
+[36.452042] (-) TimerEvent: {}
+[36.552265] (-) TimerEvent: {}
+[36.653462] (-) TimerEvent: {}
+[36.753661] (-) TimerEvent: {}
+[36.854004] (-) TimerEvent: {}
+[36.954211] (-) TimerEvent: {}
+[37.054409] (-) TimerEvent: {}
+[37.154638] (-) TimerEvent: {}
+[37.254853] (-) TimerEvent: {}
+[37.355033] (-) TimerEvent: {}
+[37.455205] (-) TimerEvent: {}
+[37.555374] (-) TimerEvent: {}
+[37.655526] (-) TimerEvent: {}
+[37.755692] (-) TimerEvent: {}
+[37.855859] (-) TimerEvent: {}
+[37.956031] (-) TimerEvent: {}
+[38.056195] (-) TimerEvent: {}
+[38.156370] (-) TimerEvent: {}
+[38.258173] (-) TimerEvent: {}
+[38.358344] (-) TimerEvent: {}
+[38.458527] (-) TimerEvent: {}
+[38.558751] (-) TimerEvent: {}
+[38.658974] (-) TimerEvent: {}
+[38.759143] (-) TimerEvent: {}
+[38.859302] (-) TimerEvent: {}
+[38.946159] (car_cpp) StdoutLine: {'line': b'[100%] Linking CXX shared library libdrive_plugin.so\n'}
+[38.959389] (-) TimerEvent: {}
+[39.059631] (-) TimerEvent: {}
+[39.159809] (-) TimerEvent: {}
+[39.196080] (car_cpp) StdoutLine: {'line': b'[100%] Built target drive_plugin\n'}
+[39.206473] (car_cpp) CommandEnded: {'returncode': 0}
+[39.207032] (car_cpp) JobProgress: {'identifier': 'car_cpp', 'progress': 'install'}
+[39.213622] (car_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/car_cpp'], 'cwd': '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/car_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rhobtor'), ('LC_TIME', 'es_ES.UTF-8'), ('GIT_EDITOR', ':'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp/lib:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rhobtor'), ('CHROME_DESKTOP', 'code.desktop'), ('OLDPWD', '/home/rhobtor/PHD'), ('TERM_PROGRAM_VERSION', '1.113.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '2097'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2353'), ('BUNDLED_DEBUGPY_PATH', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3051'), ('COLCON_PREFIX_PATH', '/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rhobtor'), ('JOURNAL_STREAM', '8:25839'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rhobtor'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('HISTCONTROL', 'ignorespace'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/rhobtor/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/rhobtor/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/rhobtor:@/tmp/.ICE-unix/2330,unix/rhobtor:/tmp/.ICE-unix/2330'), ('INVOCATION_ID', 'c86a0139bce14a2ca76b37388fcda2f9'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/rhobtor/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-d5c1cfd496512b7f.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/rhobtor/.config/Code/User/workspaceStorage/2193c80b199ddd073f48698b22577f8d/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2774418c92.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('GIT_PAGER', 'cat'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/car_cpp'), ('GIT_MERGE_AUTOEDIT', 'no'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces/local/lib/python3.10/dist-packages:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins/local/lib/python3.10/dist-packages:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car/lib/python3.10/site-packages:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_interfaces:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_mapping:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_server:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/octomap_rviz_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/hector_gazebo_plugins:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_cpp:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car_interfaces:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble')]), 'shell': False}
+[39.220656] (car_cpp) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[39.259959] (-) TimerEvent: {}
+[39.280393] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/frontier_values\n'}
+[39.281342] (car_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/frontier_values" to ""\n'}
+[39.290864] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/check_goal\n'}
+[39.291607] (car_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/check_goal" to ""\n'}
+[39.337741] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/voxel_grid_node\n'}
+[39.339316] (car_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/voxel_grid_node" to ""\n'}
+[39.360030] (-) TimerEvent: {}
+[39.370310] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/velodyne_noise_filter_node\n'}
+[39.372387] (car_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/car_cpp/velodyne_noise_filter_node" to ""\n'}
+[39.401268] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libmove_plugin.so\n'}
+[39.401598] (car_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libmove_plugin.so" to ""\n'}
+[39.460125] (-) TimerEvent: {}
+[39.465600] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libdrive_plugin.so\n'}
+[39.467317] (car_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libdrive_plugin.so" to ""\n'}
+[39.499443] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libjoints_plugin.so\n'}
+[39.500357] (car_cpp) StdoutLine: {'line': b'-- Set runtime path of "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/lib/libjoints_plugin.so" to ""\n'}
+[39.500394] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/include/\n'}
+[39.500419] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//control_plugin.hpp\n'}
+[39.500441] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//motion.hpp\n'}
+[39.500478] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//move_ros.hpp\n'}
+[39.500501] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//odometria.hpp\n'}
+[39.500552] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//visualization.hpp\n'}
+[39.500577] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//obstacle_detection.hpp\n'}
+[39.500769] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/include//utilities.hpp\n'}
+[39.500797] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/ament_index/resource_index/package_run_dependencies/car_cpp\n'}
+[39.500820] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/ament_index/resource_index/parent_prefix_path/car_cpp\n'}
+[39.500844] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/ament_prefix_path.sh\n'}
+[39.500867] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/ament_prefix_path.dsv\n'}
+[39.500951] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/path.sh\n'}
+[39.500977] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/environment/path.dsv\n'}
+[39.501140] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.bash\n'}
+[39.501164] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.sh\n'}
+[39.501186] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.zsh\n'}
+[39.501208] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/local_setup.dsv\n'}
+[39.501279] (car_cpp) StdoutLine: {'line': b'-- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/package.dsv\n'}
+[39.519610] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/ament_index/resource_index/packages/car_cpp\n'}
+[39.519756] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/cmake/car_cppConfig.cmake\n'}
+[39.519790] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/cmake/car_cppConfig-version.cmake\n'}
+[39.519816] (car_cpp) StdoutLine: {'line': b'-- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car_cpp/share/car_cpp/package.xml\n'}
+[39.521382] (car_cpp) CommandEnded: {'returncode': 0}
+[39.533072] (car_cpp) JobEnded: {'identifier': 'car_cpp', 'rc': 0}
+[39.533435] (-) EventReactorShutdown: {}

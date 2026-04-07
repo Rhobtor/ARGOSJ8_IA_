@@ -1,0 +1,174 @@
+[0.452s] Invoking command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_sensors_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --build /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_sensors_msgs -- -j20 -l20
+[3.465s] [  2%] Built target argj801_sensors_msgs__rs
+[3.465s] [ 12%] Built target argj801_sensors_msgs__rosidl_generator_c
+[3.465s] [ 15%] Built target argj801_sensors_msgs__cpp
+[3.465s] [ 15%] Built target ament_cmake_python_copy_argj801_sensors_msgs
+[3.465s] [ 25%] Built target argj801_sensors_msgs__rosidl_typesupport_c
+[3.465s] [ 35%] Built target argj801_sensors_msgs__rosidl_typesupport_introspection_c
+[3.465s] [ 45%] Built target argj801_sensors_msgs__rosidl_typesupport_fastrtps_c
+[3.465s] [ 55%] Built target argj801_sensors_msgs__rosidl_typesupport_fastrtps_cpp
+[3.465s] [ 65%] Built target argj801_sensors_msgs__rosidl_typesupport_cpp
+[3.465s] [ 75%] Built target argj801_sensors_msgs__rosidl_typesupport_introspection_cpp
+[3.465s] [ 75%] Built target argj801_sensors_msgs
+[3.465s] [ 77%] Built target argj801_sensors_msgs__py
+[3.465s] [ 85%] Built target argj801_sensors_msgs__rosidl_generator_py
+[3.465s] [ 90%] Built target argj801_sensors_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.465s] [ 95%] Built target argj801_sensors_msgs__rosidl_typesupport_c__pyext
+[3.465s] [100%] Built target argj801_sensors_msgs__rosidl_typesupport_introspection_c__pyext
+[3.465s] running egg_info
+[3.465s] writing argj801_sensors_msgs.egg-info/PKG-INFO
+[3.465s] writing dependency_links to argj801_sensors_msgs.egg-info/dependency_links.txt
+[3.465s] writing top-level names to argj801_sensors_msgs.egg-info/top_level.txt
+[3.465s] reading manifest file 'argj801_sensors_msgs.egg-info/SOURCES.txt'
+[3.465s] writing manifest file 'argj801_sensors_msgs.egg-info/SOURCES.txt'
+[3.465s] [100%] Built target ament_cmake_python_build_argj801_sensors_msgs_egg
+[4.467s] Invoked command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_sensors_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --build /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_sensors_msgs -- -j20 -l20
+[4.493s] Invoking command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_sensors_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --install /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_sensors_msgs
+[5.219s] -- Install configuration: ""
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/ament_index/resource_index/rosidl_interfaces/argj801_sensors_msgs
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/rosidl_generator_c__visibility_control.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/motor_telemetry.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__type_support.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__functions.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__struct.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__struct.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__functions.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__functions.c
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__functions.c
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__type_support.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/odometer.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/environment/library_path.sh
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/environment/library_path.dsv
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib/libargj801_sensors_msgs__rosidl_generator_c.so
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__rosidl_typesupport_fastrtps_c.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__rosidl_typesupport_fastrtps_c.h
+[5.219s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib/libargj801_sensors_msgs__rosidl_typesupport_fastrtps_c.so
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__rosidl_typesupport_introspection_c.h
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__type_support.c
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__type_support.c
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__rosidl_typesupport_introspection_c.h
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib/libargj801_sensors_msgs__rosidl_typesupport_introspection_c.so
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib/libargj801_sensors_msgs__rosidl_typesupport_c.so
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/motor_telemetry.hpp
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail
+[5.221s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__traits.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__builder.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__struct.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__type_support.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__builder.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__traits.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__struct.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__type_support.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/odometer.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/dds_fastrtps
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__rosidl_typesupport_fastrtps_cpp.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__rosidl_typesupport_fastrtps_cpp.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib/libargj801_sensors_msgs__rosidl_typesupport_fastrtps_cpp.so
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__rosidl_typesupport_introspection_cpp.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/motor_telemetry__type_support.cpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__rosidl_typesupport_introspection_cpp.hpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/include/argj801_sensors_msgs/argj801_sensors_msgs/msg/detail/odometer__type_support.cpp
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib/libargj801_sensors_msgs__rosidl_typesupport_introspection_cpp.so
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib/libargj801_sensors_msgs__rosidl_typesupport_cpp.so
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/environment/pythonpath.sh
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/environment/pythonpath.dsv
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs-0.0.0-py3.10.egg-info
+[5.222s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[5.222s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[5.222s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[5.222s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/__init__.py
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/argj801_sensors_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/argj801_sensors_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/argj801_sensors_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/msg
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/msg/_motor_telemetry_s.c
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/msg/__init__.py
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/msg/_motor_telemetry.py
+[5.222s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/msg/_odometer_s.c
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/msg/_odometer.py
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/libargj801_sensors_msgs__rosidl_generator_py.so
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/_argj801_sensors_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/_argj801_sensors_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/_argj801_sensors_msgs_s.ep.rosidl_typesupport_c.c
+[5.223s] Listing '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs'...
+[5.223s] Listing '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/msg'...
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/argj801_sensors_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/argj801_sensors_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/local/lib/python3.10/dist-packages/argj801_sensors_msgs/argj801_sensors_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/lib/libargj801_sensors_msgs__rosidl_generator_py.so
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/ament_index/resource_index/rust_packages/argj801_sensors_msgs
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/rust
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/rust/build.rs
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/rust/src
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/rust/src/msg.rs
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/rust/src/msg
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/rust/src/msg/rmw.rs
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/rust/src/lib.rs
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/rust/Cargo.toml
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/msg/MotorTelemetry.idl
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/msg/Odometer.idl
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/msg/MotorTelemetry.msg
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/msg/Odometer.msg
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/ament_index/resource_index/package_run_dependencies/argj801_sensors_msgs
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/ament_index/resource_index/parent_prefix_path/argj801_sensors_msgs
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/environment/ament_prefix_path.sh
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/environment/ament_prefix_path.dsv
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/environment/path.sh
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/environment/path.dsv
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/local_setup.bash
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/local_setup.sh
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/local_setup.zsh
+[5.223s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/local_setup.dsv
+[5.223s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/package.dsv
+[5.294s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/ament_index/resource_index/packages/argj801_sensors_msgs
+[5.451s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/export_argj801_sensors_msgs__rosidl_generator_cExport.cmake
+[5.452s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/export_argj801_sensors_msgs__rosidl_generator_cExport-noconfig.cmake
+[5.474s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/export_argj801_sensors_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[5.474s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/export_argj801_sensors_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.550s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/argj801_sensors_msgs__rosidl_typesupport_introspection_cExport.cmake
+[5.550s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/argj801_sensors_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.566s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/argj801_sensors_msgs__rosidl_typesupport_cExport.cmake
+[5.566s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/argj801_sensors_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[5.575s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/export_argj801_sensors_msgs__rosidl_generator_cppExport.cmake
+[5.620s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/export_argj801_sensors_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.620s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/export_argj801_sensors_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.620s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/argj801_sensors_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[5.620s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/argj801_sensors_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.663s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/argj801_sensors_msgs__rosidl_typesupport_cppExport.cmake
+[5.663s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/argj801_sensors_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[5.664s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/export_argj801_sensors_msgs__rosidl_generator_pyExport.cmake
+[5.664s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/export_argj801_sensors_msgs__rosidl_generator_pyExport-noconfig.cmake
+[5.664s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/rosidl_cmake-extras.cmake
+[5.664s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.665s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.665s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[5.665s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[5.665s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.665s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.665s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/argj801_sensors_msgsConfig.cmake
+[5.665s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/cmake/argj801_sensors_msgsConfig-version.cmake
+[5.665s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_sensors_msgs/share/argj801_sensors_msgs/package.xml
+[7.136s] Invoked command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_sensors_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --install /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_sensors_msgs

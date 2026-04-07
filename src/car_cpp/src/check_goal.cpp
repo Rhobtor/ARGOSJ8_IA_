@@ -1,154 +1,107 @@
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/pose_array.hpp>
 #include <std_msgs/msg/bool.hpp>
-#include <nav_msgs/msg/odometry.hpp>
+#include <tf2_ros/buffer.h>
+#include <tf2_ros/transform_listener.h>
 #include <cmath>
+
+// check_goal: compara posición del robot (via TF, frame 'map') con el goal activo.
+// MOTIVO del TF: /fixposition/odometry da posición en frame 'odom' (ENU/ECEF)
+// que NO coincide con 'map'. Los goals siempre se publican en 'map'.
+// Usando TF obtenemos la misma posición que usa el MPPI.
 
 class GoalReachedNode : public rclcpp::Node
 {
 public:
   GoalReachedNode()
-  : Node("goal_reached_node"), goal_received_(false), odom_received_(false)
+  : Node("check_goal"), goal_received_(false)
   {
-    // Declarar parámetro para el umbral de llegada al goal (en metros)
-    // this->declare_parameter("goal_threshold", 3.0);
-    this->declare_parameter("goal_threshold_xy", 4.5);   // antes: goal_threshold
-    this->declare_parameter("goal_threshold_z",  6.0);  // tolerancia vertical
-    //this->declare_parameter<std::string>("odom_topic", "/zed/zed_node/odom");
-    this->declare_parameter<std::string>("odom_topic", "/fixposition/odometry");
-    this->declare_parameter<bool>("legacy_axis_mapping", false);
-    tol_xy_ = this->get_parameter("goal_threshold_xy").as_double();
-    tol_z_  = this->get_parameter("goal_threshold_z").as_double();
-    const std::string odom_topic = this->get_parameter("odom_topic").as_string();
-    legacy_axis_mapping_ = this->get_parameter("legacy_axis_mapping").as_bool();
-    // goal_threshold_ = this->get_parameter("goal_threshold").as_double();
+    this->declare_parameter("goal_threshold_xy", 3.5);  // robot converge a ~3.3m con local-waypoint activo; 3.5m da margen
+    this->declare_parameter("robot_frame", std::string("base_link"));
+    this->declare_parameter("goal_frame",  std::string("map"));
 
-    // Suscripción al topic "goal" (PoseArray)
+    tol_xy_      = this->get_parameter("goal_threshold_xy").as_double();
+    robot_frame_ = this->get_parameter("robot_frame").as_string();
+    goal_frame_  = this->get_parameter("goal_frame").as_string();
+
+    tf_buffer_   = std::make_shared<tf2_ros::Buffer>(get_clock());
+    tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+
     goal_sub_ = this->create_subscription<geometry_msgs::msg::PoseArray>(
       "goal", 10,
       std::bind(&GoalReachedNode::goalCallback, this, std::placeholders::_1));
 
-    // Suscripción al topic "odom" (nav_msgs/Odometry)
-    odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
-      odom_topic, 10,
-      std::bind(&GoalReachedNode::odomCallback, this, std::placeholders::_1));
-
-    // Publicador en el topic "goal_reached" (Bool)
     goal_reached_pub_ = this->create_publisher<std_msgs::msg::Bool>("goal_reached", 10);
 
-    // Timer de control que se ejecuta cada 100ms
     timer_ = this->create_wall_timer(
       std::chrono::milliseconds(100),
       std::bind(&GoalReachedNode::controlLoop, this));
 
-    RCLCPP_INFO(
-      this->get_logger(),
-      "GoalReachedNode iniciado usando odom='%s', legacy_axis_mapping=%s y PoseArray para el goal.",
-      odom_topic.c_str(), legacy_axis_mapping_ ? "true" : "false");
+    RCLCPP_INFO(get_logger(),
+      "check_goal: robot_frame='%s' goal_frame='%s' threshold_xy=%.2f m",
+      robot_frame_.c_str(), goal_frame_.c_str(), tol_xy_);
   }
 
 private:
-  // Callback para recibir el goal (PoseArray)
   void goalCallback(const geometry_msgs::msg::PoseArray::SharedPtr msg)
   {
-    if (msg->poses.empty()) {
-      RCLCPP_WARN(this->get_logger(), "Goal recibido vacío (PoseArray sin elementos).");
-      return;
-    }
-    // Usamos el primer elemento del PoseArray como goal
-    goal_pose_ = msg->poses[0];
+    if (msg->poses.empty()) return;
+    goal_pose_   = msg->poses[0];
+    goal_frame_  = msg->header.frame_id.empty() ? goal_frame_ : msg->header.frame_id;
     goal_received_ = true;
-    RCLCPP_INFO(this->get_logger(), "Nuevo goal recibido: [%.2f, %.2f, %.2f]",
-                goal_pose_.position.x,
-                goal_pose_.position.y,
-                goal_pose_.position.z);
+    RCLCPP_INFO(get_logger(), "Nuevo goal recibido: [%.2f, %.2f] frame=%s",
+                goal_pose_.position.x, goal_pose_.position.y, goal_frame_.c_str());
   }
 
-  // Callback para obtener la odometría
-  void odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
-  {
-    odom_pose_ = msg->pose.pose;
-    odom_received_ = true;
-    RCLCPP_DEBUG(this->get_logger(), "Odom recibido: [%.2f, %.2f, %.2f]",
-                 odom_pose_.position.z,
-                 odom_pose_.position.x,
-                 odom_pose_.position.y);
-  }
-
-  // Loop de control: compara la posición actual (odom) con el goal
   void controlLoop()
   {
-    RCLCPP_DEBUG(this->get_logger(), "Control loop: goal_received: %d, odom_received: %d", goal_received_, odom_received_);
-    if (!goal_received_ || !odom_received_) {
+    if (!goal_received_) return;
+
+    // Obtener posición del robot en el frame del goal via TF
+    geometry_msgs::msg::TransformStamped tf_robot;
+    try {
+      tf_robot = tf_buffer_->lookupTransform(
+          goal_frame_, robot_frame_,
+          tf2::TimePointZero,
+          tf2::durationFromSec(0.1));
+    } catch (const tf2::TransformException & ex) {
+      RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 2000,
+        "TF lookup %s→%s falló: %s", robot_frame_.c_str(), goal_frame_.c_str(), ex.what());
       return;
     }
 
-    double robot_x;
-    double robot_y;
-    double robot_z;
+    const double robot_x = tf_robot.transform.translation.x;
+    const double robot_y = tf_robot.transform.translation.y;
+    const double goal_x  = goal_pose_.position.x;
+    const double goal_y  = goal_pose_.position.y;
 
-    if (legacy_axis_mapping_) {
-      robot_x = odom_pose_.position.z;
-      robot_y = odom_pose_.position.x;
-      robot_z = odom_pose_.position.y;
-    } else {
-      robot_x = odom_pose_.position.x;
-      robot_y = odom_pose_.position.y;
-      robot_z = odom_pose_.position.z;
-    }
+    const double dist_xy = std::hypot(goal_x - robot_x, goal_y - robot_y);
 
-    double goal_x = goal_pose_.position.x;
-    double goal_y = goal_pose_.position.y;
-    double goal_z = goal_pose_.position.z;
+    RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 500,
+      "Robot: [%.2f, %.2f] Goal: [%.2f, %.2f] dist_xy: %.2f",
+      robot_x, robot_y, goal_x, goal_y, dist_xy);
 
-    double dx = goal_x - robot_x;
-    double dy = legacy_axis_mapping_ ? (goal_y - (-1 * robot_y)) : (goal_y - robot_y);
-    double dz = goal_z - robot_z;
-    double distance = std::sqrt(dx * dx + dy * dy + dz * dz);
-
-    double dist_xy = std::hypot(dx, dy);
-    bool goal_reached = (dist_xy < tol_xy_) && (std::abs(dz) < tol_z_);
-
-    // Logs para verificar los valores calculados
-    RCLCPP_INFO(this->get_logger(), "Robot: [%.2f, %.2f, %.2f]", robot_x, robot_y, robot_z);
-    RCLCPP_INFO(this->get_logger(), "Goal: [%.2f, %.2f, %.2f]", goal_x, goal_y, goal_z);
-    RCLCPP_INFO(this->get_logger(), "dx: %.2f, dy: %.2f, dz: %.2f, distance: %.2f", dx, dy, dz, distance);
-
-    // if (distance < goal_threshold_) {
-    //   std_msgs::msg::Bool reached_msg;
-    //   reached_msg.data = true;
-    //   goal_reached_pub_->publish(reached_msg);
-    //   RCLCPP_INFO(this->get_logger(), "Goal alcanzado. Distancia: %.2f m", distance);
-    //   // Reiniciamos la bandera para evitar múltiples publicaciones
-    //   goal_received_ = false;
-    // }
-
-    if (goal_reached) {
-      std_msgs::msg::Bool reached_msg;
-      reached_msg.data = true;
-      goal_reached_pub_->publish(reached_msg);
-      RCLCPP_INFO(this->get_logger(), "Goal alcanzado. Distancia: %.2f m", distance);
-      // Reiniciamos la bandera para evitar múltiples publicaciones
+    if (dist_xy < tol_xy_) {
+      std_msgs::msg::Bool msg;
+      msg.data = true;
+      goal_reached_pub_->publish(msg);
+      RCLCPP_INFO(get_logger(), "Goal alcanzado. dist_xy=%.2f m", dist_xy);
       goal_received_ = false;
     }
-
-
   }
 
   rclcpp::Subscription<geometry_msgs::msg::PoseArray>::SharedPtr goal_sub_;
-  rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
   rclcpp::Publisher<std_msgs::msg::Bool>::SharedPtr goal_reached_pub_;
   rclcpp::TimerBase::SharedPtr timer_;
 
-  // Usamos solo el primer pose del PoseArray como goal
+  std::shared_ptr<tf2_ros::Buffer>            tf_buffer_;
+  std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
+
   geometry_msgs::msg::Pose goal_pose_;
-  geometry_msgs::msg::Pose odom_pose_;
-  bool goal_received_;
-  bool odom_received_;
-  // double goal_threshold_;
+  bool   goal_received_;
   double tol_xy_;
-  double tol_z_;
-  bool legacy_axis_mapping_;
+  std::string robot_frame_;
+  std::string goal_frame_;
 };
 
 int main(int argc, char **argv)

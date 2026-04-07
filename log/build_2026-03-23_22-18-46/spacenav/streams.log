@@ -1,0 +1,94 @@
+[0.656s] Invoking command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/src/j8_joystick/spacenav -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav
+[4.945s] -- The C compiler identification is GNU 11.4.0
+[4.945s] -- The CXX compiler identification is GNU 11.4.0
+[4.945s] -- Detecting C compiler ABI info
+[4.945s] -- Detecting C compiler ABI info - done
+[4.945s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.945s] -- Detecting C compile features
+[4.945s] -- Detecting C compile features - done
+[4.945s] -- Detecting CXX compiler ABI info
+[4.945s] -- Detecting CXX compiler ABI info - done
+[4.945s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.945s] -- Detecting CXX compile features
+[4.945s] -- Detecting CXX compile features - done
+[4.946s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.946s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.946s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.946s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.946s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.946s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.946s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.946s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.960s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[4.996s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.999s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.653s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.682s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.718s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.141s] -- Looking for pthread.h
+[6.790s] -- Looking for pthread.h - found
+[6.790s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.264s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.265s] -- Found Threads: TRUE  
+[8.278s] -- Found rclcpp_components: 16.0.18 (/opt/ros/humble/share/rclcpp_components/cmake)
+[8.403s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[8.426s] -- Found SPNAV: /usr/lib/libspnav.so  
+[8.441s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[8.771s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[8.772s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/src/j8_joystick/spacenav/include>
+[8.772s] -- Configured cppcheck exclude dirs and/or files: 
+[8.775s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[8.775s] -- Configured cpplint exclude dirs and/or files: 
+[8.776s] -- Added test 'flake8' to check Python code syntax and style conventions
+[8.781s] -- Added test 'lint_cmake' to check CMake code style
+[8.783s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[8.786s] -- Added test 'uncrustify' to check C / C++ code style
+[8.786s] -- Configured uncrustify additional arguments: 
+[8.788s] -- Added test 'xmllint' to check XML markup files
+[8.795s] -- Configuring done
+[8.828s] -- Generating done
+[8.841s] -- Build files have been written to: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav
+[8.890s] Invoked command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/src/j8_joystick/spacenav -DCMAKE_INSTALL_PREFIX=/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav
+[8.891s] Invoking command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --build /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav -- -j20 -l20
+[15.840s] [ 25%] [32mBuilding CXX object CMakeFiles/spacenav.dir/src/spacenav.cpp.o[0m
+[15.841s] [ 50%] [32mBuilding CXX object CMakeFiles/spacenav_node.dir/rclcpp_components/node_main_spacenav_node.cpp.o[0m
+[18.065s] [ 75%] [32m[1mLinking CXX executable spacenav_node[0m
+[18.235s] [ 75%] Built target spacenav_node
+[21.083s] [100%] [32m[1mLinking CXX shared library libspacenav.so[0m
+[21.565s] [100%] Built target spacenav
+[21.598s] Invoked command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --build /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav -- -j20 -l20
+[21.602s] Invoking command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --install /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav
+[21.619s] -- Install configuration: ""
+[21.619s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/lib/libspacenav.so
+[21.622s] -- Set runtime path of "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/lib/libspacenav.so" to ""
+[21.626s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/lib/spacenav/spacenav_node
+[21.626s] -- Set runtime path of "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/lib/spacenav/spacenav_node" to ""
+[21.626s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/include/spacenav
+[21.631s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/include/spacenav/spacenav
+[21.631s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/include/spacenav/spacenav/spacenav.hpp
+[21.631s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav//launch
+[21.631s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav//launch/classic-launch.py
+[21.631s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav//launch/static_deadband-launch.py
+[21.631s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav//launch/no_deadband-launch.py
+[21.631s] -- Up-to-date: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/lib/libspacenav.so
+[21.631s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/ament_index/resource_index/package_run_dependencies/spacenav
+[21.631s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/ament_index/resource_index/parent_prefix_path/spacenav
+[21.631s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/environment/ament_prefix_path.sh
+[21.633s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/environment/ament_prefix_path.dsv
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/environment/path.sh
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/environment/path.dsv
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/local_setup.bash
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/local_setup.sh
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/local_setup.zsh
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/local_setup.dsv
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/package.dsv
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/ament_index/resource_index/packages/spacenav
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/ament_index/resource_index/rclcpp_components/spacenav
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/export_spacenavExport.cmake
+[21.634s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/export_spacenavExport-noconfig.cmake
+[21.637s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/ament_cmake_export_targets-extras.cmake
+[21.637s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/ament_cmake_export_dependencies-extras.cmake
+[21.637s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/spacenavConfig.cmake
+[21.637s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/cmake/spacenavConfig-version.cmake
+[21.637s] -- Installing: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/spacenav/share/spacenav/package.xml
+[21.647s] Invoked command in '/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/ntrip_client:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/j8_gui:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/car:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/android_ros2_server:/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/GUI_pkg:/home/rhobtor/reactive/Reactive-Navegation/workspace_full_conected/install/car:/opt/ros/humble /usr/bin/cmake --install /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/spacenav

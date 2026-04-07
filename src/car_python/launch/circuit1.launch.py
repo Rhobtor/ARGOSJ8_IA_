@@ -38,29 +38,31 @@ def generate_launch_description():
 
 
     check_goal = Node(
-        package='car_cpp',  # Asegúrate de que el paquete se llame 'car' o el que corresponda
-        executable='check_goal',  # Nombre del ejecutable (por ejemplo, si instalaste el script con entry_point)
-        name='check_goal',  # Nombre del nodo
+        package='car_cpp',
+        executable='check_goal',
+        name='check_goal',
         parameters=[{
-            'odom_topic': '/fixposition/odometry_enu',
-            'legacy_axis_mapping': False,
+            'goal_threshold_xy': 3.5,   # robot converge a ~3.3m con local-waypoint; 3.5m da margen
+            'robot_frame': 'base_link',
+            'goal_frame':  'map',
         }],
     )
 
+    
+
     points_goal = Node(
-        package     = 'car',            # o el paquete que corresponda
-        executable  = 'circuit1',    # tu ejecutable
+        package     = 'car',
+        executable  = 'circuit1',
         name        = 'circuit1',
         parameters  = [
             goal_yaml,
             {
-                'goal_points_relative_to_robot': True,
-                'relative_goal_anchor_mode': 'startup',
-                'relative_pose_frame': 'base_link',
-                'use_tf_for_relative_goals': True,
-                'odom_topic': '/fixposition/odometry_enu',
+                'goal_points_relative_to_robot': False,   # coords absolutas en map
+                'goal_frame_id': 'map',
+                'compute_yaw_from_path': True,
+                'odom_topic': '/fixposition/odometry',
             },
-        ]       #  ← aquí se inyecta el YAML
+        ]
     )
 
 

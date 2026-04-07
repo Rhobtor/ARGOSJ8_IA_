@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target velodyne_noise_filter_node[0m
+[ 14%] Built target check_goal
+[ 28%] Built target frontier_values
+[ 42%] Built target velodyne_noise_filter_node
+[ 50%] [32mBuilding CXX object CMakeFiles/voxel_grid_node.dir/src/voxel_grid_node.cpp.o[0m
+[ 64%] Built target joints_plugin
+[ 78%] Built target drive_plugin
+[ 92%] Built target move_plugin
