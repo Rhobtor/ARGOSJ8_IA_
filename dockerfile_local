@@ -19,7 +19,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
     SETUPTOOLS_USE_DISTUTILS=stdlib \
   ROS_DOMAIN_ID=0 \
   RMW_IMPLEMENTATION=rmw_cyclonedds_cpp \
-  CYCLONEDDS_URI=file:///etc/cyclonedds/local_cyclonedds.xml \
     QT_X11_NO_MITSHM=1 \
     # Para QtWebEngine dentro de contenedor (si ejecutas como root)
     QTWEBENGINE_DISABLE_SANDBOX=1 \
@@ -124,8 +123,6 @@ RUN apt-get update && \
 # 7) Copiar código y compilar el workspace -------------------------------------
 WORKDIR /ros2_ws
 COPY src ./src
-RUN mkdir -p /etc/cyclonedds
-COPY local_cyclonedds.xml /etc/cyclonedds/local_cyclonedds.template.xml
 
 # RUN mkdir -p /root/.dds && \
 #   cp /etc/cyclonedds/local_cyclonedds.xml /root/.dds/local_cyclonedds.xml && \
