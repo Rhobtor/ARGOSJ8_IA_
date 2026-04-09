@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../rosidl_generator_rs/path_manager_interfaces/rust/Cargo.toml"
-  "../rosidl_generator_rs/path_manager_interfaces/rust/build.rs"
-  "../rosidl_generator_rs/path_manager_interfaces/rust/src/lib.rs"
-  "../rosidl_generator_rs/path_manager_interfaces/rust/src/srv.rs"
-  "../rosidl_generator_rs/path_manager_interfaces/rust/src/srv/rmw.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/path_manager_interfaces/rosidl_generator_rs/path_manager_interfaces/rust/Cargo.toml"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/path_manager_interfaces/rosidl_generator_rs/path_manager_interfaces/rust/build.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/path_manager_interfaces/rosidl_generator_rs/path_manager_interfaces/rust/src/lib.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/path_manager_interfaces/rosidl_generator_rs/path_manager_interfaces/rust/src/srv.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/path_manager_interfaces/rosidl_generator_rs/path_manager_interfaces/rust/src/srv/rmw.rs"
   "CMakeFiles/path_manager_interfaces__rs"
 )
 

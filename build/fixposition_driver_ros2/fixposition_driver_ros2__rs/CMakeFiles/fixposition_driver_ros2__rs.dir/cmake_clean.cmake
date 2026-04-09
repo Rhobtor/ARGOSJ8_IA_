@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../rosidl_generator_rs/fixposition_driver_ros2/rust/Cargo.toml"
-  "../rosidl_generator_rs/fixposition_driver_ros2/rust/build.rs"
-  "../rosidl_generator_rs/fixposition_driver_ros2/rust/src/lib.rs"
-  "../rosidl_generator_rs/fixposition_driver_ros2/rust/src/msg.rs"
-  "../rosidl_generator_rs/fixposition_driver_ros2/rust/src/msg/rmw.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_generator_rs/fixposition_driver_ros2/rust/Cargo.toml"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_generator_rs/fixposition_driver_ros2/rust/build.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_generator_rs/fixposition_driver_ros2/rust/src/lib.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_generator_rs/fixposition_driver_ros2/rust/src/msg.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/fixposition_driver_ros2/rosidl_generator_rs/fixposition_driver_ros2/rust/src/msg/rmw.rs"
   "CMakeFiles/fixposition_driver_ros2__rs"
 )
 

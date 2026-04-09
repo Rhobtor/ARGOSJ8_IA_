@@ -12,5 +12,7 @@
 !/install.sh
 !/local_cyclonedds.xml
 !/init_profile_results.prof
+!/docs/
+!/docs/**
 !/src/
 !/src/**

@@ -1,8 +1,8 @@
-# Install script for directory: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/security_check_interfaces/security_check_interfaces__rs
+# Install script for directory: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/security_check_interfaces/security_check_interfaces__rs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/security_check_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

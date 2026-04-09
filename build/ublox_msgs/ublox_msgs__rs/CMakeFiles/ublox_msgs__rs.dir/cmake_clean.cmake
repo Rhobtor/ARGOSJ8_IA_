@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../rosidl_generator_rs/ublox_msgs/rust/Cargo.toml"
-  "../rosidl_generator_rs/ublox_msgs/rust/build.rs"
-  "../rosidl_generator_rs/ublox_msgs/rust/src/lib.rs"
-  "../rosidl_generator_rs/ublox_msgs/rust/src/msg.rs"
-  "../rosidl_generator_rs/ublox_msgs/rust/src/msg/rmw.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ublox_msgs/rosidl_generator_rs/ublox_msgs/rust/Cargo.toml"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ublox_msgs/rosidl_generator_rs/ublox_msgs/rust/build.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ublox_msgs/rosidl_generator_rs/ublox_msgs/rust/src/lib.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ublox_msgs/rosidl_generator_rs/ublox_msgs/rust/src/msg.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/ublox_msgs/rosidl_generator_rs/ublox_msgs/rust/src/msg/rmw.rs"
   "CMakeFiles/ublox_msgs__rs"
 )
 

@@ -3,14 +3,18 @@ import math
 import json
 import os
 import re
+import time
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from typing import Optional, Dict, Callable, List, Tuple
 
-from PySide6.QtCore import QObject, Signal, Qt, QPointF
+from ament_index_python.packages import get_package_share_directory
+
+from PySide6.QtCore import QObject, Signal, Qt, QPointF, QTimer
 from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
     QLineEdit, QFormLayout, QTableWidget, QTableWidgetItem,
-    QComboBox, QSplitter, QFileDialog
+    QComboBox, QSplitter, QFileDialog, QSpinBox, QDoubleSpinBox
 )
 from PySide6.QtWidgets import QAbstractItemView
 
@@ -20,7 +24,7 @@ from rclpy.node import Node
 # Mensajes ROS
 from sensor_msgs.msg import Imu, NavSatFix
 from nav_msgs.msg import Odometry, Path
-from geometry_msgs.msg import PoseStamped
+from geometry_msgs.msg import PoseStamped, PoseArray
 from geometry_msgs.msg import Vector3Stamped
 
 from j8_gui.app.geo_local import ll2xy
@@ -432,6 +436,7 @@ class StateSignals(QObject):
     # GPS pose for other widgets (e.g. the embedded Leaflet map in main_window).
     # Emits: (lat_deg: float, lon_deg: float, heading_deg: float|None)
     gps_pose = Signal(float, float, object)
+    detected_persons = Signal(object)
     # FSM feedback (legacy GUI_pkg contract)
     fsm_mode = Signal(int)
     possible_transitions = Signal(object)  # List[int]
@@ -465,6 +470,8 @@ class TopicMap:
     cte: Optional[str] = '/ARGJ801/cte'
     look_ahead_distance: Optional[str] = '/ARGJ801/look_ahead_distance'
     min_distance_to_path: Optional[str] = '/ARGJ801/min_distance_to_path'
+    detected_persons_latlon: Optional[str] = '/ARGJ801/detected_persons_latlon'
+    detected_persons_global_latlon: Optional[str] = '/detected_persons_latlon_global'
 
 class TelemetryNode(Node):
     def __init__(self, signals: StateSignals, topics: TopicMap):
@@ -514,6 +521,10 @@ class TelemetryNode(Node):
             self.create_subscription(Float32, topics.look_ahead_distance, self._on_lookahead, 10)
         if topics.min_distance_to_path:
             self.create_subscription(Float32, topics.min_distance_to_path, self._on_min_dist_path, 10)
+        if topics.detected_persons_latlon:
+            self.create_subscription(PoseArray, topics.detected_persons_latlon, self._on_detected_persons_latlon, 10)
+        if topics.detected_persons_global_latlon:
+            self.create_subscription(PoseArray, topics.detected_persons_global_latlon, self._on_detected_persons_latlon, 10)
 
     def _on_imu(self, msg: Imu):
         q = msg.orientation
@@ -656,6 +667,25 @@ class TelemetryNode(Node):
         except Exception:
             pass
 
+    def _on_detected_persons_latlon(self, msg: PoseArray):
+        points = []
+        try:
+            for pose in msg.poses:
+                person_id = 0
+                try:
+                    person_id = int(round(float(pose.orientation.w)))
+                except Exception:
+                    person_id = 0
+
+                points.append({
+                    'id': person_id,
+                    'lat': float(pose.position.x),
+                    'lon': float(pose.position.y),
+                })
+        except Exception:
+            return
+        self._sig.detected_persons.emit(points)
+
 
 # ===================== StateWidget (HUD + Stats) =====================
 class StateWidget(QWidget):
@@ -745,6 +775,7 @@ class StateWidget(QWidget):
         self.hud.set_state(text)
 
     def attach_ros(self, executor: rclpy.executors.Executor, topics: Dict[str, str] = None):
+        self.detach_ros(executor)
         tmap = TopicMap()
         if topics:
             for k, v in topics.items():
@@ -752,6 +783,20 @@ class StateWidget(QWidget):
                     setattr(tmap, k, v)
         self._node = TelemetryNode(self._signals, tmap)
         executor.add_node(self._node)
+
+    def detach_ros(self, executor: rclpy.executors.Executor | None = None):
+        if self._node is None:
+            return
+        if executor is not None:
+            try:
+                executor.remove_node(self._node)
+            except Exception:
+                pass
+        try:
+            self._node.destroy_node()
+        except Exception:
+            pass
+        self._node = None
 
     # --- Slots internos ---
     def _on_attitude(self, pitch_deg: float, roll_deg: float, yaw_deg: float):
@@ -797,6 +842,17 @@ class MissionWidget(QWidget):
         self._possible_transitions = []
         # Cache for UI stability: avoid rebuilding combo if nothing changed
         self._allowed_transition_ids: List[int] = []
+        self._action_timestamps: Dict[str, float] = {}
+        self._table_refresh_pending = False
+        self._mission_sync_pending = False
+
+        self._table_refresh_timer = QTimer(self)
+        self._table_refresh_timer.setSingleShot(True)
+        self._table_refresh_timer.timeout.connect(self._apply_table_refresh)
+
+        self._mission_sync_timer = QTimer(self)
+        self._mission_sync_timer.setSingleShot(True)
+        self._mission_sync_timer.timeout.connect(self._apply_js_set_mission)
 
         # Arriba
         self.state = StateWidget()
@@ -835,14 +891,65 @@ class MissionWidget(QWidget):
         f.addRow('Lat:', self.ed_lat); f.addRow('Lon:', self.ed_lon)
         lay.addLayout(f)
 
+        saved_row = QHBoxLayout()
+        self.ed_saved_path_name = QLineEdit()
+        self.ed_saved_path_name.setPlaceholderText('nombre_path')
+        self.cmb_saved_paths = QComboBox()
+        self.btn_refresh_paths = QPushButton('Refrescar')
+        self.btn_refresh_paths.clicked.connect(self._refresh_saved_paths_combo)
+        saved_row.addWidget(QLabel('Path guardado:'))
+        saved_row.addWidget(self.ed_saved_path_name, 1)
+        saved_row.addWidget(self.cmb_saved_paths, 1)
+        saved_row.addWidget(self.btn_refresh_paths)
+        lay.addLayout(saved_row)
+
+        densify_row = QHBoxLayout()
+        self.spn_intermediate_points = QSpinBox()
+        self.spn_intermediate_points.setRange(1, 100)
+        self.spn_intermediate_points.setValue(1)
+        self.spn_intermediate_points.setToolTip('Numero de puntos a insertar entre cada pareja de waypoints')
+        self.btn_insert_selected = QPushButton('Insertar entre seleccionados')
+        self.btn_insert_selected.clicked.connect(self._on_insert_selected_intermediate_points)
+        self.btn_insert_all = QPushButton('Densificar todo')
+        self.btn_insert_all.clicked.connect(self._on_insert_all_intermediate_points)
+        self.spn_spacing_m = QDoubleSpinBox()
+        self.spn_spacing_m.setRange(0.5, 1000.0)
+        self.spn_spacing_m.setDecimals(1)
+        self.spn_spacing_m.setSingleStep(0.5)
+        self.spn_spacing_m.setValue(5.0)
+        self.spn_spacing_m.setToolTip('Separacion maxima objetivo entre waypoints')
+        self.btn_densify_spacing = QPushButton('Densificar por distancia')
+        self.btn_densify_spacing.clicked.connect(self._on_densify_by_spacing)
+        densify_row.addWidget(QLabel('Pts intermedios:'))
+        densify_row.addWidget(self.spn_intermediate_points)
+        densify_row.addWidget(self.btn_insert_selected)
+        densify_row.addWidget(self.btn_insert_all)
+        densify_row.addWidget(QLabel('Espaciado max (m):'))
+        densify_row.addWidget(self.spn_spacing_m)
+        densify_row.addWidget(self.btn_densify_spacing)
+        lay.addLayout(densify_row)
+
+        exec_row = QHBoxLayout()
+        self.btn_start_path = QPushButton('Ejecutar Path')
+        self.btn_start_path.clicked.connect(self._on_start_path_following)
+        self.btn_stop_path = QPushButton('Parar Path')
+        self.btn_stop_path.clicked.connect(self._on_stop_path_following)
+        self.btn_cancel_path = QPushButton('Cancelar Path')
+        self.btn_cancel_path.clicked.connect(self._on_cancel_path_execution)
+        exec_row.addWidget(self.btn_start_path)
+        exec_row.addWidget(self.btn_stop_path)
+        exec_row.addWidget(self.btn_cancel_path)
+        lay.addLayout(exec_row)
+
         r2 = QHBoxLayout()
         b_add = QPushButton('Añadir WP');  b_add.clicked.connect(self._on_add_wp)
         b_pan = QPushButton('Centrar en mapa'); b_pan.clicked.connect(self._on_pan)
         b_send = QPushButton('Enviar Path'); b_send.clicked.connect(self._on_send_path)
+        b_save = QPushButton('Guardar Path'); b_save.clicked.connect(self._on_save_path)
         b_clear= QPushButton('Limpiar');   b_clear.clicked.connect(self._on_clear)
-        b_load = QPushButton('Cargar CSV…'); b_load.clicked.connect(self._on_load_csv)
+        b_load = QPushButton('Cargar Path'); b_load.clicked.connect(self._on_load_saved_path)
         b_del = QPushButton('Borrar seleccionado(s)')
-        for b in (b_add, b_pan, b_send, b_clear, b_load): r2.addWidget(b)
+        for b in (b_add, b_pan, b_send, b_save, b_clear, b_load): r2.addWidget(b)
         b_del.clicked.connect(self._on_delete_selected)
         r2.addWidget(b_del)
         lay.addLayout(r2)
@@ -860,6 +967,7 @@ class MissionWidget(QWidget):
 
         # Estado inicial: sin transiciones aún
         self._apply_possible_transitions_to_combo()
+        self._refresh_saved_paths_combo()
 
     # ---- API simple para main_window ----
     def set_ros(self, ros_side):
@@ -867,6 +975,9 @@ class MissionWidget(QWidget):
 
     def attach_ros(self, executor, topics: dict = None):
         self.state.attach_ros(executor, topics)
+
+    def detach_ros(self, executor=None):
+        self.state.detach_ros(executor)
 
     def set_js_call(self, js_callable: Callable[[str], None]):
         self._js_call = js_callable
@@ -898,8 +1009,8 @@ class MissionWidget(QWidget):
             9: 'All → E-Stop',
             10: 'Ready → FollowZED',
             11: 'FollowZED → Ready',
-            12: 'Ready → MPPI/SAC (relay)',
-            13: 'MPPI/SAC (relay) → Ready',
+            12: 'Ready → External cmd_vel',
+            13: 'External cmd_vel → Ready',
         }
         return transition_labels.get(int(transition_id), '')
 
@@ -957,7 +1068,7 @@ class MissionWidget(QWidget):
             4: 'EmergencyStop',
             5: 'RecordPath',
             6: 'FollowZED',
-            7: 'MPPI/SAC (relay)',
+            7: 'External cmd_vel',
         }
         return mode_labels.get(int(mode), f"FSM {int(mode)}")
 
@@ -1036,6 +1147,8 @@ class MissionWidget(QWidget):
         self._pan(lat, lon)
 
     def _on_send_path(self):
+        if not self._allow_action('send_path', 0.35):
+            return
         if not self._ros: return
         # Export also to the car_python circuit config (robot-frame local coords)
         try:
@@ -1045,6 +1158,88 @@ class MissionWidget(QWidget):
 
         # usa el helper del RosSide que ya tienes:
         self._ros.send_path(self._planned)
+
+    @staticmethod
+    def _get_saved_paths_dir() -> Optional[str]:
+        try:
+            share = get_package_share_directory('path_manager')
+        except Exception:
+            return None
+        path_dir = os.path.join(share, 'paths')
+        return path_dir if os.path.isdir(path_dir) else None
+
+    def _refresh_saved_paths_combo(self):
+        current = self.cmb_saved_paths.currentText().strip()
+        self.cmb_saved_paths.blockSignals(True)
+        self.cmb_saved_paths.clear()
+        path_dir = self._get_saved_paths_dir()
+        if path_dir:
+            names = []
+            for entry in sorted(os.listdir(path_dir)):
+                if entry.lower().endswith('.gpx'):
+                    names.append(os.path.splitext(entry)[0])
+            self.cmb_saved_paths.addItems(names)
+            if current:
+                idx = self.cmb_saved_paths.findText(current)
+                if idx >= 0:
+                    self.cmb_saved_paths.setCurrentIndex(idx)
+        self.cmb_saved_paths.blockSignals(False)
+
+    def _parse_saved_path_file(self, path_name: str) -> List[Tuple[float, float]]:
+        path_dir = self._get_saved_paths_dir()
+        if not path_dir:
+            return []
+        file_path = os.path.join(path_dir, f'{path_name}.gpx')
+        if not os.path.exists(file_path):
+            return []
+
+        try:
+            root = ET.parse(file_path).getroot()
+        except Exception:
+            return []
+
+        points: List[Tuple[float, float]] = []
+        for elem in root.iter():
+            tag = elem.tag.split('}')[-1]
+            if tag != 'trkpt':
+                continue
+            try:
+                lat = float(elem.attrib['lat'])
+                lon = float(elem.attrib['lon'])
+            except Exception:
+                continue
+            points.append((lat, lon))
+        return points
+
+    def _on_save_path(self):
+        if not self._allow_action('save_path', 0.5):
+            return
+        name = self.ed_saved_path_name.text().strip() or self.cmb_saved_paths.currentText().strip()
+        if not name or not self._planned or not self._ros:
+            return
+
+        self._ros.send_path(self._planned)
+        self._ros.save_current_path(name)
+        self._refresh_saved_paths_combo()
+        idx = self.cmb_saved_paths.findText(name)
+        if idx >= 0:
+            self.cmb_saved_paths.setCurrentIndex(idx)
+
+    def _on_load_saved_path(self):
+        if not self._allow_action('load_path', 0.5):
+            return
+        name = self.cmb_saved_paths.currentText().strip() or self.ed_saved_path_name.text().strip()
+        if not name:
+            return
+
+        points = self._parse_saved_path_file(name)
+        if points:
+            self._planned = points
+            self._refresh_table()
+            self._js_set_mission()
+
+        if self._ros:
+            self._ros.load_saved_path(name)
 
     @staticmethod
     def _find_circuit_yaml_path() -> Optional[str]:
@@ -1147,7 +1342,127 @@ class MissionWidget(QWidget):
         self._refresh_table()
         self._js_call_safe('window.clearMission();')
 
+    def _selected_waypoint_rows(self) -> List[int]:
+        return sorted({index.row() for index in self.tbl.selectedIndexes()})
+
+    @staticmethod
+    def _interpolate_waypoints(
+        start: Tuple[float, float],
+        end: Tuple[float, float],
+        count: int,
+    ) -> List[Tuple[float, float]]:
+        if count <= 0:
+            return []
+        lat1, lon1 = start
+        lat2, lon2 = end
+        points: List[Tuple[float, float]] = []
+        for step in range(1, count + 1):
+            ratio = step / float(count + 1)
+            points.append((
+                lat1 + ((lat2 - lat1) * ratio),
+                lon1 + ((lon2 - lon1) * ratio),
+            ))
+        return points
+
+    def _insert_intermediate_points(self, segment_start_indexes: List[int], count: int):
+        if count <= 0 or len(self._planned) < 2 or not segment_start_indexes:
+            return
+
+        valid_indexes = {
+            index for index in segment_start_indexes
+            if 0 <= index < (len(self._planned) - 1)
+        }
+        if not valid_indexes:
+            return
+
+        densified: List[Tuple[float, float]] = []
+        for index, point in enumerate(self._planned):
+            densified.append(point)
+            if index in valid_indexes:
+                densified.extend(self._interpolate_waypoints(
+                    self._planned[index],
+                    self._planned[index + 1],
+                    count,
+                ))
+
+        self._planned = densified
+        self._refresh_table()
+        self._js_set_mission()
+
+    def _densify_by_spacing(self, max_spacing_m: float):
+        if len(self._planned) < 2 or max_spacing_m <= 0.0:
+            return
+
+        densified: List[Tuple[float, float]] = []
+        for index in range(len(self._planned) - 1):
+            start = self._planned[index]
+            end = self._planned[index + 1]
+            densified.append(start)
+
+            distance_m = haversine_m(start[0], start[1], end[0], end[1])
+            extra_points = max(0, int(math.ceil(distance_m / max_spacing_m)) - 1)
+            if extra_points > 0:
+                densified.extend(self._interpolate_waypoints(start, end, extra_points))
+
+        densified.append(self._planned[-1])
+        self._planned = densified
+        self._refresh_table()
+        self._js_set_mission()
+
+    def _on_insert_selected_intermediate_points(self):
+        if not self._allow_action('insert_selected_points', 0.2):
+            return
+        rows = self._selected_waypoint_rows()
+        if len(rows) < 2:
+            return
+
+        count = int(self.spn_intermediate_points.value())
+        segment_start_indexes = [
+            rows[i] for i in range(len(rows) - 1)
+            if rows[i + 1] == rows[i] + 1
+        ]
+        self._insert_intermediate_points(segment_start_indexes, count)
+
+    def _on_insert_all_intermediate_points(self):
+        if not self._allow_action('insert_all_points', 0.2):
+            return
+        if len(self._planned) < 2:
+            return
+        count = int(self.spn_intermediate_points.value())
+        self._insert_intermediate_points(list(range(len(self._planned) - 1)), count)
+
+    def _on_densify_by_spacing(self):
+        if not self._allow_action('densify_spacing', 0.2):
+            return
+        self._densify_by_spacing(float(self.spn_spacing_m.value()))
+
+    def _on_start_path_following(self):
+        if not self._allow_action('start_path_following', 0.6):
+            return
+        if not self._ros or not self._planned:
+            return
+
+        self._on_send_path()
+        self._ros.start_path_following()
+
+    def _on_stop_path_following(self):
+        if not self._allow_action('stop_path_following', 0.4):
+            return
+        if not self._ros:
+            return
+        self._ros.stop_path_following()
+
+    def _on_cancel_path_execution(self):
+        if not self._allow_action('cancel_path_execution', 0.4):
+            return
+        if self._ros:
+            self._ros.stop_path_following()
+            self._ros.clear_active_path()
+        self._on_clear()
+
     def _on_delete_selected(self):
+        if not self._allow_action('delete_selected', 0.15):
+            return
         rows = sorted({idx.row() for idx in self.tbl.selectedIndexes()}, reverse=True)
         if not rows:
             return
@@ -1175,6 +1490,8 @@ class MissionWidget(QWidget):
 
 
     def _on_load_csv(self):
+        if not self._allow_action('load_csv', 0.5):
+            return
         fn, _ = QFileDialog.getOpenFileName(self, 'CSV de waypoints', filter='CSV (*.csv)')
         if not fn: return
         pts = []
@@ -1192,41 +1509,73 @@ class MissionWidget(QWidget):
         self._js_set_mission()
 
     # ---- Utils ----
+    def _allow_action(self, key: str, cooldown_s: float) -> bool:
+        now = time.monotonic()
+        last = self._action_timestamps.get(key, 0.0)
+        if now - last < cooldown_s:
+            return False
+        self._action_timestamps[key] = now
+        return True
+
     def _refresh_table(self):
+        self._table_refresh_pending = True
+        if not self._table_refresh_timer.isActive():
+            self._table_refresh_timer.start(0)
+
+    def _apply_table_refresh(self):
+        if not self._table_refresh_pending:
+            return
+        self._table_refresh_pending = False
+
+        heading_ready = (
+            self._robot_lat is not None
+            and self._robot_lon is not None
+            and self._robot_heading_deg is not None
+        )
+        if heading_ready:
+            yaw_enu_deg = (90.0 - self._robot_heading_deg) % 360.0
+            yaw = math.radians(yaw_enu_deg)
+            cos_yaw = math.cos(yaw)
+            sin_yaw = math.sin(yaw)
+        else:
+            cos_yaw = 0.0
+            sin_yaw = 0.0
+
+        self.tbl.setUpdatesEnabled(False)
+        self.tbl.blockSignals(True)
         self.tbl.setRowCount(len(self._planned))
-        for i, (lat, lon) in enumerate(self._planned):
-            self.tbl.setItem(i, 0, QTableWidgetItem(str(i)))
-            self.tbl.setItem(i, 1, QTableWidgetItem(f"{lat:.7f}"))
-            self.tbl.setItem(i, 2, QTableWidgetItem(f"{lon:.7f}"))
+        try:
+            for i, (lat, lon) in enumerate(self._planned):
+                self.tbl.setItem(i, 0, QTableWidgetItem(str(i)))
+                self.tbl.setItem(i, 1, QTableWidgetItem(f"{lat:.7f}"))
+                self.tbl.setItem(i, 2, QTableWidgetItem(f"{lon:.7f}"))
 
-            if (
-                self._robot_lat is not None
-                and self._robot_lon is not None
-                and self._robot_heading_deg is not None
-            ):
-                try:
-                    # 1) Local ENU vector from robot to waypoint
-                    x_e_m, y_n_m = ll2xy(lat, lon, self._robot_lat, self._robot_lon)
-
-                    # 2) Convert compass bearing to ROS ENU yaw
-                    # bearing: 0=N, CW+. yaw_enu: 0=E, CCW+
-                    yaw_enu_deg = (90.0 - self._robot_heading_deg) % 360.0
-                    yaw = math.radians(yaw_enu_deg)
-
-                    # 3) Rotate ENU -> base_link (X forward, Y left)
-                    x_fwd_m = (math.cos(yaw) * x_e_m) + (math.sin(yaw) * y_n_m)
-                    y_left_m = (-math.sin(yaw) * x_e_m) + (math.cos(yaw) * y_n_m)
-
-                    self.tbl.setItem(i, 3, QTableWidgetItem(f"{x_fwd_m:.2f}"))
-                    self.tbl.setItem(i, 4, QTableWidgetItem(f"{y_left_m:.2f}"))
-                except Exception:
+                if heading_ready:
+                    try:
+                        x_e_m, y_n_m = ll2xy(lat, lon, self._robot_lat, self._robot_lon)
+                        x_fwd_m = (cos_yaw * x_e_m) + (sin_yaw * y_n_m)
+                        y_left_m = (-sin_yaw * x_e_m) + (cos_yaw * y_n_m)
+                        self.tbl.setItem(i, 3, QTableWidgetItem(f"{x_fwd_m:.2f}"))
+                        self.tbl.setItem(i, 4, QTableWidgetItem(f"{y_left_m:.2f}"))
+                    except Exception:
+                        self.tbl.setItem(i, 3, QTableWidgetItem(''))
+                        self.tbl.setItem(i, 4, QTableWidgetItem(''))
+                else:
                     self.tbl.setItem(i, 3, QTableWidgetItem(''))
                     self.tbl.setItem(i, 4, QTableWidgetItem(''))
-            else:
-                self.tbl.setItem(i, 3, QTableWidgetItem(''))
-                self.tbl.setItem(i, 4, QTableWidgetItem(''))
+        finally:
+            self.tbl.blockSignals(False)
+            self.tbl.setUpdatesEnabled(True)
 
     def _js_set_mission(self):
+        self._mission_sync_pending = True
+        if not self._mission_sync_timer.isActive():
+            self._mission_sync_timer.start(40)
+
+    def _apply_js_set_mission(self):
+        if not self._mission_sync_pending:
+            return
+        self._mission_sync_pending = False
         js_array = json.dumps(self._planned)
         self._js_call_safe(f'window.setMission({js_array});')
 

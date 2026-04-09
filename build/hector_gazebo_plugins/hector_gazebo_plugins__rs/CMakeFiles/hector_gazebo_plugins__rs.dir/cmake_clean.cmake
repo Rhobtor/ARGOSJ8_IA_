@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../rosidl_generator_rs/hector_gazebo_plugins/rust/Cargo.toml"
-  "../rosidl_generator_rs/hector_gazebo_plugins/rust/build.rs"
-  "../rosidl_generator_rs/hector_gazebo_plugins/rust/src/lib.rs"
-  "../rosidl_generator_rs/hector_gazebo_plugins/rust/src/srv.rs"
-  "../rosidl_generator_rs/hector_gazebo_plugins/rust/src/srv/rmw.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins/rosidl_generator_rs/hector_gazebo_plugins/rust/Cargo.toml"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins/rosidl_generator_rs/hector_gazebo_plugins/rust/build.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins/rosidl_generator_rs/hector_gazebo_plugins/rust/src/lib.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins/rosidl_generator_rs/hector_gazebo_plugins/rust/src/srv.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/hector_gazebo_plugins/rosidl_generator_rs/hector_gazebo_plugins/rust/src/srv/rmw.rs"
   "CMakeFiles/hector_gazebo_plugins__rs"
 )
 

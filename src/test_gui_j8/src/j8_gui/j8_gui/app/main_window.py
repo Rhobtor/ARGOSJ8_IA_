@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import math
 import threading
 import time
 import mimetypes
@@ -11,7 +12,7 @@ import requests
 
 from ament_index_python.packages import get_package_share_directory
 
-from PySide6.QtCore import Qt, QUrl
+from PySide6.QtCore import Qt, QUrl, QTimer
 from PySide6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QPushButton,
     QLineEdit, QFormLayout, QTabWidget, QTableWidget, QTableWidgetItem,
@@ -37,6 +38,7 @@ from j8_gui.app.map_bridge import MapBridge
 from j8_gui.app.followzed_widget import FollowZEDWidget
 from j8_gui.app.state_widget import MissionWidget
 from j8_gui.app.control_widget import ControlWidget
+from j8_gui.app.person_manager_widget import PersonsWidget
 
 
 
@@ -61,6 +63,27 @@ STATES = [
     ('control_ai', 'Control IA'),
     
 ]
+
+ROBOT_ROLE_LABELS = [
+    'explorador',
+    'cargador',
+    'rescatador',
+    'mixto',
+    'personalizado',
+]
+
+
+def _haversine_m(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    radius_m = 6371000.0
+    dlat = math.radians(float(lat2) - float(lat1))
+    dlon = math.radians(float(lon2) - float(lon1))
+    a = (
+        math.sin(dlat / 2.0) ** 2
+        + math.cos(math.radians(float(lat1)))
+        * math.cos(math.radians(float(lat2)))
+        * math.sin(dlon / 2.0) ** 2
+    )
+    return 2.0 * radius_m * math.atan2(math.sqrt(a), math.sqrt(1.0 - a))
 
 
 def _resolve_html_path():
@@ -476,7 +499,7 @@ class TileProxy:
 
 # ====== ROS ======
 class RosSide(Node):
-    def __init__(self):
+    def __init__(self, namespace: str = 'ARGJ801'):
         super().__init__('j8_gui_node')
 
         # --- Compatibilidad con GUI_pkg (parámetros y defaults) ---
@@ -487,8 +510,9 @@ class RosSide(Node):
 
         # Nota: GUI_pkg fija el namespace internamente a 'ARGJ801'.
         # Aquí lo dejamos como parámetro, pero el default debe ser ARGJ801.
-        self.declare_parameter('namespace', p.namespace)
+        self.declare_parameter('namespace', namespace or p.namespace)
         namespace = self.get_parameter('namespace').get_parameter_value().string_value or p.namespace
+        self.namespace = str(namespace).strip().strip('/') or p.namespace
 
         # services (mismos parámetros que GUI_pkg)
         self.declare_parameter(p.fsm_change_fsm_mode_srv_name, d.fsm_change_fsm_mode_srv_name)
@@ -509,21 +533,31 @@ class RosSide(Node):
         self.declare_parameter(p.enable_security_check_srv_name, d.enable_security_check_srv_name)
         self.declare_parameter(p.get_security_check_srv_name, d.get_security_check_srv_name)
 
-        srv_change_fsm = namespaced(namespace, self.get_parameter(p.fsm_change_fsm_mode_srv_name).value)
-        srv_get_state = namespaced(namespace, self.get_parameter(p.fsm_get_fsm_srv_name).value)
-        srv_receive_ll_path = namespaced(namespace, self.get_parameter(p.receive_ll_path_srv_name).value)
+        srv_change_fsm = namespaced(self.namespace, self.get_parameter(p.fsm_change_fsm_mode_srv_name).value)
+        srv_get_state = namespaced(self.namespace, self.get_parameter(p.fsm_get_fsm_srv_name).value)
+        srv_receive_ll_path = namespaced(self.namespace, self.get_parameter(p.receive_ll_path_srv_name).value)
 
         # clients (equivalentes a GUI_pkg/ros_classes.py)
         from ctl_mission_interfaces.srv import ChangeMode
         from lifecycle_msgs.srv import GetState
-        from path_manager_interfaces.srv import RobotPath
+        from path_manager_interfaces.srv import RobotPath, ReadPathFromFile, WritePathToFile, ReturnRobotPath
 
         self._srv_ChangeMode = ChangeMode
         self._srv_RobotPath = RobotPath
+        self._srv_ReadPathFromFile = ReadPathFromFile
+        self._srv_WritePathToFile = WritePathToFile
+        self._srv_ReturnRobotPath = ReturnRobotPath
 
         self.cli_change_fsm = self.create_client(ChangeMode, srv_change_fsm)
         self.cli_get_state = self.create_client(GetState, srv_get_state)
         self.cli_send_draw_path = self.create_client(RobotPath, srv_receive_ll_path)
+
+        srv_read_path = namespaced(self.namespace, self.get_parameter(p.read_path_service).value)
+        srv_write_path = namespaced(self.namespace, self.get_parameter(p.write_path_service).value)
+        srv_return_path = namespaced(self.namespace, self.get_parameter(p.return_path_service).value)
+        self.cli_read_path = self.create_client(ReadPathFromFile, srv_read_path)
+        self.cli_write_path = self.create_client(WritePathToFile, srv_write_path)
+        self.cli_return_path = self.create_client(ReturnRobotPath, srv_return_path)
 
         # Controller config services (ctl_mission CtrlNode)
         from ctl_mission_interfaces.srv import (
@@ -540,10 +574,10 @@ class RosSide(Node):
         self._srv_ConfigRegulatedPureCtrl = ConfigRegulatedPureCtrl
         self._srv_ConfigStanleyCtrl = ConfigStanleyCtrl
 
-        srv_change_ctrl = namespaced(namespace, self.get_parameter(p.change_controller_srv_name).value)
-        srv_config_pp = namespaced(namespace, self.get_parameter(p.config_pure_pursuit_srv_name).value)
-        srv_config_regulated = namespaced(namespace, self.get_parameter(p.config_regulated_pure_srv_name).value)
-        srv_config_stanley = namespaced(namespace, self.get_parameter(p.config_stanley_srv_name).value)
+        srv_change_ctrl = namespaced(self.namespace, self.get_parameter(p.change_controller_srv_name).value)
+        srv_config_pp = namespaced(self.namespace, self.get_parameter(p.config_pure_pursuit_srv_name).value)
+        srv_config_regulated = namespaced(self.namespace, self.get_parameter(p.config_regulated_pure_srv_name).value)
+        srv_config_stanley = namespaced(self.namespace, self.get_parameter(p.config_stanley_srv_name).value)
 
         self.cli_change_controller = self.create_client(ChangeController, srv_change_ctrl)
         self.cli_config_pp = self.create_client(ConfigPurePursuitCtrl, srv_config_pp)
@@ -578,7 +612,7 @@ class RosSide(Node):
         path = Path()
         path.header.frame_id = 'wgs84'
         path.header.stamp = self.get_clock().now().to_msg()
-        for (lat, lon) in pts:
+        for (lat, lon) in (pts or []):
             ps = PoseStamped()
             ps.header.frame_id = 'wgs84'
             ps.pose.position.x = float(lon)
@@ -597,6 +631,37 @@ class RosSide(Node):
                 pass
 
         self.get_logger().warn(f"RobotPath service not ready, ignored {len(pts)} waypoints")
+
+    def save_current_path(self, filename: str):
+        name = str(filename or '').strip()
+        if not name or not self.cli_write_path.service_is_ready():
+            self.get_logger().warn(f"WritePathToFile service not ready/invalid filename: {name}")
+            return
+
+        req = self._srv_WritePathToFile.Request()
+        req.filename = name
+        self.cli_write_path.call_async(req)
+        self.get_logger().info(f"Save path -> {name}")
+
+    def load_saved_path(self, filename: str):
+        name = str(filename or '').strip()
+        if not name or not self.cli_read_path.service_is_ready():
+            self.get_logger().warn(f"ReadPathFromFile service not ready/invalid filename: {name}")
+            return
+
+        req = self._srv_ReadPathFromFile.Request()
+        req.filename = name
+        self.cli_read_path.call_async(req)
+        self.get_logger().info(f"Load path -> {name}")
+
+    def start_path_following(self):
+        self.send_state(0)
+
+    def stop_path_following(self):
+        self.send_state(1)
+
+    def clear_active_path(self):
+        self.send_path([])
 
     def send_cfg(self, cfg: dict):
         """Apply controller selection + parameters.
@@ -715,19 +780,55 @@ class RosSide(Node):
 class MainWindow(QMainWindow):
     def __init__(self, defer_ros_start=True):
         super().__init__()
-        self.setWindowTitle('J8 GUI — Map + Control + FollowZED')
         self._planned = []
+        self._person_records = []
+        self._next_person_id = 1
+        self._person_match_threshold_m = 2.0
+        self._person_pending_distance_m = 20.0
+        self._person_rescued_distance_m = 5.0
+        self._auto_person_tracking_enabled = True
         self._ros = None
         self._defer_ros = defer_ros_start
         self._tile_proxy = None
+        self._exec = None
+        self._th = None
+        self._current_namespace = 'ARGJ801'
+        self._robot_roles = {self._current_namespace: 'explorador'}
+        self._pending_js_by_key = {}
+        self._pending_js_generic = []
+        self._js_flush_timer = QTimer(self)
+        self._js_flush_timer.setSingleShot(True)
+        self._js_flush_timer.timeout.connect(self._flush_js_queue)
+        self._persons_refresh_timer = QTimer(self)
+        self._persons_refresh_timer.setSingleShot(True)
+        self._persons_refresh_timer.timeout.connect(self._apply_refresh_person_records_view)
 
         self.tabs = QTabWidget()
         self._build_tab_mission()
         self._build_tab_control()
+        self._build_tab_persons()
         self.tabs.currentChanged.connect(self._on_tab_changed)
 
         right = QWidget()
         rv = QVBoxLayout(right); rv.setContentsMargins(0,0,0,0)
+
+        robot_row = QHBoxLayout()
+        self.cmb_robot = QComboBox()
+        self.cmb_robot.setEditable(True)
+        self.cmb_robot.addItems(['ARGJ801', 'ARGJ802', 'ARGJ803'])
+        self.cmb_role = QComboBox()
+        self.cmb_role.setEditable(True)
+        self.cmb_role.addItems(ROBOT_ROLE_LABELS)
+        self.cmb_role.setCurrentText(self._robot_roles[self._current_namespace])
+        self.cmb_robot.setCurrentText(self._current_namespace)
+        self.btn_apply_robot = QPushButton('Aplicar robot')
+        self.btn_apply_robot.clicked.connect(self._on_apply_robot_namespace)
+        robot_row.addWidget(QLabel('Robot:'))
+        robot_row.addWidget(self.cmb_robot, 1)
+        robot_row.addWidget(QLabel('Rol:'))
+        robot_row.addWidget(self.cmb_role, 1)
+        robot_row.addWidget(self.btn_apply_robot)
+        rv.addLayout(robot_row)
 
         # Map controls
         self.chk_follow_robot = QCheckBox('Seguir robot')
@@ -745,6 +846,7 @@ class MainWindow(QMainWindow):
         sp.setStretchFactor(1, 1)
         self.setCentralWidget(sp)
         self.resize(1400, 900)
+        self._update_window_title()
 
         self._init_map()
 
@@ -777,10 +879,117 @@ class MainWindow(QMainWindow):
         self.control_tab = ControlWidget(self._ros)
         self.tabs.addTab(self.control_tab, 'Control')
 
+    def _build_tab_persons(self):
+        self.persons_tab = PersonsWidget()
+        self.persons_tab.statusChangeRequested.connect(self._on_person_status_change)
+        self.persons_tab.assignmentRequested.connect(self._on_person_assignment_change)
+        self.persons_tab.autoTrackingChanged.connect(self._on_auto_person_tracking_changed)
+        self.persons_tab.thresholdsChanged.connect(self._on_person_thresholds_changed)
+        self.persons_tab.set_current_robot(self._current_namespace)
+        self.persons_tab.set_current_role(self._robot_roles.get(self._current_namespace, 'explorador'))
+        self.persons_tab.set_auto_tracking(self._auto_person_tracking_enabled)
+        self.persons_tab.set_thresholds(self._person_pending_distance_m, self._person_rescued_distance_m)
+        self.tabs.addTab(self.persons_tab, 'Personas')
+
 
     def _build_tab_follow(self):
         self.follow_tab = FollowZEDWidget(self._ros)
         self.tabs.addTab(self.follow_tab, 'FollowZED')
+
+    def _refresh_follow_tab(self):
+        if not hasattr(self, 'follow_tab'):
+            self._build_tab_follow()
+            return
+
+        index = self.tabs.indexOf(self.follow_tab)
+        if index < 0:
+            self.follow_tab = FollowZEDWidget(self._ros)
+            self.tabs.addTab(self.follow_tab, 'FollowZED')
+            return
+
+        was_current = self.tabs.currentIndex() == index
+        old_follow = self.follow_tab
+        self.follow_tab = FollowZEDWidget(self._ros)
+        self.tabs.removeTab(index)
+        self.tabs.insertTab(index, self.follow_tab, 'FollowZED')
+        if was_current:
+            self.tabs.setCurrentIndex(index)
+        old_follow.deleteLater()
+
+    def _normalized_namespace(self, namespace: str) -> str:
+        value = str(namespace or '').strip().strip('/')
+        return value or 'ARGJ801'
+
+    def _update_window_title(self):
+        role = self._robot_roles.get(self._current_namespace, 'sin rol')
+        self.setWindowTitle(f'J8 GUI — {self._current_namespace} [{role}] — Map + Control + FollowZED')
+
+    def _build_mission_topics(self, namespace: str):
+        from j8_gui.ros_api import namespaced
+
+        ns = self._normalized_namespace(namespace)
+        return {
+            'fsm_mode': namespaced(ns, 'fsm_mode'),
+            'possible_transitions': namespaced(ns, 'possible_transitions'),
+            'cte': namespaced(ns, 'cte'),
+            'look_ahead_distance': namespaced(ns, 'look_ahead_distance'),
+            'min_distance_to_path': namespaced(ns, 'min_distance_to_path'),
+            'detected_persons_latlon': namespaced(ns, 'detected_persons_latlon'),
+            'detected_persons_global_latlon': '/detected_persons_latlon_global',
+        }
+
+    def _connect_robot_namespace(self, namespace: str):
+        ns = self._normalized_namespace(namespace)
+        old_ros = self._ros
+
+        self._ros = RosSide(namespace=ns)
+        self._exec.add_node(self._ros)
+
+        self._current_namespace = ns
+        self._person_records = []
+        self._next_person_id = 1
+        self.cmb_robot.setCurrentText(ns)
+        self.cmb_role.setCurrentText(self._robot_roles.get(ns, 'explorador'))
+        self._update_window_title()
+
+        self.mission_tab.set_ros(self._ros)
+        self.mission_tab.attach_ros(self._exec, topics=self._build_mission_topics(ns))
+        self.control_tab.set_ros(self._ros)
+        self.persons_tab.set_current_robot(ns)
+        self.persons_tab.set_current_role(self._robot_roles.get(ns, 'explorador'))
+        self.persons_tab.set_auto_tracking(self._auto_person_tracking_enabled)
+        self.persons_tab.set_thresholds(self._person_pending_distance_m, self._person_rescued_distance_m)
+        self.persons_tab.set_records([])
+        self._js_set_detected_persons([])
+
+        if hasattr(self, 'follow_tab'):
+            self._refresh_follow_tab()
+
+        if old_ros is not None:
+            try:
+                self._exec.remove_node(old_ros)
+            except Exception:
+                pass
+            try:
+                old_ros.destroy_node()
+            except Exception:
+                pass
+
+    def _on_apply_robot_namespace(self):
+        namespace = self._normalized_namespace(self.cmb_robot.currentText())
+        role = self.cmb_role.currentText().strip() or 'explorador'
+        self._robot_roles[namespace] = role
+        if namespace == self._current_namespace and self._ros is not None:
+            self.persons_tab.set_current_role(role)
+            self._update_window_title()
+            return
+        if self._exec is None:
+            self._current_namespace = namespace
+            self.persons_tab.set_current_robot(namespace)
+            self.persons_tab.set_current_role(role)
+            self._update_window_title()
+            return
+        self._connect_robot_namespace(namespace)
 
     def _on_tab_changed(self, index: int):
         if not hasattr(self, 'follow_tab'):
@@ -845,6 +1054,7 @@ class MainWindow(QMainWindow):
         # We hook the signal here because main_window owns the web view and JS calls.
         try:
             self.mission_tab.state._signals.gps_pose.connect(self._on_gps_pose)
+            self.mission_tab.state._signals.detected_persons.connect(self._on_detected_persons)
         except Exception:
             # If the widget structure changes, we fail gracefully (map just won't show vehicle).
             pass
@@ -877,6 +1087,7 @@ class MainWindow(QMainWindow):
 
         pan = bool(self.chk_follow_robot.isChecked())
         self._js_update_vehicle(lat_f, lon_f, heading_deg, pan=pan, no_gps=False)
+        self._auto_update_person_statuses(lat_f, lon_f)
 
     def _js_update_vehicle(self, lat: float, lon: float, heading_deg, pan: bool = False, no_gps: bool = False):
         """Send vehicle update to map.
@@ -910,21 +1121,242 @@ class MainWindow(QMainWindow):
         if pan:
             self._js_call(f'window.panTo({lat_f}, {lon_f});')
 
+    def _on_detected_persons(self, points):
+        if not isinstance(points, list):
+            return
+        self._merge_detected_persons(points)
+        self._refresh_person_records_view()
+
+    def _merge_detected_persons(self, points):
+        unmatched_records = {
+            record['id']
+            for record in self._person_records
+            if record.get('status') != 'rescued'
+        }
+
+        for point in points:
+            person_id = 0
+            if isinstance(point, dict):
+                try:
+                    lat = float(point['lat'])
+                    lon = float(point['lon'])
+                    person_id = int(point.get('id', 0) or 0)
+                except Exception:
+                    continue
+            else:
+                try:
+                    lat = float(point[0])
+                    lon = float(point[1])
+                except Exception:
+                    continue
+
+            if person_id > 0:
+                existing = next((record for record in self._person_records if int(record['id']) == person_id), None)
+                if existing is not None:
+                    existing['lat'] = lat
+                    existing['lon'] = lon
+                    existing.setdefault('assigned_robot', '')
+                    existing.setdefault('status_source', 'auto')
+                    continue
+
+            best_record = None
+            best_distance = None
+            for record in self._person_records:
+                if record.get('status') == 'rescued':
+                    continue
+                if record['id'] not in unmatched_records:
+                    continue
+                distance = _haversine_m(lat, lon, record['lat'], record['lon'])
+                if distance > self._person_match_threshold_m:
+                    continue
+                if best_distance is None or distance < best_distance:
+                    best_distance = distance
+                    best_record = record
+
+            if best_record is not None:
+                best_record['lat'] = lat
+                best_record['lon'] = lon
+                best_record.setdefault('assigned_robot', '')
+                best_record.setdefault('status_source', 'auto')
+                unmatched_records.discard(best_record['id'])
+                continue
+
+            self._person_records.append({
+                'id': person_id if person_id > 0 else self._next_person_id,
+                'lat': lat,
+                'lon': lon,
+                'status': 'detected',
+                'status_source': 'auto',
+                'assigned_robot': '',
+                'distance_m': None,
+            })
+            if person_id > 0:
+                self._next_person_id = max(self._next_person_id, person_id + 1)
+            else:
+                self._next_person_id += 1
+
+        self._person_records.sort(key=lambda record: int(record['id']))
+
+    def _refresh_person_records_view(self):
+        if not self._persons_refresh_timer.isActive():
+            self._persons_refresh_timer.start(120)
+
+    def _apply_refresh_person_records_view(self):
+        self.persons_tab.set_records(self._person_records)
+        points = []
+        for record in self._person_records:
+            if record.get('status') == 'rescued':
+                continue
+            points.append({
+                'id': int(record['id']),
+                'lat': float(record['lat']),
+                'lon': float(record['lon']),
+                'status': str(record.get('status', 'detected')),
+                'assigned_robot': str(record.get('assigned_robot', '') or ''),
+                'distance_m': record.get('distance_m', None),
+            })
+        self._js_set_detected_persons(points)
+
+    def _auto_update_person_statuses(self, robot_lat: float, robot_lon: float):
+        changed = False
+        for record in self._person_records:
+            status = str(record.get('status', 'detected'))
+            try:
+                distance = _haversine_m(robot_lat, robot_lon, record['lat'], record['lon'])
+            except Exception:
+                continue
+
+            previous_distance = record.get('distance_m', None)
+            record['distance_m'] = float(distance)
+            if previous_distance is None or abs(float(previous_distance) - float(distance)) >= 1.0:
+                changed = True
+
+            if status == 'rescued':
+                continue
+            if not self._auto_person_tracking_enabled:
+                continue
+
+            if distance <= self._person_rescued_distance_m:
+                if status != 'rescued':
+                    record['status'] = 'rescued'
+                    record['status_source'] = 'auto'
+                    if not record.get('assigned_robot'):
+                        record['assigned_robot'] = self._current_namespace
+                    changed = True
+            elif distance <= self._person_pending_distance_m and str(record.get('status_source', 'auto')) != 'manual':
+                if status == 'detected':
+                    record['status'] = 'pending'
+                    record['status_source'] = 'auto'
+                    if not record.get('assigned_robot'):
+                        record['assigned_robot'] = self._current_namespace
+                    changed = True
+
+        if changed:
+            self._refresh_person_records_view()
+
+    def _on_person_status_change(self, person_id: int, status: str):
+        status_value = str(status or '').strip().lower()
+        if status_value not in {'detected', 'pending', 'rescued'}:
+            return
+        for record in self._person_records:
+            if int(record['id']) == int(person_id):
+                record['status'] = status_value
+                record['status_source'] = 'manual'
+                if status_value in {'pending', 'rescued'} and not record.get('assigned_robot'):
+                    record['assigned_robot'] = self._current_namespace
+                break
+        self._refresh_person_records_view()
+
+    def _on_person_assignment_change(self, person_id: int, robot_name: str):
+        robot_value = str(robot_name or '').strip()
+        for record in self._person_records:
+            if int(record['id']) == int(person_id):
+                record['assigned_robot'] = robot_value
+                break
+        self._refresh_person_records_view()
+
+    def _on_auto_person_tracking_changed(self, enabled: bool):
+        self._auto_person_tracking_enabled = bool(enabled)
+        lat, lon, _ = self._last_vehicle
+        if self._have_vehicle_gps:
+            self._auto_update_person_statuses(lat, lon)
+        self._refresh_person_records_view()
+
+    def _on_person_thresholds_changed(self, pending_m: float, rescued_m: float):
+        self._person_pending_distance_m = max(float(pending_m), 1.0)
+        self._person_rescued_distance_m = max(min(float(rescued_m), self._person_pending_distance_m), 1.0)
+        self.persons_tab.set_thresholds(self._person_pending_distance_m, self._person_rescued_distance_m)
+        lat, lon, _ = self._last_vehicle
+        if self._have_vehicle_gps:
+            self._auto_update_person_statuses(lat, lon)
+        self._refresh_person_records_view()
+
+    def _js_set_detected_persons(self, points):
+        safe_points = []
+        for point in points:
+            if isinstance(point, dict):
+                try:
+                    safe_points.append({
+                        'id': int(point.get('id', 0)),
+                        'lat': float(point['lat']),
+                        'lon': float(point['lon']),
+                        'status': str(point.get('status', 'detected')),
+                        'assigned_robot': str(point.get('assigned_robot', '') or ''),
+                        'distance_m': point.get('distance_m', None),
+                    })
+                except Exception:
+                    continue
+                continue
+
+            try:
+                lat = float(point[0])
+                lon = float(point[1])
+            except Exception:
+                continue
+            safe_points.append({'id': 0, 'lat': lat, 'lon': lon, 'status': 'detected'})
+        self._js_call(f'window.setDetectedPersons({json.dumps(safe_points)});')
+
+    @staticmethod
+    def _classify_js_call(js: str):
+        if js.startswith('window.setMission('):
+            return 'mission'
+        if js.startswith('window.setDetectedPersons('):
+            return 'persons'
+        if js.startswith('window.updateVehicle('):
+            return 'vehicle'
+        if js.startswith('window.panTo('):
+            return 'pan'
+        return None
+
+    def _flush_js_queue(self):
+        page = self.web.page() if hasattr(self, 'web') else None
+        if page is None:
+            self._pending_js_by_key.clear()
+            self._pending_js_generic.clear()
+            return
+
+        ordered_keys = ['mission', 'persons', 'vehicle', 'pan']
+        for key in ordered_keys:
+            js = self._pending_js_by_key.pop(key, None)
+            if js:
+                page.runJavaScript(js)
+
+        generic_calls = self._pending_js_generic[:8]
+        self._pending_js_generic.clear()
+        for js in generic_calls:
+            page.runJavaScript(js)
+
     # ===== ROS =====
     def start_ros(self):
-        if self._ros:
-            return
         if not rclpy.ok():
             rclpy.init(args=None)
-        self._ros = RosSide()
-        self._exec = rclpy.executors.SingleThreadedExecutor()
-        self._exec.add_node(self._ros)
-        self._th = threading.Thread(target=self._spin_executor, daemon=True)
-        self._th.start()
-        self._build_tab_follow()
-        self.mission_tab.set_ros(self._ros)
-        self.mission_tab.attach_ros(self._exec)  # puedes pasar topics={'imu':'/mavros/imu/data', ...}
-        self.control_tab.set_ros(self._ros)
+        if self._exec is None:
+            self._exec = rclpy.executors.SingleThreadedExecutor()
+            self._th = threading.Thread(target=self._spin_executor, daemon=True)
+            self._th.start()
+        self._connect_robot_namespace(self._current_namespace)
+        if not hasattr(self, 'follow_tab'):
+            self._build_tab_follow()
 
     def _spin_executor(self):
         while rclpy.ok():
@@ -1027,7 +1459,20 @@ class MainWindow(QMainWindow):
             self.tbl.setItem(i, 2, QTableWidgetItem(f"{lon:.7f}"))
 
     def _js_call(self, js: str):
-        self.web.page().runJavaScript(js)
+        page = self.web.page() if hasattr(self, 'web') else None
+        if page is None:
+            return
+
+        key = self._classify_js_call(js)
+        if key is None:
+            self._pending_js_generic.append(js)
+            if len(self._pending_js_generic) > 8:
+                self._pending_js_generic = self._pending_js_generic[-8:]
+        else:
+            self._pending_js_by_key[key] = js
+
+        if not self._js_flush_timer.isActive():
+            self._js_flush_timer.start(33)
 
     def _js_set_mission(self):
         js_array = json.dumps(self._planned)

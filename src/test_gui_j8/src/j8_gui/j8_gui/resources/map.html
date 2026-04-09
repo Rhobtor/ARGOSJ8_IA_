@@ -136,7 +136,48 @@
 
     // ===== Estado misión + estado del vehículo
     // vehMarker: muestra la posición del UGV y (si se aporta) su heading.
-    var vehMarker = null, planned = [], plannedLine = null, plannedMarkers = [];
+    var vehMarker = null, planned = [], plannedLine = null, plannedMarkers = [], detectedPersonsMarkers = [];
+
+    function redrawDetectedPersons() {
+      for (var i = 0; i < detectedPersonsMarkers.length; i++) {
+        map.removeLayer(detectedPersonsMarkers[i]);
+      }
+      detectedPersonsMarkers = [];
+
+      for (var j = 0; j < window.__detectedPersons.length; j++) {
+        var pt = window.__detectedPersons[j];
+        var lat = Array.isArray(pt) ? pt[0] : pt.lat;
+        var lon = Array.isArray(pt) ? pt[1] : pt.lon;
+        var status = Array.isArray(pt) ? 'detected' : (pt.status || 'detected');
+        var personId = Array.isArray(pt) ? 0 : (pt.id || 0);
+        var assignedRobot = Array.isArray(pt) ? '' : (pt.assigned_robot || '');
+        var distanceM = Array.isArray(pt) ? null : pt.distance_m;
+        var fillColor = '#dc2626';
+        var strokeColor = '#7f1d1d';
+
+        if (status === 'pending') {
+          fillColor = '#facc15';
+          strokeColor = '#a16207';
+        }
+
+        var marker = L.circleMarker([lat, lon], {
+          radius: 7,
+          color: strokeColor,
+          weight: 2,
+          fillColor: fillColor,
+          fillOpacity: 0.92
+        }).addTo(map);
+        if (personId) {
+          var tooltip = 'Persona ' + personId + ' · ' + status;
+          if (assignedRobot) tooltip += ' · ' + assignedRobot;
+          if (distanceM !== null && distanceM !== undefined && !isNaN(distanceM)) {
+            tooltip += ' · ' + Number(distanceM).toFixed(1) + ' m';
+          }
+          marker.bindTooltip(tooltip, {direction: 'top'});
+        }
+        detectedPersonsMarkers.push(marker);
+      }
+    }
 
     function makeVehicleIcon(headingDeg, opts) {
       // Arrow marker built with pure HTML/CSS (no external assets).
@@ -282,6 +323,8 @@
     //   updateVehicle(lat, lon, headingDeg, opts)
     // opts:
     //   { color: '#rrggbb', badge: 'NO GPS' }
+    window.__detectedPersons = [];
+
     window.updateVehicle = function(lat, lon, headingDeg, opts) {
       // If headingDeg is omitted, keep current rotation (if any).
       var icon = null;
@@ -303,6 +346,7 @@
     };
     window.setMission = function(points){ planned = points || []; redrawPlanned(); };
     window.clearMission = function(){ planned = []; redrawPlanned(); };
+    window.setDetectedPersons = function(points){ window.__detectedPersons = points || []; redrawDetectedPersons(); };
     window.panTo = function(lat, lon){ map.panTo([lat, lon]); };
   });
   </script>

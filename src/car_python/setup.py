@@ -169,6 +169,12 @@ setup(
 
             'check_goal_gnss=car.check_goal_gnss:main',
 
+            'detected_persons_local_to_latlon=car.detected_persons_local_to_latlon:main',
+
+            'fake_person_local_detections=car.fake_person_local_detections:main',
+
+            'fake_robot_pose=car.fake_robot_pose:main',
+
         ],
     },
     cmdclass={

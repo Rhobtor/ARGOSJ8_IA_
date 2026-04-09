@@ -1,14 +1,14 @@
 {
   "package_name": "slg_msgs",
-  "output_dir": "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_generator_rs/slg_msgs",
+  "output_dir": "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_generator_rs/slg_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource",
   "idl_tuples": [
-    "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs:msg/Segment.idl",
-    "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs:msg/SegmentArray.idl"
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs:msg/Segment.idl",
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs:msg/SegmentArray.idl"
   ],
   "ros_interface_files": [
-    "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/Segment.idl",
-    "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/SegmentArray.idl"
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/Segment.idl",
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/SegmentArray.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -89,10 +89,10 @@
     "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/templates/msg_rmw.rs.em",
     "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/templates/srv_idiomatic.rs.em",
     "/opt/ros/humble/share/rosidl_generator_rs/cmake/../resource/templates/srv_rmw.rs.em",
-    "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/Segment.idl",
-    "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/SegmentArray.idl",
-    "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/Segment.idl",
-    "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/SegmentArray.idl",
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/Segment.idl",
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/SegmentArray.idl",
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/Segment.idl",
+    "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/slg_msgs/rosidl_adapter/slg_msgs/msg/SegmentArray.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

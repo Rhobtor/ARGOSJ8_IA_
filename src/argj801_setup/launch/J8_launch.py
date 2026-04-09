@@ -6,14 +6,13 @@ Este fichero define el *orquestador* de arranque del stack ROS 2 del rover/simul
 Su objetivo es:
 
 - Cargar una configuración única (`config/J8_params.yaml`) y repartirla a los nodos.
-- Lanzar un conjunto de nodos (muchos de ellos *LifecycleNodes*) bajo el namespace `ARGJ801`.
+- Lanzar un conjunto de nodos (muchos de ellos *LifecycleNodes*) bajo un namespace configurable.
 - Gestionar una secuencia de transición de lifecycle (configure/activate) de forma diferida
     para evitar carreras durante el arranque.
 
 Notas importantes:
 
-- Namespace: se usa `ARGJ801` de forma fija en este launch. Si en el futuro se quiere
-    soportar múltiples rovers, lo ideal es convertirlo en argumento de launch.
+- Namespace: puede ajustarse con el argumento de launch `robot_namespace`.
 - Lifecycle: algunos nodos se configuran siempre, pero sólo unos pocos se activan
     automáticamente en `nodes_to_activate`.
 - Modo operación plataforma: el nodo `argj801_ctrl_platform_node` se crea mediante
@@ -52,6 +51,13 @@ def generate_launch_description():
 
     # Declare launch arguments
     ld.add_action(DeclareLaunchArgument('robot', default_value='false', description='Launch robot nodes if true'))
+    ld.add_action(
+        DeclareLaunchArgument(
+            'robot_namespace',
+            default_value='ARGJ801',
+            description='ROS namespace used by the J8 stack and GUI-facing topics/services.',
+        )
+    )
     ld.add_action(
         DeclareLaunchArgument(
             'platform_mode',
@@ -94,6 +100,7 @@ def generate_launch_description():
     config_path = os.path.join(get_package_share_directory('argj801_setup'), 'config', 'J8_params.yaml')
     yaml_config = load_yaml(config_path)
     global_params = yaml_config['ARGJ801']['global_parameters']
+    robot_namespace = LaunchConfiguration('robot_namespace')
 
     # Function to select appropriate parameters
     def select_params(node_name):
@@ -122,7 +129,7 @@ def generate_launch_description():
         else:
             operation_mode = 1 if robot == 'true' else 2
         ctrlPlataformNode = LifecycleNode(
-            package='argj801_ctl_platform', executable='ARGJ801_ctl_platform', name='argj801_ctrl_platform_node', namespace='ARGJ801', output='screen',
+            package='argj801_ctl_platform', executable='ARGJ801_ctl_platform', name='argj801_ctrl_platform_node', namespace=robot_namespace, output='screen',
             parameters=[
                 global_params,
                 select_params('argj801_ctrl_platform_node'),
@@ -158,69 +165,73 @@ def generate_launch_description():
     # -------------------------------------------------------------------------
     # Nota general de diseño:
     # - La mayoría son LifecycleNodes (gestionan configure/activate).
-    # - Se ejecutan bajo el namespace `ARGJ801` para que el GUI y el resto del
-    #   sistema trabajen con nombres como `/ARGJ801/fsm_mode`, etc.
+    # - Se ejecutan bajo el namespace configurado para que el GUI y el resto del
+    #   sistema trabajen con nombres como `/<robot_namespace>/fsm_mode`, etc.
     # - Los parámetros se componen como [global_params, params_del_nodo].
     controlmissionNode = LifecycleNode(
-        package='ctl_mission', executable='ctl_mission', name='ctl_mission_node', namespace='ARGJ801', output='screen', parameters=[global_params])
+        package='ctl_mission', executable='ctl_mission', name='ctl_mission_node', namespace=robot_namespace, output='screen', parameters=[global_params])
     controllerNode = LifecycleNode(
-        package='ctl_mission', executable='controller_node', name='controller_node', namespace='ARGJ801', output='screen',
+        package='ctl_mission', executable='controller_node', name='controller_node', namespace=robot_namespace, output='screen',
         parameters=[global_params, select_params('controller_node')])
     pathfollowingNode = LifecycleNode(
-        package='ctl_mission', executable='path_following', name='path_following_node', namespace='ARGJ801', output='screen', parameters=[global_params, select_params('path_following_node')])
+        package='ctl_mission', executable='path_following', name='path_following_node', namespace=robot_namespace, output='screen', parameters=[global_params, select_params('path_following_node')])
     teleoperationNode = LifecycleNode(
-        package='ctl_mission', executable='teleoperation_node', name='teleoperation_node', namespace='ARGJ801', output='screen', parameters=[global_params, select_params('teleoperation_node')])
+        package='ctl_mission', executable='teleoperation_node', name='teleoperation_node', namespace=robot_namespace, output='screen', parameters=[global_params, select_params('teleoperation_node')])
     pathRecordNode = LifecycleNode(
-        package='ctl_mission', executable='path_record_node', name='path_record_node', namespace='ARGJ801', output='screen', parameters=[global_params, select_params('path_record_node')])
+        package='ctl_mission', executable='path_record_node', name='path_record_node', namespace=robot_namespace, output='screen', parameters=[global_params, select_params('path_record_node')])
     readyNode = LifecycleNode(
-        package='ctl_mission', executable='ready_node', name='ready_node', namespace='ARGJ801', output='screen', parameters=[global_params])
+        package='ctl_mission', executable='ready_node', name='ready_node', namespace=robot_namespace, output='screen', parameters=[global_params])
     followZEDNode = LifecycleNode(
-        package='ctl_mission', executable='follow_zed_node', name='follow_zed_node', namespace='ARGJ801', output='screen', parameters=[global_params])
+        package='ctl_mission', executable='follow_zed_node', name='follow_zed_node', namespace=robot_namespace, output='screen', parameters=[global_params])
 
     mppiSacRelayNode = LifecycleNode(
-        package='ctl_mission', executable='mppi_sac_relay_node', name='mppi_sac_relay_node', namespace='ARGJ801', output='screen',
+        package='ctl_mission', executable='mppi_sac_relay_node', name='mppi_sac_relay_node', namespace=robot_namespace, output='screen',
         parameters=[global_params, select_params('mppi_sac_relay_node')])
+
+    detectedPersonsLocalToLatLonNode = Node(
+        package='car', executable='detected_persons_local_to_latlon', name='detected_persons_local_to_latlon', namespace=robot_namespace, output='screen',
+        parameters=[global_params, select_params('detected_persons_local_to_latlon')])
     
     estopNode = LifecycleNode(
-        package='ctl_mission', executable='estop_node', name='estop_node', namespace='ARGJ801', output='screen', parameters=[global_params])
+        package='ctl_mission', executable='estop_node', name='estop_node', namespace=robot_namespace, output='screen', parameters=[global_params])
     backhomeNode = LifecycleNode(
-        package='ctl_mission', executable='back_home_node', name='back_home_node', namespace='ARGJ801', output='screen', parameters=[global_params])
+        package='ctl_mission', executable='back_home_node', name='back_home_node', namespace=robot_namespace, output='screen', parameters=[global_params])
     pathManagerNode = LifecycleNode(
-        package='path_manager', executable='path_manager_node', name='path_manager_node', namespace='ARGJ801', output='screen',
+        package='path_manager', executable='path_manager_node', name='path_manager_node', namespace=robot_namespace, output='screen',
         parameters=[global_params, select_params('path_manager_node')])
     securityCheckNode = LifecycleNode(
-        package='security_check', executable='security_check_node', name='security_check_node', namespace='ARGJ801', output='screen',
+        package='security_check', executable='security_check_node', name='security_check_node', namespace=robot_namespace, output='screen',
         parameters=[global_params, select_params('security_check_node')])
     MPCPlannerNode = LifecycleNode(
-        package='ctl_mission', executable='mpc_node.py', name='mpc_node', namespace='ARGJ801', output='screen',
+        package='ctl_mission', executable='mpc_node.py', name='mpc_node', namespace=robot_namespace, output='screen',
         parameters=[global_params, select_params('mpc_node')],
         condition=IfCondition(LaunchConfiguration('enable_mpc')),
     )
     joystickNode = LifecycleNode(
-        package='joy', executable='joy_node', name='joy_node', namespace='ARGJ801', output='screen',
+        package='joy', executable='joy_node', name='joy_node', namespace=robot_namespace, output='screen',
         parameters=[global_params, select_params('argj801_ctrl_platform_node')])
     fixpositionDriverNode = Node(
         package='fixposition_driver_ros2', executable='fixposition_driver_ros2_exec', name='fixposition_driver_ros2', output='screen',
         parameters=[global_params, select_params('fixposition_driver_ros2')])
     argj801_sensors = LifecycleNode(
-        package='argj801_sensors', executable='ARGJ801_sensors_node', name='ARGJ801_sensors_node', namespace='ARGJ801', output='screen',
+        package='argj801_sensors', executable='ARGJ801_sensors_node', name='ARGJ801_sensors_node', namespace=robot_namespace, output='screen',
         parameters=[global_params, select_params('argj801_sensors')],
         arguments=[LaunchConfiguration('sensors_source')],
     )
     android_server_node = LifecycleNode(
-        package='android_ros2_server', executable='tcp_server_node', name='android_server', namespace='ARGJ801', output='log',
+        package='android_ros2_server', executable='tcp_server_node', name='android_server', namespace=robot_namespace, output='log',
         parameters=[global_params, select_params('android_server_node')])
     tf_node_velodyne = Node(
         package='tf2_ros', executable='static_transform_publisher', name='static_transform_velodyne', output='screen',
         arguments=['1.99348', '0', '0.27133', '1', '0', '0', '0', yaml_config['ARGJ801']['global_parameters']['robot_frame'], yaml_config['ARGJ801']['global_parameters']['velodyne_frame']])
     laser_segmentation_node = LifecycleNode(
-        package='laser_segmentation', namespace='ARGJ801', executable='laser_segmentation', name='laser_segmentation',
+        package='laser_segmentation', namespace=robot_namespace, executable='laser_segmentation', name='laser_segmentation',
         parameters=[global_params, select_params('laser_segmentation')])
     tf_node_sick = Node(
         package='tf2_ros', executable='static_transform_publisher', name='static_transform_sick', output='screen',
         arguments=['1.86558', '0', '0.37865', '1', '0', '0', '0', yaml_config['ARGJ801']['global_parameters']['robot_frame'], yaml_config['ARGJ801']['global_parameters']['sick_frame']])
     gui_node = Node(
-        package='GUI_pkg', executable='gui_node', name='gui_node', namespace='ARGJ801', output='screen',
+        package='GUI_pkg', executable='gui_node', name='gui_node', namespace=robot_namespace, output='screen',
         parameters=[global_params])
 
     # -------------------------------------------------------------------------
@@ -274,7 +285,7 @@ def generate_launch_description():
     ld.add_action(LogInfo(condition=IfCondition(LaunchConfiguration('use_gui')), msg="Launching GUI node"))
 
     # Nodos comunes (se lanzan siempre; su activación depende de los eventos)
-    for node in [controlmissionNode, controllerNode, pathfollowingNode, teleoperationNode, pathRecordNode, readyNode,followZEDNode, estopNode, backhomeNode, pathManagerNode, securityCheckNode, MPCPlannerNode, android_server_node, laser_segmentation_node, mppiSacRelayNode]:
+    for node in [controlmissionNode, controllerNode, pathfollowingNode, teleoperationNode, pathRecordNode, readyNode,followZEDNode, estopNode, backhomeNode, pathManagerNode, securityCheckNode, MPCPlannerNode, android_server_node, laser_segmentation_node, mppiSacRelayNode, detectedPersonsLocalToLatLonNode]:
         ld.add_action(node)
 
     # Nodos exclusivos de robot real (sensores/TF/hardware)

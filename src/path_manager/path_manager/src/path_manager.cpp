@@ -140,7 +140,7 @@ void PathManager::receivePath(const std::shared_ptr<path_manager_interfaces::srv
     // Servicio para inyectar directamente una ruta en memoria.
     robot_path.poses.clear();
     robot_path = req->path;
-    
+    res->ack = true;
 }
 
 void PathManager::assistEmergency(const std::shared_ptr<path_manager_interfaces::srv::AssistEmergency::Request> req,

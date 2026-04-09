@@ -1,8 +1,8 @@
-# Install script for directory: /home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces__rs
+# Install script for directory: /home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/argj801_ctl_platform_interfaces__rs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rhobtor/PHD/ARGOSJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/install/argj801_ctl_platform_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

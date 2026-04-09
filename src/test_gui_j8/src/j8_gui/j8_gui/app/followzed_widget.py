@@ -79,6 +79,9 @@ class FollowZEDWidget(QWidget):
         self._subscriptions_started = True
         self._subscribe()
 
+    def set_ros(self, node):
+        self.node = node
+
     def _subscribe(self):
         try:
             self._sub_raw = self.node.create_subscription(Image, self.topic_raw, self._on_raw, qos_profile_sensor_data)

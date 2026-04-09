@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "../rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/Cargo.toml"
-  "../rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/build.rs"
-  "../rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/src/lib.rs"
-  "../rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/src/msg.rs"
-  "../rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/src/msg/rmw.rs"
-  "../rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/src/srv.rs"
-  "../rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/src/srv/rmw.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/Cargo.toml"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/build.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/src/lib.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/src/msg.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/src/msg/rmw.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/src/srv.rs"
+  "/home/rhobtor/PHD/ARGOJ8_IA/ARGOSJ8_IA_/build/argj801_ctl_platform_interfaces/rosidl_generator_rs/argj801_ctl_platform_interfaces/rust/src/srv/rmw.rs"
   "CMakeFiles/argj801_ctl_platform_interfaces__rs"
 )
 

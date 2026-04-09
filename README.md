@@ -58,6 +58,8 @@ colcon build --symlink-install
 
 Launch and configuraiton to run all the nodes can be found in a [dedicated package](https://github.com/Robotics-Mechatronics-UMA/argj801_setup).
 
+For the current operational state of the new `j8_gui`, persons flow, namespace behavior, and multi-robot notes, see [docs/j8_gui_operacion_actual.md](docs/j8_gui_operacion_actual.md).
+
 ### Quick start (local)
 
 Source the workspace:

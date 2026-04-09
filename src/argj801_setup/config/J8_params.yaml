@@ -90,6 +90,15 @@ ARGJ801:
     controller_ip: "192.168.1.116"
     controller_port: 5555
 
+  detected_persons_local_to_latlon:
+    # Puntos detectados en el frame local del robot (X forward, Y left).
+    input_topic: "detected_persons_local"
+    # Salida para la GUI en lat/lon, codificada como PoseArray (x=lat, y=lon).
+    output_topic: "detected_persons_latlon"
+    fix_topic: "/fixposition/navsatfix"
+    imu_topic: "/imu_head/data"
+    publish_if_heading_missing: false
+
   path_record_node:
     # Distancia mínima entre puntos consecutivos al grabar una ruta (m).
     distance_between_record_points: 1.0
