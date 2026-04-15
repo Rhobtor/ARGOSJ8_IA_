@@ -58,6 +58,24 @@ En otras palabras: la GUI es una capa de operacion y observacion conectada al st
 
 ## Lo que se puede hacer hoy desde la GUI
 
+## Como lanzar el J8 con namespace
+
+El launch principal del stack es este:
+
+- `ros2 launch argj801_setup J8_launch.py robot:=true robot_namespace:=ARGJ801`
+
+Ejemplos utiles:
+
+- robot `ARGJ801`: `ros2 launch argj801_setup J8_launch.py robot:=true robot_namespace:=ARGJ801`
+- robot `ARGJ802`: `ros2 launch argj801_setup J8_launch.py robot:=true robot_namespace:=ARGJ802`
+
+Argumentos relevantes de ese launch:
+
+- `robot:=true`: arranca el stack en modo robot
+- `robot_namespace:=ARGJ801`: pone todos los nodos, topics y servicios bajo ese namespace
+
+
+
 ### 1. Seleccionar robot por namespace
 
 La GUI puede operar sobre distintos robots, por ejemplo:
@@ -128,6 +146,69 @@ El flujo de rutas conectado al stack es este:
 5. El estado `PathFollowing` recupera la ruta desde `path_manager` y la sigue.
 
 Esto significa que la ejecucion de rutas no es una simulacion local de la GUI. La GUI esta usando el flujo operativo del sistema.
+
+## Interfaz real para meter paths en el J8
+
+La GUI nueva no manda los paths por un topic propio de GUI. Los manda al stack del J8 por la interfaz de `path_manager`.
+
+### Opcion 1. Servicio usado por la GUI
+
+La interfaz principal que usa `j8_gui` es este servicio namespaced:
+
+- `/<robot_namespace>/receive_ll_path`
+
+Ejemplo:
+
+- `/ARGJ801/receive_ll_path`
+
+Tipo de servicio:
+
+- `path_manager_interfaces/srv/RobotPath`
+
+Estructura del servicio:
+
+- request: `nav_msgs/Path path`
+- response: `bool ack`
+
+La GUI construye el `nav_msgs/Path` con:
+
+- `header.frame_id = "wgs84"`
+- cada waypoint en `pose.position.x = lon`
+- cada waypoint en `pose.position.y = lat`
+
+### Opcion 2. Topic alternativo aceptado por path_manager
+
+Ademas del servicio, `path_manager` tambien escucha este topic namespaced:
+
+- `/<robot_namespace>/ll_path`
+
+Ejemplo:
+
+- `/ARGJ801/ll_path`
+
+Tipo de mensaje:
+
+- `nav_msgs/msg/Path`
+
+Cuando llega un `Path` por ese topic, `path_manager` lo guarda como ruta activa y lo marca internamente con `frame_id = "ll"`.
+
+### Servicios relacionados con paths ya guardados o activos
+
+Otros nombres utiles bajo namespace son:
+
+- `/<robot_namespace>/get_robot_Path`: devuelve la ruta activa guardada en `path_manager`
+- `/<robot_namespace>/read_path_file`: carga una ruta desde fichero
+- `/<robot_namespace>/write_path_file`: guarda la ruta actual a fichero
+- `/<robot_namespace>/get_ll_path`: devuelve la ruta en lat/lon
+- `/<robot_namespace>/path_planner`: servicio de planificacion expuesto por `path_manager`
+
+### Recomendacion practica
+
+Si otra herramienta quiere mandar al J8 exactamente el mismo tipo de path que manda la GUI, lo mas alineado con la implementacion actual es usar:
+
+- `/<robot_namespace>/receive_ll_path`
+
+con un request `path_manager_interfaces/srv/RobotPath`.
 
 ## Flujo de personas detectadas
 
@@ -311,6 +392,108 @@ Los puntos mas utiles que ya estan operativos son estos:
 - `/<robot_namespace>/detected_persons_latlon`: publica las personas detectadas por un robot concreto en lat/lon
 - `/detected_persons_latlon_global`: publica detecciones de todos los robots en un flujo comun
 - servicio `RobotPath` hacia `path_manager`: recibe la ruta activa que se quiere seguir
+
+## Servicios utiles para operar por comandos
+
+Si se quiere operar el stack desde terminal, scripts o herramientas externas, estos son los servicios mas utiles. Todos ellos cuelgan del namespace del robot:
+
+- `/<robot_namespace>/...`
+
+Ejemplo con `ARGJ801`:
+
+- `/ARGJ801/...`
+
+### 1. FSM y estado general
+
+- `/<robot_namespace>/change_fsm` o `/<robot_namespace>/change_fsm_mode`: cambiar transicion del FSM
+   - tipo: `ctl_mission_interfaces/srv/ChangeMode`
+- `/<robot_namespace>/get_fsm_mode`: consultar estado/lifecycle del nodo de mision
+   - tipo: `lifecycle_msgs/srv/GetState`
+- `/<robot_namespace>/get_possible_transitions`: consultar transiciones posibles del FSM
+   - tipo: `ctl_mission_interfaces/srv/GetPossibleTransitions`
+
+Nota importante:
+
+- en `j8_gui/test_gui_j8` el nombre por defecto usado para cambiar FSM es `change_fsm`
+- en `ctl_mission` aparece tambien el nombre interno por defecto `change_fsm_mode`
+- antes de automatizar conviene confirmar cual esta expuesto realmente en el robot con `ros2 service list`
+
+### 2. Paths y planificacion
+
+- `/<robot_namespace>/receive_ll_path`: inyectar una ruta completa en `path_manager`
+   - tipo: `path_manager_interfaces/srv/RobotPath`
+- `/<robot_namespace>/get_robot_Path`: recuperar la ruta activa guardada en `path_manager`
+   - tipo: `path_manager_interfaces/srv/ReturnRobotPath`
+- `/<robot_namespace>/read_path_file`: cargar una ruta desde fichero
+   - tipo: `path_manager_interfaces/srv/ReadPathFromFile`
+- `/<robot_namespace>/write_path_file`: guardar la ruta actual a fichero
+   - tipo: `path_manager_interfaces/srv/WritePathToFile`
+- `/<robot_namespace>/get_ll_path`: pedir la ruta actual en lat/lon
+   - tipo: `path_manager_interfaces/srv/GetLLPath`
+- `/<robot_namespace>/path_planner`: pedir una planificacion de ruta
+   - tipo: `path_manager_interfaces/srv/PlanPath`
+- `/<robot_namespace>/assist_emergency`: servicio adicional de apoyo a ruta de emergencia
+   - tipo: `path_manager_interfaces/srv/AssistEmergency`
+
+### 3. Controladores de seguimiento
+
+Estos servicios son utiles si se quiere cambiar o reconfigurar el controlador desde fuera:
+
+- `/<robot_namespace>/change_controller_type`
+   - tipo: `ctl_mission_interfaces/srv/ChangeController`
+- `/<robot_namespace>/config_pure_pursuit`
+   - tipo: `ctl_mission_interfaces/srv/ConfigPurePursuitCtrl`
+- `/<robot_namespace>/config_stanley`
+   - tipo: `ctl_mission_interfaces/srv/ConfigStanleyCtrl`
+- `/<robot_namespace>/config_dynamic_pure`
+   - tipo: `ctl_mission_interfaces/srv/ConfigDynamicPureCtrl`
+- `/<robot_namespace>/config_dynamic_la_pure`
+   - tipo: `ctl_mission_interfaces/srv/ConfigDynamicLAPureCtrl`
+- `/<robot_namespace>/config_regulated_pure`
+   - tipo: `ctl_mission_interfaces/srv/ConfigRegulatedPureCtrl`
+
+### 4. Seguridad
+
+- `/<robot_namespace>/enable_security_check`
+   - tipo: `std_srvs/srv/SetBool`
+- `/<robot_namespace>/get_security_check`
+   - tipo: `security_check_interfaces/srv/GetSecurityCheckStatus`
+- `/<robot_namespace>/security_password_check`
+   - tipo: `security_check_interfaces/srv/PasswordCheck`
+
+### 5. Plataforma del rover
+
+Servicios expuestos por `argj801_ctrl_platform_node`:
+
+- `/<robot_namespace>/emergency_stop`
+   - tipo: `argj801_ctl_platform_interfaces/srv/EmergencyStop`
+- `/<robot_namespace>/set_velocity`
+   - tipo: `argj801_ctl_platform_interfaces/srv/SetVelocity`
+- `/<robot_namespace>/get_velocity`
+   - tipo: `argj801_ctl_platform_interfaces/srv/GetVelocity`
+- `/<robot_namespace>/ping`
+   - tipo: `std_srvs/srv/Empty`
+
+Nota:
+
+- `set_velocity`, `get_velocity` y `ping` dependen del modo de plataforma y pueden no estar disponibles en todos los modos de operacion
+
+## Comprobacion rapida por terminal
+
+Antes de automatizar contra estos nombres, merece la pena comprobar en runtime lo que realmente ha levantado el robot:
+
+- listar servicios del robot: `ros2 service list | grep ARGJ801`
+- ver el tipo de un servicio: `ros2 service type /ARGJ801/receive_ll_path`
+- ver la interfaz completa: `ros2 interface show path_manager_interfaces/srv/RobotPath`
+- listar topics del robot: `ros2 topic list | grep ARGJ801`
+
+## Recomendaciones practicas
+
+- Para enviar rutas desde una herramienta externa, usar `/<robot_namespace>/receive_ll_path`.
+- Para leer la ruta activa actual, usar `/<robot_namespace>/get_robot_Path`.
+- Para cambiar el FSM, comprobar primero si el nombre real expuesto es `change_fsm` o `change_fsm_mode`.
+- Para un entorno con dos robots, mantener siempre el namespace en todas las llamadas y no usar nombres absolutos mezclados entre robots.
+- Si se quiere construir automatizacion externa, guardar tambien el resultado de `ros2 service list` y `ros2 topic list` de una sesion real para evitar dudas con nombres finales.
 
 ## Limitaciones actuales
 
