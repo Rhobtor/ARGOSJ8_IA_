@@ -14,7 +14,7 @@ class CircuitSupervisor(Node):
 
         # ---------- Parámetros ----------
         self.declare_parameter('launch_cmds', [
-            'ros2 launch car circuit1.launch.py',
+            'ros2 launch car circuit4.launch.py',
             #'ros2 launch car circuit3.launch.py',
             # 'ros2 launch car world_2_c.launch.py',
             # 'ros2 launch car world_3_d.launch.py',

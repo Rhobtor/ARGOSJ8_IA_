@@ -64,7 +64,10 @@ def generate_launch_description():
         executable='joint_state_publisher',
         name='joint_state_publisher',
         output='screen',
-        parameters=[{'use_gui': False}]
+        parameters=[{
+            'use_gui': False,
+            'robot_description': robot_urdf,
+        }]
     )
 
     # map -> odom (identidad provisional)
