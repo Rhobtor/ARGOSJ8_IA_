@@ -81,7 +81,7 @@ class SequentialGoalSelector(Node):
         self.declare_parameter('loop', True)
         self.declare_parameter('compute_yaw_from_path', True)
         self.declare_parameter('goal_frame_id', 'map')
-        self.declare_parameter('reset_values', ['STUCK'])
+        self.declare_parameter('reset_values', ['STUCK', 'COLLISION', 'FLIPPED', 'CLIFF', 'OUT_OF_BOUNDS', 'MANUAL', 'RESET'])
         self.declare_parameter('signal_done_on_last', True)
         self.declare_parameter('hold_when_done', True)
         self.declare_parameter('goal_points_relative_to_robot', False)
