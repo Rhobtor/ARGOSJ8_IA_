@@ -126,7 +126,7 @@ def generate_launch_description():
             'support_leaf_size': 0.35,
             'support_radius_voxels': 1,
             'min_support_points': 3,
-            'min_range': 1.0,
+            'min_range': 1.5,
             'max_range': 60.0,
             'min_z': -3.0,
             'max_z': 3.0,

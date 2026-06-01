@@ -35,7 +35,7 @@ public:
     support_radius_voxels_ = this->declare_parameter<int>("support_radius_voxels", 1);
     min_support_points_ = this->declare_parameter<int>("min_support_points", 3);
 
-    min_range_ = this->declare_parameter<double>("min_range", 1.0);
+      min_range_ = this->declare_parameter<double>("min_range", 1.5);
     max_range_ = this->declare_parameter<double>("max_range", 60.0);
     min_z_ = this->declare_parameter<double>("min_z", -3.0);
     max_z_ = this->declare_parameter<double>("max_z", 3.0);
