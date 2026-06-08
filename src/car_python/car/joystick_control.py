@@ -8,7 +8,7 @@ class JoystickControlNode(Node):
     def __init__(self):
         super().__init__('joystick_control')
         self.joy_subscriber = self.create_subscription(
-            Joy, '/joy', self.joy_callback, 10)
+            Joy, '/ARGJ801/joy', self.joy_callback, 10)
         # self.command_publisher = self.create_publisher(
         #     CmdThrottleMsg, '/ARGJ801/cmd_throttle_msg', 10)
         self.command_publisher = self.create_publisher(

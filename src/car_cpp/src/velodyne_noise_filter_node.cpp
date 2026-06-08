@@ -62,6 +62,9 @@ public:
     hsy_ = this->declare_parameter<double>("hood_box_size_y", 1.20);
     hsz_ = this->declare_parameter<double>("hood_box_size_z", 1.10);
 
+    output_qos_reliable_ = this->declare_parameter<bool>("output_qos_reliable", true);
+    output_qos_depth_ = this->declare_parameter<int>("output_qos_depth", 10);
+
     pass_through_if_no_tf_ = this->declare_parameter<bool>("pass_through_if_no_tf", true);
     debug_log_ = this->declare_parameter<bool>("debug_log", true);
 
@@ -93,8 +96,20 @@ public:
       RCLCPP_WARN(this->get_logger(), "reject_origin_epsilon < 0. Se fuerza a 0.05");
       reject_origin_epsilon_ = 0.05;
     }
+    if (output_qos_depth_ < 1) {
+      RCLCPP_WARN(this->get_logger(), "output_qos_depth < 1. Se fuerza a 10");
+      output_qos_depth_ = 10;
+    }
 
-    pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(output_topic_, rclcpp::SensorDataQoS());
+    auto output_qos = rclcpp::QoS(rclcpp::KeepLast(static_cast<std::size_t>(output_qos_depth_)));
+    output_qos.durability_volatile();
+    if (output_qos_reliable_) {
+      output_qos.reliable();
+    } else {
+      output_qos.best_effort();
+    }
+
+    pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(output_topic_, output_qos);
     sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
       input_topic_, rclcpp::SensorDataQoS(), std::bind(&VelodyneNoiseFilterNode::cloudCallback, this, _1));
 
@@ -110,6 +125,7 @@ public:
       "  support_leaf: %.3f | support_radius: %d | min_support_points: %d\n"
       "  range: [%.2f, %.2f] | z: [%.2f, %.2f]\n"
       "  reject_origin: %s (eps=%.3f)\n"
+      "  output_qos: %s (depth=%d)\n"
       "  exclude_box: %s (frame=%s)\n"
       "  hood_box: %s (frame=%s)",
       input_topic_.c_str(), output_topic_.c_str(),
@@ -117,6 +133,7 @@ public:
       support_leaf_size_, support_radius_voxels_, min_support_points_,
       min_range_, max_range_, min_z_, max_z_,
       reject_origin_enabled_ ? "ON" : "OFF", reject_origin_epsilon_,
+      output_qos_reliable_ ? "RELIABLE" : "BEST_EFFORT", output_qos_depth_,
       exclude_enabled_ ? "ON" : "OFF", exclude_frame_.c_str(),
       hood_enabled_ ? "ON" : "OFF", exclude_frame_.c_str());
   }
@@ -480,6 +497,9 @@ private:
   double hsx_;
   double hsy_;
   double hsz_;
+
+  bool output_qos_reliable_;
+  int output_qos_depth_;
 
   bool pass_through_if_no_tf_;
   bool debug_log_;

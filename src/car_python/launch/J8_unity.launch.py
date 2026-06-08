@@ -32,6 +32,13 @@ def generate_launch_description():
     )
     use_lidar_alias = LaunchConfiguration('use_lidar_alias')
 
+    use_velodyne_frame_alias_arg = DeclareLaunchArgument(
+        'use_velodyne_frame_alias',
+        default_value='true',
+        description='Crear alias TF Velodyne_link -> velodyne (identidad) para nubes que llegan en frame velodyne'
+    )
+    use_velodyne_frame_alias = LaunchConfiguration('use_velodyne_frame_alias')
+
     # ======= Compatibilidad con frame "mmap" (si RViz lo usa como Fixed Frame) =======
     publish_mmap_alias_arg = DeclareLaunchArgument(
         'publish_mmap_alias',
@@ -151,6 +158,20 @@ def generate_launch_description():
         }]
     )
 
+    velodyne_link_to_velodyne_alias = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='velodyne_link_to_velodyne_alias',
+        arguments=[
+            '--frame-id', 'Velodyne_link',
+            '--child-frame-id', 'velodyne',
+            '--x', '0', '--y', '0', '--z', '0',
+            '--roll', '0', '--pitch', '0', '--yaw', '0',
+        ],
+        output='screen',
+        condition=IfCondition(use_velodyne_frame_alias)
+    )
+
     # (Opcional) alias Velodyne_link -> lidar_link (identidad)
     velodyne_to_lidar_alias = Node(
         package='tf2_ros',
@@ -168,6 +189,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         use_lidar_alias_arg,
+        use_velodyne_frame_alias_arg,
         publish_mmap_alias_arg,
         publish_static_odom_to_base_arg,
         robot_state_publisher_node,
@@ -176,5 +198,6 @@ def generate_launch_description():
         odom_base_tf,
         base_camera_tf,
         velodyne_noise_filter,
+        velodyne_link_to_velodyne_alias,
         velodyne_to_lidar_alias,
     ])
