@@ -10,19 +10,19 @@ setup(
         ('share/ament_index/resource_index/packages', ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/resources', [
-        'cuadriga_gui/resources/map.html',
+        'gui/resources/map.html',
         ]),
             ('share/ament_index/resource_index/packages', ['resource/gui']),
             ('share/gui', ['package.xml']),
-            ('share/gui/resources', ['cuadriga_gui/resources/map.html']),
+            ('share/gui/resources', ['gui/resources/map.html']),
             ('share/gui/resources/vendor/leaflet', [
-                'cuadriga_gui/resources/vendor/leaflet/leaflet.js',
-                'cuadriga_gui/resources/vendor/leaflet/leaflet.css',
+                'gui/resources/vendor/leaflet/leaflet.js',
+                'gui/resources/vendor/leaflet/leaflet.css',
             ]),
             ('share/gui/resources/vendor/leaflet/images', [
-                'cuadriga_gui/resources/vendor/leaflet/images/marker-icon.png',
-                'cuadriga_gui/resources/vendor/leaflet/images/marker-icon-2x.png',
-                'cuadriga_gui/resources/vendor/leaflet/images/marker-shadow.png',
+                'gui/resources/vendor/leaflet/images/marker-icon.png',
+                'gui/resources/vendor/leaflet/images/marker-icon-2x.png',
+                'gui/resources/vendor/leaflet/images/marker-shadow.png',
             ]),
         
         # Si incluyes Leaflet en repo, añade:
@@ -40,7 +40,7 @@ setup(
         tests_require=['pytest'],
         entry_points={
         'console_scripts': [
-        'gui = cuadriga_gui.gui_node:main',
+        'gui = gui.gui_node:main',
         ],
     },
 )

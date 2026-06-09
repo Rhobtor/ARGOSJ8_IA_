@@ -35,11 +35,11 @@ from sensor_msgs.msg import NavSatFix
 from geometry_msgs.msg import PoseStamped, PoseArray
 from nav_msgs.msg import Path, Odometry
 
-from cuadriga_gui.app.map_bridge import MapBridge
-from cuadriga_gui.app.state_widget import MissionWidget
-from cuadriga_gui.app.control_widget import ControlWidget
-from cuadriga_gui.app.person_manager_widget import PersonsWidget
-from cuadriga_gui.app.video_tab import VideoTabWidget
+from gui.app.map_bridge import MapBridge
+from gui.app.state_widget import MissionWidget
+from gui.app.control_widget import ControlWidget
+from gui.app.person_manager_widget import PersonsWidget
+from gui.app.video_tab import VideoTabWidget
 
 
 
@@ -581,9 +581,10 @@ class TileProxy:
 class RosSide(Node):
     def __init__(self, namespace: str = 'ARGJ801'):
         super().__init__('gui_node')
+        self._path_control_mode = 'internal'
 
         # --- Compatibilidad con GUI_pkg (parámetros y defaults) ---
-        from cuadriga_gui.ros_api import cuadrigaGuiDefaults, cuadrigaGuiParams, namespaced
+        from gui.ros_api import cuadrigaGuiDefaults, cuadrigaGuiParams, namespaced
 
         p = cuadrigaGuiParams()
         d = cuadrigaGuiDefaults()
@@ -600,9 +601,14 @@ class RosSide(Node):
         self.declare_parameter(p.fsm_get_possible_transition_srv_name, d.fsm_get_possible_transition_srv_name)
         self.declare_parameter(p.path_planner_srv_name, d.path_planner_srv_name)
         self.declare_parameter(p.receive_ll_path_srv_name, d.receive_ll_path_srv_name)
+        self.declare_parameter(p.receive_external_path_srv_name, d.receive_external_path_srv_name)
         self.declare_parameter(p.read_path_service, d.read_path_service)
+        self.declare_parameter(p.read_external_path_service, d.read_external_path_service)
         self.declare_parameter(p.write_path_service, d.write_path_service)
+        self.declare_parameter(p.write_external_path_service, d.write_external_path_service)
         self.declare_parameter(p.return_path_service, d.return_path_service)
+        self.declare_parameter(p.return_external_path_service, d.return_external_path_service)
+        self.declare_parameter(p.external_path_command_topic_name, d.external_path_command_topic_name)
         self.declare_parameter(p.config_controller_srv_name, d.config_controller_srv_name)
         self.declare_parameter(p.change_controller_srv_name, d.change_controller_srv_name)
         self.declare_parameter(p.config_pure_pursuit_srv_name, d.config_pure_pursuit_srv_name)
@@ -616,10 +622,12 @@ class RosSide(Node):
         srv_change_fsm = namespaced(self.namespace, self.get_parameter(p.fsm_change_fsm_mode_srv_name).value)
         srv_get_state = namespaced(self.namespace, self.get_parameter(p.fsm_get_fsm_srv_name).value)
         srv_receive_ll_path = namespaced(self.namespace, self.get_parameter(p.receive_ll_path_srv_name).value)
+        srv_receive_external_path = namespaced(self.namespace, self.get_parameter(p.receive_external_path_srv_name).value)
 
         # clients (equivalentes a GUI_pkg/ros_classes.py)
         from ctl_mission_interfaces.srv import ChangeMode, GetMode, GetPossibleTransitions
         from path_manager_interfaces.srv import RobotPath, ReadPathFromFile, WritePathToFile, ReturnRobotPath
+        from std_msgs.msg import String as MsgString
 
         self._srv_ChangeMode = ChangeMode
         self._srv_GetMode = GetMode
@@ -635,13 +643,23 @@ class RosSide(Node):
         srv_get_possible_transitions = namespaced(self.namespace, self.get_parameter(p.fsm_get_possible_transition_srv_name).value)
         self.cli_get_possible_transitions = self.create_client(GetPossibleTransitions, srv_get_possible_transitions)
         self.cli_send_draw_path = self.create_client(RobotPath, srv_receive_ll_path)
+        self.cli_send_external_path = self.create_client(RobotPath, srv_receive_external_path)
 
         srv_read_path = namespaced(self.namespace, self.get_parameter(p.read_path_service).value)
+        srv_read_external_path = namespaced(self.namespace, self.get_parameter(p.read_external_path_service).value)
         srv_write_path = namespaced(self.namespace, self.get_parameter(p.write_path_service).value)
+        srv_write_external_path = namespaced(self.namespace, self.get_parameter(p.write_external_path_service).value)
         srv_return_path = namespaced(self.namespace, self.get_parameter(p.return_path_service).value)
+        srv_return_external_path = namespaced(self.namespace, self.get_parameter(p.return_external_path_service).value)
         self.cli_read_path = self.create_client(ReadPathFromFile, srv_read_path)
+        self.cli_read_external_path = self.create_client(ReadPathFromFile, srv_read_external_path)
         self.cli_write_path = self.create_client(WritePathToFile, srv_write_path)
+        self.cli_write_external_path = self.create_client(WritePathToFile, srv_write_external_path)
         self.cli_return_path = self.create_client(ReturnRobotPath, srv_return_path)
+        self.cli_return_external_path = self.create_client(ReturnRobotPath, srv_return_external_path)
+        topic_external_path_command = namespaced(self.namespace, self.get_parameter(p.external_path_command_topic_name).value)
+        self.pub_external_path_command = self.create_publisher(MsgString, topic_external_path_command, 10)
+        self._msg_String = MsgString
 
         # Controller config services (ctl_mission CtrlNode)
         from ctl_mission_interfaces.srv import (
@@ -769,7 +787,17 @@ class RosSide(Node):
             "Guided target requested but J8 has no known guided-target API in the legacy contract"
         )
 
-    def send_path(self, pts):
+    def set_path_control_mode(self, mode: str):
+        normalized = 'external' if str(mode or '').strip().lower() == 'external' else 'internal'
+        if normalized == self._path_control_mode:
+            return
+        self._path_control_mode = normalized
+        self.get_logger().info(f"Path control mode -> {normalized}")
+
+    def is_external_path_control_enabled(self) -> bool:
+        return self._path_control_mode == 'external'
+
+    def _build_wgs84_path(self, pts):
         path = Path()
         path.header.frame_id = 'wgs84'
         path.header.stamp = self.get_clock().now().to_msg()
@@ -779,49 +807,104 @@ class RosSide(Node):
             ps.pose.position.x = float(lon)
             ps.pose.position.y = float(lat)
             path.poses.append(ps)
+        return path
 
-        # Envío al J8 via servicio (RobotPath) soportado por GUI_pkg
-        if self.cli_send_draw_path.service_is_ready():
-            try:
-                req = self._srv_RobotPath.Request()
-                req.path = path
-                self.cli_send_draw_path.call_async(req)
-                self.get_logger().info(f"Path -> {len(pts)} waypoints (service)")
-                return
-            except Exception:
-                pass
+    def _handle_robot_path_response(self, future, label: str, waypoint_count: int):
+        try:
+            response = future.result()
+        except Exception as exc:
+            self.get_logger().warn(f"{label} response failed: {exc}")
+            return
 
-        self.get_logger().warn(f"RobotPath service not ready, ignored {len(pts)} waypoints")
+        ack = getattr(response, 'ack', None)
+        if ack is False:
+            self.get_logger().warn(f"{label} rejected {waypoint_count} waypoints")
+            return
+
+        self.get_logger().info(f"{label} accepted {waypoint_count} waypoints")
+
+    def _send_path_via_service(self, client, pts, label: str):
+        if not client.service_is_ready():
+            self.get_logger().warn(f"{label} service not ready, ignored {len(pts)} waypoints")
+            return False
+
+        try:
+            req = self._srv_RobotPath.Request()
+            req.path = self._build_wgs84_path(pts)
+            future = client.call_async(req)
+            future.add_done_callback(
+                lambda done, service_label=label, waypoint_count=len(pts):
+                    self._handle_robot_path_response(done, service_label, waypoint_count)
+            )
+            self.get_logger().info(f"{label} request queued -> {len(pts)} waypoints")
+            return True
+        except Exception as exc:
+            self.get_logger().warn(f"{label} call failed: {exc}")
+            return False
+
+    def _publish_external_path_command(self, command: str):
+        cmd = str(command or '').strip().lower()
+        if not cmd:
+            return False
+        try:
+            msg = self._msg_String()
+            msg.data = cmd
+            self.pub_external_path_command.publish(msg)
+            self.get_logger().info(f"External path command -> {cmd}")
+            return True
+        except Exception as exc:
+            self.get_logger().warn(f"External path command publish failed: {exc}")
+            return False
+
+    def send_path(self, pts):
+        if self.is_external_path_control_enabled():
+            self._send_path_via_service(self.cli_send_external_path, pts, 'ExternalPath')
+            return
+        self._send_path_via_service(self.cli_send_draw_path, pts, 'Path')
 
     def save_current_path(self, filename: str):
         name = str(filename or '').strip()
-        if not name or not self.cli_write_path.service_is_ready():
-            self.get_logger().warn(f"WritePathToFile service not ready/invalid filename: {name}")
+        client = self.cli_write_external_path if self.is_external_path_control_enabled() else self.cli_write_path
+        label = 'WriteExternalPathToFile' if self.is_external_path_control_enabled() else 'WritePathToFile'
+        if not name or not client.service_is_ready():
+            self.get_logger().warn(f"{label} service not ready/invalid filename: {name}")
             return
 
         req = self._srv_WritePathToFile.Request()
         req.filename = name
-        self.cli_write_path.call_async(req)
-        self.get_logger().info(f"Save path -> {name}")
+        client.call_async(req)
+        self.get_logger().info(f"Save path ({self._path_control_mode}) -> {name}")
 
     def load_saved_path(self, filename: str):
         name = str(filename or '').strip()
-        if not name or not self.cli_read_path.service_is_ready():
-            self.get_logger().warn(f"ReadPathFromFile service not ready/invalid filename: {name}")
+        client = self.cli_read_external_path if self.is_external_path_control_enabled() else self.cli_read_path
+        label = 'ReadExternalPathFromFile' if self.is_external_path_control_enabled() else 'ReadPathFromFile'
+        if not name or not client.service_is_ready():
+            self.get_logger().warn(f"{label} service not ready/invalid filename: {name}")
             return
 
         req = self._srv_ReadPathFromFile.Request()
         req.filename = name
-        self.cli_read_path.call_async(req)
-        self.get_logger().info(f"Load path -> {name}")
+        client.call_async(req)
+        self.get_logger().info(f"Load path ({self._path_control_mode}) -> {name}")
 
     def start_path_following(self):
+        if self.is_external_path_control_enabled():
+            self._publish_external_path_command('start')
+            return
         self.send_state(0)
 
     def stop_path_following(self):
+        if self.is_external_path_control_enabled():
+            self._publish_external_path_command('stop')
+            return
         self.send_state(1)
 
     def clear_active_path(self):
+        if self.is_external_path_control_enabled():
+            self.send_path([])
+            self._publish_external_path_command('clear')
+            return
         self.send_path([])
 
     def send_cfg(self, cfg: dict):
@@ -1025,6 +1108,7 @@ class MainWindow(QMainWindow):
         self._exec = None
         self._th = None
         self._current_namespace = self._default_namespace()
+        self._path_control_mode = 'internal'
         self._known_robot_namespaces = self._initial_known_robot_namespaces(self._current_namespace)
         self._robot_roles = {self._current_namespace: 'explorador'}
         self._robot_relay_urls = self._load_robot_relay_urls()
@@ -1096,6 +1180,9 @@ class MainWindow(QMainWindow):
         robot_row.addWidget(self.cmb_robot, 1)
         robot_row.addWidget(QLabel('Rol:'))
         robot_row.addWidget(self.cmb_role, 1)
+        self.lbl_path_control_mode = QLabel()
+        robot_row.addWidget(QLabel('Control path:'))
+        robot_row.addWidget(self.lbl_path_control_mode)
         robot_row.addWidget(QLabel('Relay video:'))
         robot_row.addWidget(self.ed_relay_url, 2)
         robot_row.addWidget(self.btn_apply_robot)
@@ -1148,6 +1235,7 @@ class MainWindow(QMainWindow):
     #     self.tabs.addTab(w, 'Control')
     def _build_tab_control(self):
         self.control_tab = ControlWidget(self._ros)
+        self.control_tab.pathControlModeChanged.connect(self._on_path_control_mode_changed)
         self.tabs.addTab(self.control_tab, 'Control')
 
     def _build_tab_persons(self):
@@ -1874,10 +1962,17 @@ class MainWindow(QMainWindow):
 
     def _update_window_title(self):
         role = self._robot_roles.get(self._current_namespace, 'sin rol')
-        self.setWindowTitle(f'GUI — {self._current_namespace} [{role}] — Map + Control + FollowZED')
+        mode_label = 'externo' if self._path_control_mode == 'external' else 'interno'
+        if hasattr(self, 'lbl_path_control_mode'):
+            self.lbl_path_control_mode.setText(mode_label)
+        self.setWindowTitle(f'GUI — {self._current_namespace} [{role}] [{mode_label}] — Map + Control + FollowZED')
+
+    def _on_path_control_mode_changed(self, mode: str):
+        self._path_control_mode = 'external' if str(mode or '').strip().lower() == 'external' else 'internal'
+        self._update_window_title()
 
     def _build_mission_topics(self, namespace: str):
-        from cuadriga_gui.ros_api import namespaced
+        from gui.ros_api import namespaced
 
         ns = self._normalized_namespace(namespace)
         fixposition_topics = self._resolve_fixposition_topics(ns)

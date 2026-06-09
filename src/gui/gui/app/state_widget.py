@@ -27,7 +27,7 @@ from nav_msgs.msg import Odometry, Path
 from geometry_msgs.msg import PoseStamped, PoseArray
 from geometry_msgs.msg import Vector3Stamped
 
-from cuadriga_gui.app.geo_local import ll2xy
+from gui.app.geo_local import ll2xy
 
 
 # ===================== Utils =====================
@@ -976,7 +976,7 @@ class MissionWidget(QWidget):
 
         r2 = QHBoxLayout()
         b_add = QPushButton('Añadir WP');  b_add.clicked.connect(self._on_add_wp)
-        b_pan = QPushButton('Centrar en mapa'); b_pan.clicked.connect(self._on_pan)
+        b_pan = QPushButton('Centrar en mapa'); b_pan.clicked.connect(self._on_pan) # cambiar a mandar el path a otro servicio mandar path al nodo help para el mmppi
         b_send = QPushButton('Enviar Path'); b_send.clicked.connect(self._on_send_path)
         b_save = QPushButton('Guardar Path'); b_save.clicked.connect(self._on_save_path)
         b_clear= QPushButton('Limpiar');   b_clear.clicked.connect(self._on_clear)
@@ -1213,10 +1213,15 @@ class MissionWidget(QWidget):
             return
         if not self._ros: return
         # Export also to the car_python circuit config (robot-frame local coords)
-        try:
-            self._export_goal_points_to_circuit_yaml(self._planned)
-        except Exception as e:
-            print(f"[cuadriga_gui] WARN: could not export circuit_1.yaml: {e}")
+        is_external_mode = bool(
+            hasattr(self._ros, 'is_external_path_control_enabled')
+            and self._ros.is_external_path_control_enabled()
+        )
+        if not is_external_mode:
+            try:
+                self._export_goal_points_to_circuit_yaml(self._planned)
+            except Exception as e:
+                print(f"[cuadriga_gui] WARN: could not export circuit_1.yaml: {e}")
 
         # usa el helper del RosSide que ya tienes:
         self._ros.send_path(self._planned)

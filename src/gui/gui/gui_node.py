@@ -1,7 +1,7 @@
 import sys
 from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import QTimer
-from cuadriga_gui.app.main_window import MainWindow
+from gui.app.main_window import MainWindow
 import os
 
 DEFAULT_CYCLONEDDS_URI = 'file:///etc/cyclonedds/local_cyclonedds.xml'

@@ -167,6 +167,8 @@ setup(
 
             'gnss_goal_circuit=car.gnss_goal_circuit:main',
 
+            'external_path_controller=car.external_path_controller:main',
+
             'check_goal_gnss=car.check_goal_gnss:main',
 
             'detected_persons_local_to_latlon=car.detected_persons_local_to_latlon:main',

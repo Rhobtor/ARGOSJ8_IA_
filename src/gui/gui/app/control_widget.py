@@ -31,7 +31,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Optional
 
-from PySide6.QtCore import Qt
+from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QFormLayout, QLabel,
     QLineEdit, QComboBox, QPushButton, QHBoxLayout
@@ -63,6 +63,8 @@ class ControlConfig:
 
 
 class ControlWidget(QWidget):
+    pathControlModeChanged = Signal(str)
+
     """
     UI:
       - Vel. lineal máx [m/s]
@@ -85,9 +87,23 @@ class ControlWidget(QWidget):
         self._topic = topic             # Topic para modo autónomo
         self._node = None               # Nodo propio (si attach_ros)
         self._pub = None                # Publisher propio (si attach_ros)
+        self._path_control_mode = 'internal'
 
         # ===== UI =====
         root = QVBoxLayout(self)
+
+        mode_row = QHBoxLayout()
+        mode_row.addWidget(QLabel('Control de path:'))
+        self.btn_internal_control = QPushButton('Control interno')
+        self.btn_internal_control.setCheckable(True)
+        self.btn_internal_control.clicked.connect(lambda: self._set_path_control_mode('internal'))
+        self.btn_external_control = QPushButton('Control externo')
+        self.btn_external_control.setCheckable(True)
+        self.btn_external_control.clicked.connect(lambda: self._set_path_control_mode('external'))
+        mode_row.addWidget(self.btn_internal_control)
+        mode_row.addWidget(self.btn_external_control)
+        mode_row.addStretch(1)
+        root.addLayout(mode_row)
 
         # --- Selección de controlador ---
         root.addWidget(QLabel('Controlador de seguimiento:'))
@@ -168,6 +184,7 @@ class ControlWidget(QWidget):
         self.ed_rpp_look_ahead.returnPressed.connect(self.b_apply.click)
 
         self._update_controller_fields_visibility(self.cmb_controller.currentText())
+        self._apply_path_control_mode_buttons()
 
     # ---------- API pública ----------
     def set_ros(self, ros_side: object):
@@ -176,6 +193,11 @@ class ControlWidget(QWidget):
         Debe exponer: send_cfg(self, cfg: dict)
         """
         self._ros = ros_side
+        if self._ros is not None and hasattr(self._ros, 'set_path_control_mode'):
+            self._ros.set_path_control_mode(self._path_control_mode)
+
+    def path_control_mode(self) -> str:
+        return self._path_control_mode
 
     def attach_ros(self, executor, topic: Optional[str] = None):
         """
@@ -237,6 +259,24 @@ class ControlWidget(QWidget):
         self.ed_aang.setText('0.8')
     # No cambiamos el controller
         print('[ControlWidget] Restablecidos valores por defecto.')
+
+    def _apply_path_control_mode_buttons(self):
+        is_external = self._path_control_mode == 'external'
+        self.btn_internal_control.setChecked(not is_external)
+        self.btn_external_control.setChecked(is_external)
+
+    def _set_path_control_mode(self, mode: str):
+        normalized = 'external' if str(mode or '').strip().lower() == 'external' else 'internal'
+        if normalized == self._path_control_mode:
+            self._apply_path_control_mode_buttons()
+            return
+
+        self._path_control_mode = normalized
+        self._apply_path_control_mode_buttons()
+        if self._ros is not None and hasattr(self._ros, 'set_path_control_mode'):
+            self._ros.set_path_control_mode(normalized)
+        self.pathControlModeChanged.emit(normalized)
+        print(f'[ControlWidget] Path control mode -> {normalized}')
 
     # ---------- Utilidades ----------
     def _read_cfg_from_fields(self) -> Optional[ControlConfig]:

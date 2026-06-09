@@ -1,6 +1,6 @@
-"""ROS API contract for j8_gui.
+"""ROS API contract for cuadriga_gui.
 
-This module centralizes topic/service names and parameter defaults so `j8_gui`
+This module centralizes topic/service names and parameter defaults so `cuadriga_gui`
 can be a drop-in replacement for the legacy `GUI_pkg`.
 
 Source of truth (legacy): `src/GUI_pkg/GUI_pkg/ros_classes.py`
@@ -8,7 +8,7 @@ Source of truth (legacy): `src/GUI_pkg/GUI_pkg/ros_classes.py`
 Design goals:
 - Keep the same default names and parameter keys as `GUI_pkg`.
 - Allow overriding via ROS parameters.
-- Keep namespace handling consistent (default: 'ARGJ801').
+- Keep namespace handling consistent (default: 'cuadriga').
 
 """
 
@@ -18,11 +18,11 @@ from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
-class J8GuiParams:
+class cuadrigaGuiParams:
     """Parameter keys used by the legacy GUI."""
 
     # namespace
-    namespace: str = "ARGJ801"
+    namespace: str = "cuadriga"
 
     # topic params (same keys as GUI_pkg)
     filtered_gps_topic_name: str = "filtered_gps_topic_name"
@@ -60,16 +60,16 @@ class J8GuiParams:
 
 
 @dataclass(frozen=True)
-class J8GuiDefaults:
+class cuadrigaGuiDefaults:
     """Default values matching GUI_pkg."""
 
     # topics
     filtered_gps_topic_name: str = "/fixposition/navsatfix"
-    base_gps_topic_name: str = "/ARGJ801/base/gps/fix"
-    rover_gps_topic_name: str = "/ARGJ801/rover/gps/fix"
+    base_gps_topic_name: str = "/cuadriga/base/gps/fix"
+    rover_gps_topic_name: str = "/cuadriga/rover/gps/fix"
     imu_head_topic_name: str = "/imu_head/data"
-    look_ahead_topic_name: str = "/ARGJ801/look_ahead_point"
-    local_path_topic_name: str = "/ARGJ801/local_trajectory_ll"
+    look_ahead_topic_name: str = "/cuadriga/look_ahead_point"
+    local_path_topic_name: str = "/cuadriga/local_trajectory_ll"
     odometry_topic_name: str = "/fixposition/odometry_enu"
     human_gps_topic_name: str = "/Human/gps/fix"
     emergency_call_topic_name: str = "/Human/emergency_call"
@@ -106,6 +106,8 @@ class J8GuiDefaults:
     config_regulated_pure_srv_name: str = "config_regulated_pure"
     path_planner_srv_name: str = "path_planner"
     receive_ll_path_srv_name: str = "receive_ll_path"
+    receive_external_path_srv_name: str = "receive_external_path"
+
 
 
 def namespaced(namespace: str, name: str) -> str:

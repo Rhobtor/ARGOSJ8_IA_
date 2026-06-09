@@ -57,6 +57,11 @@ class cuadrigaGuiParams:
     config_regulated_pure_srv_name: str = "config_regulated_pure_srv_name"
     path_planner_srv_name: str = "path_planner_srv_name"
     receive_ll_path_srv_name: str = "receive_ll_path_srv_name"
+    receive_external_path_srv_name: str = "receive_external_path_srv_name"
+    read_external_path_service: str = "read_external_path_service"
+    return_external_path_service: str = "return_external_path_service"
+    write_external_path_service: str = "write_external_path_service"
+    external_path_command_topic_name: str = "external_path_command_topic_name"
 
 
 @dataclass(frozen=True)
@@ -106,6 +111,11 @@ class cuadrigaGuiDefaults:
     config_regulated_pure_srv_name: str = "config_regulated_pure"
     path_planner_srv_name: str = "path_planner"
     receive_ll_path_srv_name: str = "receive_ll_path"
+    receive_external_path_srv_name: str = "receive_external_path"
+    read_external_path_service: str = "read_external_path_file"
+    return_external_path_service: str = "get_external_robot_Path"
+    write_external_path_service: str = "write_external_path_file"
+    external_path_command_topic_name: str = "external_path_command"
 
 
 def namespaced(namespace: str, name: str) -> str:
