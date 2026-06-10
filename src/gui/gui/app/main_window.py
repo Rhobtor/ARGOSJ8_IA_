@@ -40,6 +40,7 @@ from gui.app.state_widget import MissionWidget
 from gui.app.control_widget import ControlWidget
 from gui.app.person_manager_widget import PersonsWidget
 from gui.app.video_tab import VideoTabWidget
+from gui.app.fsm_debug_widget import FsmDebugWidget
 
 
 
@@ -582,6 +583,7 @@ class RosSide(Node):
     def __init__(self, namespace: str = 'ARGJ801'):
         super().__init__('gui_node')
         self._path_control_mode = 'internal'
+        self._fsm_request_watchdog_timeout_s = 1.5
 
         # --- Compatibilidad con GUI_pkg (parámetros y defaults) ---
         from gui.ros_api import cuadrigaGuiDefaults, cuadrigaGuiParams, namespaced
@@ -637,6 +639,7 @@ class RosSide(Node):
         self._srv_WritePathToFile = WritePathToFile
         self._srv_ReturnRobotPath = ReturnRobotPath
         self._fsm_feedback_signals = None
+        self._pending_service_futures = set()
 
         self.cli_change_fsm = self.create_client(ChangeMode, srv_change_fsm)
         self.cli_get_state = self.create_client(GetMode, srv_get_state)
@@ -699,6 +702,17 @@ class RosSide(Node):
     def set_fsm_feedback_signals(self, signals):
         self._fsm_feedback_signals = signals
 
+    def _track_future(self, future, callback=None):
+        self._pending_service_futures.add(future)
+
+        def _done(done_future):
+            self._pending_service_futures.discard(done_future)
+            if callback is not None:
+                callback(done_future)
+
+        future.add_done_callback(_done)
+        return future
+
     def _emit_fsm_mode_feedback(self, mode: int):
         signals = self._fsm_feedback_signals
         if signals is None:
@@ -727,7 +741,7 @@ class RosSide(Node):
         try:
             req = self._srv_GetMode.Request()
             future = self.cli_get_state.call_async(req)
-            future.add_done_callback(self._handle_get_fsm_mode_response)
+            self._track_future(future, self._handle_get_fsm_mode_response)
             return True
         except Exception as exc:
             self.get_logger().warn(f"GetMode request failed: {exc}")
@@ -739,7 +753,7 @@ class RosSide(Node):
         try:
             req = self._srv_GetPossibleTransitions.Request()
             future = self.cli_get_possible_transitions.call_async(req)
-            future.add_done_callback(self._handle_get_possible_transitions_response)
+            self._track_future(future, self._handle_get_possible_transitions_response)
             return True
         except Exception as exc:
             self.get_logger().warn(f"GetPossibleTransitions request failed: {exc}")
@@ -765,6 +779,32 @@ class RosSide(Node):
         transitions = getattr(response, 'possible_transitions', None)
         self._emit_possible_transitions_feedback(transitions)
 
+    def _handle_change_fsm_response(self, future, transition: int):
+        try:
+            response = future.result()
+        except Exception as exc:
+            self.get_logger().warn(f"ChangeMode response failed for transition {transition}: {exc}")
+            return
+
+        success = bool(getattr(response, 'success', False))
+        self.get_logger().info(f"ChangeMode response -> transition={transition} success={success}")
+
+        if not success:
+            self.get_logger().warn(f"FSM transition rejected by backend: {transition}")
+            return
+
+        # Fuerza un refresco inmediato del estado real y de las transiciones válidas.
+        self.request_fsm_mode()
+        self.request_possible_transitions()
+
+    def _watch_change_fsm_future(self, future, transition: int, service_name: str):
+        if future.done():
+            return
+        self.get_logger().warn(
+            f"ChangeMode future still pending after {self._fsm_request_watchdog_timeout_s:.1f}s "
+            f"for transition {transition} on {service_name}"
+        )
+
     def send_state(self, key: str):
         # Intentar traducir a transición FSM real (GUI_pkg usa servicio ChangeMode)
         # Aquí asumimos que key llega como string numérica o 'int-like'.
@@ -774,10 +814,24 @@ class RosSide(Node):
             transition = None
 
         if transition is not None and self.cli_change_fsm.service_is_ready():
-            req = self._srv_ChangeMode.Request()
-            req.transition = transition
-            self.cli_change_fsm.call_async(req)
-            self.get_logger().info(f"FSM transition -> {transition}")
+            service_name = getattr(self.cli_change_fsm, 'srv_name', '<unknown>')
+            self.get_logger().info(f"FSM transition -> {transition} via {service_name}")
+            try:
+                req = self._srv_ChangeMode.Request()
+                req.transition = transition
+                future = self.cli_change_fsm.call_async(req)
+                threading.Timer(
+                    self._fsm_request_watchdog_timeout_s,
+                    self._watch_change_fsm_future,
+                    args=(future, transition, service_name),
+                ).start()
+                self._track_future(
+                    future,
+                    lambda done_future, selected_transition=transition:
+                        self._handle_change_fsm_response(done_future, selected_transition),
+                )
+            except Exception as exc:
+                self.get_logger().warn(f"ChangeMode call failed for transition {transition}: {exc}")
         else:
             self.get_logger().warn(f"FSM ChangeMode not ready/invalid key, ignored: {key}")
 
@@ -1157,6 +1211,7 @@ class MainWindow(QMainWindow):
         self._build_tab_control()
         self._build_tab_persons()
         self._build_tab_video()
+        self._build_tab_fsm_debug()
         self.tabs.currentChanged.connect(self._on_tab_changed)
 
         right = QWidget()
@@ -1250,6 +1305,10 @@ class MainWindow(QMainWindow):
             relay_base_url=self._relay_url_for_namespace(self._current_namespace)
         )
         self.tabs.addTab(self.video_tab, 'Video')
+
+    def _build_tab_fsm_debug(self):
+        self.fsm_debug_tab = FsmDebugWidget(namespace=self._current_namespace)
+        self.tabs.addTab(self.fsm_debug_tab, 'FSM Debug')
 
     def _default_relay_base_url(self) -> str:
         return os.environ.get('IMAGE_RELAY_BASE_URL', 'http://127.0.0.1:8080').strip() or 'http://127.0.0.1:8080'
@@ -1993,6 +2052,12 @@ class MainWindow(QMainWindow):
         ns = self._remember_robot_namespace(namespace)
         old_ros = self._ros
 
+        if self._exec is not None:
+            try:
+                self.mission_tab.detach_ros(self._exec)
+            except Exception:
+                pass
+
         self._ros = RosSide(namespace=ns)
         self._exec.add_node(self._ros)
 
@@ -2017,10 +2082,19 @@ class MainWindow(QMainWindow):
         self.persons_tab.set_current_robot(ns)
         self.persons_tab.set_current_role(self._robot_roles.get(ns, 'explorador'))
         self.persons_tab.set_records([])
+        if hasattr(self, 'fsm_debug_tab'):
+            self.fsm_debug_tab.set_namespace(ns)
         self._js_set_detected_persons([])
         self._flush_remote_person_streams()
         if hasattr(self, 'video_tab'):
             self.video_tab.set_relay_url(self._relay_url_for_namespace(ns))
+
+        try:
+            self._ros.get_logger().info(f"Connected GUI ROS namespace -> {ns}")
+            self._ros.request_fsm_mode()
+            self._ros.request_possible_transitions()
+        except Exception:
+            pass
 
         if old_ros is not None:
             try:
@@ -2040,13 +2114,6 @@ class MainWindow(QMainWindow):
         relay_url = self.ed_relay_url.text().strip() or self._default_relay_base_url()
         self._robot_roles[namespace] = role
         self._robot_relay_urls[namespace] = relay_url
-        if namespace == self._current_namespace and self._ros is not None:
-            self.persons_tab.set_current_role(role)
-            self.ed_relay_url.setText(relay_url)
-            if hasattr(self, 'video_tab'):
-                self.video_tab.set_relay_url(relay_url)
-            self._update_window_title()
-            return
         if self._exec is None:
             self._current_namespace = namespace
             self.persons_tab.set_current_robot(namespace)
@@ -2056,6 +2123,7 @@ class MainWindow(QMainWindow):
             return
         try:
             self._connect_robot_namespace(namespace)
+            self.persons_tab.set_current_role(role)
         except Exception as e:
             print(f"[GUI] no se pudo conectar al namespace {namespace}: {e}")
 
@@ -2692,7 +2760,8 @@ class MainWindow(QMainWindow):
     def _spin_executor(self):
         while rclpy.ok():
             try:
-                self._exec.spin_once(timeout_sec=0.02)
+                self._exec.spin()
+                return
             except RuntimeError as e:
                 print(f"[GUI] executor runtime error: {e}")
                 time.sleep(0.1)

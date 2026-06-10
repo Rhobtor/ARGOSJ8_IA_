@@ -12,7 +12,9 @@ class JoystickControlNode(Node):
         # self.command_publisher = self.create_publisher(
         #     CmdThrottleMsg, '/ARGJ801/cmd_throttle_msg', 10)
         self.command_publisher = self.create_publisher(
-            Twist, '/cmd_vel', 10)
+
+            Twist, '/cuadriga/external_cmd_vel', 10)
+
         self.get_logger().info("Joystick control node started.")
 
     def joy_callback(self, msg: Joy):

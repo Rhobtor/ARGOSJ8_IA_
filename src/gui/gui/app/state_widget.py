@@ -1048,6 +1048,8 @@ class MissionWidget(QWidget):
             9: 'All → E-Stop',
             10: 'Ready → FollowZED',
             11: 'FollowZED → Ready',
+            12: 'Ready → External cmd_vel',
+            13: 'External cmd_vel → Ready',
         }
         return transition_labels.get(int(transition_id), '')
 
@@ -1074,17 +1076,55 @@ class MissionWidget(QWidget):
         if self._planned:
             self._refresh_table()
 
+    def _selected_transition_id(self):
+        """Devuelve el ID de transición actualmente visible en el combo.
+
+        Algunos refrescos del combo pueden dejar `currentData()` desalineado con el
+        texto mostrado. En ese caso usamos como fuente de verdad el texto visible
+        `Transition N (...)`, que es lo que realmente está seleccionando el usuario.
+        """
+        index = self.cmb_state.currentIndex()
+        if index >= 0:
+            item_data = self.cmb_state.itemData(index)
+            if isinstance(item_data, int) and item_data >= 0:
+                visible_text = self.cmb_state.currentText().strip()
+                match = re.match(r'^Transition\s+(\d+)\b', visible_text)
+                if match:
+                    visible_id = int(match.group(1))
+                    if visible_id != item_data:
+                        return visible_id
+                return item_data
+
+        visible_text = self.cmb_state.currentText().strip()
+        match = re.match(r'^Transition\s+(\d+)\b', visible_text)
+        if match:
+            return int(match.group(1))
+        return None
+
     # ---- Handlers GUI ----
     def _on_change_state(self):
-        label = self.cmb_state.currentText()
         if not self._ros:
-            self.state.set_state(label)
             return
-        key = self.cmb_state.currentData()
+        current_index = self.cmb_state.currentIndex()
+        current_text = self.cmb_state.currentText().strip()
+        current_data = self.cmb_state.itemData(current_index) if current_index >= 0 else None
+        key = self._selected_transition_id()
+        if hasattr(self._ros, 'get_logger'):
+            self._ros.get_logger().info(
+                f"FSM combo click -> index={current_index} text='{current_text}' itemData={current_data} resolved={key} allowed={self._allowed_transition_ids}"
+            )
         # Nunca enviar transiciones inválidas (-1/None)
         if isinstance(key, int) and key >= 0:
             self._ros.send_state(key)
-            self.state.set_state(label)
+            # Invalida la caché local para forzar una relectura real del FSM.
+            # No relanzamos lecturas aquí: si preguntamos antes de que termine
+            # ChangeMode, podemos volver a cachear el estado anterior y bloquear
+            # el refresco posterior correcto.
+            self._fsm_mode = None
+            self._possible_transitions = []
+            self._allowed_transition_ids = []
+            self._apply_possible_transitions_to_combo()
+
             if not self._fsm_service_poll_timer.isActive():
                 self._fsm_service_poll_timer.start()
         else:
@@ -1107,6 +1147,7 @@ class MissionWidget(QWidget):
             4: 'EmergencyStop',
             5: 'RecordPath',
             6: 'FollowZED',
+            7: 'External cmd_vel',
         }
         return mode_labels.get(int(mode), f"FSM {int(mode)}")
 
@@ -1137,9 +1178,9 @@ class MissionWidget(QWidget):
     def _poll_fsm_feedback_services(self):
         if self._ros is None:
             return
-        if self._fsm_mode is None and hasattr(self._ros, 'request_fsm_mode'):
+        if hasattr(self._ros, 'request_fsm_mode') and self._fsm_mode is None:
             self._ros.request_fsm_mode()
-        if not self._possible_transitions and hasattr(self._ros, 'request_possible_transitions'):
+        if hasattr(self._ros, 'request_possible_transitions') and not self._possible_transitions:
             self._ros.request_possible_transitions()
         self._maybe_stop_fsm_service_poll()
 
@@ -1153,7 +1194,15 @@ class MissionWidget(QWidget):
 
     def _apply_possible_transitions_to_combo(self):
         """Puebla el combo de forma dinámica a partir de possible_transitions (IDs)."""
-        allowed = sorted(set(int(x) for x in (self._possible_transitions or []) if isinstance(x, int) and x >= 0))
+        allowed = []
+        seen = set()
+        for value in (self._possible_transitions or []):
+            if not isinstance(value, int) or value < 0:
+                continue
+            if value in seen:
+                continue
+            seen.add(value)
+            allowed.append(int(value))
 
         # No tocar el combo si la lista no ha cambiado: evita resetear selección/foco.
         if allowed == self._allowed_transition_ids:
@@ -1162,7 +1211,7 @@ class MissionWidget(QWidget):
             return
 
         # Preservar selección del usuario si sigue siendo válida
-        prev_data = self.cmb_state.currentData()
+        prev_data = self._selected_transition_id()
         prev_ok = isinstance(prev_data, int) and prev_data >= 0
 
         was_popup = self.cmb_state.view().isVisible()
@@ -1186,8 +1235,18 @@ class MissionWidget(QWidget):
                 idx = self.cmb_state.findData(int(prev_data))
                 if idx >= 0 and not was_popup:
                     self.cmb_state.setCurrentIndex(idx)
+            elif allowed:
+                self.cmb_state.setCurrentIndex(0)
 
             self.btn_change_state.setEnabled(True)
+
+        if hasattr(self._ros, 'get_logger'):
+            current_index = self.cmb_state.currentIndex()
+            current_text = self.cmb_state.currentText().strip()
+            current_data = self.cmb_state.itemData(current_index) if current_index >= 0 else None
+            self._ros.get_logger().info(
+                f"FSM combo refresh -> allowed={allowed} index={current_index} text='{current_text}' itemData={current_data} prev={prev_data} popup={was_popup}"
+            )
 
         self._allowed_transition_ids = allowed
         self.cmb_state.blockSignals(False)
