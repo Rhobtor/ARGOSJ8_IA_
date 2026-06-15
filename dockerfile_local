@@ -137,7 +137,7 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/*
 
 # 8) Entrypoint ---------------------------------------------------------------
-COPY entrypoint.sh /entrypoint.sh
+COPY entrypoint_local.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
