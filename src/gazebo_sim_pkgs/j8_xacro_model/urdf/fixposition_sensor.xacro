@@ -12,7 +12,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fix_position_metal_frame.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fix_position_metal_frame.STL" />
         </geometry>
         <material name="">
           <color rgba="0.89412 0.91373 0.92941 1" />
@@ -21,7 +21,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fix_position_metal_frame.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fix_position_metal_frame.STL" />
         </geometry>
       </collision>
     </link>
@@ -45,7 +45,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fix_position_left_antenna.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fix_position_left_antenna.STL" />
         </geometry>
         <material name="">
           <color rgba="0.054902 0.054902 0.054902 1" />
@@ -54,7 +54,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fix_position_left_antenna.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fix_position_left_antenna.STL" />
         </geometry>
       </collision>
     </link>
@@ -77,7 +77,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fixposition_right_antenna.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fixposition_right_antenna.STL" />
         </geometry>
         <material name="">
           <color rgba="0.054902 0.054902 0.054902 1" />
@@ -86,7 +86,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fixposition_right_antenna.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fixposition_right_antenna.STL" />
         </geometry>
       </collision>
     </link>
@@ -109,7 +109,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fixposition_lower_case.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fixposition_lower_case.STL" />
         </geometry>
         <material name="">
           <color rgba="0.62745 0.62745 0.62745 1" />
@@ -118,7 +118,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fixposition_lower_case.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fixposition_lower_case.STL" />
         </geometry>
       </collision>
     </link>
@@ -141,7 +141,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fixposition_upper_case.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fixposition_upper_case.STL" />
         </geometry>
         <material name="">
           <color rgba="0.89412 0.91373 0.92941 1" />
@@ -150,7 +150,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fixposition_upper_case.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fixposition_upper_case.STL" />
         </geometry>
       </collision>
     </link>
@@ -173,7 +173,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fixposition_camera.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fixposition_camera.STL" />
         </geometry>
         <material name="">
           <color rgba="0 0 0 1" />
@@ -182,7 +182,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Fixposition_camera.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Fixposition_camera.STL" />
         </geometry>
       </collision>
     </link>

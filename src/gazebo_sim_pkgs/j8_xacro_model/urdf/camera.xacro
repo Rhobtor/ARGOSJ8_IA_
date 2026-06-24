@@ -10,7 +10,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Back_camera.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Back_camera.STL" />
         </geometry>
         <!-- The color is predefined -->
         <material name="">
@@ -20,7 +20,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Back_camera.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Back_camera.STL" />
         </geometry>
       </collision>
     </link>

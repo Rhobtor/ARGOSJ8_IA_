@@ -10,7 +10,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Right_gps_holder.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Right_gps_holder.STL" />
         </geometry>
         <material name="">
           <color rgba="0.4 0.48627 0.24314 1" />
@@ -19,7 +19,7 @@
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/Right_gps_holder.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/Right_gps_holder.STL" />
         </geometry>
       </collision>
     </link>

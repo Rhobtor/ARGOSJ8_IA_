@@ -12,14 +12,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/${name}.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/${name}.STL" />
         </geometry>
         <!-- The color is defined in the main file or through a gazebo tag -->
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="file://$(find j8_xacro_model)/meshes/${name}.STL" />
+          <mesh filename="package://j8_xacro_model/meshes/${name}.STL" />
         </geometry>
       </collision>
     </link>

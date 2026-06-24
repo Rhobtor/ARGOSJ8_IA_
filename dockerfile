@@ -17,10 +17,7 @@ ENV ROS_DISTRO=${ROS_DISTRO}
 ENV DEBIAN_FRONTEND=noninteractive \
     LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 \
     SETUPTOOLS_USE_DISTUTILS=stdlib \
-  ROS_DOMAIN_ID=0 \
-  RMW_IMPLEMENTATION=rmw_cyclonedds_cpp \
-  CYCLONEDDS_URI=file:///etc/cyclonedds/local_cyclonedds.xml \
-    QT_X11_NO_MITSHM=1 \
+  QT_X11_NO_MITSHM=1 \
     # Para QtWebEngine dentro de contenedor (si ejecutas como root)
     QTWEBENGINE_DISABLE_SANDBOX=1 \
     # Fallback por software por defecto (puedes override con -e al ejecutar)
@@ -68,12 +65,7 @@ RUN install -d /etc/apt/keyrings && \
       http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" \
       > /etc/apt/sources.list.d/ros2.list
 
-# 4) Repositorio OSRF (Gazebo 11) ---------------------------------------------
-RUN curl -sSL https://packages.osrfoundation.org/gazebo.gpg \
-      | gpg --dearmor -o /etc/apt/keyrings/osrf.gpg && \
-    echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/osrf.gpg] \
-      http://packages.osrfoundation.org/gazebo/ubuntu-stable $(lsb_release -cs) main" \
-      > /etc/apt/sources.list.d/gazebo-stable.list
+
 
 # 5) ROS 2 + deps de sistema ---------------------------------------------------
 RUN apt-get update && \
@@ -83,7 +75,6 @@ RUN apt-get update && \
   ros-${ROS_DISTRO}-rmw-cyclonedds-cpp \
       python3-colcon-common-extensions python3-vcstool python3-rosdep \
       python3-requests \
-      gazebo libgazebo-dev \
       geographiclib-tools libgeographic-dev \
       libopencv-dev libpcl-dev libnanoflann-dev \
       # Dependencias numéricas típicas (cvxpy via pip)
@@ -110,7 +101,6 @@ RUN python3 -m pip install --no-cache-dir --upgrade \
   utm pyproj \
   cvxpy
 
-
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       iproute2 \
@@ -124,12 +114,7 @@ RUN apt-get update && \
 # 7) Copiar código y compilar el workspace -------------------------------------
 WORKDIR /ros2_ws
 COPY src ./src
-RUN mkdir -p /etc/cyclonedds
-COPY local_cyclonedds.xml /etc/cyclonedds/local_cyclonedds.template.xml
 
-# RUN mkdir -p /root/.dds && \
-#   cp /etc/cyclonedds/local_cyclonedds.xml /root/.dds/local_cyclonedds.xml && \
-#   printf '\n# ROS 2 Multi-PC Configuration\nexport ROS_DOMAIN_ID=0\nexport RMW_IMPLEMENTATION=rmw_cyclonedds_cpp\nexport CYCLONEDDS_URI=file:///etc/cyclonedds/local_cyclonedds.xml\n' >> /root/.bashrc
 
 RUN apt-get update && \
     bash -c "set -e \
@@ -140,8 +125,11 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/*
 
 # 8) Entrypoint ---------------------------------------------------------------
-COPY entrypoint.sh /entrypoint.sh
+COPY entrypoint_local.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+# COPY cyclonedds.xml /root/cyclonedds.xml
+# ENV CYCLONEDDS_URI=file:///root/cyclonedds.xml
+ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["bash"]

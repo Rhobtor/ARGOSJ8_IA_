@@ -35,13 +35,17 @@ public:
     output_topic_ = this->declare_parameter<std::string>(
       "output", "/merged_points_filtered");
 
+    input_qos_reliable_ = this->declare_parameter<bool>("input_qos_reliable", true);
+    output_qos_reliable_ = this->declare_parameter<bool>("output_qos_reliable", true);
+    qos_depth_ = this->declare_parameter<int>("qos_depth", 10);
+
     // OJO: si lo dejas vacío, conserva frame de entrada (recomendado)
     output_frame_id_ = this->declare_parameter<std::string>(
       "output_frame_id", "");
 
     // ---------- Voxel ----------
     leaf_size_ = this->declare_parameter<double>("leaf_size", 0.10);
-    min_points_per_voxel_ = this->declare_parameter<int>("min_points_per_voxel", 3);
+    min_points_per_voxel_ = this->declare_parameter<int>("min_points_per_voxel", 1);
 
     // ---------- Filtros geométricos globales ----------
     min_range_ = this->declare_parameter<double>("min_range", 0.5);
@@ -98,10 +102,31 @@ public:
       );
     }
 
-    pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(output_topic_, rclcpp::SensorDataQoS());
+    if (qos_depth_ < 1) {
+      RCLCPP_WARN(this->get_logger(), "qos_depth < 1. Se fuerza a 10");
+      qos_depth_ = 10;
+    }
+
+    auto input_qos = rclcpp::QoS(rclcpp::KeepLast(static_cast<std::size_t>(qos_depth_)));
+    input_qos.durability_volatile();
+    if (input_qos_reliable_) {
+      input_qos.reliable();
+    } else {
+      input_qos.best_effort();
+    }
+
+    auto output_qos = rclcpp::QoS(rclcpp::KeepLast(static_cast<std::size_t>(qos_depth_)));
+    output_qos.durability_volatile();
+    if (output_qos_reliable_) {
+      output_qos.reliable();
+    } else {
+      output_qos.best_effort();
+    }
+
+    pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(output_topic_, output_qos);
 
     sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-      input_topic_, rclcpp::SensorDataQoS(),
+      input_topic_, input_qos,
       std::bind(&VoxelGridNode::cloudCallback, this, _1));
 
     tf_buffer_   = std::make_shared<tf2_ros::Buffer>(this->get_clock());
@@ -112,12 +137,16 @@ public:
       "VoxelGridNode iniciado.\n"
       "  input: %s\n"
       "  output: %s\n"
+      "  input_qos: %s | output_qos: %s | depth: %d\n"
       "  leaf_size: %.3f | min_pts_voxel: %d\n"
       "  range: [%.2f, %.2f] | z: [%.2f, %.2f]\n"
       "  exclude_box: %s (frame=%s)\n"
       "  hood_box: %s (frame=%s)\n"
       "  tf_timeout: %.3f s",
       input_topic_.c_str(), output_topic_.c_str(),
+      input_qos_reliable_ ? "RELIABLE" : "BEST_EFFORT",
+      output_qos_reliable_ ? "RELIABLE" : "BEST_EFFORT",
+      qos_depth_,
       leaf_size_, min_points_per_voxel_,
       min_range_, max_range_, min_z_, max_z_,
       exclude_enabled_ ? "ON" : "OFF", exclude_frame_.c_str(),
@@ -326,7 +355,13 @@ private:
       acc.count += 1;
     }
 
-    if (voxels.empty()) return;
+    if (voxels.empty()) {
+      RCLCPP_INFO_THROTTLE(
+        this->get_logger(), *this->get_clock(), 2000,
+        "Voxel filter: no voxels survived basic filtering | rej[nan=%zu,range=%zu,z=%zu,box=%zu]",
+        nan_rejected, range_rejected, z_rejected, box_rejected);
+      return;
+    }
 
     std::vector<float> out_xyz;
     out_xyz.reserve(voxels.size() * 3);
@@ -344,7 +379,13 @@ private:
       out_xyz.push_back(a.sz * inv);
     }
 
-    if (out_xyz.empty()) return;
+    if (out_xyz.empty()) {
+      RCLCPP_INFO_THROTTLE(
+        this->get_logger(), *this->get_clock(), 2000,
+        "Voxel filter: all voxels rejected by min_points_per_voxel=%d | vox=%zu | density_rejected=%zu",
+        min_points_per_voxel_, voxels.size(), density_rejected);
+      return;
+    }
 
     sensor_msgs::msg::PointCloud2 out;
     out.header.stamp = msg->header.stamp;
@@ -420,6 +461,9 @@ private:
 
   bool pass_through_if_no_tf_;
   bool debug_log_;
+  bool input_qos_reliable_;
+  bool output_qos_reliable_;
+  int qos_depth_;
 
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr sub_;
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub_;

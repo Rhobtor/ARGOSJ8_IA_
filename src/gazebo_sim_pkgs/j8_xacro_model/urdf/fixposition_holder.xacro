@@ -25,7 +25,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Fixposion_base.STL" />
+          filename="package://j8_xacro_model/meshes/Fixposion_base.STL" />
       </geometry>
       <material
         name="">
@@ -39,7 +39,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Fixposion_base.STL" />
+          filename="package://j8_xacro_model/meshes/Fixposion_base.STL" />
       </geometry>
     </collision>
   </link>
@@ -77,7 +77,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Left_fixposition_feet.STL" />
+          filename="package://j8_xacro_model/meshes/Left_fixposition_feet.STL" />
       </geometry>
       <material
         name="">
@@ -91,7 +91,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Left_fixposition_feet.STL" />
+          filename="package://j8_xacro_model/meshes/Left_fixposition_feet.STL" />
       </geometry>
     </collision>
   </link>
@@ -131,7 +131,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Left_fixposition_holder.STL" />
+          filename="package://j8_xacro_model/meshes/Left_fixposition_holder.STL" />
       </geometry>
       <material
         name="">
@@ -145,7 +145,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Left_fixposition_holder.STL" />
+          filename="package://j8_xacro_model/meshes/Left_fixposition_holder.STL" />
       </geometry>
     </collision>
   </link>
@@ -185,7 +185,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Central_fixposition_feet.STL" />
+          filename="package://j8_xacro_model/meshes/Central_fixposition_feet.STL" />
       </geometry>
       <material
         name="">
@@ -199,7 +199,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Central_fixposition_feet.STL" />
+          filename="package://j8_xacro_model/meshes/Central_fixposition_feet.STL" />
       </geometry>
     </collision>
   </link>
@@ -239,7 +239,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Central_fixposition_holder.STL" />
+          filename="package://j8_xacro_model/meshes/Central_fixposition_holder.STL" />
       </geometry>
       <material
         name="">
@@ -253,7 +253,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Central_fixposition_holder.STL" />
+          filename="package://j8_xacro_model/meshes/Central_fixposition_holder.STL" />
       </geometry>
     </collision>
   </link>
@@ -295,7 +295,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Right_fixposition_feet.STL" />
+          filename="package://j8_xacro_model/meshes/Right_fixposition_feet.STL" />
       </geometry>
       <material
         name="">
@@ -309,7 +309,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Right_fixposition_feet.STL" />
+          filename="package://j8_xacro_model/meshes/Right_fixposition_feet.STL" />
       </geometry>
     </collision>
   </link>
@@ -349,7 +349,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Right_fixposition_holder.STL" />
+          filename="package://j8_xacro_model/meshes/Right_fixposition_holder.STL" />
       </geometry>
       <material
         name="">
@@ -363,7 +363,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file://$(find j8_xacro_model)/meshes/Right_fixposition_holder.STL" />
+          filename="package://j8_xacro_model/meshes/Right_fixposition_holder.STL" />
       </geometry>
     </collision>
   </link>

@@ -5,7 +5,7 @@
   <Domain id="any">
     <General>
       <Interfaces>
-        <NetworkInterface address="${ZT_IP}"/>
+        <NetworkInterface address="${DDS_IP}"/>
       </Interfaces>
       <AllowMulticast>true</AllowMulticast>
       <MaxMessageSize>65500B</MaxMessageSize>

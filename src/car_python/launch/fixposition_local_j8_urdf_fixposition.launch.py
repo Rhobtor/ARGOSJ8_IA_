@@ -1,5 +1,6 @@
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
+from launch.conditions import IfCondition
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 
@@ -72,6 +73,12 @@ def generate_launch_description():
     zed_link_pitch_arg = DeclareLaunchArgument("zed_link_pitch", default_value="0.0")
     zed_link_yaw_arg = DeclareLaunchArgument("zed_link_yaw", default_value="0.0")
 
+    publish_velodyne_alias_tf_arg = DeclareLaunchArgument(
+        "publish_velodyne_alias_tf",
+        default_value="True",
+        description="Publish identity TF Velodyne_link->velodyne for remote point clouds that arrive in frame velodyne.",
+    )
+
     # URDF
     desc_pkg = "j8_xacro_model"
     xacro_file = os.path.join(get_package_share_directory(desc_pkg), "urdf", "argo_j8.xacro")
@@ -92,6 +99,20 @@ def generate_launch_description():
         name="joint_state_publisher",
         output="screen",
         parameters=[{"use_gui": False}],
+    )
+
+    velodyne_link_to_velodyne_alias = Node(
+        package="tf2_ros",
+        executable="static_transform_publisher",
+        name="velodyne_link_to_velodyne_alias",
+        arguments=[
+            "--frame-id", "Velodyne_link",
+            "--child-frame-id", "velodyne",
+            "--x", "0", "--y", "0", "--z", "0",
+            "--roll", "0", "--pitch", "0", "--yaw", "0",
+        ],
+        output="screen",
+        condition=IfCondition(LaunchConfiguration("publish_velodyne_alias_tf")),
     )
 
     # Fixposition -> map/odom/base_link + mounting TFs
@@ -174,8 +195,10 @@ def generate_launch_description():
             zed_link_roll_arg,
             zed_link_pitch_arg,
             zed_link_yaw_arg,
+            publish_velodyne_alias_tf_arg,
             robot_state_publisher_node,
             joint_state_publisher_node,
+            velodyne_link_to_velodyne_alias,
             fixposition_tf_tree_node,
         ]
     )
