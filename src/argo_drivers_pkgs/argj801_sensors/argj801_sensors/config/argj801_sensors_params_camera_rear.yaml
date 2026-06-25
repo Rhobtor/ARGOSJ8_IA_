@@ -1,8 +1,8 @@
 ARGJ801:
   global_parameters:
     robot_frame: 'FP_POI'
-    velodyne_frame: 'velodyne_link'
-    sick_frame: 'sick_link'
+    velodyne_frame: 'Velodyne_link'
+    sick_frame: 'Sick_link'
 
   argj801_sensors:
     lcm_params:

@@ -37,8 +37,8 @@ ARGJ801:
     robot_frame: "FP_POI"
     local_fixed_frame: "FP_ENU0"
     global_fixed_frame: "ECEF"
-    velodyne_frame: 'velodyne_link'
-    sick_frame: 'sick_link'
+    velodyne_frame: 'Velodyne_link'
+    sick_frame: 'Sick_link'
 
     # Config de joystick:
     # - dead_man_button: botón que habilita el envío de comandos

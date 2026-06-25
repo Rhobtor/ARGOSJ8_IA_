@@ -3,8 +3,8 @@ ARGJ801:
     # Frames base usados en los mensajes publicados.
     # Nota: por defecto aquí se usa 'FP_POI' (Fixposition) como frame base.
     robot_frame: 'FP_POI'
-    velodyne_frame: 'velodyne_link'
-    sick_frame: 'sick_link'
+    velodyne_frame: 'Velodyne_link'
+    sick_frame: 'Sick_link'
 
   argj801_sensors:
     lcm_params:

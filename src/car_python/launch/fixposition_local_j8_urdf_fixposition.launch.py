@@ -31,10 +31,11 @@ def generate_launch_description():
         description="If True, stamp TF with odometry stamp; else stamp with now() to avoid TF_OLD_DATA.",
     )
 
-    # Optional rigid offset Fixposition robot frame -> base_link
-    x_arg = DeclareLaunchArgument("x", default_value="0.0")
-    y_arg = DeclareLaunchArgument("y", default_value="0.0")
-    z_arg = DeclareLaunchArgument("z", default_value="0.0")
+    # Rigid offset Fixposition robot frame -> base_link.
+    # These are the inverse of the desired base_link -> fixposition device pose.
+    x_arg = DeclareLaunchArgument("x", default_value="-0.9206628")
+    y_arg = DeclareLaunchArgument("y", default_value="-0.0075201")
+    z_arg = DeclareLaunchArgument("z", default_value="-0.85292")
     roll_arg = DeclareLaunchArgument("roll", default_value="0.0")
     pitch_arg = DeclareLaunchArgument("pitch", default_value="0.0")
     yaw_arg = DeclareLaunchArgument("yaw", default_value="0.0")
@@ -61,23 +62,17 @@ def generate_launch_description():
 
     publish_camera_to_zed_link_tf_arg = DeclareLaunchArgument(
         "publish_camera_to_zed_link_tf",
-        default_value="True",
-        description="Publish TF camera_link->zed_camera_link so ZED is placed at camera_link.",
+        default_value="False",
+        description="Legacy internal ZED TF from fixposition_tf_tree_for_zed. Disabled because this launch publishes base_link->zed_camera_link explicitly.",
     )
-    zed_link_parent_frame_arg = DeclareLaunchArgument("zed_link_parent_frame", default_value="camera_link")
+    zed_link_parent_frame_arg = DeclareLaunchArgument("zed_link_parent_frame", default_value="base_link")
     zed_link_frame_arg = DeclareLaunchArgument("zed_link_frame", default_value="zed_camera_link")
-    zed_link_x_arg = DeclareLaunchArgument("zed_link_x", default_value="0.0")
-    zed_link_y_arg = DeclareLaunchArgument("zed_link_y", default_value="0.0")
-    zed_link_z_arg = DeclareLaunchArgument("zed_link_z", default_value="0.04")
+    zed_link_x_arg = DeclareLaunchArgument("zed_link_x", default_value="0.9206628")
+    zed_link_y_arg = DeclareLaunchArgument("zed_link_y", default_value="0.0075201")
+    zed_link_z_arg = DeclareLaunchArgument("zed_link_z", default_value="0.81392")
     zed_link_roll_arg = DeclareLaunchArgument("zed_link_roll", default_value="0.0")
     zed_link_pitch_arg = DeclareLaunchArgument("zed_link_pitch", default_value="0.0")
     zed_link_yaw_arg = DeclareLaunchArgument("zed_link_yaw", default_value="0.0")
-
-    publish_velodyne_alias_tf_arg = DeclareLaunchArgument(
-        "publish_velodyne_alias_tf",
-        default_value="True",
-        description="Publish identity TF Velodyne_link->velodyne for remote point clouds that arrive in frame velodyne.",
-    )
 
     # URDF
     desc_pkg = "j8_xacro_model"
@@ -101,18 +96,17 @@ def generate_launch_description():
         parameters=[{"use_gui": False}],
     )
 
-    velodyne_link_to_velodyne_alias = Node(
+    base_zed_tf = Node(
         package="tf2_ros",
         executable="static_transform_publisher",
-        name="velodyne_link_to_velodyne_alias",
+        name="static_base_to_zed_camera",
         arguments=[
-            "--frame-id", "Velodyne_link",
-            "--child-frame-id", "velodyne",
-            "--x", "0", "--y", "0", "--z", "0",
+            "--frame-id", "base_link",
+            "--child-frame-id", "zed_camera_link",
+            "--x", "0.9206628", "--y", "0.0075201", "--z", "0.81392",
             "--roll", "0", "--pitch", "0", "--yaw", "0",
         ],
         output="screen",
-        condition=IfCondition(LaunchConfiguration("publish_velodyne_alias_tf")),
     )
 
     # Fixposition -> map/odom/base_link + mounting TFs
@@ -195,10 +189,9 @@ def generate_launch_description():
             zed_link_roll_arg,
             zed_link_pitch_arg,
             zed_link_yaw_arg,
-            publish_velodyne_alias_tf_arg,
             robot_state_publisher_node,
             joint_state_publisher_node,
-            velodyne_link_to_velodyne_alias,
+            base_zed_tf,
             fixposition_tf_tree_node,
         ]
     )

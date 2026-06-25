@@ -46,7 +46,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://j8_xacro_model/meshes/base_link.STL" />
+          filename="file://$(find j8_xacro_model)/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -60,7 +60,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://j8_xacro_model/meshes/base_link.STL" />
+          filename="file://$(find j8_xacro_model)/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -89,7 +89,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://j8_xacro_model/meshes/J8_top.STL" />
+          filename="file://$(find j8_xacro_model)/meshes/J8_top.STL" />
       </geometry>
       <material
         name="">
@@ -103,7 +103,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://j8_xacro_model/meshes/J8_top.STL" />
+          filename="file://$(find j8_xacro_model)/meshes/J8_top.STL" />
       </geometry>
     </collision>
   </link>
@@ -146,7 +146,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://j8_xacro_model/meshes/Bridge.STL" />
+          filename="file://$(find j8_xacro_model)/meshes/Bridge.STL" />
       </geometry>
       <material
         name="">
@@ -160,7 +160,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://j8_xacro_model/meshes/Bridge.STL" />
+          filename="file://$(find j8_xacro_model)/meshes/Bridge.STL" />
       </geometry>
     </collision>
   </link>
@@ -211,7 +211,7 @@
           <visual>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://j8_xacro_model/meshes/Sick.STL"/>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Sick.STL"/>
             </geometry>
             <!-- Default color for all lidars -->
             <material name="">
@@ -221,7 +221,7 @@
           <collision>
             <origin rpy="0 0 0" xyz="0 0 0"/>
             <geometry>
-              <mesh filename="package://j8_xacro_model/meshes/Sick.STL"/>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Sick.STL"/>
             </geometry>
           </collision>
     </link>
@@ -246,7 +246,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://j8_xacro_model/meshes/Velodyne.STL"/>
+        <mesh filename="file://$(find j8_xacro_model)/meshes/Velodyne.STL"/>
       </geometry>
       <!-- Default color for all lidars -->
       <material name="">
@@ -256,13 +256,13 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://j8_xacro_model/meshes/Velodyne.STL"/>
+        <mesh filename="file://$(find j8_xacro_model)/meshes/Velodyne.STL"/>
       </geometry>
     </collision>
   </link>
   <joint name="Velodyne_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0.93 0.0 1.0"/>
-    <parent link="J8_top"/>
+    <origin rpy="0 0 0" xyz="0.8026628 0.0075201 0.96892"/>
+    <parent link="base_link"/>
     <child link="Velodyne_link"/>
     <axis xyz="0 0 0"/>
   </joint>
@@ -310,7 +310,7 @@
         <visual>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_1.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_1.STL"/>
           </geometry>
           <material name="">
             <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -319,7 +319,7 @@
         <collision>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_1.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_1.STL"/>
           </geometry>
         </collision>
     </link>
@@ -349,7 +349,7 @@
           <geometry>
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
-          <geometry> <mesh filename="package://j8_xacro_model/meshes/Wheel1.STL"/>
+          <geometry> <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel1.STL"/>
             </geometry>
           <material name="">
             <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
@@ -361,7 +361,7 @@
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
           <geometry>
-              <mesh filename="package://j8_xacro_model/meshes/Wheel1.STL"/>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel1.STL"/>
             </geometry>
         </collision>
     </link>
@@ -403,7 +403,7 @@
         <visual>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_2.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_2.STL"/>
           </geometry>
           <material name="">
             <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -412,7 +412,7 @@
         <collision>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_2.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_2.STL"/>
           </geometry>
         </collision>
       </link>
@@ -442,7 +442,7 @@
           <geometry>
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
-          <geometry> <mesh filename="package://j8_xacro_model/meshes/Wheel2.STL"/>
+          <geometry> <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel2.STL"/>
             </geometry>
           <material name="">
             <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
@@ -454,7 +454,7 @@
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
           <geometry>
-              <mesh filename="package://j8_xacro_model/meshes/Wheel2.STL"/>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel2.STL"/>
             </geometry>
         </collision>
       </link>
@@ -496,7 +496,7 @@
         <visual>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_3.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_3.STL"/>
           </geometry>
           <material name="">
             <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -505,7 +505,7 @@
         <collision>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_3.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_3.STL"/>
           </geometry>
         </collision>
       </link>
@@ -535,7 +535,7 @@
           <geometry>
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
-          <geometry> <mesh filename="package://j8_xacro_model/meshes/Wheel3.STL"/>
+          <geometry> <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel3.STL"/>
             </geometry>
           <material name="">
             <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
@@ -547,7 +547,7 @@
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
           <geometry>
-              <mesh filename="package://j8_xacro_model/meshes/Wheel3.STL"/>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel3.STL"/>
             </geometry>
         </collision>
       </link>
@@ -589,7 +589,7 @@
         <visual>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_4.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_4.STL"/>
           </geometry>
           <material name="">
             <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -598,7 +598,7 @@
         <collision>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_4.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_4.STL"/>
           </geometry>
         </collision>
       </link>
@@ -628,7 +628,7 @@
           <geometry>
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
-          <geometry> <mesh filename="package://j8_xacro_model/meshes/Wheel4.STL"/>
+          <geometry> <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel4.STL"/>
             </geometry>
           <material name="">
             <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
@@ -640,7 +640,7 @@
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
           <geometry>
-              <mesh filename="package://j8_xacro_model/meshes/Wheel4.STL"/>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel4.STL"/>
             </geometry>
         </collision>
       </link>
@@ -682,7 +682,7 @@
         <visual>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_5.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_5.STL"/>
           </geometry>
           <material name="">
             <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -691,7 +691,7 @@
         <collision>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_5.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_5.STL"/>
           </geometry>
         </collision>
       </link>
@@ -721,7 +721,7 @@
           <geometry>
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
-          <geometry> <mesh filename="package://j8_xacro_model/meshes/Wheel5.STL"/>
+          <geometry> <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel5.STL"/>
             </geometry>
           <material name="">
             <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
@@ -733,7 +733,7 @@
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
           <geometry>
-              <mesh filename="package://j8_xacro_model/meshes/Wheel5.STL"/>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel5.STL"/>
             </geometry>
         </collision>
       </link>
@@ -775,7 +775,7 @@
         <visual>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_6.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_6.STL"/>
           </geometry>
           <material name="">
             <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -784,7 +784,7 @@
         <collision>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_6.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_6.STL"/>
           </geometry>
         </collision>
       </link>
@@ -814,7 +814,7 @@
           <geometry>
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
-          <geometry> <mesh filename="package://j8_xacro_model/meshes/Wheel6.STL"/>
+          <geometry> <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel6.STL"/>
             </geometry>
           <material name="">
             <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
@@ -826,7 +826,7 @@
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
           <geometry>
-              <mesh filename="package://j8_xacro_model/meshes/Wheel6.STL"/>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel6.STL"/>
             </geometry>
         </collision>
       </link>
@@ -868,7 +868,7 @@
         <visual>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_7.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_7.STL"/>
           </geometry>
           <material name="">
             <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -877,7 +877,7 @@
         <collision>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_7.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_7.STL"/>
           </geometry>
         </collision>
       </link>
@@ -907,7 +907,7 @@
           <geometry>
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
-          <geometry> <mesh filename="package://j8_xacro_model/meshes/Wheel7.STL"/>
+          <geometry> <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel7.STL"/>
             </geometry>
           <material name="">
             <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
@@ -919,7 +919,7 @@
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
           <geometry>
-              <mesh filename="package://j8_xacro_model/meshes/Wheel7.STL"/>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel7.STL"/>
             </geometry>
         </collision>
       </link>
@@ -962,7 +962,7 @@
         <visual>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_8.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_8.STL"/>
           </geometry>
           <material name="">
             <color rgba="0.79216 0.81961 0.93333 1"/>
@@ -971,7 +971,7 @@
         <collision>
           <origin rpy="0 0 0" xyz="0 0 0"/>
           <geometry>
-            <mesh filename="package://j8_xacro_model/meshes/Suspension_8.STL"/>
+            <mesh filename="file://$(find j8_xacro_model)/meshes/Suspension_8.STL"/>
           </geometry>
         </collision>
       </link>
@@ -1001,7 +1001,7 @@
           <geometry>
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
-          <geometry> <mesh filename="package://j8_xacro_model/meshes/Wheel8.STL"/>
+          <geometry> <mesh filename="file://$(find j8_xacro_model)/meshes/Wheel8.STL"/>
             </geometry>
           <material name="">
             <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
@@ -1013,7 +1013,7 @@
             <cylinder length="0.30" radius="0.298"/>
           </geometry>
           <geometry>
-              <mesh filename="package://j8_xacro_model/meshes/wWheel8.STL"/>
+              <mesh filename="file://$(find j8_xacro_model)/meshes/wWheel8.STL"/>
             </geometry>
         </collision>
       </link>
@@ -1049,7 +1049,7 @@
 <!-- Fixposition holder
 <xacro:bridge_joint xyz="-0.0028148 -0.11697 0.21171" rpy="1.5708 0 1.5708"/>-->
 <!-- Fixposition sensor-->
-  <xacro:fixposition_full_setup parent="Bridge" xyz="-0.0028148 -0.11697 0.21171" rpy="1.5708 0 1.5708"/>
+  <xacro:fixposition_full_setup parent="Bridge" xyz="0.0094278 0.1804302 0.1437104" rpy="1.5708 0 1.5708"/>
   
  <gazebo>
   <!-- Diff drive plugin configuration -->

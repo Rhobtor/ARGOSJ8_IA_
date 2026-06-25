@@ -54,11 +54,11 @@ def generate_launch_description():
 
     # TFs estáticos de los sensores respecto al frame del robot.
     tf_node_velodyne = Node(package='tf2_ros', executable='static_transform_publisher', name='static_transform_publisher', output='screen',
-                    arguments=['1.99348', '0', '0.27133', '1', '0', '0','0',yaml_config['ARGJ801']['global_parameters']['robot_frame'], yaml_config['ARGJ801']['global_parameters']['velodyne_frame']])
+                    arguments=['1.99348', '0', '0.27133', '1', '0', '0','0',yaml_config['ARGJ801']['global_parameters']['robot_frame'], 'Velodyne_link'])
     ld.add_action(tf_node_velodyne)
 
     tf_node_sick = Node(package='tf2_ros', executable='static_transform_publisher', name='static_transform_publisher', output='screen',
-                   arguments=['1.86558', '0', '0.37865', '1', '0', '0', '0',yaml_config['ARGJ801']['global_parameters']['robot_frame'], yaml_config['ARGJ801']['global_parameters']['sick_frame']])
+                   arguments=['1.86558', '0', '0.37865', '1', '0', '0', '0',yaml_config['ARGJ801']['global_parameters']['robot_frame'], 'Sick_link'])
     ld.add_action(tf_node_sick)
 
     # Transiciones lifecycle (configure/activate) con retraso.

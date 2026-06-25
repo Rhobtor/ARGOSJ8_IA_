@@ -581,7 +581,7 @@ sensor_msgs::msg::PointCloud2 LaserSegmentation::publish_filtered_pointcloud(con
   // Transform the consistent cloud back to the LiDAR frame
   pcl::PointCloud<pcl::PointXYZ> lidar_frame_cloud;
   try {
-    geometry_msgs::msg::TransformStamped transform_stamped = tf_buffer_->lookupTransform("sick_link", "FP_ENU0", tf2::TimePointZero);
+    geometry_msgs::msg::TransformStamped transform_stamped = tf_buffer_->lookupTransform("Sick_link", "FP_ENU0", tf2::TimePointZero);
     pcl_ros::transformPointCloud(consistent_cloud, lidar_frame_cloud, transform_stamped);
   } catch (tf2::TransformException& ex) {
     //RCLCPP_WARN(this->get_logger(), "Transform to LiDAR frame failed: %s", ex.what());
@@ -591,7 +591,7 @@ sensor_msgs::msg::PointCloud2 LaserSegmentation::publish_filtered_pointcloud(con
 
   // Publish the transformed point cloud
   pcl::toROSMsg(lidar_frame_cloud, pointcloud_msg);
-  pointcloud_msg.header.frame_id = "sick_link";
+  pointcloud_msg.header.frame_id = "Sick_link";
   pointcloud_pub_->publish(pointcloud_msg);
   return pointcloud_msg;
 

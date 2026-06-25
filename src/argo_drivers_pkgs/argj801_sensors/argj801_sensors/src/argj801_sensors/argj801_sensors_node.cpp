@@ -25,8 +25,8 @@ rclcpp_lifecycle::LifecycleNode("argj08_sensors_node",rclcpp::NodeOptions().use_
   
   // Frames usados para rellenar `header.frame_id`.
   this->declare_parameter("robot_frame", "base_link");
-  this->declare_parameter("velodyne_frame", "velodyne_link");
-  this->declare_parameter("sick_frame", "sick_link");
+  this->declare_parameter("velodyne_frame", "Velodyne_link");
+  this->declare_parameter("sick_frame", "Sick_link");
 
   // Flags para activar/desactivar streams concretos sin recompilar.
   this->declare_parameter("velodyne", true);

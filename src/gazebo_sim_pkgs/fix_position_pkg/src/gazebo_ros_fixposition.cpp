@@ -87,17 +87,17 @@ namespace gazebo_plugins {
 
             // Convert frequency to update period (in seconds)
             update_period_ = 1.0 / default_update_frequency;
-            // Define and broadcast the first transform (FP_VRTK to FP_CAM)
+            // Keep FP_CAM coincident with FP_POI in this setup.
             geometry_msgs::msg::TransformStamped tf_vrtk_cam;
-            tf_vrtk_cam.header.frame_id = "FP_VRTK";
+            tf_vrtk_cam.header.frame_id = "FP_POI";
             tf_vrtk_cam.child_frame_id = "FP_CAM";
-            tf_vrtk_cam.transform.translation.x = 0.03383;
-            tf_vrtk_cam.transform.translation.y = 0.00373;
-            tf_vrtk_cam.transform.translation.z = -0.01227;
-            tf_vrtk_cam.transform.rotation.x = 0.502196;
-            tf_vrtk_cam.transform.rotation.y = 0.50099;
-            tf_vrtk_cam.transform.rotation.z = 0.498972;
-            tf_vrtk_cam.transform.rotation.w = 0.49783;
+            tf_vrtk_cam.transform.translation.x = 0.0;
+            tf_vrtk_cam.transform.translation.y = 0.0;
+            tf_vrtk_cam.transform.translation.z = 0.0;
+            tf_vrtk_cam.transform.rotation.x = 0.0;
+            tf_vrtk_cam.transform.rotation.y = 0.0;
+            tf_vrtk_cam.transform.rotation.z = 0.0;
+            tf_vrtk_cam.transform.rotation.w = 1.0;
             static_tf_broadcaster_->sendTransform(tf_vrtk_cam);
 
             // Define and broadcast the second transform (FP_POI to FP_VRTK)
