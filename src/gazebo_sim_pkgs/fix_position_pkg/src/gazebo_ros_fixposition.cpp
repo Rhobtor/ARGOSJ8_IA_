@@ -21,6 +21,7 @@
 #include <ignition/math.hh>
 #include <sensor_msgs/msg/nav_sat_fix.hpp>
 #include <chrono>
+#include <cmath>
 
 // WGS-84 Earth model constants
 const double a = 6378137.0;  // Semi-major axis
@@ -39,6 +40,27 @@ geometry_msgs::msg::Point ConvertToECEF(double latitude, double longitude, doubl
     ecef.z = (N * (1 - e_squared) + altitude) * sin(lat_rad);
 
     return ecef;
+}
+
+bool IsFinite(double value) {
+    return std::isfinite(value);
+}
+
+bool IsFinitePoint(const geometry_msgs::msg::Point & point) {
+    return IsFinite(point.x) && IsFinite(point.y) && IsFinite(point.z);
+}
+
+bool IsFiniteQuaternion(const geometry_msgs::msg::Quaternion & q) {
+    return IsFinite(q.x) && IsFinite(q.y) && IsFinite(q.z) && IsFinite(q.w);
+}
+
+bool IsUnitQuaternion(const geometry_msgs::msg::Quaternion & q, const double tolerance = 1e-3) {
+    if (!IsFiniteQuaternion(q)) {
+        return false;
+    }
+
+    const double squared_norm = q.x * q.x + q.y * q.y + q.z * q.z + q.w * q.w;
+    return squared_norm > 1e-12 && std::abs(squared_norm - 1.0) <= tolerance;
 }
 
 namespace gazebo_plugins {
@@ -116,8 +138,14 @@ namespace gazebo_plugins {
 
     // Add a callback function for the GPS topic
     void GpsCallback(const sensor_msgs::msg::NavSatFix::SharedPtr msg) {
-        // Process the incoming GPS data
-        // For example, store the latest GPS data in member variables
+        if (!IsFinite(msg->latitude) || !IsFinite(msg->longitude) || !IsFinite(msg->altitude)) {
+            RCLCPP_WARN_THROTTLE(
+                ros_node_->get_logger(), *ros_node_->get_clock(), 2000,
+                "Ignoring invalid GPS sample for Fixposition TF: lat=%f lon=%f alt=%f",
+                msg->latitude, msg->longitude, msg->altitude);
+            return;
+        }
+
         last_gps_latitude = msg->latitude;
         last_gps_longitude = msg->longitude;
         last_gps_altitude = msg->altitude;
@@ -162,6 +190,15 @@ namespace gazebo_plugins {
         }
         geometry_msgs::msg::Quaternion ConvertMatrixToQuaternion(const Eigen::Matrix3d& matrix) {
             Eigen::Quaterniond quat(matrix);
+
+            if (!std::isfinite(quat.x()) || !std::isfinite(quat.y()) ||
+                !std::isfinite(quat.z()) || !std::isfinite(quat.w()) ||
+                quat.squaredNorm() <= 1e-12) {
+                return geometry_msgs::msg::Quaternion();
+            }
+
+            quat.normalize();
+
             geometry_msgs::msg::Quaternion quaternion_msg;
             quaternion_msg.x = quat.x();
             quaternion_msg.y = quat.y();
@@ -181,15 +218,30 @@ namespace gazebo_plugins {
                 enuTransform.child_frame_id = "FP_ENU0";
                 auto ecefPose = ConvertToECEF(last_gps_latitude, last_gps_longitude, last_gps_altitude);
 
+                if (!IsFinitePoint(ecefPose)) {
+                    RCLCPP_WARN_THROTTLE(
+                        ros_node_->get_logger(), *ros_node_->get_clock(), 2000,
+                        "Skipping ECEF->FP_ENU0 TF because ECEF pose is invalid.");
+                    return;
+                }
+
                 enuTransform.transform.translation.x = ecefPose.x;
                 enuTransform.transform.translation.y = ecefPose.y;
                 enuTransform.transform.translation.z = ecefPose.z;
 
                 // Calculate the ENU to ECEF rotation matrix
-                Eigen::Matrix3d enuToEcefRotation = RotEnuEcef(deg2rad(last_gps_latitude), deg2rad(last_gps_longitude));
+                Eigen::Matrix3d ecefToEnuRotation = RotEnuEcef(
+                    deg2rad(last_gps_latitude), deg2rad(last_gps_longitude)).transpose();
 
                 // Convert the rotation matrix to a quaternion and set it to the transform
-                enuTransform.transform.rotation = ConvertMatrixToQuaternion(enuToEcefRotation);
+                enuTransform.transform.rotation = ConvertMatrixToQuaternion(ecefToEnuRotation);
+
+                if (!IsUnitQuaternion(enuTransform.transform.rotation)) {
+                    RCLCPP_WARN_THROTTLE(
+                        ros_node_->get_logger(), *ros_node_->get_clock(), 2000,
+                        "Skipping ECEF->FP_ENU0 TF because ENU quaternion is invalid.");
+                    return;
+                }
 
                 static_tf_broadcaster_->sendTransform(enuTransform);
                 initialPoseSet = true;
@@ -207,6 +259,10 @@ namespace gazebo_plugins {
         }
 
         void UpdateOdometryWorld() {
+            if (!got_gps || !IsFinite(last_gps_latitude) || !IsFinite(last_gps_longitude) || !IsFinite(last_gps_altitude)) {
+                return;
+            }
+
             // Get robot's pose and velocity in the Gazebo world frame
             auto pose = model_->WorldPose();
             auto linear = model_->WorldLinearVel();
@@ -214,6 +270,12 @@ namespace gazebo_plugins {
 
             // Use the latest GPS data for ECEF conversion
             auto ecefPose = ConvertToECEF(last_gps_latitude, last_gps_longitude, last_gps_altitude);
+            if (!IsFinitePoint(ecefPose)) {
+                RCLCPP_WARN_THROTTLE(
+                    ros_node_->get_logger(), *ros_node_->get_clock(), 2000,
+                    "Skipping Fixposition odometry update because ECEF pose is invalid.");
+                return;
+            }
 
             // Get the rotation matrix from ENU to ECEF
             Eigen::Matrix3d enuToEcefRotation = RotEnuEcef(last_gps_latitude * M_PI / 180.0, last_gps_longitude * M_PI / 180.0);
@@ -227,6 +289,13 @@ namespace gazebo_plugins {
 
             // Convert back to a quaternion
             Eigen::Quaterniond ecefOrientation(ecefRotationMatrix);
+            if (!std::isfinite(ecefOrientation.x()) || !std::isfinite(ecefOrientation.y()) ||
+                !std::isfinite(ecefOrientation.z()) || !std::isfinite(ecefOrientation.w())) {
+                RCLCPP_WARN_THROTTLE(
+                    ros_node_->get_logger(), *ros_node_->get_clock(), 2000,
+                    "Skipping Fixposition odometry update because ECEF quaternion is invalid.");
+                return;
+            }
 
             // Set the orientation in odom_ecef message
             odom_ecef.pose.pose.position.x = ecefPose.x + noise_dist_x_(generator_);
@@ -250,6 +319,13 @@ namespace gazebo_plugins {
             odom_enu.pose.pose.position.z = ENU_pose.Pos().Z();
 
             ignition::math::Quaterniond orientation = pose.Rot(); // Using global pose orientation, as X axis is aligned with EAST.
+            if (!std::isfinite(orientation.X()) || !std::isfinite(orientation.Y()) ||
+                !std::isfinite(orientation.Z()) || !std::isfinite(orientation.W())) {
+                RCLCPP_WARN_THROTTLE(
+                    ros_node_->get_logger(), *ros_node_->get_clock(), 2000,
+                    "Skipping Fixposition odometry update because robot orientation is invalid.");
+                return;
+            }
             odom_enu.pose.pose.orientation.x = orientation.X();
             odom_enu.pose.pose.orientation.y = orientation.Y();
             odom_enu.pose.pose.orientation.z = orientation.Z();

@@ -72,7 +72,7 @@ def generate_launch_description():
     zed_link_z_arg = DeclareLaunchArgument("zed_link_z", default_value="0.81392")
     zed_link_roll_arg = DeclareLaunchArgument("zed_link_roll", default_value="0.0")
     zed_link_pitch_arg = DeclareLaunchArgument("zed_link_pitch", default_value="0.0")
-    zed_link_yaw_arg = DeclareLaunchArgument("zed_link_yaw", default_value="0.0")
+    zed_link_yaw_arg = DeclareLaunchArgument("zed_link_yaw", default_value="1.5708")
 
     # URDF
     desc_pkg = "j8_xacro_model"
@@ -104,7 +104,7 @@ def generate_launch_description():
             "--frame-id", "base_link",
             "--child-frame-id", "zed_camera_link",
             "--x", "0.9206628", "--y", "0.0075201", "--z", "0.81392",
-            "--roll", "0", "--pitch", "0", "--yaw", "0",
+            "--roll", "0", "--pitch", "0", "--yaw", "1.5708",
         ],
         output="screen",
     )
