@@ -176,6 +176,7 @@ add_executable(velodyne_noise_filter_node src/velodyne_noise_filter_node.cpp)
 ament_target_dependencies(velodyne_noise_filter_node
   rclcpp
   sensor_msgs
+  visualization_msgs
   tf2
   tf2_ros
   tf2_geometry_msgs

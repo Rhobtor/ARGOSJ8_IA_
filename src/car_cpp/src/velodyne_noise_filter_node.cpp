@@ -1,6 +1,8 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/point_cloud2.hpp>
 #include <sensor_msgs/msg/point_field.hpp>
+#include <visualization_msgs/msg/marker.hpp>
+#include <visualization_msgs/msg/marker_array.hpp>
 
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
@@ -47,14 +49,14 @@ public:
 
     exclude_enabled_ = this->declare_parameter<bool>("exclude_box_enabled", true);
     exclude_frame_ = this->declare_parameter<std::string>("exclude_box_frame", "base_link");
-    ex_cx_ = this->declare_parameter<double>("exclude_box_center_x", 0.35);
+    ex_cx_ = this->declare_parameter<double>("exclude_box_center_x", -0.50);
     ex_cy_ = this->declare_parameter<double>("exclude_box_center_y", 0.00);
-    ex_cz_ = this->declare_parameter<double>("exclude_box_center_z", 0.35);
-    ex_sx_ = this->declare_parameter<double>("exclude_box_size_x", 3.10);
-    ex_sy_ = this->declare_parameter<double>("exclude_box_size_y", 1.80);
-    ex_sz_ = this->declare_parameter<double>("exclude_box_size_z", 1.40);
+    ex_cz_ = this->declare_parameter<double>("exclude_box_center_z", 0.80);
+    ex_sx_ = this->declare_parameter<double>("exclude_box_size_x", 4.00);
+    ex_sy_ = this->declare_parameter<double>("exclude_box_size_y", 1.70);
+    ex_sz_ = this->declare_parameter<double>("exclude_box_size_z", 2.40);
 
-    hood_enabled_ = this->declare_parameter<bool>("hood_box_enabled", true);
+    hood_enabled_ = this->declare_parameter<bool>("hood_box_enabled", false);
     hx_ = this->declare_parameter<double>("hood_box_center_x", 1.00);
     hy_ = this->declare_parameter<double>("hood_box_center_y", 0.00);
     hz_ = this->declare_parameter<double>("hood_box_center_z", 0.20);
@@ -64,6 +66,8 @@ public:
 
     output_qos_reliable_ = this->declare_parameter<bool>("output_qos_reliable", true);
     output_qos_depth_ = this->declare_parameter<int>("output_qos_depth", 10);
+    marker_topic_ = this->declare_parameter<std::string>("marker_topic", "~/filter_boxes");
+    marker_alpha_ = this->declare_parameter<double>("marker_alpha", 0.25);
 
     pass_through_if_no_tf_ = this->declare_parameter<bool>("pass_through_if_no_tf", true);
     debug_log_ = this->declare_parameter<bool>("debug_log", true);
@@ -100,6 +104,10 @@ public:
       RCLCPP_WARN(this->get_logger(), "output_qos_depth < 1. Se fuerza a 10");
       output_qos_depth_ = 10;
     }
+    if (marker_alpha_ < 0.0 || marker_alpha_ > 1.0) {
+      RCLCPP_WARN(this->get_logger(), "marker_alpha fuera de [0,1]. Se fuerza a 0.25");
+      marker_alpha_ = 0.25;
+    }
 
     auto output_qos = rclcpp::QoS(rclcpp::KeepLast(static_cast<std::size_t>(output_qos_depth_)));
     output_qos.durability_volatile();
@@ -110,11 +118,16 @@ public:
     }
 
     pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(output_topic_, output_qos);
+    auto marker_qos = rclcpp::QoS(rclcpp::KeepLast(1)).transient_local().reliable();
+    marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>(marker_topic_, marker_qos);
     sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
       input_topic_, rclcpp::SensorDataQoS(), std::bind(&VelodyneNoiseFilterNode::cloudCallback, this, _1));
 
     tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
     tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+    marker_timer_ = this->create_wall_timer(
+      std::chrono::milliseconds(500), std::bind(&VelodyneNoiseFilterNode::publishBoxMarkers, this));
+    publishBoxMarkers();
 
     RCLCPP_INFO(
       this->get_logger(),
@@ -126,6 +139,7 @@ public:
       "  range: [%.2f, %.2f] | z: [%.2f, %.2f]\n"
       "  reject_origin: %s (eps=%.3f)\n"
       "  output_qos: %s (depth=%d)\n"
+      "  marker_topic: %s (alpha=%.2f)\n"
       "  exclude_box: %s (frame=%s)\n"
       "  hood_box: %s (frame=%s)",
       input_topic_.c_str(), output_topic_.c_str(),
@@ -134,6 +148,7 @@ public:
       min_range_, max_range_, min_z_, max_z_,
       reject_origin_enabled_ ? "ON" : "OFF", reject_origin_epsilon_,
       output_qos_reliable_ ? "RELIABLE" : "BEST_EFFORT", output_qos_depth_,
+        marker_topic_.c_str(), marker_alpha_,
       exclude_enabled_ ? "ON" : "OFF", exclude_frame_.c_str(),
       hood_enabled_ ? "ON" : "OFF", exclude_frame_.c_str());
   }
@@ -207,6 +222,57 @@ private:
       }
     }
     return support;
+  }
+
+  visualization_msgs::msg::Marker makeBoxMarker(
+    int id,
+    const std::string & ns,
+    double cx, double cy, double cz,
+    double sx, double sy, double sz,
+    float r, float g, float b) const
+  {
+    visualization_msgs::msg::Marker marker;
+    marker.header.frame_id = exclude_frame_;
+    marker.header.stamp = this->now();
+    marker.ns = ns;
+    marker.id = id;
+    marker.type = visualization_msgs::msg::Marker::CUBE;
+    marker.action = visualization_msgs::msg::Marker::ADD;
+    marker.pose.position.x = cx;
+    marker.pose.position.y = cy;
+    marker.pose.position.z = cz;
+    marker.pose.orientation.w = 1.0;
+    marker.scale.x = sx;
+    marker.scale.y = sy;
+    marker.scale.z = sz;
+    marker.color.r = r;
+    marker.color.g = g;
+    marker.color.b = b;
+    marker.color.a = static_cast<float>(marker_alpha_);
+    marker.frame_locked = true;
+    return marker;
+  }
+
+  void publishBoxMarkers()
+  {
+    visualization_msgs::msg::MarkerArray markers;
+    markers.markers.push_back(makeBoxMarker(
+      0, "exclude_box", ex_cx_, ex_cy_, ex_cz_, ex_sx_, ex_sy_, ex_sz_, 1.0f, 0.0f, 0.0f));
+
+    if (hood_enabled_) {
+      markers.markers.push_back(makeBoxMarker(
+        1, "hood_box", hx_, hy_, hz_, hsx_, hsy_, hsz_, 1.0f, 0.5f, 0.0f));
+    } else {
+      visualization_msgs::msg::Marker marker;
+      marker.header.frame_id = exclude_frame_;
+      marker.header.stamp = this->now();
+      marker.ns = "hood_box";
+      marker.id = 1;
+      marker.action = visualization_msgs::msg::Marker::DELETE;
+      markers.markers.push_back(marker);
+    }
+
+    marker_pub_->publish(markers);
   }
 
   void cloudCallback(const sensor_msgs::msg::PointCloud2::SharedPtr msg)
@@ -500,12 +566,16 @@ private:
 
   bool output_qos_reliable_;
   int output_qos_depth_;
+  std::string marker_topic_;
+  double marker_alpha_;
 
   bool pass_through_if_no_tf_;
   bool debug_log_;
 
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr sub_;
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr pub_;
+  rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr marker_pub_;
+  rclcpp::TimerBase::SharedPtr marker_timer_;
 
   std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> tf_listener_;
