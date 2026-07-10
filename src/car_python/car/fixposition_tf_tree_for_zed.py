@@ -98,7 +98,7 @@ class FixpositionTfTreeForZed(Node):
       - nav_msgs/Odometry from Fixposition (default: /fixposition/odometry_enu)
 
     Outputs:
-      - static: map->fp_frame (anchors startup pose at map origin)
+            - optional static: map->fp_frame (anchors startup pose at map origin)
       - static: map->odom identity
       - dynamic: odom->base_link (from Fixposition odometry + optional rigid offset)
       - optional static mounting:
@@ -120,6 +120,7 @@ class FixpositionTfTreeForZed(Node):
         # Expected Fixposition frames in odometry
         self.declare_parameter("fp_frame", "FP_ENU0")
         self.declare_parameter("fixposition_robot_frame", "FP_POI")
+        self.declare_parameter("publish_map_to_fp_tf", False)
 
         # Which frame to use for the initial anchoring (map origin).
         # - "fixposition_robot_frame": anchor so FP_POI starts at map origin
@@ -138,6 +139,7 @@ class FixpositionTfTreeForZed(Node):
         self.declare_parameter("roll", 0.0)
         self.declare_parameter("pitch", 0.0)
         self.declare_parameter("yaw", 0.0)
+        self.declare_parameter("apply_orientation_offset", False)
 
         # Publish base_link -> fixposition_robot_frame (e.g. base_link -> FP_POI) as a static TF.
         # WARNING: If Fixposition is already publishing FP_ENU0->FP_POI, enabling this will create a TF conflict
@@ -173,6 +175,7 @@ class FixpositionTfTreeForZed(Node):
         self._base_link_frame = str(self.get_parameter("base_link_frame").value).strip()
         self._fp_frame = str(self.get_parameter("fp_frame").value).strip()
         self._fp_robot_frame = str(self.get_parameter("fixposition_robot_frame").value).strip()
+        self._publish_map_to_fp_tf = bool(self.get_parameter("publish_map_to_fp_tf").value)
         self._anchor_on = str(self.get_parameter("anchor_on").value).strip()
         self._use_msg_stamp = bool(self.get_parameter("use_msg_stamp").value)
 
@@ -186,13 +189,14 @@ class FixpositionTfTreeForZed(Node):
             float(self.get_parameter("pitch").value),
             float(self.get_parameter("yaw").value),
         )
+        self._apply_orientation_offset = bool(self.get_parameter("apply_orientation_offset").value)
 
         self._align_yaw = bool(self.get_parameter("align_yaw").value)
 
         self._static_br = StaticTransformBroadcaster(self)
         self._dyn_br = TransformBroadcaster(self)
 
-        self._fp_to_map: Optional[Tuple[Tuple[float, float, float], Tuple[float, float, float, float]]] = None
+        self._map_to_fp: Optional[Tuple[Tuple[float, float, float], Tuple[float, float, float, float]]] = None
         self._static_published = False
 
         self._sub = self.create_subscription(Odometry, self._odom_topic, self._cb, 50)
@@ -200,8 +204,9 @@ class FixpositionTfTreeForZed(Node):
         self._publish_mounting_once()
 
         self.get_logger().info(
-            f"Subscribing {self._odom_topic}. Will publish TF: {self._fp_frame}->{self._map_frame} (static), "
-            f"{self._map_frame}->{self._odom_frame} (static identity), {self._odom_frame}->{self._base_link_frame} (dynamic)."
+            f"Subscribing {self._odom_topic}. Will publish TF: "
+            f"{self._map_frame}->{self._odom_frame} (static identity), {self._odom_frame}->{self._base_link_frame} (dynamic), "
+            f"{self._map_frame}->{self._fp_frame} (static {'enabled' if self._publish_map_to_fp_tf else 'disabled'})."
         )
 
         if self._anchor_on not in ("fixposition_robot_frame", "base_link_frame"):
@@ -294,7 +299,8 @@ class FixpositionTfTreeForZed(Node):
         return ((float(p.x), float(p.y), float(p.z)), q_fp_poi)
 
     def _compute_fp_to_base(self, fp_to_poi: Tuple[Tuple[float, float, float], Tuple[float, float, float, float]]) -> Tuple[Tuple[float, float, float], Tuple[float, float, float, float]]:
-        t_poi_bl = (self._offset_xyz, self._offset_q)
+        offset_q = self._offset_q if self._apply_orientation_offset else (0.0, 0.0, 0.0, 1.0)
+        t_poi_bl = (self._offset_xyz, offset_q)
         xyz_fp_bl, q_fp_bl = _compose(fp_to_poi[0], fp_to_poi[1], t_poi_bl[0], t_poi_bl[1])
         return (xyz_fp_bl, q_fp_bl)
 
@@ -313,28 +319,15 @@ class FixpositionTfTreeForZed(Node):
 
         if self._align_yaw:
             yaw0 = _yaw_from_quaternion(anchor_q[0], anchor_q[1], anchor_q[2], anchor_q[3])
-            # Define fp->map as: translate to anchor pose, but rotate so map yaw is zero at startup.
-            q_fp_map = _quat_from_yaw(yaw0)
-            xyz_fp_map = anchor_xyz
+            q_map_fp = _quat_from_yaw(-yaw0)
+            rx, ry, rz = _quat_rotate_vector(q_map_fp, anchor_xyz)
+            xyz_map_fp = (-rx, -ry, -rz)
         else:
-            q_fp_map = anchor_q
-            xyz_fp_map = anchor_xyz
+            xyz_map_fp, q_map_fp = _inverse(anchor_xyz, anchor_q)
 
-        self._fp_to_map = (xyz_fp_map, q_fp_map)
+        self._map_to_fp = (xyz_map_fp, q_map_fp)
 
         now = self.get_clock().now().to_msg()
-
-        tf_fp_map = TransformStamped()
-        tf_fp_map.header.stamp = now
-        tf_fp_map.header.frame_id = self._fp_frame
-        tf_fp_map.child_frame_id = self._map_frame
-        tf_fp_map.transform.translation.x = float(xyz_fp_map[0])
-        tf_fp_map.transform.translation.y = float(xyz_fp_map[1])
-        tf_fp_map.transform.translation.z = float(xyz_fp_map[2])
-        tf_fp_map.transform.rotation.x = float(q_fp_map[0])
-        tf_fp_map.transform.rotation.y = float(q_fp_map[1])
-        tf_fp_map.transform.rotation.z = float(q_fp_map[2])
-        tf_fp_map.transform.rotation.w = float(q_fp_map[3])
 
         tf_map_odom = TransformStamped()
         tf_map_odom.header.stamp = now
@@ -342,12 +335,28 @@ class FixpositionTfTreeForZed(Node):
         tf_map_odom.child_frame_id = self._odom_frame
         tf_map_odom.transform.rotation.w = 1.0
 
-        self._static_br.sendTransform([tf_fp_map, tf_map_odom])
+        static_tfs = [tf_map_odom]
+        if self._publish_map_to_fp_tf:
+            tf_map_fp = TransformStamped()
+            tf_map_fp.header.stamp = now
+            tf_map_fp.header.frame_id = self._map_frame
+            tf_map_fp.child_frame_id = self._fp_frame
+            tf_map_fp.transform.translation.x = float(xyz_map_fp[0])
+            tf_map_fp.transform.translation.y = float(xyz_map_fp[1])
+            tf_map_fp.transform.translation.z = float(xyz_map_fp[2])
+            tf_map_fp.transform.rotation.x = float(q_map_fp[0])
+            tf_map_fp.transform.rotation.y = float(q_map_fp[1])
+            tf_map_fp.transform.rotation.z = float(q_map_fp[2])
+            tf_map_fp.transform.rotation.w = float(q_map_fp[3])
+            static_tfs.append(tf_map_fp)
+
+        self._static_br.sendTransform(static_tfs)
         self._static_published = True
 
         self.get_logger().info(
-            f"Published static TF {self._fp_frame}->{self._map_frame} and identity {self._map_frame}->{self._odom_frame} "
-            f"(align_yaw={self._align_yaw}, anchor_on={self._anchor_on})"
+            f"Published static TF identity {self._map_frame}->{self._odom_frame}"
+            f" and internal map anchor (align_yaw={self._align_yaw}, anchor_on={self._anchor_on}, "
+            f"publish_map_to_fp_tf={self._publish_map_to_fp_tf})"
         )
 
     def _cb(self, msg: Odometry) -> None:
@@ -359,14 +368,12 @@ class FixpositionTfTreeForZed(Node):
 
         self._publish_static_once(fp_to_poi, fp_to_base)
 
-        if self._fp_to_map is None:
+        if self._map_to_fp is None:
             return
 
-        xyz_fp_map, q_fp_map = self._fp_to_map
+        xyz_map_fp, q_map_fp = self._map_to_fp
         xyz_fp_bl, q_fp_bl = fp_to_base
 
-        # map->base_link = inv(fp->map) ∘ (fp->base_link)
-        (xyz_map_fp, q_map_fp) = _inverse(xyz_fp_map, q_fp_map)
         xyz_map_bl, q_map_bl = _compose(xyz_map_fp, q_map_fp, xyz_fp_bl, q_fp_bl)
 
         out = TransformStamped()

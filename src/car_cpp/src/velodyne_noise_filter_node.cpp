@@ -46,6 +46,7 @@ public:
     reject_origin_epsilon_ = this->declare_parameter<double>("reject_origin_epsilon", 0.05);
 
     tf_timeout_sec_ = this->declare_parameter<double>("tf_timeout_sec", 0.05);
+    use_latest_tf_if_unavailable_ = this->declare_parameter<bool>("use_latest_tf_if_unavailable", true);
 
     exclude_enabled_ = this->declare_parameter<bool>("exclude_box_enabled", true);
     exclude_frame_ = this->declare_parameter<std::string>("exclude_box_frame", "base_link");
@@ -138,6 +139,7 @@ public:
       "  support_leaf: %.3f | support_radius: %d | min_support_points: %d\n"
       "  range: [%.2f, %.2f] | z: [%.2f, %.2f]\n"
       "  reject_origin: %s (eps=%.3f)\n"
+      "  tf_timeout: %.3f s | latest_tf_fallback: %s\n"
       "  output_qos: %s (depth=%d)\n"
       "  marker_topic: %s (alpha=%.2f)\n"
       "  exclude_box: %s (frame=%s)\n"
@@ -147,6 +149,7 @@ public:
       support_leaf_size_, support_radius_voxels_, min_support_points_,
       min_range_, max_range_, min_z_, max_z_,
       reject_origin_enabled_ ? "ON" : "OFF", reject_origin_epsilon_,
+      tf_timeout_sec_, use_latest_tf_if_unavailable_ ? "ON" : "OFF",
       output_qos_reliable_ ? "RELIABLE" : "BEST_EFFORT", output_qos_depth_,
         marker_topic_.c_str(), marker_alpha_,
       exclude_enabled_ ? "ON" : "OFF", exclude_frame_.c_str(),
@@ -355,14 +358,42 @@ private:
           tf2::fromMsg(transform.transform, cloud_to_box_tf);
           use_box_tf = true;
         } catch (const tf2::TransformException & ex) {
-          RCLCPP_WARN_THROTTLE(
-            this->get_logger(), *this->get_clock(), 3000,
-            "No TF %s <- %s @t=%.3f. %s",
-            exclude_frame_.c_str(),
-            msg->header.frame_id.c_str(),
-            rclcpp::Time(msg->header.stamp).seconds(),
-            ex.what());
-          use_box_tf = false;
+          if (use_latest_tf_if_unavailable_) {
+            try {
+              const auto latest_transform = tf_buffer_->lookupTransform(
+                exclude_frame_,
+                msg->header.frame_id,
+                tf2::TimePointZero);
+              tf2::fromMsg(latest_transform.transform, cloud_to_box_tf);
+              use_box_tf = true;
+              RCLCPP_WARN_THROTTLE(
+                this->get_logger(), *this->get_clock(), 3000,
+                "No TF %s <- %s @t=%.3f. Usando ultima TF disponible. Error original: %s",
+                exclude_frame_.c_str(),
+                msg->header.frame_id.c_str(),
+                rclcpp::Time(msg->header.stamp).seconds(),
+                ex.what());
+            } catch (const tf2::TransformException & latest_ex) {
+              RCLCPP_WARN_THROTTLE(
+                this->get_logger(), *this->get_clock(), 3000,
+                "No TF %s <- %s @t=%.3f ni TF reciente. Error stamp: %s | error latest: %s",
+                exclude_frame_.c_str(),
+                msg->header.frame_id.c_str(),
+                rclcpp::Time(msg->header.stamp).seconds(),
+                ex.what(),
+                latest_ex.what());
+              use_box_tf = false;
+            }
+          } else {
+            RCLCPP_WARN_THROTTLE(
+              this->get_logger(), *this->get_clock(), 3000,
+              "No TF %s <- %s @t=%.3f. %s",
+              exclude_frame_.c_str(),
+              msg->header.frame_id.c_str(),
+              rclcpp::Time(msg->header.stamp).seconds(),
+              ex.what());
+            use_box_tf = false;
+          }
         }
       }
     }
@@ -471,6 +502,7 @@ private:
     out_xyz.reserve(out_voxels.size() * 3);
 
     std::size_t density_rejected = 0;
+    std::size_t final_box_rejected = 0;
     for (const auto & entry : out_voxels) {
       const Accum & accum = entry.second;
       if (accum.count < min_points_per_voxel_) {
@@ -479,9 +511,25 @@ private:
       }
 
       const float inv_count = 1.0f / static_cast<float>(accum.count);
-      out_xyz.push_back(accum.sx * inv_count);
-      out_xyz.push_back(accum.sy * inv_count);
-      out_xyz.push_back(accum.sz * inv_count);
+      const float out_x = accum.sx * inv_count;
+      const float out_y = accum.sy * inv_count;
+      const float out_z = accum.sz * inv_count;
+
+      if (want_boxes && use_box_tf) {
+        const tf2::Vector3 point_in_box = cloud_to_box_tf * tf2::Vector3(out_x, out_y, out_z);
+        const bool in_main_box = exclude_enabled_ &&
+          insideBox(point_in_box, ex_cx_, ex_cy_, ex_cz_, ex_sx_, ex_sy_, ex_sz_);
+        const bool in_hood_box = hood_enabled_ &&
+          insideBox(point_in_box, hx_, hy_, hz_, hsx_, hsy_, hsz_);
+        if (in_main_box || in_hood_box) {
+          ++final_box_rejected;
+          continue;
+        }
+      }
+
+      out_xyz.push_back(out_x);
+      out_xyz.push_back(out_y);
+      out_xyz.push_back(out_z);
     }
 
     if (out_xyz.empty()) {
@@ -520,9 +568,9 @@ private:
     if (debug_log_) {
       RCLCPP_INFO_THROTTLE(
         this->get_logger(), *this->get_clock(), 2000,
-        "in=%zu | candidates=%zu | support_cells=%zu | out_voxels=%zu | out=%u | rej[nan=%zu,origin=%zu,range=%zu,z=%zu,box=%zu,support=%zu,density=%zu]",
+        "in=%zu | candidates=%zu | support_cells=%zu | out_voxels=%zu | out=%u | rej[nan=%zu,origin=%zu,range=%zu,z=%zu,box=%zu,support=%zu,density=%zu,final_box=%zu]",
         npts, candidates.size(), support_counts.size(), out_voxels.size(), out.width,
-        nan_rejected, origin_rejected, range_rejected, z_rejected, box_rejected, support_rejected, density_rejected);
+        nan_rejected, origin_rejected, range_rejected, z_rejected, box_rejected, support_rejected, density_rejected, final_box_rejected);
     }
   }
 
@@ -546,6 +594,7 @@ private:
   double reject_origin_epsilon_;
 
   double tf_timeout_sec_;
+  bool use_latest_tf_if_unavailable_;
 
   bool exclude_enabled_;
   std::string exclude_frame_;

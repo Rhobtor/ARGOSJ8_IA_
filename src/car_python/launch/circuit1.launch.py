@@ -45,6 +45,7 @@ def generate_launch_description():
             'goal_threshold_xy': 3.5,   # robot converge a ~3.3m con local-waypoint; 3.5m da margen
             'robot_frame': 'base_link',
             'goal_frame':  'map',
+            'goal_is_relative': False,
         }],
     )
 
