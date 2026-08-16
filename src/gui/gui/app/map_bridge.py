@@ -7,6 +7,8 @@ class MapBridge(QObject):
     plannedWaypoint = Signal(float, float)   # lat, lon
     clearPlanned = Signal()
     removeWaypointIndex = Signal(int)
+    mapLayerChanged = Signal(str)
+    demCoverageStatus = Signal(str, bool)
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -31,3 +33,11 @@ class MapBridge(QObject):
         except Exception:
             return
         self.removeWaypointIndex.emit(i)   # <-- reemite a Qt/Python
+
+    @Slot(str)
+    def onMapLayerChanged(self, layer_name: str):
+        self.mapLayerChanged.emit(str(layer_name))
+
+    @Slot(str, bool)
+    def onDemCoverageStatus(self, message: str, valid: bool):
+        self.demCoverageStatus.emit(str(message), bool(valid))

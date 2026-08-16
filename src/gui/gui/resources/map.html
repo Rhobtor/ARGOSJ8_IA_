@@ -108,6 +108,97 @@
       attribution: 'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics'
     });
 
+    var esriDem = L.tileLayer(ESRI_URL, {
+      maxZoom: 19,
+      attribution: 'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics'
+    });
+
+    var demBounds = null;
+    var dem = L.layerGroup([esriDem]);
+    var demOverlay = null;
+    var demBoundary = null;
+    var demCoverage = null;
+    var demViewMode = 'overlay';
+    function applyDemViewMode() {
+      if (demViewMode === 'dem_only') {
+        if (dem.hasLayer(esriDem)) dem.removeLayer(esriDem);
+        if (demOverlay) demOverlay.setOpacity(1.0);
+      } else {
+        if (!dem.hasLayer(esriDem)) esriDem.addTo(dem);
+        if (demOverlay) demOverlay.setOpacity(0.52);
+      }
+    }
+    window.setDemViewMode = function (mode) {
+      demViewMode = mode === 'dem_only' ? 'dem_only' : 'overlay';
+      applyDemViewMode();
+    };
+    window.setDemImage = function (imageUrl, bounds, coveragePolygon) {
+      demBounds = L.latLngBounds(bounds);
+      demCoverage = coveragePolygon && coveragePolygon.length >= 3 ? coveragePolygon : null;
+      if (demOverlay) dem.removeLayer(demOverlay);
+      if (demBoundary) dem.removeLayer(demBoundary);
+      demOverlay = L.imageOverlay(imageUrl, demBounds, {
+        opacity: 0.52,
+        interactive: false
+      });
+      demBoundary = demCoverage ? L.polygon(demCoverage, {
+        color: '#ffdf3a',
+        weight: 4,
+        opacity: 1.0,
+        fill: false,
+        interactive: false,
+        dashArray: '12 8'
+      }) : L.rectangle(demBounds, {
+        color: '#ffdf3a', weight: 4, opacity: 1.0, fill: false,
+        interactive: false, dashArray: '12 8'
+      });
+      demOverlay.on('load', function () {
+        okCount++; bump();
+        console.log('[DEM] imagen cargada');
+        if (map.hasLayer(dem)) map.fitBounds(demBounds, { padding: [20, 20] });
+      });
+      demOverlay.on('error', function (error) {
+        errCount++; bump();
+        console.error('[DEM] error cargando imagen:', error);
+      });
+      demOverlay.addTo(dem);
+      demBoundary.addTo(dem);
+      applyDemViewMode();
+      if (map.hasLayer(dem)) map.fitBounds(demBounds, { padding: [20, 20] });
+    };
+
+    function pointInsideDem(lat, lon) {
+      if (!demCoverage) return demBounds ? demBounds.contains([lat, lon]) : false;
+      var inside = false;
+      for (var i = 0, j = demCoverage.length - 1; i < demCoverage.length; j = i++) {
+        var yi = demCoverage[i][0], xi = demCoverage[i][1];
+        var yj = demCoverage[j][0], xj = demCoverage[j][1];
+        if (((yi > lat) !== (yj > lat)) &&
+            (lon < (xj - xi) * (lat - yi) / (yj - yi) + xi)) inside = !inside;
+      }
+      return inside;
+    }
+
+    function reportDemCoverage() {
+      if (!bridge || !bridge.onDemCoverageStatus || !map.hasLayer(dem)) return;
+      if (!vehMarker) {
+        bridge.onDemCoverageStatus('DEM: sin posición', false);
+        return;
+      }
+      var vehiclePosition = vehMarker.getLatLng();
+      if (!pointInsideDem(vehiclePosition.lat, vehiclePosition.lng)) {
+        bridge.onDemCoverageStatus('DEM: robot fuera', false);
+        return;
+      }
+      for (var i = 0; i < planned.length; i++) {
+        if (!pointInsideDem(planned[i][0], planned[i][1])) {
+          bridge.onDemCoverageStatus('DEM: ruta fuera', false);
+          return;
+        }
+      }
+      bridge.onDemCoverageStatus('DEM: robot y ruta dentro', true);
+    }
+
     // Diagnóstico de tiles (sin optional chaining)
     function bindDiag(layer, name){
       layer.on('tileload', function (e) {
@@ -125,6 +216,7 @@
     }
     bindDiag(osm, 'OSM');
     bindDiag(esriSat, 'Esri');
+    bindDiag(esriDem, 'Esri DEM');
 
     // Base por defecto: OSM
     osm.addTo(map);
@@ -132,9 +224,17 @@
     // Selector de capas
     var baseMaps = {
       'OSM': osm,
-      'Satélite (Esri)': esriSat
+      'Satélite (Esri)': esriSat,
+      'DEM': dem
     };
     L.control.layers(baseMaps, {}, { position: 'topright', collapsed: false }).addTo(map);
+    map.on('baselayerchange', function (event) {
+      if (event.layer === dem && demBounds) map.fitBounds(demBounds, { padding: [20, 20] });
+      if (bridge && bridge.onMapLayerChanged) {
+        bridge.onMapLayerChanged(event.layer === dem ? 'dem' : 'other');
+      }
+      reportDemCoverage();
+    });
 
     // Ajuste de tamaño tras pintar
     setTimeout(function () { map.invalidateSize(true); }, 0);
@@ -154,7 +254,7 @@
 
     // ===== Estado misión + estado del vehículo
     // vehMarker: muestra la posición del UGV y (si se aporta) su heading.
-    var vehMarker = null, planned = [], plannedLine = null, plannedMarkers = [], detectedPersonsMarkers = [];
+    var vehMarker = null, planned = [], plannedLine = null, demPlannerLine = null, plannedMarkers = [], detectedPersonsMarkers = [];
     var robotMarkers = {};
     var robotLegend = document.getElementById('robot-legend');
 
@@ -378,12 +478,17 @@
         marker.addTo(map);
         plannedMarkers.push(marker);
       });
+      reportDemCoverage();
     }
     function addPlanned(lat, lon){ planned.push([lat, lon]); redrawPlanned(); }
     function popPlanned(){ if (planned.length){ planned.pop(); redrawPlanned(); } }
 
     map.on('click', function (e) {
       var lat = e.latlng.lat, lon = e.latlng.lng;
+      if (map.hasLayer(dem) && !pointInsideDem(lat, lon)) {
+        console.warn('[DEM] punto rechazado: fuera de la zona con elevación', lat, lon);
+        return;
+      }
       if (e.originalEvent && e.originalEvent.shiftKey) {
         addPlanned(lat, lon); if (bridge && bridge.onPlannedWaypoint) bridge.onPlannedWaypoint(lat, lon);
       } else {
@@ -425,9 +530,18 @@
         vehMarker.setLatLng([lat, lon]);
         if (icon) vehMarker.setIcon(icon);
       }
+      reportDemCoverage();
     };
     window.setRobotMarkers = function(robots){ setRobotMarkers(robots || []); };
     window.setMission = function(points){ planned = points || []; redrawPlanned(); };
+    window.setDemPlannerPath = function(points){
+      if (demPlannerLine) { map.removeLayer(demPlannerLine); demPlannerLine = null; }
+      if (points && points.length) {
+        demPlannerLine = L.polyline(points, {
+          color: '#00d5ff', weight: 5, opacity: 0.95, dashArray: '10 6'
+        }).addTo(map);
+      }
+    };
     window.clearMission = function(){ planned = []; redrawPlanned(); };
     window.setDetectedPersons = function(points){ window.__detectedPersons = points || []; redrawDetectedPersons(); };
     window.panTo = function(lat, lon){ map.panTo([lat, lon]); };

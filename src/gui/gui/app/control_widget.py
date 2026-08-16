@@ -34,7 +34,7 @@ from typing import Optional
 from PySide6.QtCore import Qt, Signal
 from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QFormLayout, QLabel,
-    QLineEdit, QComboBox, QPushButton, QHBoxLayout
+    QLineEdit, QComboBox, QPushButton, QHBoxLayout, QCheckBox
 )
 
 
@@ -64,6 +64,8 @@ class ControlConfig:
 
 class ControlWidget(QWidget):
     pathControlModeChanged = Signal(str)
+    demPurePursuitStatusChanged = Signal(str, bool)
+    demYawInvertedChanged = Signal(bool)
 
     """
     UI:
@@ -168,6 +170,26 @@ class ControlWidget(QWidget):
         btn_row.addWidget(self.b_reset)
         root.addLayout(btn_row)
 
+        root.addWidget(QLabel('Pure Pursuit DEM (simulación):'))
+        self.chk_invert_dem_yaw = QCheckBox('Convertir ejes Unity → ROS (simulación)')
+        self.chk_invert_dem_yaw.setChecked(True)
+        self.chk_invert_dem_yaw.toggled.connect(self.demYawInvertedChanged.emit)
+        root.addWidget(self.chk_invert_dem_yaw)
+        dem_row = QHBoxLayout()
+        self.b_start_dem = QPushButton('Iniciar DEM')
+        self.b_start_dem.clicked.connect(self._on_start_dem)
+        self.b_stop_dem = QPushButton('Parar DEM')
+        self.b_stop_dem.clicked.connect(self._on_stop_dem)
+        self.b_start_dem.setEnabled(False)
+        self.b_stop_dem.setEnabled(False)
+        dem_row.addWidget(self.b_start_dem)
+        dem_row.addWidget(self.b_stop_dem)
+        dem_row.addStretch(1)
+        root.addLayout(dem_row)
+        self.lbl_dem_control_status = QLabel('ROS no conectado')
+        root.addWidget(self.lbl_dem_control_status)
+        self.demPurePursuitStatusChanged.connect(self._apply_dem_control_status)
+
         root.addStretch(1)
 
         # Enter en cualquier campo = aplicar
@@ -192,9 +214,23 @@ class ControlWidget(QWidget):
         Inyecta el RosSide existente.
         Debe exponer: send_cfg(self, cfg: dict)
         """
+        old_ros = self._ros
+        if old_ros is not None and old_ros is not ros_side:
+            if hasattr(old_ros, 'stop_dem_pure_pursuit'):
+                old_ros.stop_dem_pure_pursuit('Detenido al cambiar de robot')
+            if hasattr(old_ros, 'dem_control_status_callback'):
+                old_ros.dem_control_status_callback = None
+
         self._ros = ros_side
         if self._ros is not None and hasattr(self._ros, 'set_path_control_mode'):
             self._ros.set_path_control_mode(self._path_control_mode)
+        if self._ros is not None and hasattr(self._ros, 'dem_control_status_callback'):
+            self._ros.dem_control_status_callback = self._on_dem_control_status_from_ros
+        if self._ros is not None and hasattr(self._ros, 'set_dem_yaw_inverted'):
+            self._ros.set_dem_yaw_inverted(self.chk_invert_dem_yaw.isChecked())
+        self.b_start_dem.setEnabled(self._ros is not None)
+        self.b_stop_dem.setEnabled(self._ros is not None)
+        self._apply_dem_control_status('Listo; calcula una ruta DEM', False)
 
     def path_control_mode(self) -> str:
         return self._path_control_mode
@@ -259,6 +295,31 @@ class ControlWidget(QWidget):
         self.ed_aang.setText('0.8')
     # No cambiamos el controller
         print('[ControlWidget] Restablecidos valores por defecto.')
+
+    def _on_start_dem(self):
+        cfg = self._read_cfg_from_fields()
+        if cfg is None:
+            self._apply_dem_control_status('Valores de control inválidos', False)
+            return
+        if self._ros is None or not hasattr(self._ros, 'start_dem_pure_pursuit'):
+            self._apply_dem_control_status('ROS no conectado', False)
+            return
+        self._ros.start_dem_pure_pursuit(self._cfg_to_dict(cfg))
+
+    def _on_stop_dem(self):
+        if self._ros is not None and hasattr(self._ros, 'stop_dem_pure_pursuit'):
+            self._ros.stop_dem_pure_pursuit()
+
+    def _on_dem_control_status_from_ros(self, status: str, active: bool):
+        self.demPurePursuitStatusChanged.emit(str(status), bool(active))
+
+    def _apply_dem_control_status(self, status: str, active: bool):
+        self.lbl_dem_control_status.setText(status)
+        self.lbl_dem_control_status.setStyleSheet(
+            'color: #15803d; font-weight: 600;' if active else 'color: #9a3412;'
+        )
+        self.b_start_dem.setEnabled(self._ros is not None and not active)
+        self.b_stop_dem.setEnabled(self._ros is not None and active)
 
     def _apply_path_control_mode_buttons(self):
         is_external = self._path_control_mode == 'external'

@@ -29,6 +29,9 @@ from geometry_msgs.msg import Vector3Stamped
 
 from gui.app.geo_local import ll2xy
 
+UNITY_REFERENCE_LATITUDE = 36.717083
+UNITY_REFERENCE_LONGITUDE = -4.489455
+
 
 # ===================== Utils =====================
 def quat_to_euler(qx, qy, qz, qw):
@@ -54,6 +57,15 @@ def haversine_m(lat1, lon1, lat2, lon2):
          + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) * math.sin(dlon/2)**2)
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
     return R * c
+
+
+def offset_latlon(lat_deg: float, lon_deg: float, east_m: float, north_m: float):
+    radius_m = 6378137.0
+    latitude = float(lat_deg) + math.degrees(float(north_m) / radius_m)
+    longitude = float(lon_deg) + math.degrees(
+        float(east_m) / (radius_m * max(math.cos(math.radians(float(lat_deg))), 1e-9))
+    )
+    return latitude, longitude
 
 
 # ===================== HUD + Stats (Widgets internos) =====================
@@ -478,6 +490,9 @@ class TelemetryNode(Node):
         super().__init__('cuadriga_state_node')
         self._sig = signals
         self._topics = topics
+        self._heading_offset_deg = 0.0
+        self._simulation_axes_enabled = False
+        self._latest_unity_position = None
 
         self._have_fix = False
         self._lat = self._lon = self._alt = None
@@ -531,13 +546,44 @@ class TelemetryNode(Node):
     def _emit_json(signal, payload):
         signal.emit(json.dumps(payload, separators=(',', ':')))
 
+    def set_heading_offset_degrees(self, offset_deg: float):
+        self._heading_offset_deg = float(offset_deg) % 360.0
+
+    def set_simulation_axes_enabled(self, enabled: bool):
+        self._simulation_axes_enabled = bool(enabled)
+
+    def _update_simulation_position(self):
+        if not self._simulation_axes_enabled or self._latest_unity_position is None:
+            return
+        unity_x, _, unity_z = self._latest_unity_position
+        self._lat, self._lon = offset_latlon(
+            UNITY_REFERENCE_LATITUDE,
+            UNITY_REFERENCE_LONGITUDE,
+            -unity_z,
+            unity_x,
+        )
+
+    def _bearing_from_yaw(self, yaw_rad: float) -> float:
+        yaw_deg_enu = (math.degrees(yaw_rad) + self._heading_offset_deg) % 360.0
+        return (90.0 - yaw_deg_enu) % 360.0
+
+    def _bearing_from_quaternion(self, q) -> float:
+        if not self._simulation_axes_enabled:
+            _, _, yaw = quat_to_euler(q.x, q.y, q.z, q.w)
+            return self._bearing_from_yaw(yaw)
+        unity_yaw = math.atan2(
+            2.0 * (q.w * q.y + q.x * q.z),
+            1.0 - 2.0 * (q.x * q.x + q.y * q.y),
+        )
+        ros_yaw = math.pi - unity_yaw
+        return (90.0 - math.degrees(ros_yaw)) % 360.0
+
     def _on_imu(self, msg: Imu):
         q = msg.orientation
         roll, pitch, yaw = quat_to_euler(q.x, q.y, q.z, q.w)
-        yaw_deg_enu = (math.degrees(yaw) % 360.0)
         # Compass-like bearing expected by the GUI/map: 0° = North, clockwise positive.
         # ROS yaw in ENU: 0° = East, CCW positive.
-        bearing_deg = (90.0 - yaw_deg_enu) % 360.0
+        bearing_deg = self._bearing_from_quaternion(q)
         self._last_bearing_deg = float(bearing_deg)
         self._sig.attitude.emit(math.degrees(pitch), math.degrees(roll), bearing_deg)
 
@@ -547,19 +593,24 @@ class TelemetryNode(Node):
             self._sig.gps_pose.emit(float(self._lat), float(self._lon), float(bearing_deg))
 
     def _on_odom(self, msg: Odometry):
+        self._latest_unity_position = (
+            float(msg.pose.pose.position.x),
+            float(msg.pose.pose.position.y),
+            float(msg.pose.pose.position.z),
+        )
+        self._update_simulation_position()
         vx = msg.twist.twist.linear.x
         vy = msg.twist.twist.linear.y
         vz = msg.twist.twist.linear.z
         yaw_rate = float(msg.twist.twist.angular.z)
-        gspeed = math.hypot(vx, vy)
-        vspeed = float(vz)
+        gspeed = math.hypot(vx, vz) if self._simulation_axes_enabled else math.hypot(vx, vy)
+        vspeed = float(vy) if self._simulation_axes_enabled else float(vz)
 
         # Heading desde odometría (útil en tierra y en simulación)
         try:
             q = msg.pose.pose.orientation
             roll, pitch, yaw = quat_to_euler(q.x, q.y, q.z, q.w)
-            yaw_deg_enu = (math.degrees(yaw) % 360.0)
-            bearing_deg = (90.0 - yaw_deg_enu) % 360.0
+            bearing_deg = self._bearing_from_quaternion(q)
             self._last_bearing_deg = float(bearing_deg)
             self._sig.attitude.emit(math.degrees(pitch), math.degrees(roll), bearing_deg)
 
@@ -571,7 +622,7 @@ class TelemetryNode(Node):
 
         alt = None
         try:
-            alt = float(msg.pose.pose.position.z)
+            alt = float(msg.pose.pose.position.y if self._simulation_axes_enabled else msg.pose.pose.position.z)
         except Exception:
             pass
 
@@ -590,8 +641,16 @@ class TelemetryNode(Node):
 
     def _on_fix(self, msg: NavSatFix):
         self._have_fix = (msg.status.status is not None) and (msg.status.status >= 0)
-        self._lat = float(msg.latitude)
-        self._lon = float(msg.longitude)
+        raw_lat = float(msg.latitude)
+        raw_lon = float(msg.longitude)
+        if self._simulation_axes_enabled:
+            self._update_simulation_position()
+            if self._lat is None or self._lon is None:
+                self._lat = UNITY_REFERENCE_LATITUDE
+                self._lon = UNITY_REFERENCE_LONGITUDE
+        else:
+            self._lat = raw_lat
+            self._lon = raw_lon
         self._alt = float(msg.altitude)
 
         self._emit_json(self._sig.stats, {'altitude': self._alt})
@@ -735,6 +794,8 @@ class StateWidget(QWidget):
         self.metric_selector.group_changed.connect(self._on_metric_group)
 
         self._node = None  # se crea en attach_ros
+        self._heading_offset_deg = 0.0
+        self._simulation_axes_enabled = False
 
         # Default
         self._on_metric_group("nav")
@@ -793,7 +854,19 @@ class StateWidget(QWidget):
                 if hasattr(tmap, k) and isinstance(v, str):
                     setattr(tmap, k, v)
         self._node = TelemetryNode(self._signals, tmap)
+        self._node.set_heading_offset_degrees(self._heading_offset_deg)
+        self._node.set_simulation_axes_enabled(self._simulation_axes_enabled)
         executor.add_node(self._node)
+
+    def set_heading_offset_degrees(self, offset_deg: float):
+        self._heading_offset_deg = float(offset_deg) % 360.0
+        if self._node is not None:
+            self._node.set_heading_offset_degrees(self._heading_offset_deg)
+
+    def set_simulation_axes_enabled(self, enabled: bool):
+        self._simulation_axes_enabled = bool(enabled)
+        if self._node is not None:
+            self._node.set_simulation_axes_enabled(self._simulation_axes_enabled)
 
     def detach_ros(self, executor: rclpy.executors.Executor | None = None):
         if self._node is None:
@@ -1017,6 +1090,12 @@ class MissionWidget(QWidget):
 
     def detach_ros(self, executor=None):
         self.state.detach_ros(executor)
+
+    def set_heading_offset_degrees(self, offset_deg: float):
+        self.state.set_heading_offset_degrees(offset_deg)
+
+    def set_simulation_axes_enabled(self, enabled: bool):
+        self.state.set_simulation_axes_enabled(enabled)
 
     def set_js_call(self, js_callable: Callable[[str], None]):
         self._js_call = js_callable

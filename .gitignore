@@ -14,5 +14,7 @@
 !/init_profile_results.prof
 !/docs/
 !/docs/**
+!/maps/
+!/maps/**
 !/src/
 !/src/**

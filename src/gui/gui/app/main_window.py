@@ -2,6 +2,7 @@ import os
 import re
 import json
 import math
+import base64
 import threading
 import time
 import mimetypes
@@ -30,14 +31,21 @@ from PySide6.QtCore import QSize
 from PySide6.QtWidgets import QSizePolicy, QGridLayout
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import DurabilityPolicy, QoSProfile, ReliabilityPolicy
 from std_msgs.msg import String, Float32MultiArray
 from sensor_msgs.msg import NavSatFix
-from geometry_msgs.msg import PoseStamped, PoseArray
+from geometry_msgs.msg import PoseStamped, PoseArray, Twist
 from nav_msgs.msg import Path, Odometry
 
 from gui.app.map_bridge import MapBridge
-from gui.app.state_widget import MissionWidget
+from gui.app.state_widget import (
+    MissionWidget,
+    UNITY_REFERENCE_LATITUDE,
+    UNITY_REFERENCE_LONGITUDE,
+    offset_latlon,
+)
 from gui.app.control_widget import ControlWidget
+from gui.app.dem_pure_pursuit import compute_command as compute_dem_pure_pursuit_command
 from gui.app.person_manager_widget import PersonsWidget
 from gui.app.video_tab import VideoTabWidget
 from gui.app.fsm_debug_widget import FsmDebugWidget
@@ -182,6 +190,25 @@ def _resolve_html_path():
         print(f"[GUI] map.html (src) -> {p2}")
         return p2
     raise FileNotFoundError("No encuentro map.html")
+
+
+def _resolve_dem_directory():
+    configured = os.environ.get('ARGOS_DEM_DIR', '').strip()
+    if configured:
+        return os.path.abspath(os.path.expanduser(configured))
+
+    candidates = [os.path.join(os.getcwd(), 'maps', 'dem')]
+    current = os.path.abspath(os.path.dirname(__file__))
+    while True:
+        candidates.append(os.path.join(current, 'maps', 'dem'))
+        parent = os.path.dirname(current)
+        if parent == current:
+            break
+        current = parent
+    for candidate in candidates:
+        if os.path.isfile(os.path.join(candidate, 'dem.png')):
+            return candidate
+    return candidates[0]
 
 
 class ConsolePage(QWebEnginePage):
@@ -584,6 +611,16 @@ class RosSide(Node):
         super().__init__('gui_node')
         self._path_control_mode = 'internal'
         self._fsm_request_watchdog_timeout_s = 1.5
+        self.dem_control_status_callback = None
+        self._dem_control_enabled = False
+        self._dem_control_status = ''
+        self._dem_local_path = []
+        self._dem_odom_pose = None
+        self._dem_odom_monotonic = 0.0
+        self._dem_forward_speed = 0.8
+        self._dem_lookahead_distance = 2.0
+        self._dem_max_angular_speed = 0.6
+        self._dem_simulation_axes = True
 
         # --- Compatibilidad con GUI_pkg (parámetros y defaults) ---
         from gui.ros_api import cuadrigaGuiDefaults, cuadrigaGuiParams, namespaced
@@ -640,6 +677,7 @@ class RosSide(Node):
         self._srv_ReturnRobotPath = ReturnRobotPath
         self._fsm_feedback_signals = None
         self._pending_service_futures = set()
+        self.dem_path_callback = None
 
         self.cli_change_fsm = self.create_client(ChangeMode, srv_change_fsm)
         self.cli_get_state = self.create_client(GetMode, srv_get_state)
@@ -663,6 +701,21 @@ class RosSide(Node):
         topic_external_path_command = namespaced(self.namespace, self.get_parameter(p.external_path_command_topic_name).value)
         self.pub_external_path_command = self.create_publisher(MsgString, topic_external_path_command, 10)
         self._msg_String = MsgString
+        self.pub_dem_goal = self.create_publisher(PoseStamped, '/dem/goal_wgs84', 10)
+        dem_path_qos = QoSProfile(depth=1)
+        dem_path_qos.reliability = ReliabilityPolicy.RELIABLE
+        dem_path_qos.durability = DurabilityPolicy.TRANSIENT_LOCAL
+        self.sub_dem_path = self.create_subscription(
+            Path, '/dem/global_path_wgs84', self._on_dem_path, dem_path_qos
+        )
+        self.sub_dem_local_path = self.create_subscription(
+            Path, '/dem/global_path', self._on_dem_local_path, 10
+        )
+        self.sub_dem_control_odom = self.create_subscription(
+            Odometry, '/fixposition/odometry_enu', self._on_dem_control_odom, 20
+        )
+        self.pub_dem_cmd_vel = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.dem_control_timer = self.create_timer(0.1, self._run_dem_pure_pursuit)
 
         # Controller config services (ctl_mission CtrlNode)
         from ctl_mission_interfaces.srv import (
@@ -696,6 +749,114 @@ class RosSide(Node):
         self.cli_config_dynamic = self.create_client(ConfigDynamicPureCtrl, srv_config_dynamic)
         self.cli_config_dynamic_la = self.create_client(ConfigDynamicLAPureCtrl, srv_config_dynamic_la)
         self.cli_config_stanley = self.create_client(ConfigStanleyCtrl, srv_config_stanley)
+
+    def send_dem_goal(self, latitude: float, longitude: float):
+        message = PoseStamped()
+        message.header.frame_id = 'wgs84'
+        message.header.stamp = self.get_clock().now().to_msg()
+        message.pose.position.x = float(longitude)
+        message.pose.position.y = float(latitude)
+        message.pose.orientation.w = 1.0
+        self.pub_dem_goal.publish(message)
+        self.get_logger().info(f"DEM goal -> lat={latitude:.7f} lon={longitude:.7f}")
+
+    def _on_dem_path(self, message: Path):
+        points = [
+            [float(pose.pose.position.y), float(pose.pose.position.x)]
+            for pose in message.poses
+        ]
+        callback = self.dem_path_callback
+        if callback is not None:
+            callback(points)
+
+    def _on_dem_local_path(self, message: Path):
+        self._dem_local_path = [
+            (float(pose.pose.position.x), float(pose.pose.position.y))
+            for pose in message.poses
+        ]
+        self._set_dem_control_status(f'Ruta DEM recibida: {len(self._dem_local_path)} puntos')
+
+    def _on_dem_control_odom(self, message: Odometry):
+        pose = message.pose.pose
+        quaternion = pose.orientation
+        if self._dem_simulation_axes:
+            unity_yaw = math.atan2(
+                2.0 * (quaternion.w * quaternion.y + quaternion.x * quaternion.z),
+                1.0 - 2.0 * (quaternion.x * quaternion.x + quaternion.y * quaternion.y),
+            )
+            yaw = math.atan2(math.sin(math.pi - unity_yaw), math.cos(math.pi - unity_yaw))
+            x = -float(pose.position.z)
+            y = float(pose.position.x)
+        else:
+            yaw = math.atan2(
+                2.0 * (quaternion.w * quaternion.z + quaternion.x * quaternion.y),
+                1.0 - 2.0 * (quaternion.y * quaternion.y + quaternion.z * quaternion.z),
+            )
+            x = float(pose.position.x)
+            y = float(pose.position.y)
+        self._dem_odom_pose = (x, y, yaw)
+        self._dem_odom_monotonic = time.monotonic()
+
+    def set_dem_yaw_inverted(self, enabled: bool):
+        self._dem_simulation_axes = bool(enabled)
+        self._dem_odom_pose = None
+
+    def start_dem_pure_pursuit(self, cfg: dict) -> bool:
+        if not self._dem_local_path:
+            self._set_dem_control_status('Sin ruta: pulsa Plan DEM', False)
+            return False
+        if self._dem_odom_pose is None or time.monotonic() - self._dem_odom_monotonic > 1.0:
+            self._set_dem_control_status('Sin odometría /fixposition/odometry_enu', False)
+            return False
+
+        self._dem_forward_speed = max(
+            0.0,
+            min(float(cfg.get('v_forward', 0.8)), float(cfg.get('lin_max', 1.0))),
+        )
+        self._dem_lookahead_distance = max(0.5, float(cfg.get('l_ahead_dist', 2.0)))
+        self._dem_max_angular_speed = max(0.0, float(cfg.get('ang_max', 0.6)))
+        self._dem_control_enabled = True
+        self._set_dem_control_status(
+            f'Activo: v={self._dem_forward_speed:.2f}, L={self._dem_lookahead_distance:.1f}',
+            True,
+        )
+        return True
+
+    def stop_dem_pure_pursuit(self, status: str = 'Detenido'):
+        self._dem_control_enabled = False
+        self.pub_dem_cmd_vel.publish(Twist())
+        self._set_dem_control_status(status, False)
+
+    def _run_dem_pure_pursuit(self):
+        if not self._dem_control_enabled:
+            return
+        if self._dem_odom_pose is None or time.monotonic() - self._dem_odom_monotonic > 1.0:
+            self.stop_dem_pure_pursuit('Parado: odometría caducada')
+            return
+
+        linear, angular, reached = compute_dem_pure_pursuit_command(
+            self._dem_local_path,
+            self._dem_odom_pose,
+            self._dem_lookahead_distance,
+            self._dem_forward_speed,
+            self._dem_max_angular_speed,
+        )
+        if reached:
+            self.stop_dem_pure_pursuit('Objetivo DEM alcanzado')
+            return
+
+        command = Twist()
+        command.linear.x = linear
+        command.angular.z = angular
+        self.pub_dem_cmd_vel.publish(command)
+
+    def _set_dem_control_status(self, status: str, active: bool | None = None):
+        if status == self._dem_control_status:
+            return
+        self._dem_control_status = status
+        callback = self.dem_control_status_callback
+        if callback is not None:
+            callback(status, self._dem_control_enabled if active is None else active)
 
     # NOTE: no /gui/* publishers. We talk to J8 via services (legacy GUI_pkg contract).
 
@@ -1136,6 +1297,7 @@ class MainWindow(QMainWindow):
     _requestRemotePersonsFlush = Signal()
     _requestRobotMarkersFlush = Signal()
     _requestPersonsViewRefresh = Signal()
+    _requestDemPathUpdate = Signal(object)
 
     def __init__(self, defer_ros_start=True):
         super().__init__()
@@ -1163,6 +1325,8 @@ class MainWindow(QMainWindow):
         self._th = None
         self._current_namespace = self._default_namespace()
         self._path_control_mode = 'internal'
+        self._simulation_heading_offset_deg = 0.0
+        self._simulation_axes_enabled = True
         self._known_robot_namespaces = self._initial_known_robot_namespaces(self._current_namespace)
         self._robot_roles = {self._current_namespace: 'explorador'}
         self._robot_relay_urls = self._load_robot_relay_urls()
@@ -1197,6 +1361,7 @@ class MainWindow(QMainWindow):
         self._persons_refresh_timer.setSingleShot(True)
         self._persons_refresh_timer.timeout.connect(self._apply_refresh_person_records_view)
         self._requestPersonsViewRefresh.connect(self._refresh_person_records_view_main_thread)
+        self._requestDemPathUpdate.connect(self._on_dem_path_received)
         self._persons_fanet_timer = QTimer(self)
         self._persons_fanet_timer.setInterval(100)
         self._persons_fanet_timer.timeout.connect(self._flush_persons_fanet_detections)
@@ -1244,9 +1409,33 @@ class MainWindow(QMainWindow):
         rv.addLayout(robot_row)
 
         # Map controls
+        map_controls_bar = QWidget()
+        map_controls_bar.setFixedHeight(30)
+        map_controls_bar.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
+        map_controls_row = QHBoxLayout(map_controls_bar)
+        map_controls_row.setContentsMargins(0, 0, 0, 0)
+        map_controls_row.setSpacing(8)
         self.chk_follow_robot = QCheckBox('Seguir robot')
         self.chk_follow_robot.setChecked(True)
-        rv.addWidget(self.chk_follow_robot)
+        map_controls_row.addWidget(self.chk_follow_robot)
+        self.cmb_dem_view = QComboBox()
+        self.cmb_dem_view.addItem('Mixto', 'overlay')
+        self.cmb_dem_view.addItem('Relieve', 'dem_only')
+        self.cmb_dem_view.setFixedWidth(82)
+        self.cmb_dem_view.currentIndexChanged.connect(self._on_dem_view_changed)
+        self.btn_plan_dem = QPushButton('Plan DEM')
+        self.btn_plan_dem.setFixedWidth(78)
+        self.btn_plan_dem.clicked.connect(self._on_plan_dem_clicked)
+        self.lbl_dem_status = QLabel('DEM: sin posición')
+        self.lbl_dem_status.setMaximumWidth(170)
+        self.cmb_dem_view.setVisible(False)
+        self.btn_plan_dem.setVisible(False)
+        self.lbl_dem_status.setVisible(False)
+        map_controls_row.addWidget(self.cmb_dem_view)
+        map_controls_row.addWidget(self.btn_plan_dem)
+        map_controls_row.addWidget(self.lbl_dem_status)
+        map_controls_row.addStretch(1)
+        rv.addWidget(map_controls_bar)
 
         self.web = QWebEngineView()
         rv.addWidget(self.web)
@@ -1291,7 +1480,16 @@ class MainWindow(QMainWindow):
     def _build_tab_control(self):
         self.control_tab = ControlWidget(self._ros)
         self.control_tab.pathControlModeChanged.connect(self._on_path_control_mode_changed)
+        self.control_tab.demYawInvertedChanged.connect(self._on_dem_yaw_inverted_changed)
         self.tabs.addTab(self.control_tab, 'Control')
+
+    def _on_dem_yaw_inverted_changed(self, enabled: bool):
+        self._simulation_axes_enabled = bool(enabled)
+        self._simulation_heading_offset_deg = 0.0
+        self.mission_tab.set_heading_offset_degrees(self._simulation_heading_offset_deg)
+        self.mission_tab.set_simulation_axes_enabled(enabled)
+        if self._ros is not None:
+            self._ros.set_dem_yaw_inverted(enabled)
 
     def _build_tab_persons(self):
         self.persons_tab = PersonsWidget()
@@ -1810,6 +2008,8 @@ class MainWindow(QMainWindow):
             self._refresh_person_records_view()
 
     def _on_robot_pose_fix(self, namespace: str, msg: NavSatFix):
+        if self._simulation_axes_enabled:
+            return
         try:
             lat = float(msg.latitude)
             lon = float(msg.longitude)
@@ -1821,7 +2021,21 @@ class MainWindow(QMainWindow):
     def _on_robot_pose_odom(self, namespace: str, msg: Odometry):
         try:
             q = msg.pose.pose.orientation
-            heading_deg = _quat_to_bearing_deg(q.x, q.y, q.z, q.w)
+            if self._simulation_axes_enabled:
+                unity_yaw = math.atan2(
+                    2.0 * (q.w * q.y + q.x * q.z),
+                    1.0 - 2.0 * (q.x * q.x + q.y * q.y),
+                )
+                heading_deg = (90.0 - math.degrees(math.pi - unity_yaw)) % 360.0
+                lat, lon = offset_latlon(
+                    UNITY_REFERENCE_LATITUDE,
+                    UNITY_REFERENCE_LONGITUDE,
+                    -float(msg.pose.pose.position.z),
+                    float(msg.pose.pose.position.x),
+                )
+                self._set_robot_pose_state(namespace, lat=lat, lon=lon, no_gps=False)
+            else:
+                heading_deg = _quat_to_bearing_deg(q.x, q.y, q.z, q.w)
         except Exception:
             return
         self._set_robot_pose_state(namespace, heading_deg=heading_deg)
@@ -2059,6 +2273,7 @@ class MainWindow(QMainWindow):
                 pass
 
         self._ros = RosSide(namespace=ns)
+        self._ros.dem_path_callback = self._requestDemPathUpdate.emit
         self._exec.add_node(self._ros)
 
         self._current_namespace = ns
@@ -2079,6 +2294,7 @@ class MainWindow(QMainWindow):
         self.mission_tab.attach_ros(self._exec, topics=self._build_mission_topics(ns))
         self._attach_persons_fanet_subscriptions(ns)
         self.control_tab.set_ros(self._ros)
+        self._on_dem_yaw_inverted_changed(self.control_tab.chk_invert_dem_yaw.isChecked())
         self.persons_tab.set_current_robot(ns)
         self.persons_tab.set_current_role(self._robot_roles.get(ns, 'explorador'))
         self.persons_tab.set_records([])
@@ -2167,6 +2383,8 @@ class MainWindow(QMainWindow):
         # self.bridge.plannedWaypoint.connect(self._planned_from_map)
         self.bridge.guidedTarget.connect(self.mission_tab.on_guided_from_map)
         self.bridge.plannedWaypoint.connect(self.mission_tab.on_planned_from_map)
+        self.bridge.mapLayerChanged.connect(self._on_map_layer_changed)
+        self.bridge.demCoverageStatus.connect(self._on_dem_coverage_status)
         channel = QWebChannel(self.web.page())
         channel.registerObject("bridge", self.bridge)
         self.web.page().setWebChannel(channel)
@@ -2203,8 +2421,65 @@ class MainWindow(QMainWindow):
         self._map_ready = bool(ok)
         if not ok:
             return
+        self._load_local_dem()
         self._refresh_robot_markers()
         self._flush_js_queue()
+
+    def _on_map_layer_changed(self, layer_name: str):
+        dem_selected = str(layer_name).lower() == 'dem'
+        self.cmb_dem_view.setVisible(dem_selected)
+        self.btn_plan_dem.setVisible(dem_selected)
+        self.lbl_dem_status.setVisible(dem_selected)
+
+    def _on_dem_view_changed(self):
+        mode = self.cmb_dem_view.currentData() or 'overlay'
+        self._js_call(f'window.setDemViewMode({json.dumps(mode)});')
+
+    def _on_dem_coverage_status(self, message: str, valid: bool):
+        color = '#187a37' if valid else '#b42318'
+        self.lbl_dem_status.setText(str(message))
+        self.lbl_dem_status.setStyleSheet(f'color: {color}; font-weight: 600;')
+
+    def _on_plan_dem_clicked(self):
+        planned = getattr(self.mission_tab, '_planned', [])
+        if not planned:
+            self._on_dem_coverage_status('DEM: añade un goal', False)
+            return
+        if self._ros is None:
+            self._on_dem_coverage_status('DEM: ROS no conectado', False)
+            return
+        latitude, longitude = planned[-1]
+        self._ros.send_dem_goal(latitude, longitude)
+        self.lbl_dem_status.setText('DEM: calculando ruta…')
+        self.lbl_dem_status.setStyleSheet('color: #8a5a00; font-weight: 600;')
+
+    def _on_dem_path_received(self, points):
+        self._js_call(f'window.setDemPlannerPath({json.dumps(points)});')
+        self.lbl_dem_status.setText(f'DEM: ruta {len(points)} pts')
+        self.lbl_dem_status.setStyleSheet('color: #187a37; font-weight: 600;')
+
+    def _load_local_dem(self):
+        dem_directory = _resolve_dem_directory()
+        image_path = os.path.join(dem_directory, 'dem.png')
+        metadata_path = os.path.join(dem_directory, 'metadata.json')
+        try:
+            with open(metadata_path, 'r', encoding='utf-8') as stream:
+                metadata = json.load(stream)
+            with open(image_path, 'rb') as stream:
+                encoded_image = base64.b64encode(stream.read()).decode('ascii')
+            bounds = metadata['bounds']
+            coverage_polygon = metadata.get('coverage_polygon', [])
+        except Exception as error:
+            print(f"[DEM] no se pudo cargar desde {dem_directory}: {error}")
+            return
+
+        image_url = f'data:image/png;base64,{encoded_image}'
+        script = (
+            f'window.setDemImage({json.dumps(image_url)}, {json.dumps(bounds)}, '
+            f'{json.dumps(coverage_polygon)});'
+        )
+        self.web.page().runJavaScript(script)
+        print(f"[DEM] mapa local cargado desde {dem_directory}")
 
     def _on_gps_pose(self, lat: float, lon: float, heading_deg):
         """Update the vehicle marker on the embedded Leaflet map.
@@ -2716,6 +2991,11 @@ class MainWindow(QMainWindow):
             page.runJavaScript(js)
 
     def closeEvent(self, ev):
+        if self._ros is not None:
+            try:
+                self._ros.stop_dem_pure_pursuit('GUI cerrada')
+            except Exception:
+                pass
         for namespace in list(self._robot_pose_subscriptions.keys()):
             self._remove_robot_pose_subscription(namespace, drop_state=False)
         for namespace in list(self._remote_person_subscriptions.keys()):
