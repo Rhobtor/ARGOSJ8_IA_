@@ -41,6 +41,7 @@ def generate_launch_description():
         package='car_cpp',  # Asegúrate de que el paquete se llame 'car' o el que corresponda
         executable='check_goal',  # Nombre del ejecutable (por ejemplo, si instalaste el script con entry_point)
         name='check_goal',  # Nombre del nodo
+        parameters=[{'goal_topic': '/goal'}],
     )
 
     points_goal = Node(
